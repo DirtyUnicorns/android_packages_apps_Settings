@@ -63,4 +63,60 @@
         <item>5</item>
     </string-array>
 
+<<<<<<< HEAD
+=======
+    <string-array name="network_speed_summary_entries" translatable="false">
+        <item>@string/traffic_timeout_0s</item>
+        <item>@string/traffic_timeout_3s</item>
+        <item>@string/traffic_timeout_5s</item>
+        <item>@string/traffic_timeout_8s</item>
+        <item>@string/traffic_timeout_10s</item>
+        <item>@string/traffic_timeout_15s</item>
+        <item>@string/traffic_timeout_25s</item>
+    </string-array>
+
+    <string-array name="network_speed_summary_values" translatable="false">
+        <item>0</item>
+        <item>3000</item>
+        <item>5000</item>
+        <item>8000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>25000</item>
+    </string-array>
+
+    <string-array name="entries_status_bar_network_stats_update">
+        <item>&#189; second</item>
+        <item>1 second</item>
+        <item>2 seconds</item>
+        <item>5 seconds</item>
+    </string-array>
+
+    <string-array name="values_status_bar_network_stats_update" translatable="false">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+    </string-array>
+
+    <!-- Low battery warning policy -->
+    <string-array name="pref_low_battery_warning_policy_entries">
+        <item>@string/low_battery_warning_policy_popup_sound</item>
+        <item>@string/low_battery_warning_policy_notif_sound</item>
+        <item>@string/low_battery_warning_policy_popup</item>
+        <item>@string/low_battery_warning_policy_notif</item>
+        <item>@string/low_battery_warning_policy_sound</item>
+        <item>@string/low_battery_warning_policy_disabled</item>
+    </string-array>
+
+    <string-array name="pref_low_battery_warning_policy_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+>>>>>>> 0f15834... Advanced low battery indicator options [2/2]
 </resources>

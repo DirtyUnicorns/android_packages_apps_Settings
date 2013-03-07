@@ -29,4 +29,14 @@
     <!-- TRDS Settings -->
     <string name="trds_settings_title">Dark UI (TRDS)</string>
 
+    <!-- Advanced low battery indicator options -->
+    <string name="pref_low_battery_warning_policy_title">Warnung bei niedrigem Batteriestand</string>
+    <string name="pref_low_battery_warning_policy_dialog_title">Zeigt einen niedrigen Batteriestand an durch:</string>
+    <string name="low_battery_warning_policy_popup_sound">Popup-Dialog und Warnton (Standard)</string>
+    <string name="low_battery_warning_policy_notif_sound">Benachrichtigung und Warnton</string>
+    <string name="low_battery_warning_policy_popup">nur Popup-Dialog</string>
+    <string name="low_battery_warning_policy_notif">nur Benachrichtigung</string>
+    <string name="low_battery_warning_policy_sound">nur Warnton</string>
+    <string name="low_battery_warning_policy_disabled">keine Warnung</string>
+
 </resources>
