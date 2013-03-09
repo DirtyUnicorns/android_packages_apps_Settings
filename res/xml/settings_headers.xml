@@ -62,6 +62,7 @@
     <header android:id="@+id/interface_section"
         android:title="@string/header_category_interface" />
 
+    <!-- Themes -->
     <header
         android:id="@+id/interface_bars"
         android:title="@string/interface_bars_title"
@@ -96,6 +97,12 @@
         android:breadCrumbTitle="@string/interface_more_title"
         android:fragment="org.omnirom.omnigears.interfacesettings.MoreInterfaceSettings"
         android:icon="@drawable/empty_icon" />
+
+    <!-- TRDS -->
+    <header
+        android:id="@+id/trds_settings"
+        android:icon="@drawable/ic_settings_trds"
+        android:title="@string/trds_settings_title" />
 
     <!-- DEVICE -->
     <header android:id="@+id/device_section"
