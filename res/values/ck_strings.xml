@@ -19,7 +19,29 @@
 
     <string name="ck_mod_version">CyanKang version</string>
 
+<<<<<<< HEAD
+=======
+    <!-- CyanKang Settings heading [CHAR LIMIT=40] -->
+    <string name="header_category_cyankang">CYANKANG</string>
+
+    <!-- CyanKang Settings -->
+    <string name="cyankang_settings">CyanKang Settings</string>
+    <string name="status_bar_title">Status bar</string>
+
+    <!-- Settings Group: Tweaks -->
+    <string name="tweaks_category">Tweaks</string>
+
+>>>>>>> aadd3ff... QS: Quick pulldown
     <!-- TRDS Settings -->
     <string name="trds_settings_title">Dark UI (TRDS)</string>
+
+    <!-- Quick settings -->
+    <string name="quick_pulldown_title">Quick Settings pulldown</string>
+    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="quick_pulldown_summary_left">Left</string>
+    <string name="quick_pulldown_summary_right">Right</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
 
 </resources>

@@ -13,20 +13,20 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="ck_mod_version">CyanKang-Version</string>
+    <!-- Quick Settings pulldown -->
+    <string-array name="quick_pulldown_entries" translatable="false">
+        <item>@string/quick_pulldown_off</item>
+        <item>@string/quick_pulldown_right</item>
+        <item>@string/quick_pulldown_left</item>
+    </string-array>
 
-<<<<<<< HEAD
-=======
-    <!-- CyanKang Settings -->
-    <string name="cyankang_settings">CyanKang Einstellungen</string>
-    <string name="status_bar_title">StatusBar</string>
-
->>>>>>> aadd3ff... QS: Quick pulldown
-    <!-- TRDS Settings -->
-    <string name="trds_settings_title">Dark UI (TRDS)</string>
+    <string-array name="quick_pulldown_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 
 </resources>
