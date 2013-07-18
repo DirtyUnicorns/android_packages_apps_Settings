@@ -117,6 +117,7 @@
     <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
     <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting the charger</string>
 
+<<<<<<< HEAD
     <!-- security settings menu unlock -->
     <string name="unlock_menu_unlock_title">Menu unlock</string>
     <string name="unlock_menu_unlock_summary">Pressing the menu button unlocks the device</string>
@@ -166,4 +167,6 @@
 
 =======
 >>>>>>> 24e039b... Advanced low battery indicator options (2/2)
+=======
+>>>>>>> 58ac3d0... Display options: allow configuration of wake on plug behavior (1/2)
 </resources>
