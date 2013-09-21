@@ -1104,10 +1104,14 @@ public class Settings extends PreferenceActivity
     public static class LocalePickerActivity extends Settings { /* empty */ }
     public static class UserDictionarySettingsActivity extends Settings { /* empty */ }
     public static class SoundSettingsActivity extends Settings { /* empty */ }
+<<<<<<< HEAD
     public static class BarsSettingsActivity extends Settings { /* empty */ }
     public static class MenusSettingsActivity extends Settings { /* empty */ }
     public static class NotificationPanelSettingsActivity extends Settings { /* empty */ }
     public static class MoreInterfaceSettingsActivity extends Settings { /* empty */ }
+=======
+    public static class BarsAndMenusSettingsActivity extends Settings { /* empty */ }
+>>>>>>> b9a18a8... [2/3] Settings: Add ActiveDisplay options via OmniGears
     public static class ActiveDisplaySettingsActivity extends Settings { /* empty */ }
     public static class DisplaySettingsActivity extends Settings { /* empty */ }
     public static class DeviceInfoSettingsActivity extends Settings { /* empty */ }
