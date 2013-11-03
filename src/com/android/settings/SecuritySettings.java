@@ -146,6 +146,9 @@ public class SecuritySettings extends RestrictedSettingsFragment
         addPreferencesFromResource(R.xml.security_settings);
         root = getPreferenceScreen();
 
+        // App security settings
+        addPreferencesFromResource(R.xml.security_settings_app_slim);
+
         // Add options for lock/unlock screen
         int resid = 0;
         if (!mLockPatternUtils.isSecure()) {
