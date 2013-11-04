@@ -18,6 +18,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/status_bar_title">
 
+    <PreferenceScreen
+        android:fragment="com.android.settings.cyankang.BatteryIconStyle"
+        android:key="battery_style_pref"
+        android:title="@string/battery_icon_title" />
+
     <ListPreference
         android:key="quick_pulldown"
         android:title="@string/quick_pulldown_title"
