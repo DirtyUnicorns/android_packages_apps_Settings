@@ -17,6 +17,7 @@
 package com.android.settings;
 
 import com.android.settings.bluetooth.DockEventReceiver;
+import com.android.settings.hardware.VibratorIntensity;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -69,6 +70,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_DTMF_TONE = "dtmf_tone";
     private static final String KEY_SOUND_EFFECTS = "sound_effects";
     private static final String KEY_HAPTIC_FEEDBACK = "haptic_feedback";
+    private static final String KEY_VIBRATION_INTENSITY = "vibration_intensity";
     private static final String KEY_EMERGENCY_TONE = "emergency_tone";
     private static final String KEY_SOUND_SETTINGS = "sound_settings";
     private static final String KEY_LOCK_SOUNDS = "lock_sounds";
@@ -204,6 +206,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         if (vibrator == null || !vibrator.hasVibrator()) {
             removePreference(KEY_VIBRATE);
             removePreference(KEY_HAPTIC_FEEDBACK);
+            removePreference(KEY_VIBRATION_INTENSITY);
+        } else if (!VibratorIntensity.isSupported()) {
+            removePreference(KEY_VIBRATION_INTENSITY);
         }
 
         if (TelephonyManager.PHONE_TYPE_CDMA == activePhoneType) {
