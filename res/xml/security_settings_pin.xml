@@ -56,9 +56,15 @@
             android:summary="@string/owner_info_settings_summary"/>
 
         <CheckBoxPreference
+<<<<<<< HEAD
             android:key="lockscreen_quick_unlock_control"
             android:title="@string/lockscreen_quick_unlock_control_title"
             android:summary="@string/lockscreen_quick_unlock_control_summary" />
+=======
+            android:key="see_through"
+            android:title="@string/see_through_title"
+            android:summary="@string/see_through_summary" />
+>>>>>>> 6f5dbf9... Lockscreen: See through (2/2)
 
     </PreferenceCategory>
 
