@@ -1674,6 +1674,7 @@
 
         <activity android:name=".omnikang.Halo" />
         <activity android:name=".omnikang.NotificationDrawerStyle" />
+        <activity android:name=".omnikang.LockscreenTargets" />
 
 >>>>>>> 78a633a... [1/2] Settings: HALO
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
