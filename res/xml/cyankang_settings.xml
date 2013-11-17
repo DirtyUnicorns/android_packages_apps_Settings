@@ -24,11 +24,6 @@
         android:fragment="com.android.settings.cyankang.StatusBarSettings"
         android:title="@string/status_bar_title" />
 
-    <PreferenceScreen
-        android:fragment="com.android.settings.cyankang.BatteryIconStyle"
-        android:key="battery_style_pref"
-        android:title="@string/battery_icon_title" />
-
     <!-- Network Speed Indicator -->
     <PreferenceCategory
         android:title="@string/status_bar_network_title">
