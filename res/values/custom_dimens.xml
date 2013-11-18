@@ -22,4 +22,9 @@
     <!-- Minimal notification row height used to calculate max notification count -->
     <dimen name="notification_row_min_height">70dp</dimen>
 
+    <!-- Nav Ring -->
+    <dimen name="navbar_search_snap_margin">40dip</dimen>
+    <dimen name="navbar_search_outerring_radius">170dp</dimen>
+    <dimen name="navbar_search_outerring_diameter">340dp</dimen>
+
 </resources>

@@ -1649,6 +1649,7 @@
         <activity android:name=".du.MiscTweaks" />
         <activity android:name=".du.NavBarSettings" />
         <activity android:name=".du.NavbarDimenSettings" />
+        <activity android:name=".du.NavRing" />
         <activity android:name=".du.Animations" />
         <activity android:name=".du.ListViewAnimations" />
         <activity android:name=".du.CarrierLabel" />

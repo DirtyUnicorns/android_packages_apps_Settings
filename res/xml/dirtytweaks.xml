@@ -105,6 +105,13 @@
             android:title="@string/navigation_bar"
             android:dependency="enable_nav_bar" />
 
+        <PreferenceScreen
+            android:key="navigation_ring"
+            android:fragment="com.android.settings.du.NavRing"
+            android:layout="@layout/preference_navbar_ring"
+            android:dependency="enable_nav_bar"
+            android:title="@string/navigation_ring_title" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
