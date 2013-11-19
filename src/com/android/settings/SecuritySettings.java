@@ -90,8 +90,11 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
     private static final String LOCKSCREEN_MAXIMIZE_WIDGETS = "lockscreen_maximize_widgets";
     private static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "lockscreen_quick_unlock_control";
+<<<<<<< HEAD
     private static final String LOCK_NUMPAD_RANDOM = "lock_numpad_random";
     private static final String MENU_UNLOCK_PREF = "menu_unlock";
+=======
+>>>>>>> 29de3e3... [1/2] packages/apps/Settings: enable quickunlock
 
     private PackageManager mPM;
     private DevicePolicyManager mDPM;
@@ -127,8 +130,11 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mLockRingBattery;
     private CheckBoxPreference mMaximizeKeyguardWidgets;
     private CheckBoxPreference mQuickUnlockScreen;
+<<<<<<< HEAD
     private ListPreference mLockNumpadRandom;
     private CheckBoxPreference mMenuUnlock;
+=======
+>>>>>>> 29de3e3... [1/2] packages/apps/Settings: enable quickunlock
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -630,9 +636,12 @@ public class SecuritySettings extends RestrictedSettingsFragment
         } else if (preference == mQuickUnlockScreen) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.LOCKSCREEN_QUICK_UNLOCK_CONTROL, isToggled(preference) ? 1 : 0);
+<<<<<<< HEAD
         } else if (preference == mMenuUnlock) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.MENU_UNLOCK_SCREEN, isToggled(preference) ? 1 : 0);        
+=======
+>>>>>>> 29de3e3... [1/2] packages/apps/Settings: enable quickunlock
         } else if (preference == mShowPassword) {
             Settings.System.putInt(getContentResolver(), Settings.System.TEXT_SHOW_PASSWORD,
                     mShowPassword.isChecked() ? 1 : 0);

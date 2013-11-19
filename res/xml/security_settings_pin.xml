@@ -57,6 +57,7 @@
 
         <CheckBoxPreference
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:key="lockscreen_quick_unlock_control"
             android:title="@string/lockscreen_quick_unlock_control_title"
             android:summary="@string/lockscreen_quick_unlock_control_summary" />
@@ -65,6 +66,11 @@
             android:title="@string/see_through_title"
             android:summary="@string/see_through_summary" />
 >>>>>>> 6f5dbf9... Lockscreen: See through (2/2)
+=======
+            android:key="lockscreen_quick_unlock_control"
+            android:title="@string/lockscreen_quick_unlock_control_title"
+            android:summary="@string/lockscreen_quick_unlock_control_summary" />
+>>>>>>> 29de3e3... [1/2] packages/apps/Settings: enable quickunlock
 
     </PreferenceCategory>
 
