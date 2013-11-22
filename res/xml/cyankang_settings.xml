@@ -24,6 +24,16 @@
         android:fragment="com.android.settings.cyankang.StatusBarSettings"
         android:title="@string/status_bar_title" />
 
+    <PreferenceCategory
+        android:title="@string/navigation_bar_category">
+
+        <PreferenceScreen
+            android:key="navigation_bar"
+            android:fragment="com.android.settings.omnikang.NavBar"
+            android:title="@string/navigation_bar_title" />
+
+    </PreferenceCategory>
+
     <!-- Network Speed Indicator -->
     <PreferenceCategory
         android:title="@string/status_bar_network_title">
