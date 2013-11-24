@@ -104,12 +104,21 @@
         android:icon="@drawable/ic_settings_trds"
         android:title="@string/trds_settings_title" />
 
+<<<<<<< HEAD
     <header
         android:id="@+id/active_display"
         android:title="@string/active_display_settings"
         android:breadCrumbTitle="@string/active_display_settings"
         android:fragment="org.omnirom.omnigears.chameleonos.ActiveDisplaySettings"
         android:icon="@drawable/ic_settings_actived" />
+=======
+    <!-- HALO -->
+    <header
+        android:id="@+id/halo_settings"
+        android:fragment="com.android.settings.omnikang.Halo"
+        android:icon="@drawable/ic_settings_halo" 
+        android:title="@string/halo_settings_title" />
+>>>>>>> 78a633a... [1/2] Settings: HALO
 
     <!-- DEVICE -->
     <header android:id="@+id/device_section"

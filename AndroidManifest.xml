@@ -1665,6 +1665,16 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
+<<<<<<< HEAD
+=======
+        <activity
+            android:name=".omnikang.OmniKangSettings"
+            android:label="@string/omnikang_settings" >
+        </activity>
+
+        <activity android:name=".omnikang.Halo" />
+
+>>>>>>> 78a633a... [1/2] Settings: HALO
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
                 android:label="@string/crypt_keeper_encrypt_title">
