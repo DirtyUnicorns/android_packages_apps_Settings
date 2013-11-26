@@ -33,7 +33,11 @@
     </string-array>
 
     <!-- Low battery warning policy -->
+<<<<<<< HEAD
     <string-array name="pref_low_battery_warning_policy_entries" translatable="false">
+=======
+    <string-array name="pref_low_battery_warning_policy_entries">
+>>>>>>> 24e039b... Advanced low battery indicator options (2/2)
         <item>@string/low_battery_warning_policy_popup_sound</item>
         <item>@string/low_battery_warning_policy_notif_sound</item>
         <item>@string/low_battery_warning_policy_popup</item>
@@ -51,6 +55,7 @@
         <item>5</item>
     </string-array>
 
+<<<<<<< HEAD
     <!-- Random PIN lock view -->
     <string-array name="lock_numpad_random_entries" translatable="false">
         <item>@string/lock_numpad_random_off</item>
@@ -97,4 +102,6 @@
         <item>1005</item>
     </string-array>
 
+=======
+>>>>>>> 24e039b... Advanced low battery indicator options (2/2)
 </resources>

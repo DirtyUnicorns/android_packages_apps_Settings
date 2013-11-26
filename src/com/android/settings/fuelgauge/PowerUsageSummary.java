@@ -61,7 +61,10 @@ public class PowerUsageSummary extends PreferenceFragment implements
     private static final String KEY_APP_LIST = "app_list";
     private static final String KEY_BATTERY_STATUS = "battery_status";
     private static final String KEY_LOW_BATTERY_WARNING_POLICY = "pref_low_battery_warning_policy";
+<<<<<<< HEAD
     private static final String KEY_BATTERY_INDICATOR = "pref_battery_indicator";
+=======
+>>>>>>> 24e039b... Advanced low battery indicator options (2/2)
     private static final String KEY_BATTERY_PREFS_CATEGORY = "battery_prefs";
     private static final String KEY_BATTERY_STATS_CATEGORY = "battery_stats";
 
@@ -77,7 +80,10 @@ public class PowerUsageSummary extends PreferenceFragment implements
     private PreferenceGroup mAppListGroup;
     private Preference mBatteryStatusPref;
     private ListPreference mLowBatteryWarning;
+<<<<<<< HEAD
     private ListPreference mBatteryIndicator;
+=======
+>>>>>>> 24e039b... Advanced low battery indicator options (2/2)
     private PreferenceCategory mBatteryPrefsCat;
     private PreferenceCategory mBatteryStatsCat;
 
@@ -134,6 +140,7 @@ public class PowerUsageSummary extends PreferenceFragment implements
         mLowBatteryWarning.setSummary(mLowBatteryWarning.getEntry());
         mLowBatteryWarning.setOnPreferenceChangeListener(this);
 
+<<<<<<< HEAD
         mBatteryIndicator =
             (ListPreference) mAppListGroup.findPreference(KEY_BATTERY_INDICATOR);
         int batteryIndicator = Settings.System.getInt(getActivity().getContentResolver(),
@@ -142,6 +149,8 @@ public class PowerUsageSummary extends PreferenceFragment implements
         mBatteryIndicator.setSummary(mBatteryIndicator.getEntry());
         mBatteryIndicator.setOnPreferenceChangeListener(this);
 
+=======
+>>>>>>> 24e039b... Advanced low battery indicator options (2/2)
         setHasOptionsMenu(true);
     }
 
@@ -198,6 +207,7 @@ public class PowerUsageSummary extends PreferenceFragment implements
                     lowBatteryWarning);
             mLowBatteryWarning.setSummary(mLowBatteryWarning.getEntries()[index]);
             return true;
+<<<<<<< HEAD
         } else if (preference == mBatteryIndicator) {
             int batteryIndicator = Integer.valueOf((String) newValue);
             int index = mBatteryIndicator.findIndexOfValue((String) newValue);
@@ -206,6 +216,8 @@ public class PowerUsageSummary extends PreferenceFragment implements
                      batteryIndicator);
             mBatteryIndicator.setSummary(mBatteryIndicator.getEntries()[index]);
             return true;
+=======
+>>>>>>> 24e039b... Advanced low battery indicator options (2/2)
         }
         return false;
     }
@@ -259,12 +271,19 @@ public class PowerUsageSummary extends PreferenceFragment implements
         mAppListGroup.removeAll();
         mAppListGroup.setOrderingAsAdded(false);
 
+<<<<<<< HEAD
         mBatteryPrefsCat.setOrder(-6);
         mAppListGroup.addPreference(mBatteryPrefsCat);
         mLowBatteryWarning.setOrder(-5);
         mAppListGroup.addPreference(mLowBatteryWarning);
         mBatteryIndicator.setOrder(-4);
         mAppListGroup.addPreference(mBatteryIndicator);
+=======
+        mBatteryPrefsCat.setOrder(-5);
+        mAppListGroup.addPreference(mBatteryPrefsCat);
+        mLowBatteryWarning.setOrder(-4);
+        mAppListGroup.addPreference(mLowBatteryWarning);
+>>>>>>> 24e039b... Advanced low battery indicator options (2/2)
         mBatteryStatsCat.setOrder(-3);
         mAppListGroup.addPreference(mBatteryStatsCat);
 
