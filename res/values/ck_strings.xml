@@ -267,5 +267,12 @@
     <string name="notif_alpha_title">Notification transparency</string>
     <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app</string>
 
+<<<<<<< HEAD:res/values/ck_strings.xml
 >>>>>>> 6d04c84... Settings: notification drawer background [1/2]:res/values/ok_strings.xml
+=======
+    <!-- development shortcut -->
+    <string name="development_shortcut_title">Development shortcut</string>
+    <string name="development_shortcut_summary">Enable \'wipe data\' and \'force close\' options in notification area and recent apps list</string>
+
+>>>>>>> e25e029... New setting under "Debug settings" that enables the development shortcut:res/values/ok_strings.xml
 </resources>
