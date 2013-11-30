@@ -28,6 +28,7 @@
     <string name="cyankang_settings">CyanKang Settings</string>
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_style_title">Extras</string>
+    <string name="notification_drawer_title">Notification drawer</string>
 
     <!-- Settings Group: Tweaks -->
     <string name="tweaks_category">Tweaks</string>
@@ -250,5 +251,20 @@
     <string name="navigation_bar_menu_editable">Editable</string>
     <string name="navigation_bar_menu_locked">Locked</string>
 
+<<<<<<< HEAD:res/values/ck_strings.xml
 >>>>>>> fb6e853... [2/2] Settings: Add back navigation bar customization:res/values/ok_strings.xml
+=======
+    <!-- Notification drawer background -->
+    <string name="notification_style_title">Style</string>
+    <string name="notification_style_summary">Change your notification drawer style</string>
+    <string name="notification_wallpaper_title">Background</string>
+    <string name="notification_wallpaper_landscape_title">Different landscape background</string>
+    <string name="notification_background_color_fill">Color fill</string>
+    <string name="notification_background_custom_image">Custom image</string>
+    <string name="notification_background_default_wallpaper">Default background</string>
+    <string name="notification_drawer_custom_background_dialog_title">Choose color</string>
+    <string name="notif_wallpaper_alpha_title">Background transparency</string>
+    <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app</string>
+
+>>>>>>> 6d04c84... Settings: notification drawer background [1/2]:res/values/ok_strings.xml
 </resources>
