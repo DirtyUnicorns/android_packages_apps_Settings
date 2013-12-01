@@ -126,6 +126,7 @@
     <string name="stylus_icon_enabled_title">Show icon when using stylus</string>
     <string name="stylus_icon_enabled_summary">Show the pointer icon while using stylus</string>
 
+<<<<<<< HEAD
     <!-- Stylus Gestures -->
     <string name="gestures_settings_title">Stylus gestures</string>
     <string name="category_spen_title">Stylus gestures</string>
@@ -169,4 +170,6 @@
 >>>>>>> 24e039b... Advanced low battery indicator options (2/2)
 =======
 >>>>>>> 58ac3d0... Display options: allow configuration of wake on plug behavior (1/2)
+=======
+>>>>>>> a91388d... Settings: Toggle Stylus Pointer Icon
 </resources>

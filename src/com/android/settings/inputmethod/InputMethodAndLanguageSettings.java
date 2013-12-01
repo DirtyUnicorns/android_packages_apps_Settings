@@ -67,8 +67,11 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
     private static final String KEY_INPUT_METHOD_SELECTOR = "input_method_selector";
     private static final String KEY_USER_DICTIONARY_SETTINGS = "key_user_dictionary_settings";
     private static final String KEY_STYLUS_ICON_ENABLED = "stylus_icon_enabled";
+<<<<<<< HEAD
     private static final String KEY_STYLUS_GESTURES = "stylus_gestures";
     private static final String KEY_POINTER_SETTINGS_CATEGORY = "pointer_settings_category";
+=======
+>>>>>>> a91388d... Settings: Toggle Stylus Pointer Icon
     // false: on ICS or later
     private static final boolean SHOW_INPUT_METHOD_SWITCHER_SETTINGS = false;
 
@@ -177,6 +180,7 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
         updateInputDevices();
 
         mStylusIconEnabled = (CheckBoxPreference) findPreference(KEY_STYLUS_ICON_ENABLED);
+<<<<<<< HEAD
         mStylusGestures = (PreferenceScreen) findPreference(KEY_STYLUS_GESTURES);
         // remove stylus preference for non stylus devices
         if (!getResources().getBoolean(com.android.internal.R.bool.config_stylusGestures)) {
@@ -185,6 +189,8 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
             pointerSettingsCategory.removePreference(mStylusGestures);
             pointerSettingsCategory.removePreference(mStylusIconEnabled);
         }
+=======
+>>>>>>> a91388d... Settings: Toggle Stylus Pointer Icon
 
         // Spell Checker
         final Intent intent = new Intent(Intent.ACTION_MAIN);
