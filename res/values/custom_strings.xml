@@ -453,4 +453,7 @@
     <string name="recents_settings">Recents</string>
     <string name="misc_cat">Misc</string>
 
+    <!-- Device specific settings -->
+    <string name="advanced_settings_title">Device Options</string>
+
 </resources>
