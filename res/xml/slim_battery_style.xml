@@ -46,4 +46,19 @@
         android:title="@string/battery_text_charging_color"
         android:defaultValue="0xffffffff" />
 
+    <PreferenceScreen
+        android:fragment="com.android.settings.omnidirt.StatusBarClockStyle"
+        android:key="clock_style_pref"
+        android:title="@string/status_bar_clock" />
+
+    <PreferenceScreen
+        android:key="status_bar_style"
+        android:fragment="com.android.settings.omnidirt.StatusBarStyle"
+        android:title="@string/status_bar_style_title" />
+
+    <PreferenceScreen
+        android:key="status_bar_style"
+        android:fragment="org.omnirom.omnigears.interfacesettings.BarsSettings"
+        android:title="@string/status_bar_misc" />
+
 </PreferenceScreen>

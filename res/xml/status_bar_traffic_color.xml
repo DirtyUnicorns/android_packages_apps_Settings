@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings.omnidirt"
+    android:title="@string/network_speed_color_title">
+
+    <!-- Network speed colors -->
+    <PreferenceCategory
+        android:title="@string/network_speed_color_title">
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="network_speed_color"
+            android:title="@string/network_speed_color_style"
+            android:defaultValue="#000000" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen> 

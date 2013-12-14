@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 CyanKang
+ * Copyright (C) 2013 OmniDirt
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,58 +14,67 @@
  * limitations under the License.
  */
 
-package com.android.settings.cyankang;
+package com.android.settings.omnidirt;
 
 import android.app.ActivityManager;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.RemoteException;
 import android.provider.Settings;
 import android.preference.CheckBoxPreference;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.preference.PreferenceCategory;
-<<<<<<< HEAD
-import android.preference.Preference.OnPreferenceChangeListener;
-=======
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
 import android.view.WindowManagerGlobal;
->>>>>>> 0f15834... Advanced low battery indicator options [2/2]
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class CyanKangSettings extends SettingsPreferenceFragment implements
+public class OmniDirtSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "CyanKangSettings";
-<<<<<<< HEAD
-    
-=======
+    private static final String TAG = "OmniDirtSettings";
 
     private static final String STATUS_BAR_TRAFFIC_ENABLE = "status_bar_traffic_enable";
     private static final String STATUS_BAR_TRAFFIC_HIDE = "status_bar_traffic_hide";
     private static final String STATUS_BAR_TRAFFIC_SUMMARY = "status_bar_traffic_summary";
     private static final String STATUS_BAR_NETWORK_STATS = "status_bar_show_network_stats";
     private static final String STATUS_BAR_NETWORK_STATS_UPDATE = "status_bar_network_status_update";
-    private static final String KEY_LOW_BATTERY_WARNING_POLICY = "pref_low_battery_warning_policy";
+
+    private static final String CATEGORY_NAVBAR = "navigation_bar";
 
     private CheckBoxPreference mStatusBarTraffic_enable;
     private CheckBoxPreference mStatusBarTraffic_hide;
     private ListPreference mStatusBarTraffic_summary;
     private ListPreference mStatusBarNetStatsUpdate;
     private CheckBoxPreference mStatusBarNetworkStats;
-    private ListPreference mLowBatteryWarning;
 
->>>>>>> 0f15834... Advanced low battery indicator options [2/2]
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        addPreferencesFromResource(R.xml.beerbar_settings);
+        addPreferencesFromResource(R.xml.omnidirt_settings);
+        PreferenceScreen prefSet = getPreferenceScreen();
 
-<<<<<<< HEAD
-=======
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        mStatusBarTraffic_enable = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_TRAFFIC_ENABLE);
+        mStatusBarTraffic_enable.setChecked((Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_TRAFFIC_ENABLE, 0) == 1));
+
+        mStatusBarTraffic_hide = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_TRAFFIC_HIDE);
+        mStatusBarTraffic_hide.setChecked((Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_TRAFFIC_HIDE, 1) == 1));
+
+        mStatusBarTraffic_summary = (ListPreference) findPreference(STATUS_BAR_TRAFFIC_SUMMARY);
+        mStatusBarTraffic_summary.setOnPreferenceChangeListener(this);
+        mStatusBarTraffic_summary.setValue((Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_TRAFFIC_SUMMARY, 3000)) + "");
+
         mStatusBarNetworkStats = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_NETWORK_STATS);
         mStatusBarNetStatsUpdate = (ListPreference) prefSet.findPreference(STATUS_BAR_NETWORK_STATS_UPDATE);
         mStatusBarNetworkStats.setChecked((Settings.System.getInt(resolver,
@@ -79,13 +88,15 @@ public class CyanKangSettings extends SettingsPreferenceFragment implements
 
         mStatusBarTraffic_summary.setEnabled(!mStatusBarNetworkStats.isChecked());
 
-        mLowBatteryWarning = (ListPreference) findPreference(KEY_LOW_BATTERY_WARNING_POLICY);
-        int lowBatteryWarning = Settings.System.getInt(resolver,
-                Settings.System.POWER_UI_LOW_BATTERY_WARNING_POLICY, 0);
-        mLowBatteryWarning.setValue(String.valueOf(lowBatteryWarning));
-        mLowBatteryWarning.setSummary(mLowBatteryWarning.getEntry());
-        mLowBatteryWarning.setOnPreferenceChangeListener(this);
->>>>>>> 0f15834... Advanced low battery indicator options [2/2]
+        try {
+            boolean hasNavBar = WindowManagerGlobal.getWindowManagerService().hasNavigationBar();
+            // Hide navigation bar category on devices without navigation bar
+            if (!hasNavBar) {
+                prefSet.removePreference(findPreference(CATEGORY_NAVBAR));
+            }
+        } catch (RemoteException e) {
+            Log.e(TAG, "Error getting navigation bar status");
+        }
     }
 
     @Override
@@ -99,8 +110,6 @@ public class CyanKangSettings extends SettingsPreferenceFragment implements
     }
     
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-<<<<<<< HEAD
-=======
         ContentResolver resolver = getActivity().getContentResolver();
 
         if (preference == mStatusBarTraffic_summary) {
@@ -116,15 +125,32 @@ public class CyanKangSettings extends SettingsPreferenceFragment implements
                     Settings.System.STATUS_BAR_NETWORK_STATS_UPDATE_INTERVAL, updateInterval);
             mStatusBarNetStatsUpdate.setSummary(mStatusBarNetStatsUpdate.getEntries()[index]);
             return true;
-        } else if (preference == mLowBatteryWarning) {
-            int lowBatteryWarning = Integer.valueOf((String) objValue);
-            int index = mLowBatteryWarning.findIndexOfValue((String) objValue);
-            Settings.System.putInt(resolver, Settings.System.POWER_UI_LOW_BATTERY_WARNING_POLICY,
-                    lowBatteryWarning);
-            mLowBatteryWarning.setSummary(mLowBatteryWarning.getEntries()[index]);
-            return true;
         }
->>>>>>> 0f15834... Advanced low battery indicator options [2/2]
         return false;
+    }
+
+
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        boolean value;
+
+        if (preference == mStatusBarTraffic_enable) {
+            value = mStatusBarTraffic_enable.isChecked();
+            Settings.System.putInt(resolver,
+                    Settings.System.STATUS_BAR_TRAFFIC_ENABLE, value ? 1 : 0);
+        } else if (preference == mStatusBarTraffic_hide) {
+            value = mStatusBarTraffic_hide.isChecked();
+            Settings.System.putInt(resolver,
+                    Settings.System.STATUS_BAR_TRAFFIC_HIDE, value ? 1 : 0);
+        } else if (preference == mStatusBarNetworkStats) {
+            value = mStatusBarNetworkStats.isChecked();
+            Settings.System.putInt(resolver,
+                    Settings.System.STATUS_BAR_NETWORK_STATS, value ? 1 : 0);
+            mStatusBarTraffic_summary.setEnabled(!value);
+        } else {
+            // If we didn't handle it, let preferences handle it.
+            return super.onPreferenceTreeClick(preferenceScreen, preference);
+        }
+        return true;
     }
 }

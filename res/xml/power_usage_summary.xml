@@ -30,17 +30,6 @@
         android:entryValues="@array/pref_low_battery_warning_policy_values"
         android:defaultValue="0" />
 
-<<<<<<< HEAD
-    <ListPreference
-        android:key="pref_battery_indicator"
-        android:title="@string/pref_battery_indicator_title"
-        android:dialogTitle="@string/pref_battery_indicator_title"
-        android:entries="@array/pref_battery_indicator_entries"
-        android:entryValues="@array/pref_battery_indicator_values"
-        android:defaultValue="0" />
-
-=======
->>>>>>> 24e039b... Advanced low battery indicator options (2/2)
     <PreferenceCategory
         android:key="battery_stats"
         android:title="@string/battery_stats_title" />

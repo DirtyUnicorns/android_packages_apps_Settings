@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 CyanKang
+<!-- Copyright (C) 2013 OmniDirt
  
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -13,15 +13,15 @@
  See the License for the specific language governing permissions and
  limitations under the License.
  -->
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/status_bar_style_title">
 
-    <ListPreference
-        android:key="quick_pulldown"
-        android:title="@string/quick_pulldown_title"
-        android:entries="@array/quick_pulldown_entries"
-        android:entryValues="@array/quick_pulldown_values"
-        android:persistent="false" />
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/dirt_settings_title"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+            <ListPreference
+                android:key="quick_pulldown"
+                android:title="@string/quick_pulldown_title"
+                android:entries="@array/quick_pulldown_entries"
+                android:entryValues="@array/quick_pulldown_values"
+                android:persistent="false" />
 </PreferenceScreen>

@@ -62,19 +62,17 @@
             android:persistent="false"
             android:ringtoneType="notification" />
 
-<<<<<<< HEAD
     <com.android.settings.DefaultRingtonePreference
             android:key="alarm_sound"
             android:title="@string/alarm_sound_title"
             android:dialogTitle="@string/alarm_sound_dialog_title"
             android:persistent="false"
             android:ringtoneType="alarm" />
-=======
+
     <PreferenceScreen
         android:key="quiet_hours_settings"
-        android:fragment="com.android.settings.omnikang.QuietHours"
+        android:fragment="com.android.settings.omnidirt.QuietHours"
         android:title="@string/quiet_hours_title" />
->>>>>>> 7082087... Quiet Hours [1/2]
 
     <CheckBoxPreference
             android:key="dtmf_tone"

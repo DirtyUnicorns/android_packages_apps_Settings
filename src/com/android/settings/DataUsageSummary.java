@@ -1040,7 +1040,10 @@ public class DataUsageSummary extends Fragment {
                 } else {
                     // disabling data; show confirmation dialog which eventually
                     // calls setMobileDataEnabled() once user confirms.
-                    ConfirmDataDisableFragment.show(DataUsageSummary.this);
+                    //ConfirmDataDisableFragment.show(DataUsageSummary.this);
+
+                    // we want to switch that without an extra confirmation
+                    setMobileDataEnabled(false);
                 }
             }
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.omnikang;
+package com.android.settings.omnidirt;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -41,7 +41,7 @@ import android.widget.ExpandableListView;
 import android.widget.TextView;
 
 import com.android.settings.R;
-import com.android.settings.cyanogenmod.ShortcutPickHelper.AppExpandableAdapter.GroupInfo;
+import com.android.settings.omnidirt.ShortcutPickHelper.AppExpandableAdapter.GroupInfo;
 
 public class ShortcutPickHelper {
 

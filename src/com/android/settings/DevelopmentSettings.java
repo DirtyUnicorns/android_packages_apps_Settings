@@ -556,6 +556,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         Settings.Secure.putInt(getActivity().getContentResolver(),
                 Settings.Secure.DEVELOPMENT_SHORTCUT,
                 mDevelopmentShortcut.isChecked() ? 1 : 0);
+    }
 
     private void updateDevelopmentShortcutOptions() {
         mAdvancedReboot.setChecked(Settings.Secure.getInt(getActivity().getContentResolver(),
@@ -1264,13 +1265,10 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                 mVerifyAppsOverUsb.setChecked(false);
                 updateBugreportOptions();
             }
-<<<<<<< HEAD
         } else if (preference == mAdbNotify) {
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.ADB_NOTIFY,
                     mAdbNotify.isChecked() ? 1 : 0);
-=======
->>>>>>> 87ce816... [2/3] settings: add support for adb over network
         } else if (preference == mAdbOverNetwork) {
             if (mAdbOverNetwork.isChecked()) {
                 if (mAdbTcpDialog != null) {

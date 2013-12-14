@@ -581,99 +581,6 @@
                 android:resource="@id/sound_settings" />
         </activity>
 
-        <activity android:name="Settings$BarsSettingsActivity"
-                android:label="@string/interface_bars_title"
-                android:taskAffinity=""
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.android.settings.SHORTCUT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="org.omnirom.omnigears.interfacesettings.BarSettings" />
-            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/interface_bars" />
-        </activity>
-
-        <activity android:name="Settings$MenusSettingsActivity"
-                android:label="@string/interface_menus_title"
-                android:taskAffinity=""
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.android.settings.SHORTCUT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="org.omnirom.omnigears.interfacesettings.MenusSettings" />
-            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/interface_menus" />
-        </activity>
-
-        <activity android:name="Settings$NotificationPanelSettingsActivity"
-                android:label="@string/interface_notification_panel_title"
-                android:taskAffinity=""
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.android.settings.SHORTCUT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="org.omnirom.omnigears.interfacesettings.NotificationPanelSettings" />
-            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/interface_notification_panel" />
-        </activity>
-
-        <activity android:name="Settings$MoreInterfaceSettingsActivity"
-                android:label="@string/interface_more_title"
-                android:taskAffinity=""
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.android.settings.SHORTCUT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="org.omnirom.omnigears.interfacesettings.MoreInterfaceSettings" />
-            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/interface_more" />
-        </activity>
-
-        <activity android:name="Settings$ActiveDisplaySettingsActivity"
-                android:label="@string/ad_settings_title"
-                android:taskAffinity=""
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.android.settings.SHORTCUT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="org.omnirom.omnigears.ActiveDisplaySettings" />
-            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/active_display" />
-        </activity>
-
-        <activity android:name="Settings$ActiveDisplaySettingsActivity"
-                android:label="@string/ad_settings_title"
-                android:taskAffinity=""
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="com.android.settings.SOUND_SETTINGS" />
-                <action android:name="android.settings.SOUND_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.VOICE_LAUNCH" />
-                <category android:name="com.android.settings.SHORTCUT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="org.omnirom.omnigears.ActiveDisplaySettings" />
-            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/active_display" />
-        </activity>
-
         <!-- Keep compatibility with old shortcuts. -->
         <activity-alias android:name="SoundSettings"
                 android:label="@string/sound_settings"
@@ -1665,18 +1572,16 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
-<<<<<<< HEAD
-=======
         <activity
-            android:name=".omnikang.OmniKangSettings"
-            android:label="@string/omnikang_settings" >
+            android:name=".omnidirt.OmniDirtSettings"
+            android:label="@string/dirt_settings" >
         </activity>
 
-        <activity android:name=".omnikang.Halo" />
-        <activity android:name=".omnikang.NotificationDrawerStyle" />
-        <activity android:name=".omnikang.LockscreenTargets" />
+        <!-- Dirty Tweaks -->
+        <activity android:name=".omnidirt.Halo" />
+        <activity android:name=".omnidirt.NotificationDrawerStyle" />
+        <activity android:name=".omnidirt.LockscreenTargets" />
 
->>>>>>> 78a633a... [1/2] Settings: HALO
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
                 android:label="@string/crypt_keeper_encrypt_title">

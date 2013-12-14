@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.omnikang;
+package com.android.settings.omnidirt;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -46,7 +46,7 @@ import com.android.internal.util.cm.LockscreenTargetUtils;
 import com.android.internal.widget.multiwaveview.GlowPadView;
 import com.android.internal.widget.multiwaveview.TargetDrawable;
 import com.android.settings.R;
-import com.android.settings.cyanogenmod.IconPicker.OnIconPickListener;
+import com.android.settings.omnidirt.IconPicker.OnIconPickListener;
 
 import java.io.File;
 import java.io.IOException;
@@ -134,7 +134,7 @@ public class LockscreenTargets extends Fragment implements
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, MENU_RESET, 0, R.string.profile_reset_title)
+        menu.add(0, MENU_RESET, 0, R.string.reset)
             .setIcon(R.drawable.ic_settings_backup) // use the backup icon
             .setAlphabeticShortcut('r')
             .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM |

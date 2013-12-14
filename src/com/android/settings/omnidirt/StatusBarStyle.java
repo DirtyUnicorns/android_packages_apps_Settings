@@ -16,7 +16,7 @@
 
 
 
-package com.android.settings.cyankang;
+package com.android.settings.omnidirt;
 
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -36,6 +36,8 @@ public class StatusBarStyle extends SettingsPreferenceFragment implements
 OnPreferenceChangeListener {
     
     private static final String QUICK_PULLDOWN = "quick_pulldown";
+
+    private static final String INTERFACE_NOTIFICATION_PANEL = "interface_notification_panel";
 
     private ListPreference mQuickPulldown;
 

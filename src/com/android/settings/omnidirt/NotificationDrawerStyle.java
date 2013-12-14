@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.omnikang;
+package com.android.settings.omnidirt;
 
 import android.app.Activity;
 import android.app.AlertDialog;
