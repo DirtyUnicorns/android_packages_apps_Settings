@@ -37,6 +37,11 @@
             android:key="lockscreen_targets"
             android:title="@string/powermenu_settings" />
 
+         <Preference
+            android:fragment="org.omnirom.omnigears.Animations"
+            android:key="animations"
+            android:title="@string/animations_cat" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
