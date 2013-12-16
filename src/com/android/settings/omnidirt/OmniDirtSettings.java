@@ -87,8 +87,23 @@ public class OmniDirtSettings extends SettingsPreferenceFragment implements
         mStatusBarNetStatsUpdate.setOnPreferenceChangeListener(this);
 
         mStatusBarTraffic_summary.setEnabled(!mStatusBarNetworkStats.isChecked());
+
+        boolean hasNavBar = getResources().getBoolean(com.android.internal.R.bool.config_showNavigationBar);
+        // Hide navigation bar category on devices without navigation bar
+        if (!hasNavBar) {
+            prefSet.removePreference(findPreference(CATEGORY_NAVBAR));
+        }
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
