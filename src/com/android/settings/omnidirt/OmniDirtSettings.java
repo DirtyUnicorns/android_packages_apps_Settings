@@ -56,7 +56,7 @@ public class OmniDirtSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+
         addPreferencesFromResource(R.xml.omnidirt_settings);
         PreferenceScreen prefSet = getPreferenceScreen();
 
@@ -87,28 +87,9 @@ public class OmniDirtSettings extends SettingsPreferenceFragment implements
         mStatusBarNetStatsUpdate.setOnPreferenceChangeListener(this);
 
         mStatusBarTraffic_summary.setEnabled(!mStatusBarNetworkStats.isChecked());
-
-        try {
-            boolean hasNavBar = WindowManagerGlobal.getWindowManagerService().hasNavigationBar();
-            // Hide navigation bar category on devices without navigation bar
-            if (!hasNavBar) {
-                prefSet.removePreference(findPreference(CATEGORY_NAVBAR));
-            }
-        } catch (RemoteException e) {
-            Log.e(TAG, "Error getting navigation bar status");
-        }
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-    }
-    
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
 
