@@ -26,6 +26,11 @@
                     android:targetClass="com.android.settings.deviceinfo.Status" />
         </PreferenceScreen>
 
+        <Preference
+            android:key="share"
+            android:title="@string/share_du_title"
+            android:summary="@string/share_du_summary" />
+
         <!-- Legal Information -->
         <PreferenceScreen
                 android:key="container"

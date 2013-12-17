@@ -496,4 +496,10 @@
     <string name="increasing_ring_interval_5seconds">5 seconds</string>
     <string name="increasing_ring_interval_10seconds">10 seconds</string>
 
+    <!-- Share Dirty Unicorns -->
+    <string name="share_du_title">Share Dirty Unicorns</string>
+    <string name="share_du_summary">Let others know about Dirty Unicorns</string>
+    <string name="share_message">Loving #DirtyUnicorns by Team D.I.R.T</string>
+    <string name="share_chooser_title">Share Dirty Unicorns</string>
+
 </resources>
