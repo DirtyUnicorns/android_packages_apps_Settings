@@ -1591,6 +1591,7 @@
         <activity android:name=".omnidirt.LockscreenTargets" />
         <activity android:name=".util.ShowBuildProp" />
         <activity android:name=".cyanogenmod.PropModder" />
+        <activity android:name=".InitD" />
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
