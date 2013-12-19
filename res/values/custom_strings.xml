@@ -561,7 +561,7 @@
 
     <!-- Init.d -->
     <string name="header_summary_init_d">@null</string>
-    <string name="init_d_title">Init.d</string>
+    <string name="init_d_title">Init.d Tweaks</string>
     <string name="app_name">Init.d Conf</string>
     <string name="pt_general">General</string>
     <string name="pt_zipalign_apks">Zipalign apps</string>
@@ -620,7 +620,7 @@
     <string name="pt_init_d_credits">Developed by:</string>
     <string name="ps_init_d_credits">Jared Rummler (JRummy16)</string>
     <string name="dt_init_d_error">Init.d error</string>
-    <string name="dm_init_d_error">It looks like init.d isn\'t setup properly. Please contact your ROM developer.</string>
+    <string name="dm_init_d_error">It looks like init.d isn\'t setup properly. Blame Kenneth!</string>
     <string name="db_exit">Exit</string>
 
 </resources>
