@@ -72,21 +72,11 @@
         android:key="navigation_bar"
         android:title="@string/navigation_bar_category">
 
-        <PreferenceScreen
+        <Preference
+            android:fragment="com.android.settings.omnidirt.NavBarSettings"
             android:key="navigation_bar"
-            android:fragment="com.android.settings.omnidirt.NavBar"
             android:icon="@drawable/ic_dt_navbar"
-            android:title="@string/navigation_bar_title" />
-
-        <PreferenceScreen
-            android:key="navigation_bar_dimen"
-            android:fragment="com.android.settings.omnidirt.NavBarDimen"
-            android:title="@string/navbar_dimen_title" />
-
-        <PreferenceScreen
-            android:key="navigation_ring"
-            android:fragment="com.android.settings.omnidirt.NavRing"
-            android:title="@string/navigation_ring_title" />
+            android:title="@string/navigation_bar_category" />
 
     </PreferenceCategory>
 
