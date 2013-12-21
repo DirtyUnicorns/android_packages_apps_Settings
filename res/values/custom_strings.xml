@@ -623,4 +623,10 @@
     <string name="dm_init_d_error">It looks like init.d isn\'t setup properly. Blame Kenneth!</string>
     <string name="db_exit">Exit</string>
 
+    <!--Lockscreen blur-->
+    <string name="blur_behind_title">Blur Lockscreen Background</string>
+    <string name="blur_behind_summary">See through lockscreen with blur effect</string>
+    <string name="blur_radius_title">Blur Radius</string>
+    <string name="blur_radius_summary">Set the blur radius for the blur effect</string>
+
 </resources>
