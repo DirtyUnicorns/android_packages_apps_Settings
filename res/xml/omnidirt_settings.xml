@@ -44,7 +44,7 @@
             android:title="@string/powermenu_settings" />
 
          <Preference
-            android:fragment="org.omnirom.omnigears.Animations"
+            android:fragment="com.android.settings.omnidirt.Animations"
             android:key="animations"
             android:icon="@drawable/ic_dt_animations"
             android:title="@string/animations_cat" />

@@ -1656,6 +1656,8 @@
         <activity android:name=".omnidirt.LockscreenTargets" />
         <activity android:name=".omnidirt.Traffic" />
         <activity android:name=".omnidirt.NavBarSettings" />
+        <activity android:name=".omnidirt.Animations" />
+        <activity android:name=".omnidirt.ListViewAnimations" />
         <activity android:name=".util.ShowBuildProp" />
         <activity android:name=".cyanogenmod.PropModder" />
         <activity android:name=".InitD" />
