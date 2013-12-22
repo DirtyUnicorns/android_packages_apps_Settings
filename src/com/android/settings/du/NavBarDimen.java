@@ -1,4 +1,4 @@
-package com.android.settings.omnidirt;
+package com.android.settings.du;
 
 import android.app.Activity;
 import android.app.AlertDialog;

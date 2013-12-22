@@ -16,7 +16,7 @@
 
 
 
-package com.android.settings.omnidirt;
+package com.android.settings.du;
 
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -34,7 +34,7 @@ import com.android.settings.Utils;
 
 public class StatusBarStyle extends SettingsPreferenceFragment implements
 OnPreferenceChangeListener {
-    
+
     private static final String QUICK_PULLDOWN = "quick_pulldown";
 
     private static final String INTERFACE_NOTIFICATION_PANEL = "interface_notification_panel";
@@ -44,9 +44,9 @@ OnPreferenceChangeListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+
         addPreferencesFromResource(R.xml.status_bar_style);
-        
+
         // Quick Settings pull down
         mQuickPulldown = (ListPreference) getPreferenceScreen().findPreference(QUICK_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);

@@ -1645,19 +1645,19 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
+        <!-- Dirty Tweaks -->
         <activity
-            android:name=".omnidirt.OmniDirtSettings"
+            android:name=".du.DirtyTweaks"
             android:label="@string/dirt_settings" >
         </activity>
 
-        <!-- Dirty Tweaks -->
-        <activity android:name=".omnidirt.Halo" />
-        <activity android:name=".omnidirt.NotificationDrawerStyle" />
-        <activity android:name=".omnidirt.LockscreenTargets" />
-        <activity android:name=".omnidirt.Traffic" />
-        <activity android:name=".omnidirt.NavBarSettings" />
-        <activity android:name=".omnidirt.Animations" />
-        <activity android:name=".omnidirt.ListViewAnimations" />
+        <activity android:name=".du.Halo" />
+        <activity android:name=".du.NotificationDrawerStyle" />
+        <activity android:name=".du.LockscreenTargets" />
+        <activity android:name=".du.Traffic" />
+        <activity android:name=".du.NavBarSettings" />
+        <activity android:name=".du.Animations" />
+        <activity android:name=".du.ListViewAnimations" />
         <activity android:name=".util.ShowBuildProp" />
         <activity android:name=".cyanogenmod.PropModder" />
         <activity android:name=".InitD" />

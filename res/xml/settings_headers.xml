@@ -72,7 +72,7 @@
     <header
         android:id="@+id/dirt_settings"
         android:icon="@drawable/ic_settings_dirt"
-        android:fragment="com.android.settings.omnidirt.OmniDirtSettings"
+        android:fragment="com.android.settings.du.DirtyTweaks"
         android:title="@string/dirt_settings" >
     </header>
 

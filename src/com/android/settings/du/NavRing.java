@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.omnidirt;
+package com.android.settings.du;
 
 import android.app.AlertDialog;
 import android.app.Fragment;

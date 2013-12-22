@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 OmniDirt
+ * Copyright (C) 2013 The Dirty Unicorns project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,19 +14,22 @@
  * limitations under the License.
  */
 
-package com.android.settings.omnidirt;
+package com.android.settings.du;
 
 import android.app.ActivityManagerNative;
-import android.content.Context;
+import android.app.ActivityManager;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.provider.Settings;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
+import android.preference.PreferenceCategory;
 import android.util.Log;
 import android.view.WindowManagerGlobal;
 import android.view.IWindowManager;
@@ -37,31 +40,15 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-public class OmniDirtSettings extends SettingsPreferenceFragment implements
+public class Animations extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "OmniDirtSettings";
-
-    private static final String CATEGORY_NAVBAR = "navigation_bar";
-    private final Configuration mCurConfig = new Configuration();
+    private static final String TAG = "Animations";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.omnidirt_settings);
-        PreferenceScreen prefSet = getPreferenceScreen();
-
-        ContentResolver resolver = getActivity().getContentResolver();
-
-        try {
-            boolean hasNavBar = WindowManagerGlobal.getWindowManagerService().hasNavigationBar();
-            // Hide navigation bar category on devices without navigation bar
-            if (!hasNavBar) {
-                prefSet.removePreference(findPreference(CATEGORY_NAVBAR));
-            }
-        } catch (RemoteException e) {
-            Log.e(TAG, "Error getting navigation bar status");
-        }
+        addPreferencesFromResource(R.xml.animations);
     }
     
     @Override

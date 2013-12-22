@@ -33,7 +33,7 @@
             android:summary="@string/ps_sd_boost"
             android:title="@string/pt_sd_boost" />
         <EditTextPreference
-            android:defaultValue="2048"
+            android:defaultValue="4096"
             android:dialogTitle="@string/pt_read_ahead_kb"
             android:key="read_ahead_kb"
             android:title="@string/pt_read_ahead_kb" />

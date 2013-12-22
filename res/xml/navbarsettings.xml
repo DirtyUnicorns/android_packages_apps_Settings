@@ -20,17 +20,17 @@
 
     <PreferenceScreen
         android:key="navigation_bar"
-        android:fragment="com.android.settings.omnidirt.NavBar"
+        android:fragment="com.android.settings.du.NavBar"
         android:title="@string/navigation_bar_title" />
 
     <PreferenceScreen
         android:key="navigation_bar"
-        android:fragment="com.android.settings.omnidirt.NavBarDimen"
+        android:fragment="com.android.settings.du.NavBarDimen"
         android:title="@string/navbar_dimen_title" />
 
     <PreferenceScreen
         android:key="navigation_bar"
-        android:fragment="com.android.settings.omnidirt.NavRing"
+        android:fragment="com.android.settings.du.NavRing"
         android:title="@string/navigation_ring_title" />
 
 </PreferenceScreen>

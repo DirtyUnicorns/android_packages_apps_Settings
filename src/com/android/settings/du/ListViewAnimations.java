@@ -16,7 +16,7 @@
  *
  */
 
-package com.android.settings.omnidirt;
+package com.android.settings.du;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;

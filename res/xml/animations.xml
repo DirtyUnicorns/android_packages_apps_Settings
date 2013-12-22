@@ -20,7 +20,7 @@
 
     <PreferenceScreen
         android:key="system_animations"
-        android:fragment="com.android.settings.omnidirt.ListViewAnimations"
+        android:fragment="com.android.settings.du.ListViewAnimations"
         android:title="@string/list_view_animations" />
 
     <PreferenceScreen

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 OmniDirt
+ * Copyright (C) 2013 The Dirty Unicorns project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.omnidirt;
+package com.android.settings.du;
 
 import android.app.ActivityManagerNative;
 import android.app.ActivityManager;
@@ -40,15 +40,17 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-public class Animations extends SettingsPreferenceFragment implements
+public class NavBarSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "Animations";
+    private static final String TAG = "NavBarSettings";
+
+    private static final String CATEGORY_NAVBAR = "navigation_bar";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.animations);
+        addPreferencesFromResource(R.xml.navbarsettings);
     }
     
     @Override

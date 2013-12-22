@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package com.android.settings.omnidirt;
+package com.android.settings.du;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -47,7 +47,7 @@ public class StatusBarTrafficColor extends SettingsPreferenceFragment implements
     private static final String PREF_NETWORK_SPEED_COLOR = "network_speed_color";
 
     private ColorPickerPreference mStatusBarTrafficColor;
-    
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

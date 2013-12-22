@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.omnidirt;
+package com.android.settings.du;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -46,7 +46,7 @@ import com.android.internal.util.cm.LockscreenTargetUtils;
 import com.android.internal.widget.multiwaveview.GlowPadView;
 import com.android.internal.widget.multiwaveview.TargetDrawable;
 import com.android.settings.R;
-import com.android.settings.omnidirt.IconPicker.OnIconPickListener;
+import com.android.settings.du.IconPicker.OnIconPickListener;
 
 import java.io.File;
 import java.io.IOException;

@@ -94,7 +94,7 @@ public class InitD extends SettingsPreferenceFragment {
 
     private void loadValues() {
         mPbarDialog = new ProgressDialog(InitD.this.getActivity());
-        mPbarDialog.setMessage("Loading values ...");
+        mPbarDialog.setMessage("Getting the Unicorns dirty...");
         mPbarDialog.show();
         new Thread() {
             @Override
