@@ -49,6 +49,12 @@
             android:icon="@drawable/ic_dt_animations"
             android:title="@string/animations_cat" />
 
+        <PreferenceScreen
+            android:key="quicksettings_tiles_style"
+            android:icon="@drawable/ic_dt_quicksettings"
+            android:fragment="com.android.settings.du.QuickSettings"
+            android:title="@string/quick_settings_title" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

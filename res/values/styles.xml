@@ -238,6 +238,13 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="TextAppearance.QuickSettings">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
     <style name="KeyguardAppWidgetItem">
         <item name="android:textSize">18sp</item>
     </style>
