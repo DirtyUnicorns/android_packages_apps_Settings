@@ -172,6 +172,7 @@
     <string name="quick_pulldown_right">Right</string>
 
     <!-- StatusBar Battery Settings -->
+    <string name="battery_status_none">Hide</string>
     <string name="battery_icon_title">Battery icon</string>
     <string name="battery_status_icon">Icon</string>
     <string name="battery_status_percentage">Percentage</string>

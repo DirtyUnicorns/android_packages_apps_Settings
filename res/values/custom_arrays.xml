@@ -104,6 +104,7 @@
         <item>@string/battery_status_circle_percentage</item>
         <item>@string/battery_status_dotted_circle</item>
         <item>@string/battery_status_dotted_circle_percentage</item>
+        <item>@string/battery_status_none</item>
     </string-array>
 
     <string-array name="values_battery_icon" translatable="false">
@@ -114,6 +115,7 @@
         <item>4</item>
         <item>5</item>
         <item>6</item>
+        <item>7</item>
     </string-array>
 
     <string-array name="circle_battery_animation_speed_entries" >
