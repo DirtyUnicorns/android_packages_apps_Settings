@@ -793,4 +793,9 @@
     <string name="music_tile_mode_background">Show album artwork</string>
     <string name="music_tile_mode_tracktitle">Show track title</string>
 
+    <!-- DU Changelog -->
+    <string name="duchangelog">Changelog</string>
+    <string name="du_summary">Check to see what has changed in DU</string>
+    <string name="du_app_name">DU Changelog</string>
+
 </resources>

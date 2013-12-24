@@ -1786,6 +1786,12 @@
             </intent-filter>
         </activity>
 
+        <!-- DU Changelog activities -->
+        <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.MainActivity" 
+                  android:label="@string/du_app_name"/>
+        <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.ListVersions"/>
+        <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.ChangeList"/>
+
         <!-- PerformanceControl activities -->
         <activity android:name="com.brewcrewfoo.performance.activities.MainActivity"/>
         <activity android:name="com.brewcrewfoo.performance.activities.PCSettings"/>
