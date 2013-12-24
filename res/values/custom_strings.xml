@@ -792,4 +792,8 @@
     <string name="du_summary">Check to see what has changed in DU</string>
     <string name="du_app_name">DU Changelog</string>
 
+    <!-- DU Stats -->
+    <string name="du_stats">DU Statistics</string>
+    <string name="du_stats_summary">Help make DU better by opting into anonymous stats reporting</string>
+
 </resources>

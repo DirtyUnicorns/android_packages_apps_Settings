@@ -26,6 +26,16 @@
                     android:targetClass="us.zamzow.mazwoz.dirtyunicornschangelog.MainActivity" />
         </PreferenceScreen>
 
+        <!-- DU Stats -->
+        <PreferenceScreen
+            android:key="dustats"
+            android:title="@string/du_stats"
+            android:summary="@string/du_stats_summary" >
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="android.romstats"
+                android:targetClass="android.romstats.AnonymousStats" />
+        </PreferenceScreen>
+
         <!-- DU Share -->
         <Preference
             android:key="share"

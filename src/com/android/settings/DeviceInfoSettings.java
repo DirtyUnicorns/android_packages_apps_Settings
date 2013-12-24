@@ -75,6 +75,7 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
     private static final String KEY_DEVICE_SCREEN_RESOLUTION = "device_screen_resolution";
     private static final String KEY_DU_SHARE = "share";
     private static final String KEY_CHANGELOG = "changelog";
+    private static final String KEY_DUSTATS = "dustats";
 
     long[] mHits = new long[3];
 
