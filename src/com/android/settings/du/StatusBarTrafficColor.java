@@ -68,7 +68,7 @@ public class StatusBarTrafficColor extends SettingsPreferenceFragment implements
         mStatusBarTrafficColor = (ColorPickerPreference) findPreference(PREF_NETWORK_SPEED_COLOR);
         mStatusBarTrafficColor.setOnPreferenceChangeListener(this);
         int intColor = Settings.System.getInt(getActivity().getContentResolver(),
-                    Settings.System.STATUS_BAR_TRAFFIC_COLOR, 0xff000000);
+                    Settings.System.STATUS_BAR_TRAFFIC_COLOR, 0xffffffff);
         String hexColor = String.format("#%08x", (0xffffffff & intColor));
         mStatusBarTrafficColor.setNewPreviewColor(intColor);
 
