@@ -555,11 +555,6 @@
     <string name="pref_gpu_title">GPU Acceleration</string>
     <string name="pref_gpu_summary">Enable hardware acceleration where the GPU controls the UI instead of the CPU</string>
 
-    <!-- SU warning -->
-    <string name="suwarning">These mods do not work unless you have SuperSU flashed or an equivalent. \n\n AGAIN, this DOES NOT work without SU!</string>
-    <string name="warning">WARNING</string>
-    <string name="agree">I UNDERSTAND</string>
-
     <!-- Init.d -->
     <string name="header_summary_init_d">@null</string>
     <string name="init_d_title">Init.d Tweaks</string>

@@ -26,8 +26,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.SystemProperties;
 import android.preference.CheckBoxPreference;
 import android.preference.EditTextPreference;
@@ -173,14 +171,9 @@ public class PropModder extends PreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         addPreferencesFromResource(R.xml.propmodder);
         prefSet = getPreferenceScreen();
-
-        new AlertDialog.Builder(getActivity())
-        .setTitle(R.string.warning)
-        .setMessage(R.string.suwarning)
-        .setPositiveButton(R.string.agree, null)
-        .show();
 
         mWifiScanPref = (ListPreference) prefSet.findPreference(WIFI_SCAN_PREF);
         mWifiScanPref.setOnPreferenceChangeListener(this);
