@@ -55,22 +55,11 @@
             android:fragment="com.android.settings.du.QuickSettings"
             android:title="@string/quick_settings_title" />
 
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/misc_recents">
-
          <Preference
-            android:fragment="org.omnirom.omnigears.interfacesettings.MoreInterfaceSettings"
-            android:key="lockscreen_targets"
-            android:icon="@drawable/ic_dt_clearall"
-            android:title="@string/recents_view" />
-
-         <Preference
-            android:fragment="org.omnirom.omnigears.crdroid.RamBar"
+            android:fragment="org.omnirom.omnigears.Recents"
             android:key="recents_ram_bar"
-            android:icon="@drawable/ic_dt_rambar"
-            android:title="@string/ram_bar" />
+            android:icon="@drawable/ic_dt_recents"
+            android:title="@string/recents_category" />
 
     </PreferenceCategory>
 
