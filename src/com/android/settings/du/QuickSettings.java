@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 The Dirty Unicorns project
+ * Copyright (C) 2013 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,41 +16,54 @@
 
 package com.android.settings.du;
 
-import android.app.ActivityManagerNative;
 import android.app.ActivityManager;
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.RemoteException;
-import android.os.ServiceManager;
 import android.provider.Settings;
+import android.preference.CheckBoxPreference;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.preference.PreferenceCategory;
+import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
 import android.view.WindowManagerGlobal;
-import android.view.IWindowManager;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
+import com.android.settings.utils.Helpers;
 
 public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "QuickSettings";
 
+    private static final String QS_QUICK_ACCESS = "qs_quick_access";
+    private static final String QS_QUICK_ACCESS_LINKED = "qs_quick_access_linked";
+
+    private CheckBoxPreference mQSQuickAccess;
+    private CheckBoxPreference mQSQuickAccess_linked;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        
         addPreferencesFromResource(R.xml.quick_settings);
+        PreferenceScreen prefSet = getPreferenceScreen();
+
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        mQSQuickAccess = (CheckBoxPreference) prefSet.findPreference(QS_QUICK_ACCESS);
+        mQSQuickAccess.setChecked((Settings.System.getInt(resolver,
+                Settings.System.QS_QUICK_ACCESS, 0) == 1));
+
+        mQSQuickAccess_linked = (CheckBoxPreference) prefSet.findPreference(QS_QUICK_ACCESS_LINKED);
+        mQSQuickAccess_linked.setChecked((Settings.System.getInt(resolver,
+                Settings.System.QS_QUICK_ACCESS_LINKED, 0) == 1));
     }
-    
+
     @Override
     public void onResume() {
         super.onResume();
@@ -61,32 +74,30 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         super.onPause();
     }
 
-    @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
-    }
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
-        return true;
-    }
-
-    private boolean removePreferenceIfPackageNotInstalled(Preference preference) {
-        String intentUri=((PreferenceScreen) preference).getIntent().toUri(1);
-        Pattern pattern = Pattern.compile("component=([^/]+)/");
-        Matcher matcher = pattern.matcher(intentUri);
-
-        String packageName=matcher.find()?matcher.group(1):null;
-        if(packageName != null) {
-            try {
-                getPackageManager().getPackageInfo(packageName, 0);
-            } catch (NameNotFoundException e) {
-                Log.e(TAG,"package "+packageName+" not installed, hiding preference.");
-                getPreferenceScreen().removePreference(preference);
-                return true;
-            }
-        }
         return false;
     }
 
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        boolean value;
+
+        if (preference == mQSQuickAccess) {
+            value = mQSQuickAccess.isChecked();
+            Settings.System.putInt(resolver,
+                    Settings.System.QS_QUICK_ACCESS, value ? 1 : 0);
+            Helpers.restartSystemUI();
+        } else if (preference == mQSQuickAccess_linked) {
+            value = mQSQuickAccess_linked.isChecked();
+            Settings.System.putInt(resolver,
+                    Settings.System.QS_QUICK_ACCESS_LINKED, value ? 1 : 0);
+           Helpers.restartSystemUI();
+        } else {
+            // If we didn't handle it, let preferences handle it.
+            return super.onPreferenceTreeClick(preferenceScreen, preference);
+        }
+        return true;
+    }
 }

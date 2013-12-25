@@ -36,6 +36,8 @@ import static com.android.internal.util.slim.QSConstants.TILE_MOBILEDATA;
 import static com.android.internal.util.slim.QSConstants.TILE_MUSIC;
 import static com.android.internal.util.slim.QSConstants.TILE_NETWORKMODE;
 import static com.android.internal.util.slim.QSConstants.TILE_NFC;
+import static com.android.internal.util.slim.QSConstants.TILE_QUICKRECORD;
+import static com.android.internal.util.slim.QSConstants.TILE_QUIETHOURS;
 import static com.android.internal.util.slim.QSConstants.TILE_RINGER;
 import static com.android.internal.util.slim.QSConstants.TILE_SCREENTIMEOUT;
 import static com.android.internal.util.slim.QSConstants.TILE_SETTINGS;
@@ -115,6 +117,9 @@ public class QuickSettingsUtil {
                 TILE_AUTOROTATE, R.string.title_tile_autorotate,
                 "com.android.systemui:drawable/ic_qs_auto_rotate"));
         registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_QUIETHOURS, R.string.title_tile_quiet_hours,
+                "com.android.systemui:drawable/ic_qs_quiet_hours_on"));
+        registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_SCREENTIMEOUT, R.string.title_tile_screen_timeout,
                 "com.android.systemui:drawable/ic_qs_screen_timeout"));
         registerTile(new QuickSettingsUtil.TileInfo(
@@ -147,6 +152,9 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_REBOOT, R.string.title_tile_reboot,
                 "com.android.systemui:drawable/ic_qs_reboot"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_QUICKRECORD, R.string.title_tile_quick_record,
+                "com.android.systemui:drawable/ic_qs_quickrecord"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {

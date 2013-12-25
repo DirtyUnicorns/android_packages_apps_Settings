@@ -18,6 +18,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/quick_settings_title">
 
+    <PreferenceCategory
+        android:key="quicksettings_tiles_style"
+        android:title="@string/slim_style_tiles">
+    </PreferenceCategory>
+
     <PreferenceScreen
         android:key="quicksettings_tiles_style"
         android:fragment="com.android.settings.slim.quicksettings.QuickSettingsTilesStyle"
@@ -29,4 +34,32 @@
         android:title="@string/tile_picker_title"
         android:summary="@string/tile_picker_summary"
         android:fragment="com.android.settings.slim.quicksettings.QuickSettingsTiles" />
+
+    <PreferenceCategory
+        android:key="quicksettings_tiles_style"
+        android:title="@string/cm_style_tiles">
+    </PreferenceCategory>
+
+    <CheckBoxPreference
+        android:key="qs_quick_access"
+        android:title="@string/title_quick_access"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
+        android:key="qs_quick_access_linked"
+        android:title="@string/title_quick_access_linked"
+        android:summary="@string/summary_quick_access_linked"
+        android:defaultValue="true"
+        android:dependency="qs_quick_access"
+        android:disableDependentsState="true" />
+
+    <PreferenceCategory
+        android:key="quicksettings_tiles_style"
+        android:title="@string/quick_settings_misc_cat">
+    </PreferenceCategory>
+
+    <PreferenceScreen
+        android:key="status_bar_style"
+        android:fragment="com.android.settings.du.StatusBarStyle"
+        android:title="@string/status_bar_style_title" />
 </PreferenceScreen>
