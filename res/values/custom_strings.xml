@@ -806,4 +806,8 @@
     <string name="title_quick_access_linked">Linked layout</string>
     <string name="summary_quick_access_linked">Use the same tiles and layout as the Quick Settings panel</string>
 
+    <!-- Lockscreen camera widget toggle -->
+    <string name="disable_camera_widget_title">Enable/Diable camera widget</string>
+    <string name="disable_camera_widget_summary">Toggle on/off camera widget on the lock screen</string>
+
 </resources>

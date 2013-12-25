@@ -62,6 +62,11 @@
             android:summary="@string/owner_info_settings_summary"/>
 
         <CheckBoxPreference
+            android:key="disable_camera_widget"
+            android:title="@string/disable_camera_widget_title"
+            android:summary="@string/disable_camera_widget_summary" />
+
+        <CheckBoxPreference
             android:key="allow_rotation"
             android:title="@string/allow_rotate_title"
             android:summary="@string/allow_rotate_summary"

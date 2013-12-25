@@ -24,6 +24,7 @@ import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.admin.DevicePolicyManager;
 import android.content.Context;
+import android.content.res.Resources;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -72,6 +73,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String KEY_BLUR_BEHIND = "blur_behind";
     private static final String KEY_BLUR_RADIUS = "blur_radius";
     private static final String KEY_ALLOW_ROTATION = "allow_rotation";
+    private static final String KEY_DISABLE_CAMERA_WIDGET = "disable_camera_widget";
 
     private static final int SET_OR_CHANGE_LOCK_METHOD_REQUEST = 123;
     private static final int CONFIRM_EXISTING_FOR_BIOMETRIC_WEAK_IMPROVE_REQUEST = 124;
@@ -121,6 +123,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mBlurBehind;
     private SeekBarPreference mBlurRadius;
     private CheckBoxPreference mAllowRotation;
+    private CheckBoxPreference mCameraWidget;
 
     private Preference mNotificationAccess;
 
@@ -256,6 +259,11 @@ public class SecuritySettings extends RestrictedSettingsFragment
         mAllowRotation = (CheckBoxPreference) findPreference(KEY_ALLOW_ROTATION);
         mAllowRotation.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.LOCKSCREEN_ROTATION, 0) == 1);
+
+        // Lockscreen Camera Widget
+        mCameraWidget = (CheckBoxPreference) findPreference(KEY_DISABLE_CAMERA_WIDGET);
+        mCameraWidget.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.DISABLE_CAMERA_WIDGET, 0) == 1);
 
         // Menu Unlock
         mMenuUnlock = (CheckBoxPreference) root.findPreference(MENU_UNLOCK_PREF);
@@ -671,6 +679,10 @@ public class SecuritySettings extends RestrictedSettingsFragment
         } else if (preference == mAllowRotation) {
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.LOCKSCREEN_ROTATION, mAllowRotation.isChecked()
+                    ? 1 : 0);
+        } else if (preference == mCameraWidget) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.DISABLE_CAMERA_WIDGET, mCameraWidget.isChecked()
                     ? 1 : 0);
         } else if (KEY_TOGGLE_VERIFY_APPLICATIONS.equals(key)) {
             Settings.Global.putInt(getContentResolver(), Settings.Global.PACKAGE_VERIFIER_ENABLE,
