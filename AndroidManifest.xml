@@ -1659,11 +1659,10 @@
         <activity android:name=".du.Animations" />
         <activity android:name=".du.ListViewAnimations" />
         <activity android:name=".du.CarrierLabel" />
+        <activity android:name=".du.AppSidebar" />
         <activity android:name=".util.ShowBuildProp" />
         <activity android:name=".cyanogenmod.PropModder" />
         <activity android:name=".InitD" />
-        <activity android:name=".chameleonos.AppSidebar" />
-        <activity android:name=".chameleonos.ExcludedAppsActivity" />
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
