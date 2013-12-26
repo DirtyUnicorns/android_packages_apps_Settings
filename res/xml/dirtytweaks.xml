@@ -97,6 +97,7 @@
 
          <Preference
             android:key="app_sidebar"
+            android:icon="@drawable/ic_dt_sidebar"
             android:fragment="com.android.settings.chameleonos.AppSidebar"
             android:title="@string/app_sidebar_title" />
 
