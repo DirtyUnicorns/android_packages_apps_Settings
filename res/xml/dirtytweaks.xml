@@ -25,13 +25,13 @@
     <PreferenceCategory
         android:title="@string/status_bar_title">
 
-        <PreferenceScreen
+         <Preference
             android:key="battery_style_pref"
             android:icon="@drawable/ic_dt_statusbar"
             android:fragment="com.android.settings.du.BatteryIconStyle"
             android:title="@string/status_bar_header" />
 
-        <Preference
+         <Preference
             android:fragment="com.android.settings.du.NotificationDrawerStyle"
             android:key="notification_style"
             android:icon="@drawable/ic_dt_notification"
@@ -49,7 +49,7 @@
             android:icon="@drawable/ic_dt_animations"
             android:title="@string/animations_cat" />
 
-        <PreferenceScreen
+         <Preference
             android:key="quicksettings_tiles_style"
             android:icon="@drawable/ic_dt_quicksettings"
             android:fragment="com.android.settings.du.QuickSettings"
@@ -67,7 +67,7 @@
         android:key="navigation_bar"
         android:title="@string/navigation_bar_category">
 
-        <Preference
+         <Preference
             android:fragment="com.android.settings.du.NavBarSettings"
             android:key="navigation_bar"
             android:icon="@drawable/ic_dt_navbar"
@@ -78,7 +78,7 @@
     <PreferenceCategory
         android:title="@string/lockscreen_category">
 
-        <Preference
+         <Preference
             android:fragment="com.android.settings.du.LockscreenTargets"
             android:icon="@drawable/ic_dt_lockscreen"
             android:key="lockscreen_targets"
@@ -95,7 +95,12 @@
             android:icon="@drawable/ic_dt_activedisplay"
             android:title="@string/active_display_settings" />
 
-        <Preference
+         <Preference
+            android:key="app_sidebar"
+            android:fragment="com.android.settings.chameleonos.AppSidebar"
+            android:title="@string/app_sidebar_title" />
+
+         <Preference
             android:fragment="com.android.settings.du.Halo"
             android:key="lockscreen_targets"
             android:icon="@drawable/ic_dt_halo"
@@ -113,7 +118,7 @@
             android:icon="@drawable/ic_dt_initd"
             android:title="@string/init_d_title" />
 
-        <PreferenceScreen
+         <Preference
             android:key="lockscreen_targets"
             android:fragment="com.android.settings.du.Traffic"
             android:icon="@drawable/ic_dt_traffic"
