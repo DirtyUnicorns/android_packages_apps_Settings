@@ -1663,6 +1663,8 @@
         <activity android:name=".util.ShowBuildProp" />
         <activity android:name=".cyanogenmod.PropModder" />
         <activity android:name=".InitD" />
+        <activity android:name=".chameleonos.labs.gestureanywhere.GestureAnywhereBuilderActivity" />
+        <activity android:name=".chameleonos.labs.gestureanywhere.GestureAnywhereCreateGestureActivity" />
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
