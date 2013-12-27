@@ -76,6 +76,7 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
     private static final String KEY_DU_SHARE = "share";
     private static final String KEY_CHANGELOG = "changelog";
     private static final String KEY_DUSTATS = "dustats";
+    private static final String KEY_ABOUTDIRT = "aboutdirt";
 
     long[] mHits = new long[3];
 

@@ -17,6 +17,16 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
+        <!-- DU About -->
+        <PreferenceScreen
+            android:key="aboutdirt"
+            android:title="@string/aboutdirt"
+            android:summary="@string/aboutdirt_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.dirtyunicorns.about"
+                    android:targetClass="com.dirtyunicorns.about.AboutActivity" />
+        </PreferenceScreen>
+
         <!-- DU Changelog -->
         <PreferenceScreen android:key="changelog"
                 android:title="@string/duchangelog" 

@@ -886,4 +886,8 @@
     <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
     <string name="ga_gestures_error_loading">Could not load %s. Make sure you have storage available.</string>
 
+    <!-- About Dirt -->
+    <string name="aboutdirt">About DU</string>
+    <string name="aboutdirt_summary">Info about the devs, maintainers, contributors and rom features</string>
+
 </resources>
