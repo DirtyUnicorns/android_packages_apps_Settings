@@ -1666,6 +1666,12 @@
         <activity android:name=".chameleonos.labs.gestureanywhere.GestureAnywhereBuilderActivity" />
         <activity android:name=".chameleonos.labs.gestureanywhere.GestureAnywhereCreateGestureActivity" />
 
+        <service android:name=".chameleonos.labs.identicons.IdenticonCreationService"
+                 android:exported="false" />
+
+        <service android:name=".chameleonos.labs.identicons.IdenticonRemovalService"
+                 android:exported="false" />
+
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
                 android:label="@string/crypt_keeper_encrypt_title">
