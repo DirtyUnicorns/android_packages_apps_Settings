@@ -34,7 +34,7 @@
     <color name="crypt_keeper_clock_am_pm">#ff9a9a9a</color>
 
     <color name="divider_color">#20ffffff</color>
-    <color name="title_color">@android:color/holo_blue_light</color>
+    <color name="title_color">@android:color/white</color>
     <color name="setup_divider_color_dark">#33ffffff</color>
     <color name="setup_divider_color_light">#33000000</color>
 
@@ -45,5 +45,5 @@
     <color name="tab_selector">#FFFFFFFF</color>
 
     <!-- Gesture Anywhere -->
-    <color name="ga_gesture_color">@android:color/holo_blue_light</color>
+    <color name="ga_gesture_color">@android:color/white</color>
 </resources>

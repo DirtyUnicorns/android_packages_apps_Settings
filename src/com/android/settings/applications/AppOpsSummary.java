@@ -33,7 +33,7 @@ import com.android.settings.R;
 public class AppOpsSummary extends Fragment {
     // layout inflater object used to inflate views
     private LayoutInflater mInflater;
-    
+
     private ViewGroup mContentContainer;
     private View mRootView;
     private ViewPager mViewPager;
@@ -104,7 +104,7 @@ public class AppOpsSummary extends Fragment {
         mViewPager.setAdapter(adapter);
         mViewPager.setOnPageChangeListener(adapter);
         PagerTabStrip tabs = (PagerTabStrip) rootView.findViewById(R.id.tabs);
-        tabs.setTabIndicatorColorResource(android.R.color.holo_blue_light);
+        tabs.setTabIndicatorColorResource(android.R.color.white);
 
         // We have to do this now because PreferenceFrameLayout looks at it
         // only when the view is added.
