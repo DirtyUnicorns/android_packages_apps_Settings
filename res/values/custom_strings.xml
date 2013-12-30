@@ -143,10 +143,14 @@
 
     <!-- Dirty Tweaks -->
     <string name="dirt_settings">Dirty Tweaks</string>
-    <string name="status_bar_title">General UI</string>
-    <string name="status_bar_header">StatusBar</string>
+    <string name="generalUI_title">User Interface</string>
+    <string name="statusbar_title">Status Bar</string>
+    <string name="system_title">System</string>
+    <string name="misc_title">Misc. Tweaks</string>
+    <string name="status_bar_header">Battery / Clock &amp; Date </string>
     <string name="status_bar_style_title">Quick Settings Pulldown</string>
     <string name="lockscreen_category">Lockscreen</string>
+    <string name="status_bar_misc">Misc Tweaks</string>
 
     <!-- Settings Group: Tweaks -->
     <string name="tweaks_category">Tweaks</string>
@@ -387,7 +391,7 @@
 
     <!-- Lock Screen Shortcuts -->
     <string name="lockscreen_target_info">Drag the slider to targets to assign shortcuts</string>
-    <string name="lockscreen_target_title">Slider shortcuts</string>
+    <string name="lockscreen_target_title">Lockscreen shortcuts</string>
     <string name="lockscreen_target_summary">View or change custom lock screen shortcuts</string>
     <string name="lockscreen_target_reset">Lock screen shortcuts reset to default</string>
     <string name="lockscreen_target_reset_title">Reset</string>
@@ -443,13 +447,9 @@
 
     <!-- Dirt Settings -->
     <string name="dirt_settings_title">Dirty Tweaks</string>
-    <string name="dirt_general">General UI</string>
-    <string name="dirt_generall">General UI</string>
-    <string name="status_bar_misc">Misc Tweaks</string>
     <string name="powermenu_settings">Power Menu</string>
     <string name="recents_view">Clear-All button</string>
     <string name="misc_traffic">Traffic Indicators</string>
-    <string name="misc_cat">Misc</string>
     <string name="animations_cat">Animations</string>
 
     <!-- Device specific settings -->
