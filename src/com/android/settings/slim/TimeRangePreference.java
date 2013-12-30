@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.du;
+package com.android.settings.slim;
 
 import java.util.Calendar;
 import java.util.Date;

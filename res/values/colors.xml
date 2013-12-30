@@ -15,6 +15,8 @@
 -->
 
 <resources>
+    <color name="holo_bright">#ffCCCCCC</color>
+    <color name="holo_light">#ff999999</color>
     <color name="black">#000</color>
     <color name="red">#F00</color>
     <color name="blue">#ff2e94fd</color>
