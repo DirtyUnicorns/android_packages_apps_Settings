@@ -151,9 +151,12 @@
     <string name="status_bar_style_title">Quick Settings Pulldown</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="status_bar_misc">Misc Tweaks</string>
-
-    <!-- Settings Group: Tweaks -->
-    <string name="tweaks_category">Tweaks</string>
+    <string name="dirt_settings_title">Dirty Tweaks</string>
+    <string name="powermenu_settings">Power Menu</string>
+    <string name="recents_view">Clear-All button</string>
+    <string name="misc_traffic">Traffic Indicators</string>
+    <string name="animations_cat">Animations</string>
+    <string name="lock_settings_misc_title">Misc Lockscreen Tweaks</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -444,13 +447,6 @@
     <string name="navring_action_torch">Toggle torch</string>
     <string name="navring_action_google_now">Google Now</string>
     <string name="navring_choose_action_title">Choose action</string>
-
-    <!-- Dirt Settings -->
-    <string name="dirt_settings_title">Dirty Tweaks</string>
-    <string name="powermenu_settings">Power Menu</string>
-    <string name="recents_view">Clear-All button</string>
-    <string name="misc_traffic">Traffic Indicators</string>
-    <string name="animations_cat">Animations</string>
 
     <!-- Device specific settings -->
     <string name="advanced_settings_title">Device specific</string>
