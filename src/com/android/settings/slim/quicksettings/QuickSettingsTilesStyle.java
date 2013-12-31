@@ -166,7 +166,7 @@ public class QuickSettingsTilesStyle extends SettingsPreferenceFragment implemen
 
         mTilesPerRow = (ListPreference) prefs.findPreference(PREF_TILES_PER_ROW);
         int tilesPerRow = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.QUICK_TILES_PER_ROW, 3);
+                Settings.System.QUICK_TILES_PER_ROW, 5);
         mTilesPerRow.setValue(String.valueOf(tilesPerRow));
         mTilesPerRow.setSummary(mTilesPerRow.getEntry());
         mTilesPerRow.setOnPreferenceChangeListener(this);
