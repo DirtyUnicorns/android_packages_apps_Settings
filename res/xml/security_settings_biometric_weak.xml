@@ -97,7 +97,7 @@
             android:key="blur_radius"
             android:title="@string/blur_radius_title"
             android:summary="@string/blur_radius_summary"
-            android:dependency="see_through"
+            android:dependency="blur_behind"
             android:max="25"
             android:defaultValue="12" />
 
