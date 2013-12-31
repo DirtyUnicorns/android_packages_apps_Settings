@@ -33,10 +33,10 @@
             android:title="@string/notification_style_title" />
 
          <Preference
-            android:fragment="com.android.settings.du.LockscreenTargets"
+            android:fragment="com.android.settings.du.LockscreenOptions"
             android:key="lockscreen_targets"
             android:layout="@layout/preference_lockscreenshortcuts"
-            android:title="@string/lockscreen_target_title" />
+            android:title="@string/lockscreen_screen_options" />
 
          <Preference
             android:fragment="org.omnirom.omnigears.interfacesettings.MenusSettings"

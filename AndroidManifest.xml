@@ -1654,6 +1654,7 @@
         <activity android:name=".du.Halo" />
         <activity android:name=".du.NotificationDrawerStyle" />
         <activity android:name=".du.LockscreenTargets" />
+        <activity android:name=".du.LockscreenOptions" />
         <activity android:name=".du.Traffic" />
         <activity android:name=".du.NavBarSettings" />
         <activity android:name=".du.Animations" />
