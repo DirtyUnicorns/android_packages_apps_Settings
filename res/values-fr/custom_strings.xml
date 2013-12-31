@@ -443,7 +443,7 @@
   <string name="pref_g_speed_summary">Uncap 3g speed</string>
   <string name="pref_gpu_title">Accélération GPU</string>
   <string name="pref_gpu_summary">Activer l\'accélération matérielle où le GPU contrôle l\'interface utilisateur au lieu du CPU</string>
-  <string name="header_summary_init_d">@nul</string>
+  <string name="header_summary_init_d">@null</string>
   <string name="init_d_title">Tweaks Init.d</string>
   <string name="app_name">Init.d Conf</string>
   <string name="pt_general">Général</string>
@@ -526,7 +526,7 @@
   <string name="title_animation_no_override">Empêcher Remplacements Applications</string>
   <string name="summary_animation_no_override">Empêcher les applications d\'outrepasser les transitions.</string>
   <string name="animation_duration_default">Défaut</string>
-  <string name="header_summary_animation">@nul</string>
+  <string name="header_summary_animation">@null</string>
   <string name="list_view_animations">Liste Voir Animations</string>
   <string name="bars_and_menus_category_system_title">Système</string>
   <string name="listview_animation_title">Animations</string>
