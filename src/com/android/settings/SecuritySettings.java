@@ -24,7 +24,6 @@ import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.admin.DevicePolicyManager;
 import android.content.Context;
-import android.content.res.Resources;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -37,7 +36,6 @@ import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.SeekBarPreference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
@@ -69,12 +67,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String KEY_LOCK_AFTER_TIMEOUT = "lock_after_timeout";
     private static final String KEY_OWNER_INFO_SETTINGS = "owner_info_settings";
     private static final String KEY_ENABLE_WIDGETS = "keyguard_enable_widgets";
-    private static final String KEY_SEE_TRHOUGH = "see_through";
-    private static final String KEY_BLUR_BEHIND = "blur_behind";
-    private static final String KEY_BLUR_RADIUS = "blur_radius";
-    private static final String KEY_ALLOW_ROTATION = "allow_rotation";
-    private static final String KEY_DISABLE_CAMERA_WIDGET = "disable_camera_widget";
-    private static final String LOCK_BEFORE_UNLOCK = "lock_before_unlock";
 
     private static final int SET_OR_CHANGE_LOCK_METHOD_REQUEST = 123;
     private static final int CONFIRM_EXISTING_FOR_BIOMETRIC_WEAK_IMPROVE_REQUEST = 124;
@@ -94,8 +86,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String PACKAGE_MIME_TYPE = "application/vnd.android.package-archive";
 
     // Additions
-    private static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
-    private static final String LOCKSCREEN_MAXIMIZE_WIDGETS = "lockscreen_maximize_widgets";
     private static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "lockscreen_quick_unlock_control";
     private static final String LOCK_NUMPAD_RANDOM = "lock_numpad_random";
     private static final String MENU_UNLOCK_PREF = "menu_unlock";
@@ -120,12 +110,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mToggleVerifyApps;
     private CheckBoxPreference mPowerButtonInstantlyLocks;
     private CheckBoxPreference mEnableKeyguardWidgets;
-    private CheckBoxPreference mSeeThrough;
-    private CheckBoxPreference mBlurBehind;
-    private SeekBarPreference mBlurRadius;
-    private CheckBoxPreference mAllowRotation;
-    private CheckBoxPreference mCameraWidget;
-    private CheckBoxPreference mLockBeforeUnlock;
 
     private Preference mNotificationAccess;
 
@@ -136,8 +120,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
     }
 
     // Additions
-    private CheckBoxPreference mLockRingBattery;
-    private CheckBoxPreference mMaximizeKeyguardWidgets;
     private CheckBoxPreference mQuickUnlockScreen;
     private ListPreference mLockNumpadRandom;
     private CheckBoxPreference mMenuUnlock;
@@ -231,42 +213,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
             updateLockAfterPreferenceSummary();
         }
 
-        // Add the additional settings
-        mLockRingBattery = (CheckBoxPreference) root
-                .findPreference(BATTERY_AROUND_LOCKSCREEN_RING);
-        if (mLockRingBattery != null) {
-            mLockRingBattery.setChecked(Settings.System.getInt(getContentResolver(),
-                    Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, 0) == 1);
-        }
-
-        mMaximizeKeyguardWidgets = (CheckBoxPreference) root.findPreference(LOCKSCREEN_MAXIMIZE_WIDGETS);
-        if (mMaximizeKeyguardWidgets != null) {
-            mMaximizeKeyguardWidgets.setChecked(Settings.System.getInt(getContentResolver(),
-                    Settings.System.LOCKSCREEN_MAXIMIZE_WIDGETS, 0) == 1);
-        }
-
-        // lockscreen see through
-        mSeeThrough = (CheckBoxPreference) root.findPreference(KEY_SEE_TRHOUGH);
-
-        // Blur lockscreen
-        mBlurBehind = (CheckBoxPreference) findPreference(KEY_BLUR_BEHIND);
-        mBlurBehind.setChecked(Settings.System.getInt(getContentResolver(),
-            Settings.System.LOCKSCREEN_BLUR_BEHIND, 0) == 1);
-        mBlurRadius = (SeekBarPreference) findPreference(KEY_BLUR_RADIUS);
-        mBlurRadius.setProgress(Settings.System.getInt(getContentResolver(),
-            Settings.System.LOCKSCREEN_BLUR_RADIUS, 12));
-        mBlurRadius.setOnPreferenceChangeListener(this);
-
-        // Rotate
-        mAllowRotation = (CheckBoxPreference) findPreference(KEY_ALLOW_ROTATION);
-        mAllowRotation.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.LOCKSCREEN_ROTATION, 0) == 1);
-
-        // Lockscreen Camera Widget
-        mCameraWidget = (CheckBoxPreference) findPreference(KEY_DISABLE_CAMERA_WIDGET);
-        mCameraWidget.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.DISABLE_CAMERA_WIDGET, 0) == 1);
-
         // Menu Unlock
         mMenuUnlock = (CheckBoxPreference) root.findPreference(MENU_UNLOCK_PREF);
         if (mMenuUnlock != null) {
@@ -306,16 +252,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
                     Settings.Secure.LOCK_NUMPAD_RANDOM, 0)));
             mLockNumpadRandom.setSummary(mLockNumpadRandom.getEntry());
             mLockNumpadRandom.setOnPreferenceChangeListener(this);
-        }
-
-        // Lock before Unlock
-        mLockBeforeUnlock = (CheckBoxPreference) root
-                .findPreference(LOCK_BEFORE_UNLOCK);
-        if (mLockBeforeUnlock != null) {
-            mLockBeforeUnlock.setChecked(
-                    Settings.Secure.getInt(getContentResolver(),
-                    Settings.Secure.LOCK_BEFORE_UNLOCK, 0) == 1);
-            mLockBeforeUnlock.setOnPreferenceChangeListener(this);
         }
 
         // Append the rest of the settings
@@ -660,12 +596,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
             lockPatternUtils.setPowerButtonInstantlyLocks(isToggled(preference));
         } else if (KEY_ENABLE_WIDGETS.equals(key)) {
             lockPatternUtils.setWidgetsEnabled(mEnableKeyguardWidgets.isChecked());
-        } else if (preference == mLockRingBattery) {
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, isToggled(preference) ? 1 : 0);
-        } else if (preference == mMaximizeKeyguardWidgets) {
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.LOCKSCREEN_MAXIMIZE_WIDGETS, isToggled(preference) ? 1 : 0);
         } else if (preference == mQuickUnlockScreen) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.LOCKSCREEN_QUICK_UNLOCK_CONTROL, isToggled(preference) ? 1 : 0);
@@ -682,20 +612,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
             } else {
                 setNonMarketAppsAllowed(false);
             }
-        } else if (preference == mSeeThrough) {
-            Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_SEE_THROUGH,
-                    mSeeThrough.isChecked() ? 1 : 0);
-        } else if (preference == mBlurBehind) {
-            Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_BLUR_BEHIND,
-                    mBlurBehind.isChecked() ? 1 : 0);
-        } else if (preference == mAllowRotation) {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.LOCKSCREEN_ROTATION, mAllowRotation.isChecked()
-                    ? 1 : 0);
-        } else if (preference == mCameraWidget) {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.DISABLE_CAMERA_WIDGET, mCameraWidget.isChecked()
-                    ? 1 : 0);
         } else if (KEY_TOGGLE_VERIFY_APPLICATIONS.equals(key)) {
             Settings.Global.putInt(getContentResolver(), Settings.Global.PACKAGE_VERIFIER_ENABLE,
                     mToggleVerifyApps.isChecked() ? 1 : 0);
@@ -744,19 +660,12 @@ public class SecuritySettings extends RestrictedSettingsFragment
                 Log.e("SecuritySettings", "could not persist lockAfter timeout setting", e);
             }
             updateLockAfterPreferenceSummary();
-        } else if (preference == mBlurRadius) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.LOCKSCREEN_BLUR_RADIUS, (Integer)value);
         } else if (preference == mLockNumpadRandom) {
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.LOCK_NUMPAD_RANDOM,
                     Integer.valueOf((String) value));
             mLockNumpadRandom.setValue(String.valueOf(value));
             mLockNumpadRandom.setSummary(mLockNumpadRandom.getEntry());
-        } else if (preference == mLockBeforeUnlock) {
-            Settings.Secure.putInt(getContentResolver(),
-                    Settings.Secure.LOCK_BEFORE_UNLOCK,
-                    ((Boolean) value) ? 1 : 0);
         }
         return true;
     }

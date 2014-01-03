@@ -27,4 +27,9 @@
         android:key="keyguard_style"
         android:fragment="com.android.settings.AOSPAL.LockscreenStyle"
         android:title="@string/lockscreen_style_title"/>
+
+    <PreferenceScreen
+        android:key="misc_lock_tweaks"
+        android:fragment="com.android.settings.du.LockscreenMiscTweaks"
+        android:title="@string/misc_title"/>
 </PreferenceScreen>
