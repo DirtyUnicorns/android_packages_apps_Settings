@@ -40,4 +40,10 @@
              android:key="notification_alpha"
              android:title="@string/notif_alpha_title" />
 
+        <CheckBoxPreference
+            android:key="force_expanded_notifications"
+            android:title="@string/force_expanded_notifications_title"
+            android:summary="@string/force_expanded_notifications_summary"
+            android:persistent="false" />
+
 </PreferenceScreen>

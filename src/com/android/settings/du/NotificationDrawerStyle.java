@@ -18,6 +18,7 @@ package com.android.settings.du;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.ContentResolver;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
@@ -27,6 +28,7 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -52,6 +54,8 @@ public class NotificationDrawerStyle extends SettingsPreferenceFragment implemen
 
     private static final String TAG = "NotificationDrawerStyle";
 
+    private static final String FORCE_EXPANDED_NOTIFICATIONS = "force_expanded_notifications";
+
     private static final String PREF_NOTIFICATION_WALLPAPER =
             "notification_wallpaper";
     private static final String PREF_NOTIFICATION_WALLPAPER_LANDSCAPE =
@@ -74,12 +78,15 @@ public class NotificationDrawerStyle extends SettingsPreferenceFragment implemen
     private static final int REQUEST_PICK_WALLPAPER_LANDSCAPE = 202;
 
     private Activity mActivity;
+    private CheckBoxPreference mForceExpanded;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         mActivity = getActivity();
+
+        final ContentResolver resolver = getActivity().getContentResolver();
 
         addPreferencesFromResource(R.xml.notification_bg_pref);
 
@@ -94,6 +101,10 @@ public class NotificationDrawerStyle extends SettingsPreferenceFragment implemen
         mNotificationWallpaperLandscape =
                 (ListPreference) findPreference(PREF_NOTIFICATION_WALLPAPER_LANDSCAPE);
         mNotificationWallpaperLandscape.setOnPreferenceChangeListener(this);
+
+        mForceExpanded = (CheckBoxPreference) prefSet.findPreference(FORCE_EXPANDED_NOTIFICATIONS);
+        mForceExpanded.setChecked((Settings.System.getInt(resolver,
+                Settings.System.FORCE_EXPANDED_NOTIFICATIONS, 0) == 1));
 
         if (!DeviceUtils.isPhone(mActivity)) {
             prefSet.removePreference(mNotificationWallpaperLandscape);
@@ -305,9 +316,18 @@ public class NotificationDrawerStyle extends SettingsPreferenceFragment implemen
                     updateCustomBackgroundSummary();
                     break;
             }
-            return true;
         }
         return false;
+    }
+
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if  (preference == mForceExpanded) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FORCE_EXPANDED_NOTIFICATIONS, checked ? 1:0);
+        }
+        return true;
     }
 
     private void showDialogInner(int id) {
