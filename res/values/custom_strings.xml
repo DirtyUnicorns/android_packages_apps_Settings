@@ -952,4 +952,6 @@
     <!-- WiFi forget all networks -->
     <string name="wifi_menu_forget_all">Forget all networks</string>
 
+    <string name="title_tile_network_adb">ADB over network</string>
+
 </resources>

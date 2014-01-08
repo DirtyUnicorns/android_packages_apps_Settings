@@ -50,6 +50,7 @@ import static com.android.internal.util.slim.QSConstants.TILE_VOLUME;
 import static com.android.internal.util.slim.QSConstants.TILE_WIFI;
 import static com.android.internal.util.slim.QSConstants.TILE_WIFIAP;
 import static com.android.internal.util.slim.QSConstants.TILE_REBOOT;
+import static com.android.internal.util.slim.QSConstants.TILE_NETWORKADB;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -147,6 +148,9 @@ public class QuickSettingsUtil {
                 TILE_WIFIAP, R.string.title_tile_wifiap,
                 "com.android.systemui:drawable/ic_qs_wifi_ap_on"));
         registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_NETWORKADB, R.string.title_tile_network_adb,
+                "com.android.systemui:drawable/ic_qs_network_adb_off"));
+        registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_MUSIC, R.string.title_tile_music,
                 "com.android.systemui:drawable/ic_qs_media_play"));
         registerTile(new QuickSettingsUtil.TileInfo(
@@ -206,6 +210,12 @@ public class QuickSettingsUtil {
         if (!DeviceUtils.deviceSupportsTorch(context)) {
             removeTile(TILE_TORCH);
         }
+
+        // Don't show the Network ADB tile if adb debugging is disabled
+        if (!DeviceUtils.adbEnabled(context)) {
+            removeTile(TILE_NETWORKADB);
+        }
+
 
     }
 
