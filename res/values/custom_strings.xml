@@ -885,9 +885,6 @@
     <string name="aboutdirt">About DU</string>
     <string name="aboutdirt_summary">Info about the devs, maintainers, contributors and rom features</string>
 
-    <!-- Themes -->
-    <string name="themes_settings_title">Themes</string>
-
     <!-- Identicons -->
     <string name="identicons_title">Identicons</string>
     <string name="identicons_enabled_title">Identicons</string>
