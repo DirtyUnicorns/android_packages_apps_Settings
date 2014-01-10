@@ -954,4 +954,7 @@
 
     <string name="title_tile_network_adb">ADB over network</string>
 
+    <!-- GPS QS tile -->
+    <string name="title_tile_gps">GPS</string>
+
 </resources>
