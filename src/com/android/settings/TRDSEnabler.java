@@ -87,7 +87,6 @@ public class TRDSEnabler implements CompoundButton.OnCheckedChangeListener {
         // Handle a switch change
         Settings.Secure.putInt(mContext.getContentResolver(),
                 Settings.Secure.UI_INVERTED_MODE, isChecked ? 2 : 1);
-        Helpers.restartSystemUI();
 
         ActivityManager am = (ActivityManager) mContext.getSystemService(Context.ACTIVITY_SERVICE);
         List<ActivityManager.RunningAppProcessInfo> pids = am.getRunningAppProcesses();
