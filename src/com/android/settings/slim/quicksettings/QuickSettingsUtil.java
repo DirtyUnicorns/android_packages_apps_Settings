@@ -52,6 +52,7 @@ import static com.android.internal.util.slim.QSConstants.TILE_WIFIAP;
 import static com.android.internal.util.slim.QSConstants.TILE_REBOOT;
 import static com.android.internal.util.slim.QSConstants.TILE_NETWORKADB;
 import static com.android.internal.util.slim.QSConstants.TILE_GPS;
+import static com.android.internal.util.slim.QSConstants.TILE_FCHARGE;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -163,6 +164,9 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_GPS, R.string.title_tile_gps,
                 "com.android.systemui:drawable/ic_qs_gps_off"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_FCHARGE, R.string.title_tile_fcharge,
+                "com.android.systemui:drawable/ic_qs_fcharge_off"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {
@@ -220,6 +224,10 @@ public class QuickSettingsUtil {
             removeTile(TILE_NETWORKADB);
         }
 
+        // Don't show the Fast charge tile if not supported by kernel
+        if (!DeviceUtils.fchargeEnabled(context)) {
+            removeTile(TILE_FCHARGE);
+        }
 
     }
 

@@ -1363,4 +1363,7 @@
     <!-- Text for Misc Tweaks entry -->
     <string name="misc_tweaks_title">Misc. Tweaks</string>
 
+    <!-- Fast charge QS tile -->
+    <string name="title_tile_fcharge">Fast charge</string>
+
 </resources>
