@@ -1592,6 +1592,7 @@
         <activity android:name=".du.LockscreenOptions" />
         <activity android:name=".du.LockscreenMiscTweaks" />
         <activity android:name=".du.Traffic" />
+        <activity android:name=".du.MiscTweaks" />
         <activity android:name=".du.NavBarSettings" />
         <activity android:name=".du.Animations" />
         <activity android:name=".du.ListViewAnimations" />

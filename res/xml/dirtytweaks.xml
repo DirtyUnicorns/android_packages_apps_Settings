@@ -50,6 +50,12 @@
             android:layout="@layout/preference_appbar"
             android:title="@string/app_sidebar_title"/>
 
+         <Preference
+            android:key="misc_tweaks"
+            android:fragment="com.android.settings.du.MiscTweaks"
+            android:layout="@layout/preference_misctweaks"
+            android:title="@string/misc_tweaks_title"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
