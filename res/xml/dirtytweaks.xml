@@ -39,7 +39,7 @@
             android:title="@string/lockscreen_screen_options" />
 
          <Preference
-            android:fragment="org.omnirom.omnigears.interfacesettings.MenusSettings"
+            android:fragment="com.android.settings.du.interfacesettings.MenusSettings"
             android:key="lockscreen_targets"
             android:layout="@layout/preference_powermenu"
             android:title="@string/powermenu_settings" />
@@ -104,10 +104,16 @@
             android:title="@string/quick_settings_title" />
 
          <Preference
-            android:fragment="org.omnirom.omnigears.Recents"
+            android:fragment="com.android.settings.du.Recents"
             android:key="recents_ram_bar"
             android:layout="@layout/preference_recents"
             android:title="@string/recents_category" />
+
+         <PreferenceScreen
+            android:key="interface_voice_tts"
+            android:fragment="com.android.settings.du.DrivingMode"
+            android:layout="@layout/preference_drivingmode"
+            android:title="@string/voice_tts_title" />
 
     </PreferenceCategory>
 
@@ -115,7 +121,7 @@
         android:title="@string/misc_title">
 
          <Preference
-            android:fragment="org.omnirom.omnigears.chameleonos.ActiveDisplaySettings"
+            android:fragment="com.android.settings.chameleonos.ActiveDisplaySettings"
             android:key="lockscreen_targets"
             android:layout="@layout/preference_ad"
             android:title="@string/active_display_settings" />

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2013 The OmniROM Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/brightness"
+        android:key="backlight_settings"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+        <PreferenceCategory
+                android:key="screen_brightness_category"
+                android:title="@string/screen_brightness_category">
+
+                <com.android.settings.BrightnessPreference
+                        android:title="@string/brightness"
+                        android:persistent="false"/>
+
+                <Preference
+                        android:key="screen_auto_brightness"
+                        android:title="@string/screen_auto_brightness"
+                        android:summary="@string/screen_auto_brighness_summary"/>
+        </PreferenceCategory>
+
+        <PreferenceCategory
+                android:key="button_brightness_category"
+                android:title="@string/button_brightness_category">
+
+                <Preference
+                        android:key="button_auto_brightness"
+                        android:title="@string/button_auto_brightness"
+                        android:summary="@string/button_auto_brighness_summary"/>
+                <Preference
+                        android:key="button_manual_brightness"
+                        android:title="@string/button_manual_brightness"
+                        android:summary="@string/button_manual_brightness_summary"/>
+                <CheckBoxPreference
+                        android:key="button_no_brightness"
+                        android:title="@string/button_no_brightness"
+                        android:summary="@string/button_no_brightness_summary"/>
+                <CheckBoxPreference
+                        android:key="button_link_brightness"
+                        android:title="@string/button_link_brightness"
+                        android:summary="@string/button_link_brightness_summary"/>
+                <Preference
+                        android:key="button_timeout"
+                        android:title="@string/button_timeout_title" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
+                android:key="sensor_category"
+                android:title="@string/sensor_category">
+
+                <ListPreference
+                        android:key="auto_brightness_sensitivity"
+                        android:title="@string/auto_brightness_sensitivity_title"
+                        android:summary="@string/auto_brightness_sensitivity_summary"
+                        android:persistent="false"
+                        android:entries="@array/auto_brightness_sensitivity_entries"
+                        android:entryValues="@array/auto_brightness_sensitivity_values" />
+
+        </PreferenceCategory>
+</PreferenceScreen>

@@ -20,7 +20,7 @@
 
     <PreferenceScreen
         android:key="battery_bar"
-        android:fragment="org.omnirom.omnigears.BatteryBarStyle"
+        android:fragment="com.android.settings.du.BatteryBarStyle"
         android:title="@string/battery_bar_title" />
 
     <ListPreference
@@ -63,7 +63,7 @@
 
     <PreferenceScreen
         android:key="status_bar_style"
-        android:fragment="org.omnirom.omnigears.interfacesettings.BarsSettings"
+        android:fragment="com.android.settings.du.interfacesettings.BarsSettings"
         android:title="@string/status_bar_misc" />
 
 </PreferenceScreen>

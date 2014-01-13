@@ -962,9 +962,405 @@
     <!-- WiFi forget all networks -->
     <string name="wifi_menu_forget_all">Forget all networks</string>
 
+    <!-- ADB QS tile -->
     <string name="title_tile_network_adb">ADB over network</string>
 
     <!-- GPS QS tile -->
     <string name="title_tile_gps">GPS</string>
+
+    <!-- StatusBar Battery -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="bars_and_menus_category_status_bar_title">Status bar</string>
+    <string name="recents_category">Recents</string>
+    <string name="status_bar_battery_title">Battery style</string>
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across status bar</string>
+    <string name="status_bar_toggle_info">Automatic brightness is enabled</string>
+    <string name="status_bar_signal_text_title">Signal status style</string>
+    <string name="status_bar_style_icon">Icon</string>
+    <string name="status_bar_style_hidden">Hidden</string>
+    <string name="status_bar_signal_text_show_text">Text</string>
+    <string name="status_bar_battery_status_percentage">Percentage</string>
+    <string name="status_bar_battery_status_circle">Circle</string>
+    <string name="status_bar_battery_status_circle_percentage">Circle with percentage</string>
+    <string name="status_bar_notif_count_title">Notification count</string>
+    <string name="status_bar_notif_count_summary">Show number of pending notifications</string>
+
+    <!-- String for IconPicker -->
+    <string name="icon_picker_title">Choose icon source</string>
+    <string name="icon_picker_system_icons_title">System icons</string>
+    <string name="icon_picker_gallery_title">Gallery</string>
+    <string name="icon_picker_pack_title">Icon pack</string>
+
+    <string name="profile_applist_title">Apps</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="profiles_add">Add</string>
+
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">Edit light settings</string>
+    <string name="pulse_speed_title">Pulse length and speed</string>
+    <string name="color_list_title">Color</string>
+    <string name="default_time">Normal</string>
+    <string name="custom_time">Custom</string>
+    <string name="dialog_test">Test</string>
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
+    <string name="dialog_test_message">Turn the screen off to see the selected notification in action or dismiss this dialog to stop the test</string>
+    <string name="dialog_test_button">Dismiss</string>
+
+    <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_enable">Enable</string>
+    <string name="notification_light_general_title">General</string>
+    <string name="notification_light_applist_title">Applications</string>
+    <string name="notification_light_phonelist_title">Phone</string>
+    <string name="notification_light_use_custom">Use custom values</string>
+    <string name="notification_light_enabled">Enabled</string>
+    <string name="notification_light_disabled">Disabled</string>
+    <string name="notification_light_default_value">Default</string>
+    <string name="notification_light_missed_call_title">Missed call</string>
+    <string name="notification_light_voicemail_title">Voicemail</string>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">Always on</string>
+    <string name="pulse_length_very_short">Very short</string>
+    <string name="pulse_length_short">Short</string>
+    <string name="pulse_length_normal">Normal</string>
+    <string name="pulse_length_long">Long</string>
+    <string name="pulse_length_very_long">Very long</string>
+    <string name="pulse_speed_very_fast">Very fast</string>
+    <string name="pulse_speed_fast">Fast</string>
+    <string name="pulse_speed_normal">Normal</string>
+    <string name="pulse_speed_slow">Slow</string>
+    <string name="pulse_speed_very_slow">Very slow</string>
+
+    <string name="led_color_green">Green</string>
+    <string name="led_color_red">Red</string>
+
+    <!-- Battery light settings  -->
+    <string name="battery_light_enable">Enable</string>
+    <string name="battery_low_pulse_title">Pulse if battery low</string>
+    <string name="battery_light_list_title">Colors</string>
+    <string name="battery_light_low_color_title">Battery low</string>
+    <string name="battery_light_medium_color_title">Charging</string>
+    <string name="battery_light_full_color_title">Charged (90%)</string>
+    <string name="battery_light_really_full_color_title">Charged (100%)</string>
+    <string name="edit_battery_settings">Edit battery settings</string>
+
+    <!-- brightness settings -->
+    <string name="brightness_settings_title">Brightness setup</string>
+    <string name="screen_current_value">Current screen value: <xliff:g id="screen_level">%d</xliff:g></string>
+    <string name="button_current_value">Current button value: <xliff:g id="button_level">%d</xliff:g></string>
+
+    <string name="auto_brightness_sensitivity_title">Adjustment sensitivity</string>
+    <string name="auto_brightness_sensitivity_summary">Medium</string>
+    <string name="auto_brightness_sensitivity_verylow">Very low</string>
+    <string name="auto_brightness_sensitivity_low">Low</string>
+    <string name="auto_brightness_sensitivity_medium">Medium</string>
+    <string name="auto_brightness_sensitivity_high">High</string>
+    <string name="auto_brightness_sensitivity_veryhigh">Very high</string>
+
+    <string name="screen_brightness_category">Screen</string>
+    <string name="screen_auto_brightness">Automatic levels</string>
+    <string name="screen_auto_brighness_summary">Screen brightness levels for automatic mode</string>
+    <string name="button_auto_brightness">Automatic levels</string>
+    <string name="button_auto_brighness_summary">Button brightness levels for automatic mode</string>
+    <string name="button_brightness_category">Buttons</string>
+    <string name="button_no_brightness">Dark mode</string>
+    <string name="button_no_brightness_summary">Don\'t set button brightness</string>
+    <string name="button_link_brightness">Link to screen</string>
+    <string name="button_link_brightness_summary">Buttons brightness will use the same value as the screen</string>
+    <string name="button_manual_brightness">Manual level</string>
+    <string name="button_manual_brightness_summary">Button brightness level for manual mode</string>
+    <string name="dialog_manual_brightness_title">Manual button brightness</string>
+    <!-- Automatic brightness customization -->
+    <string name="auto_brightness_setup_title">Automatic brightness</string>
+    <string name="light_sensor_current_value">Current light sensor value: <xliff:g id="light_level">%d</xliff:g> lux</string>
+    <string name="auto_brightness_dialog_title">Automatic brightness levels</string>
+    <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g></string>
+    <string name="auto_brightness_last_level_format"><xliff:g id="level">%1$d</xliff:g>+</string>
+    <string name="auto_brightness_adjust_button">Adjust</string>
+    <string name="auto_brightness_close_button">Close</string>
+    <string name="auto_brightness_reset_button">Reset</string>
+    <string name="auto_brightness_split_dialog_title">Split brightness level</string>
+    <string name="auto_brightness_level_dialog_title">Brightness level</string>
+    <string name="auto_brightness_lux">Ambient brightness (lux)</string>
+    <string name="auto_brightness_backlight">Brightness</string>
+    <string name="auto_brightness_reset_dialog_title">Reset levels?</string>
+    <string name="auto_brightness_reset_confirmation">All brightness levels will be reset to their default settings.</string>
+    <string name="auto_brightness_split_lux_format">Split position (between <xliff:g id="min">%1$d</xliff:g> and <xliff:g id="max">%2$d</xliff:g> lux)</string>
+    <string name="auto_brightness_level_options">Light level options</string>
+    <string name="auto_brightness_menu_edit">Edit</string>
+    <string name="auto_brightness_menu_split">Split</string>
+    <string name="auto_brightness_menu_remove">Remove</string>
+    <string name="sensor_category">Sensor</string>
+    <string name="button_timeout_title">Timeout</string>
+    <plurals name="button_timeout_time">
+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> second</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconds</item>
+    </plurals>
+    <string name="button_timeout_enabled">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="button_timeout_disabled">Disabled</string>
+    <string name="dialog_button_timeout_title">Button brightness timeout</string>
+
+    <!-- button settings -->
+    <string name="button_volume_keys_title">Volume</string>
+    <string name="button_volume_wake_title">Volume button wake</string>
+    <string name="button_volume_wake_summary">Pressing a volume button will wake your device</string>
+    <string name="button_headsethook_title">Headset</string>
+    <string name="button_headsethook_launch_voice_title">Headset launches voice</string>
+    <string name="button_headsethook_launch_voice_summary">Pressing the headset button will launch voice controls</string>
+    <string name="volume_music_controls_title">Volume rocker music controls</string>
+    <string name="volume_music_controls_summary">When screen off, long-pressing the volume rocker will seek music tracks</string>
+
+    <!-- Network speed -->
+    <string name="show_network_speed">Network speed indicator</string>
+    <string name="show_network_speed_summary">Show network speed in statusbar</string>
+
+    <!-- Status Bar Activity Indicators -->
+    <string name="show_activity_indicators_on_status_bar_title">Network activity indicator</string>
+    <string name="show_activity_indicators_on_status_bar_summary">Show network activity in statusbar</string>
+
+    <!-- Hardware keys -->
+    <string name="button_keys_title">Keys</string>
+    <string name="keys_bindings_title">Key actions</string>
+    <string name="button_keys_back_title" >Back key</string>
+    <string name="button_keys_home_title" >Home key</string>
+    <string name="button_keys_menu_title" >Menu key</string>
+    <string name="button_keys_assist_title" >Search key</string>
+    <string name="button_keys_appSwitch_title" >App switch key</string>
+    <string name="keys_enable_custom_title">Custom actions</string>
+    <string name="keys_back_press_title">Back key</string>
+    <string name="keys_back_long_press_title">Back key (long press)</string>
+    <string name="keys_home_press_title">Home key</string>
+    <string name="keys_home_long_press_title">Home key (long press)</string>
+    <string name="keys_home_double_tap_title">Home key (double tap)</string>
+    <string name="keys_menu_press_title">Menu key</string>
+    <string name="keys_menu_long_press_title">Menu key (long press)</string>
+    <string name="keys_assist_press_title">Search key</string>
+    <string name="keys_assist_long_press_title">Search key (long press)</string>
+    <string name="keys_app_switch_press_title">App switch key</string>
+    <string name="keys_app_switch_long_press_title">App switch key (long press)</string>
+    <string name="keys_action_nothing">No action</string>
+    <string name="keys_action_menu">Open/close menu</string>
+    <string name="keys_action_app_switch">Recent apps switcher</string>
+    <string name="keys_action_search">Search assistant</string>
+    <string name="keys_action_voice_search">Voice search</string>
+    <string name="keys_action_in_app_search">In-app search</string>
+    <string name="keys_action_home">Home button</string>
+    <string name="keys_action_back">Back button</string>
+    <string name="keys_action_last_app">Switch to last app</string>
+    <string name="keys_action_kill_app">Kill app</string>
+    <string name="keys_action_normal">Normal press</string>
+    <string name="keys_action_long">Long press</string>
+    <string name="keys_action_double">Double tap</string>
+    <string name="dialog_no_home_key_title">No home action</string>
+    <string name="no_home_key">You have no button assigned to the \"Home\" action! This can make your device unusable!</string>
+
+    <!-- Power Menu Options-->
+    <string name="bars_and_menus_category_power_menu_title">Power menu</string>
+    <string name="power_menu_toggle_screenshot_title">Screenshot</string>
+    <string name="power_menu_toggle_screenrecord_title">Screen Record</string>
+    <string name="power_menu_toggle_mobile_data_title">Mobile Data</string>
+    <string name="power_menu_toggle_airplane_mode_title">Airplane mode</string>
+    <string name="power_menu_toggle_sound_toggles_title">Sound toggles</string>
+
+    <!--  Recents clear all -->
+    <string name="show_recent_clear_all_button_title">Clear all button</string>
+    <string name="show_recent_clear_all_button_summary">Show clear all button within the recent applications view</string>
+    <string name="recent_clear_all_button_location_title">Clear all button position</string>
+    <string name="recent_clear_all_button_location_summary">Choose position of the clear all button</string>
+    <string name="recent_clear_all_button_location_top_left">Top left</string>
+    <string name="recent_clear_all_button_location_top_right">Top right</string>
+    <string name="recent_clear_all_button_location_bottom_left">Bottom left</string>
+    <string name="recent_clear_all_button_location_bottom_right">Bottom right</string>
+
+    <!-- Contextual Notification Panel Header -->
+    <string name="notification_drawer_category_title">Notification drawer</string>
+    <string name="custom_statusbar_header_title">Contextual notification panel header</string>
+    <string name="custom_statusbar_header_summary">Sets the background of the notification panel header to an image based on the current date and time</string>
+
+    <!-- Volume default -->
+    <string name="button_volume_default_none">None</string>
+    <string name="button_volume_default_ringer">Ringer</string>
+    <string name="button_volume_default_media">Media</string>
+    <string name="button_volume_default_title">Volume default</string>
+    <string name="button_volume_default_summary">Choose which volume gets changed by default</string>
+
+    <!-- Recents Ram Bar -->
+    <string name="ram_bar">RAM bar</string>
+    <string name="ram_bar_note_title">Note</string>
+    <string name="ram_bar_note_summary">This RAM bar shows the actual android memory (RAM) utilization. Please note that having cached apps helps your device open apps much faster. For further explanations on how android memory (RAM) management works, check the help menu.</string>
+    <string name="ram_bar_mode_title">Recents RAM bar mode</string>
+    <string name="ram_bar_mode_dialog_title">Show on recents RAM bar</string>
+    <string name="ram_bar_none">None</string>
+    <string name="ram_bar_apps">Applications</string>
+    <string name="ram_bar_cache">Applications and cache</string>
+    <string name="ram_bar_other">Applications, cache and other</string>
+    <string name="ram_bar_style_cat">Recents RAM bar style</string>
+    <string name="ram_bar_color_app_mem_color">Applications RAM color</string>
+    <string name="ram_bar_color_cache_mem_color">Cache RAM color</string>
+    <string name="ram_bar_color_total_mem_color">Other RAM color</string>
+    <string name="ram_bar_color_enabled">Enabled</string>
+    <string name="ram_bar_color_disabled">Disabled</string>
+    <string name="ram_bar_button_help">Help</string>
+    <string name="ram_bar_button_reset">Reset colors</string>
+    <string name="ram_bar_reset">Reset</string>
+    <string name="ram_bar_reset_message">Reset RAM bar style to default?</string>   
+
+    <!-- Battery Bar -->
+    <string name="battery_bar_title">Battery Bar</string>
+    <string name="battery_bar">Battery bar location</string>
+    <string name="battery_bar_color">Battery bar color</string>
+    <string name="battery_bar_cat">Battery bar style</string>
+    <string name="battery_bar_style_title">Battery bar alignment</string>
+    <string name="battery_bar_thickness_title">Battery bar thickness</string>
+    <string name="battery_bar_animate_title">Charging animation</string>
+    <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
+
+    <!-- Driving mode -->
+    <string name="voice_tts_title">Driving Mode</string>
+    <string name="tts_settings_reset_message">Reset all settings to default?</string>
+    <string name="voice_tts_notification_title">Drive mode</string>
+    <string name="voice_tts_notification_summary_on">Enable driving mode</string>
+    <string name="voice_tts_notification_summary_off">Disable driving mode</string>
+    <string name="voice_tts_volume_title">Volume</string>
+    <string name="voice_tts_volume_summary">Set volume for speak</string>
+    <string name="voice_tts_call_title">Incoming call</string>
+    <string name="voice_tts_call_summary">Enable/disable speak for Incoming calls</string>
+    <string name="voice_tts_sms_title">New message</string>
+    <string name="voice_tts_sms_summary">Enable/disable speak for New messages</string>
+    <string name="voice_tts_sms_read_title">Read new message</string>
+    <string name="voice_tts_sms_read_summary">Enable/disable speak for Read New messages</string>
+    <string name="voice_tts_charge_full_title">Battery full indicator</string>
+    <string name="voice_tts_charge_full_summary">Enable/disable speak for battery fully charged</string>
+    <string name="voice_tts_charge_on_title">Connect charger</string>
+    <string name="voice_tts_charge_on_summary">Enable/disable speak for charging connected</string>
+    <string name="voice_tts_charge_off_title">Disconnect charger</string>
+    <string name="voice_tts_charge_off_summary">Enable/disable speak for charging disconnected</string>
+    <string name="voice_tts_clock_title">Clock</string>
+    <string name="voice_tts_clock_summary">Enable/disable speak for clock after screen turn on</string>
+    <string name="voice_tts_date_title">Date</string>
+    <string name="voice_tts_date_summary">Enable/disable speak for date after screen turn on</string>
+    <string name="voice_tts_notif_title">Notification</string>
+    <string name="voice_tts_notif_summary">Enable/disable speak for new notification</string>
+    <string name="voice_tts_notif_read_title">Read new notifications</string>
+    <string name="voice_tts_notif_read_summary">Enable/disable speak for Read New messages from notifications</string>
+    <string name="voice_tts_whitelist_title">Included applications</string>
+    <string name="voice_tts_whitelist_summary">Which apps allowed to speak for new notifications</string>
+    <string name="voice_tts_music_title">Music track</string>
+    <string name="voice_tts_music_summary">Enable/disable speak for song name</string>
+    <string name="voice_tts_annoy_notif_title">Less frequent speak notification</string>
+    <string name="voice_tts_annoy_notif_summary">Limit the speak notification of each app to only play once per set time period</string>
+    <string name="voice_tts_annoy_notif_default">Default Behaviour</string>
+    <string name="voice_tts_annoy_notif_3s">3 seconds</string>
+    <string name="voice_tts_annoy_notif_5s">5 seconds</string>
+    <string name="voice_tts_annoy_notif_10s">10 seconds</string>
+    <string name="voice_tts_annoy_notif_15s">15 seconds</string>
+    <string name="voice_tts_annoy_notif_30s">30 seconds</string>
+    <string name="voice_tts_annoy_notif_45s">45 seconds</string>
+    <string name="voice_tts_annoy_notif_1m">1 minute</string>
+    <string name="voice_tts_annoy_notif_2m">2 minutes</string>
+    <string name="voice_tts_annoy_notif_5m">5 minutes</string>
+    <string name="voice_tts_new_call">Incoming call from </string>
+    <string name="voice_tts_new_sms">New text message from </string>
+    <string name="voice_tts_new_notif">New notification from </string>
+    <string name="voice_tts_charge_full">Battery fully charged</string>
+    <string name="voice_tts_charge_on">Charging Start</string>
+    <string name="voice_tts_charge_off">Charging Stop</string>
+    <string name="voice_tts_time">Time is</string>
+    <string name="voice_tts_date">Date is</string>
+    <string name="voice_tts_music">Now playing</string>
+    <string name="voice_tts_engine_started">Drive Mode Ready</string>
+    <string name="unknown_tts">Unknown</string>
+    <string name="unknown_number_tts">Unknown number</string>
+    <string name="time_one">One</string>
+    <string name="time_two">Two</string>
+    <string name="time_three">Three</string>
+    <string name="time_four">Four</string>
+    <string name="time_five">Five</string>
+    <string name="time_six">Six</string>
+    <string name="time_seven">Seven</string>
+    <string name="time_eight">Eight</string>
+    <string name="time_nine">Nine</string>
+    <string name="time_ten">Ten</string>
+    <string name="time_eleven">Eleven</string>
+    <string name="time_twelve">Twelve</string>
+    <string name="time_oclock">o Clock</string>
+    <string name="time_five_past">Five after</string>
+    <string name="time_ten_past">Ten after</string>
+    <string name="time_quarter_past">Quarter after</string>
+    <string name="time_twenty_past">Twenty</string>
+    <string name="time_twenty_five_past">TwentyFive after</string>
+    <string name="time_half_past">Half past</string>
+    <string name="time_twenty_five_to">TwentyFive till</string>
+    <string name="time_twenty_to">Twenty till</string>
+    <string name="time_quarter_to">Quarter till</string>
+    <string name="time_ten_to">Ten till</string>
+    <string name="time_five_to">Five till</string>
+
+    <!-- Active Display -->
+    <string name="active_display_settings">ActiveDisplay</string>
+    <string name="ad_settings_title">Active display</string>
+    <string name="ad_settings_summary">Change active display settings</string>
+    <string name="ad_enable_title">Enable</string>
+    <string name="ad_enable_summary_on">Active display enabled</string>
+    <string name="ad_enable_summary_off">Active display disabled</string>
+    <string name="ad_text_title">Notification text</string>
+    <string name="ad_text_summary">Show the notification text around the ring.</string>
+    <string name="ad_all_notifications_title">All notifications</string>
+    <string name="ad_all_notifications_summary">Show all notifications including ongoing, non-clearable notifications.</string>
+    <string name="ad_hide_low_priority_title">Hide low priority</string>
+    <string name="ad_hide_low_priority_title">Hide low priority</string>
+    <string name="ad_hide_low_priority_summary">Hide low priority notifications such as those from Google Now.</string>
+    <string name="ad_pocket_mode_title">Pocket mode</string>
+    <string name="ad_pocket_mode_summary">Show active display notifications when you take the device out of your pocket.</string>
+    <string name="ad_redisplay_title">Redisplay notifications</string>
+    <string name="ad_timeout_title">Display timeout</string>
+    <string name="ad_threshold_title">Threshold to proximity</string>
+    <string name="ad_brightness_title">Notification brightness</string>
+    <string name="ad_customizations_title">Customizations</string>
+    <string name="ad_excluded_apps_title">Excluded applications</string>
+    <string name="ad_excluded_apps_summary">Excluded applications will not show up in active display.</string>
+    <string name="ad_show_date_title">Show date</string>
+    <string name="ad_show_ampm_title">Show AM/PM</string>
+    <string name="ad_sunlight_mode_title">Sunlight mode</string>
+    <string name="ad_brightness_summary">Brightness level for displaying notifications when automatic brightness is not enabled.</string>
+    <string name="ad_show_date_summary">Show the date above the clock</string>
+    <string name="ad_show_ampm_summary">Show AM/PM indicator next to time when using 12hour format</string>
+    <string name="ad_sunlight_mode_summary">Invert the colors when in areas with bright light such as direct sunlight.</string>
+    <string name="ad_turnoff_mode_title">Turn off display</string>
+    <string name="ad_turnoff_mode_summary">Turn off display if the device gets pocketed again and was turned on by Active Display.</string>
+    <string name="ad_redisplay_never">Never</string>
+    <string name="ad_redisplay_1m">1 minute</string>
+    <string name="ad_redisplay_5m">5 minutes</string>
+    <string name="ad_redisplay_15m">15 minutes</string>
+    <string name="ad_redisplay_30m">30 minutes</string>
+    <string name="ad_redisplay_1h">1 hour</string>
+    <string name="ad_redisplay_2h">2 hours</string>
+    <string name="ad_redisplay_5h">5 hours</string>
+    <string name="ad_timeout_3s">3 seconds</string>
+    <string name="ad_timeout_5s">5 seconds</string>
+    <string name="ad_timeout_8s">8 seconds</string>
+    <string name="ad_timeout_10s">10 seconds</string>
+    <string name="ad_timeout_15s">15 seconds</string>
+    <string name="ad_timeout_25s">25 seconds</string>
+    <string name="ad_threshold_0s">Instant</string>
+    <string name="ad_threshold_1s">1 second</string>
+    <string name="ad_threshold_2s">2 seconds</string>
+    <string name="ad_threshold_3s">3 seconds</string>
+    <string name="ad_threshold_4s">4 seconds</string>
+    <string name="ad_threshold_5s">5 seconds</string>
+    <string name="ad_pocket_mode_off">Off</string>
+    <string name="ad_pocket_mode_notifications">Notifications only</string>
+    <string name="ad_pocket_mode_always">Always</string>
+    <string name="bars_and_menus_category_recent_panel_title" >Clear-All Button</string>
+
+    <!-- Text for forcing expanded notifications -->
+    <string name="disable_fc_notifications_title">Diable FC Notifications</string>
+    <string name="disable_fc_notifications_summary">This will hide all force close notificaitons</string>
+
+    <!-- Text for Misc Tweaks entry -->
+    <string name="misc_tweaks_title">Misc. Tweaks</string>
 
 </resources>
