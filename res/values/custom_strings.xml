@@ -1455,4 +1455,11 @@
     <string name="disable_safe_volume_title">Disable safe volume warning</string>
     <string name="disable_safe_volume_summary">This will disable the safe volume warning when using headphones. A reboot is necessary in order to take effect.</string>
 
+    <!-- Volume panel style -->
+    <string name="volume_overlay_title">Volume panel style</string>
+    <string name="volume_overlay_single">Single</string>
+    <string name="volume_overlay_expandable">Expandable</string>
+    <string name="volume_overlay_expanded">Expanded</string>
+    <string name="volume_overlay_none">None</string>
+
 </resources>
