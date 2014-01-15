@@ -67,7 +67,7 @@
 
     <!-- CUSTOMIZATIONS -->
     <header android:title="@string/header_category_dirt" />
-     
+
     <!-- Dirty Tweaks -->
     <header
         android:id="@+id/dirt_settings"
@@ -112,7 +112,7 @@
         android:id="@+id/button_settings"
         android:title="@string/header_button_settings"
         android:breadCrumbTitle="@string/header_button_settings"
-        android:fragment="org.omnirom.omnigears.ButtonSettings"
+        android:fragment="com.android.settings.ButtonSettings"
         android:icon="@drawable/ic_settings_buttons" />
 
     <!-- Advanced Settings -->
