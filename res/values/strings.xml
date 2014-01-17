@@ -4910,8 +4910,4 @@
 
     <!-- Text to display in regulatory info screen (from device overlay). -->
     <string name="regulatory_info_text"></string>
-
-    <!-- Text for forcing expanded notifications -->
-    <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
-    <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
 </resources>
