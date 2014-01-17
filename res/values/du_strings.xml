@@ -61,4 +61,7 @@
     <string name="share_message">Check out what #DirtyUnicorns is all about @ http://goo.gl/emISQ1</string>
     <string name="share_chooser_title">Share Dirty Unicorns</string>
 
+    <!-- SuperSU -->
+    <string name="supersu_title">SuperSU</string>
+
 </resources>
