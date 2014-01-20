@@ -67,6 +67,12 @@
             android:fragment="com.android.settings.du.BatteryIconStyle"
             android:title="@string/status_bar_header" />
 
+         <PreferenceScreen
+            android:key="battery_style_pref"
+            android:layout="@layout/preference_statusbarcolor"
+            android:fragment="com.android.settings.du.interfacesettings.StatusBarColor"
+            android:title="@string/custom_status_bar_header_title" />
+
          <Preference
             android:key="lockscreen_targets"
             android:fragment="com.android.settings.du.Traffic"

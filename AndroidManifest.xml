@@ -1607,6 +1607,7 @@
         <activity android:name=".du.batterylight.BatteryLightSettings" />
         <activity android:name=".du.brightness.BrightnessSettings" />
         <activity android:name=".du.interfacesettings.BarsSettings" />
+        <activity android:name=".du.interfacesettings.StatusBarColor" />
         <activity android:name=".du.interfacesettings.MenusSettings" />
         <activity android:name=".du.interfacesettings.NotificationPanelSettings" />
         <activity android:name=".du.notificationlight.NotificationLightSettings" />
