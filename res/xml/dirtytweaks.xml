@@ -85,12 +85,11 @@
         android:key="navigation_bar"
         android:title="@string/navigation_bar_category">
 
-         <Preference
-            android:fragment="com.android.settings.du.NavBarSettings"
+         <PreferenceScreen
+            android:fragment="com.android.settings.du.interfacesettings.NavBar"
             android:key="navigation_bar"
-            android:icon="@drawable/ic_dt_navbar"
             android:layout="@layout/preference_navbar"
-            android:title="@string/navigation_bar_category" />
+            android:title="@string/navigation_bar" />
 
     </PreferenceCategory>
 

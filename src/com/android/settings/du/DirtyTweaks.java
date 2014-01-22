@@ -63,7 +63,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment implements
             Log.e(TAG, "Error getting navigation bar status");
         }
     }
-    
+
     @Override
     public void onResume() {
         super.onResume();
