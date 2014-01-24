@@ -55,6 +55,12 @@
             android:summary="@string/volume_music_controls_summary"
             android:persistent="false" />
 
+         <CheckBoxPreference
+            android:key="disable_safe_volume"
+            android:title="@string/disable_safe_volume_title"
+            android:summary="@string/disable_safe_volume_summary"
+            android:persistent="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

@@ -75,6 +75,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String CATEGORY_HEADSETHOOK = "button_headsethook";
     private static final String BUTTON_HEADSETHOOK_LAUNCH_VOICE = "button_headsethook_launch_voice";
     private static final String BUTTON_VOLUME_MUSIC_CONTROLS = "volume_music_controls";
+    private static final String BUTTON_DISABLE_SAFE_VOLUME = "disable_safe_volume";
 
     private static final String KEYS_CATEGORY_BINDINGS = "keys_bindings";
     private static final String KEYS_ENABLE_CUSTOM = "keys_enable_custom";
@@ -127,6 +128,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private ListPreference mVolumeDefault;
     private CheckBoxPreference mHeadsetHookLaunchVoice;
     private CheckBoxPreference mVolumeMusicCtrl;
+    private CheckBoxPreference mDisableSafeVolume;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -165,6 +167,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             mVolumeMusicCtrl = (CheckBoxPreference) findPreference(BUTTON_VOLUME_MUSIC_CONTROLS);
             mVolumeMusicCtrl.setChecked(Settings.System.getInt(resolver,
                 Settings.System.VOLUME_MUSIC_CONTROLS, 0) != 0);
+
+            mDisableSafeVolume = (CheckBoxPreference) findPreference(BUTTON_DISABLE_SAFE_VOLUME);
+            mDisableSafeVolume.setChecked(Settings.System.getInt(resolver,
+                Settings.System.DISABLE_SAFE_VOLUME, 0) != 0);
         } else {
             prefScreen.removePreference(volumeCategory);
         }
@@ -396,6 +402,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             boolean checked = ((CheckBoxPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.VOLUME_MUSIC_CONTROLS, checked ? 1:0);
+
+            return true;
+        }
+        else if (preference == mDisableSafeVolume) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.DISABLE_SAFE_VOLUME, checked ? 1:0);
 
             return true;
         }
