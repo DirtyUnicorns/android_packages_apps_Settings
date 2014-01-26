@@ -91,6 +91,10 @@ public class PropModder extends PreferenceFragment implements
     private static final String VM_HEAPSIZE_PROP = "dalvik.vm.heapsize";
     private static final String VM_HEAPSIZE_PERSIST_PROP = "persist.vm_heapsize";
     private static final String VM_HEAPSIZE_DEFAULT = System.getProperty(VM_HEAPSIZE_PROP);
+    private static final String LCD_DENSITY_PREF = "pref_lcd_density";
+    private static final String LCD_DENSITY_PROP = "ro.sf.lcd_density";
+    private static final String LCD_DENSITY_PERSIST_PROP = "persist.lcd_density";
+    private static final String LCD_DENSITY_DEFAULT = System.getProperty(LCD_DENSITY_PROP);
     private static final String FAST_UP_PREF = "pref_fast_up";
     private static final String FAST_UP_PROP = "ro.ril.hsxpa";
     private static final String FAST_UP_PERSIST_PROP = "persist.fast_up";
@@ -150,6 +154,7 @@ public class PropModder extends PreferenceFragment implements
     private ListPreference mMaxEventsPref;
     private ListPreference mRingDelayPref;
     private ListPreference mVmHeapsizePref;
+    private ListPreference mLcdDensityPref;
     private ListPreference mFastUpPref;
     private ListPreference mProxDelayPref;
     private EditTextPreference mModVersionPref;
@@ -186,6 +191,9 @@ public class PropModder extends PreferenceFragment implements
 
         mVmHeapsizePref = (ListPreference) prefSet.findPreference(VM_HEAPSIZE_PREF);
         mVmHeapsizePref.setOnPreferenceChangeListener(this);
+
+        mLcdDensityPref = (ListPreference) prefSet.findPreference(LCD_DENSITY_PREF);
+        mLcdDensityPref.setOnPreferenceChangeListener(this);
 
         mFastUpPref = (ListPreference) prefSet.findPreference(FAST_UP_PREF);
         mFastUpPref.setOnPreferenceChangeListener(this);
@@ -281,6 +289,9 @@ public class PropModder extends PreferenceFragment implements
                         newValue.toString());
             } else if (preference == mVmHeapsizePref) {
                 return doMod(VM_HEAPSIZE_PERSIST_PROP, VM_HEAPSIZE_PROP,
+                        newValue.toString());
+            } else if (preference == mLcdDensityPref) {
+                return doMod(LCD_DENSITY_PERSIST_PROP, LCD_DENSITY_PROP,
                         newValue.toString());
             } else if (preference == mFastUpPref) {
                 return doMod(FAST_UP_PERSIST_PROP, FAST_UP_PROP,
@@ -399,6 +410,13 @@ public class PropModder extends PreferenceFragment implements
             mVmHeapsizePref.setSummary(String.format(getString(R.string.pref_vm_heapsize_alt_summary), vm));
         } else {
             mVmHeapsizePref.setValue(VM_HEAPSIZE_DEFAULT);
+        }
+        String lcd = Helpers.findBuildPropValueOf(LCD_DENSITY_PROP);
+        if (!lcd.equals(DISABLE)) {
+            mLcdDensityPref.setValue(lcd);
+            mLcdDensityPref.setSummary(String.format(getString(R.string.pref_lcd_density_alt_summary), lcd));
+        } else {
+            mLcdDensityPref.setValue(LCD_DENSITY_DEFAULT);
         }
         String fast = Helpers.findBuildPropValueOf(FAST_UP_PROP);
         if (!fast.equals(DISABLE)) {

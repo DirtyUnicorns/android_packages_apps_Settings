@@ -476,6 +476,9 @@
     <string name="pref_vm_heapsize_title">Dalvik cache heapsize</string>
     <string name="pref_vm_heapsize_summary">This controls the size of the cache the Dalvik VM has access to</string>
     <string name="pref_vm_heapsize_alt_summary">Dalvik VM cache size: %s</string>
+    <string name="pref_lcd_density_title">LCD Density</string>
+    <string name="pref_lcd_density_summary">This controls the density of the LCD (dpi)</string>
+    <string name="pref_lcd_density_alt_summary">LCD Density: %s</string>
     <string name="showbuild_title">Show The Build.Prop</string>
     <string name="buildprop_summary">Find out whats in there</string>
     <string name="showbuild_dialog">Displaying /system/Build.Prop</string>
