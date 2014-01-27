@@ -91,6 +91,12 @@
             android:layout="@layout/preference_navbar"
             android:title="@string/navigation_bar" />
 
+         <PreferenceScreen
+            android:key="navigation_bar"
+            android:fragment="com.android.settings.du.interfacesettings.NavBarDimen"
+            android:layout="@layout/preference_navbar_dimen"
+            android:title="@string/navbar_dimen_title" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
