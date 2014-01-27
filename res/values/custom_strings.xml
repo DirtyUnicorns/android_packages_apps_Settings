@@ -1363,4 +1363,8 @@
     <string name="navigation_bar_menu_editable">Editable</string>
     <string name="navigation_bar_menu_locked">Locked</string>
 
+    <!-- Disable safe volume warning with headphones -->
+    <string name="disable_safe_volume_title">Disable safe volume warning</string>
+    <string name="disable_safe_volume_summary">This will disable the safe volume warning when using headphones. A reboot is necessary in order to take effect.</string>
+
 </resources>
