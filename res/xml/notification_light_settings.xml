@@ -25,6 +25,12 @@
         android:key="general_section"
         android:title="@string/notification_light_general_title">
 
+        <CheckBoxPreference
+            android:key="screen_on_notification_led"
+            android:title="@string/screen_on_notification_led_title"
+            android:summary="@string/screen_on_notification_led_summary"
+            android:defaultValue="true" />
+
         <com.android.settings.du.notificationlight.ApplicationLightPreference
             android:key="default"
             android:title="@string/notification_light_default_value"

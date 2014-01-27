@@ -78,6 +78,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private static final String NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR = "notification_light_pulse_vmail_color";
     private static final String NOTIFICATION_LIGHT_PULSE_VMAIL_LED_ON = "notification_light_pulse_vmail_led_on";
     private static final String NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF = "notification_light_pulse_vmail_led_off";
+    private static final String KEY_SCREEN_ON_NOTIFICATION_LED = "screen_on_notification_led";
     private static final String PULSE_PREF = "pulse_enabled";
     private static final String DEFAULT_PREF = "default";
     private static final String CUSTOM_PREF = "custom_enabled";
@@ -95,6 +96,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private PreferenceGroup mApplicationPrefList;
     private SwitchPreference mEnabledPref;
     private SwitchPreference mCustomEnabledPref;
+    private CheckBoxPreference mScreenOnNotificationLed;
     private ApplicationLightPreference mDefaultPref;
     private ApplicationLightPreference mCallPref;
     private ApplicationLightPreference mVoicemailPref;
@@ -131,6 +133,13 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
         mDefaultPref = (ApplicationLightPreference) findPreference(DEFAULT_PREF);
         mDefaultPref.setOnPreferenceChangeListener(this);
+
+        int statusScreenOnNotificationLed = Settings.System.getInt(getContentResolver(),
+                Settings.System.SCREEN_ON_NOTIFICATION_LED, 1);
+
+        mScreenOnNotificationLed = (CheckBoxPreference) findPreference(KEY_SCREEN_ON_NOTIFICATION_LED);
+        mScreenOnNotificationLed.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.SCREEN_ON_NOTIFICATION_LED, 0) == 1);
 
         // Missed call and Voicemail preferences should only show on devices with a voice capabilities
         TelephonyManager tm = (TelephonyManager) getActivity().getSystemService(Context.TELEPHONY_SERVICE);
@@ -378,6 +387,19 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         }
 
         return true;
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if (preference == mScreenOnNotificationLed) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SCREEN_ON_NOTIFICATION_LED,
+                    mScreenOnNotificationLed.isChecked() ? 1 : 0);
+
+            return true;
+        }
+
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     @Override

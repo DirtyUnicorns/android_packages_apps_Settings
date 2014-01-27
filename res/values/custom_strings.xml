@@ -943,6 +943,10 @@
     <string name="dialog_test_message">Turn the screen off to see the selected notification in action or dismiss this dialog to stop the test</string>
     <string name="dialog_test_button">Dismiss</string>
 
+    <!-- Screen-On Notification Light -->
+    <string name="screen_on_notification_led_title">Screen-On Notification Light</string>
+    <string name="screen_on_notification_led_summary">Enable Notification Light even when screen is on</string>
+
     <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_enable">Enable</string>
     <string name="notification_light_general_title">General</string>
