@@ -126,6 +126,16 @@
             android:layout="@layout/preference_drivingmode"
             android:title="@string/voice_tts_title" />
 
+         <PreferenceScreen
+            android:id="@+id/hfm"
+            android:layout="@layout/preference_hfm"
+            android:title="@string/hfm_title" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.dirtyunicorns.hfm"
+                android:targetClass="com.dirtyunicorns.hfm.MainActivity" />
+         </PreferenceScreen>
+
     </PreferenceCategory>
 
     <PreferenceCategory
