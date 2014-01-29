@@ -79,6 +79,7 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
     private static final String KEY_ABOUTDIRT = "aboutdirt";
 
     long[] mHits = new long[3];
+    long[] mTaps = new long[3];
 
     public DeviceInfoSettings() {
         super(null /* Don't PIN protect the entire screen */);
@@ -105,6 +106,7 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
         setStringSummary(KEY_KERNEL_VERSION, getFormattedKernelVersion());
         findPreference(KEY_KERNEL_VERSION).setEnabled(true);
         setValueSummary(KEY_MOD_VERSION, "ro.du.version");
+        findPreference(KEY_MOD_VERSION).setEnabled(true);
 
         addStringPreference(KEY_DEVICE_CPU,
                 SystemProperties.get("ro.device.cpu", getCPUInfo()));
@@ -174,6 +176,19 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
                 Intent intent = new Intent(Intent.ACTION_MAIN);
                 intent.setClassName("android",
                         com.android.internal.app.PlatLogoActivity.class.getName());
+                try {
+                    startActivity(intent);
+                } catch (Exception e) {
+                    Log.e(LOG_TAG, "Unable to start activity " + intent.toString());
+                }
+            }
+        } else if (preference.getKey().equals(KEY_MOD_VERSION)) {
+            System.arraycopy(mTaps, 1, mTaps, 0, mTaps.length-1);
+            mTaps[mTaps.length-1] = SystemClock.uptimeMillis();
+            if (mTaps[0] >= (SystemClock.uptimeMillis()-500)) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setClassName("android",
+                        com.android.internal.app.DirtyUnicornsActivity.class.getName());
                 try {
                     startActivity(intent);
                 } catch (Exception e) {
