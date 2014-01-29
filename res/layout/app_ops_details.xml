@@ -18,13 +18,16 @@
 -->
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all_details"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToPadding="false"
-    android:scrollbarStyle="@integer/preference_scrollbar_style">
+    android:paddingBottom="5dip"
+    android:orientation="vertical"
+    android:scrollbarStyle="@*android:integer/preference_fragment_scrollbarStyle">
 
+    <!-- App snippet -->
     <LinearLayout
-        android:id="@+id/all_details"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingBottom="5dip"
