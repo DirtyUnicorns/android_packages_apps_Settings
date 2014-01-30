@@ -228,7 +228,7 @@
 
     <!-- Network speed -->
     <string name="enable_network_speed">Network speed indicator</string>
-    <string name="enable_network_speed_summary">Show network speed in statusbar</string> 
+    <string name="enable_network_speed_summary">Show network speed in statusbar</string>
     <string name="hide_network_speed">Hide when there is no traffic</string>
     <string name="hide_network_speed_summary">Hide network speed indicator when there is no traffic</string>
     <string name="network_speed_summary">Show summary of traffic</string>
@@ -1219,7 +1219,7 @@
     <string name="ram_bar_button_help">Help</string>
     <string name="ram_bar_button_reset">Reset colors</string>
     <string name="ram_bar_reset">Reset</string>
-    <string name="ram_bar_reset_message">Reset RAM bar style to default?</string>   
+    <string name="ram_bar_reset_message">Reset RAM bar style to default?</string>
 
     <!-- Battery Bar -->
     <string name="battery_bar_title">Battery Bar</string>
@@ -1392,6 +1392,15 @@
     <string name="theme_auto_mode_lightsensor">On light condition change</string>
     <string name="theme_auto_mode_twilight">On daytime</string>
     <string name="theme_auto_switch_mode_error">Automatic light condition change mode is enabled. Manual switching is not possible.</string>
+
+    <!-- Sound themes -->
+    <string name="sound_packages_title">Sound packs</string>
+    <string name="install_sound_pack_title">Install sound pack</string>
+    <string name="install_sound_pack_summary">Install new sound packs added in SoundPacks folder on the internal storage</string>
+    <string name="select_sound_pack_title">Select sound pack</string>
+    <string name="select_sound_pack_summary">Select the active sound pack</string>
+    <string name="default_sound_pack">Default (System)</string>
+    <string name="error_pack_install">Error while installing the sound pack</string>
 
     <!-- Text for forcing expanded notifications -->
     <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
@@ -1594,7 +1603,7 @@
     <string name="profile_trigger_connect">On connect</string>
     <string name="profile_trigger_disconnect">On disconnect</string>
     <string name="profile_trigger_notrigger">No trigger</string>
-    
+
     <!-- Profile Settings sound modes labels -->
     <string name="sound_mode">Notification mode</string>
     <string name="ringer_mode">Ring mode</string>
