@@ -23,9 +23,11 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.admin.DevicePolicyManager;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.pm.UserInfo;
@@ -44,6 +46,9 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import com.android.internal.telephony.util.BlacklistUtils;
+
+import com.android.internal.telephony.IccCardConstants;
+import com.android.internal.telephony.TelephonyIntents;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 
@@ -136,6 +141,39 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mQuickUnlockScreen;
     private ListPreference mLockNumpadRandom;
     private CheckBoxPreference mMenuUnlock;
+
+    private BroadcastReceiver mReceiver = new BroadcastReceiver() {
+        public void onReceive(Context context, Intent intent) {
+            final String action = intent.getAction();
+            if (TelephonyIntents.ACTION_SIM_STATE_CHANGED.equals(action)) {
+                String simState = intent.getStringExtra(IccCardConstants.INTENT_KEY_ICC_STATE);
+                if (simState != null) {
+                    PreferenceScreen root = getPreferenceScreen();
+                    Preference simLock = (Preference) root.findPreference(KEY_SIM_LOCK);
+
+                    if (root == null) return;
+
+                    if (IccCardConstants.INTENT_VALUE_ICC_ABSENT.equals(simState)) {
+                        if (simLock != null) root.removePreference(simLock);
+                    } else {
+                        boolean enableSimLock;
+                        if (IccCardConstants.INTENT_VALUE_ICC_UNKNOWN.equals(simState)
+                                || IccCardConstants.INTENT_VALUE_ICC_NOT_READY.equals(simState)) {
+                            enableSimLock = false;
+                        } else {
+                            enableSimLock = true;
+                        }
+
+                        if (simLock == null) {
+                            if (enableSimLock) createPreferenceHierarchy();
+                         } else {
+                            simLock.setEnabled(enableSimLock);
+                         }
+                    }
+                }
+            }
+        }
+    };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -293,16 +331,20 @@ public class SecuritySettings extends RestrictedSettingsFragment
         addPreferencesFromResource(R.xml.security_settings_misc);
 
         // Do not display SIM lock for devices without an Icc card
-        TelephonyManager tm = TelephonyManager.getDefault();
-        if (!mIsPrimary || !tm.hasIccCard()) {
-            root.removePreference(root.findPreference(KEY_SIM_LOCK));
-        } else {
-            // Disable SIM lock if sim card is missing or unknown
-            if ((TelephonyManager.getDefault().getSimState() ==
-                                 TelephonyManager.SIM_STATE_ABSENT) ||
-                (TelephonyManager.getDefault().getSimState() ==
-                                 TelephonyManager.SIM_STATE_UNKNOWN)) {
-                root.findPreference(KEY_SIM_LOCK).setEnabled(false);
+        TelephonyManager tm = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+        if (tm != null) {
+            if (!mIsPrimary || !tm.hasIccCard()) {
+                root.removePreference(root.findPreference(KEY_SIM_LOCK));
+            } else {
+                // Disable SIM lock if sim state is unknown
+                Preference simLock = (Preference) root.findPreference(KEY_SIM_LOCK);
+                if (simLock != null) {
+                    if (tm.getSimState() == TelephonyManager.SIM_STATE_UNKNOWN) {
+                        simLock.setEnabled(false);
+                    } else {
+                        simLock.setEnabled(true);
+                    }
+                }
             }
         }
 
@@ -596,6 +638,15 @@ public class SecuritySettings extends RestrictedSettingsFragment
         }
 
         updateBlacklistSummary();
+
+        IntentFilter filter = new IntentFilter(TelephonyIntents.ACTION_SIM_STATE_CHANGED);
+        getActivity().registerReceiver(mReceiver, filter);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        getActivity().unregisterReceiver(mReceiver);
     }
 
     @Override
