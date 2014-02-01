@@ -1489,4 +1489,8 @@
     <!-- HFM -->
     <string name="hfm_title">Hosts File Manager</string>
 
+    <!-- ADB Paranoia settings -->
+    <string name="adb_paranoid">ADB Paranoia Mode</string>
+    <string name="adb_paranoid_summary">Immediately reboot if an unknown computer is connected while device is locked</string>
+
 </resources>
