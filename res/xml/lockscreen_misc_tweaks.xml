@@ -36,6 +36,11 @@
             android:defaultValue="true" />
 
         <CheckBoxPreference
+            android:key="lockscreen_torch"
+            android:title="@string/lockscreen_glowpad_torch_title"
+            android:summary="@string/lockscreen_glowpad_torch_summary" />
+
+        <CheckBoxPreference
             android:key="allow_rotation"
             android:title="@string/allow_rotate_title"
             android:summary="@string/allow_rotate_summary"
