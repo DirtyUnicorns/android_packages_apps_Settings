@@ -1411,6 +1411,10 @@
     <!-- OmniSwitch -->
     <string name="omniswitch_settings_title">OmniSwitch</string>
 
+    <!-- GlowPad Torch -->
+    <string name="lockscreen_glowpad_torch_title">Slider torch</string>
+    <string name="lockscreen_glowpad_torch_summary">Double-tap and hold the slider to start torch</string>
+
     <!-- Status bar color -->
     <string name="custom_status_bar_header_title">Status Bar Color</string>
     <string name="custom_status_bar_color_title">Custom status bar color</string>

@@ -31,6 +31,7 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.SeekBarPreference;
 import android.provider.Settings;
 
+import com.android.internal.util.slim.DeviceUtils;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -45,6 +46,7 @@ public class LockscreenMiscTweaks extends SettingsPreferenceFragment implements 
     private static final String KEY_DISABLE_CAMERA_WIDGET = "disable_camera_widget";
     private static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
     private static final String LOCKSCREEN_MAXIMIZE_WIDGETS = "lockscreen_maximize_widgets";
+    private static final String PREF_LOCKSCREEN_TORCH = "lockscreen_torch";
 
     private CheckBoxPreference mSeeThrough;
     private CheckBoxPreference mAllowRotation;
@@ -53,6 +55,7 @@ public class LockscreenMiscTweaks extends SettingsPreferenceFragment implements 
     private CheckBoxPreference mCameraWidget;
     private CheckBoxPreference mLockRingBattery;
     private CheckBoxPreference mMaximizeKeyguardWidgets;
+    private CheckBoxPreference mGlowpadTorch;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,15 +77,22 @@ public class LockscreenMiscTweaks extends SettingsPreferenceFragment implements 
         mMaximizeKeyguardWidgets.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.LOCKSCREEN_MAXIMIZE_WIDGETS, 0) == 1);
 
+        mGlowpadTorch = (CheckBoxPreference) findPreference(
+                PREF_LOCKSCREEN_TORCH);
+        mGlowpadTorch.setChecked(Settings.System.getInt(
+                getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.LOCKSCREEN_GLOWPAD_TORCH, 0) == 1);
+        mGlowpadTorch.setOnPreferenceChangeListener(this);
+
         mAllowRotation = (CheckBoxPreference) findPreference(KEY_ALLOW_ROTATION);
         mAllowRotation.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.LOCKSCREEN_ROTATION, 0) == 1); 
+                Settings.System.LOCKSCREEN_ROTATION, 0) == 1);
 
         mBlurBehind = (CheckBoxPreference) findPreference(KEY_BLUR_BEHIND);
-        mBlurBehind.setChecked(Settings.System.getInt(getContentResolver(), 
+        mBlurBehind.setChecked(Settings.System.getInt(getContentResolver(),
             Settings.System.LOCKSCREEN_BLUR_BEHIND, 0) == 1);
         mBlurRadius = (SeekBarPreference) findPreference(KEY_BLUR_RADIUS);
-        mBlurRadius.setProgress(Settings.System.getInt(getContentResolver(), 
+        mBlurRadius.setProgress(Settings.System.getInt(getContentResolver(),
             Settings.System.LOCKSCREEN_BLUR_RADIUS, 12));
         mBlurRadius.setOnPreferenceChangeListener(this);
 
@@ -117,6 +127,12 @@ public class LockscreenMiscTweaks extends SettingsPreferenceFragment implements 
         } else if (preference == mLockRingBattery) {
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, mLockRingBattery.isChecked()
+                    ? 1 : 0);
+            return true;
+
+        } else if (preference == mGlowpadTorch) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.LOCKSCREEN_GLOWPAD_TORCH, mGlowpadTorch.isChecked()
                     ? 1 : 0);
             return true;
 
