@@ -17,10 +17,32 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/lockscreen_category" >
 
-         <CheckBoxPreference
-            android:key="disable_fc_notifications"
-            android:title="@string/disable_fc_notifications_title"
-            android:summary="@string/disable_fc_notifications_summary"
-            android:persistent="false" />
+    <PreferenceCategory
+        android:key="misc_tweaks_system"
+        android:title="@string/misc_tweaks_system">
+    </PreferenceCategory>
+
+    <CheckBoxPreference
+        android:key="disable_fc_notifications"
+        android:title="@string/disable_fc_notifications_title"
+        android:summary="@string/disable_fc_notifications_summary"
+        android:persistent="false" />
+
+    <PreferenceCategory
+        android:key="misc_tweaks_srec"
+        android:title="@string/misc_tweaks_srec">
+    </PreferenceCategory>
+
+    <CheckBoxPreference
+        android:key="srec_enable_touches"
+        android:title="@string/srec_enable_touches_title"
+        android:summary="@string/srec_enable_touches_summary"
+        android:persistent="false" />
+
+    <CheckBoxPreference
+        android:key="srec_enable_mic"
+        android:title="@string/srec_enable_mic_title"
+        android:summary="@string/srec_enable_mic_summary"
+        android:persistent="false" />
 
 </PreferenceScreen>

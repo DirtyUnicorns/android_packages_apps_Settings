@@ -40,8 +40,12 @@ import com.android.settings.Utils;
 public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String DISABLE_FC_NOTIFICATIONS = "disable_fc_notifications";
+    private static final String SREC_ENABLE_TOUCHES = "srec_enable_touches";
+    private static final String SREC_ENABLE_MIC = "srec_enable_mic";
 
     private CheckBoxPreference mDisableFC;
+    private CheckBoxPreference mSrecEnableTouches;
+    private CheckBoxPreference mSrecEnableMic;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -54,6 +58,14 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         mDisableFC = (CheckBoxPreference) findPreference(DISABLE_FC_NOTIFICATIONS);
         mDisableFC.setChecked((Settings.System.getInt(resolver,
                 Settings.System.DISABLE_FC_NOTIFICATIONS, 0) == 1));
+
+        mSrecEnableTouches = (CheckBoxPreference) findPreference(SREC_ENABLE_TOUCHES);
+        mSrecEnableTouches.setChecked((Settings.System.getInt(resolver,
+                Settings.System.SREC_ENABLE_TOUCHES, 0) == 1));
+
+        mSrecEnableMic = (CheckBoxPreference) findPreference(SREC_ENABLE_MIC);
+        mSrecEnableMic.setChecked((Settings.System.getInt(resolver,
+                Settings.System.SREC_ENABLE_MIC, 0) == 1));
 
     }
 
@@ -68,6 +80,16 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             boolean checked = ((CheckBoxPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.DISABLE_FC_NOTIFICATIONS, checked ? 1:0);
+            return true;
+        } else if  (preference == mSrecEnableTouches) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SREC_ENABLE_TOUCHES, checked ? 1:0);
+            return true;
+        } else if  (preference == mSrecEnableMic) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SREC_ENABLE_MIC, checked ? 1:0);
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
