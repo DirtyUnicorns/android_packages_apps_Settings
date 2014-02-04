@@ -1173,6 +1173,9 @@
     <string name="power_menu_toggle_airplane_mode_title">Airplane mode</string>
     <string name="power_menu_toggle_sound_toggles_title">Sound toggles</string>
 
+    <!-- Enable power menu -->
+    <string name="lockscreen_enable_power_menu_title">Power menu in lockscreen</string>
+
     <!--  Recents clear all -->
     <string name="show_recent_clear_all_button_title">Clear all button</string>
     <string name="show_recent_clear_all_button_summary">Show clear all button within the recent applications view</string>
