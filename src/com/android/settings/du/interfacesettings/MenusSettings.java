@@ -42,13 +42,14 @@ public class MenusSettings extends SettingsPreferenceFragment implements
     private static final String POWER_MENU_MOBILE_DATA = "power_menu_mobile_data";
     private static final String POWER_MENU_AIRPLANE_MODE = "power_menu_airplane_mode";
     private static final String POWER_MENU_SOUND_TOGGLES = "power_menu_sound_toggles";
-
+    private static final String KEY_ENABLE_POWER_MENU = "lockscreen_enable_power_menu";
 
     private CheckBoxPreference mScreenshotPowerMenu;
     private CheckBoxPreference mScreenrecordPowerMenu;
     private CheckBoxPreference mMobileDataPowerMenu;
     private CheckBoxPreference mAirplaneModePowerMenu;
     private CheckBoxPreference mSoundTogglesPowerMenu;
+    private CheckBoxPreference mEnablePowerMenu;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -75,6 +76,11 @@ public class MenusSettings extends SettingsPreferenceFragment implements
         mAirplaneModePowerMenu.setChecked(Settings.System.getInt(resolver,
                 Settings.System.AIRPLANE_MODE_IN_POWER_MENU, 0) == 1);
         mAirplaneModePowerMenu.setOnPreferenceChangeListener(this);
+
+        mEnablePowerMenu = (CheckBoxPreference) prefSet.findPreference(KEY_ENABLE_POWER_MENU);
+        mEnablePowerMenu.setChecked(Settings.System.getInt(resolver,
+                Settings.System.LOCKSCREEN_ENABLE_POWER_MENU, 1) == 1);
+        mEnablePowerMenu.setOnPreferenceChangeListener(this);
 
         mSoundTogglesPowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_SOUND_TOGGLES);
         mSoundTogglesPowerMenu.setChecked(Settings.System.getInt(resolver,
@@ -109,6 +115,9 @@ public class MenusSettings extends SettingsPreferenceFragment implements
         } else if (preference == mAirplaneModePowerMenu) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver, Settings.System.AIRPLANE_MODE_IN_POWER_MENU, value ? 1 : 0);
+        } else if (preference == mEnablePowerMenu) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver, Settings.System.LOCKSCREEN_ENABLE_POWER_MENU, value ? 1 : 0);
         } else if (preference == mSoundTogglesPowerMenu) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver, Settings.System.SOUND_TOGGLES_IN_POWER_MENU, value ? 1 : 0);
