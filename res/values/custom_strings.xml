@@ -1370,12 +1370,16 @@
     <string name="ad_pocket_mode_always">Always</string>
     <string name="bars_and_menus_category_recent_panel_title" >Clear-All Button</string>
 
-    <!-- Text for forcing expanded notifications -->
-    <string name="disable_fc_notifications_title">Disable FC Notifications</string>
-    <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>
-
     <!-- Text for Misc Tweaks entry -->
     <string name="misc_tweaks_title">Misc. Tweaks</string>
+    <string name="misc_tweaks_system">System</string>
+    <string name="disable_fc_notifications_title">Disable FC Notifications</string>
+    <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>
+    <string name="misc_tweaks_srec">Screen Recording</string>
+    <string name="srec_enable_touches_title">Enable Pointer</string>
+    <string name="srec_enable_touches_summary">Enable visual pointer to show touches during screen recording</string>
+    <string name="srec_enable_mic_title">Use Microphone</string>
+    <string name="srec_enable_mic_summary">Use microphone as audio input during screen recording</string>
 
     <!-- Fast charge QS tile -->
     <string name="title_tile_fcharge">Fast charge</string>
