@@ -224,9 +224,30 @@
     <string name="traffic_timeout_15s">15 seconds</string>
     <string name="traffic_timeout_25s">25 seconds</string>
 
+    <!-- MIUI Traffic meter -->
     <string name="status_bar_show_network_stats_title">Use MIUI style</string>
     <string name="status_bar_show_network_stats_summary">Use MIUI style NetStats instead of classic Traffic meter</string>
     <string name="status_bar_network_stats_update_title">Update frequency</string>
+
+    <!-- SlimSizer  -->
+    <string name="listsystem">list</string>
+    <string name="sizer_title">System App Remover</string>
+    <string name="caution">Caution!</string>
+    <string name="sizer_message_startup">This tool allows you to delete system apps. Use with caution and only delete apps you know are safe to be removed.</string>
+    <string name="cancel">Cancel</string>
+    <string name="sizer_message_delete">Are you sure you want to delete this app?</string>
+    <string name="btn_delete">Delete selected APPs now!</string>
+    <string name="delete_progress_title">Deleting</string>
+    <string name="delete_progress">Selected files are being deleted...</string>
+    <string name="delete_success">Deleted</string>
+    <string name="delete_fail">Unable to delete</string>
+    <string name="btn_profile">Profile</string>
+    <string name="sizer_message_sdnowrite">Cannot write to SD Card.</string>
+    <string name="sizer_message_sdnoread">Cannot read SD Card.</string>
+    <string name="sizer_message_filesuccess">Created profile.</string>
+    <string name="sizer_message_filefail">Failed to create profile.</string>
+    <string name="sizer_message_noselect">Nothing selected.</string>
+    <string name="system_app_remover">System App Remover</string>
 
     <!-- Network speed color style -->
     <string name="network_speed_color_title">Network speed color</string>
