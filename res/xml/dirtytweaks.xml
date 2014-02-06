@@ -127,6 +127,12 @@
             android:title="@string/voice_tts_title" />
 
          <PreferenceScreen
+            android:id="@+id/wakelock_blocker"
+            android:layout="@layout/preference_wakelockblocker"
+            android:title="@string/wakelock_blocker"
+            android:fragment="com.android.settings.du.WakeLockBlocker" />
+
+         <PreferenceScreen
             android:id="@+id/hfm"
             android:layout="@layout/preference_hfm"
             android:title="@string/hfm_title" >
