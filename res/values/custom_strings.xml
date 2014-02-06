@@ -85,7 +85,6 @@
     <string name="lock_numpad_random_off">Disabled</string>
     <string name="lock_numpad_random_always">Always</string>
     <string name="lock_numpad_random_on_request">On request</string>
-
     <string name="interface_more_title">More\u2026</string>
     <string name="interface_bars_title">Bars</string>
     <string name="interface_menus_title">Menus</string>
@@ -349,7 +348,6 @@
     <string name="halo_notification_msgbox_summary">Show message box for incoming notifications</string>
     <string name="halo_unlock_ping_title">Ping on unlock</string>
     <string name="halo_unlock_ping_summary">Halo will ping when device is unlocked if new notifications were received</string>
-
     <string name="halo_size_title">Halo size</string>
     <string name="halo_size_summary">Defines how big Halo is going to be</string>
     <string name="halo_size_miniscule">Miniscule</string>
@@ -358,23 +356,18 @@
     <string name="halo_size_large">Large</string>
     <string name="halo_size_gigantic">Gigantic</string>
     <string name="halo_size_monster">Monster</string>
-
     <string name="halo_notification_count_title">Notification count</string>
     <string name="halo_notification_count_summary">Display notification counts on Halo</string>
     <string name="halo_notification_count_none">None</string>
     <string name="halo_notification_count_total">Total</string>
     <string name="halo_notification_count_individual">Per app</string>
     <string name="halo_notification_count_both">Both</string>
-
     <string name="halo_msgbox_animation_title">Message box animation</string>
     <string name="halo_msgbox_animation_summary">Halo message box animation for incoming notifications</string>
     <string name="halo_msgbox_animation_none">None</string>
     <string name="halo_msgbox_animation_flip">Flip</string>
-
-    <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_halo_label_black">Blacklist from HALO</string>
     <string name="app_halo_label_white">Whitelist from HALO</string>
-
     <string name="halo_enable_title">Enable Halo</string>
     <string name="halo_enable_summary_on">Halo is enabled</string>
     <string name="halo_enable_summary_off">Halo is disabled</string>
@@ -444,6 +437,9 @@
 
     <!-- Device specific settings -->
     <string name="advanced_settings_title">Device specific</string>
+
+    <!-- Delete apn confirmation dialog message -->
+    <string name="confirm_delete_apn">The APN will be deleted.</string>
 
     <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
     <string name="custom_runtime_warning_title">Warning</string>
