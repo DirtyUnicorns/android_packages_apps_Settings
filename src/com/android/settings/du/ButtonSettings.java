@@ -90,6 +90,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String KEYS_ASSIST_LONG_PRESS = "keys_assist_long_press";
     private static final String KEYS_APP_SWITCH_PRESS = "keys_app_switch_press";
     private static final String KEYS_APP_SWITCH_LONG_PRESS = "keys_app_switch_long_press";
+    private static final String FORCE_SHOW_OVERFLOW_MENU = "force_show_overflow_menu";
 
     // Available custom actions to perform on a key press.
     private static final int ACTION_NOTHING = 0;
@@ -129,6 +130,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private CheckBoxPreference mHeadsetHookLaunchVoice;
     private CheckBoxPreference mVolumeMusicCtrl;
     private CheckBoxPreference mDisableSafeVolume;
+    private CheckBoxPreference mForceShowOverflowMenu;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -228,6 +230,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                     KEYS_APP_SWITCH_PRESS);
             mAppSwitchLongPressAction = (ListPreference) prefScreen.findPreference(
                     KEYS_APP_SWITCH_LONG_PRESS);
+            mForceShowOverflowMenu = (CheckBoxPreference) prefScreen.findPreference(
+                    FORCE_SHOW_OVERFLOW_MENU);
 
             if (hasBackKey) {
                 int backPressAction = Settings.System.getInt(getContentResolver(),
@@ -373,6 +377,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                     getApplicationContext().getContentResolver(),
                     Settings.System.HARDWARE_KEY_REBINDING, 0) == 1));
 		    mEnableCustomBindings.setOnPreferenceChangeListener(this);
+
+            boolean hasNavBar = getResources().getBoolean(
+                com.android.internal.R.bool.config_showNavigationBar);
+            mForceShowOverflowMenu.setChecked(Settings.System.getInt(resolver,
+                        Settings.System.FORCE_SHOW_OVERFLOW_MENU, (!hasNavBar && hasMenuKey) ? 0 : 1) == 1);
         }
 
         final PreferenceCategory headsethookCategory =
@@ -410,6 +419,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.DISABLE_SAFE_VOLUME, checked ? 1:0);
 
+            return true;
+        } else if (preference == mForceShowOverflowMenu){
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.FORCE_SHOW_OVERFLOW_MENU, checked ? 1:0);
             return true;
         }
 
