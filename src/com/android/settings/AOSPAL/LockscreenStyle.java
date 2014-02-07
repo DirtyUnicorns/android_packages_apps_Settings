@@ -25,6 +25,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -38,6 +39,7 @@ import android.preference.PreferenceScreen;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -52,6 +54,7 @@ import com.android.internal.widget.LockPatternUtils;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 import java.io.File;
+import java.io.FileOutputStream;
 
 public class LockscreenStyle extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener {
@@ -182,6 +185,7 @@ public class LockscreenStyle extends SettingsPreferenceFragment
                 mLockImage.renameTo(image);
                 image.setReadable(true, false);
 
+                deleteLockIcon();  // Delete current icon if it exists before saving new.
                 Settings.Secure.putString(getContentResolver(),
                         Settings.Secure.LOCKSCREEN_LOCK_ICON, path);
 
@@ -218,8 +222,10 @@ public class LockscreenStyle extends SettingsPreferenceFragment
             int indexOf = mLockIcon.findIndexOfValue(newValue.toString());
             if (indexOf == 0) {
                 requestLockImage();
-            } else {
+            } else  if (indexOf == 2) {
                 deleteLockIcon();
+            } else {
+                resizeDuLock();
             }
             return true;
         } else if (preference == mColorizeCustom) {
@@ -268,6 +274,9 @@ public class LockscreenStyle extends SettingsPreferenceFragment
                 Settings.Secure.LOCKSCREEN_LOCK_ICON);
         if (value == null) {
             resId = R.string.lockscreen_lock_icon_default;
+            mLockIcon.setValueIndex(2);
+        } else if (value.contains("du_lock")) {
+            resId = R.string.lockscreen_lock_icon_du;
             mLockIcon.setValueIndex(1);
         } else {
             resId = R.string.lockscreen_lock_icon_custom;
@@ -279,6 +288,8 @@ public class LockscreenStyle extends SettingsPreferenceFragment
     private void requestLockImage() {
         Intent intent = new Intent(Intent.ACTION_PICK,
                 android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+
+        int px = requestImageSize();
 
         intent.setType("image/*");
         intent.putExtra("crop", "true");
@@ -317,6 +328,43 @@ public class LockscreenStyle extends SettingsPreferenceFragment
 
         mColorizeCustom.setEnabled(false);
         updateLockSummary();
+    }
+
+    private void resizeDuLock() {
+        Bitmap duLock = BitmapFactory.decodeResource(getResources(), R.drawable.du_lock);
+        if (duLock != null) {
+            String path = null;
+            int px = requestImageSize();
+            duLock = Bitmap.createScaledBitmap(duLock, px, px, true);
+            try {
+                mLockImage.createNewFile();
+                mLockImage.setWritable(true, false);
+                File image = new File(getActivity().getFilesDir() + File.separator
+                            + "du_lock" + System.currentTimeMillis() + ".png");
+                path = image.getAbsolutePath();
+                mLockImage.renameTo(image);
+                FileOutputStream outPut = new FileOutputStream(image);
+                duLock.compress(Bitmap.CompressFormat.PNG, 100, outPut);
+                image.setReadable(true, false);
+                outPut.flush();
+                outPut.close();
+            } catch (Exception e) {
+                // Unicorns are better when they're dirty.
+                Log.e(TAG, e.getMessage(), e);
+                return;
+            }
+
+            deleteLockIcon();  // Delete current icon if it exists before saving new.
+            Settings.Secure.putString(getContentResolver(),
+                    Settings.Secure.LOCKSCREEN_LOCK_ICON, path);
+            mColorizeCustom.setEnabled(path != null);
+            updateLockSummary();
+        }
+    }
+
+    private int requestImageSize() {
+        return (int) TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP, 144, getResources().getDisplayMetrics());
     }
 
     private void showDialogInner(int id) {

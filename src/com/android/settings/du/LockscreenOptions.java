@@ -50,7 +50,7 @@ public class LockscreenOptions extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.lockscreenoptions);
     }
-    
+
     @Override
     public void onResume() {
         super.onResume();

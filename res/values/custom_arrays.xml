@@ -1056,17 +1056,17 @@
     <!-- Lockscreen lock icon values -->
     <string-array name="lock_icon_entries">
         <item>@string/lockscreen_lock_icon_custom</item>
+        <item>@string/lockscreen_lock_icon_du</item>
         <item>@string/lockscreen_lock_icon_default</item>
     </string-array>
 
     <string-array name="lock_icon_values" translatable="false">
         <item>0</item>
         <item>1</item>
+        <item>2</item>
     </string-array>  
 
-
     <!-- Driving Mode -->
-
     <string-array name="voice_tts_annoy_notif_entries">
         <item>@string/voice_tts_annoy_notif_default</item>
         <item>@string/voice_tts_annoy_notif_3s</item>
