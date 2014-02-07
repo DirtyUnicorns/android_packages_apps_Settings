@@ -1398,6 +1398,9 @@
     <string name="srec_enable_touches_summary">Enable visual pointer to show touches during screen recording</string>
     <string name="srec_enable_mic_title">Use Microphone</string>
     <string name="srec_enable_mic_summary">Use microphone as audio input during screen recording</string>
+    <string name="misc_tweaks_hfm">Hosts File Manager</string>
+    <string name="hfm_disable_ads_title">Disable Ads</string>
+    <string name="hfm_disable_ads_summary">Change hosts file to disable ads</string>
 
     <!-- Fast charge QS tile -->
     <string name="title_tile_fcharge">Fast charge</string>
@@ -1527,9 +1530,6 @@
     <string name="privacy_guard_app_ops_detail_reset_dialog_text">Reset all permissions back to default?</string>
     <string name="app_ops_btn_text">Modify</string>
     <string name="app_ops_no_item_text">This app has no changeable permissions.</string>
-
-    <!-- HFM -->
-    <string name="hfm_title">Hosts File Manager</string>
 
     <!-- ADB Paranoia settings -->
     <string name="adb_paranoid">ADB Paranoia Mode</string>

@@ -36,16 +36,19 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settings.hfm.HfmHelpers;
 
 public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String DISABLE_FC_NOTIFICATIONS = "disable_fc_notifications";
     private static final String SREC_ENABLE_TOUCHES = "srec_enable_touches";
     private static final String SREC_ENABLE_MIC = "srec_enable_mic";
+    private static final String HFM_DISABLE_ADS = "hfm_disable_ads";
 
     private CheckBoxPreference mDisableFC;
     private CheckBoxPreference mSrecEnableTouches;
     private CheckBoxPreference mSrecEnableMic;
+    private CheckBoxPreference mHfmDisableAds;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -67,6 +70,9 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         mSrecEnableMic.setChecked((Settings.System.getInt(resolver,
                 Settings.System.SREC_ENABLE_MIC, 0) == 1));
 
+        mHfmDisableAds = (CheckBoxPreference) findPreference(HFM_DISABLE_ADS);
+        mHfmDisableAds.setChecked((Settings.System.getInt(resolver,
+                Settings.System.HFM_DISABLE_ADS, 0) == 1));
     }
 
     @Override
@@ -90,6 +96,12 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             boolean checked = ((CheckBoxPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.SREC_ENABLE_MIC, checked ? 1:0);
+            return true;
+        } else if  (preference == mHfmDisableAds) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.HFM_DISABLE_ADS, checked ? 1:0);
+            HfmHelpers.checkStatus(getActivity());
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
