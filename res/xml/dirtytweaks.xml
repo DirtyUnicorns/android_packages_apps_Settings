@@ -188,6 +188,12 @@
             android:layout="@layout/preference_initd"
             android:title="@string/init_d_title" />
 
+         <PreferenceScreen
+            android:id="@+id/system_app_remover"
+            android:title="@string/system_app_remover"
+            android:layout="@layout/preference_systemappremover"
+            android:fragment="com.android.settings.du.SystemappRemover" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
