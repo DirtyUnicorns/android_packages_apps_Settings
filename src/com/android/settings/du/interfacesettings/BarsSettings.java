@@ -42,6 +42,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private static final String SMS_BREATH = "sms_breath";
     private static final String MISSED_CALL_BREATH = "missed_call_breath";
     private static final String VOICEMAIL_BREATH = "voicemail_breath";
+    private static final String EMULATE_MENU_KEY = "emulate_menu_key";
 
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mStatusBarNotifCount;
@@ -49,6 +50,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mSMSBreath;
     private CheckBoxPreference mMissedCallBreath;
     private CheckBoxPreference mVoicemailBreath;
+    private CheckBoxPreference mEmulateMenuKey;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -96,6 +98,11 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         mVoicemailBreath.setChecked(Settings.System.getInt(resolver,
                 Settings.System.KEY_VOICEMAIL_BREATH, 0) == 1);
         mVoicemailBreath.setOnPreferenceChangeListener(this);
+
+            mEmulateMenuKey = (CheckBoxPreference) prefSet.findPreference(EMULATE_MENU_KEY);
+            mEmulateMenuKey.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.EMULATE_HW_MENU_KEY, 0) == 1);
+            mEmulateMenuKey.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -127,6 +134,10 @@ public class BarsSettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver,
                 Settings.System.STATUS_BAR_NETWORK_ACTIVITY, value ? 1 : 0);
+        } else if (preference == mEmulateMenuKey) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver,
+                Settings.System.EMULATE_HW_MENU_KEY, value ? 1 : 0);
         } else {
             return false;
         }
