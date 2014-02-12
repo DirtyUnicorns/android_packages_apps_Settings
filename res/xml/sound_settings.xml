@@ -25,6 +25,11 @@
             android:dialogTitle="@string/all_volume_title"
             android:persistent="false"
             android:streamType="ring" />
+            
+    <PreferenceScreen
+        android:key="volume_steps_settings"
+        android:fragment="com.android.settings.du.VolumeSteps"
+        android:title="@string/volume_steps_title" />
 
     <ListPreference
             android:key="volume_overlay"
