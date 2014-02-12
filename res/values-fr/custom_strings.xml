@@ -600,7 +600,6 @@
   <string name="title_tile_location">Localisation</string>
   <string name="title_tile_torch">Torche</string>
   <string name="title_tile_lockscreen">Lock screen</string>
-  <string name="title_tile_lte">LTE</string>
   <string name="title_tile_mobiledata">Données mobiles</string>
   <string name="title_tile_autorotate">Orientation</string>
   <string name="title_tile_settings">Paramètres</string>
@@ -609,7 +608,6 @@
   <string name="title_tile_wifiap">PA WiFi</string>
   <string name="title_tile_wifi">WiFi</string>
   <string name="title_tile_user">Sélecteur utilisateur</string>
-  <string name="title_tile_networkmode">Mode réseau</string>
   <string name="title_tile_nfc">NFC</string>
   <string name="title_tile_screen_timeout">Veille écran</string>
   <string name="title_tile_volume">Volume</string>
@@ -639,7 +637,6 @@
   <string name="quick_tiles_text_color_title">Couleur du texte des tuiles</string>
   <string name="quick_tiles_alpha_title">Transparence de l\'arrière-plan des tuiles</string>
   <string name="qs_style_reset_message">Réinitialiser toutes les couleurs par défaut ?</string>
-  <string name="pref_network_mode_title">Modes réseau</string>
   <string name="pref_screentimeout_mode_title">Modes veille de l\'écran</string>
   <string name="pref_ring_mode_title">Modes sonnerie</string>
   <string name="pref_music_mode_title">Mode musique</string>

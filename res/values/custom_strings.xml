@@ -719,7 +719,6 @@
     <string name="title_tile_location">Location</string>
     <string name="title_tile_torch">Torch</string>
     <string name="title_tile_lockscreen">Lock screen</string>
-    <string name="title_tile_lte">LTE</string>
     <string name="title_tile_mobiledata">Mobile data</string>
     <string name="title_tile_autorotate">Orientation</string>
     <string name="title_tile_settings">Settings</string>
@@ -728,7 +727,6 @@
     <string name="title_tile_wifiap">Wi-Fi AP</string>
     <string name="title_tile_wifi">Wi-Fi</string>
     <string name="title_tile_user">User switcher</string>
-    <string name="title_tile_networkmode">Network mode</string>
     <string name="title_tile_nfc">NFC</string>
     <string name="title_tile_screen_timeout">Screen timeout</string>
     <string name="title_tile_volume">Volume</string>
@@ -760,7 +758,6 @@
     <string name="quick_tiles_text_color_title">Tiles text color</string>
     <string name="quick_tiles_alpha_title">Tiles background transparency</string>
     <string name="qs_style_reset_message">Reset all colors to default?</string>
-    <string name="pref_network_mode_title">Network modes</string>
     <string name="pref_screentimeout_mode_title">Screen timeout modes</string>
     <string name="pref_ring_mode_title">Sound modes</string>
     <string name="pref_music_mode_title">Music mode</string>
@@ -1623,11 +1620,6 @@
     <string name="profile_app_delete_confirm">Remove this application?</string>
     <string name="profile_cannot_delete">An active profile cannot be deleted</string>
 
-    <!-- Profile network mode -->
-    <string name="profile_networkmode_2g">2G</string>
-    <string name="profile_networkmode_3g">3G</string>
-    <string name="profile_networkmode_2g3g">2G/3G</string>
-
     <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_connectionoverrides_title">Connection overrides</string>
     <string name="profile_volumeoverrides_title">Volume overrides</string>
@@ -1702,7 +1694,6 @@
     <string name="toggleGPS">GPS</string>
     <string name="toggleData">Mobile Data</string>
     <string name="toggleSync">Data Sync</string>
-    <string name="toggle2g3g">2G/3G</string>
     <string name="toggleSound">Ring Mode</string>
     <string name="toggleBrightness">Brightness</string>
     <string name="toggleAutoRotate">Orientation</string>

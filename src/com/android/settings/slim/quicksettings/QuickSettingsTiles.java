@@ -72,13 +72,12 @@ public class QuickSettingsTiles extends Fragment {
 
     private static final int DLG_RESET         = 0;
     private static final int DLG_SCREENTIMEOUT = 1;
-    private static final int DLG_NETWORK_MODE  = 2;
-    private static final int DLG_RINGER        = 3;
-    private static final int DLG_MUSIC         = 4;
-    private static final int DLG_SHOW_LIST     = 5;
-    private static final int DLG_HELP          = 6;
-    private static final int DLG_DISABLED      = 7;
-    private static final int DLG_DYNAMICTILES  = 8;
+    private static final int DLG_RINGER        = 2;
+    private static final int DLG_MUSIC         = 3;
+    private static final int DLG_SHOW_LIST     = 4;
+    private static final int DLG_HELP          = 5;
+    private static final int DLG_DISABLED      = 6;
+    private static final int DLG_DYNAMICTILES  = 7;
 
     private DraggableGridView mDragView;
     private ViewGroup mContainer;
@@ -226,10 +225,7 @@ public class QuickSettingsTiles extends Fragment {
                             QSConstants.TILE_RINGER).getTitleResId()
                         && DeviceUtils.deviceSupportsVibrator(getActivity())
                 || titleId == QuickSettingsUtil.TILES.get(
-                            QSConstants.TILE_MUSIC).getTitleResId()
-                || QuickSettingsUtil.isTileAvailable(QSConstants.TILE_NETWORKMODE)
-                        && titleId == QuickSettingsUtil.TILES.get(
-                            QSConstants.TILE_NETWORKMODE).getTitleResId()) {
+                            QSConstants.TILE_MUSIC).getTitleResId()) {
 
                 ImageView settings =  (ImageView) tileView.findViewById(R.id.settings);
                 if (settings != null) {
@@ -279,9 +275,6 @@ public class QuickSettingsTiles extends Fragment {
                     }
                     if (tiles.get(arg2).equals(QSConstants.TILE_SCREENTIMEOUT)) {
                         showDialogInner(DLG_SCREENTIMEOUT);
-                    }
-                    if (tiles.get(arg2).equals(QSConstants.TILE_NETWORKMODE)) {
-                        showDialogInner(DLG_NETWORK_MODE);
                     }
                     if (tiles.get(arg2).equals(QSConstants.TILE_RINGER)
                             && DeviceUtils.deviceSupportsVibrator(getActivity())) {
@@ -433,31 +426,6 @@ public class QuickSettingsTiles extends Fragment {
                                 getActivity().getContentResolver(),
                                 Settings.System.EXPANDED_SCREENTIMEOUT_MODE,
                                 Integer.valueOf(dialogValuesST[which]));
-                                dismiss();
-                        }
-                    })
-                    .create();
-                case DLG_NETWORK_MODE:
-                    dialogEntries = getResources().getStringArray(
-                            getResources().getIdentifier("entries_network_widget",
-                            "array", "com.android.settings"));
-                    final String[] dialogValuesNM = getResources().getStringArray(
-                            getResources().getIdentifier("values_network_widget",
-                            "array", "com.android.settings"));
-                    actualEntry = Settings.System.getIntForUser(
-                            getActivity().getContentResolver(),
-                            Settings.System.EXPANDED_NETWORK_MODE, 0,
-                            UserHandle.USER_CURRENT);
-                    return new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.pref_network_mode_title)
-                    .setNegativeButton(R.string.cancel, null)
-                    .setSingleChoiceItems(dialogEntries, actualEntry,
-                        new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            Settings.System.putInt(
-                                getActivity().getContentResolver(),
-                                Settings.System.EXPANDED_NETWORK_MODE,
-                                Integer.valueOf(dialogValuesNM[which]));
                                 dismiss();
                         }
                     })

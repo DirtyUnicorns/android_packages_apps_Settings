@@ -602,7 +602,6 @@
   <string name="title_tile_location">Posizione</string>
   <string name="title_tile_torch">Torcia LED</string>
   <string name="title_tile_lockscreen">Blocco schermo</string>
-  <string name="title_tile_lte">LTE</string>
   <string name="title_tile_mobiledata">Dati mobili</string>
   <string name="title_tile_autorotate">Orientamento</string>
   <string name="title_tile_settings">Impostazioni</string>
@@ -611,7 +610,6 @@
   <string name="title_tile_wifiap">Wi-Fi AP</string>
   <string name="title_tile_wifi">Wi-Fi</string>
   <string name="title_tile_user">Cambia utente</string>
-  <string name="title_tile_networkmode">2G/3G</string>
   <string name="title_tile_nfc">NFC</string>
   <string name="title_tile_screen_timeout">Sospensione schermo</string>
   <string name="title_tile_volume">Volume</string>
@@ -641,7 +639,6 @@
   <string name="quick_tiles_text_color_title">Colore del testo dei tiles</string>
   <string name="quick_tiles_alpha_title">Trasparenza dello sfondo dei tiles</string>
   <string name="qs_style_reset_message">Reimpostare tutti i colori predefiniti?</string>
-  <string name="pref_network_mode_title">2G/3G</string>
   <string name="pref_screentimeout_mode_title">Modalità di timeout dello schermo</string>
   <string name="pref_ring_mode_title">Modalità suono</string>
   <string name="pref_music_mode_title">Modalità musica</string>

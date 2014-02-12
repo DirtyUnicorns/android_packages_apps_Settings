@@ -106,12 +106,6 @@ public class ProfileConfig extends SettingsPreferenceFragment
             mConnections.add(new ConnectionItem(ConnectionSettings.PROFILE_CONNECTION_WIFIAP, getString(R.string.toggleWifiAp)));
         }
 
-        final TelephonyManager tm = (TelephonyManager) getActivity().getSystemService(Context.TELEPHONY_SERVICE);
-        if (tm.getPhoneType() == TelephonyManager.PHONE_TYPE_GSM) {
-            mConnections.add(new ConnectionItem(ConnectionSettings.PROFILE_CONNECTION_2G3G,
-                    getString(R.string.toggle2g3g), R.array.profile_networkmode_entries));
-        }
-
         if (WimaxHelper.isWimaxSupported(getActivity())) {
             mConnections.add(new ConnectionItem(ConnectionSettings.PROFILE_CONNECTION_WIMAX, getString(R.string.toggleWimax)));
         }
