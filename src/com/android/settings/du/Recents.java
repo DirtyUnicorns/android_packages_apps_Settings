@@ -38,6 +38,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import android.graphics.Color;
+import com.android.settings.util.Helpers;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -55,6 +57,7 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private static final String RAM_BAR_COLOR_TOTAL_MEM = "ram_bar_color_total_mem";
     private static final String RECENT_MENU_CLEAR_ALL = "recent_menu_clear_all";
     private static final String RECENT_MENU_CLEAR_ALL_LOCATION = "recent_menu_clear_all_location";
+    private static final String LARGE_RECENT_THUMBS = "large_recent_thumbs";
 
     private static final int MENU_RESET = Menu.FIRST;
     private static final int MENU_HELP = MENU_RESET + 1;
@@ -71,6 +74,11 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private ColorPickerPreference mRamBarTotalMemColor;
     private CheckBoxPreference mRecentClearAll;
     private ListPreference mRecentClearAllPosition;
+    private CheckBoxPreference mLargeRecentThumbs;
+    private ColorPickerPreference mRecentsColor;
+
+    private ContentResolver mContentResolver;
+    private Context mContext;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,6 +91,16 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mContentResolver = getContentResolver();
+
+        mLargeRecentThumbs = (CheckBoxPreference) prefSet.findPreference(LARGE_RECENT_THUMBS);
+
+        mLargeRecentThumbs.setChecked((Settings.System.getInt(mContentResolver,
+                Settings.System.LARGE_RECENT_THUMBS, 0) == 1));
+
+        mRecentsColor = (ColorPickerPreference) findPreference("recents_panel_color");
+        mRecentsColor.setOnPreferenceChangeListener(this);
 
         mRamBarMode = (ListPreference) prefSet.findPreference(RAM_BAR_MODE);
         int ramBarMode = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
@@ -138,7 +156,7 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
         menu.add(0, MENU_HELP, 0, R.string.ram_bar_button_help)
                 .setIcon(R.drawable.ic_settings_about)
-                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS); 
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
     }
 
     @Override
@@ -147,11 +165,11 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
             case MENU_RESET:
                 resetToDefault();
                 return true;
-            case MENU_HELP: 
+            case MENU_HELP:
                 final Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(EXPLANATION_URL));
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 return true;
-            default: 
+            default:
                 return super.onContextItemSelected(item);
         }
     }
@@ -167,7 +185,7 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         });
         alertDialog.setNegativeButton(R.string.cancel, null);
         alertDialog.create().show();
-    } 
+    }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
@@ -179,6 +197,16 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
                     Settings.System.RECENTS_RAM_BAR_MODE, ramBarMode);
             mRamBarMode.setSummary(mRamBarMode.getEntries()[index]);
             updateRamBarOptions();
+            return true;
+        } else if (preference == mRecentsColor) {
+            String hex = ColorPickerPreference.convertToARGB(Integer
+                    .valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.RECENTS_PANEL_COLOR, intHex);
+            Helpers.restartSystemUI();
             return true;
         } else if (preference == mRamBarAppMemColor) {
             String hex = ColorPickerPreference.convertToARGB(Integer
@@ -238,7 +266,6 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         mRamBarTotalMemColor.setSummary(hexColor);
     }
 
-
     private void updateRamBarOptions() {
         int ramBarMode = Settings.System.getInt(getActivity().getContentResolver(),
                Settings.System.RECENTS_RAM_BAR_MODE, 0);
@@ -261,4 +288,14 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         }
     }
 
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        boolean value;
+        if (preference == mLargeRecentThumbs) {
+            value = mLargeRecentThumbs.isChecked();
+            Settings.System.putInt(mContentResolver,
+                    Settings.System.LARGE_RECENT_THUMBS, value ? 1 : 0);
+            return true;
+        }
+        return false;
+    }
 }
