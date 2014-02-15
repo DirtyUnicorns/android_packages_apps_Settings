@@ -26,7 +26,11 @@ import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.preference.Preference;
+import android.preference.CheckBoxPreference;
+import android.preference.ListPreference;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.WindowManagerGlobal;
 import android.view.IWindowManager;
@@ -42,64 +46,42 @@ public class DirtyTweaks extends SettingsPreferenceFragment implements
     private static final String TAG = "DirtyTweaks";
 
     private static final String CATEGORY_NAVBAR = "navigation_bar";
-    private final Configuration mCurConfig = new Configuration();
+    private static final String ENABLE_NAVIGATION_BAR = "enable_nav_bar"; // Enable/disable nav bar
+
+    private CheckBoxPreference mEnableNavigationBar; // Enable/disable nav bar
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.dirtytweaks);
-        PreferenceScreen prefSet = getPreferenceScreen();
+        PreferenceScreen prefScreen = getPreferenceScreen();
 
-        ContentResolver resolver = getActivity().getContentResolver();
+        // Booleans to enable/disable nav bar
+        // overriding overlays
+        boolean hasNavBarByDefault = getResources().getBoolean(
+                com.android.internal.R.bool.config_showNavigationBar);
+        boolean enableNavigationBar = Settings.System.getInt(getContentResolver(),
+                Settings.System.NAVIGATION_BAR_SHOW, hasNavBarByDefault ? 1 : 0) == 1;
+        mEnableNavigationBar = (CheckBoxPreference) findPreference(ENABLE_NAVIGATION_BAR);
+        mEnableNavigationBar.setChecked(enableNavigationBar);
+        mEnableNavigationBar.setOnPreferenceChangeListener(this);
 
-        try {
-            boolean hasNavBar = WindowManagerGlobal.getWindowManagerService().hasNavigationBar();
-            // Hide navigation bar category on devices without navigation bar
-            if (!hasNavBar) {
-                prefSet.removePreference(findPreference(CATEGORY_NAVBAR));
-            }
-        } catch (RemoteException e) {
-            Log.e(TAG, "Error getting navigation bar status");
-        }
+        updateNavbarPreferences(enableNavigationBar);
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
-    }
+    // Enable/disbale nav bar
+    private void updateNavbarPreferences(boolean show) {}
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
-        return true;
-    }
-
-    private boolean removePreferenceIfPackageNotInstalled(Preference preference) {
-        String intentUri=((PreferenceScreen) preference).getIntent().toUri(1);
-        Pattern pattern = Pattern.compile("component=([^/]+)/");
-        Matcher matcher = pattern.matcher(intentUri);
-
-        String packageName=matcher.find()?matcher.group(1):null;
-        if(packageName != null) {
-            try {
-                getPackageManager().getPackageInfo(packageName, 0);
-            } catch (NameNotFoundException e) {
-                Log.e(TAG,"package "+packageName+" not installed, hiding preference.");
-                getPreferenceScreen().removePreference(preference);
-                return true;
-            }
+        if (preference == mEnableNavigationBar) { // Enable/disbale nav bar (used in custom nav bar dimensions)
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_SHOW,
+                    ((Boolean) objValue) ? 1 : 0);
+            updateNavbarPreferences((Boolean) objValue);
+            return true;
         }
+
         return false;
     }
-
 }

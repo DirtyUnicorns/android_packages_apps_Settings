@@ -86,17 +86,24 @@
         android:key="navigation_bar"
         android:title="@string/navigation_bar_category">
 
+         <CheckBoxPreference
+            android:key="enable_nav_bar"
+            android:layout="@layout/preference_navbar_enable"
+            android:title="@string/navbar_enable_bar" />
+
+         <PreferenceScreen
+            android:key="navbar_style_dimen_settings"
+            android:layout="@layout/preference_navbar_dimen"
+            android:fragment="com.android.settings.du.NavbarDimenSettings"
+            android:title="@string/navbar_style_dimen_title"
+            android:dependency="enable_nav_bar" />
+
          <PreferenceScreen
             android:fragment="com.android.settings.du.interfacesettings.NavBar"
             android:key="navigation_bar"
             android:layout="@layout/preference_navbar"
-            android:title="@string/navigation_bar" />
-
-         <PreferenceScreen
-            android:key="navigation_bar"
-            android:fragment="com.android.settings.du.interfacesettings.NavBarDimen"
-            android:layout="@layout/preference_navbar_dimen"
-            android:title="@string/navbar_dimen_title" />
+            android:title="@string/navigation_bar"
+            android:dependency="enable_nav_bar" />
 
     </PreferenceCategory>
 

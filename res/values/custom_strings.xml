@@ -1078,7 +1078,6 @@
     <string name="pulse_speed_normal">Normal</string>
     <string name="pulse_speed_slow">Slow</string>
     <string name="pulse_speed_very_slow">Very slow</string>
-
     <string name="led_color_green">Green</string>
     <string name="led_color_red">Red</string>
 
@@ -1162,6 +1161,24 @@
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Network activity indicator</string>
     <string name="show_activity_indicators_on_status_bar_summary">Show network activity in statusbar</string>
+
+    <!-- Navigation bar -->
+    <string name="navbar_enable_bar">Enable NavBar</string>
+    <string name="navbar_style_dimen_title">Dimensions</string>
+    <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
+    <string name="navigation_bar_height_title">Navigation bar height</string>
+    <string name="navigation_bar_height_summary">Navigation bar height while in portrait</string>
+    <string name="navigation_bar_width_title">Navigation bar width</string>
+    <string name="navigation_bar_width_summary">Navigation bar height if the bar is along a side</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (default)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (default)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (off)</string>
 
     <!-- Hardware keys -->
     <string name="button_keys_title">Keys</string>
@@ -1475,23 +1492,8 @@
     <string name="custom_color_summary">Override the system color of the System UI</string>
 
     <!-- Navigation Bar customization-->
-    <string name="navbar_dimen_title">Dimensions</string>
-    <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
-    <string name="navigation_bar_height_title">Navigation bar height</string>
-    <string name="navigation_bar_height_summary">Navigation bar height while in portrait</string>
-    <string name="navigation_bar_width_title">Navigation bar width</string>
-    <string name="navigation_bar_width_summary">Navigation bar height if the bar is along a side</string>
-    <string name="navigation_bar_size_42_dp_default">42 dp (default)</string>
-    <string name="navigation_bar_size_36_dp">36 dp</string>
-    <string name="navigation_bar_size_30_dp">30 dp</string>
-    <string name="navigation_bar_size_24_dp">24 dp</string>
-    <string name="navigation_bar_size_48_dp_default">48 dp (default)</string>
-    <string name="navigation_bar_size_44_dp">44 dp</string>
-    <string name="navigation_bar_size_40_dp">40 dp</string>
-    <string name="navigation_bar_size_42_dp">42 dp</string>
-    <string name="navigation_bar_size_0_dp">0 dp (off)</string>
     <string name="navigation_bar_category">Navigation Bar</string>
-    <string name="navigation_bar">Buttons and Layout</string>
+    <string name="navigation_bar">Buttons &amp; Layout</string>
     <string name="navigation_bar_help_text">1 - To begin editing, tap the lock icon\n\n2 - Tap any button to assign or change functionality\n\n3 - Long press any button to rearrange the order\n\n4 - To save, tap the lock icon again\n\n5 - To restore system default, tap the reset button\n\n</string>
     <string name="navigation_bar_tips">\u2022 Actions can only be assigned to one button at a time\n\n\u2022 The home button cannot be re-assigned\n\n\u2022 Side buttons cannot be rearranged</string>
     <string name="navigation_bar_tips_title">Quick tips</string>
