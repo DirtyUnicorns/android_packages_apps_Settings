@@ -38,8 +38,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import android.graphics.Color;
-import com.android.settings.util.Helpers;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -57,7 +55,7 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private static final String RAM_BAR_COLOR_TOTAL_MEM = "ram_bar_color_total_mem";
     private static final String RECENT_MENU_CLEAR_ALL = "recent_menu_clear_all";
     private static final String RECENT_MENU_CLEAR_ALL_LOCATION = "recent_menu_clear_all_location";
-    private static final String LARGE_RECENT_THUMBS = "large_recent_thumbs";
+    private static final String RECENTS_USE_OMNISWITCH = "recents_use_omniswitch";
 
     private static final int MENU_RESET = Menu.FIRST;
     private static final int MENU_HELP = MENU_RESET + 1;
@@ -74,11 +72,7 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private ColorPickerPreference mRamBarTotalMemColor;
     private CheckBoxPreference mRecentClearAll;
     private ListPreference mRecentClearAllPosition;
-    private CheckBoxPreference mLargeRecentThumbs;
-    private ColorPickerPreference mRecentsColor;
-
-    private ContentResolver mContentResolver;
-    private Context mContext;
+    private CheckBoxPreference mRecentsUseOmniSwitch;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -92,15 +86,16 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
-        mContentResolver = getContentResolver();
+        mRecentsUseOmniSwitch = (CheckBoxPreference)
+                prefSet.findPreference(RECENTS_USE_OMNISWITCH);
 
-        mLargeRecentThumbs = (CheckBoxPreference) prefSet.findPreference(LARGE_RECENT_THUMBS);
-
-        mLargeRecentThumbs.setChecked((Settings.System.getInt(mContentResolver,
-                Settings.System.LARGE_RECENT_THUMBS, 0) == 1));
-
-        mRecentsColor = (ColorPickerPreference) findPreference("recents_panel_color");
-        mRecentsColor.setOnPreferenceChangeListener(this);
+        try {
+            mRecentsUseOmniSwitch.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.RECENTS_USE_OMNISWITCH) == 1);
+        } catch(SettingNotFoundException e){
+            // if the settings value is unset
+        }
+        mRecentsUseOmniSwitch.setOnPreferenceChangeListener(this);
 
         mRamBarMode = (ListPreference) prefSet.findPreference(RAM_BAR_MODE);
         int ramBarMode = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
@@ -198,16 +193,6 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
             mRamBarMode.setSummary(mRamBarMode.getEntries()[index]);
             updateRamBarOptions();
             return true;
-        } else if (preference == mRecentsColor) {
-            String hex = ColorPickerPreference.convertToARGB(Integer
-                    .valueOf(String.valueOf(newValue)));
-            preference.setSummary(hex);
-
-            int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.RECENTS_PANEL_COLOR, intHex);
-            Helpers.restartSystemUI();
-            return true;
         } else if (preference == mRamBarAppMemColor) {
             String hex = ColorPickerPreference.convertToARGB(Integer
                     .valueOf(String.valueOf(newValue)));
@@ -242,6 +227,10 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         } else if (preference == mRecentClearAllPosition) {
             String value = (String) newValue;
             Settings.System.putString(resolver, Settings.System.CLEAR_RECENTS_BUTTON_LOCATION, value);
+            return true;
+        } else if (preference == mRecentsUseOmniSwitch) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver, Settings.System.RECENTS_USE_OMNISWITCH, value ? 1 : 0);
             return true;
          }
         return false;
@@ -288,14 +277,4 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         }
     }
 
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        boolean value;
-        if (preference == mLargeRecentThumbs) {
-            value = mLargeRecentThumbs.isChecked();
-            Settings.System.putInt(mContentResolver,
-                    Settings.System.LARGE_RECENT_THUMBS, value ? 1 : 0);
-            return true;
-        }
-        return false;
-    }
 }
