@@ -1668,6 +1668,9 @@
     <string name="profile_choose_app">Choose application</string>
     <string name="profile_settings_header">Profile settings</string>
 
+    <!-- Diable BootAnimation -->
+    <string name="pref_disable_bootanimation_title">Disable boot animation</string>
+
     <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">System settings</string>
     <string name="profile_lockmode_title">Lock screen mode</string>
@@ -1714,9 +1717,9 @@
     <string name="profile_add_nfc_text">This NFC tag refers to an unknown profile. Attaching this NFC tag to an existing profile will allow for selecting the profile in the future.</string>
     <string name="profile_select">Select profile</string>
 
+    <!-- Three dot overflow -->
     <string name="emulate_menu_key_title">Emulate hardware menu key</string>
     <string name="emulate_menu_key_summary">Force hide the three-dot overflow menu in applications. Require restart of application</string>
-
     <string name="force_show_overflow_menu_title">Show overflow menu</string>
     <string name="force_show_overflow_menu_summary">Force show the three-dot overflow menu in applications. Require restart of application</string>
 
