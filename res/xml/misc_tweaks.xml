@@ -29,7 +29,7 @@
         android:persistent="false" />
 
     <Preference
-        android:fragment="com.android.settings.du/interfacesettings/NotificationPanelSettings"
+        android:fragment="com.android.settings.du.interfacesettings.NotificationPanelSettings"
         android:key="custom_status_bar_header"
         android:title="@string/custom_statusbar_header" />
 

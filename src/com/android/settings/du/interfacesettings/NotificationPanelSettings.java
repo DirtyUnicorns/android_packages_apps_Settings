@@ -32,6 +32,8 @@ import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
 
+import com.android.settings.util.Helpers;
+
 public class NotificationPanelSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "NotificationPanelSettings";
@@ -65,6 +67,7 @@ public class NotificationPanelSettings extends SettingsPreferenceFragment implem
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver,
                 Settings.System.STATUS_BAR_CUSTOM_HEADER, value ? 1 : 0);
+            Helpers.restartSystemUI();
         } else {
             return false;
         }
