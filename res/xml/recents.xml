@@ -18,27 +18,25 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/recents_category">
 
-    <CheckBoxPreference
-        android:key="large_recent_thumbs"
-        android:title="@string/large_recent_thumbs_title"
-        android:summary="@string/large_recent_thumbs_summary" />
+    <PreferenceCategory
+        android:key="category_omniswitch"
+        android:title="@string/omniswitch_settings_title"/>
 
-    <net.margaritov.preference.colorpicker.ColorPickerPreference
-        android:key="recents_panel_color"
-        android:title="@string/recents_panel_color_title"
-        android:summary="@string/recents_panel_color_summary"
-        android:defaultValue="0xE0000000"
-        alphaSlider="true" />
+    <CheckBoxPreference
+        android:key="recents_use_omniswitch"
+        android:title="@string/recents_use_omniswitch_title"
+        android:summary="@string/recents_use_omniswitch_summary"
+        android:persistent="false" />
+
+    <PreferenceCategory
+        android:key="ram_bar_mode_cat"
+        android:title="@string/ram_bar_mode_title">
 
     <Preference
         style="?android:preferenceInformationStyle"
         android:title="@string/ram_bar_note_title"
         android:summary="@string/ram_bar_note_summary"
         android:selectable="false" />
-
-    <PreferenceCategory
-        android:key="ram_bar_mode_cat"
-        android:title="@string/ram_bar_mode_title">
 
     <ListPreference
         android:key="ram_bar_mode"
