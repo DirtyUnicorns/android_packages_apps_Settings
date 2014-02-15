@@ -40,6 +40,11 @@
         android:title="@string/keep_screen_on" 
         android:summary="@string/keep_screen_on_summary"/>
 
+    <CheckBoxPreference
+        android:key="pref_is_high_end_gfx"
+        android:title="@string/pref_is_high_end_gfx_title"
+        android:summary="@string/pref_is_high_end_gfx_summary" />
+
     <ListPreference
         android:key="hdcp_checking"
         android:title="@string/hdcp_checking_title"
