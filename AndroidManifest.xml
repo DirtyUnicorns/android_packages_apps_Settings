@@ -1655,6 +1655,7 @@
         <activity android:name=".du.ButtonSettings" />
         <activity android:name=".du.BatteryIconStyle" />
         <activity android:name=".du.BatteryBarStyle" />
+        <activity android:name=".du.Download" />
         <activity android:name=".du.Recents" />
         <activity android:name=".du.batterylight.BatteryLightSettings" />
         <activity android:name=".du.brightness.BrightnessSettings" />
