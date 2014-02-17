@@ -190,6 +190,12 @@
             android:layout="@layout/preference_systemappremover"
             android:fragment="com.android.settings.du.SystemappRemover" />
 
+         <Preference
+            android:key="download_center"
+            android:fragment="com.android.settings.du.Download"
+            android:layout="@layout/preference_download"
+            android:title="@string/download_category" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

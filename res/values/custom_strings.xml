@@ -1727,4 +1727,20 @@
     <string name="force_show_overflow_menu_title">Show overflow menu</string>
     <string name="force_show_overflow_menu_summary">Force show the three-dot overflow menu in applications. Require restart of application</string>
 
+    <!-- Download Center -->
+    <string name="download_category">Download Center</string>
+    <string name="gapps_category">GAPPS Packages</string>
+    <string name="xposed_category">Xposed Framework</string>
+    <string name="multidpigapps_title">Multi-DPI Gapps</string>
+    <string name="multidpigapps_summary">Multi DPI Gapps are generally recommended if changing system density to anything other then stock</string>
+    <string name="pagapps_title">PA Gapps</string>
+    <string name="pagapps_summary">Fully packed with the majority of GAPPS, these are commonly used by users that do not want to download/install them later</string>
+    <string name="tbogapps_title">Team BlackOut Gapps</string>
+    <string name="tbogapps_summary">Just as the name implies, these GAPPS are blacked out / inverted to give you that beautiful dark look</string>
+    <string name="xposed_warning">WARNING</string>
+    <string name="xposed_title">Xposed Installer</string>
+    <string name="xposed_summary">While Xposed is proven to be a very useful tool, some modules may cause issues/bugs in custom ROMs. Please uninstall all modules before reporting any bugs that you may come across while using Xposed.</string>
+    <string name="xposed_mod_title">Module Repository</string>
+    <string name="xposed_mod_summary">Browse and install modules to be used with Xposed Framework</string>
+
 </resources>
