@@ -1,4 +1,4 @@
-package com.android.settings.du.interfacesettings;
+package com.android.settings.du;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -22,10 +22,10 @@ import android.view.MenuItem;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 
-public class NavBarDimen extends SettingsPreferenceFragment implements
+public class NavbarDimenSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String TAG = "NavBarDimen";
+    private static final String TAG = "NavBarStyleDimen";
     private static final String PREF_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
     private static final String PREF_NAVIGATION_BAR_WIDTH = "navigation_bar_width";
     private static final String KEY_DIMEN_OPTIONS = "navbar_dimen";
@@ -45,23 +45,14 @@ public class NavBarDimen extends SettingsPreferenceFragment implements
 
         mNavigationBarHeight =
             (ListPreference) findPreference(PREF_NAVIGATION_BAR_HEIGHT);
-        String navbarHeight = Settings.System.getString(getContentResolver(), Settings.System.NAVIGATION_BAR_HEIGHT);
-        navbarHeight = mapChosenPixelstoDp(navbarHeight);
-        if (navbarHeight != null) {
-            mNavigationBarHeight.setValue(navbarHeight);
-        }
         mNavigationBarHeight.setOnPreferenceChangeListener(this);
 
         mNavigationBarWidth =
             (ListPreference) findPreference(PREF_NAVIGATION_BAR_WIDTH);
-        String navbarWidth = Settings.System.getString(getContentResolver(), Settings.System.NAVIGATION_BAR_WIDTH);
-        navbarWidth = mapChosenPixelstoDp(navbarWidth);
-        if (navbarWidth != null) {
-            mNavigationBarWidth.setValue(navbarWidth);
-        }
         mNavigationBarWidth.setOnPreferenceChangeListener(this);
 
         setHasOptionsMenu(true);
+
     }
 
     @Override
@@ -77,7 +68,7 @@ public class NavBarDimen extends SettingsPreferenceFragment implements
             case MENU_RESET:
                 resetToDefault();
                 return true;
-            default:
+             default:
                 return super.onContextItemSelected(item);
         }
     }
@@ -107,7 +98,7 @@ public class NavBarDimen extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mNavigationBarWidth) {
+	if (preference == mNavigationBarWidth) {
             String newVal = (String) newValue;
             int dp = Integer.parseInt(newVal);
             int width = mapChosenDpToPixels(dp);
@@ -147,29 +138,9 @@ public class NavBarDimen extends SettingsPreferenceFragment implements
         return -1;
     }
 
-    public String mapChosenPixelstoDp(String px) {
-        if (px == "96") {
-            return "48";
-        } else if (px == "88") {
-            return "44";
-        } else if (px == "84") {
-            return "42";
-        } else if (px == "80") {
-            return "40";
-        } else if (px == "72") {
-            return "36";
-        } else if (px == "60") {
-            return "30";
-        } else if (px == "48") {
-            return "24";
-        } else if (px == "0") {
-            return "0";
-        }
-        return null;
-    }
-
     @Override
     public void onResume() {
         super.onResume();
     }
+
 }
