@@ -71,6 +71,10 @@
     <string name="screen_off_electronbeam">Electron beam</string>
     <string name="screen_off_scaledown">Scale down</string>
 
+    <!-- HighEndGFX -->
+    <string name="pref_is_high_end_gfx_title">High end gfx</string>
+    <string name="pref_is_high_end_gfx_summary">Force the isHighEndGfx property on or off (requires reboot)</string>
+
     <!--Lockscreen See Through-->
     <string name="see_through_title">See through</string>
     <string name="see_through_summary">Shows the content behind your lockscreen, your data may be visible to those around you</string>
