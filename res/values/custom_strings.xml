@@ -72,8 +72,8 @@
     <string name="screen_off_scaledown">Scale down</string>
 
     <!-- HighEndGFX -->
-    <string name="pref_is_high_end_gfx_title">High end gfx</string>
-    <string name="pref_is_high_end_gfx_summary">Force the isHighEndGfx property on or off (requires reboot)</string>
+    <string name="pref_force_highend_gfx_title">Force high-end graphics</string>
+    <string name="pref_force_highend_gfx_summary">Enables high-end visual effects such as transparent status/navigation bar (requires reboot)</string>
 
     <!--Lockscreen See Through-->
     <string name="see_through_title">See through</string>

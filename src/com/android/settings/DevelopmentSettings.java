@@ -18,6 +18,7 @@ package com.android.settings;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.app.ActivityManagerNative;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -157,9 +158,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private static final String DEVELOPMENT_SHORTCUT_KEY = "development_shortcut";
 
-    private static final String HIGH_END_GFX_PREF = "pref_is_high_end_gfx";
-
-    private static final String HIGH_END_GFX_PERSIST_PROP = "persist.sys.highendgfx";
+    private static final String FORCE_HIGHEND_GFX_PREF = "pref_force_highend_gfx";
+    private static final String FORCE_HIGHEND_GFX_PERSIST_PROP = "persist.sys.force_highendgfx";
 
     private static final int RESULT_DEBUG_APP = 1000;
 
@@ -214,7 +214,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private CheckBoxPreference mShowAllANRs;
     private CheckBoxPreference mExperimentalWebView;
     private CheckBoxPreference mDevelopmentShortcut;
-    private CheckBoxPreference mHighEndGfxPref;
+    private CheckBoxPreference mForceHighEndGfx;
 
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
     private final ArrayList<CheckBoxPreference> mResetCbPrefs
@@ -260,7 +260,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mEnableAdb = findAndInitCheckboxPref(ENABLE_ADB);
         mAdbParanoid = findAndInitCheckboxPref(ADB_PARANOID);
         mAdbNotify = findAndInitCheckboxPref(ADB_NOTIFY);
-        mHighEndGfxPref = findAndInitCheckboxPref(HIGH_END_GFX_PREF);
         mClearAdbKeys = findPreference(CLEAR_ADB_KEYS);
         if (!SystemProperties.getBoolean("ro.adb.secure", false)) {
             if (debugDebuggingCategory != null) {
@@ -281,11 +280,13 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mAllPrefs.add(mPassword);
         mDevelopmentShortcut = findAndInitCheckboxPref(DEVELOPMENT_SHORTCUT_KEY);
 
-        mHighEndGfxPref = (CheckBoxPreference) prefSet
-                .findPreference(HIGH_END_GFX_PREF);
-        String highEndGfx = SystemProperties.get(HIGH_END_GFX_PERSIST_PROP,
-                android.app.ActivityManager.isHighEndGfx() ? "1" : "0");
-        mHighEndGfxPref.setChecked("1".equals(highEndGfx));
+        if (ActivityManager.isLowRamDeviceStatic()) {
+            mForceHighEndGfx = (CheckBoxPreference) prefSet.findPreference(FORCE_HIGHEND_GFX_PREF);
+            String forceHighendGfx = SystemProperties.get(FORCE_HIGHEND_GFX_PERSIST_PROP, "false");
+            mForceHighEndGfx.setChecked("true".equals(forceHighendGfx));
+        } else {
+            prefSet.removePreference(findPreference(FORCE_HIGHEND_GFX_PREF));
+        }
 
         mMSOB = (ListPreference) findPreference(MEDIA_SCANNER_ON_BOOT);
         mAllPrefs.add(mMSOB);
@@ -294,7 +295,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         if (!android.os.Process.myUserHandle().equals(UserHandle.OWNER)) {
             disableForUser(mEnableAdb);
             disableForUser(mAdbParanoid);
-            disableForUser(mHighEndGfxPref);
             disableForUser(mClearAdbKeys);
             disableForUser(mEnableTerminal);
             disableForUser(mPassword);
@@ -1259,9 +1259,9 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                 mVerifyAppsOverUsb.setEnabled(false);
                 mVerifyAppsOverUsb.setChecked(false);
             }
-        } else if (preference == mHighEndGfxPref) {
-            SystemProperties.set(HIGH_END_GFX_PERSIST_PROP,
-                    mHighEndGfxPref.isChecked() ? "1" : "0");
+        } else if (preference == mForceHighEndGfx) {
+            SystemProperties.set(FORCE_HIGHEND_GFX_PERSIST_PROP,
+                    mForceHighEndGfx.isChecked() ? "true" : "false");
         } else if (preference == mAdbNotify) {
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.ADB_NOTIFY,
