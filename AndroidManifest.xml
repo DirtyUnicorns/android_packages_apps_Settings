@@ -1672,6 +1672,7 @@
         <activity android:name=".chameleonos.labs.gestureanywhere.GestureAnywhereCreateGestureActivity" />
         <activity android:name=".chameleonos.ActiveDisplaySettings" />
         <activity android:name=".chameleonos.ActiveDisplaySettings" />
+        <activity android:name=".dokdo.ProgressBar" />
         <activity android:name=".slim.privacyguard.PrivacyGuardManager" />
 
         <service android:name=".chameleonos.labs.identicons.IdenticonCreationService"
