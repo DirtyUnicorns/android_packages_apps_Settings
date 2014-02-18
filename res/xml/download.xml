@@ -59,4 +59,15 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="misc_category"
+        android:title="@string/misc_category">
+
+    <Preference
+        android:key="gerrit"
+        android:title="@string/gerrit_title"
+        android:summary="@string/gerrit_summary" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
