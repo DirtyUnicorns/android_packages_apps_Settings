@@ -51,6 +51,17 @@
     <!-- Lockscreen battery ring -->
     <string name="battery_around_lockscreen_ring">Battery around unlock ring</string>
 
+    <!-- Lockscreen background -->
+    <string name="lockscreen_background">Background</string>
+    <string name="lockscreen_background_style_title">Lockscreen background style</string>
+    <string name="background_color_fill_title">Background color</string>
+    <string name="background_default">Default style background</string>
+    <string name="background_color_fill">Color fill</string>
+    <string name="background_wallpaper">Custom wallpaper</string>
+    <string name="transparency">Background transparency</string>
+    <string name="background_result_successful">Background changed</string>
+    <string name="background_result_not_successful">Background not changed</string>
+
     <!-- Android debugging over WiFi -->
     <string name="adb_over_network">ADB over network</string>
     <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi-Fi, USB networks). This setting is reset on reboot</string>
