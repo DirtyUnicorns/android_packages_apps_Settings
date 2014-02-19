@@ -45,6 +45,7 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
     Preference mTBOGapps;
     Preference mXposed;
     Preference mXposedMod;
+    Preference mGerrit;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,7 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
         mTBOGapps = findPreference("tbo_gapps");
         mXposed = findPreference("xposed");
         mXposedMod = findPreference("xposed_mod");
+        mGerrit = findPreference("gerrit");
     }
 
     @Override
@@ -79,7 +81,7 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
             startActivity(intent);
             return true;
         } else if (preference == mTBOGapps) {
-            Uri uri = Uri.parse("http://goo.gl/0UVn4d");
+            Uri uri = Uri.parse("http://goo.gl/2RzIBV");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;
@@ -90,6 +92,11 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
             return true;
         } else if (preference == mXposedMod) {
             Uri uri = Uri.parse("http://goo.gl/5J860t");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+            return true;
+        } else if (preference == mGerrit) {
+            Uri uri = Uri.parse("http://goo.gl/kecgnt");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;
