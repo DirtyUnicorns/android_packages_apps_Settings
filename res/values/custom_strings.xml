@@ -1790,5 +1790,7 @@
     <string name="xposed_mod_summary">Browse and install modules to be used with Xposed Framework</string>
     <string name="gerrit_title">mGerrit</string>
     <string name="gerrit_summary">Modified version of mGerrit to view DU as default gerrit</string>
+    <string name="google_camera_title">Google Camera</string>
+    <string name="google_camera_summary">Google Camera (flashable) with photosphere and HDR mode google_camera</string>
 
 </resources>

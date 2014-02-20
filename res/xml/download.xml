@@ -68,6 +68,11 @@
         android:title="@string/gerrit_title"
         android:summary="@string/gerrit_summary" />
 
+    <Preference
+        android:key="google_camera"
+        android:title="@string/google_camera_title"
+        android:summary="@string/google_camera_summary" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
