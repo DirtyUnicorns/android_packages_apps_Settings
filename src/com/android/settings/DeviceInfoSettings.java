@@ -187,8 +187,8 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
             mTaps[mTaps.length-1] = SystemClock.uptimeMillis();
             if (mTaps[0] >= (SystemClock.uptimeMillis()-500)) {
                 Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.setClassName("android",
-                        com.android.internal.app.DirtyUnicornsActivity.class.getName());
+                intent.setClassName("com.android.settings",
+                        com.android.settings.du.PlatLogoActivity.class.getName());
                 try {
                     startActivity(intent);
                 } catch (Exception e) {
