@@ -46,8 +46,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start|bottom"
         settings:strokeColor="@android:color/white"
-        settings:fillColor="#c033b5e5"
-        settings:fillColorSecondary="#6633b5e5" />
+        settings:fillColor="#c0ffffff"
+        settings:fillColorSecondary="#66ffffff" />
 
     <com.android.settings.widget.ChartNetworkSeriesView
         android:id="@+id/detail_series"
