@@ -333,6 +333,10 @@
     <string name="camera_sounds_title">Camera shutter sound</string>
     <string name="camera_sounds_summary">WARNING: Disabling the camera shutter sound is illegal in some areas!</string>
 
+    <!-- Double tap to sleep -->
+    <string name="double_tap_to_sleep_title">Double tap to sleep</string>
+    <string name="double_tap_to_sleep_summary">Allow double tap in statusbar to turn off screen</string>
+
     <!-- Quiet hours -->
     <string name="quiet_hours_title">Quiet hours</string>
     <string name="quiet_hours_summary">Configure the hours the device should be quiet</string>
