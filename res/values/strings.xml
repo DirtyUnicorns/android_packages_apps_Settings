@@ -4912,4 +4912,10 @@
 
     <!-- Text to display in regulatory info screen (from device overlay). -->
     <string name="regulatory_info_text"></string>
+
+        <!-- Whether device has hardware buttons -->
+    <bool name="has_hardware_buttons">true</bool>
+
+    <!-- Whether device has advanced settings -->
+    <bool name="has_advanced_settings">true</bool>
 </resources>
