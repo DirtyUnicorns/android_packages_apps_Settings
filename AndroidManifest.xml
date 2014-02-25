@@ -1659,6 +1659,7 @@
         <activity android:name=".du.BatteryBarStyle" />
         <activity android:name=".du.Download" />
         <activity android:name=".du.Recents" />
+        <activity android:name=".du.ScreenStateToggles" />
         <activity android:name=".du.batterylight.BatteryLightSettings" />
         <activity android:name=".du.brightness.BrightnessSettings" />
         <activity android:name=".du.interfacesettings.BarsSettings" />
