@@ -42,14 +42,16 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
     private static final String QS_QUICK_ACCESS = "qs_quick_access";
     private static final String QS_QUICK_ACCESS_LINKED = "qs_quick_access_linked";
+    private static final String QUICK_PULLDOWN = "quick_pulldown";
 
     private CheckBoxPreference mQSQuickAccess;
     private CheckBoxPreference mQSQuickAccess_linked;
+    private ListPreference mQuickPulldown;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+
         addPreferencesFromResource(R.xml.quick_settings);
         PreferenceScreen prefSet = getPreferenceScreen();
 
@@ -62,6 +64,14 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mQSQuickAccess_linked = (CheckBoxPreference) prefSet.findPreference(QS_QUICK_ACCESS_LINKED);
         mQSQuickAccess_linked.setChecked((Settings.System.getInt(resolver,
                 Settings.System.QS_QUICK_ACCESS_LINKED, 0) == 1));
+
+        mQuickPulldown = (ListPreference) getPreferenceScreen().findPreference(QUICK_PULLDOWN);
+        mQuickPulldown.setOnPreferenceChangeListener(this);
+        int quickPulldownValue = Settings.System.getInt(getActivity().getApplicationContext()
+                                                        .getContentResolver(),
+                                                        Settings.System.QS_QUICK_PULLDOWN, 0);
+        mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
+        updatePulldownSummary(quickPulldownValue);
     }
 
     @Override
@@ -74,9 +84,26 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         super.onPause();
     }
 
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        ContentResolver resolver = getActivity().getContentResolver();
+    private void updatePulldownSummary(int value) {
+        Resources res = getResources();
+        if (value == 0) {
+            /* quick pulldown deactivated */
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_off));
+        } else {
+            String direction = res.getString(value == 2
+                                             ? R.string.quick_pulldown_summary_left : R.string.quick_pulldown_summary_right);
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary, direction));
+        }
+    }
 
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mQuickPulldown) {
+            int quickPulldownValue = Integer.valueOf((String) objValue);
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                                   Settings.System.QS_QUICK_PULLDOWN, quickPulldownValue);
+            updatePulldownSummary(quickPulldownValue);
+            return true;
+        }
         return false;
     }
 
