@@ -31,7 +31,8 @@
         android:entries="@array/identicons_style_entries"
         android:entryValues="@array/identicons_style_values"
         settings:entryImages="@array/identicons_style_icons"
-        android:defaultValue="0"/>
+        android:defaultValue="0"
+        android:dependency="identicons_enabled" />
 
     <Preference
         android:key="identicons_create"

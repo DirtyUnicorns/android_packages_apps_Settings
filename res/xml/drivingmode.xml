@@ -17,16 +17,17 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/voice_tts_title" >
 
-    <PreferenceScreen android:key="tts_settings_preference"
-        android:fragment="com.android.settings.tts.TextToSpeechSettings"
-        android:title="@string/tts_settings_title"/>
-
     <SwitchPreference
         android:key="voice_tts"
         android:persistent="false"
         android:title="@string/voice_tts_notification_title"
         android:summaryOff="@string/voice_tts_notification_summary_off"
         android:summaryOn="@string/voice_tts_notification_summary_on" />
+
+    <PreferenceScreen android:key="tts_settings_preference"
+        android:fragment="com.android.settings.tts.TextToSpeechSettings"
+        android:title="@string/tts_settings_title"
+        android:dependency="voice_tts"/>
 
     <com.android.settings.chameleonos.SeekBarPreference
         android:key="voice_tts_volume"
