@@ -22,7 +22,8 @@
 
         <PreferenceScreen
             android:title="@string/performance_settings_warning_title"
-            android:summary="@string/buildprop_settings_warning" />
+            android:summary="@string/buildprop_settings_warning"
+            android:selectable="false" />
 
     </PreferenceCategory>
 
