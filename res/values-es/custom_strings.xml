@@ -17,7 +17,6 @@
 
   <string name="mod_version">Versión DU</string>
   <string name="mod_version_default">Defecto de la versión</string>
-  <string name="header_category_interface">La interfaz de la categoría de cabecera</string>
   <string name="performance_settings">parámetros de rendimiento</string>
   <string name="notification_light_settings">Luz de notificacion</string>
   <string name="battery_light_settings">Parámetros de los de batería</string>

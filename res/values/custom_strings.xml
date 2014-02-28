@@ -20,7 +20,6 @@
     <string name="mod_version_default">Unknown</string>
 
     <!-- Main list strings -->
-    <string name="header_category_interface">CUSTOMIZATION</string>
     <string name="performance_settings">Performance</string>
     <string name="notification_light_settings">Notification light</string>
     <string name="battery_light_settings">Battery light</string>

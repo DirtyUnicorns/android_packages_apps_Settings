@@ -17,7 +17,6 @@
 
   <string name="mod_version">Versione DU</string>
   <string name="mod_version_default">Sconosciuto</string>
-  <string name="header_category_interface">PERSONALIZZAZIONE</string>
   <string name="performance_settings">Prestazioni</string>
   <string name="notification_light_settings">Luce di notifica</string>
   <string name="battery_light_settings">Spia della batteria</string>
