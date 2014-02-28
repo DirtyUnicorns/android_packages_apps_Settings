@@ -18,9 +18,6 @@
 
 package com.android.settings.du.interfacesettings;
 
-import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.R;
-
 import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
@@ -31,6 +28,10 @@ import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
+
+import com.android.settings.R;
+import com.android.settings.util.Helpers;
+import com.android.settings.SettingsPreferenceFragment;
 
 public class BarsSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -43,6 +44,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private static final String MISSED_CALL_BREATH = "missed_call_breath";
     private static final String VOICEMAIL_BREATH = "voicemail_breath";
     private static final String EMULATE_MENU_KEY = "emulate_menu_key";
+    private static final String KEY_SHOW_4G = "show_4g_for_lte";
 
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mStatusBarNotifCount;
@@ -51,6 +53,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mMissedCallBreath;
     private CheckBoxPreference mVoicemailBreath;
     private CheckBoxPreference mEmulateMenuKey;
+    private CheckBoxPreference mShow4G;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -99,10 +102,13 @@ public class BarsSettings extends SettingsPreferenceFragment implements
                 Settings.System.KEY_VOICEMAIL_BREATH, 0) == 1);
         mVoicemailBreath.setOnPreferenceChangeListener(this);
 
-            mEmulateMenuKey = (CheckBoxPreference) prefSet.findPreference(EMULATE_MENU_KEY);
-            mEmulateMenuKey.setChecked(Settings.System.getInt(resolver,
-                    Settings.System.EMULATE_HW_MENU_KEY, 0) == 1);
-            mEmulateMenuKey.setOnPreferenceChangeListener(this);
+        mEmulateMenuKey = (CheckBoxPreference) prefSet.findPreference(EMULATE_MENU_KEY);
+        mEmulateMenuKey.setChecked(Settings.System.getInt(resolver,
+                Settings.System.EMULATE_HW_MENU_KEY, 0) == 1);
+        mEmulateMenuKey.setOnPreferenceChangeListener(this);
+
+        mShow4G = (CheckBoxPreference) findPreference(KEY_SHOW_4G);
+            mShow4G.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -138,6 +144,11 @@ public class BarsSettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver,
                 Settings.System.EMULATE_HW_MENU_KEY, value ? 1 : 0);
+        } else if (preference == mShow4G) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver,
+                Settings.System.SHOW_4G_FOR_LTE, value ? 1 : 0);
+            Helpers.restartSystemUI();
         } else {
             return false;
         }
