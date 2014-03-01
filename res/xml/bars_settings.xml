@@ -44,6 +44,12 @@
             android:summary="@string/emulate_menu_key_summary"
             android:persistent="false"/>
 
+    <CheckBoxPreference
+            android:key="show_4g_for_lte"
+            android:title="@string/show_4G_for_LTE_title"
+            android:summary="@string/show_4G_for_LTE_summary"
+            android:defaultValue="false" />
+
    <PreferenceCategory
             android:key="breathing_notifications_title"
             android:title="@string/breathing_notifications_title">
