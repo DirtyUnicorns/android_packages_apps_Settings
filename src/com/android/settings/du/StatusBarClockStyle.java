@@ -40,6 +40,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
+import com.android.settings.util.Helpers;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 import java.util.Date;
@@ -56,6 +57,7 @@ implements OnPreferenceChangeListener {
     private static final String PREF_CLOCK_DATE_STYLE = "clock_date_style";
     private static final String PREF_CLOCK_DATE_FORMAT = "clock_date_format";
     private static final String STATUS_BAR_CLOCK = "status_bar_show_clock";
+    private static final String KEY_CLOCK_BOLD = "bold_clock_text";
 
     public static final int CLOCK_DATE_STYLE_LOWERCASE = 1;
     public static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
@@ -70,6 +72,7 @@ implements OnPreferenceChangeListener {
     private ListPreference mClockDateStyle;
     private ListPreference mClockDateFormat;
     private CheckBoxPreference mStatusBarClock;
+    private CheckBoxPreference mBoldClock;
 
     private boolean mCheckPreferences;
 
@@ -94,6 +97,10 @@ implements OnPreferenceChangeListener {
         mClockStyle.setValue(Integer.toString(Settings.System.getInt(getActivity()
                .getContentResolver(), Settings.System.STATUSBAR_CLOCK_STYLE, 0)));
         mClockStyle.setSummary(mClockStyle.getEntry());
+
+        mBoldClock = (CheckBoxPreference) prefSet.findPreference(KEY_CLOCK_BOLD);
+        mBoldClock.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.STATUS_BAR_BOLD_CLOCK, 0) == 1));
 
         mClockAmPmStyle = (ListPreference) prefSet.findPreference(PREF_AM_PM_STYLE);
         mClockAmPmStyle.setOnPreferenceChangeListener(this);
@@ -159,6 +166,18 @@ implements OnPreferenceChangeListener {
         setHasOptionsMenu(true);
         mCheckPreferences = true;
         return prefSet;
+    }
+
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        boolean value;
+        if (preference == mBoldClock) {
+            value = mBoldClock.isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.STATUS_BAR_BOLD_CLOCK, value ? 1 : 0);
+            Helpers.restartSystemUI();
+            return true;
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -263,7 +282,7 @@ implements OnPreferenceChangeListener {
         }
         return false;
     }
-    
+
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.add(0, MENU_RESET, 0, R.string.reset)
