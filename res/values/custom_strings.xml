@@ -1797,6 +1797,8 @@
     <string name="toast_GrowFadeCenter_animation">GrowFadeCenter Animation</string>
     <string name="toast_GrowFadeBottom_animation">GrowFadeBottom Animation</string>
     <string name="toast_Translucent_animation">Translucent Animation</string>
+    <string name="toast_SlideLeftRight_animation">Slide Left To Right Animation</string>
+    <string name="toast_SlideRightLeft_animation">Slide Right To Left Animation</string>
 
     <!-- Hostname setting -->
     <string name="device_hostname">Device hostname</string>
