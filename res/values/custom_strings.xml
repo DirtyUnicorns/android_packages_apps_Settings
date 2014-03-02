@@ -1481,7 +1481,7 @@
 
     <!-- GlowPad Torch -->
     <string name="lockscreen_glowpad_torch_title">Slider torch</string>
-    <string name="lockscreen_glowpad_torch_summary">Double-tap and hold the slider to start torch</string>
+    <string name="lockscreen_glowpad_torch_summary">Press and hold lockscreen icon handle to enable torch</string>
 
     <!-- Status bar color -->
     <string name="custom_status_bar_header_title">Status Bar Color</string>
