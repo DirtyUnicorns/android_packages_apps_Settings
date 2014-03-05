@@ -18,7 +18,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mod_version">DU version</string>
   <string name="mod_version_default">Inconnu</string>
-  <string name="performance_settings">Performance</string>
   <string name="notification_light_settings">Voyant de notification</string>
   <string name="battery_light_settings">Voyant de batterie</string>
   <string name="header_button_settings">Boutons</string>

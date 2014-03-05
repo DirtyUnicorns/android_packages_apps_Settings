@@ -8,17 +8,14 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src) \
         src/com/android/settings/EventLogTags.logtags
-LOCAL_SRC_FILES += $(call all-java-files-under, ../PerformanceControl/src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../DU_changelog/src)
 
 LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res
-LOCAL_RESOURCE_DIR += packages/apps/PerformanceControl/res
 LOCAL_RESOURCE_DIR += packages/apps/DU_changelog/res
 
 LOCAL_ASSET_DIR += packages/apps/PerformanceControl/assets
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
-	--extra-packages com.brewcrewfoo.performance \
         --extra-packages us.zamzow.mazwoz.dirtyunicornschangelog
 
 LOCAL_PACKAGE_NAME := Settings

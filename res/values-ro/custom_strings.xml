@@ -16,7 +16,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mod_version">Versiunea de DU</string>
   <string name="mod_version_default">Necunoscut</string>
-  <string name="performance_settings">Performanţă</string>
   <string name="notification_light_settings">Lumina de notificare</string>
   <string name="battery_light_settings">Lumină baterie</string>
   <string name="header_button_settings">Butoane</string>

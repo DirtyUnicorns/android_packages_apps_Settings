@@ -21,7 +21,6 @@
 
     <!-- Main list strings -->
     <string name="header_category_dirt">CUSTOMIZATIONS</string>
-    <string name="performance_settings">Performance</string>
     <string name="notification_light_settings">Notification light</string>
     <string name="battery_light_settings">Battery light</string>
     <string name="header_button_settings">Buttons</string>
@@ -1809,5 +1808,8 @@
     <!-- Show 4G for LTE -->
     <string name="show_4G_for_LTE_title">Show 4G for LTE</string>
     <string name="show_4G_for_LTE_summary">Whether to show the 4G icon in statusbar when in LTE, requires a SystemUI restart</string>
+
+    <!-- Kernel Tweaker -->
+    <string name="kernel_tweaker_title">Kernel Tweaker</string>
 
 </resources>

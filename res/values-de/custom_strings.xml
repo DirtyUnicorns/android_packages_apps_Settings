@@ -17,7 +17,6 @@
   <string name="mod_version">DU Version</string>
   <string name="mod_version_default">Unbekannt</string>
   <string name="header_category_interface">ANPASSUNGEN</string>
-  <string name="performance_settings">Leistung</string>
   <string name="notification_light_settings">Benachrichtigungslicht</string>
   <string name="battery_light_settings">Batterie LED</string>
   <string name="header_button_settings">Schaltflächen</string>
