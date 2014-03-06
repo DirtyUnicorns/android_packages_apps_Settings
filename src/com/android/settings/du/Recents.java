@@ -42,6 +42,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
+import com.android.settings.util.Helpers;
 
 import java.util.Date;
 
@@ -56,6 +57,7 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private static final String RECENT_MENU_CLEAR_ALL = "recent_menu_clear_all";
     private static final String RECENT_MENU_CLEAR_ALL_LOCATION = "recent_menu_clear_all_location";
     private static final String RECENTS_USE_OMNISWITCH = "recents_use_omniswitch";
+    private static final String CUSTOM_RECENT_MODE = "custom_recent_mode";
 
     private static final int MENU_RESET = Menu.FIRST;
     private static final int MENU_HELP = MENU_RESET + 1;
@@ -73,6 +75,7 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private CheckBoxPreference mRecentClearAll;
     private ListPreference mRecentClearAllPosition;
     private CheckBoxPreference mRecentsUseOmniSwitch;
+    private CheckBoxPreference mRecentsCustom;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -142,6 +145,11 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         }
         mRecentClearAllPosition.setOnPreferenceChangeListener(this);
 
+        boolean enableRecentsCustom = Settings.System.getBoolean(getContentResolver(),
+                                      Settings.System.CUSTOM_RECENT, false);
+        mRecentsCustom = (CheckBoxPreference) findPreference(CUSTOM_RECENT_MODE);
+        mRecentsCustom.setChecked(enableRecentsCustom);
+        mRecentsCustom.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -231,6 +239,11 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         } else if (preference == mRecentsUseOmniSwitch) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver, Settings.System.RECENTS_USE_OMNISWITCH, value ? 1 : 0);
+            return true;
+        } else if (preference == mRecentsCustom) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver, Settings.System.CUSTOM_RECENT, value ? 1 : 0);
+            Helpers.restartSystemUI();
             return true;
          }
         return false;

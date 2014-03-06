@@ -1473,10 +1473,13 @@
     <string name="voicemail_breath_title">Breathing Voicemail</string>
     <string name="voicemail_breath_summary">Will give your voicemail notifications a breathing effect in the statusbar</string>
 
-    <!-- OmniSwitch -->
+    <!-- Alternative Recents -->
+    <string name="alternative_recents_title">Alternative Recents</string>
     <string name="omniswitch_settings_title">OmniSwitch</string>
-    <string name="recents_use_omniswitch_title">Use for recents</string>
+    <string name="recents_use_omniswitch_title">OmniSwitch recents</string>
     <string name="recents_use_omniswitch_summary">Make sure OmniSwitch is enabled prior to use</string>
+    <string name="custom_recent_title">Slim recents</string>
+    <string name="custom_recent_summary">Switch between slim style recents</string>
 
     <!-- GlowPad Torch -->
     <string name="lockscreen_glowpad_torch_title">Slider torch</string>
