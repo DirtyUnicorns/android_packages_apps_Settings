@@ -5977,4 +5977,6 @@
    <!-- Message for encryption dialog telling the user that Talkback and other accessibility services will be disabled. -->
    <string name="encrypt_talkback_dialog_message_password">When you enter your password to start this device, accessibility services like <xliff:g id="service" example="TalkBack">%1$s</xliff:g> won\'t yet be available.</string>
 
+    <!-- Toast message when trying to open system app AppOps -->
+    <string name="appops_sys_app">Cannot change operations for system apps</string>
 </resources>
