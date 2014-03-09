@@ -143,6 +143,17 @@
                 android:targetClass="com.cyanogenmod.settings.device.DeviceSettings" />
     </header>
 
+    <!-- Oppo N1 Parts -->
+    <header
+        android:id="@+id/omni_settings"
+        android:title="@string/advanced_settings_title"
+        android:icon="@drawable/ic_settings_advanced">
+        <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="org.omnirom.device.DeviceSettings"
+                android:targetPackage="org.omnirom.device" />
+    </header>
+
     <!-- Storage -->
     <header
         android:id="@+id/storage_settings"
