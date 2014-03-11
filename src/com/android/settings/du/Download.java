@@ -83,7 +83,7 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
             startActivity(intent);
             return true;
         } else if (preference == mTBOGapps) {
-            Uri uri = Uri.parse("http://goo.gl/2RzIBV");
+            Uri uri = Uri.parse("http://goo.gl/z3poqc");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;
