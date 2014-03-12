@@ -50,7 +50,7 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
     private ListPreference mVolumeStepsRing;
     private ListPreference mVolumeStepsSystem;
     private ListPreference mVolumeStepsVoiceCall;
-    
+
     private AudioManager mAudioManager;
 
     @Override
@@ -61,11 +61,11 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
             addPreferencesFromResource(R.xml.volume_steps_settings);
 
             PreferenceScreen prefSet = getPreferenceScreen();
-            
+
             int activePhoneType = TelephonyManager.getDefault().getCurrentPhoneType();
 
             mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-            
+
             boolean isPhone = activePhoneType != TelephonyManager.PHONE_TYPE_NONE;
             PreferenceCategory audioCat = (PreferenceCategory) getPreferenceScreen().findPreference("category_volume");
 
@@ -118,7 +118,7 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
             }
             else
                 audioCat.removePreference(mVolumeStepsVoiceCall);
-                
+
         }
     }
 
@@ -141,12 +141,12 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
 
         return false;
     }
-    
+
     private void updateVolumeSteps(int streamType, int steps) {
         //Change the setting live
         mAudioManager.setStreamMaxVolume(streamType, steps);
     }
-    
+
     private void updateVolumeSteps(String settingsKey, int steps) {
         int streamType = -1;
         if (settingsKey.equals(KEY_VOLUME_STEPS_ALARM))

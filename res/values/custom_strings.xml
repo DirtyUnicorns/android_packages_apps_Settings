@@ -24,6 +24,7 @@
     <string name="notification_light_settings">Notification light</string>
     <string name="battery_light_settings">Battery light</string>
     <string name="header_button_settings">Buttons</string>
+    <string name="advanced_category_title">Advanced</string>
 
     <!-- Volume panel tweaks -->
     <string name="volume_adjust_sounds_enable_title">Volume adjust sound</string>
@@ -89,7 +90,7 @@
     <string name="see_through_summary">Shows the content behind your lockscreen, your data may be visible to those around you</string>
 
     <!-- AppOps additions -->
-    <string name="appops_settings">App Ops</string>
+    <string name="appops_settings">Permissions</string>
     <string name="appops_sysapp_beware">Beware!</string>
     <string name="appops_sysapp_warning">"Changing permissions of core Android components might lead to undesired behavior. Change settings here at your own risk!</string>
 
@@ -181,6 +182,7 @@
     <string name="recents_view">Clear-All button</string>
     <string name="misc_traffic">Traffic Indicators</string>
     <string name="animations_cat">Animations</string>
+    <string name="interface_animation_title">Animations</string>
     <string name="lock_settings_misc_title">Misc Lockscreen Tweaks</string>
     <string name="lockscreen_screen_options">Lockscreen</string>
 
@@ -637,50 +639,6 @@
     <string name="allow_rotate_title">Allow rotation</string>
     <string name="allow_rotate_summary">Enables landscape mode on lockscreen.</string>
 
-    <!-- Animation Controls -->
-    <string name="title_animation_controls">System Animations</string>
-    <string name="activity_open_title">Activity Open Animation</string>
-    <string name="activity_close_title">Activity Close Animation</string>
-    <string name="task_open_title">Task Open Animation</string>
-    <string name="task_close_title">Task Close Animation</string>
-    <string name="task_move_to_front_title">Move To Front Animation</string>
-    <string name="task_move_to_back_title">Move To Back Animation</string>
-    <string name="wallpaper_open_title">Wallpaper Open Animation</string>
-    <string name="wallpaper_close_title">Wallpaper Close Animation</string>
-    <string name="wallpaper_intra_open_title">Wallpaper Intra Open Animation</string>
-    <string name="wallpaper_intra_close_title">Wallpaper Intra Close Animation</string>
-    <string name="animation_duration_title">Animation Duration</string>
-    <string name="title_animation_no_override">Prevent App Overrides</string>
-    <string name="summary_animation_no_override">Prevent apps from overriding transitions.</string>
-    <string name="animation_duration_default">Default</string>
-    <string name="header_summary_animation">@null</string>
-
-    <!-- ListView animation -->
-    <string name="list_view_animations">List View Animations</string>
-    <string name="bars_and_menus_category_system_title">System</string>
-    <string name="listview_animation_title">Animations</string>
-    <string name="listview_off">Off</string>
-    <string name="listview_wave_left">Wave (Left)</string>
-    <string name="listview_wave_right">Wave (Right)</string>
-    <string name="listview_alpha">Alpha</string>
-    <string name="listview_scale">Scale</string>
-    <string name="listview_stack_top">Stack (Top)</string>
-    <string name="listview_stack_bottom">Stack (Bottom)</string>
-    <string name="listview_unfold">Unfold</string>
-    <string name="listview_fold">Fold</string>
-    <string name="listview_translate_left">Translate (Left)</string>
-    <string name="listview_translate_right">Translate (Right)</string>
-
-    <!-- ListView interpolator -->
-    <string name="listview_interpolator_title">Interpolators</string>
-    <string name="listview_accelerate_interpolator">Accelerate</string>
-    <string name="listview_decelerate_interpolator">Decelerate</string>
-    <string name="listview_accelerate_decelerate_interpolator">Accelerate and decelerate</string>
-    <string name="listview_anticipate_interpolator">Anticipate</string>
-    <string name="listview_overshoot_interpolator">Overshoot</string>
-    <string name="listview_anticipate_overshoot_interpolator">Anticipate and overshoot</string>
-    <string name="listview_bounce_interpolator">Bounce</string>
-
     <!-- Keyboard and Inputmethods  -->
     <string name="title_keyboard_input">Advanced options</string>
     <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
@@ -716,16 +674,6 @@
     <string name="notification_show_wifi_ssid_title">Show Wifi network name</string>
     <string name="notification_show_wifi_ssid_summary">Display the name of the currently connected Wifi network</string>
     <string name="add">Add</string>
-
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
-    <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
-    <string name="hex">Hex:</string>
-    <string name="hex_hint">#ff000000</string>
-    <string name="set">Set</string>
-    <string name="color_default">Default</string>
 
     <!-- Quick Settings -->
     <string name="quick_settings_title">Quick settings</string>
@@ -999,8 +947,6 @@
     <string name="title_tile_gps">GPS</string>
 
     <!-- StatusBar Battery -->
-    <string name="ok">OK</string>
-    <string name="reset">Reset</string>
     <string name="bars_and_menus_category_status_bar_title">Status bar</string>
     <string name="recents_category">Recents</string>
     <string name="status_bar_battery_title">Battery style</string>
@@ -1227,8 +1173,6 @@
     <string name="power_menu_toggle_mobile_data_title">Mobile Data</string>
     <string name="power_menu_toggle_airplane_mode_title">Airplane mode</string>
     <string name="power_menu_toggle_sound_toggles_title">Sound toggles</string>
-
-    <!-- Enable power menu -->
     <string name="lockscreen_enable_power_menu_title">Power menu in lockscreen</string>
 
     <!--  Recents clear all -->
@@ -1366,7 +1310,7 @@
     <string name="time_five_to">Five till</string>
 
     <!-- Active Display -->
-    <string name="active_display_settings">ActiveDisplay</string>
+    <string name="active_display_settings">Active Display</string>
     <string name="ad_settings_title">Active display</string>
     <string name="ad_settings_summary">Change active display settings</string>
     <string name="ad_enable_title">Enable</string>
@@ -1475,9 +1419,9 @@
 
     <!-- Alternative Recents -->
     <string name="alternative_recents_title">Alternative Recents</string>
-    <string name="omniswitch_settings_title">OmniSwitch</string>
-    <string name="recents_use_omniswitch_title">OmniSwitch recents</string>
-    <string name="recents_use_omniswitch_summary">Make sure OmniSwitch is enabled prior to use</string>
+    <string name="omniswitch_settings_title">Omni Switch</string>
+    <string name="recents_use_omniswitch_title">Omni Switch recents</string>
+    <string name="recents_use_omniswitch_summary">Make sure Omni Switch is enabled prior to use</string>
     <string name="custom_recent_title">Slim recents</string>
     <string name="custom_recent_summary">Switch between slim style recents</string>
 
@@ -1596,7 +1540,6 @@
     <string name="profile_menu_delete">Delete</string>
     <string name="profile_settings_title">Profile</string>
     <string name="profile_empty_list_profiles_off">To configure and use System profiles, turn Profiles on.</string>
-    <string name="ok">OK</string>
 
     <!-- Add Profile -->
     <string name="add_profile_dialog_title">Create new profile</string>
@@ -1787,7 +1730,7 @@
     <string name="screen_state_toggles_mobile_data_summary">Mobile data will be disabled on screen off</string>
 
     <!-- Toast Animations -->
-    <string name="toast_animation_title">Toast Animations</string>
+    <string name="toast_animation_title">Toast</string>
     <string name="toast_none_animation">None</string>
     <string name="toast_default_animation">Default</string>
     <string name="toast_fade_animation">Fade Animation</string>
@@ -1810,9 +1753,104 @@
 
     <!-- Show 4G for LTE -->
     <string name="show_4G_for_LTE_title">Show 4G for LTE</string>
-    <string name="show_4G_for_LTE_summary">Whether to show the 4G icon in statusbar when in LTE, requires a SystemUI restart</string>
+    <string name="show_4G_for_LTE_summary">Switch to 4G icon in statusbar when in LTE, requires a SystemUI restart</string>
 
     <!-- Kernel Tweaker -->
     <string name="kernel_tweaker_title">Kernel Tweaker</string>
+
+    <!-- List View animations -->
+    <string name="bars_and_menus_category_system_title">System</string>
+    <string name="listview_title">List View</string>
+    <string name="listview_animation_title">List View Animation</string>
+    <string name="listview_off">Off</string>
+    <string name="listview_wave_left">Wave (Left)</string>
+    <string name="listview_wave_right">Wave (Right)</string>
+    <string name="listview_alpha">Alpha</string>
+    <string name="listview_scale">Scale</string>
+    <string name="listview_stack_top">Stack (Top)</string>
+    <string name="listview_stack_bottom">Stack (Bottom)</string>
+    <string name="listview_unfold">Unfold</string>
+    <string name="listview_fold">Fold</string>
+    <string name="listview_translate_left">Translate (Left)</string>
+    <string name="listview_translate_right">Translate (Right)</string>
+    <string name="listview_duration_title">List View Duration</string>
+    <string name="listview_cache_title">List View Persistent Cache</string>
+    <string name="listview_cache_none">No Cache</string>
+    <string name="listview_cache_anim">Animation Cache</string>
+    <string name="listview_cache_scroll">Scrolling Cache</string>
+    <string name="listview_cache_all">Animation &amp; Scrolling</string>
+    <string name="listview_blacklist_title">Excluded applications</string>
+    <string name="listview_blacklist_summary">Prevent Apps from animating</string>
+    <string name="listview_test">Test List View</string>
+    <string name="listview_test_summary">Open Test Dialog with a List View</string>
+    <string name="listview_test_instructions">Scroll to see changes</string>
+    <string name="listview_test_item">List View Item</string>
+
+    <!-- ListView interpolator -->
+    <string name="listview_interpolator_title">List View Interpolator</string>
+    <string name="listview_accelerate_interpolator">Accelerate</string>
+    <string name="listview_decelerate_interpolator">Decelerate</string>
+    <string name="listview_accelerate_decelerate_interpolator">Accelerate and Decelerate</string>
+    <string name="listview_anticipate_interpolator">Anticipate</string>
+    <string name="listview_overshoot_interpolator">Overshoot</string>
+    <string name="listview_anticipate_overshoot_interpolator">Anticipate and Overshoot</string>
+    <string name="listview_bounce_interpolator">Bounce</string>
+    <string name="listview_cycle_interpolator">Cycle</string>
+    <string name="listview_linear_interpolator">Linear</string>
+
+    <!-- Animation Controls -->
+    <string name="animation_settings_reset_message">Reset all animation settings to default?</string>
+    <string name="animation_controls_title">Animation Controls</string>
+    <string name="activity_open_title">Open In-App Activity Animation</string>
+    <string name="activity_close_title">Close In-App Activity Animation</string>
+    <string name="task_open_title">Launch From In App Animation</string>
+    <string name="task_close_title">Return To Previous Animation</string>
+    <string name="task_move_to_front_title">Move To Front Animation</string>
+    <string name="task_move_to_back_title">Move To Back Animation</string>
+    <string name="wallpaper_open_title">Return To Homescreen Animation</string>
+    <string name="wallpaper_close_title">Launch From Homescreen Animation</string>
+    <string name="wallpaper_intra_open_title">Recents Page Open Animation</string>
+    <string name="wallpaper_intra_close_title">Recents Page Close Animation</string>
+    <string name="animation_duration_title">Animation Duration</string>
+    <string name="animation_no_override_title">Prevent App Overrides</string>
+    <string name="animation_no_override_summary_on">Prevent apps from overriding transitions.</string>
+    <string name="animation_no_override_summary_off">Apps can overriding transitions.</string>
+
+    <!-- Animation Strings -->
+    <string name="animation_default">Default</string>
+    <string name="animation_fade">Fade</string>
+    <string name="animation_slide_right">Slide in right</string>
+    <string name="animation_slide_left">Slide in left</string>
+    <string name="animation_slide_right_no_fade">Slide in right (No fade)</string>
+    <string name="animation_slide_left_no_fade">Slide in left (No fade)</string>
+    <string name="animation_slide_up">Slide in bottom</string>
+    <string name="animation_slide_down">Slide in top</string>
+    <string name="animation_translucent">Translucent</string>
+    <string name="animation_grow_shrink">Grow in (Top)</string>
+    <string name="animation_grow_shrink_center">Grow in (Center)</string>
+    <string name="animation_grow_shrink_bottom">Grow in (Bottom)</string>
+    <string name="animation_grow_shrink_left">Grow in (Left)</string>
+    <string name="animation_grow_shrink_right">Grow in (Right)</string>
+    <string name="animation_random">Random</string>
+
+    <!-- Scrolling Animation Controls -->
+    <string name="scrolling_title">Scrolling</string>
+    <string name="animation_fling_velocity_title">Fling Velocity</string>
+    <string name="animation_scroll_friction_title">Scroll Friction</string>
+    <string name="animation_overscroll_distance_title">Overscroll Distance</string>
+    <string name="animation_overfling_distance_title">Overfling Distance</string>
+    <string name="animation_duration_summary">Set duration</string>
+    <string name="animation_no_scroll_title">Customizing scroll</string>
+    <string name="animation_no_scroll_summary_on">Enabled</string>
+    <string name="animation_no_scroll_summary_off">Disabled</string>
+    <string name="scroll_disclaimer_summary">Note: Most apps need to be restarted for values to take effect</string>
+
+    <!-- IME Animation Controls -->
+    <string name="ime_animation_title">Keyboard</string>
+    <string name="ime_animation_test_title">Test IME Animation Here</string>
+    <string name="ime_enter_animation_title">Enter Animation</string>
+    <string name="ime_exit_animation_title">Exit Animation</string>
+    <string name="ime_interpolator_title">Interpolator</string>
+    <string name="ime_duration_title">IME Duration</string>
 
 </resources>

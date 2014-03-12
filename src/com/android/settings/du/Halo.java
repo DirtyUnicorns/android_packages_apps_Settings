@@ -99,7 +99,7 @@ public class Halo extends SettingsPreferenceFragment
         try {
             float haloSize = Settings.System.getFloat(mContext.getContentResolver(),
                     Settings.System.HALO_SIZE, 1.0f);
-            mHaloSize.setValue(String.valueOf(haloSize));  
+            mHaloSize.setValue(String.valueOf(haloSize));
         } catch(Exception ex) {
             // So what
         }
@@ -173,7 +173,7 @@ public class Halo extends SettingsPreferenceFragment
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.HALO_UNLOCK_PING, mHaloUnlockPing.isChecked()
                     ? 1 : 0);
-        } 
+        }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 

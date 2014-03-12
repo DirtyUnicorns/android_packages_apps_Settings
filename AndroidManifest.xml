@@ -1651,7 +1651,6 @@
         <activity android:name=".du.NavbarDimenSettings" />
         <activity android:name=".du.NavRing" />
         <activity android:name=".du.Animations" />
-        <activity android:name=".du.ListViewAnimations" />
         <activity android:name=".du.CarrierLabel" />
         <activity android:name=".du.AppSidebar" />
         <activity android:name=".du.ButtonSettings" />
@@ -1666,6 +1665,7 @@
         <activity android:name=".du.interfacesettings.StatusBarColor" />
         <activity android:name=".du.interfacesettings.MenusSettings" />
         <activity android:name=".du.interfacesettings.NotificationPanelSettings" />
+        <activity android:name=".du.interfacesettings.AnimationInterfaceSettings" />
         <activity android:name=".du.notificationlight.NotificationLightSettings" />
         <activity android:name=".util.ShowBuildProp" />
         <activity android:name=".cyanogenmod.PropModder" />

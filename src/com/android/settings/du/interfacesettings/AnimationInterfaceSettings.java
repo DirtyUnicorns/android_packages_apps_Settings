@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.du;
+package com.android.settings.du.interfacesettings;
 
 import android.app.ActivityManagerNative;
 import android.app.ActivityManager;
@@ -42,9 +42,9 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-public class Animations extends SettingsPreferenceFragment implements
+public class AnimationInterfaceSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "Animations";
+    private static final String TAG = "AnimationInterfaceSettings";
 
     private static final String KEY_TOAST_ANIMATION = "toast_animation";
 
@@ -55,7 +55,7 @@ public class Animations extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         ContentResolver resolver = getActivity().getContentResolver();
 
-        addPreferencesFromResource(R.xml.animations);
+        addPreferencesFromResource(R.xml.animation_interface_settings);
         PreferenceScreen prefScreen = getPreferenceScreen();
         PreferenceScreen prefSet = getPreferenceScreen();
 

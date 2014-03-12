@@ -117,11 +117,11 @@
     <PreferenceCategory
         android:title="@string/system_title">
 
-         <Preference
-            android:fragment="com.android.settings.du.Animations"
-            android:key="animations"
+         <PreferenceScreen
+            android:key="interface_animation"
+            android:title="@string/interface_animation_title"
             android:layout="@layout/preference_animations"
-            android:title="@string/animations_cat" />
+            android:fragment="com.android.settings.du.interfacesettings.AnimationInterfaceSettings" />
 
          <PreferenceScreen
             android:key="quicksettings_tiles_style"

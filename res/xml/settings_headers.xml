@@ -76,6 +76,16 @@
         android:title="@string/dirt_settings" >
     </header>
 
+    <!-- Kernel Tweaker -->
+    <header android:id="@+id/kernel_tweaker"
+            android:title="@string/kernel_tweaker_title"
+            android:icon="@drawable/ic_settings_performance" >
+        <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.dsht.kerneltweaker.MainActivity"
+                android:targetPackage="com.dsht.kerneltweaker" />
+    </header>
+
     <!-- Dark UI -->
     <header
         android:id="@+id/theme_settings"
@@ -90,14 +100,25 @@
         android:fragment="com.android.settings.profiles.ProfilesSettings"
         android:title="@string/profiles_settings_title" />
 
-    <!-- Kernel Tweaker -->
-    <header android:id="@+id/kernel_tweaker"
-            android:title="@string/kernel_tweaker_title"
-            android:icon="@drawable/ic_settings_performance" >
+    <!-- Advanced Settings -->
+    <header android:id="@+id/advanced_settings"
+            android:title="@string/advanced_settings_title"
+            android:icon="@drawable/ic_settings_advanced">
+        <intent
+                android:action="com.cyanogenmod.action.LAUNCH_DEVICE_SETTINGS"
+                android:targetPackage="com.cyanogenmod.settings.device"
+                android:targetClass="com.cyanogenmod.settings.device.DeviceSettings" />
+    </header>
+
+    <!-- Oppo N1 Parts -->
+    <header
+        android:id="@+id/omni_settings"
+        android:title="@string/advanced_settings_title"
+        android:icon="@drawable/ic_settings_advanced">
         <intent
                 android:action="android.intent.action.MAIN"
-                android:targetClass="com.dsht.kerneltweaker.MainActivity"
-                android:targetPackage="com.dsht.kerneltweaker" />
+                android:targetClass="org.omnirom.device.DeviceSettings"
+                android:targetPackage="org.omnirom.device" />
     </header>
 
     <!-- DEVICE -->
@@ -133,27 +154,6 @@
         android:fragment="com.android.settings.du.ButtonSettings"
         android:icon="@drawable/ic_settings_buttons" />
 
-    <!-- Advanced Settings -->
-    <header android:id="@+id/advanced_settings"
-            android:title="@string/advanced_settings_title"
-            android:icon="@drawable/ic_settings_advanced">
-        <intent
-                android:action="com.cyanogenmod.action.LAUNCH_DEVICE_SETTINGS"
-                android:targetPackage="com.cyanogenmod.settings.device"
-                android:targetClass="com.cyanogenmod.settings.device.DeviceSettings" />
-    </header>
-
-    <!-- Oppo N1 Parts -->
-    <header
-        android:id="@+id/omni_settings"
-        android:title="@string/advanced_settings_title"
-        android:icon="@drawable/ic_settings_advanced">
-        <intent
-                android:action="android.intent.action.MAIN"
-                android:targetClass="org.omnirom.device.DeviceSettings"
-                android:targetPackage="org.omnirom.device" />
-    </header>
-
     <!-- Storage -->
     <header
         android:id="@+id/storage_settings"
@@ -168,12 +168,12 @@
         android:icon="@drawable/ic_settings_battery"
         android:title="@string/power_usage_summary_title" />
 
-    <!-- Application Settings -->
+    <!-- Backup and reset -->
     <header
-        android:fragment="com.android.settings.applications.ManageApplications"
-        android:icon="@drawable/ic_settings_applications"
-        android:title="@string/applications_settings"
-        android:id="@+id/application_settings" />
+        android:fragment="com.android.settings.PrivacySettings"
+        android:icon="@drawable/ic_settings_backup"
+        android:title="@string/privacy_settings"
+        android:id="@+id/privacy_settings" />
 
     <!-- Manage users -->
     <header
@@ -196,39 +196,6 @@
         <intent android:action="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
     </header>
 
-    <!-- PERSONAL -->
-    <header android:id="@+id/personal_section"
-        android:title="@string/header_category_personal" />
-
-    <!-- Security -->
-    <header
-        android:fragment="com.android.settings.SecuritySettings"
-        android:icon="@drawable/ic_settings_security"
-        android:title="@string/security_settings_title"
-        android:id="@+id/security_settings" />
-
-    <!-- Apps Permissions -->
-    <header
-        android:id="@+id/appops_settings"
-        android:icon="@drawable/ic_settings_applications"
-        android:fragment="com.android.settings.applications.AppOpsSummary"
-        android:title="@string/appops_settings" />
-
-
-    <!-- Language -->
-    <header
-        android:id="@+id/language_settings"
-        android:fragment="com.android.settings.inputmethod.InputMethodAndLanguageSettings"
-        android:icon="@drawable/ic_settings_language"
-        android:title="@string/language_settings" />
-
-    <!-- Backup and reset -->
-    <header
-        android:fragment="com.android.settings.PrivacySettings"
-        android:icon="@drawable/ic_settings_backup"
-        android:title="@string/privacy_settings"
-        android:id="@+id/privacy_settings" />
-
     <!--  ACCOUNTS section -->
     <header
             android:id="@+id/account_settings"
@@ -241,6 +208,38 @@
         <intent
             android:action="android.settings.ADD_ACCOUNT_SETTINGS"/>
     </header>
+
+    <!-- PERSONAL -->
+    <header android:id="@+id/personal_section"
+        android:title="@string/header_category_personal" />
+
+    <!-- Application Settings -->
+    <header
+        android:fragment="com.android.settings.applications.ManageApplications"
+        android:icon="@drawable/ic_settings_applications"
+        android:title="@string/applications_settings"
+        android:id="@+id/application_settings" />
+
+    <!-- App Permissions -->
+    <header
+        android:id="@+id/appops_settings"
+        android:icon="@drawable/ic_settings_appops"
+        android:fragment="com.android.settings.applications.AppOpsSummary"
+        android:title="@string/appops_settings" />
+
+    <!-- Security -->
+    <header
+        android:fragment="com.android.settings.SecuritySettings"
+        android:icon="@drawable/ic_settings_security"
+        android:title="@string/security_settings_title"
+        android:id="@+id/security_settings" />
+
+    <!-- Language -->
+    <header
+        android:id="@+id/language_settings"
+        android:fragment="com.android.settings.inputmethod.InputMethodAndLanguageSettings"
+        android:icon="@drawable/ic_settings_language"
+        android:title="@string/language_settings" />
 
     <!-- SYSTEM -->
     <header android:id="@+id/system_section"
@@ -267,12 +266,9 @@
         android:icon="@*android:drawable/ic_print"
         android:title="@string/print_settings" />
 
-    <!-- Development -->
-    <header
-        android:id="@+id/development_settings"
-        android:fragment="com.android.settings.DevelopmentSettings"
-        android:icon="@drawable/ic_settings_development"
-        android:title="@string/development_settings_title" />
+    <!-- Advanced Section -->
+    <header android:id="@+id/advanced_section"
+        android:title="@string/advanced_category_title" />
 
     <!-- SuperSU -->
     <header
@@ -284,6 +280,13 @@
             android:targetPackage="eu.chainfire.supersu"
             android:targetClass="eu.chainfire.supersu.MainActivity" />
     </header>
+
+    <!-- Development -->
+    <header
+        android:id="@+id/development_settings"
+        android:fragment="com.android.settings.DevelopmentSettings"
+        android:icon="@drawable/ic_settings_development"
+        android:title="@string/development_settings_title" />
 
     <!-- About Device -->
     <header

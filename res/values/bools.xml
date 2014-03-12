@@ -15,21 +15,23 @@
 -->
 
 <resources>
+
     <!-- Whether or not the dock settings are to be displayed for this device when docked -->
     <bool name="has_dock_settings">false</bool>
+
     <!-- Whether or not device settings should be displayed or not for the device -->
     <bool name="has_advanced_settings">false</bool>
+
     <!-- Whether there is a silent mode checkbox  -->
     <bool name="has_silent_mode">true</bool>
-    <!-- Whether the power control widget is enabled for this device. Should be overridden for
-         specific product builds. -->
+
+    <!-- Whether the power control widget is enabled for this device. Should be overridden for specific product builds. -->
     <bool name="has_powercontrol_widget">true</bool>
 
     <!-- Display additional System Update menu if true -->
     <bool name="config_additional_system_update_setting_enable">false</bool>
 
-    <!-- Whether the bluetooth activation confirmation dialogs should be auto dismissed.
-         Can be overridden for specific product builds. -->
+    <!-- Whether the bluetooth activation confirmation dialogs should be auto dismissed. Can be overridden for specific product builds. -->
     <bool name="auto_confirm_bluetooth_activation_dialog">false</bool>
 
     <!-- Whether to show a preference item for regulatory information in About phone -->
@@ -37,4 +39,5 @@
 
     <!-- Whether to show a preference item for mobile plan -->
     <bool name="config_show_mobile_plan">true</bool>
+
 </resources>

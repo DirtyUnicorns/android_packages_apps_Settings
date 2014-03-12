@@ -69,7 +69,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String CATEGORY_MENU = "button_keys_menu";
     private static final String CATEGORY_ASSIST = "button_keys_assist";
     private static final String CATEGORY_APPSWITCH = "button_keys_appSwitch";
-    
+
     private static final String BUTTON_VOLUME_WAKE = "button_volume_wake_screen";
     private static final String BUTTON_VOLUME_DEFAULT = "button_volume_default_screen";
     private static final String CATEGORY_HEADSETHOOK = "button_headsethook";
@@ -249,7 +249,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                 mBackLongPressAction.setValue(Integer.toString(backLongPressAction));
                 mBackLongPressAction.setSummary(mBackLongPressAction.getEntry());
                 mBackLongPressAction.setOnPreferenceChangeListener(this);
-                
+
                 mKeySettings.put(Settings.System.KEY_BACK_LONG_PRESS_ACTION, backLongPressAction);
             } else {
                 prefScreen.removePreference(keysBackCategory);
@@ -315,7 +315,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                 mMenuPressAction.setOnPreferenceChangeListener(this);
 
                 mKeySettings.put(Settings.System.KEY_MENU_ACTION, menuPressAction);
-        
+
                 int menuLongPressAction = ACTION_NOTHING;
                 if (!hasAssistKey) {
                     menuLongPressAction = ACTION_SEARCH;
@@ -557,7 +557,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private boolean hasVolumeRocker() {
         return getActivity().getResources().getBoolean(R.bool.config_has_volume_rocker);
     }
-    
+
     private boolean hasHomeKey() {
         Iterator<Integer> nextAction = mKeySettings.values().iterator();
         while (nextAction.hasNext()){
@@ -568,7 +568,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         }
         return false;
     }
-    
+
     private void checkForHomeKey(){
         if (!hasHomeKey()){
 			AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getActivity());
