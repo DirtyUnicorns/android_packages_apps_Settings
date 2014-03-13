@@ -35,6 +35,21 @@
         android:persistent="false" />
 
     <PreferenceCategory
+        android:title="@string/recents_background_title"/>
+
+    <Preference
+        style="?android:preferenceInformationStyle"
+        android:title="@string/ram_bar_note_title"
+        android:summary="@string/recents_background_summary"
+        android:selectable="false" />
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="recents_panel_color"
+        android:title="@string/recents_panel_color_title"
+        android:defaultValue="0xE0000000"
+        alphaSlider="true" />
+
+    <PreferenceCategory
         android:key="ram_bar_mode_cat"
         android:title="@string/ram_bar_mode_title">
 

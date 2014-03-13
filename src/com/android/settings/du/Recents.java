@@ -34,6 +34,7 @@ import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
+import android.graphics.Color;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -60,9 +61,6 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private static final String CUSTOM_RECENT_MODE = "custom_recent_mode";
 
     private static final int MENU_RESET = Menu.FIRST;
-    private static final int MENU_HELP = MENU_RESET + 1;
-
-    private static final String EXPLANATION_URL = "http://www.slimroms.net/index.php/faq/slimbean/238-why-do-i-have-less-memory-free-on-my-device";
 
     static final int DEFAULT_MEM_COLOR = 0xff8d8d8d;
     static final int DEFAULT_CACHE_COLOR = 0xff00aa00;
@@ -76,6 +74,10 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private ListPreference mRecentClearAllPosition;
     private CheckBoxPreference mRecentsUseOmniSwitch;
     private CheckBoxPreference mRecentsCustom;
+    private ColorPickerPreference mRecentsColor;
+
+    private ContentResolver mContentResolver;
+    private Context mContext;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -88,6 +90,8 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mContentResolver = getContentResolver();
 
         mRecentsUseOmniSwitch = (CheckBoxPreference)
                 prefSet.findPreference(RECENTS_USE_OMNISWITCH);
@@ -114,6 +118,9 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mRamBarAppMemColor.setSummary(hexColor);
         mRamBarAppMemColor.setNewPreviewColor(intColor);
+
+        mRecentsColor = (ColorPickerPreference) findPreference("recents_panel_color");
+        mRecentsColor.setOnPreferenceChangeListener(this);
 
         mRamBarCacheMemColor = (ColorPickerPreference) findPreference(RAM_BAR_COLOR_CACHE_MEM);
         mRamBarCacheMemColor.setOnPreferenceChangeListener(this);
@@ -157,9 +164,6 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         menu.add(0, MENU_RESET, 0, R.string.ram_bar_button_reset)
                 .setIcon(R.drawable.ic_settings_backup) // use the backup icon
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-        menu.add(0, MENU_HELP, 0, R.string.ram_bar_button_help)
-                .setIcon(R.drawable.ic_settings_about)
-                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
     }
 
     @Override
@@ -167,10 +171,6 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         switch (item.getItemId()) {
             case MENU_RESET:
                 resetToDefault();
-                return true;
-            case MENU_HELP:
-                final Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(EXPLANATION_URL));
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 return true;
             default:
                 return super.onContextItemSelected(item);
@@ -200,6 +200,15 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
                     Settings.System.RECENTS_RAM_BAR_MODE, ramBarMode);
             mRamBarMode.setSummary(mRamBarMode.getEntries()[index]);
             updateRamBarOptions();
+            return true;
+        } else if (preference == mRecentsColor) {
+            String hex = ColorPickerPreference.convertToARGB(Integer
+                    .valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.RECENTS_PANEL_COLOR, intHex);
+            Helpers.restartSystemUI();
             return true;
         } else if (preference == mRamBarAppMemColor) {
             String hex = ColorPickerPreference.convertToARGB(Integer

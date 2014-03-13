@@ -1162,6 +1162,11 @@
     <string name="power_menu_toggle_sound_toggles_title">Sound toggles</string>
     <string name="lockscreen_enable_power_menu_title">Power menu in lockscreen</string>
 
+    <!-- Recents Color bg -->
+    <string name="recents_panel_color_title">Recents panel color</string>
+    <string name="recents_background_title">Misc</string>
+    <string name="recents_background_summary">Prior to selecting this option, please make sure you uncheck Omni/Slim recents because this option does not function while those are enabled.</string>
+
     <!--  Recents clear all -->
     <string name="show_recent_clear_all_button_title">Clear all button</string>
     <string name="show_recent_clear_all_button_summary">Show clear all button within the recent applications view</string>
