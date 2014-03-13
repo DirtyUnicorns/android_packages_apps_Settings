@@ -41,13 +41,6 @@
   <string name="appops_settings">App Ops</string>
   <string name="appops_sysapp_beware">¡ Cuidado!</string>
   <string name="appops_sysapp_warning">\"Cambiar los permisos de componentes Android podría llevar a comportamiento indeseado. Cambiar configuración aquí bajo su propio riesgo!</string>
-  <string name="pref_low_battery_warning_policy_title">ADVERTENCIA de batería baja</string>
-  <string name="pref_low_battery_warning_policy_dialog_title">Indica la batería baja con una advertencia</string>
-  <string name="low_battery_warning_policy_popup_sound">Pop-up y sonido</string>
-  <string name="low_battery_warning_policy_notif_sound">Notificación y sonido</string>
-  <string name="low_battery_warning_policy_popup">Cuadro de diálogo emergente sólo</string>
-  <string name="low_battery_warning_policy_notif">Notificación sólo</string>
-  <string name="low_battery_warning_policy_sound">Sólo sonido</string>
   <string name="battery_prefs_title">Opciones</string>
   <string name="battery_stats_title">Estadísticas</string>
   <string name="adb_notify">Notificar a depuración USB</string>
@@ -104,7 +97,6 @@
   <string name="reset">RESET</string>
   <string name="attention">Atención</string>
   <string name="enabled">Activado</string>
-  <string name="default_string">Por defecto</string>
   <string name="additional_options_title">Opciones adicionales</string>
   <string name="trds_settings_title">IU oscuro</string>
   <string name="quick_pulldown_title">Desplegable Configuración rápida</string>
@@ -133,14 +125,6 @@
   <string name="battery_bolt_color">Perno de carga de color</string>
   <string name="battery_text_charging_color">Porcentaje de texto color de carga</string>
   <string name="battery_style_reset_message">¿Restablecer todos los colores de la batería?</string>
-  <string name="dialog_color_picker">Selector de color</string>
-  <string name="press_color_to_apply">Pulse color debajo para aplicar</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Maleficio:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Conjunto</string>
-  <string name="color_default">Por defecto</string>
   <string name="enable_network_speed">Indicador de velocidad de red</string>
   <string name="enable_network_speed_summary">Mostrar la velocidad de la red en la barra de estado</string>
   <string name="hide_network_speed">Ocultar cuando no hay tráfico</string>

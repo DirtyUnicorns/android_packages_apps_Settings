@@ -41,13 +41,6 @@
   <string name="appops_settings">App Ops</string>
   <string name="appops_sysapp_beware">Vorsicht!</string>
   <string name="appops_sysapp_warning">\"Ändern der Berechtigungen von Android Kern-Komponenten kann zu unerwünschtem Verhalten führen. Ändern der Einstellungen hier auf eigene Gefahr!</string>
-  <string name="pref_low_battery_warning_policy_title">Warnung bei niedrigem Akkustand</string>
-  <string name="pref_low_battery_warning_policy_dialog_title">Warnung bei niedrigen Akkustand anzeigen mit</string>
-  <string name="low_battery_warning_policy_popup_sound">Pop-up und Ton</string>
-  <string name="low_battery_warning_policy_notif_sound">Benachrichtigung und Ton</string>
-  <string name="low_battery_warning_policy_popup">Nur Pop-up Dialog</string>
-  <string name="low_battery_warning_policy_notif">Nur Benachrichtigung</string>
-  <string name="low_battery_warning_policy_sound">Nur Ton</string>
   <string name="battery_prefs_title">Optionen</string>
   <string name="battery_stats_title">Statistiken</string>
   <string name="adb_notify">USB Debugging Benachrichtigung</string>
@@ -104,7 +97,6 @@
   <string name="reset">Zurücksetzen</string>
   <string name="attention">Achtung</string>
   <string name="enabled">Aktiviert</string>
-  <string name="default_string">Standard</string>
   <string name="additional_options_title">Zusätzliche Optionen</string>
   <string name="trds_settings_title">Dunkle UI</string>
   <string name="quick_pulldown_title">Herunterziehen der Schnelleinstellungen</string>
@@ -133,14 +125,6 @@
   <string name="battery_bolt_color">Aufladefarbe</string>
   <string name="battery_text_charging_color">Prozent Text-Ladefarbe</string>
   <string name="battery_style_reset_message">Alle Akku Farben zurücksetzen?</string>
-  <string name="dialog_color_picker">Farbauswahl</string>
-  <string name="press_color_to_apply">Zum Anweden auf die Farbe drücken</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Anwenden</string>
-  <string name="color_default">Standard</string>
   <string name="enable_network_speed">Anzeige der Netzwerkgeschwindigkeit</string>
   <string name="enable_network_speed_summary">Netzwerkgeschwindigkeit in der Statusleiste anzeigen</string>
   <string name="hide_network_speed">Ausblenden, wenn kein Datenverkehr</string>

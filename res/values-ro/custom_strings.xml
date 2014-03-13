@@ -42,13 +42,6 @@ Doriţi să activaţi această funcţie?</string>
   <string name="appops_settings">App Ops (controlul permisiunilor aplicațiilor)</string>
   <string name="appops_sysapp_beware">Feriţi-vă!</string>
   <string name="appops_sysapp_warning">\"Schimbarea permisiunilor componentelor nucleului Android ar putea duce la un comportament nedorit. Modificaţi setările aici pe propriul risc!</string>
-  <string name="pref_low_battery_warning_policy_title">Avertizare de baterie slabă</string>
-  <string name="pref_low_battery_warning_policy_dialog_title">Indică avertizare de baterie slabă cu</string>
-  <string name="low_battery_warning_policy_popup_sound">Pop-up şi sunet</string>
-  <string name="low_battery_warning_policy_notif_sound">Notificare şi sunet</string>
-  <string name="low_battery_warning_policy_popup">Doar dialog pop-up</string>
-  <string name="low_battery_warning_policy_notif">Doar notificare</string>
-  <string name="low_battery_warning_policy_sound">Doar sunet</string>
   <string name="battery_prefs_title">Opţiuni</string>
   <string name="battery_stats_title">Statistici</string>
   <string name="adb_notify">Notificare depanare USB</string>
@@ -105,7 +98,6 @@ Doriţi să activaţi această funcţie?</string>
   <string name="reset">Resetare</string>
   <string name="attention">Atenţie</string>
   <string name="enabled">Activat</string>
-  <string name="default_string">În mod implicit</string>
   <string name="additional_options_title">Opţiuni suplimentare</string>
   <string name="trds_settings_title">Interfață întunecată</string>
   <string name="quick_pulldown_title">Setări rapide în derulant</string>
@@ -134,14 +126,6 @@ Doriţi să activaţi această funcţie?</string>
   <string name="battery_bolt_color">Culoarea pictogramei la incărcare</string>
   <string name="battery_text_charging_color">Culoarea procentului text la incărcare</string>
   <string name="battery_style_reset_message">Reinițializați toate culorile de baterie?</string>
-  <string name="dialog_color_picker">Alegere culoare</string>
-  <string name="press_color_to_apply">Apăsaţi pe culoarea de mai jos pentru a aplica</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Setează</string>
-  <string name="color_default">În mod implicit</string>
   <string name="enable_network_speed">Indicator de viteză reţea</string>
   <string name="enable_network_speed_summary">Arată viteza de reţea în bara de stare</string>
   <string name="hide_network_speed">Ascunde atunci când nu există trafic</string>

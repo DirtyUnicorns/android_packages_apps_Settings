@@ -42,13 +42,6 @@
   <string name="appops_settings">Application Ops</string>
   <string name="appops_sysapp_beware">Méfiez-vous !</string>
   <string name="appops_sysapp_warning">\"Changer des autorisations de composant de base d\'Android pourrait conduire à un comportement indésirable. Modifier les paramètres ici et à vos risques et périls!</string>
-  <string name="pref_low_battery_warning_policy_title">Avertissement batterie faible</string>
-  <string name="pref_low_battery_warning_policy_dialog_title">Un avertissement indique la batterie faible avec</string>
-  <string name="low_battery_warning_policy_popup_sound">Popup et sonnerie</string>
-  <string name="low_battery_warning_policy_notif_sound">Notification et sonnerie</string>
-  <string name="low_battery_warning_policy_popup">Popup de dialogue seulement</string>
-  <string name="low_battery_warning_policy_notif">Notification seulement</string>
-  <string name="low_battery_warning_policy_sound">Sonnerie seulement</string>
   <string name="battery_prefs_title">Options</string>
   <string name="battery_stats_title">Statistiques</string>
   <string name="adb_notify">Notification débogage USB</string>
@@ -105,7 +98,6 @@
   <string name="reset">Réinitialiser</string>
   <string name="attention">Attention</string>
   <string name="enabled">Activé</string>
-  <string name="default_string">Défaut</string>
   <string name="additional_options_title">Options supplémentaires</string>
   <string name="trds_settings_title">IU Noir</string>
   <string name="quick_pulldown_title">Paramètres Rapides Déroulant</string>
@@ -134,14 +126,6 @@
   <string name="battery_bolt_color">Couleur de l\'éclair de chargement</string>
   <string name="battery_text_charging_color">Couleur du texte du pourcentage du chargement</string>
   <string name="battery_style_reset_message">Réinitialiser toutes les couleurs de la batterie ?</string>
-  <string name="dialog_color_picker">Sélecteur de couleurs</string>
-  <string name="press_color_to_apply">Appuyer sur la couleur ci-dessous pour définir</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
-  <string name="set">Définir</string>
-  <string name="color_default">Défaut</string>
   <string name="enable_network_speed">Indicateur de vitesse du réseau</string>
   <string name="enable_network_speed_summary">Afficher la vitesse du réseau dans la barre d\'état</string>
   <string name="hide_network_speed">Cacher quand il n\'y a pas de trafic</string>

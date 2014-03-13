@@ -94,17 +94,6 @@
     <string name="appops_sysapp_beware">Beware!</string>
     <string name="appops_sysapp_warning">"Changing permissions of core Android components might lead to undesired behavior. Change settings here at your own risk!</string>
 
-    <!-- Low battery warning policy -->
-    <string name="pref_low_battery_warning_policy_title">Low battery warning</string>
-    <string name="pref_low_battery_warning_policy_dialog_title">Indicate low battery warning with</string>
-    <string name="low_battery_warning_policy_popup_sound">Pop-up and sound</string>
-    <string name="low_battery_warning_policy_notif_sound">Notification and sound</string>
-    <string name="low_battery_warning_policy_popup">Pop-up dialog only</string>
-    <string name="low_battery_warning_policy_notif">Notification only</string>
-    <string name="low_battery_warning_policy_sound">Sound only</string>
-    <string name="battery_prefs_title">Options</string>
-    <string name="battery_stats_title">Statistics</string>
-
     <!-- Setting checkbox summary for displaying USB debugging notification -->
     <string name="adb_notify">USB debugging notify</string>
     <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
@@ -291,6 +280,8 @@
     <string name="low_battery_warning_policy_notif">Notification only</string>
     <string name="low_battery_warning_policy_sound">Sound only</string>
     <string name="low_battery_warning_policy_disabled">Disabled</string>
+    <string name="battery_prefs_title">Options</string>
+    <string name="battery_stats_title">Statistics</string>
 
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Clock and date</string>
@@ -432,12 +423,6 @@
     <!-- development shortcut -->
     <string name="development_shortcut_title">Development shortcut</string>
     <string name="development_shortcut_summary">Enable \'wipe data\' and \'force close\' options in notification area and recent apps list</string>
-
-    <!-- String for IconPicker -->
-    <string name="icon_picker_title">Choose icon source</string>
-    <string name="icon_picker_system_icons_title">System icons</string>
-    <string name="icon_picker_gallery_title">Gallery</string>
-    <string name="icon_picker_pack_title">Icon pack</string>
 
     <!-- Lock Screen Shortcuts -->
     <string name="lockscreen_target_info">Drag the slider to targets to assign shortcuts</string>
@@ -973,9 +958,6 @@
     <string name="icon_picker_system_icons_title">System icons</string>
     <string name="icon_picker_gallery_title">Gallery</string>
     <string name="icon_picker_pack_title">Icon pack</string>
-    <string name="profile_applist_title">Apps</string>
-    <string name="profile_choose_app">Choose app</string>
-    <string name="profiles_add">Add</string>
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
@@ -1325,7 +1307,6 @@
     <string name="ad_text_summary">Show the notification text around the ring.</string>
     <string name="ad_all_notifications_title">All notifications</string>
     <string name="ad_all_notifications_summary">Show all notifications including ongoing, non-clearable notifications.</string>
-    <string name="ad_hide_low_priority_title">Hide low priority</string>
     <string name="ad_hide_low_priority_title">Hide low priority</string>
     <string name="ad_hide_low_priority_summary">Hide low priority notifications such as those from Google Now.</string>
     <string name="ad_pocket_mode_title">Pocket mode</string>
