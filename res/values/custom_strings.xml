@@ -1153,7 +1153,7 @@
     <string name="dialog_no_home_key_title">No home action</string>
     <string name="no_home_key">You have no button assigned to the \"Home\" action! This can make your device unusable!</string>
 
-    <!-- Power Menu Options-->
+    <!-- Power Menu Options -->
     <string name="bars_and_menus_category_power_menu_title">Power menu</string>
     <string name="power_menu_toggle_profiles_title">Profiles</string>
     <string name="power_menu_toggle_screenshot_title">Screenshot</string>
@@ -1163,6 +1163,9 @@
     <string name="power_menu_toggle_sound_toggles_title">Sound toggles</string>
     <string name="lockscreen_enable_power_menu_title">Power menu in lockscreen</string>
     <string name="power_menu_onthego_title">On-The-Go Mode</string>
+
+    <!-- On-The-Go Mode -->
+    <string name="title_tile_onthego">On-The-Go</string>
 
     <!-- Recents Color bg -->
     <string name="recents_panel_color_title">Recents panel color</string>
