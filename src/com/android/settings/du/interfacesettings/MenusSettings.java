@@ -43,6 +43,7 @@ public class MenusSettings extends SettingsPreferenceFragment implements
     private static final String POWER_MENU_AIRPLANE_MODE = "power_menu_airplane_mode";
     private static final String POWER_MENU_SOUND_TOGGLES = "power_menu_sound_toggles";
     private static final String KEY_ENABLE_POWER_MENU = "lockscreen_enable_power_menu";
+    private static final String POWER_MENU_ONTHEGO_ENABLED = "power_menu_onthego_enabled";
 
     private CheckBoxPreference mScreenshotPowerMenu;
     private CheckBoxPreference mScreenrecordPowerMenu;
@@ -50,6 +51,7 @@ public class MenusSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mAirplaneModePowerMenu;
     private CheckBoxPreference mSoundTogglesPowerMenu;
     private CheckBoxPreference mEnablePowerMenu;
+    private CheckBoxPreference mOnTheGoPowerMenu;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -66,6 +68,11 @@ public class MenusSettings extends SettingsPreferenceFragment implements
         mScreenshotPowerMenu.setChecked(Settings.System.getInt(resolver,
                 Settings.System.SCREENSHOT_IN_POWER_MENU, 0) == 1);
         mScreenshotPowerMenu.setOnPreferenceChangeListener(this);
+
+        mOnTheGoPowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_ONTHEGO_ENABLED);
+        mOnTheGoPowerMenu.setChecked(Settings.System.getInt(resolver,
+                Settings.System.POWER_MENU_ONTHEGO_ENABLED, 0) == 1);
+        mOnTheGoPowerMenu.setOnPreferenceChangeListener(this);
 
         mMobileDataPowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_MOBILE_DATA);
         mMobileDataPowerMenu.setChecked(Settings.System.getInt(resolver,
@@ -109,6 +116,9 @@ public class MenusSettings extends SettingsPreferenceFragment implements
         } else if (preference == mScreenrecordPowerMenu) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver, Settings.System.SCREENRECORD_IN_POWER_MENU, value ? 1 : 0);
+        } else if (preference == mOnTheGoPowerMenu) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver, Settings.System.POWER_MENU_ONTHEGO_ENABLED, value ? 1 : 0);
         } else if (preference == mMobileDataPowerMenu) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver, Settings.System.MOBILE_DATA_IN_POWER_MENU, value ? 1 : 0);
