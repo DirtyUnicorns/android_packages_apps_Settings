@@ -31,6 +31,11 @@
             android:defaultValue="false" />
 
     <CheckBoxPreference
+            android:key="show_profiles"
+            android:title="@string/power_menu_toggle_profiles_title"
+            android:defaultValue="false" />
+
+    <CheckBoxPreference
             android:key="power_menu_screenshot"
             android:title="@string/power_menu_toggle_screenshot_title"
             android:defaultValue="false" />

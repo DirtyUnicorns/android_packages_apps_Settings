@@ -37,6 +37,7 @@ public class MenusSettings extends SettingsPreferenceFragment implements
     private static final String TAG = "MenusSettings";
     private ContentResolver resolver;
 
+    private static final String SHOW_PROFILES = "show_profiles";
     private static final String POWER_MENU_SCREENSHOT = "power_menu_screenshot";
     private static final String POWER_MENU_SCREENRECORD = "power_menu_screenrecord";
     private static final String POWER_MENU_MOBILE_DATA = "power_menu_mobile_data";
@@ -44,6 +45,7 @@ public class MenusSettings extends SettingsPreferenceFragment implements
     private static final String POWER_MENU_SOUND_TOGGLES = "power_menu_sound_toggles";
     private static final String KEY_ENABLE_POWER_MENU = "lockscreen_enable_power_menu";
 
+    private CheckBoxPreference mShowProfiles;
     private CheckBoxPreference mScreenshotPowerMenu;
     private CheckBoxPreference mScreenrecordPowerMenu;
     private CheckBoxPreference mMobileDataPowerMenu;
@@ -61,6 +63,11 @@ public class MenusSettings extends SettingsPreferenceFragment implements
 
         boolean mHasScreenRecord = getActivity().getResources().getBoolean(
                 com.android.internal.R.bool.config_enableScreenrecordChord);
+
+        mShowProfiles = (CheckBoxPreference) prefSet.findPreference(SHOW_PROFILES);
+        mShowProfiles.setChecked(Settings.System.getInt(resolver,
+                Settings.System.SHOW_PROFILES, 1) == 1);
+        mShowProfiles.setOnPreferenceChangeListener(this);
 
         mScreenshotPowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_SCREENSHOT);
         mScreenshotPowerMenu.setChecked(Settings.System.getInt(resolver,
@@ -121,6 +128,9 @@ public class MenusSettings extends SettingsPreferenceFragment implements
         } else if (preference == mSoundTogglesPowerMenu) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver, Settings.System.SOUND_TOGGLES_IN_POWER_MENU, value ? 1 : 0);
+        } else if (preference == mShowProfiles) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver, Settings.System.SHOW_PROFILES, value ? 1 : 0);
         } else {
             return false;
         }

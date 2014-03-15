@@ -1155,6 +1155,7 @@
 
     <!-- Power Menu Options-->
     <string name="bars_and_menus_category_power_menu_title">Power menu</string>
+    <string name="power_menu_toggle_profiles_title">Profiles</string>
     <string name="power_menu_toggle_screenshot_title">Screenshot</string>
     <string name="power_menu_toggle_screenrecord_title">Screen Record</string>
     <string name="power_menu_toggle_mobile_data_title">Mobile Data</string>
