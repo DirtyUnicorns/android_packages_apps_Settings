@@ -69,6 +69,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String CATEGORY_MENU = "button_keys_menu";
     private static final String CATEGORY_ASSIST = "button_keys_assist";
     private static final String CATEGORY_APPSWITCH = "button_keys_appSwitch";
+    private static final String CATEGORY_CAMERA = "button_keys_camera";
 
     private static final String BUTTON_VOLUME_WAKE = "button_volume_wake_screen";
     private static final String BUTTON_VOLUME_DEFAULT = "button_volume_default_screen";
@@ -91,6 +92,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String KEYS_APP_SWITCH_PRESS = "keys_app_switch_press";
     private static final String KEYS_APP_SWITCH_LONG_PRESS = "keys_app_switch_long_press";
     private static final String FORCE_SHOW_OVERFLOW_MENU = "force_show_overflow_menu";
+    private static final String KEYS_CAMERA_WAKE = "keys_camera_press";
+    private static final String KEYS_CAMERA_PEAK = "keys_camera_peak";
+    private static final String KEYS_CAMERA_MUSIC = "keys_camera_music";
 
     // Available custom actions to perform on a key press.
     private static final int ACTION_NOTHING = 0;
@@ -111,6 +115,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final int KEY_MASK_MENU = 0x04;
     private static final int KEY_MASK_ASSIST = 0x08;
     private static final int KEY_MASK_APP_SWITCH = 0x10;
+    private static final int KEY_MASK_CAMERA     = 0x20;
 
     private CheckBoxPreference mVolumeWake;
     private SwitchPreference mEnableCustomBindings;
@@ -131,6 +136,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private CheckBoxPreference mVolumeMusicCtrl;
     private CheckBoxPreference mDisableSafeVolume;
     private CheckBoxPreference mForceShowOverflowMenu;
+    private CheckBoxPreference mCameraWake;
+    private CheckBoxPreference mCameraSleepOnRelease;
+    private CheckBoxPreference mCameraMusicControls;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -140,6 +148,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        final PreferenceScreen prefs = getPreferenceScreen();
         final Resources res = getResources();
 
         final PreferenceCategory volumeCategory =
@@ -184,6 +193,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         final boolean hasMenuKey = (deviceKeys & KEY_MASK_MENU) != 0;
         final boolean hasAssistKey = (deviceKeys & KEY_MASK_ASSIST) != 0;
         final boolean hasAppSwitchKey = (deviceKeys & KEY_MASK_APP_SWITCH) != 0;
+        final boolean hasCameraKey = (deviceKeys & KEY_MASK_CAMERA) != 0;
 
         final PreferenceCategory keysCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_KEYS);
@@ -197,6 +207,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_ASSIST);
         final PreferenceCategory keysAppSwitchCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_APPSWITCH);
+        final PreferenceCategory keysCameraCategory =
+                (PreferenceCategory) prefs.findPreference(CATEGORY_CAMERA);
 
         if (!res.getBoolean(R.bool.config_has_hardware_buttons)) {
             prefScreen.removePreference(keysCategory);
@@ -232,6 +244,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                     KEYS_APP_SWITCH_LONG_PRESS);
             mForceShowOverflowMenu = (CheckBoxPreference) prefScreen.findPreference(
                     FORCE_SHOW_OVERFLOW_MENU);
+            mCameraWake = (CheckBoxPreference) prefs.findPreference(
+                    KEYS_CAMERA_WAKE);
+            mCameraSleepOnRelease = (CheckBoxPreference) prefs.findPreference(
+                    KEYS_CAMERA_PEAK);
+            mCameraMusicControls = (CheckBoxPreference) prefs.findPreference(
+                    KEYS_CAMERA_MUSIC);
 
             if (hasBackKey) {
                 int backPressAction = Settings.System.getInt(getContentResolver(),
@@ -372,6 +390,24 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             } else {
                 prefScreen.removePreference(keysAppSwitchCategory);
             }
+
+            if (hasCameraKey) {
+                mCameraWake = (CheckBoxPreference)
+                    prefs.findPreference(Settings.System.CAMERA_WAKE_SCREEN);
+                mCameraSleepOnRelease = (CheckBoxPreference)
+                    prefs.findPreference(Settings.System.CAMERA_SLEEP_ON_RELEASE);
+                mCameraMusicControls = (CheckBoxPreference)
+                    prefs.findPreference(Settings.System.CAMERA_MUSIC_CONTROLS);
+                boolean value = mCameraWake.isChecked();
+                mCameraMusicControls.setEnabled(!value);
+                mCameraSleepOnRelease.setEnabled(value);
+                if (getResources().getBoolean(
+                    com.android.internal.R.bool.config_singleStageCameraKey)) {
+                    keysCameraCategory.removePreference(mCameraSleepOnRelease);
+               }
+           } else {
+               prefs.removePreference(keysCameraCategory);
+           }
 
             mEnableCustomBindings.setChecked((Settings.System.getInt(getActivity().
                     getApplicationContext().getContentResolver(),
@@ -535,6 +571,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                     Settings.System.KEY_APP_SWITCH_ACTION, value);
             mKeySettings.put(Settings.System.KEY_APP_SWITCH_ACTION, value);
             checkForHomeKey();
+            return true;
+        } else if (preference == mCameraWake) {
+            boolean isCameraWakeEnabled = mCameraWake.isChecked();
+            mCameraMusicControls.setEnabled(!isCameraWakeEnabled);
+            mCameraSleepOnRelease.setEnabled(isCameraWakeEnabled);
             return true;
         } else if (preference == mAppSwitchLongPressAction) {
             int value = Integer.valueOf((String) newValue);

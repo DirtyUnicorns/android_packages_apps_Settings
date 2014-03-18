@@ -1152,6 +1152,12 @@
     <string name="keys_action_double">Double tap</string>
     <string name="dialog_no_home_key_title">No home action</string>
     <string name="no_home_key">You have no button assigned to the \"Home\" action! This can make your device unusable!</string>
+    <string name="keys_camera_title">Camera key</string>
+    <string name="camera_wake_summary">Pressing the camera button will wake your device</string>
+    <string name="keys_camera_peak_title">Screen peek</string>
+    <string name="camera_sleep_on_release_summary">A half press will keep the screen on only while the button is held down</string>
+    <string name="keys_camera_music_title">Playback control</string>
+    <string name="camera_music_controls_summary">When the screen is off, long pressing the camera key will play/pause current music track</string>
 
     <!-- Power Menu Options -->
     <string name="bars_and_menus_category_power_menu_title">Power menu</string>

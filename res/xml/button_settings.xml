@@ -217,4 +217,27 @@
 
     </PreferenceCategory>
 
+        <PreferenceCategory
+            android:key="button_keys_camera"
+            android:title="@string/keys_camera_title">
+
+        <CheckBoxPreference
+            android:key="camera_wake_screen"
+            android:title="@string/keys_camera_title"
+            android:summary="@string/camera_wake_summary"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="camera_sleep_on_release"
+            android:title="@string/keys_camera_peak_title"
+            android:summary="@string/camera_sleep_on_release_summary"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="camera_music_controls"
+            android:title="@string/keys_camera_music_title"
+            android:summary="@string/camera_music_controls_summary"
+            android:defaultValue="false" />
+        </PreferenceCategory>
+
 </PreferenceScreen>
