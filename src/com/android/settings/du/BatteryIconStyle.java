@@ -76,7 +76,7 @@ public class BatteryIconStyle extends SettingsPreferenceFragment
             prefSet.removeAll();
         }
 
-        addPreferencesFromResource(R.xml.slim_battery_style);
+        addPreferencesFromResource(R.xml.battery_style);
         prefSet = getPreferenceScreen();
 
         int intColor;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.du.interfacesettings;
+package com.android.settings.du.animations;
 
 import android.app.ActivityManagerNative;
 import android.app.ActivityManager;

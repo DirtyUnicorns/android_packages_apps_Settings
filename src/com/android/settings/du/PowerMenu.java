@@ -16,7 +16,7 @@
  *
  */
 
-package com.android.settings.du.interfacesettings;
+package com.android.settings.du;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
@@ -32,9 +32,9 @@ import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
 
-public class MenusSettings extends SettingsPreferenceFragment implements
+public class PowerMenu extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "MenusSettings";
+    private static final String TAG = "PowerMenu";
     private ContentResolver resolver;
 
     private static final String SHOW_PROFILES = "show_profiles";
@@ -58,7 +58,7 @@ public class MenusSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.menus_settings);
+        addPreferencesFromResource(R.xml.powermenu);
 
         PreferenceScreen prefSet = getPreferenceScreen();
         resolver = getActivity().getContentResolver();

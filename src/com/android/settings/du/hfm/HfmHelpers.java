@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.hfm;
+package com.android.settings.du.hfm;
 
 import java.io.DataOutputStream;
 import java.io.File;

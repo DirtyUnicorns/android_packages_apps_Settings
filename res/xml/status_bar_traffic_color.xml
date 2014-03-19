@@ -12,7 +12,8 @@
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="network_speed_color"
             android:title="@string/network_speed_color_style"
-            android:defaultValue="#000000" />
+            android:defaultValue="#000000"
+            alphaSlider="true" />
 
     </PreferenceCategory>
 

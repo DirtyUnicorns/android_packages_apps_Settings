@@ -27,7 +27,8 @@
         android:key="clock_color"
         android:title="@string/clock_color_title"
         android:defaultValue="0xffffff"
-        android:dependency="status_bar_show_clock" />
+        android:dependency="status_bar_show_clock"
+        alphaSlider="true" />
     
     <ListPreference
         android:key="clock_style"

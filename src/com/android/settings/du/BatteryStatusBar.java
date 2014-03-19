@@ -16,7 +16,7 @@
  *
  */
 
-package com.android.settings.du.interfacesettings;
+package com.android.settings.du;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -33,9 +33,9 @@ import com.android.settings.R;
 import com.android.settings.util.Helpers;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class BarsSettings extends SettingsPreferenceFragment implements
+public class BatteryStatusBar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "BarsSettings";
+    private static final String TAG = "BatteryStatusBar";
 
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
@@ -58,7 +58,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.bars_settings);
+        addPreferencesFromResource(R.xml.batterystatusbar);
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();

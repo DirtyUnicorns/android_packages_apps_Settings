@@ -1640,35 +1640,35 @@
             android:label="@string/dirt_settings" >
         </activity>
 
+        <activity android:name=".du.Animations" />
+        <activity android:name=".du.AppSidebar" />
+        <activity android:name=".du.BatteryStatusBar" />
+        <activity android:name=".du.BatteryIconStyle" />
+        <activity android:name=".du.BatteryBarStyle" />
+        <activity android:name=".du.ButtonSettings" />
+        <activity android:name=".du.CarrierLabel" />
+        <activity android:name=".du.Download" />
         <activity android:name=".du.Halo" />
-        <activity android:name=".du.NotificationDrawerStyle" />
         <activity android:name=".du.LockscreenTargets" />
         <activity android:name=".du.LockscreenOptions" />
         <activity android:name=".du.LockscreenMiscTweaks" />
-        <activity android:name=".du.Traffic" />
         <activity android:name=".du.MiscTweaks" />
-        <activity android:name=".du.NavBarSettings" />
-        <activity android:name=".du.NavbarDimenSettings" />
         <activity android:name=".du.NavRing" />
-        <activity android:name=".du.Animations" />
-        <activity android:name=".du.CarrierLabel" />
-        <activity android:name=".du.AppSidebar" />
-        <activity android:name=".du.ButtonSettings" />
-        <activity android:name=".du.BatteryIconStyle" />
-        <activity android:name=".du.BatteryBarStyle" />
-        <activity android:name=".du.Download" />
+        <activity android:name=".du.NavbarDimenSettings" />
+        <activity android:name=".du.NavBarSettings" />
+        <activity android:name=".du.NotificationDrawerStyle" />
+        <activity android:name=".du.PowerMenu" />
+        <activity android:name=".du.PropModder" />
         <activity android:name=".du.Recents" />
         <activity android:name=".du.ScreenStateToggles" />
+        <activity android:name=".du.StatusBarColor" />
+        <activity android:name=".du.Traffic" />
+        <activity android:name=".du.animations.NotificationPanelSettings" />
+        <activity android:name=".du.animations.AnimationInterfaceSettings" />
+        <activity android:name=".du.animations.NotificationLightSettings" />
         <activity android:name=".du.batterylight.BatteryLightSettings" />
         <activity android:name=".du.brightness.BrightnessSettings" />
-        <activity android:name=".du.interfacesettings.BarsSettings" />
-        <activity android:name=".du.interfacesettings.StatusBarColor" />
-        <activity android:name=".du.interfacesettings.MenusSettings" />
-        <activity android:name=".du.interfacesettings.NotificationPanelSettings" />
-        <activity android:name=".du.interfacesettings.AnimationInterfaceSettings" />
-        <activity android:name=".du.notificationlight.NotificationLightSettings" />
         <activity android:name=".util.ShowBuildProp" />
-        <activity android:name=".cyanogenmod.PropModder" />
         <activity android:name=".InitD" />
         <activity android:name=".chameleonos.labs.gestureanywhere.GestureAnywhereBuilderActivity" />
         <activity android:name=".chameleonos.labs.gestureanywhere.GestureAnywhereCreateGestureActivity" />
@@ -1954,13 +1954,13 @@
 
         <service android:name=".tts.NotifyService" />
 
-        <receiver android:name=".hfm.IntentReceiver" >
+        <receiver android:name=".du.hfm.IntentReceiver" >
             <intent-filter>
                  <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-        <service android:name=".hfm.CheckHosts" />
+        <service android:name=".du.hfm.CheckHosts" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"

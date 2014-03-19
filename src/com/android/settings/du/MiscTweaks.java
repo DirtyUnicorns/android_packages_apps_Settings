@@ -36,7 +36,7 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import com.android.settings.hfm.HfmHelpers;
+import com.android.settings.du.hfm.HfmHelpers;
 
 import com.android.settings.util.Helpers;
 

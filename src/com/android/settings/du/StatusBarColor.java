@@ -16,7 +16,7 @@
  *
  */
 
-package com.android.settings.du.interfacesettings;
+package com.android.settings.du;
 
 import android.content.pm.PackageManager;
 import android.content.res.Resources;

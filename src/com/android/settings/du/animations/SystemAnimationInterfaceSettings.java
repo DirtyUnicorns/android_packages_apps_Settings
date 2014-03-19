@@ -16,7 +16,7 @@
  *
  */
 
-package com.android.settings.du.interfacesettings;
+package com.android.settings.du.animations;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;

@@ -75,22 +75,26 @@
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="progressbar_color_1"
         android:title="@string/progressbar_color_1_title"
-        android:defaultValue="#ffffff" />
+        android:defaultValue="#ffffff"
+        alphaSlider="true" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="progressbar_color_2"
         android:title="@string/progressbar_color_2_title"
-        android:defaultValue="#ffffff" />
+        android:defaultValue="#ffffff"
+        alphaSlider="true" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="progressbar_color_3"
         android:title="@string/progressbar_color_3_title"
-        android:defaultValue="#ffffff" />
+        android:defaultValue="#ffffff"
+        alphaSlider="true" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="progressbar_color_4"
         android:title="@string/progressbar_color_4_title"
-        android:defaultValue="#ffffff" />
+        android:defaultValue="#ffffff"
+        alphaSlider="true" />
 
     </PreferenceCategory>
 

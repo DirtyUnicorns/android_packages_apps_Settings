@@ -30,7 +30,8 @@
             android:key="status_bar_opaque_color"
             android:title="@string/status_bar_opaque_color"
             android:dependency="custom_status_bar_color"
-            android:defaultValue="0xFF000000" />
+            android:defaultValue="0xFF000000"
+            alphaSlider="true" />
 
     <CheckBoxPreference
             android:key="custom_system_icon_color"
@@ -42,7 +43,8 @@
             android:key="system_icon_color"
             android:title="@string/system_icon_color"
             android:dependency="custom_system_icon_color"
-            android:defaultValue="0xFFFFFFFF" />
+            android:defaultValue="0xFFFFFFFF"
+            alphaSlider="true" />
 
     <!--net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="status_bar_trans_color"
