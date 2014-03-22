@@ -45,7 +45,6 @@ public class BatteryStatusBar extends SettingsPreferenceFragment implements
     private static final String VOICEMAIL_BREATH = "voicemail_breath";
     private static final String EMULATE_MENU_KEY = "emulate_menu_key";
     private static final String KEY_SHOW_4G = "show_4g_for_lte";
-    private static final String HIDE_SIGNAL_BARS = "hide_signal_bars";
 
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mStatusBarNotifCount;
@@ -55,7 +54,6 @@ public class BatteryStatusBar extends SettingsPreferenceFragment implements
     private CheckBoxPreference mVoicemailBreath;
     private CheckBoxPreference mEmulateMenuKey;
     private CheckBoxPreference mShow4G;
-    private CheckBoxPreference mHideSignal;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -111,9 +109,6 @@ public class BatteryStatusBar extends SettingsPreferenceFragment implements
 
         mShow4G = (CheckBoxPreference) findPreference(KEY_SHOW_4G);
             mShow4G.setOnPreferenceChangeListener(this);
-
-        mHideSignal = (CheckBoxPreference) findPreference(HIDE_SIGNAL_BARS);
-            mHideSignal.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -153,10 +148,6 @@ public class BatteryStatusBar extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver,
                 Settings.System.SHOW_4G_FOR_LTE, value ? 1 : 0);
-        } else if (preference == mHideSignal) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(resolver,
-                Settings.System.STATUSBAR_HIDE_SIGNAL_BARS, value ? 1 : 0);
         } else {
             return false;
         }
