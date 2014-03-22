@@ -54,12 +54,6 @@
             android:summary="@string/show_4G_for_LTE_summary"
             android:defaultValue="false" />
 
-    <CheckBoxPreference
-            android:key="hide_signal_bars"
-            android:title="@string/hide_signal_bars_title"
-            android:summary="@string/hide_signal_bars_summary"
-            android:defaultValue="false" />
-
     </PreferenceCategory>
 
    <PreferenceCategory

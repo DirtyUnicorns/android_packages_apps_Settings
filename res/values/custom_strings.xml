@@ -1766,8 +1766,6 @@
     <string name="statusbar_signal_title">Statusbar Signal</string>
     <string name="show_4G_for_LTE_title">Show 4G while on LTE</string>
     <string name="show_4G_for_LTE_summary">Switch to 4G icon in statusbar while on LTE</string>
-    <string name="hide_signal_bars_title">Hide signal bars/text</string>
-    <string name="hide_signal_bars_summary">Hide signal bars or text from the statusbar</string>
 
     <!-- Kernel Tweaker -->
     <string name="kernel_tweaker_title">Kernel Tweaker</string>
