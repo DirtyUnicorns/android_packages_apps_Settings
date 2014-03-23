@@ -45,12 +45,14 @@ public class StatusBarColor extends SettingsPreferenceFragment implements
 //    private static final String PREF_STATUS_BAR_SEMI_TRANS_COLOR = "status_bar_trans_color";
     private static final String PREF_CUSTOM_SYSTEM_ICON_COLOR = "custom_system_icon_color";
     private static final String PREF_SYSTEM_ICON_COLOR = "system_icon_color";
+    private static final String PREF_CUSTOM_STATUS_BAR_APPLY = "custom_status_bar_apply";
 
     private CheckBoxPreference mCustomBarColor;
     private ColorPickerPreference mBarOpaqueColor;
 //    private ColorPickerPreference mBarTransColor;
     private CheckBoxPreference mCustomIconColor;
     private ColorPickerPreference mIconColor;
+    private CheckBoxPreference mApplyCustomBar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -81,6 +83,9 @@ public class StatusBarColor extends SettingsPreferenceFragment implements
         mCustomIconColor = (CheckBoxPreference) findPreference(PREF_CUSTOM_SYSTEM_ICON_COLOR);
         mCustomIconColor.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.CUSTOM_SYSTEM_ICON_COLOR, 0) == 1);
+
+        mApplyCustomBar = (CheckBoxPreference) findPreference(PREF_CUSTOM_STATUS_BAR_APPLY);
+        mApplyCustomBar.setChecked(false);
 
         mBarOpaqueColor = (ColorPickerPreference) findPreference(PREF_STATUS_BAR_OPAQUE_COLOR);
         mBarOpaqueColor.setOnPreferenceChangeListener(this);
@@ -132,13 +137,15 @@ public class StatusBarColor extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.CUSTOM_STATUS_BAR_COLOR,
             mCustomBarColor.isChecked() ? 1 : 0);
-            Helpers.restartSystemUI();
             return true;
         } else if (preference == mCustomIconColor) {
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.CUSTOM_SYSTEM_ICON_COLOR,
             mCustomIconColor.isChecked() ? 1 : 0);
-            Helpers.restartSystemUI();
+           return true;
+        } else if (preference == mApplyCustomBar) {
+           Helpers.restartSystemUI();
+           mApplyCustomBar.setChecked(false);
            return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -153,7 +160,6 @@ public class StatusBarColor extends SettingsPreferenceFragment implements
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUS_BAR_OPAQUE_COLOR, intHex);
-            Helpers.restartSystemUI();
         } else if (preference == mIconColor) {
             String hex = ColorPickerPreference.convertToARGB(Integer
                     .valueOf(String.valueOf(objValue)));

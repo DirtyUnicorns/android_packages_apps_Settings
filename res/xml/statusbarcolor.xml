@@ -52,4 +52,10 @@
             android:dependency="custom_status_bar_color"
             android:defaultValue="0x66000000" /-->
 
+    <CheckBoxPreference
+            android:key="custom_status_bar_apply"
+            android:title="@string/custom_status_bar_apply_title"
+            android:summary="@string/custom_status_bar_apply_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>

@@ -1452,6 +1452,8 @@
     <string name="custom_system_icon_color_title">Custom system icon color</string>
     <string name="system_icon_color">Icon color</string>
     <string name="custom_color_summary">Override the system color of the System UI</string>
+    <string name="custom_status_bar_apply_title">Apply</string>
+    <string name="custom_status_bar_apply_summary">Restart SystemUI to apply the changes</string>
 
     <!-- Navigation Bar customization-->
     <string name="navigation_bar_category">Navigation Bar</string>
