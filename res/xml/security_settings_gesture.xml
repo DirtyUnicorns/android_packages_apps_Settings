@@ -53,6 +53,10 @@
             android:title="@string/owner_info_settings_title"
             android:summary="@string/owner_info_settings_summary"/>
 
+        <CheckBoxPreference
+            android:key="keyguard_enable_widgets"
+            android:title="@string/security_enable_widgets_title"/>
+
     </PreferenceCategory>
 
 </PreferenceScreen>
