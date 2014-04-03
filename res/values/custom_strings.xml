@@ -331,7 +331,7 @@
 
     <!-- Double tap to sleep -->
     <string name="double_tap_to_sleep_title">Double tap to sleep</string>
-    <string name="double_tap_to_sleep_summary">Allow double tap in statusbar to turn off screen</string>
+    <string name="double_tap_to_sleep_summary">Allow double tap in statusbar and the lock ring to turn off screen. If using a pin/password or pattern lockscreen double tap entry view to sleep</string>
 
     <!-- Quiet hours -->
     <string name="quiet_hours_title">Quiet hours</string>
