@@ -69,6 +69,7 @@ import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import dalvik.system.VMRuntime;
 
@@ -161,6 +162,10 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private static final String FORCE_HIGHEND_GFX_PREF = "pref_force_highend_gfx";
     private static final String FORCE_HIGHEND_GFX_PERSIST_PROP = "persist.sys.force_highendgfx";
 
+    private static final String KEY_CHAMBER_OF_SECRETS = "chamber_of_secrets";
+    private static final String KEY_CHAMBER_OF_UNLOCKED_SECRETS =
+            "chamber_of_unlocked_secrets";
+
     private static final int RESULT_DEBUG_APP = 1000;
 
     private IWindowManager mWindowManager;
@@ -215,6 +220,9 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private CheckBoxPreference mExperimentalWebView;
     private CheckBoxPreference mDevelopmentShortcut;
     private CheckBoxPreference mForceHighEndGfx;
+
+    private Preference mChamber;
+    private CheckBoxPreference mChamberUnlocked;
 
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
     private final ArrayList<CheckBoxPreference> mResetCbPrefs
@@ -357,6 +365,23 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             mAllPrefs.add(hdcpChecking);
             removePreferenceForProduction(hdcpChecking);
         }
+
+        mChamber = (Preference) findPreference(KEY_CHAMBER_OF_SECRETS);
+        mAllPrefs.add(mChamber);
+        mChamberUnlocked =
+                findAndInitCheckboxPref(KEY_CHAMBER_OF_UNLOCKED_SECRETS);
+        mChamberUnlocked.setOnPreferenceChangeListener(this);
+
+        boolean chamberOpened = Settings.Secure.getInt(
+                getActivity().getContentResolver(),
+                Settings.Secure.CHAMBER_OF_SECRETS, 0) == 1;
+        mChamberUnlocked.setChecked(chamberOpened);
+
+        if (chamberOpened) {
+            removePreference(mChamber);
+        } else {
+            removePreference(mChamberUnlocked);
+        }
     }
 
     private ListPreference addListPreference(String prefKey) {
@@ -431,6 +456,12 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private void removePreference(Preference preference) {
         getPreferenceScreen().removePreference(preference);
         mAllPrefs.remove(preference);
+    }
+
+    private void addPreference(Preference preference) {
+        getPreferenceScreen().addPreference(preference);
+        preference.setOnPreferenceChangeListener(this);
+        mAllPrefs.add(preference);
     }
 
     private void setPrefsEnabledState(boolean enabled) {
@@ -1351,6 +1382,18 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             writeWifiDisplayCertificationOptions();
         } else if (preference == mDevelopmentShortcut) {
             writeDevelopmentShortcutOptions();
+        } else if (preference == mChamber) {
+            if (Settings.Secure.getInt(getActivity().getContentResolver(),
+                    Settings.Secure.CHAMBER_OF_SECRETS, 0) == 0) {
+                Settings.Secure.putInt(getActivity().getContentResolver(),
+                        Settings.Secure.CHAMBER_OF_SECRETS, 1);
+                Toast.makeText(getActivity(),
+                        R.string.chamber_toast,
+                        Toast.LENGTH_LONG).show();
+                getPreferenceScreen().removePreference(mChamber);
+                addPreference(mChamberUnlocked);
+                mChamberUnlocked.setChecked(true);
+            }
         } else {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
@@ -1433,6 +1476,11 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             return true;
         } else if (preference == mAppProcessLimit) {
             writeAppProcessLimitOptions(newValue);
+            return true;
+        } else if (preference == mChamberUnlocked) {
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.CHAMBER_OF_SECRETS,
+                    (Boolean) newValue ? 1 : 0);
             return true;
         }
         return false;
