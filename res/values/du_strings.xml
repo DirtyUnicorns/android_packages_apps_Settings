@@ -298,4 +298,6 @@
     <string name="headset_plugged_in_title">Headset Plugged In notification</string>
     <string name="headset_plugged_in_summary">Enable notification for when the headset is plugged in</string>
 
+    <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
+    <string name="bluetooth_accept_all_files">Accept all file types</string>
 </resources>
