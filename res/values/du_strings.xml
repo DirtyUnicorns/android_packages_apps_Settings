@@ -81,4 +81,7 @@
     <string name="remove_tile_summaries_title">Remove tile summaries</string>
     <string name="remove_tile_summaries_summary">Remove tiles summaries that display underneath tile titles</string>
 
+    <!-- Bluetooth accept all files -->
+    <string name="bluetooth_accept_all_files">Accept all file types</string>
+
 </resources>
