@@ -18,9 +18,22 @@
     android:title="@string/lockscreen_category" >
 
     <PreferenceCategory
+        android:key="category_app_circle_bar"
+        android:title="@string/category_app_circle_bar_title"/>
+
+    <com.android.settings.du.preference.SystemCheckBoxPreference
+        android:key="enable_app_circle_bar"
+        android:title="@string/app_circle_bar_title" />
+
+    <com.android.settings.AOSPAL.AppMultiSelectListPreference
+        android:key="app_circle_bar_included_apps"
+        android:persistent="false"
+        android:title="@string/app_circle_bar_included_apps_title"
+        android:dependency="enable_app_circle_bar" />
+
+    <PreferenceCategory
         android:key="misc_tweaks_system"
-        android:title="@string/misc_tweaks_system">
-    </PreferenceCategory>
+        android:title="@string/misc_tweaks_system"/>
 
     <CheckBoxPreference
         android:key="disable_fc_notifications"
