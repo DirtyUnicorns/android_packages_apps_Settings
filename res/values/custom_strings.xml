@@ -1378,9 +1378,15 @@
     <string name="srec_enable_touches_summary">Enable visual pointer to show touches during screen recording</string>
     <string name="srec_enable_mic_title">Use Microphone</string>
     <string name="srec_enable_mic_summary">Use microphone as audio input during screen recording</string>
-    <string name="misc_tweaks_hfm">Hosts File Manager</string>
     <string name="hfm_disable_ads_title">Disable Ads</string>
     <string name="hfm_disable_ads_summary">Change hosts file to disable ads</string>
+    <string name="hfm_pref_screen_title">Ad blocker</string>
+    <string name="hfm_update_hosts">Update hosts file</string>
+    <string name="hfm_update_hosts_summary">Download and apply fresh hosts</string>
+    <string name="hfm_dialog_wait">Working, please wait...</string>
+    <string name="hfm_dialog_failed">Updating hosts file failed. Please try again.</string>
+    <string name="hfm_dialog_success">/4 hosts sources successfully applied!</string>
+    <string name="hfm_dialog_conn_error">Error: No network connectivity</string>
 
     <!-- Fast charge QS tile -->
     <string name="title_tile_fcharge">Fast charge</string>

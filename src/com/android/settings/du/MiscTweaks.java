@@ -58,9 +58,9 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import com.android.settings.du.hfm.HfmHelpers;
 import com.android.settings.AOSPAL.AppMultiSelectListPreference;
 import com.android.internal.util.slim.DeviceUtils;
+import com.android.settings.util.Helpers;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -68,14 +68,11 @@ import java.lang.Thread;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import com.android.settings.util.Helpers;
-
 public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String DISABLE_FC_NOTIFICATIONS = "disable_fc_notifications";
     private static final String SREC_ENABLE_TOUCHES = "srec_enable_touches";
     private static final String SREC_ENABLE_MIC = "srec_enable_mic";
-    private static final String HFM_DISABLE_ADS = "hfm_disable_ads";
     private static final String STATUS_BAR_CUSTOM_HEADER = "custom_status_bar_header";
     private static final String DOUBLE_TAP_TO_SLEEP = "double_tap_to_sleep";
     private static final String PREF_INCLUDE_APP_CIRCLE_BAR_KEY = "app_circle_bar_included_apps";
@@ -83,7 +80,6 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private CheckBoxPreference mDisableFC;
     private CheckBoxPreference mSrecEnableTouches;
     private CheckBoxPreference mSrecEnableMic;
-    private CheckBoxPreference mHfmDisableAds;
     private CheckBoxPreference mStatusBarCustomHeader;
     private CheckBoxPreference mDoubleTapGesture;
     private AppMultiSelectListPreference mIncludedAppCircleBar;
@@ -108,10 +104,6 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         mSrecEnableMic = (CheckBoxPreference) findPreference(SREC_ENABLE_MIC);
         mSrecEnableMic.setChecked((Settings.System.getInt(resolver,
                 Settings.System.SREC_ENABLE_MIC, 0) == 1));
-
-        mHfmDisableAds = (CheckBoxPreference) findPreference(HFM_DISABLE_ADS);
-        mHfmDisableAds.setChecked((Settings.System.getInt(resolver,
-                Settings.System.HFM_DISABLE_ADS, 0) == 1));
 
         mStatusBarCustomHeader = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_CUSTOM_HEADER);
         mStatusBarCustomHeader.setChecked(Settings.System.getInt(resolver,
@@ -150,12 +142,6 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             boolean checked = ((CheckBoxPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.SREC_ENABLE_MIC, checked ? 1:0);
-            return true;
-        } else if  (preference == mHfmDisableAds) {
-            boolean checked = ((CheckBoxPreference)preference).isChecked();
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.HFM_DISABLE_ADS, checked ? 1:0);
-            HfmHelpers.checkStatus(getActivity());
             return true;
         } else if  (preference == mStatusBarCustomHeader) {
             boolean checked = ((CheckBoxPreference)preference).isChecked();
