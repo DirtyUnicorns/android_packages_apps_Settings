@@ -217,6 +217,12 @@
             android:layout="@layout/preference_systemappremover"
             android:fragment="com.android.settings.du.SystemappRemover" />
 
+         <PreferenceScreen
+            android:key="hfm_settings"
+            android:fragment="com.android.settings.du.hfm.HfmSettings"
+            android:layout="@layout/preference_adblocker"
+            android:title="@string/hfm_pref_screen_title" />
+
          <Preference
             android:key="download_center"
             android:fragment="com.android.settings.du.Download"
