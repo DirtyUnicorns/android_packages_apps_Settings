@@ -116,12 +116,10 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         mStatusBarCustomHeader = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_CUSTOM_HEADER);
         mStatusBarCustomHeader.setChecked(Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_CUSTOM_HEADER, 0) == 1);
-        mStatusBarCustomHeader.setOnPreferenceChangeListener(this);
 
         mDoubleTapGesture = (CheckBoxPreference) findPreference(DOUBLE_TAP_TO_SLEEP);
         mDoubleTapGesture.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.DOUBLE_TAP_TO_SLEEP, 0) == 1);
-        mDoubleTapGesture.setOnPreferenceChangeListener(this);
 
         mIncludedAppCircleBar = (AppMultiSelectListPreference) prefSet.findPreference(PREF_INCLUDE_APP_CIRCLE_BAR_KEY);
         Set<String> includedApps = getIncludedApps();
@@ -161,7 +159,6 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             boolean checked = ((CheckBoxPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUS_BAR_CUSTOM_HEADER, checked ? 1:0);
-            Helpers.restartSystemUI();
             return true;
         } else if  (preference == mDoubleTapGesture) {
             boolean checked = ((CheckBoxPreference)preference).isChecked();
