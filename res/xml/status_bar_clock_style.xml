@@ -29,6 +29,12 @@
         android:defaultValue="0xffffff"
         android:dependency="status_bar_show_clock"
         alphaSlider="true" />
+
+    <CheckBoxPreference
+        android:key="clock_use_second"
+        android:title="@string/clock_use_second"
+        android:summary="@string/clock_use_second_summary"
+        android:defaultValue="false" />
     
     <ListPreference
         android:key="clock_style"
