@@ -18,6 +18,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.content.ContentResolver;
@@ -62,10 +63,11 @@ public class StatusBarColor extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         int intColor;
         String hexColor;
-
 
         PackageManager pm = getPackageManager();
         Resources systemUiResources;

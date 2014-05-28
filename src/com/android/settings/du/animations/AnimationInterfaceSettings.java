@@ -16,6 +16,7 @@
 
 package com.android.settings.du.animations;
 
+import android.app.ActionBar;
 import android.app.ActivityManagerNative;
 import android.app.ActivityManager;
 import android.content.ContentResolver;
@@ -58,6 +59,9 @@ public class AnimationInterfaceSettings extends SettingsPreferenceFragment imple
         addPreferencesFromResource(R.xml.animation_interface_settings);
         PreferenceScreen prefScreen = getPreferenceScreen();
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mToastAnimation = (ListPreference) prefSet.findPreference(KEY_TOAST_ANIMATION);
         mToastAnimation.setSummary(mToastAnimation.getEntry());

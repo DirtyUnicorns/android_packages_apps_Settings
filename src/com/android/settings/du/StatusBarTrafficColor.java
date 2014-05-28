@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -64,6 +65,9 @@ public class StatusBarTrafficColor extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.status_bar_traffic_color);
 
         prefs = getPreferenceScreen();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mStatusBarTrafficColor = (ColorPickerPreference) findPreference(PREF_NETWORK_SPEED_COLOR);
         mStatusBarTrafficColor.setOnPreferenceChangeListener(this);

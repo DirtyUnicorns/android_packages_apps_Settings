@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.INotificationManager;
@@ -74,6 +75,9 @@ public class Halo extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.halo_settings);
         PreferenceScreen prefSet = getPreferenceScreen();
         mContext = getActivity();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mNotificationManager = INotificationManager.Stub.asInterface(
                 ServiceManager.getService(Context.NOTIFICATION_SERVICE));

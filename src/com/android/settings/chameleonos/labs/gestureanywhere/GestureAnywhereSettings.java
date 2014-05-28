@@ -55,6 +55,9 @@ public class GestureAnywhereSettings extends SettingsPreferenceFragment implemen
 
         addPreferencesFromResource(R.xml.gesture_anywhere);
 
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
+
         mEnabledPref = (SwitchPreference) findPreference(KEY_ENABLED);
         mEnabledPref.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.GESTURE_ANYWHERE_ENABLED, 0) == 1));

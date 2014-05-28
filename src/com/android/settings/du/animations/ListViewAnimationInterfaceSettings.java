@@ -21,6 +21,7 @@ package com.android.settings.du.animations;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -72,6 +73,9 @@ public class ListViewAnimationInterfaceSettings extends SettingsPreferenceFragme
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mListViewAnimation = (ListPreference) prefSet.findPreference(KEY_LISTVIEW_ANIMATION);
         if (getProperVal(mListViewAnimation) != null) {

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 The Dirty Unicorns project
+ * Copyright (C) 2014 The Dirty Unicorns project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,88 +16,205 @@
 
 package com.android.settings.du;
 
-import android.app.ActivityManagerNative;
+import android.app.ActionBar;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Context;
-import android.content.ContentResolver;
-import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.res.Configuration;
-import android.content.res.Resources;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
+import android.text.Html;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.os.Bundle;
-import android.os.UserHandle;
-import android.os.RemoteException;
-import android.os.ServiceManager;
-import android.preference.Preference;
-import android.preference.CheckBoxPreference;
-import android.preference.ListPreference;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceScreen;
 import android.provider.Settings;
-import android.util.Log;
-import android.view.WindowManagerGlobal;
-import android.view.IWindowManager;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import android.preference.CheckBoxPreference;
+import android.preference.Preference;
+import android.preference.PreferenceCategory;
+import android.preference.PreferenceManager;
+import android.preference.Preference.OnPreferenceChangeListener;
+import android.preference.PreferenceScreen;
+import android.support.v13.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Toast;
 
+import com.android.internal.util.slim.DeviceUtils;
+import com.android.settings.du.GeneralUI;
+import com.android.settings.du.SystemCat;
+import com.android.settings.du.MultiTaskingCat;
+import com.android.settings.du.NavBarSettings;
+import com.android.settings.du.MiscCat;
+import com.android.settings.du.PagerSlidingTabStrip;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
+import java.util.ArrayList;
+import java.util.List;
 
-import com.android.settings.du.preference.SystemSettingSwitchPreference;
+public class DirtyTweaks extends SettingsPreferenceFragment {
 
-public class DirtyTweaks extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
-    private static final String TAG = "DirtyTweaks";
+    private static final int MENU_HELP  = 0;
 
-    private static final String CATEGORY_NAVBAR = "navigation_bar";
-    private static final String ENABLE_NAVIGATION_BAR = "enable_nav_bar"; // Enable/disable nav bar
+    ViewPager mViewPager;
+    String titleString[];
+    ViewGroup mContainer;
+    PagerSlidingTabStrip mTabs;
 
-    private CheckBoxPreference mEnableNavigationBar; // Enable/disable nav bar
-    private SystemSettingSwitchPreference mSwitchPreference;
+    static Bundle mSavedState;
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        mContainer = container;
+        final ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
-        addPreferencesFromResource(R.xml.dirtytweaks);
-        PreferenceScreen prefScreen = getPreferenceScreen();
+        View view = inflater.inflate(R.layout.preference_generalui, container, false);
+        mViewPager = (ViewPager) view.findViewById(R.id.viewPager);
+        mTabs = (PagerSlidingTabStrip) view.findViewById(R.id.tabs);
+        StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
+        mViewPager.setAdapter(StatusBarAdapter);
+        mTabs.setViewPager(mViewPager);
 
-        mSwitchPreference = (SystemSettingSwitchPreference)
-                findPreference(Settings.System.HEADS_UP_NOTIFICATION);
-
-        // Booleans to enable/disable nav bar
-        // overriding overlays
-        boolean hasNavBarByDefault = getResources().getBoolean(
-                com.android.internal.R.bool.config_showNavigationBar);
-        boolean enableNavigationBar = Settings.System.getInt(getContentResolver(),
-                Settings.System.NAVIGATION_BAR_SHOW, hasNavBarByDefault ? 1 : 0) == 1;
-        mEnableNavigationBar = (CheckBoxPreference) findPreference(ENABLE_NAVIGATION_BAR);
-        mEnableNavigationBar.setChecked(enableNavigationBar);
-        mEnableNavigationBar.setOnPreferenceChangeListener(this);
-
-        updateNavbarPreferences(enableNavigationBar);
+        setHasOptionsMenu(true);
+        return view;
     }
 
-    // Enable/disbale nav bar
-    private void updateNavbarPreferences(boolean show) {}
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle saveState) {
+        super.onSaveInstanceState(saveState);
+    }
 
     @Override
     public void onResume() {
         super.onResume();
-        boolean headsUpEnabled = Settings.System.getIntForUser(
-                getActivity().getContentResolver(),
-                Settings.System.HEADS_UP_NOTIFICATION, 0, UserHandle.USER_CURRENT) == 1;
-        mSwitchPreference.setChecked(headsUpEnabled);
+
+        if (!DeviceUtils.isTablet(getActivity())) {
+            mContainer.setPadding(30, 30, 30, 30);
+        }
     }
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mEnableNavigationBar) { // Enable/disbale nav bar (used in custom nav bar dimensions)
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_SHOW,
-                    ((Boolean) objValue) ? 1 : 0);
-            updateNavbarPreferences((Boolean) objValue);
-            return true;
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.add(0, MENU_HELP, 0, "Help Us, Help You!!")
+                .setIcon(R.drawable.ic_action_help)
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case MENU_HELP:
+                showDialogInner(MENU_HELP);
+                Toast.makeText(getActivity(),
+                (Html.fromHtml("READ THE WHOLE THING!!")),
+                Toast.LENGTH_LONG).show();
+                return true;
+            default:
+                return false;
+        }
+    }
+
+    private void showDialogInner(int id) {
+        DialogFragment newFragment = MyAlertDialogFragment.newInstance(id);
+        newFragment.setTargetFragment(this, 0);
+        newFragment.show(getFragmentManager(), "dialog " + id);
+    }
+
+    public static class MyAlertDialogFragment extends DialogFragment {
+
+        public static MyAlertDialogFragment newInstance(int id) {
+            MyAlertDialogFragment frag = new MyAlertDialogFragment();
+            Bundle args = new Bundle();
+            args.putInt("id", id);
+            frag.setArguments(args);
+            return frag;
         }
 
-        return false;
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            int id = getArguments().getInt("id");
+            switch (id) {
+                case MENU_HELP:
+                    return new AlertDialog.Builder(getActivity())
+                    .setIcon(R.drawable.ic_action_help)
+                    .setTitle(Html.fromHtml("<font color='" + getResources().getColor(R.color.red) + "'>Help Us, Help You!!</font>"))
+                    .setMessage(Html.fromHtml("If you find a bug with any of these settings, please provide at least one of the following to the developers.<br><br><font color='" + getResources().getColor(R.color.red) + "'>1. Logcat</font><br><font color='" + getResources().getColor(R.color.red) + "'>2. What you were doing prior to your issue</font><br><font color='" + getResources().getColor(R.color.red) + "'>3. Your complete setup so we could possibly duplicate the issue</font><br>(<i>This means things like Kernel, Device, any MODs, etc</i>)<br><br>Providing us with little to no information does not help us, help you.<br><br>We are developers, <font color='" + getResources().getColor(R.color.red) + "'><big>NOT WIZARDS</big></font> and so we <font color='" + getResources().getColor(R.color.red) + "'><big>CAN NOT</big></font> read minds.<br><br>THANK YOU for your continued support!"))
+                    .setCancelable(false)
+                    .setNegativeButton(R.string.dlg_ok,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                        }
+                    })
+                    .create();
+            }
+            throw new IllegalArgumentException("unknown id " + id);
+        }
+
+        @Override
+        public void onCancel(DialogInterface dialog) {
+
+        }
+    }
+
+    class StatusBarAdapter extends FragmentPagerAdapter {
+        String titles[] = getTitles();
+        private Fragment frags[] = new Fragment[titles.length];
+
+        public StatusBarAdapter(FragmentManager fm) {
+            super(fm);
+            frags[0] = new GeneralUI();
+            frags[1] = new SystemCat();
+            frags[2] = new MultiTaskingCat();
+            frags[3] = new NavBarSettings();
+            frags[4] = new MiscCat();
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return titles[position];
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return frags[position];
+        }
+
+        @Override
+        public int getCount() {
+            return frags.length;
+        }
+    }
+
+    private String[] getTitles() {
+        String titleString[];
+        if (!DeviceUtils.isPhone(getActivity())) {
+        titleString = new String[]{
+                    getString(R.string.generalUI_title),
+	            getString(R.string.volume_steps_system_title),
+	            getString(R.string.multitasking_title),
+                getString(R.string.navigation_bar_category),
+	            getString(R.string.misc_category)};
+        } else {
+        titleString = new String[]{
+                    getString(R.string.generalUI_title),
+	            getString(R.string.volume_steps_system_title),
+	            getString(R.string.multitasking_title),
+                getString(R.string.navigation_bar_category),
+	            getString(R.string.misc_category)};
+        }
+        return titleString;
     }
 }
+

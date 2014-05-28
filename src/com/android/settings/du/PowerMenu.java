@@ -21,6 +21,7 @@ package com.android.settings.du;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 
+import android.app.ActionBar;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
@@ -62,6 +63,9 @@ public class PowerMenu extends SettingsPreferenceFragment implements
 
         PreferenceScreen prefSet = getPreferenceScreen();
         resolver = getActivity().getContentResolver();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         boolean mHasScreenRecord = getActivity().getResources().getBoolean(
                 com.android.internal.R.bool.config_enableScreenrecordChord);

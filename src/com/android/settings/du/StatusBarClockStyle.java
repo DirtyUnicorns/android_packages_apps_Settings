@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
@@ -95,6 +96,9 @@ implements OnPreferenceChangeListener {
 
         addPreferencesFromResource(R.xml.status_bar_clock_style);
         prefSet = getPreferenceScreen();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mClockStyle = (ListPreference) findPreference(PREF_ENABLE);
         mClockStyle.setOnPreferenceChangeListener(this);

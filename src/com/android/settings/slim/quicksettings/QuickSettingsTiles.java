@@ -18,6 +18,7 @@ package com.android.settings.slim.quicksettings;
 
 import static com.android.internal.util.slim.QSConstants.TILE_DELIMITER;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -96,6 +97,9 @@ public class QuickSettingsTiles extends Fragment {
         mContainer.setClipChildren(false);
         mContainer.setClipToPadding(false);
         mInflater = inflater;
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         PackageManager pm = getActivity().getPackageManager();
         if (pm != null) {

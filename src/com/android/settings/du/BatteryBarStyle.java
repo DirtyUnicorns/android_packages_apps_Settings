@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
@@ -57,6 +58,9 @@ public class BatteryBarStyle extends SettingsPreferenceFragment implements OnPre
         addPreferencesFromResource(R.xml.battery_bar_prefs);
 
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mBatteryBar = (ListPreference) findPreference(PREF_BATT_BAR);
         mBatteryBar.setOnPreferenceChangeListener(this);

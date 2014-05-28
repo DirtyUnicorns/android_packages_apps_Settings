@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ContentResolver;
@@ -89,6 +90,9 @@ public class NotificationDrawerStyle extends SettingsPreferenceFragment implemen
         final ContentResolver resolver = getActivity().getContentResolver();
 
         addPreferencesFromResource(R.xml.notification_bg_pref);
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 

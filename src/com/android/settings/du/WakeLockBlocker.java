@@ -1,5 +1,6 @@
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.PowerManager;
@@ -100,6 +101,9 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
         mWakeLockState = new HashMap<String, Boolean>();
         updateSeenWakeLocksList();
         updateBlockedWakeLocksList();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mBlockerEnabled = (Switch) getActivity().findViewById(
                 R.id.wakelock_blocker_switch);

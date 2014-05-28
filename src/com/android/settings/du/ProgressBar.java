@@ -17,6 +17,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -76,6 +77,9 @@ public class ProgressBar extends SettingsPreferenceFragment implements
         getPreferenceScreen().removeAll();
         getPreferenceScreen().addPreference(PreviewLayout);
         addPreferencesFromResource(R.xml.progressbar);
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mprogressbar_mirror = (CheckBoxPreference) findPreference(PROGRESSBAR_MIRROR);
         mprogressbar_mirror.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.PROGRESSBAR_MIRROR, 0) == 1);

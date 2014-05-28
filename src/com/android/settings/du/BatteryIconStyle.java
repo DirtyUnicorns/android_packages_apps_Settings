@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
@@ -53,8 +54,6 @@ public class BatteryIconStyle extends SettingsPreferenceFragment
     private static final String PREF_STATUS_BAR_BATTERY_TEXT_CHARGING_COLOR = "battery_text_charging_color";
     private static final String PREF_STATUS_BAR_CIRCLE_BATTERY_ANIMATIONSPEED = "circle_battery_animation_speed";
 
-    private static final int MENU_RESET = Menu.FIRST;
-
     private ListPreference mStatusBarBattery;
     private ColorPickerPreference mBatteryColor;
     private ColorPickerPreference mBatteryTextColor;
@@ -78,6 +77,9 @@ public class BatteryIconStyle extends SettingsPreferenceFragment
 
         addPreferencesFromResource(R.xml.battery_style);
         prefSet = getPreferenceScreen();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         int intColor;
         String hexColor;
@@ -164,38 +166,6 @@ public class BatteryIconStyle extends SettingsPreferenceFragment
         return prefSet;
     }
 
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, MENU_RESET, 0, R.string.reset)
-                .setIcon(R.drawable.ic_settings_backup) // use the backup icon
-                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case MENU_RESET:
-                resetToDefault();
-                return true;
-             default:
-                return super.onContextItemSelected(item);
-        }
-    }
-
-    private void resetToDefault() {
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
-        alertDialog.setTitle(R.string.reset);
-        alertDialog.setMessage(R.string.battery_style_reset_message);
-        alertDialog.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                iconColorReset();
-                createCustomView();
-            }
-        });
-        alertDialog.setNegativeButton(R.string.cancel, null);
-        alertDialog.create().show();
-    }
-
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (!mCheckPreferences) {
             return false;
@@ -241,15 +211,6 @@ public class BatteryIconStyle extends SettingsPreferenceFragment
             return true;
         }
         return false;
-    }
-
-    private void iconColorReset() {
-        Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.STATUS_BAR_BATTERY_COLOR, -2);
-        Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.STATUS_BAR_BATTERY_TEXT_COLOR, -2);
-        Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.STATUS_BAR_BATTERY_TEXT_CHARGING_COLOR, -2);
     }
 
     private void updateBatteryIconOptions(int batteryIconStat) {

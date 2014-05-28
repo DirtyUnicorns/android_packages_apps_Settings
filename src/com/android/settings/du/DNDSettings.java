@@ -93,6 +93,9 @@ public class DNDSettings extends SettingsPreferenceFragment implements
         mPackageManager = getPackageManager();
         mPackageAdapter = new PackageAdapter();
 
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
+
         mDndPrefList = (PreferenceGroup) findPreference("dnd_applications_list");
         mDndPrefList.setOrderingAsAdded(false);
 

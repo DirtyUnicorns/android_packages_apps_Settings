@@ -16,6 +16,7 @@
 
 package com.android.settings.AOSPAL;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -126,6 +127,9 @@ public class LockscreenStyle extends SettingsPreferenceFragment
 
         addPreferencesFromResource(R.xml.lockscreen_style);
         prefSet = getPreferenceScreen();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         // Set to string so we don't have to create multiple objects of it
         mDefault = getResources().getString(R.string.default_string);

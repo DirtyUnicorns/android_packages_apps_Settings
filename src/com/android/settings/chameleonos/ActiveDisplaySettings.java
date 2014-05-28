@@ -16,6 +16,7 @@
 
 package com.android.settings.chameleonos;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.hardware.SensorManager;
 import android.os.Bundle;
@@ -76,6 +77,9 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.active_display_settings);
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mEnabledPref = (SwitchPreference) findPreference(KEY_ENABLED);
         mEnabledPref.setChecked((Settings.System.getInt(getContentResolver(),

@@ -18,6 +18,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
@@ -59,6 +60,9 @@ public class BatteryStatusBar extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.batterystatusbar);
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();

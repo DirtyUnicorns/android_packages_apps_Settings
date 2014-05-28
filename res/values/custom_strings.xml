@@ -158,11 +158,13 @@
 
     <!-- Dirty Tweaks -->
     <string name="dirt_settings">Dirty Tweaks</string>
-    <string name="generalUI_title">User Interface</string>
+    <string name="du_bugreport">Bug Report</string>
+    <string name="generalUI_title">General UI</string>
+    <string name="multitasking_title">Multi-Tasking</string>
     <string name="statusbar_title">Status Bar</string>
     <string name="system_title">System</string>
     <string name="misc_title">Misc. Tweaks</string>
-    <string name="status_bar_header">Battery / Clock &amp; Date </string>
+    <string name="status_bar_header">Battery &amp; Clock</string>
     <string name="status_bar_style_title">Quick Settings Pulldown</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="status_bar_misc">Misc Tweaks</string>
@@ -366,7 +368,7 @@
     <string name="end_time_title">End</string>
 
     <!-- Halo -->
-    <string name="halo_settings_title">HALO™</string>
+    <string name="halo_settings_title">HALO</string>
     <string name="halo_behavior_title">Halo Behavior</string>
     <string name="halo_hide_title">Hide Halo after activity</string>
     <string name="halo_hide_summary">Halo will appear for incoming tasks and scroll out of sight after a while</string>
@@ -1120,6 +1122,7 @@
     <string name="navigation_bar_size_0_dp">0 dp (off)</string>
 
     <!-- Navigation ring shortcuts -->
+    <string name="navigation_bar_title">NavBar</string>
     <string name="navigation_ring_title">NavBar Ring</string>
     <string name="navring_target_reset_message">Delete all user created navigation bar shortcuts and restore to default?</string>
     <string name="navring_target_reset">Navigation bar shortcuts reset to default</string>
@@ -1471,7 +1474,7 @@
     <string name="lockscreen_glowpad_torch_summary">Press and hold lockscreen icon handle to enable torch</string>
 
     <!-- Status bar color -->
-    <string name="custom_status_bar_header_title">Status Bar Color</string>
+    <string name="custom_status_bar_header_title">StatusBar Color</string>
     <string name="custom_status_bar_color_title">Custom status bar color</string>
     <string name="status_bar_opaque_color">Opaque color</string>
     <string name="status_bar_transparent_color">Dimmed color</string>

@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
@@ -72,8 +73,6 @@ public class DrivingMode extends SettingsPreferenceFragment implements
 
     private static final int MULTIPLIER_VOLUME = 10;
 
-    private static final int MENU_RESET = Menu.FIRST;
-
     private SwitchPreference mEnableVoiceTTS;
     private SeekBarPreference mVoiceVolume;
     private CheckBoxPreference mEnableVoiceTTScall;
@@ -97,6 +96,9 @@ public class DrivingMode extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.drivingmode);
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         Context context = getActivity();
         PreferenceScreen prefSet = getPreferenceScreen();
@@ -212,66 +214,6 @@ public class DrivingMode extends SettingsPreferenceFragment implements
         mEnableVoiceTTSnotifRead.setEnabled(isEngineReady);
         mIncludedAppsPref.setEnabled(isEngineReady);
         mAnnoyingNotifications.setEnabled(isEngineReady);
-    }
-
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, MENU_RESET, 0, R.string.reset)
-                .setIcon(R.drawable.ic_settings_backup) // use the backup icon
-                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case MENU_RESET:
-                resetToDefault();
-                return true;
-            default:
-                return super.onContextItemSelected(item);
-        }
-    }
-
-    private void resetToDefault() {
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
-        alertDialog.setTitle(R.string.reset);
-        alertDialog.setMessage(R.string.tts_settings_reset_message);
-        alertDialog.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                mShareprefs.edit().putBoolean(IntentReceiver.ENABLED, false).commit();
-                mEnableVoiceTTS.setChecked(false);
-                mShareprefs.edit().putInt(IntentReceiver.VOICE_VOLUME, 8).commit();
-                mVoiceVolume.setValue(80);
-                mShareprefs.edit().putBoolean(IntentReceiver.ENABLED_CALL, false).commit();
-                mEnableVoiceTTScall.setChecked(false);
-                mShareprefs.edit().putBoolean(IntentReceiver.ENABLED_SMS, false).commit();
-                mEnableVoiceTTSsms.setChecked(false);
-                mShareprefs.edit().putBoolean(IntentReceiver.ENABLED_SMS_READ, false).commit();
-                mEnableVoiceTTSsmsRead.setChecked(false);
-                mShareprefs.edit().putBoolean(IntentReceiver.ENABLED_CHARGE_FULL, false).commit();
-                mEnableVoiceTTSchargeFull.setChecked(false);
-                mShareprefs.edit().putBoolean(IntentReceiver.ENABLED_CHARGE_ON, false).commit();
-                mEnableVoiceTTSchargeOn.setChecked(false);
-                mShareprefs.edit().putBoolean(IntentReceiver.ENABLED_CHARGE_OFF, false).commit();
-                mEnableVoiceTTSchargeOff.setChecked(false);
-                mShareprefs.edit().putBoolean(IntentReceiver.ENABLED_CLOCK, false).commit();
-                mEnableVoiceTTSclock.setChecked(false);
-                mShareprefs.edit().putBoolean(IntentReceiver.ENABLED_DATE, false).commit();
-                mEnableVoiceTTSdate.setChecked(false);
-                mShareprefs.edit().putBoolean(IntentReceiver.ENABLED_MUSIC, false).commit();
-                mEnableVoiceTTSmusic.setChecked(false);
-                mShareprefs.edit().putBoolean(IntentReceiver.ENABLED_NOTIF, false).commit();
-                mEnableVoiceTTSnotif.setChecked(false);
-                mShareprefs.edit().putBoolean(IntentReceiver.ENABLED_NOTIF_READ, false).commit();
-                mEnableVoiceTTSnotifRead.setChecked(false);
-                mShareprefs.edit().putString(IntentReceiver.INCLUDE_NOTIFICATIONS, "").commit();
-                mIncludedAppsPref.setClearValues();
-                mShareprefs.edit().putInt(IntentReceiver.ANNOYING_NOTIFICATION, 0).commit();
-                mAnnoyingNotifications.setValue("0");
-            }
-        });
-        alertDialog.setNegativeButton(R.string.cancel, null);
-        alertDialog.create().show();
     }
 
     @Override

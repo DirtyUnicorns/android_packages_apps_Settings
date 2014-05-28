@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.ContentResolver;
@@ -99,6 +100,9 @@ public class NavRing extends Fragment implements
         mContainer = container;
         setHasOptionsMenu(true);
         createActionList();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mIsScreenLarge = !Utils.isPhone(getActivity());
         mIsLandscape = getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE;

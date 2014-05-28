@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.SwitchPreference;
@@ -57,6 +58,9 @@ public class ScreenStateToggles extends SettingsPreferenceFragment implements On
 
         addPreferencesFromResource(R.xml.prefs_screen_state_toggles);
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mEnableScreenStateToggles = (SwitchPreference) prefSet.findPreference(
                 SCREEN_STATE_TOOGLES_ENABLE);

@@ -63,10 +63,4 @@
         android:key="carrier_label"
         android:fragment="com.android.settings.du.CarrierLabel"
         android:title="@string/carrier_label_title" />
-
-    <PreferenceScreen
-        android:key="status_bar_style"
-        android:fragment="com.android.settings.du.BatteryStatusBar"
-        android:title="@string/status_bar_misc" />
-
 </PreferenceScreen>

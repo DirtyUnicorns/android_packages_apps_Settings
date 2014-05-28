@@ -1,5 +1,6 @@
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
@@ -46,6 +47,9 @@ public class NavbarDimenSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.navbar_dimen_settings);
 
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mNavigationBarHeight =
             (ListPreference) findPreference(PREF_NAVIGATION_BAR_HEIGHT);

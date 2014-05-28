@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -62,6 +63,9 @@ public class CarrierLabel extends SettingsPreferenceFragment  implements
 
         addPreferencesFromResource(R.xml.carrier_label_prefs);
         PreferenceScreen prefScreen = getPreferenceScreen();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mCr = getContentResolver();
         mPrefSet = getPreferenceScreen();

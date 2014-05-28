@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -59,8 +60,6 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private static final String RECENT_MENU_CLEAR_ALL_LOCATION = "recent_menu_clear_all_location";
     private static final String CUSTOM_RECENT_MODE = "custom_recent_mode";
 
-    private static final int MENU_RESET = Menu.FIRST;
-
     static final int DEFAULT_MEM_COLOR = 0xff8d8d8d;
     static final int DEFAULT_CACHE_COLOR = 0xff00aa00;
     static final int DEFAULT_ACTIVE_APPS_COLOR = 0xff33b5e5;
@@ -85,6 +84,9 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         String hexColor;
 
         addPreferencesFromResource(R.xml.recents);
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
@@ -144,37 +146,6 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         mRecentsCustom = (CheckBoxPreference) findPreference(CUSTOM_RECENT_MODE);
         mRecentsCustom.setChecked(enableRecentsCustom);
         mRecentsCustom.setOnPreferenceChangeListener(this);
-    }
-
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, MENU_RESET, 0, R.string.ram_bar_button_reset)
-                .setIcon(R.drawable.ic_settings_backup) // use the backup icon
-                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case MENU_RESET:
-                resetToDefault();
-                return true;
-            default:
-                return super.onContextItemSelected(item);
-        }
-    }
-
-    private void resetToDefault() {
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
-        alertDialog.setTitle(R.string.ram_bar_reset);
-        alertDialog.setMessage(R.string.ram_bar_reset_message);
-        alertDialog.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                ramBarColorReset();
-            }
-        });
-        alertDialog.setNegativeButton(R.string.cancel, null);
-        alertDialog.create().show();
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -239,25 +210,6 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
             return true;
          }
         return false;
-    }
-
-    private void ramBarColorReset() {
-        Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.RECENTS_RAM_BAR_ACTIVE_APPS_COLOR, DEFAULT_ACTIVE_APPS_COLOR);
-        Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.RECENTS_RAM_BAR_CACHE_COLOR, DEFAULT_CACHE_COLOR);
-        Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.RECENTS_RAM_BAR_MEM_COLOR, DEFAULT_MEM_COLOR);
-
-        mRamBarAppMemColor.setNewPreviewColor(DEFAULT_ACTIVE_APPS_COLOR);
-        mRamBarCacheMemColor.setNewPreviewColor(DEFAULT_CACHE_COLOR);
-        mRamBarTotalMemColor.setNewPreviewColor(DEFAULT_MEM_COLOR);
-        String hexColor = String.format("#%08x", (0xffffffff & DEFAULT_ACTIVE_APPS_COLOR));
-        mRamBarAppMemColor.setSummary(hexColor);
-        hexColor = String.format("#%08x", (0xffffffff & DEFAULT_ACTIVE_APPS_COLOR));
-        mRamBarCacheMemColor.setSummary(hexColor);
-        hexColor = String.format("#%08x", (0xffffffff & DEFAULT_MEM_COLOR));
-        mRamBarTotalMemColor.setSummary(hexColor);
     }
 
     private void updateRamBarOptions() {

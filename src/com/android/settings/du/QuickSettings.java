@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.ActivityManager;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -54,6 +55,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.quick_settings);
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         ContentResolver resolver = getActivity().getContentResolver();
 

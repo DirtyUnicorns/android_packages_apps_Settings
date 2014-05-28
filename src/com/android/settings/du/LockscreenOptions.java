@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.ActivityManagerNative;
 import android.app.ActivityManager;
 import android.content.ContentResolver;
@@ -49,6 +50,9 @@ public class LockscreenOptions extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.lockscreenoptions);
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
     }
 
     @Override

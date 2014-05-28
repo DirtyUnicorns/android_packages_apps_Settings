@@ -21,6 +21,7 @@ package com.android.settings.du.animations;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -85,6 +86,9 @@ public class SystemAnimationInterfaceSettings extends SettingsPreferenceFragment
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mAnimations = AwesomeAnimationHelper.getAnimationsList();
         int animqty = mAnimations.length;

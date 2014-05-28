@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.ActivityManager;
 import android.app.admin.DeviceAdminReceiver;
 import android.app.admin.DevicePolicyManager;
@@ -52,6 +53,9 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.download);
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         final ContentResolver resolver = getActivity().getContentResolver();
 

@@ -16,6 +16,7 @@
 
 package com.android.settings.chameleonos.labs.identicons;
 
+import android.app.ActionBar;
 import android.annotation.ChaosLab;
 import android.annotation.ChaosLab.Classification;
 import android.app.ActionBar;
@@ -49,6 +50,9 @@ public class IdenticonsSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.identicons_prefs);
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mEnabledPref = (SwitchPreference) findPreference(KEY_ENABLED);
         mEnabledPref.setChecked((Settings.System.getInt(getContentResolver(),

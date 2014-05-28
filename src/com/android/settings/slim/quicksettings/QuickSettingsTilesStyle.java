@@ -16,6 +16,7 @@
 
 package com.android.settings.slim.quicksettings;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -95,6 +96,9 @@ public class QuickSettingsTilesStyle extends SettingsPreferenceFragment implemen
         addPreferencesFromResource(R.xml.quicksettings_tiles_style);
 
         prefs = getPreferenceScreen();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         PackageManager pm = getPackageManager();
         Resources systemUiResources;

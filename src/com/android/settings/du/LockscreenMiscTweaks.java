@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.ActivityManager;
 import android.app.admin.DeviceAdminReceiver;
 import android.app.admin.DevicePolicyManager;
@@ -67,6 +68,9 @@ public class LockscreenMiscTweaks extends SettingsPreferenceFragment implements 
 
         addPreferencesFromResource(R.xml.lockscreen_misc_tweaks);
         prefs = getPreferenceScreen();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mSeeThrough = (CheckBoxPreference) findPreference(KEY_SEE_TRHOUGH);
 

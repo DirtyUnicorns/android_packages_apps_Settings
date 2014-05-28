@@ -16,6 +16,7 @@
 
 package com.android.settings.du;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Fragment;
@@ -97,6 +98,9 @@ public class LockscreenTargets extends Fragment implements
 
         mActivity = getActivity();
         mResources = getResources();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mTargetOffset = LockscreenTargetUtils.getTargetOffset(mActivity);
         mMaxTargets = LockscreenTargetUtils.getMaxTargets(mActivity);
