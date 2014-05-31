@@ -1875,6 +1875,12 @@
     <string name="animation_no_scroll_summary_off">Disabled</string>
     <string name="scroll_disclaimer_summary">Note: Most apps need to be restarted for values to take effect</string>
 
+    <!-- Sizes for pattern lockscreen -->
+    <string name="lock_pattern_size_7">7x7</string>
+    <string name="lock_pattern_size_8">8x8</string>
+    <string name="lock_pattern_size_9">9x9</string>
+    <string name="lock_pattern_size_10">10x10</string>
+
     <!-- IME Animation Controls -->
     <string name="ime_animation_title">Keyboard</string>
     <string name="ime_animation_test_title">Test IME Animation Here</string>
