@@ -94,7 +94,7 @@ public class BatteryIconStyle extends SettingsPreferenceFragment
         mStatusBarBattery = (ListPreference) prefSet.findPreference(PREF_STATUS_BAR_BATTERY);
         mStatusBarBattery.setOnPreferenceChangeListener(this);
         int statusBarBattery = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.STATUS_BAR_BATTERY, 0);
+                Settings.System.STATUS_BAR_BATTERY, 3);
         mStatusBarBattery.setValue(String.valueOf(statusBarBattery));
         mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
 
