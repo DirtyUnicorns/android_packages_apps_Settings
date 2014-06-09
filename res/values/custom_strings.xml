@@ -410,6 +410,8 @@
     <string name="halo_enable_title">Enable Halo</string>
     <string name="halo_enable_summary_on">Halo is enabled</string>
     <string name="halo_enable_summary_off">Halo is disabled</string>
+    <string name="halo_color_title">Halo color</string>
+    <string name="halo_color_summary">Defines the color of the Halo bubble</string>
 
     <!-- Notification drawer background -->
     <string name="notification_style_title">Notification Drawer</string>

@@ -33,6 +33,7 @@ import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 public class Halo extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -42,6 +43,7 @@ public class Halo extends SettingsPreferenceFragment
     private static final String KEY_HALO_HIDE = "halo_hide";
     private static final String KEY_HALO_REVERSED = "halo_reversed";
     private static final String KEY_HALO_SIZE = "halo_size";
+    private static final String KEY_HALO_COLOR = "halo_color";
     private static final String KEY_HALO_PAUSE = "halo_pause";
     private static final String KEY_HALO_NINJA = "halo_ninja";
     private static final String KEY_HALO_MSGBOX = "halo_msgbox";
@@ -52,6 +54,7 @@ public class Halo extends SettingsPreferenceFragment
     private SwitchPreference mHaloEnabled;
     private ListPreference mHaloState;
     private ListPreference mHaloSize;
+    private ColorPickerPreference mHaloColor;
     private CheckBoxPreference mHaloHide;
     private CheckBoxPreference mHaloReversed;
     private CheckBoxPreference mHaloPause;
@@ -106,6 +109,9 @@ public class Halo extends SettingsPreferenceFragment
             // So what
         }
         mHaloSize.setOnPreferenceChangeListener(this);
+
+        mHaloColor = (ColorPickerPreference) prefSet.findPreference(KEY_HALO_COLOR);
+        mHaloColor.setOnPreferenceChangeListener(this);
 
         mHaloNinja = (CheckBoxPreference) prefSet.findPreference(KEY_HALO_NINJA);
         mHaloNinja.setChecked(Settings.System.getInt(mContext.getContentResolver(),
@@ -184,6 +190,11 @@ public class Halo extends SettingsPreferenceFragment
             float haloSize = Float.valueOf((String) newValue);
             Settings.System.putFloat(getActivity().getContentResolver(),
                     Settings.System.HALO_SIZE, haloSize);
+            return true;
+        } else if (preference == mHaloColor) {
+            int haloColor = Integer.valueOf(String.valueOf(newValue));
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.HALO_COLOR, haloColor);
             return true;
         } else if (preference == mHaloState) {
             boolean state = Integer.valueOf((String) newValue) == 1;
