@@ -23,12 +23,6 @@
         android:title="@string/alternative_recents_title"/>
 
     <CheckBoxPreference
-        android:key="recents_use_omniswitch"
-        android:title="@string/recents_use_omniswitch_title"
-        android:summary="@string/recents_use_omniswitch_summary"
-        android:persistent="false" />
-
-    <CheckBoxPreference
         android:key="custom_recent_mode"
         android:title="@string/custom_recent_title"
         android:summary="@string/custom_recent_summary"

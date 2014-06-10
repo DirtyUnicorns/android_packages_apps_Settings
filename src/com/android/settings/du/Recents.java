@@ -57,7 +57,6 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private static final String RAM_BAR_COLOR_TOTAL_MEM = "ram_bar_color_total_mem";
     private static final String RECENT_MENU_CLEAR_ALL = "recent_menu_clear_all";
     private static final String RECENT_MENU_CLEAR_ALL_LOCATION = "recent_menu_clear_all_location";
-    private static final String RECENTS_USE_OMNISWITCH = "recents_use_omniswitch";
     private static final String CUSTOM_RECENT_MODE = "custom_recent_mode";
 
     private static final int MENU_RESET = Menu.FIRST;
@@ -72,7 +71,6 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
     private ColorPickerPreference mRamBarTotalMemColor;
     private CheckBoxPreference mRecentClearAll;
     private ListPreference mRecentClearAllPosition;
-    private CheckBoxPreference mRecentsUseOmniSwitch;
     private CheckBoxPreference mRecentsCustom;
     private ColorPickerPreference mRecentsColor;
 
@@ -92,17 +90,6 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         ContentResolver resolver = getActivity().getContentResolver();
 
         mContentResolver = getContentResolver();
-
-        mRecentsUseOmniSwitch = (CheckBoxPreference)
-                prefSet.findPreference(RECENTS_USE_OMNISWITCH);
-
-        try {
-            mRecentsUseOmniSwitch.setChecked(Settings.System.getInt(resolver,
-                    Settings.System.RECENTS_USE_OMNISWITCH) == 1);
-        } catch(SettingNotFoundException e){
-            // if the settings value is unset
-        }
-        mRecentsUseOmniSwitch.setOnPreferenceChangeListener(this);
 
         mRamBarMode = (ListPreference) prefSet.findPreference(RAM_BAR_MODE);
         int ramBarMode = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
@@ -244,10 +231,6 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
         } else if (preference == mRecentClearAllPosition) {
             String value = (String) newValue;
             Settings.System.putString(resolver, Settings.System.CLEAR_RECENTS_BUTTON_LOCATION, value);
-            return true;
-        } else if (preference == mRecentsUseOmniSwitch) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(resolver, Settings.System.RECENTS_USE_OMNISWITCH, value ? 1 : 0);
             return true;
         } else if (preference == mRecentsCustom) {
             boolean value = (Boolean) newValue;
