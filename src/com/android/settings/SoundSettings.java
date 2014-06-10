@@ -24,6 +24,7 @@ import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
@@ -34,6 +35,7 @@ import android.media.AudioManager;
 import android.media.RingtoneManager;
 import android.media.audiofx.AudioEffect;
 import android.net.Uri;
+import android.text.Html;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -113,6 +115,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private ListPreference mVolumeOverlay;
     private CheckBoxPreference mVolumeAdustSound;
     private CheckBoxPreference mCameraSounds;
+    private boolean mDialogClicked;
+    private Dialog mWaiverDialog;
 
     private Handler mHandler = new Handler() {
         public void handleMessage(Message msg) {
@@ -342,7 +346,56 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                     mLockSounds.isChecked() ? 1 : 0);
 
         } else if (preference == mCameraSounds) {
-            SystemProperties.set(PROP_CAMERA_SOUND, mCameraSounds.isChecked() ? "1" : "0");
+            if (!mCameraSounds.isChecked()) {
+                mDialogClicked = false;
+                dismissDialog();
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setIcon(R.drawable.ic_settings_accessibility);
+                builder.setTitle(Html.fromHtml("WARNING!!"));
+                builder.setMessage(Html.fromHtml("<font color='" + getResources().getColor(R.color.red) + "'>Please be aware that it is <big>ILLEGAL</big> to disable this in some areas.<br><br><br></font>For more infomation on this, please visit <font color='" + getResources().getColor(R.color.blue) + "'>http://goo.gl/sxn61g</font>"));
+                builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        if (dialog == mWaiverDialog) {
+                            if (!mDialogClicked) {
+                                mCameraSounds.setChecked(true);
+                            }
+                            mWaiverDialog = null;
+                        }
+                    }
+                });
+
+                builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        if (dialog == mWaiverDialog) {
+                            if (which == DialogInterface.BUTTON_POSITIVE) {
+                                mDialogClicked = true;
+                                SystemProperties.set(PROP_CAMERA_SOUND, "0");
+                            }
+                        }
+                    }
+                });
+
+                mWaiverDialog = builder.show();
+                mWaiverDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+
+                    @Override
+                    public void onDismiss(DialogInterface dialog) {
+                        // Assuming that onClick gets called first
+                        if (dialog == mWaiverDialog) {
+                            if (!mDialogClicked) {
+                                mCameraSounds.setChecked(true);
+                            }
+                            mWaiverDialog = null;
+                        }
+                    }
+                });
+            } else {
+                SystemProperties.set(PROP_CAMERA_SOUND, "1");
+            }
 
         } else if (preference == mMusicFx) {
             // let the framework fire off the intent
@@ -493,6 +546,13 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         ab.setMessage(R.string.dock_not_found_text);
         ab.setPositiveButton(android.R.string.ok, null);
         return ab.create();
+    }
+
+    private void dismissDialog() {
+        if (mWaiverDialog != null) {
+            mWaiverDialog.dismiss();
+            mWaiverDialog = null;
+        }
     }
 }
 

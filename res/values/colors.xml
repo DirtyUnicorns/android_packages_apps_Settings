@@ -17,6 +17,7 @@
 <resources>
     <color name="black">#000</color>
     <color name="red">#F00</color>
+    <color name="blue">#ff2e94fd</color>
 
     <color name="memory_used">#F00</color>
     <color name="memory_avail">#333333</color>
