@@ -76,16 +76,6 @@
         android:title="@string/dirt_settings" >
     </header>
 
-    <!-- Kernel Tweaker -->
-    <header android:id="@+id/kernel_tweaker"
-            android:title="@string/kernel_tweaker_title"
-            android:icon="@drawable/ic_settings_performance" >
-        <intent
-                android:action="android.intent.action.MAIN"
-                android:targetClass="com.dsht.kerneltweaker.MainActivity"
-                android:targetPackage="com.dsht.kerneltweaker" />
-    </header>
-
     <!-- Dark UI -->
     <header
         android:id="@+id/theme_settings"
