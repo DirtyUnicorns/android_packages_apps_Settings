@@ -103,4 +103,9 @@
     </declare-styleable>
 
     <attr name="apnPreferenceStyle" format="reference" />
+
+    <declare-styleable name="CheckboxSetting">
+        <attr name="descriptionOn" format="string"/>
+        <attr name="descriptionOff" format="string"/>
+    </declare-styleable>
 </resources>

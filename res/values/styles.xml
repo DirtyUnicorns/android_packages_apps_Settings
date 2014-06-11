@@ -261,4 +261,15 @@
         <item name="android:widgetLayout">@layout/preference_profiles_widget</item>
     </style>
 
+    <style name="settingStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?android:attr/listPreferredItemHeight</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">?android:attr/scrollbarSize</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:selectable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
 </resources>
