@@ -20,22 +20,13 @@
 
     <PreferenceCategory
         android:key="category_omniswitch"
-        android:title="@string/alternative_recents_title"/>
+        android:title="@string/recents_background_title"/>
 
     <CheckBoxPreference
         android:key="custom_recent_mode"
         android:title="@string/custom_recent_title"
         android:summary="@string/custom_recent_summary"
         android:persistent="false" />
-
-    <PreferenceCategory
-        android:title="@string/recents_background_title"/>
-
-    <Preference
-        style="?android:preferenceInformationStyle"
-        android:title="@string/ram_bar_note_title"
-        android:summary="@string/recents_background_summary"
-        android:selectable="false" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="recents_panel_color"

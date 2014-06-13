@@ -1185,7 +1185,6 @@
     <!-- Recents Color bg -->
     <string name="recents_panel_color_title">Recents panel color</string>
     <string name="recents_background_title">Misc</string>
-    <string name="recents_background_summary">Prior to selecting this option, please make sure you uncheck Omni/Slim recents because this option does not function while those are enabled.</string>
 
     <!--  Recents clear all -->
     <string name="show_recent_clear_all_button_title">Clear all button</string>
@@ -1444,10 +1443,7 @@
     <string name="voicemail_breath_summary">Will give your voicemail notifications a breathing effect in the statusbar</string>
 
     <!-- Alternative Recents -->
-    <string name="alternative_recents_title">Alternative Recents</string>
     <string name="omniswitch_settings_title">Omni Switch</string>
-    <string name="recents_use_omniswitch_title">Omni Switch recents</string>
-    <string name="recents_use_omniswitch_summary">Make sure Omni Switch is enabled prior to use</string>
     <string name="custom_recent_title">Slim recents</string>
     <string name="custom_recent_summary">Switch between slim style recents</string>
 
