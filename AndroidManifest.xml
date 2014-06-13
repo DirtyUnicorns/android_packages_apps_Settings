@@ -1857,6 +1857,14 @@
         <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.ListVersions"/>
         <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.ChangeList"/>
 
+        <!-- DU Extra info -->
+        <activity android:name="com.android.settings.du.extrainfo.MainActivity"
+                  android:theme="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".ApnEditor" />
 
         <!-- Profiles -->
