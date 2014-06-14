@@ -54,6 +54,7 @@ import static com.android.internal.util.slim.QSConstants.TILE_FCHARGE;
 import static com.android.internal.util.slim.QSConstants.TILE_THEME;
 import static com.android.internal.util.slim.QSConstants.TILE_SCREENSHOT;
 import static com.android.internal.util.slim.QSConstants.TILE_HALO;
+import static com.android.internal.util.slim.QSConstants.TILE_ADBLOCKER;
 import static com.android.internal.util.slim.QSConstants.TILE_ONTHEGO;
 import static com.android.internal.util.slim.QSConstants.TILE_PROFILE;
 
@@ -179,6 +180,9 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_HALO, R.string.title_tile_halo,
                 "com.android.systemui:drawable/ic_qs_halo_on"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_ADBLOCKER, R.string.title_tile_adblocker,
+                "com.android.systemui:drawable/ic_qs_adblocker_on"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {
