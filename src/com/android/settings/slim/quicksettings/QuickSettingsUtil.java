@@ -53,6 +53,7 @@ import static com.android.internal.util.slim.QSConstants.TILE_GPS;
 import static com.android.internal.util.slim.QSConstants.TILE_FCHARGE;
 import static com.android.internal.util.slim.QSConstants.TILE_THEME;
 import static com.android.internal.util.slim.QSConstants.TILE_SCREENSHOT;
+import static com.android.internal.util.slim.QSConstants.TILE_HALO;
 import static com.android.internal.util.slim.QSConstants.TILE_ONTHEGO;
 import static com.android.internal.util.slim.QSConstants.TILE_PROFILE;
 
@@ -175,6 +176,9 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_PROFILE, R.string.title_tile_profile,
                 "com.android.systemui:drawable/ic_qs_profiles"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_HALO, R.string.title_tile_halo,
+                "com.android.systemui:drawable/ic_qs_halo_on"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {
