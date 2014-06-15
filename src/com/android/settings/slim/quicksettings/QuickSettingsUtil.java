@@ -57,6 +57,7 @@ import static com.android.internal.util.slim.QSConstants.TILE_HALO;
 import static com.android.internal.util.slim.QSConstants.TILE_ADBLOCKER;
 import static com.android.internal.util.slim.QSConstants.TILE_ONTHEGO;
 import static com.android.internal.util.slim.QSConstants.TILE_PROFILE;
+import static com.android.internal.util.slim.QSConstants.TILE_COMPASS;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -183,6 +184,9 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_ADBLOCKER, R.string.title_tile_adblocker,
                 "com.android.systemui:drawable/ic_qs_adblocker_on"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_COMPASS, R.string.title_tile_compass,
+                "com.android.systemui:drawable/ic_qs_compass_on"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {
@@ -237,6 +241,11 @@ public class QuickSettingsUtil {
         // Don't show the Fast charge tile if not supported by kernel
         if (!DeviceUtils.fchargeEnabled(context)) {
             removeTile(TILE_FCHARGE);
+        }
+
+        // Don't show the Compass tile if the device has no orientation sensor
+        if (!DeviceUtils.deviceSupportsCompass(context)) {
+            removeTile(TILE_COMPASS);
         }
 
     }
