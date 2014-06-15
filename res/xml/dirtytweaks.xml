@@ -218,12 +218,6 @@
             android:fragment="com.android.settings.du.SystemappRemover" />
 
          <PreferenceScreen
-            android:id="@+id/installer_settings"
-            android:title="@string/installer_title"
-            android:layout="@layout/preference_installer"
-            android:fragment="com.android.settings.crom.installer.InstallerSettingsFragment" />
-
-         <PreferenceScreen
             android:key="hfm_settings"
             android:fragment="com.android.settings.du.hfm.HfmSettings"
             android:layout="@layout/preference_adblocker"
