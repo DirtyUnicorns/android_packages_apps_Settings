@@ -1667,9 +1667,16 @@
         </activity>
 
         <!-- Dirty Tweaks -->
-        <activity
-            android:name=".du.DirtyTweaks"
-            android:label="@string/dirt_settings" >
+        <activity android:name="Settings$DirtyTweaksActivity"
+                android:label="@string/dirt_settings_title"
+                android:taskAffinity=""
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.du.DirtyTweaks" />
         </activity>
 
         <activity android:name=".du.Animations" />
@@ -1685,7 +1692,7 @@
         <activity android:name=".du.LockscreenOptions" />
         <activity android:name=".du.LockscreenMiscTweaks" />
         <activity android:name=".du.MiscTweaks" />
-        <activity android:name=".du.NNavBar" />
+        <activity android:name=".du.NavBar" />
         <activity android:name=".du.NavRing" />
         <activity android:name=".du.NavbarDimenSettings" />
         <activity android:name=".du.NavBarSettings" />
