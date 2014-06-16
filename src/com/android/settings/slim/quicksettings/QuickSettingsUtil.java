@@ -59,6 +59,7 @@ import static com.android.internal.util.slim.QSConstants.TILE_ONTHEGO;
 import static com.android.internal.util.slim.QSConstants.TILE_PROFILE;
 import static com.android.internal.util.slim.QSConstants.TILE_COMPASS;
 import static com.android.internal.util.slim.QSConstants.TILE_NAVBAR;
+import static com.android.internal.util.slim.QSConstants.TILE_CAMERA;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -191,6 +192,9 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_NAVBAR, R.string.title_tile_navbar,
                 "com.android.systemui:drawable/ic_qs_navbar_on"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                 TILE_CAMERA, R.string.title_tile_camera,
+                "com.android.systemui:drawable/ic_qs_camera"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {
@@ -235,6 +239,11 @@ public class QuickSettingsUtil {
         // Don't show the Torch tile if not supported
         if (!DeviceUtils.deviceSupportsTorch(context)) {
             removeTile(TILE_TORCH);
+        }
+
+        // Don't show the Camera tile if the device has no cameras
+        if (!DeviceUtils.deviceSupportsCamera()) {
+            removeTile(TILE_CAMERA);
         }
 
         // Don't show the Network ADB tile if adb debugging is disabled
