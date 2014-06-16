@@ -704,6 +704,7 @@
     <string name="title_tile_halo">Halo</string>
     <string name="title_tile_adblocker">Ad Blocker</string>
     <string name="title_tile_compass">Compass</string>
+    <string name="title_tile_navbar">Nav Bar</string>
     <string name="dynamic_tile_ime_switcher">IME switcher</string>
     <string name="dynamic_tile_usb_tether">USB tether</string>
     <string name="dynamic_tile_alarm">Alarm</string>

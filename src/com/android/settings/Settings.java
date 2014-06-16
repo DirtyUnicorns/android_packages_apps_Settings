@@ -89,6 +89,7 @@ import com.android.settings.print.PrintServiceSettingsFragment;
 import com.android.settings.print.PrintSettingsFragment;
 import com.android.settings.profiles.ProfileEnabler;
 import com.android.settings.slim.themes.ThemeEnabler;
+import com.android.settings.du.NavBar;
 import com.android.settings.tts.TextToSpeechSettings;
 import com.android.settings.users.UserSettings;
 import com.android.settings.vpn2.VpnSettings;
@@ -359,7 +360,8 @@ public class Settings extends PreferenceActivity
         PaymentSettings.class.getName(),
         KeyboardLayoutPickerFragment.class.getName(),
         ApnSettings.class.getName(),
-        BlacklistSettings.class.getName()
+        BlacklistSettings.class.getName(),
+        NavBar.class.getName()
     };
 
     @Override
@@ -1205,4 +1207,5 @@ public class Settings extends PreferenceActivity
     public static class ApnEditorActivity extends Settings { /* empty */ }
     public static class BlacklistSettingsActivity extends Settings { /* empty */ }
     public static class AnimationInterfaceSettingsActivity extends Settings { /* empty */ }
+    public static class NavBarActivity extends Settings { /* empty */ }
 }
