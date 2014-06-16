@@ -1653,6 +1653,19 @@
                 android:value="com.android.settings.du.hfm.HfmSettings" />
         </activity>
 
+        <!-- Halo -->
+        <activity android:name="Settings$HaloActivity"
+                android:label="@string/halo_settings_title"
+                android:taskAffinity=""
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.du.Halo" />
+        </activity>
+
         <!-- Dirty Tweaks -->
         <activity
             android:name=".du.DirtyTweaks"
