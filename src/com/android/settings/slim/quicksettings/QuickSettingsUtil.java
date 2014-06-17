@@ -55,6 +55,7 @@ import static com.android.internal.util.slim.QSConstants.TILE_THEME;
 import static com.android.internal.util.slim.QSConstants.TILE_SCREENSHOT;
 import static com.android.internal.util.slim.QSConstants.TILE_HALO;
 import static com.android.internal.util.slim.QSConstants.TILE_ADBLOCKER;
+import static com.android.internal.util.slim.QSConstants.TILE_APPCIRCLEBAR;
 import static com.android.internal.util.slim.QSConstants.TILE_ONTHEGO;
 import static com.android.internal.util.slim.QSConstants.TILE_PROFILE;
 import static com.android.internal.util.slim.QSConstants.TILE_COMPASS;
@@ -176,6 +177,9 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_ONTHEGO, R.string.title_tile_onthego,
                 "com.android.systemui:drawable/ic_qs_onthego"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_APPCIRCLEBAR, R.string.title_tile_appcirclebar,
+                "com.android.systemui:drawable/ic_qs_appcirclebar_on"));
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_PROFILE, R.string.title_tile_profile,
                 "com.android.systemui:drawable/ic_qs_profiles"));

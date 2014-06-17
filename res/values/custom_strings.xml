@@ -702,6 +702,7 @@
     <string name="title_tile_theme">Theme switcher</string>
     <string name="title_tile_screenshot">Screenshot</string>
     <string name="title_tile_halo">Halo</string>
+    <string name="title_tile_appcirclebar">App Circle Bar</string>
     <string name="title_tile_adblocker">Ad Blocker</string>
     <string name="title_tile_compass">Compass</string>
     <string name="title_tile_navbar">Nav Bar</string>
