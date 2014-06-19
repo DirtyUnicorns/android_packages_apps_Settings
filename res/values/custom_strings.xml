@@ -1902,4 +1902,8 @@
     <string name="clock_use_second">Enable Seconds</string>
     <string name="clock_use_second_summary">Shows the seconds next to the statusbar clock</string>
 
+    <!-- Flip Tiles -->
+    <string name="flip_qs_tiles_title">Flip tiles</string>
+    <string name="flip_qs_tiles_summary">Flips the tiles on touch</string>
+
 </resources>
