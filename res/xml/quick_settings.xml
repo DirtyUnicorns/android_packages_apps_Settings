@@ -64,4 +64,11 @@
         android:entries="@array/quick_pulldown_entries"
         android:entryValues="@array/quick_pulldown_values"
         android:persistent="false" />
+
+    <com.android.settings.du.preference.SystemCheckBoxPreference
+        android:key="quick_settings_tiles_flip"
+        android:title="@string/flip_qs_tiles_title"
+        android:summary="@string/flip_qs_tiles_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
