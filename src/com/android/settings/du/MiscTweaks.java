@@ -71,6 +71,7 @@ import java.util.Arrays;
 public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String DISABLE_FC_NOTIFICATIONS = "disable_fc_notifications";
+    private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
     private static final String SREC_ENABLE_TOUCHES = "srec_enable_touches";
     private static final String SREC_ENABLE_MIC = "srec_enable_mic";
     private static final String STATUS_BAR_CUSTOM_HEADER = "custom_status_bar_header";
@@ -78,6 +79,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
     private static final String PREF_INCLUDE_APP_CIRCLE_BAR_KEY = "app_circle_bar_included_apps";
 
     private CheckBoxPreference mDisableFC;
+    private CheckBoxPreference mDisableIM;
     private CheckBoxPreference mSrecEnableTouches;
     private CheckBoxPreference mSrecEnableMic;
     private CheckBoxPreference mStatusBarCustomHeader;
@@ -96,6 +98,10 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
         mDisableFC = (CheckBoxPreference) findPreference(DISABLE_FC_NOTIFICATIONS);
         mDisableFC.setChecked((Settings.System.getInt(resolver,
                 Settings.System.DISABLE_FC_NOTIFICATIONS, 0) == 1));
+
+        mDisableIM = (CheckBoxPreference) findPreference(DISABLE_IMMERSIVE_MESSAGE);
+        mDisableIM.setChecked((Settings.System.getInt(resolver,
+                Settings.System.DISABLE_IMMERSIVE_MESSAGE, 0) == 1));
 
         mSrecEnableTouches = (CheckBoxPreference) findPreference(SREC_ENABLE_TOUCHES);
         mSrecEnableTouches.setChecked((Settings.System.getInt(resolver,
@@ -150,6 +156,11 @@ public class MiscTweaks extends SettingsPreferenceFragment implements OnPreferen
             boolean checked = ((CheckBoxPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.DOUBLE_TAP_TO_SLEEP, checked ? 1:0);
+            return true;
+        } else if  (preference == mDisableIM) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.DISABLE_IMMERSIVE_MESSAGE, checked ? 1:0);
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);

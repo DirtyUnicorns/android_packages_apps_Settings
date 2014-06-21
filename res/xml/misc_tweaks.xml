@@ -42,6 +42,12 @@
         android:persistent="false" />
 
     <CheckBoxPreference
+        android:key="disable_immersive_message"
+        android:title="@string/disable_immersive_message_title"
+        android:summary="@string/disable_immersive_message_summary"
+        android:persistent="false" />
+
+    <CheckBoxPreference
         android:key="custom_status_bar_header"
         android:title="@string/custom_statusbar_header_title"
         android:summary="@string/custom_statusbar_header_summary"
