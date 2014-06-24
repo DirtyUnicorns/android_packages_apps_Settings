@@ -22,9 +22,9 @@
         android:title="@string/gapps_category">
 
     <Preference
-        android:key="multi_dpi_gapps"
-        android:title="@string/multidpigapps_title"
-        android:summary="@string/multidpigapps_summary" />
+        android:key="core_gapps"
+        android:title="@string/coregapps_title"
+        android:summary="@string/coregapps_summary" />
 
     <Preference
         android:key="pa_gapps"

@@ -40,7 +40,7 @@ import com.android.settings.Utils;
 
 public class Download extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-    Preference mMultiDPIGapps;
+    Preference mCoreGapps;
     Preference mPAGapps;
     Preference mTBOGapps;
     Preference mXposed;
@@ -55,7 +55,7 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
 
         final ContentResolver resolver = getActivity().getContentResolver();
 
-        mMultiDPIGapps = findPreference("multi_dpi_gapps");
+        mCoreGapps = findPreference("core_gapps");
         mPAGapps = findPreference("pa_gapps");
         mTBOGapps = findPreference("tbo_gapps");
         mXposed = findPreference("xposed");
@@ -70,13 +70,13 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mMultiDPIGapps) {
-            Uri uri = Uri.parse("http://goo.gl/pSc77D");
+        if (preference == mCoreGapps) {
+            Uri uri = Uri.parse("http://goo.gl/HUlN8Q");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;
         } else if (preference == mPAGapps) {
-            Uri uri = Uri.parse("http://goo.gl/pt0kZt");
+            Uri uri = Uri.parse("http://goo.gl/SCDfPS");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;

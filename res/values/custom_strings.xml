@@ -1732,8 +1732,8 @@
     <string name="gapps_category">GAPPS Packages</string>
     <string name="xposed_category">Xposed Framework</string>
     <string name="misc_category">Miscellaneous</string>
-    <string name="multidpigapps_title">Multi-DPI Gapps</string>
-    <string name="multidpigapps_summary">Multi DPI Gapps are generally recommended if changing system density to anything other then stock</string>
+    <string name="coregapps_title">Core Gapps</string>
+    <string name="coregapps_summary">Core Gapps are generally recommended if you ONLY want the playstore and nothing else</string>
     <string name="pagapps_title">PA Gapps</string>
     <string name="pagapps_summary">Fully packed with the majority of GAPPS, these are commonly used by users that do not want to download/install them later</string>
     <string name="tbogapps_title">Team BlackOut Gapps</string>
