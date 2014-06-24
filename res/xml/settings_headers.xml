@@ -90,6 +90,14 @@
         android:fragment="com.android.settings.profiles.ProfilesSettings"
         android:title="@string/profiles_settings_title" />
 
+    <!-- Themes -->
+    <header
+        android:id="@+id/cm_theme_settings"
+        android:title="@string/themes_settings_title"
+        android:breadCrumbTitle="@string/themes_settings_title"
+        android:fragment="com.android.settings.ThemeSettings"
+        android:icon="@drawable/prd_ic_themepacks" />
+
     <!-- Advanced Settings -->
     <header android:id="@+id/advanced_settings"
             android:title="@string/advanced_settings_title"
