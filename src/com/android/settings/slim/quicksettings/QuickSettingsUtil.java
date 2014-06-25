@@ -60,6 +60,7 @@ import static com.android.internal.util.slim.QSConstants.TILE_ONTHEGO;
 import static com.android.internal.util.slim.QSConstants.TILE_PROFILE;
 import static com.android.internal.util.slim.QSConstants.TILE_COMPASS;
 import static com.android.internal.util.slim.QSConstants.TILE_NAVBAR;
+import static com.android.internal.util.slim.QSConstants.TILE_HEADSUP;
 import static com.android.internal.util.slim.QSConstants.TILE_CAMERA;
 
 import android.content.ContentResolver;
@@ -196,6 +197,9 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_NAVBAR, R.string.title_tile_navbar,
                 "com.android.systemui:drawable/ic_qs_navbar_on"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_HEADSUP, R.string.title_tile_headsup,
+                "com.android.systemui:drawable/ic_qs_headsup_on"));
         registerTile(new QuickSettingsUtil.TileInfo(
                  TILE_CAMERA, R.string.title_tile_camera,
                 "com.android.systemui:drawable/ic_qs_camera"));

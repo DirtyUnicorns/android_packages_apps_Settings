@@ -1641,6 +1641,19 @@
                 android:value="com.android.settings.du.MiscTweaks" />
         </activity>
 
+        <!-- Heads Up -->
+        <activity android:name="Settings$DNDSettingsActivity"
+                android:label="@string/category_heads_up"
+                android:taskAffinity=""
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.du.DNDSettings" />
+        </activity>
+
         <!-- Nav Bar -->
         <activity android:name="Settings$NavBarActivity"
                 android:label="@string/title_tile_navbar"

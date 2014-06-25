@@ -93,6 +93,7 @@ import com.android.settings.profiles.ProfileEnabler;
 import com.android.settings.slim.themes.ThemeEnabler;
 import com.android.settings.du.MiscTweaks;
 import com.android.settings.du.NavBar;
+import com.android.settings.du.DNDSettings;
 import com.android.settings.du.hfm.HfmSettings;
 import com.android.settings.du.Halo;
 import com.android.settings.du.DirtyTweaks;
@@ -369,6 +370,7 @@ public class Settings extends PreferenceActivity
         BlacklistSettings.class.getName(),
         MiscTweaks.class.getName(),
         NavBar.class.getName(),
+        DNDSettings.class.getName(),
         HfmSettings.class.getName(),
         Halo.class.getName(),
         DirtyTweaks.class.getName()
@@ -1231,6 +1233,7 @@ public class Settings extends PreferenceActivity
     public static class BlacklistSettingsActivity extends Settings { /* empty */ }
     public static class AnimationInterfaceSettingsActivity extends Settings { /* empty */ }
     public static class NavBarActivity extends Settings { /* empty */ }
+    public static class DNDSettingsActivity extends Settings { /* empty */ }
     public static class MiscTweaksActivity extends Settings { /* empty */ }
     public static class HfmSettingsActivity extends Settings { /* empty */ }
     public static class HaloActivity extends Settings { /* empty */ }
