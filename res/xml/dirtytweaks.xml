@@ -193,6 +193,12 @@
             android:title="@string/halo_settings_title" />
 
          <PreferenceScreen
+            android:key="heads_up"
+            android:fragment="com.android.settings.du.DNDSettings"
+            android:layout="@layout/preference_headsup"
+            android:title="@string/category_heads_up" />
+
+         <PreferenceScreen
             android:key="progressbar_settings"
             android:layout="@layout/preference_progressbar"
             android:fragment="com.android.settings.du.ProgressBar"

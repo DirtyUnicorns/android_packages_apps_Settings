@@ -1702,6 +1702,7 @@
         <activity android:name=".du.CarrierLabel" />
         <activity android:name=".du.Download" />
         <activity android:name=".du.Halo" />
+        <activity android:name=".du.DNDSettings" />
         <activity android:name=".du.LockscreenTargets" />
         <activity android:name=".du.LockscreenOptions" />
         <activity android:name=".du.LockscreenMiscTweaks" />
