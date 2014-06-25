@@ -23,6 +23,11 @@
                 android:title="@string/title_heads_up_enabled"
                 android:defaultValue="false" />
 
+        <com.android.settings.du.preference.SystemCheckBoxPreference
+                android:key="heads_up_floating_window"
+                android:title="@string/heads_up_floating_window"
+                android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
