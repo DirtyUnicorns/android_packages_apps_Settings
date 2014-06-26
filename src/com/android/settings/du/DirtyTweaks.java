@@ -23,6 +23,7 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.preference.Preference;
@@ -41,6 +42,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
+import com.android.settings.du.preference.SystemSettingSwitchPreference;
+
 public class DirtyTweaks extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "DirtyTweaks";
@@ -49,6 +52,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment implements
     private static final String ENABLE_NAVIGATION_BAR = "enable_nav_bar"; // Enable/disable nav bar
 
     private CheckBoxPreference mEnableNavigationBar; // Enable/disable nav bar
+    private SystemSettingSwitchPreference mSwitchPreference;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,6 +60,9 @@ public class DirtyTweaks extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.dirtytweaks);
         PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mSwitchPreference = (SystemSettingSwitchPreference)
+                findPreference(Settings.System.HEADS_UP_NOTIFICATION);
 
         // Booleans to enable/disable nav bar
         // overriding overlays
@@ -72,6 +79,15 @@ public class DirtyTweaks extends SettingsPreferenceFragment implements
 
     // Enable/disbale nav bar
     private void updateNavbarPreferences(boolean show) {}
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        boolean headsUpEnabled = Settings.System.getIntForUser(
+                getActivity().getContentResolver(),
+                Settings.System.HEADS_UP_NOTIFICATION, 0, UserHandle.USER_CURRENT) == 1;
+        mSwitchPreference.setChecked(headsUpEnabled);
+    }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mEnableNavigationBar) { // Enable/disbale nav bar (used in custom nav bar dimensions)
