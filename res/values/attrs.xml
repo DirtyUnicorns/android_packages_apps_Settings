@@ -90,6 +90,7 @@
         <attr name="smin" format="integer" />
         <attr name="maximum" format="integer" />
         <attr name="minimum" format="integer" />
+        <attr name="minappbar" format="integer" />
         <attr name="interval" format="integer" />
         <attr name="unitsLeft" format="string" />
         <attr name="unitsRight" format="string" />
