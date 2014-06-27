@@ -60,8 +60,13 @@ public class LockscreenMiscTweaks extends SettingsPreferenceFragment implements 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        PreferenceScreen prefs = getPreferenceScreen();
+        if (prefs != null) {
+            prefs.removeAll();
+        }
 
         addPreferencesFromResource(R.xml.lockscreen_misc_tweaks);
+        prefs = getPreferenceScreen();
 
         mSeeThrough = (CheckBoxPreference) findPreference(KEY_SEE_TRHOUGH);
 
@@ -83,6 +88,10 @@ public class LockscreenMiscTweaks extends SettingsPreferenceFragment implements 
                 getActivity().getApplicationContext().getContentResolver(),
                 Settings.System.LOCKSCREEN_GLOWPAD_TORCH, 0) == 1);
         mGlowpadTorch.setOnPreferenceChangeListener(this);
+
+        if (!DeviceUtils.deviceSupportsTorch(getActivity().getApplicationContext())) {
+            prefs.removePreference(mGlowpadTorch);
+        }
 
         mAllowRotation = (CheckBoxPreference) findPreference(KEY_ALLOW_ROTATION);
         mAllowRotation.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
