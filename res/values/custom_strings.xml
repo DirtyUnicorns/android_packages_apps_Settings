@@ -2285,12 +2285,22 @@
     <!-- Quiet hours -->
     <string name="quiet_hours_title">Quiet hours</string>
     <string name="quiet_hours_summary">Configure the hours the device should be quiet</string>
-    <string name="quiet_hours_note_title">Note</string>
-    <string name="quiet_hours_note_summary">Incoming calls will behave like usual during quiet hours</string>
-    <string name="quiet_hours_enabled">Enable quiet hours</string>
-    <string name="quiet_hours_enabled_on">Quiet hours will be enforced</string>
-    <string name="quiet_hours_enabled_off">Notifications will function as normal</string>
-    <string name="quiet_hours_auto_title">Follow ringer mode</string>
+    <string name="quiet_hours_mode">Quiet hours mode</string>
+    <string name="quiet_hours_off">Quiet hours disabled</string>
+    <string name="quiet_hours_forced">Quiet hours is always on</string>
+    <string name="quiet_hours_times_warning">Times cannot overlap: setting to closest possible time</string>
+    <string name="quiet_hours_wifi">Require a WiFi connection</string>
+    <string name="quiet_hours_wifi_on">WiFi must be connected</string>
+    <string name="quiet_hours_wifi_off">WiFi can be in any state</string>
+    <string name="quiet_hours_charging">Require device to be plugged in</string>
+    <string name="quiet_hours_charging_off">Device charging can be in any state</string>
+    <string name="quiet_hours_charging_on">Device must be charging</string>
+    <string name="quiet_hours_timed">Quiet hours relies on time functions</string>
+    <string name="quiet_hours_daily_times">Daily times</string>
+    <string name="quiet_hours_daily_on">Individual times per day are enabled</string>
+    <string name="quiet_hours_daily_off">A single set of times is enabled</string>
+    <string name="quiet_time_prefs_title">Quiet hours time ranges</string>
+    <string name="quiet_hours_auto_title">Follow ringer mode (always on and timed)</string>
     <string name="quiet_hours_auto_silent">Quiet hours will enable when ringer is set to silent</string>
     <string name="quiet_hours_auto_vibrate">Quiet hours will enable when ringer is set to vibrate or silent</string>
     <string name="quiet_hours_start">Start of quiet hours</string>
@@ -2342,6 +2352,14 @@
     <string name="quiet_hours_alarm_and">" and "</string>
     <string name="quiet_hours_alarm_dialog_title">QUIETHOURS BYPASSED</string>
     <string name="quiet_hours_alarm_message">" met the requirements to bypass Quiet Hours!"</string>
+
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
 
     <!-- time range preference -->
     <string name="start_time_title">Start</string>
