@@ -100,7 +100,7 @@
   <string name="additional_options_title">Opciones adicionales</string>
   <string name="trds_settings_title">IU oscuro</string>
   <string name="quick_pulldown_title">Desplegable Configuración rápida</string>
-  <string name="quick_pulldown_summary">%1$ s orillade la barra de estado tira hacia abajo de configuración rápida</string>
+  <string name="quick_pulldown_summary">Resumen desplegable rápida</string>
   <string name="quick_pulldown_summary_left">Izquierda</string>
   <string name="quick_pulldown_summary_right">Derecha</string>
   <string name="quick_pulldown_off">Apagado</string>

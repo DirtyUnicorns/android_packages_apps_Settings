@@ -72,8 +72,8 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mQuickPulldown = (ListPreference) getPreferenceScreen().findPreference(QUICK_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
         int quickPulldownValue = Settings.System.getInt(getActivity().getApplicationContext()
-                                                        .getContentResolver(),
-                                                        Settings.System.QS_QUICK_PULLDOWN, 0);
+                .getContentResolver(),
+                Settings.System.QS_QUICK_PULLDOWN, 0);
         mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
         updatePulldownSummary(quickPulldownValue);
     }
@@ -83,11 +83,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         super.onResume();
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-    }
-
     private void updatePulldownSummary(int value) {
         Resources res = getResources();
         if (value == 0) {
@@ -95,7 +90,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_off));
         } else {
             String direction = res.getString(value == 2
-                                             ? R.string.quick_pulldown_summary_left : R.string.quick_pulldown_summary_right);
+                    ? R.string.quick_pulldown_summary_left : R.string.quick_pulldown_summary_right);
             mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary, direction));
         }
     }
@@ -104,12 +99,19 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         if (preference == mQuickPulldown) {
             int quickPulldownValue = Integer.valueOf((String) objValue);
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                                   Settings.System.QS_QUICK_PULLDOWN, quickPulldownValue);
+                    Settings.System.QS_QUICK_PULLDOWN, quickPulldownValue);
             updatePulldownSummary(quickPulldownValue);
             return true;
         }
         return false;
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+
 
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         ContentResolver resolver = getActivity().getContentResolver();
