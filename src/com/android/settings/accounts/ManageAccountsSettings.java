@@ -74,7 +74,7 @@ public class ManageAccountsSettings extends AccountPreferenceBase
 
     // If an account type is set, then show only accounts of that type
     private String mAccountType;
-    // Temporary hack, to deal with backward compatibility 
+    // Temporary hack, to deal with backward compatibility
     private Account mFirstAccount;
 
     @Override

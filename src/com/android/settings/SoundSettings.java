@@ -264,7 +264,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         };
 
         initDockSettings();
-        
+
         mVolumeAdustSound = (CheckBoxPreference) findPreference(KEY_VOLUME_ADJUST_SOUNDS);
         mVolumeAdustSound.setPersistent(false);
         mVolumeAdustSound.setChecked(Settings.System.getInt(resolver,

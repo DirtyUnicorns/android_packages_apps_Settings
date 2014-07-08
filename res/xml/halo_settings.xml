@@ -79,7 +79,7 @@ limitations under the License.
         android:dependency="halo_enabled"
         android:defaultValue="true" />
 
-    <ListPreference  
+    <ListPreference
         android:key="halo_msgbox_animation"
         android:dialogTitle="@string/halo_msgbox_animation_title"
         android:title="@string/halo_msgbox_animation_title"

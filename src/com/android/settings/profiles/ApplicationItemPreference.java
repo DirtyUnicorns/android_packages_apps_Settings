@@ -29,7 +29,7 @@ import com.android.settings.R;
 public class ApplicationItemPreference extends Preference {
 
     private static String TAG = "ApplicationItemPreference";
-    
+
     private Drawable mIcon;
 
     public ApplicationItemPreference(Context context) {

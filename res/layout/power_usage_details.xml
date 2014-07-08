@@ -41,7 +41,7 @@
             <include
                 layout="@layout/two_buttons_panel"/>
         </LinearLayout>
-                    
+
         <TextView
             style="?android:attr/listSeparatorTextViewStyle"
             android:text="@string/details_subtitle" />
@@ -72,7 +72,7 @@
             <!-- Controls go here ... -->
 
         </LinearLayout>
-                    
+
         <TextView
             android:id="@+id/packages_section_title"
             style="?android:attr/listSeparatorTextViewStyle"

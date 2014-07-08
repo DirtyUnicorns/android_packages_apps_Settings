@@ -376,7 +376,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
 
         mQuickUnlockScreen = (CheckBoxPreference) root.findPreference(LOCKSCREEN_QUICK_UNLOCK_CONTROL);
         if (mQuickUnlockScreen  != null) {
-            mQuickUnlockScreen.setChecked(Settings.System.getInt(getContentResolver(), 
+            mQuickUnlockScreen.setChecked(Settings.System.getInt(getContentResolver(),
                     Settings.System.LOCKSCREEN_QUICK_UNLOCK_CONTROL, 0) == 1);
             mQuickUnlockScreen.setOnPreferenceChangeListener(this);
         }

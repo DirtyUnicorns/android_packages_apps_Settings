@@ -79,7 +79,7 @@
             android:defaultValue="false"
             android:persistent="false" />
     </PreferenceCategory>
-   
+
     <PreferenceCategory
        android:key="button_keys_back"
         android:title="@string/button_keys_back_title" >
@@ -106,7 +106,7 @@
     <PreferenceCategory
         android:key="button_keys_home"
         android:title="@string/button_keys_home_title">
-    
+
         <ListPreference
             android:key="keys_home_press"
             android:dialogTitle="@string/keys_home_press_title"
@@ -161,7 +161,7 @@
 
     <PreferenceCategory
         android:key="button_keys_assist"
-        android:title="@string/button_keys_assist_title">        
+        android:title="@string/button_keys_assist_title">
 
         <ListPreference
             android:key="keys_assist_press"
@@ -184,7 +184,7 @@
 
     <PreferenceCategory
         android:key="button_keys_appSwitch"
-        android:title="@string/button_keys_appSwitch_title">        
+        android:title="@string/button_keys_appSwitch_title">
 
         <ListPreference
             android:key="keys_app_switch_press"

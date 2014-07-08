@@ -37,7 +37,7 @@
             android:title="@string/bluetooth_device_advanced_profile_header_title">
 
         <!-- Profile checkboxes will be added here programmatically. -->
-        
+
     </PreferenceCategory>
 
 </PreferenceScreen>

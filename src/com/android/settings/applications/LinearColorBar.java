@@ -70,7 +70,7 @@ public class LinearColorBar extends LinearLayout {
                 ? 2 : 1;
         mEdgeGradientPaint.setStrokeWidth(mLineWidth);
         mEdgeGradientPaint.setAntiAlias(true);
-        
+
     }
 
     public void setOnRegionTappedListener(OnRegionTappedListener listener) {

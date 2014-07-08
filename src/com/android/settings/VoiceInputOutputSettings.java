@@ -152,11 +152,11 @@ public class VoiceInputOutputSettings implements OnPreferenceChangeListener {
         int size = recognizers.size();
         CharSequence[] entries = new CharSequence[size];
         CharSequence[] values = new CharSequence[size];
-        
+
         // Get the current value from the secure setting.
         String currentSetting = Settings.Secure.getString(
                 mFragment.getContentResolver(), Settings.Secure.VOICE_RECOGNITION_SERVICE);
-        
+
         // Iterate through all the available recognizers and load up their info to show
         // in the preference. Also build up a map of recognizer component names to their
         // ResolveInfos - we'll need that a little later.
@@ -165,22 +165,22 @@ public class VoiceInputOutputSettings implements OnPreferenceChangeListener {
             String recognizerComponent =
                     new ComponentName(resolveInfo.serviceInfo.packageName,
                             resolveInfo.serviceInfo.name).flattenToShortString();
-            
+
             mAvailableRecognizersMap.put(recognizerComponent, resolveInfo);
 
             entries[i] = resolveInfo.loadLabel(mFragment.getPackageManager());
             values[i] = recognizerComponent;
         }
-        
+
         mRecognizerPref.setEntries(entries);
         mRecognizerPref.setEntryValues(values);
-        
+
         mRecognizerPref.setDefaultValue(currentSetting);
         mRecognizerPref.setValue(currentSetting);
-        
+
         updateSettingsLink(currentSetting);
     }
-    
+
     private void updateSettingsLink(String currentSetting) {
         ResolveInfo currentRecognizer = mAvailableRecognizersMap.get(currentSetting);
         if (currentRecognizer == null) return;
@@ -195,23 +195,23 @@ public class VoiceInputOutputSettings implements OnPreferenceChangeListener {
                 throw new XmlPullParserException("No " + RecognitionService.SERVICE_META_DATA +
                         " meta-data for " + si.packageName);
             }
-            
+
             Resources res = mFragment.getPackageManager().getResourcesForApplication(
                     si.applicationInfo);
-            
+
             AttributeSet attrs = Xml.asAttributeSet(parser);
-            
+
             int type;
             while ((type=parser.next()) != XmlPullParser.END_DOCUMENT
                     && type != XmlPullParser.START_TAG) {
             }
-            
+
             String nodeName = parser.getName();
             if (!"recognition-service".equals(nodeName)) {
                 throw new XmlPullParserException(
                         "Meta-data does not start with recognition-service tag");
             }
-            
+
             TypedArray array = res.obtainAttributes(attrs,
                     com.android.internal.R.styleable.RecognitionService);
             settingsActivity = array.getString(
@@ -226,7 +226,7 @@ public class VoiceInputOutputSettings implements OnPreferenceChangeListener {
         } finally {
             if (parser != null) parser.close();
         }
-        
+
         if (settingsActivity == null) {
             // No settings preference available - hide the preference.
             Log.w(TAG, "no recognizer settings available for " + si.packageName);
@@ -239,7 +239,7 @@ public class VoiceInputOutputSettings implements OnPreferenceChangeListener {
             mRecognizerPref.setSummary(currentRecognizer.loadLabel(mFragment.getPackageManager()));
         }
     }
-    
+
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mRecognizerPref) {
             String setting = (String) newValue;

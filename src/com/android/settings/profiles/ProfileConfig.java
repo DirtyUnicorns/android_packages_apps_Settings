@@ -287,8 +287,8 @@ public class ProfileConfig extends SettingsPreferenceFragment
                 StreamVolumePreference pref = new StreamVolumePreference(getActivity());
                 pref.setKey("stream_" + stream.mStreamId);
                 pref.setTitle(stream.mLabel);
-                pref.setSummary(getString(R.string.volume_override_summary) + " " + settings.getValue() 
-                        + "/" + am.getStreamMaxVolume(stream.mStreamId)); 
+                pref.setSummary(getString(R.string.volume_override_summary) + " " + settings.getValue()
+                        + "/" + am.getStreamMaxVolume(stream.mStreamId));
                 pref.setPersistent(false);
                 pref.setStreamItem(stream);
                 stream.mCheckbox = pref;
@@ -393,7 +393,7 @@ public class ProfileConfig extends SettingsPreferenceFragment
                 0, header, this, PROFILE_GROUP_DETAILS);
     }
 
-    
+
     private void deleteProfile() {
         if (mProfile.getUuid().equals(mProfileManager.getActiveProfile().getUuid())) {
             Toast toast = Toast.makeText(getActivity(), getString(R.string.profile_cannot_delete),

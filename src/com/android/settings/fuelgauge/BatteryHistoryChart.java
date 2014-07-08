@@ -104,7 +104,7 @@ public class BatteryHistoryChart extends View {
 
     static final int BATTERY_WARN = 29;
     static final int BATTERY_CRITICAL = 14;
-    
+
     // First value if for phone off; first value is "scanning"; following values
     // are battery stats signal strength buckets.
     static final int NUM_PHONE_SIGNALS = 7;
@@ -120,7 +120,7 @@ public class BatteryHistoryChart extends View {
     final Paint mWakeLockPaint = new Paint();
     final ChartData mPhoneSignalChart = new ChartData();
     final TextPaint mTextPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
-    
+
     final Path mBatLevelPath = new Path();
     final Path mBatGoodPath = new Path();
     final Path mBatWarnPath = new Path();
@@ -130,9 +130,9 @@ public class BatteryHistoryChart extends View {
     final Path mGpsOnPath = new Path();
     final Path mWifiRunningPath = new Path();
     final Path mWakeLockPath = new Path();
-    
+
     int mFontSize;
-    
+
     BatteryStats mStats;
     long mStatsPeriod;
     String mDurationString;
@@ -143,7 +143,7 @@ public class BatteryHistoryChart extends View {
     String mWifiRunningLabel;
     String mWakeLockLabel;
     String mPhoneSignalLabel;
-    
+
     int mTextAscent;
     int mTextDescent;
     int mDurationStringWidth;
@@ -165,7 +165,7 @@ public class BatteryHistoryChart extends View {
     static final int PHONE_SIGNAL_X_MASK = CHART_DATA_X_MASK;
     static final int PHONE_SIGNAL_BIN_MASK = CHART_DATA_BIN_MASK;
     static final int PHONE_SIGNAL_BIN_SHIFT = CHART_DATA_BIN_SHIFT;
-    
+
     int mNumHist;
     long mHistStart;
     long mHistEnd;
@@ -174,10 +174,10 @@ public class BatteryHistoryChart extends View {
     boolean mHaveWifi;
     boolean mHaveGps;
     boolean mHavePhoneSignal;
-    
+
     public BatteryHistoryChart(Context context, AttributeSet attrs) {
         super(context, attrs);
-        
+
         mBatteryBackgroundPaint.setARGB(255, 128, 128, 128);
         mBatteryBackgroundPaint.setStyle(Paint.Style.FILL);
         mBatteryGoodPaint.setARGB(128, 0, 255, 0);
@@ -196,20 +196,20 @@ public class BatteryHistoryChart extends View {
                 0x00000000, 0xffa00000, 0xffa0a000, 0xff808020,
                 0xff808040, 0xff808060, 0xff008000
         });
-        
+
         mTextPaint.density = getResources().getDisplayMetrics().density;
         mTextPaint.setCompatibilityScaling(
                 getResources().getCompatibilityInfo().applicationScale);
-        
+
         TypedArray a =
             context.obtainStyledAttributes(
                 attrs, R.styleable.BatteryHistoryChart, 0, 0);
-        
+
         ColorStateList textColor = null;
         int textSize = 15;
         int typefaceIndex = -1;
         int styleIndex = -1;
-        
+
         TypedArray appearance = null;
         int ap = a.getResourceId(R.styleable.BatteryHistoryChart_android_textAppearance, -1);
         if (ap != -1) {
@@ -243,10 +243,10 @@ public class BatteryHistoryChart extends View {
 
             appearance.recycle();
         }
-        
+
         int shadowcolor = 0;
         float dx=0, dy=0, r=0;
-        
+
         int n = a.getIndexCount();
         for (int i = 0; i < n; i++) {
             int attr = a.getIndex(i);
@@ -285,12 +285,12 @@ public class BatteryHistoryChart extends View {
                     break;
             }
         }
-        
+
         a.recycle();
-        
+
         mTextPaint.setColor(textColor.getDefaultColor());
         mTextPaint.setTextSize(textSize);
-        
+
         Typeface tf = null;
         switch (typefaceIndex) {
             case SANS:
@@ -305,14 +305,14 @@ public class BatteryHistoryChart extends View {
                 tf = Typeface.MONOSPACE;
                 break;
         }
-        
+
         setTypeface(tf, styleIndex);
-        
+
         if (shadowcolor != 0) {
             mTextPaint.setShadowLayer(r, dx, dy, shadowcolor);
         }
     }
-    
+
     public void setTypeface(Typeface tf, int style) {
         if (style > 0) {
             if (tf == null) {
@@ -333,10 +333,10 @@ public class BatteryHistoryChart extends View {
             mTextPaint.setTypeface(tf);
         }
     }
-    
+
     void setStats(BatteryStats stats) {
         mStats = stats;
-        
+
         long uSecTime = mStats.computeBatteryRealtime(SystemClock.elapsedRealtime() * 1000,
                 BatteryStats.STATS_SINCE_CHARGED);
         mStatsPeriod = uSecTime;
@@ -349,7 +349,7 @@ public class BatteryHistoryChart extends View {
         mWifiRunningLabel = getContext().getString(R.string.battery_stats_wifi_running_label);
         mWakeLockLabel = getContext().getString(R.string.battery_stats_wake_lock_label);
         mPhoneSignalLabel = getContext().getString(R.string.battery_stats_phone_signal_label);
-        
+
         int pos = 0;
         int lastInteresting = 0;
         byte lastLevel = -1;
@@ -408,7 +408,7 @@ public class BatteryHistoryChart extends View {
             curLevelPath.lineTo(startX, mLevelTop+levelh);
             curLevelPath.close();
         }
-        
+
         if (lastCharging) {
             mChargingPath.lineTo(w, h-mChargingOffset);
         }
@@ -428,11 +428,11 @@ public class BatteryHistoryChart extends View {
             mPhoneSignalChart.finish(w);
         }
     }
-    
+
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        
+
         int textHeight = mTextDescent - mTextAscent;
         mThinLineWidth = (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
                 2, getResources().getDisplayMetrics());
@@ -503,16 +503,16 @@ public class BatteryHistoryChart extends View {
         mWifiRunningPath.reset();
         mWakeLockPath.reset();
         mChargingPath.reset();
-        
+
         final long timeStart = mHistStart;
         final long timeChange = mHistEnd-mHistStart;
-        
+
         final int batLow = mBatLow;
         final int batChange = mBatHigh-mBatLow;
-        
+
         final int levelh = h - mLevelOffset - mLevelTop;
         mLevelBottom = mLevelTop + levelh;
-        
+
         int x = 0, y = 0, startX = 0, lastX = -1, lastY = -1;
         int i = 0;
         Path curLevelPath = null;
@@ -641,16 +641,16 @@ public class BatteryHistoryChart extends View {
                         lastCharging = lastScreenOn = lastGpsOn = lastWakeLock = false;
                     }
                 }
-                
+
                 i++;
             }
         }
-        
+
         finishPaths(w, h, levelh, startX, lastY, curLevelPath, lastX,
                 lastCharging, lastScreenOn, lastGpsOn, lastWifiRunning,
                 lastWakeLock, lastLinePath);
     }
-    
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);

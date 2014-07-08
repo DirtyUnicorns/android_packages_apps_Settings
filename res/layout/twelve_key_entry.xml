@@ -57,7 +57,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold"
         />
-        
+
     </LinearLayout>
 
     <LinearLayout
@@ -134,7 +134,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold"
         />
-        
+
     </LinearLayout>
 
     <LinearLayout
@@ -175,7 +175,7 @@
             android:textStyle="bold"
             android:text="@android:string/cancel"
         />
-        
+
     </LinearLayout>
-    
+
 </LinearLayout>

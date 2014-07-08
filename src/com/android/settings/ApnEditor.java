@@ -527,7 +527,7 @@ public class ApnEditor extends SettingsPreferenceFragment
 
         ContentValues values = new ContentValues();
 
-        // Add a dummy name "Untitled", if the user exits the screen without adding a name but 
+        // Add a dummy name "Untitled", if the user exits the screen without adding a name but
         // entered other information worth keeping.
         values.put(Telephony.Carriers.NAME,
                 name.length() < 1 ? getResources().getString(R.string.untitled_apn) : name);

@@ -4,9 +4,9 @@
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-  
+
           http://www.apache.org/licenses/LICENSE-2.0
-  
+
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -72,12 +72,12 @@
             android:title="@string/wifi_suspend_optimizations"
             android:summary="@string/wifi_suspend_optimizations_summary"
             android:persistent="false" />
-    
-    <Preference android:key="mac_address" 
-        style="?android:attr/preferenceInformationStyle" 
+
+    <Preference android:key="mac_address"
+        style="?android:attr/preferenceInformationStyle"
         android:title="@string/wifi_advanced_mac_address_title"
         />
-    
+
     <Preference android:key="current_ip_address"
         style="?android:attr/preferenceInformationStyle"
         android:title="@string/wifi_advanced_ip_address_title"

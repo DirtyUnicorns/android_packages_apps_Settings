@@ -41,7 +41,7 @@ public class BatteryHistoryDetail extends Fragment {
         mStats = com.android.internal.os.BatteryStatsImpl.CREATOR
                 .createFromParcel(parcel);
     }
-    
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.preference_batteryhistory, null);

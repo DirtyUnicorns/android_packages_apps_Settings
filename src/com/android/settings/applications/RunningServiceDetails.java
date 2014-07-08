@@ -74,11 +74,11 @@ public class RunningServiceDetails extends Fragment
     RunningProcessesView.ViewHolder mSnippetViewHolder;
 
     int mNumServices, mNumProcesses;
-    
+
     TextView mServicesHeader;
     TextView mProcessesHeader;
     final ArrayList<ActiveDetail> mActiveDetails = new ArrayList<ActiveDetail>();
-    
+
     class ActiveDetail implements View.OnClickListener {
         View mRootView;
         Button mStopButton;
@@ -111,7 +111,7 @@ public class RunningServiceDetails extends Fragment
                 mState.updateNow();
             }
         }
-        
+
         public void onClick(View v) {
             if (v == mReportButton) {
                 ApplicationErrorReport report = new ApplicationErrorReport();
@@ -190,9 +190,9 @@ public class RunningServiceDetails extends Fragment
             }
         }
     }
-    
+
     StringBuilder mBuilder = new StringBuilder(128);
-    
+
     boolean findMergedItem() {
         RunningState.MergedItem item = null;
         ArrayList<RunningState.MergedItem> newItems = mShowBackground
@@ -254,7 +254,7 @@ public class RunningServiceDetails extends Fragment
         }
 
         RunningState.BaseItem bi = si != null ? si : mi;
-        
+
         ActiveDetail detail = new ActiveDetail();
         View root = mInflater.inflate(R.layout.running_service_details_service,
                 mAllDetails, false);
@@ -272,7 +272,7 @@ public class RunningServiceDetails extends Fragment
             detail.mManageIntent = mAm.getRunningServiceControlPanel(
                     si.mRunningService.service);
         }
-        
+
         TextView description = (TextView)root.findViewById(R.id.comp_description);
         detail.mStopButton = (Button)root.findViewById(R.id.left_button);
         detail.mReportButton = (Button)root.findViewById(R.id.right_button);
@@ -338,7 +338,7 @@ public class RunningServiceDetails extends Fragment
         detail.mRootView = root;
         detail.mViewHolder = new RunningProcessesView.ViewHolder(root);
         detail.mActiveItem = detail.mViewHolder.bind(mState, pi, mBuilder);
-        
+
         TextView description = (TextView)root.findViewById(R.id.comp_description);
         if (pi.mUserId != UserHandle.myUserId()) {
             // Processes for another user are all shown batched together; there is
@@ -383,7 +383,7 @@ public class RunningServiceDetails extends Fragment
                 description.setText(getActivity().getString(textid, label));
             }
         }
-        
+
         mActiveDetails.add(detail);
     }
 
@@ -411,7 +411,7 @@ public class RunningServiceDetails extends Fragment
                         if (pi != null && pi.mPid <= 0) {
                             continue;
                         }
-    
+
                         addProcessDetailsView(pi, i < 0);
                     }
                 }
@@ -424,12 +424,12 @@ public class RunningServiceDetails extends Fragment
             mAllDetails.removeView(mActiveDetails.get(i).mRootView);
         }
         mActiveDetails.clear();
-        
+
         if (mServicesHeader != null) {
             mAllDetails.removeView(mServicesHeader);
             mServicesHeader = null;
         }
-        
+
         if (mProcessesHeader != null) {
             mAllDetails.removeView(mProcessesHeader);
             mProcessesHeader = null;
@@ -457,7 +457,7 @@ public class RunningServiceDetails extends Fragment
             }
         }
     }
-    
+
     void refreshUi(boolean dataChanged) {
         if (findMergedItem()) {
             dataChanged = true;
@@ -479,7 +479,7 @@ public class RunningServiceDetails extends Fragment
             addDetailViews();
         }
     }
-    
+
     private void finish() {
         (new Handler()).post(new Runnable() {
             @Override
@@ -491,22 +491,22 @@ public class RunningServiceDetails extends Fragment
             }
         });
     }
-    
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+
         mUid = getArguments().getInt(KEY_UID, -1);
         mUserId = getArguments().getInt(KEY_USER_ID, 0);
         mProcessName = getArguments().getString(KEY_PROCESS, null);
         mShowBackground = getArguments().getBoolean(KEY_BACKGROUND, false);
-        
+
         mAm = (ActivityManager)getActivity().getSystemService(Context.ACTIVITY_SERVICE);
         mInflater = (LayoutInflater)getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        
+
         mState = RunningState.getInstance(getActivity());
     }
-    
+
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -517,11 +517,11 @@ public class RunningServiceDetails extends Fragment
         mAllDetails = (ViewGroup)view.findViewById(R.id.all_details);
         mSnippet = (ViewGroup)view.findViewById(R.id.snippet);
         mSnippetViewHolder = new RunningProcessesView.ViewHolder(mSnippet);
-        
+
         // We want to retrieve the data right now, so any active managed
         // dialog that gets created can find it.
         ensureData();
-        
+
         return view;
     }
 
@@ -548,14 +548,14 @@ public class RunningServiceDetails extends Fragment
         }
         return null;
     }
-    
+
     private void showConfirmStopDialog(ComponentName comp) {
         DialogFragment newFragment = MyAlertDialogFragment.newConfirmStop(
                 DIALOG_CONFIRM_STOP, comp);
         newFragment.setTargetFragment(this, 0);
         newFragment.show(getFragmentManager(), "confirmstop");
     }
-    
+
     public static class MyAlertDialogFragment extends DialogFragment {
 
         public static MyAlertDialogFragment newConfirmStop(int id, ComponentName comp) {
@@ -580,7 +580,7 @@ public class RunningServiceDetails extends Fragment
                     if (getOwner().activeDetailForService(comp) == null) {
                         return null;
                     }
-                    
+
                     return new AlertDialog.Builder(getActivity())
                             .setTitle(getActivity().getString(R.string.runningservicedetails_stop_dlg_title))
                             .setIconAttribute(android.R.attr.alertDialogIcon)
@@ -617,7 +617,7 @@ public class RunningServiceDetails extends Fragment
             refreshUi(true);
         }
     }
-    
+
     void updateTimes() {
         if (mSnippetActiveItem != null) {
             mSnippetActiveItem.updateTime(getActivity(), mBuilder);

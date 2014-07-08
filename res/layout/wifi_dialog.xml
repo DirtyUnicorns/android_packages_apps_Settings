@@ -79,7 +79,7 @@
                             android:prompt="@string/wifi_eap_method"
                             android:entries="@array/wifi_eap_method" />
                 </LinearLayout>
-                
+
                 <LinearLayout android:id="@+id/l_phase2"
                         android:visibility="gone"
                         style="@style/wifi_item" >

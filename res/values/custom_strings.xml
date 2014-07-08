@@ -386,7 +386,7 @@
     <string name="halo_notification_msgbox_summary">Show message box for incoming notifications</string>
     <string name="halo_unlock_ping_title">Ping on unlock</string>
     <string name="halo_unlock_ping_summary">Halo will ping when device is unlocked if new notifications were received</string>
-    <string name="halo_blacklist_info_title">Information:</string>    
+    <string name="halo_blacklist_info_title">Information:</string>
     <string name="halo_blacklist_info">Set the per app policy in Device -> Apps</string>
     <string name="halo_size_title">Halo size</string>
     <string name="halo_size_summary">Defines how big Halo is going to be</string>
@@ -1965,8 +1965,8 @@
     <string name="preview_version_title">Version</string>
     <string name="preview_country_title">Country</string>
     <string name="preview_carrier_title">Carrier</string>
-    <string name="preview_romversion_title">DU Version</string>  
+    <string name="preview_romversion_title">DU Version</string>
     <string name="exit">Exit</string>
-    <string name="thank_you">Thanks for opting in!!</string> 
+    <string name="thank_you">Thanks for opting in!!</string>
 
 </resources>

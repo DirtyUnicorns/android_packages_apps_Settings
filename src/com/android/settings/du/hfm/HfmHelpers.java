@@ -150,7 +150,7 @@ public final class HfmHelpers {
         AlertDialog dialog = new AlertDialog.Builder(c)
         .setMessage(message)
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) { 
+            public void onClick(DialogInterface dialog, int which) {
                 //Nothing here
             }
         }).show();

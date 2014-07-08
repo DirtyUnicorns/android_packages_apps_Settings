@@ -34,7 +34,7 @@ import android.content.DialogInterface;
 /**
  * The "dialog" that shows from "Safety information" in the Settings app.
  */
-public class SettingsSafetyLegalActivity extends AlertActivity 
+public class SettingsSafetyLegalActivity extends AlertActivity
         implements DialogInterface.OnCancelListener, DialogInterface.OnClickListener {
     private static final String PROPERTY_LSAFETYLEGAL_URL = "ro.url.safetylegal";
 
@@ -116,7 +116,7 @@ public class SettingsSafetyLegalActivity extends AlertActivity
 
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
-        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK 
+        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK
                 && event.getAction() == KeyEvent.ACTION_DOWN) {
             if (mWebView.canGoBack()) {
                 mWebView.goBack();

@@ -176,7 +176,7 @@ class CircleFramedDrawable extends Drawable {
     @Override
     public void setColorFilter(ColorFilter cf) {
     }
-    
+
     @Override
     public int getIntrinsicWidth() {
         return mSize;

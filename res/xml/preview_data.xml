@@ -53,7 +53,7 @@
         android:title="@string/preview_carrier_title"
         android:summary="%s"
         android:selectable="false" />
-    
+
     <Preference
         android:key="preview_romversion"
         style="?android:preferenceInformationStyle"

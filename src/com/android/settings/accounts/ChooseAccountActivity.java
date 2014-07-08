@@ -55,7 +55,7 @@ public class ChooseAccountActivity extends PreferenceActivity {
     private HashMap<String, ArrayList<String>> mAccountTypeToAuthorities = null;
     private Map<String, AuthenticatorDescription> mTypeToAuthDescription
             = new HashMap<String, AuthenticatorDescription>();
-    
+
     private static class ProviderEntry implements Comparable<ProviderEntry> {
         private final CharSequence name;
         private final String type;

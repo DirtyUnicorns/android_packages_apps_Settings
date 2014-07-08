@@ -228,7 +228,7 @@ public class PowerUsageDetail extends Fragment implements Button.OnClickListener
         fillDetailsSection();
         fillPackagesSection(mUid);
         fillControlsSection(mUid);
-        
+
         if (mUid >= Process.FIRST_APPLICATION_UID) {
             mForceStopButton.setText(R.string.force_stop);
             mForceStopButton.setTag(ACTION_FORCE_STOP);
@@ -236,7 +236,7 @@ public class PowerUsageDetail extends Fragment implements Button.OnClickListener
             mReportButton.setText(com.android.internal.R.string.report);
             mReportButton.setTag(ACTION_REPORT);
             mReportButton.setOnClickListener(this);
-            
+
             // check if error reporting is enabled in secure settings
             int enabled = Settings.Global.getInt(getActivity().getContentResolver(),
                     Settings.Global.SEND_ACTION_APP_ERROR, 0);
@@ -445,7 +445,7 @@ public class PowerUsageDetail extends Fragment implements Button.OnClickListener
             mForceStopButton.setEnabled(getResultCode() != Activity.RESULT_CANCELED);
         }
     };
-    
+
     private void checkForceStop() {
         if (mPackages == null || mUid < Process.FIRST_APPLICATION_UID) {
             mForceStopButton.setEnabled(false);
@@ -475,10 +475,10 @@ public class PowerUsageDetail extends Fragment implements Button.OnClickListener
         getActivity().sendOrderedBroadcast(intent, null, mCheckKillProcessesReceiver, null,
                 Activity.RESULT_CANCELED, null, null);
     }
-    
+
     private void reportBatteryUse() {
         if (mPackages == null) return;
-        
+
         ApplicationErrorReport report = new ApplicationErrorReport();
         report.type = ApplicationErrorReport.TYPE_BATTERY;
         report.packageName = mPackages[0];
@@ -501,7 +501,7 @@ public class PowerUsageDetail extends Fragment implements Button.OnClickListener
         result.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(result);
     }
-    
+
     private void fillPackagesSection(int uid) {
         if (uid < 1) {
             removePackagesSection();
@@ -510,7 +510,7 @@ public class PowerUsageDetail extends Fragment implements Button.OnClickListener
         ViewGroup packagesParent = (ViewGroup)mRootView.findViewById(R.id.packages_section);
         if (packagesParent == null) return;
         LayoutInflater inflater = getActivity().getLayoutInflater();
-        
+
         PackageManager pm = getActivity().getPackageManager();
         //final Drawable defaultActivityIcon = pm.getDefaultActivityIcon();
         mPackages = pm.getPackagesForUid(uid);
@@ -540,7 +540,7 @@ public class PowerUsageDetail extends Fragment implements Button.OnClickListener
             }
         }
     }
-    
+
     private String getDescriptionForDrainType() {
         return getResources().getString(sDrainTypeDesciptions[mDrainType.ordinal()]);
     }

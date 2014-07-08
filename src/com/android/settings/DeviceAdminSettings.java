@@ -50,9 +50,9 @@ import java.util.Set;
 
 public class DeviceAdminSettings extends ListFragment {
     static final String TAG = "DeviceAdminSettings";
-    
+
     static final int DIALOG_WARNING = 1;
-    
+
     DevicePolicyManager mDPM;
     final HashSet<ComponentName> mActiveAdmins = new HashSet<ComponentName>();
     final ArrayList<DeviceAdminInfo> mAvailableAdmins = new ArrayList<DeviceAdminInfo>();
@@ -132,7 +132,7 @@ public class DeviceAdminSettings extends ListFragment {
                 Log.w(TAG, "Skipping " + ri.activityInfo, e);
             }
         }
-        
+
         getListView().setAdapter(new PolicyListAdapter());
     }
 
@@ -151,10 +151,10 @@ public class DeviceAdminSettings extends ListFragment {
         CheckBox checkbox;
         TextView description;
     }
-    
+
     class PolicyListAdapter extends BaseAdapter {
         final LayoutInflater mInflater;
-        
+
         PolicyListAdapter() {
             mInflater = (LayoutInflater)
                     getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -163,7 +163,7 @@ public class DeviceAdminSettings extends ListFragment {
         public boolean hasStableIds() {
             return true;
         }
-        
+
         public int getCount() {
             return mAvailableAdmins.size();
         }
@@ -200,7 +200,7 @@ public class DeviceAdminSettings extends ListFragment {
             bindView(v, position);
             return v;
         }
-        
+
         public View newView(ViewGroup parent) {
             View v = mInflater.inflate(R.layout.device_admin_item, parent, false);
             ViewHolder h = new ViewHolder();
@@ -211,7 +211,7 @@ public class DeviceAdminSettings extends ListFragment {
             v.setTag(h);
             return v;
         }
-        
+
         public void bindView(View view, int position) {
             final Activity activity = getActivity();
             ViewHolder vh = (ViewHolder) view.getTag();

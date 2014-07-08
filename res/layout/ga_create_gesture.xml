@@ -19,7 +19,7 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    
+
     android:orientation="vertical">
 
     <LinearLayout
@@ -27,15 +27,15 @@
         android:layout_height="wrap_content"
 
         android:orientation="horizontal">
-    
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="6dip"
-            
+
             android:text="@string/ga_prompt_gesture_name"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-        
+
         <TextView
             android:id="@+id/gesture_name"
             android:layout_width="0dip"
@@ -47,7 +47,7 @@
             android:singleLine="true" />
 
     </LinearLayout>
-    
+
     <com.android.settings.chameleonos.labs.gestureanywhere.GestureAnywhereGestureOverlayView
         android:id="@+id/gestures_overlay"
         android:layout_width="match_parent"
@@ -67,7 +67,7 @@
 
         <Button
             android:id="@+id/done"
-                
+
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -76,15 +76,15 @@
 
             android:onClick="addGesture"
             android:text="@string/ga_button_done" />
-    
+
         <Button
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            
+
             android:onClick="cancelGesture"
             android:text="@string/ga_button_discard" />
-    
+
     </LinearLayout>
-    
+
 </LinearLayout>

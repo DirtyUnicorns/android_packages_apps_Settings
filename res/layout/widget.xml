@@ -128,7 +128,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/appwidget_settings_divider_holo"
         android:contentDescription="@null"
-        />    
+        />
 
     <LinearLayout
         android:id="@+id/btn_sync"

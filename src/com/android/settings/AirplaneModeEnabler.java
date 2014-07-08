@@ -94,7 +94,7 @@ public class AirplaneModeEnabler implements Preference.OnPreferenceChangeListene
 
     private void setAirplaneModeOn(boolean enabling) {
         // Change the system setting
-        Settings.Global.putInt(mContext.getContentResolver(), Settings.Global.AIRPLANE_MODE_ON, 
+        Settings.Global.putInt(mContext.getContentResolver(), Settings.Global.AIRPLANE_MODE_ON,
                                 enabling ? 1 : 0);
         // Update the UI to reflect system setting
         mCheckBoxPref.setChecked(enabling);

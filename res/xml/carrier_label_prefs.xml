@@ -23,7 +23,7 @@
             android:key="custom_carrier_label"
             android:title="@string/custom_carrier_label_title" />
 
-         <CheckBoxPreference 
+         <CheckBoxPreference
             android:key="pref_notification_shortcuts_hide_carrier"
             android:title="@string/hide_carrier_title" />
 

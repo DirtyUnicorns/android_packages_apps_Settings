@@ -1986,7 +1986,7 @@
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="com.android.settings.du.stats.AnonymousStats" />
-    </activity>        
+    </activity>
 
         <receiver
             android:name="com.android.settings.du.stats.ReportingServiceManager"

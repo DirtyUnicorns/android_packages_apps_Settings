@@ -24,7 +24,7 @@
         android:title="@string/screen_state_toggles_enable_title"
         android:summary="@string/screen_state_toggles_enable_summary"
         android:defaultValue="false"/>
-        
+
     <PreferenceCategory
         android:key="screen_state_toggles_mobile_key"
         android:title="@string/screen_state_toggles_mobile_title">
@@ -41,7 +41,7 @@
             android:summary="@string/screen_state_toggles_mobile_data_summary"
             android:defaultValue="false"/>
     </PreferenceCategory>
-    
+
     <PreferenceCategory
         android:key="screen_state_toggles_location_key"
         android:title="@string/screen_state_toggles_location_title">

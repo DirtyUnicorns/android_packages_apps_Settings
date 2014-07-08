@@ -53,7 +53,7 @@ public class BookmarkPicker extends ListActivity implements SimpleAdapter.ViewBi
 
     /** Extra in the returned intent from this activity. */
     public static final String EXTRA_TITLE = "com.android.settings.quicklaunch.TITLE";
-    
+
     /** Extra that should be provided, and will be returned. */
     public static final String EXTRA_SHORTCUT = "com.android.settings.quicklaunch.SHORTCUT";
 
@@ -68,14 +68,14 @@ public class BookmarkPicker extends ListActivity implements SimpleAdapter.ViewBi
     private static Intent sLaunchIntent;
     /** Intent used to get all the activities that are {@link #REQUEST_CREATE_SHORTCUT}-able */
     private static Intent sShortcutIntent;
-    
+
     /**
      * List of ResolveInfo for activities that we can bookmark (either directly
      * to the activity, or by launching the activity and it returning a bookmark
      * WITHIN that application).
      */
     private List<ResolveInfo> mResolveList;
-    
+
     // List adapter stuff
     private static final String KEY_TITLE = "TITLE";
     private static final String KEY_RESOLVE_INFO = "RESOLVE_INFO";
@@ -88,16 +88,16 @@ public class BookmarkPicker extends ListActivity implements SimpleAdapter.ViewBi
     /** Display those activities that are able to have bookmarks WITHIN the application */
     private static final int DISPLAY_MODE_SHORTCUT = 1;
     private int mDisplayMode = DISPLAY_MODE_LAUNCH;
-    
+
     private Handler mUiHandler = new Handler();
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         updateListAndAdapter();
     }
-    
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         menu.add(0, DISPLAY_MODE_LAUNCH, 0, R.string.quick_launch_display_mode_applications)
@@ -106,7 +106,7 @@ public class BookmarkPicker extends ListActivity implements SimpleAdapter.ViewBi
                 .setIcon(com.android.internal.R.drawable.ic_menu_goto);
         return true;
     }
-    
+
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         menu.findItem(DISPLAY_MODE_LAUNCH).setVisible(mDisplayMode != DISPLAY_MODE_LAUNCH);
@@ -116,21 +116,21 @@ public class BookmarkPicker extends ListActivity implements SimpleAdapter.ViewBi
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        
+
         switch (item.getItemId()) {
 
-            case DISPLAY_MODE_LAUNCH: 
+            case DISPLAY_MODE_LAUNCH:
                 mDisplayMode = DISPLAY_MODE_LAUNCH;
                 break;
-            
+
             case DISPLAY_MODE_SHORTCUT:
                 mDisplayMode = DISPLAY_MODE_SHORTCUT;
                 break;
-            
+
             default:
                 return false;
         }
-        
+
         updateListAndAdapter();
         return true;
     }
@@ -161,15 +161,15 @@ public class BookmarkPicker extends ListActivity implements SimpleAdapter.ViewBi
                     fillResolveList(newResolveList);
                     Collections.sort(newResolveList,
                             new ResolveInfo.DisplayNameComparator(getPackageManager()));
-                    
+
                     fillAdapterList(newAdapterList, newResolveList);
-                    
+
                     updateAdapterToUseNewLists(newAdapterList, newResolveList);
                 }
             }
-        }.start();  
+        }.start();
     }
-    
+
     private void updateAdapterToUseNewLists(final ArrayList<Map<String, ?>> newAdapterList,
             final ArrayList<ResolveInfo> newResolveList) {
         // Post this back on the UI thread
@@ -185,24 +185,24 @@ public class BookmarkPicker extends ListActivity implements SimpleAdapter.ViewBi
             }
         });
     }
-    
+
     /**
      * Gets all activities matching our current display mode.
-     * 
+     *
      * @param list The list to fill.
      */
     private void fillResolveList(List<ResolveInfo> list) {
         ensureIntents();
         PackageManager pm = getPackageManager();
         list.clear();
-        
+
         if (mDisplayMode == DISPLAY_MODE_LAUNCH) {
             list.addAll(pm.queryIntentActivities(sLaunchIntent, 0));
         } else if (mDisplayMode == DISPLAY_MODE_SHORTCUT) {
-            list.addAll(pm.queryIntentActivities(sShortcutIntent, 0)); 
+            list.addAll(pm.queryIntentActivities(sShortcutIntent, 0));
         }
     }
-    
+
     private SimpleAdapter createResolveAdapter(List<Map<String, ?>> list) {
         SimpleAdapter adapter = new SimpleAdapter(this, list,
                 R.layout.bookmark_picker_item, sKeys, sResourceIds);
@@ -241,10 +241,10 @@ public class BookmarkPicker extends ListActivity implements SimpleAdapter.ViewBi
         if (position >= mResolveList.size()) return;
 
         ResolveInfo info = mResolveList.get(position);
-        
+
         switch (mDisplayMode) {
 
-            case DISPLAY_MODE_LAUNCH: 
+            case DISPLAY_MODE_LAUNCH:
                 // We can go ahead and return the clicked info's intent
                 Intent intent = getIntentForResolveInfo(info, Intent.ACTION_MAIN);
                 intent.addCategory(Intent.CATEGORY_LAUNCHER);
@@ -257,9 +257,9 @@ public class BookmarkPicker extends ListActivity implements SimpleAdapter.ViewBi
                 startShortcutActivity(info);
                 break;
         }
-        
+
     }
-    
+
     private static Intent getIntentForResolveInfo(ResolveInfo info, String action) {
         Intent intent = new Intent(action);
         ActivityInfo ai = info.activityInfo;
@@ -276,7 +276,7 @@ public class BookmarkPicker extends ListActivity implements SimpleAdapter.ViewBi
     private void startShortcutActivity(ResolveInfo info) {
         Intent intent = getIntentForResolveInfo(info, Intent.ACTION_CREATE_SHORTCUT);
         startActivityForResult(intent, REQUEST_CREATE_SHORTCUT);
-        
+
         // Will get a callback to onActivityResult
     }
 
@@ -285,22 +285,22 @@ public class BookmarkPicker extends ListActivity implements SimpleAdapter.ViewBi
         if (resultCode != RESULT_OK) {
             return;
         }
-        
+
         switch (requestCode) {
-            
+
             case REQUEST_CREATE_SHORTCUT:
                 if (data != null) {
                     finish((Intent) data.getParcelableExtra(Intent.EXTRA_SHORTCUT_INTENT),
                             data.getStringExtra(Intent.EXTRA_SHORTCUT_NAME));
                 }
                 break;
-                
+
             default:
                 super.onActivityResult(requestCode, resultCode, data);
                 break;
         }
     }
-    
+
     /**
      * Finishes the activity and returns the given data.
      */
@@ -327,5 +327,5 @@ public class BookmarkPicker extends ListActivity implements SimpleAdapter.ViewBi
             return false;
         }
     }
-    
+
 }

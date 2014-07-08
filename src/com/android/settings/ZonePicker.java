@@ -46,7 +46,7 @@ import java.util.TimeZone;
 /**
  * The class displaying a list of time zones that match a filter string
  * such as "Africa", "Europe", etc. Choosing an item from the list will set
- * the time zone. Pressing Back without choosing from the list will not 
+ * the time zone. Pressing Back without choosing from the list will not
  * result in a change in the time zone setting.
  */
 public class ZonePicker extends ListFragment {
@@ -334,7 +334,7 @@ public class ZonePicker extends ListFragment {
         }
 
         private boolean isComparable(Object value) {
-            return (value != null) && (value instanceof Comparable); 
+            return (value != null) && (value instanceof Comparable);
         }
     }
 }

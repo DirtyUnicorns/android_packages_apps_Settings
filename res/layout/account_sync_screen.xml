@@ -53,7 +53,7 @@
         android:layout_width="match_parent"
         android:background="@android:drawable/bottom_bar"
         android:visibility="gone">
-        
+
         <Button android:id="@+id/finish_button"
             android:layout_width="150dip"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
             android:drawablePadding="3dip"
             android:text="@string/finish_button_label"
         />
-        
+
     </RelativeLayout>
 
 </LinearLayout>

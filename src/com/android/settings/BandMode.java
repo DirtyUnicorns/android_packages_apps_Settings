@@ -22,7 +22,7 @@ import android.widget.AdapterView;
  * This will query the device for all available band modes
  * and display the options on the screen. If however it fails it will then
  * display all the available band modes that are in the BAND_NAMES array.
- * After the user selects a band, it will attempt to set the band mode 
+ * After the user selects a band, it will attempt to set the band mode
  * regardless of the outcome. However if the bandmode will not work RIL.Java
  * will catch it and throw a GENERIC_FAILURE or RADIO_NOT_AVAILABLE error
  */
@@ -71,7 +71,7 @@ public class BandMode extends Activity {
         super.onCreate(icicle);
 
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
-        
+
         setContentView(R.layout.band_mode);
 
         setTitle(getString(R.string.band_mode_title));

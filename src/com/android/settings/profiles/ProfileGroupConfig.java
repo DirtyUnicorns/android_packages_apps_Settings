@@ -71,7 +71,7 @@ public class ProfileGroupConfig extends SettingsPreferenceFragment implements
     private ProfileRingtonePreference mSoundTone;
 
     private ProfileManager mProfileManager;
-    
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,7 +106,7 @@ public class ProfileGroupConfig extends SettingsPreferenceFragment implements
             updateState();
         }
     }
-    
+
     private void updateState() {
 
         mVibrateMode.setValue(mProfileGroup.getVibrateMode().name());

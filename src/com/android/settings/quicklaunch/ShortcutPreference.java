@@ -31,7 +31,7 @@ import android.widget.TextView;
 public class ShortcutPreference extends Preference implements Comparable<Preference> {
 
     private static Object sStaticVarsLock = new Object();
-    
+
     // These static fields are used across all instances of ShortcutPreference.
     // There will be many ShortcutPreference instances (~36 for US).
     private static String STRING_ASSIGN_APPLICATION;
@@ -42,10 +42,10 @@ public class ShortcutPreference extends Preference implements Comparable<Prefere
     private static ColorStateList sDimTitleColor;
     private static ColorStateList sRegularSummaryColor;
     private static ColorStateList sDimSummaryColor;
-    
+
     private char mShortcut;
     private boolean mHasBookmark;
-    
+
     public ShortcutPreference(Context context, char shortcut) {
         super(context);
 
@@ -55,13 +55,13 @@ public class ShortcutPreference extends Preference implements Comparable<Prefere
             if (STRING_ASSIGN_APPLICATION == null) {
                 STRING_ASSIGN_APPLICATION = context.getString(R.string.quick_launch_assign_application);
                 STRING_NO_SHORTCUT = context.getString(R.string.quick_launch_no_shortcut);
-    
+
                 TypedValue outValue = new TypedValue();
                 context.getTheme().resolveAttribute(android.R.attr.disabledAlpha, outValue, true);
                 sDimAlpha = (int) (outValue.getFloat() * 255);
             }
         }
-        
+
         mShortcut = shortcut;
 
         setWidgetLayoutResource(R.layout.preference_widget_shortcut);
@@ -102,12 +102,12 @@ public class ShortcutPreference extends Preference implements Comparable<Prefere
     @Override
     protected void onBindView(View view) {
         super.onBindView(view);
-        
+
         TextView shortcutView = (TextView) view.findViewById(R.id.shortcut);
         if (shortcutView != null) {
             shortcutView.setText(String.valueOf(mShortcut));
         }
-    
+
         TextView titleView = (TextView) view.findViewById(android.R.id.title);
 
         synchronized (sStaticVarsLock) {
@@ -116,12 +116,12 @@ public class ShortcutPreference extends Preference implements Comparable<Prefere
                 sDimTitleColor = sRegularTitleColor.withAlpha(sDimAlpha);
             }
         }
-        
+
         ColorStateList color = mHasBookmark ? sRegularTitleColor : sDimTitleColor;
         if (color != null) {
             titleView.setTextColor(color);
         }
-        
+
         TextView summaryView = (TextView) view.findViewById(android.R.id.summary);
 
         synchronized (sStaticVarsLock) {
@@ -130,12 +130,12 @@ public class ShortcutPreference extends Preference implements Comparable<Prefere
                 sDimSummaryColor = sRegularSummaryColor.withAlpha(sDimAlpha);
             }
         }
-        
+
         color = mHasBookmark ? sRegularSummaryColor : sDimSummaryColor;
         if (color != null) {
             summaryView.setTextColor(color);
         }
-        
+
     }
 
     public int compareTo(Preference another) {
@@ -147,5 +147,5 @@ public class ShortcutPreference extends Preference implements Comparable<Prefere
         else if (Character.isDigit(other) && Character.isLetter(mShortcut)) return -1;
         else return mShortcut - other;
     }
-    
+
 }

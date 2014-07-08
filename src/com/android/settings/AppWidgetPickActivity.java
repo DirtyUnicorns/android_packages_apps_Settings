@@ -49,7 +49,7 @@ public class AppWidgetPickActivity extends ActivityPicker
     static final boolean LOGD = false;
 
     List<PickAdapter.Item> mItems;
-    
+
     /**
      * The allocated {@link AppWidgetManager#EXTRA_APPWIDGET_ID} that this
      * activity is binding.
@@ -65,12 +65,12 @@ public class AppWidgetPickActivity extends ActivityPicker
         mAppWidgetManager = AppWidgetManager.getInstance(this);
         mAppWidgetLoader = new AppWidgetLoader<PickAdapter.Item>
             (this, mAppWidgetManager, this);
-        
+
         super.onCreate(icicle);
-        
+
         // Set default return data
         setResultData(RESULT_CANCELED, null);
-        
+
         // Read the appWidgetId passed our direction, otherwise bail if not found
         final Intent intent = getIntent();
         if (intent.hasExtra(AppWidgetManager.EXTRA_APPWIDGET_ID)) {

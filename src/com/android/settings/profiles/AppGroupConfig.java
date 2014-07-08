@@ -71,7 +71,7 @@ public class AppGroupConfig extends SettingsPreferenceFragment
     private static final int DELETE_GROUP_CONFIRM = 2;
 
     private static final int RESULT_PICK_APP = 1000;
-    
+
     public static final String PROFILE_SERVICE = "profile";
 
     private ListView mListView;
@@ -256,7 +256,7 @@ public class AppGroupConfig extends SettingsPreferenceFragment
             super.onActivityResult(requestCode, resultCode, data);
         }
     }
-    
+
     private void removeApp(String key) {
         mPackageToDelete = key.toString();
         showDialog(DELETE_CONFIRM);

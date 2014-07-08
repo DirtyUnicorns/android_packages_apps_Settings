@@ -100,7 +100,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment {
         mContainer = container;
         mTabHost = (TabHost) inflater.inflate(R.layout.profile_tabs, container, false);
         if (mTabHost != null) {
-            mProfileManager = (ProfileManager) getActivity().getSystemService(PROFILE_SERVICE); 
+            mProfileManager = (ProfileManager) getActivity().getSystemService(PROFILE_SERVICE);
             mActivity = getActivity();
 
             setupTabs();
@@ -161,7 +161,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment {
         }
     }
 
-    
+
     @Override
     public void onPause() {
         super.onPause();

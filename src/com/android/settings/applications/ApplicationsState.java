@@ -85,7 +85,7 @@ public class ApplicationsState {
         // for purposes of cleaning them up in the app details UI.
         long externalCacheSize;
     }
-    
+
     public static class AppEntry extends SizeInfo {
         final File apkFile;
         final long id;
@@ -95,7 +95,7 @@ public class ApplicationsState {
         long externalSize;
 
         boolean mounted;
-        
+
         String getNormalizedLabel() {
             if (normalizedLabel != null) {
                 return normalizedLabel;
@@ -123,7 +123,7 @@ public class ApplicationsState {
             this.sizeStale = true;
             ensureLabel(context);
         }
-        
+
         void ensureLabel(Context context) {
             if (this.label == null || !this.mounted) {
                 if (!this.apkFile.exists()) {
@@ -136,7 +136,7 @@ public class ApplicationsState {
                 }
             }
         }
-        
+
         boolean ensureIconLocked(Context context, PackageManager pm) {
             if (this.icon == null) {
                 if (this.apkFile.exists()) {
@@ -211,7 +211,7 @@ public class ApplicationsState {
     public static final AppFilter THIRD_PARTY_FILTER = new AppFilter() {
         public void init() {
         }
-        
+
         @Override
         public boolean filterApp(ApplicationInfo info) {
             if ((info.flags & ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) != 0) {
@@ -226,11 +226,11 @@ public class ApplicationsState {
     public static final AppFilter ON_SD_CARD_FILTER = new AppFilter() {
         final CanBeOnSdCardChecker mCanBeOnSdCardChecker
                 = new CanBeOnSdCardChecker();
-        
+
         public void init() {
             mCanBeOnSdCardChecker.init();
         }
-        
+
         @Override
         public boolean filterApp(ApplicationInfo info) {
             return mCanBeOnSdCardChecker.check(info);
@@ -240,7 +240,7 @@ public class ApplicationsState {
     public static final AppFilter DISABLED_FILTER = new AppFilter() {
         public void init() {
         }
-        
+
         @Override
         public boolean filterApp(ApplicationInfo info) {
             if (!info.enabled) {
@@ -253,7 +253,7 @@ public class ApplicationsState {
     public static final AppFilter ALL_ENABLED_FILTER = new AppFilter() {
         public void init() {
         }
-        
+
         @Override
         public boolean filterApp(ApplicationInfo info) {
             if (info.enabled) {
@@ -449,7 +449,7 @@ public class ApplicationsState {
          * it keeps running and locking again it can prevent the main thread from
          * acquiring its lock for a long time...  sometimes even > 5 seconds
          * (leading to an ANR).
-         * 
+         *
          * Dalvik will promote a monitor to a "real" lock if it detects enough
          * contention on it.  It doesn't figure this out fast enough for us
          * here, though, so this little trick will force it to turn into a real
@@ -562,7 +562,7 @@ public class ApplicationsState {
             if (filter != null) {
                 filter.init();
             }
-            
+
             List<ApplicationInfo> apps;
             synchronized (mEntriesMap) {
                 apps = new ArrayList<ApplicationInfo>(mApplications);
@@ -707,7 +707,7 @@ public class ApplicationsState {
             return entry;
         }
     }
-    
+
     void ensureIcon(AppEntry entry) {
         if (entry.icon != null) {
             return;
@@ -716,7 +716,7 @@ public class ApplicationsState {
             entry.ensureIconLocked(mContext, mPm);
         }
     }
-    
+
     void requestSize(String packageName) {
         if (DEBUG_LOCKING) Log.v(TAG, "requestSize about to acquire lock...");
         synchronized (mEntriesMap) {
@@ -740,7 +740,7 @@ public class ApplicationsState {
         }
         return sum;
     }
-    
+
     int indexOfApplicationInfoLocked(String pkgName) {
         for (int i=mApplications.size()-1; i>=0; i--) {
             if (mApplications.get(i).packageName.equals(pkgName)) {
@@ -823,7 +823,7 @@ public class ApplicationsState {
         removePackage(pkgName);
         addPackage(pkgName);
     }
-    
+
     AppEntry getEntryLocked(ApplicationInfo info) {
         AppEntry entry = mEntriesMap.get(info.packageName);
         if (DEBUG) Log.i(TAG, "Looking up entry of pkg " + info.packageName + ": " + entry);
