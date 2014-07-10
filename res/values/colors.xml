@@ -19,7 +19,7 @@
     <color name="red">#F00</color>
     <color name="blue">#ff2e94fd</color>
     <color name="white">#FFF</color>
-
+    <color name="background_tab_pressed">#00252525</color>
     <color name="memory_used">#F00</color>
     <color name="memory_avail">#333333</color>
     <color name="memory_apps_usage">#77831A</color>
@@ -30,23 +30,17 @@
     <color name="memory_misc">#7C3030</color>
     <color name="memory_user_light">#479392</color>
     <color name="memory_user_dark">#316665</color>
-
     <color name="crypt_keeper_clock_background">#ff9a9a9a</color>
     <color name="crypt_keeper_clock_foreground">#ff666666</color>
     <color name="crypt_keeper_clock_am_pm">#ff9a9a9a</color>
-
     <color name="divider_color">#20ffffff</color>
     <color name="title_color">@android:color/white</color>
     <color name="setup_divider_color_dark">#33ffffff</color>
     <color name="setup_divider_color_light">#33000000</color>
-
     <color name="circle_avatar_frame_color">#ffffffff</color>
     <color name="circle_avatar_frame_shadow_color">#80000000</color>
     <color name="circle_avatar_frame_pressed_color">#ffffffff</color>
-
     <color name="tab_selector">#FFFFFFFF</color>
-
-    <color name="background_tab_pressed">#66ffffff</color>
 
     <!-- Gesture Anywhere -->
     <color name="ga_gesture_color">@android:color/white</color>
