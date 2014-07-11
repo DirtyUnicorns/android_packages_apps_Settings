@@ -71,6 +71,9 @@
     <uses-permission android:name="android.permission.MANAGE_DEVICE_ADMINS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.SYSTEM_NOTIFICATION_LISTENER" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
 
     <application android:label="@string/settings_label"
             android:icon="@mipmap/ic_launcher_settings"
@@ -2006,6 +2009,36 @@
             android:exported="false"
             android:label="ReportingService" >
         </service>
+
+        <activity
+            android:name="com.android.settings.du.weather.WeatherActivity"
+            android:label="Weather"
+            android:theme="@style/Theme.Settings"
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.android.settings.du.weather.HttpService" />
+
+        <service
+            android:name="com.android.settings.du.weather.WeatherService"
+            android:persistent="true" >
+        </service>
+
+        <receiver android:name="com.android.settings.du.weather.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.android.settings.du.weather.WeatherProvider"
+            android:authorities="org.codefirex.cfxweather.icons;org.codefirex.cfxweather.data"
+            android:exported="true" >
+        </provider>
 
         <!-- Keep compatibility with old shortcuts. -->
         <activity-alias android:name="ProfileSettings"

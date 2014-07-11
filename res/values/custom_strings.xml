@@ -1474,7 +1474,7 @@
     <string name="lockscreen_glowpad_torch_summary">Press and hold lockscreen icon handle to enable torch</string>
 
     <!-- Status bar color -->
-    <string name="custom_status_bar_header_title">StatusBar Color</string>
+    <string name="custom_status_bar_header_title">Status Bar Color</string>
     <string name="custom_status_bar_color_title">Custom status bar color</string>
     <string name="status_bar_opaque_color">Opaque color</string>
     <string name="status_bar_transparent_color">Dimmed color</string>
@@ -1968,5 +1968,117 @@
     <string name="preview_romversion_title">DU Version</string>
     <string name="exit">Exit</string>
     <string name="thank_you">Thanks for opting in!!</string>
+
+    <!-- Weather -->
+    <string name="weather_settings_title">Weather</string>
+    <string name="weather_alert_title">Weather warning</string>
+    <string name="weather_alert_message">Phone will now reboot\nto apply changes!</string>
+    <string name="weather_header_title">Weather header</string>
+    <string name="weather_header_summary">Add a small weather\ninfo in statusbar header.</string>
+    <string name="weather_notification_title">Weather notification</string>
+    <string name="weather_notification_summary">Add weather info as notification</string>
+
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="settings">Settings</string>
+    <string name="cfx_weather">CFX Weather</string>
+    <string name="enable">Enable</string>
+    <string name="one_minute">1 minute (debug)</string>
+    <string name="fifteen_minutes">15 minutes</string>
+    <string name="thirty_minutes">30 minutes</string>
+    <string name="one_hour">1 hour</string>
+    <string name="three_hours">3 hours</string>
+    <string name="six_hours">6 hours</string>
+    <string name="weather_refresh_interval_title">Refresh interval</string>
+    <string name="weather_fahrenheit">Fahrenheit</string>
+    <string name="weather_celsius">Celsius</string>
+    <string name="weather_temp_scale_title">Temperature scale</string>
+    <string name="refresh">Refresh</string>
+    <string name="location_mode_title">Location mode</string>
+    <string name="location_network">Network</string>
+    <string name="location_fused">Let system decide</string>
+    <string name="location_passive">Passive GPS</string>
+    <string name="location_gps">GPS</string>
+    <string name="wind">Wind</string>
+    <string name="wind_chill">Chill</string>
+    <string name="wind_speed">Speed</string>
+    <string name="wind_direction">Direction</string>
+    <string name="conditions">Conditions</string>
+    <string name="humidity">Humidity</string>
+    <string name="pressure">Pressure</string>
+    <string name="visibility">Visibility</string>
+    <string name="credits">Credits</string>
+    <string name="credits_deviant_art">deviantART</string>
+    <string name="credits_icon_name">SILq Weather Icons</string>
+    <string name="credits_icon_author">by d3stroy</string>
+    <string name="credits_icon_license">Used under the Creative Commons License</string>
+    <string name="credits_weather_service">Weather Service</string>
+    <string name="credits_yahoo">Powered by Yahoo!</string>
+    <string name="credits_xml_name">XML parsing by zh-wang</string>
+
+    <!-- Condition strings based on condition code integer from yahoo servers
+         It seems yahoo servers only provide the forecast text in english
+         so we have to handle translations
+    -->
+    <string name="tornado">Tornado</string>
+    <string name="tropical_storm">Tropical storm</string>
+    <string name="hurricane">Hurricane</string>
+    <string name="severe_thunderstorms">Severe thunderstorms</string>
+    <string name="thunderstorms">Thunderstorms</string>
+    <string name="mixed_rain_snow">Mixed rain and snow</string>
+    <string name="mixed_rain_sleet">Mixed rain and sleet</string>
+    <string name="mixed_snow_sleet">Mixed snow and sleet</string>
+    <string name="freezing_drizzle">Freezing drizzle</string>
+    <string name="drizzle">Drizzle</string>
+    <string name="freezing_rain">Freezing rain</string>
+    <string name="showers">Showers</string>
+    <string name="snow_flurries">Snow flurries</string>
+    <string name="light_snow_showers">Light snow showers</string>
+    <string name="blowing_snow">Blowing snow</string>
+    <string name="snow">Snow</string>
+    <string name="hail">Hail</string>
+    <string name="sleet">Sleet</string>
+    <string name="dust">Dust</string>
+    <string name="foggy">Foggy</string>
+    <string name="haze">Haze</string>
+    <string name="smoky">Smoky</string>
+    <string name="blustery">Blustery</string>
+    <string name="windy">Windy</string>
+    <string name="cold">Cold</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="mostly_cloudy">Mostly cloudy</string>
+    <string name="partly_cloudy">Partly cloudy</string>
+    <string name="clear">Clear</string>
+    <string name="sunny">Sunny</string>
+    <string name="fair">Fair</string>
+    <string name="mixed_rain_hail">Mixed rain and hail</string>
+    <string name="hot">Hot</string>
+    <string name="isolated_thunderstorms">Isolated thunderstorms</string>
+    <string name="scattered_thunderstorms">Scattered thunderstorms</string>
+    <string name="scattered_showers">Scattered showers</string>
+    <string name="heavy_snow">Heavy snow</string>
+    <string name="scattered_snow_showers">Scattered snow showers</string>
+    <string name="thundershowers">Thundershowers</string>
+    <string name="snow_showers">Snow showers</string>
+    <string name="isolated_thundershowers">Isolated thundershowers</string>
+    <string name="not_available">not available</string>
+
+    <!-- Days of the week translatable, short and full -->
+    <string name="mon_long">Monday</string>
+    <string name="tue_long">Tuesday</string>
+    <string name="wed_long">Wednesday</string>
+    <string name="thur_long">Thursday</string>
+    <string name="fri_long">Friday</string>
+    <string name="sat_long">Saturday</string>
+    <string name="sun_long">Sunday</string>
+    <string name="mon_short">Mon</string>
+    <string name="tue_short">Tue</string>
+    <string name="wed_short">Wed</string>
+    <string name="thur_short">Thu</string>
+    <string name="fri_short">Fri</string>
+    <string name="sat_short">Sat</string>
+    <string name="sun_short">Sun</string>
 
 </resources>

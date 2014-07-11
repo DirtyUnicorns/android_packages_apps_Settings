@@ -1592,4 +1592,43 @@
         <item>4</item>
     </string-array>
 
+    <string-array name="weather_location_entries">
+        <item>@string/location_network</item>
+        <item>@string/location_fused</item>
+        <item>@string/location_passive</item>
+        <item>@string/location_gps</item>
+    </string-array>
+    <string-array name="weather_location_values" translatable="false">
+        <item>network</item>
+        <item>fused</item>
+        <item>passive</item>
+        <item>gps</item>
+    </string-array>
+
+    <string-array name="weather_interval_entries">
+        <item>@string/one_minute</item>
+        <item>@string/fifteen_minutes</item>
+        <item>@string/thirty_minutes</item>
+        <item>@string/one_hour</item>
+        <item>@string/three_hours</item>
+        <item>@string/six_hours</item>
+    </string-array>
+    <string-array name="weather_interval_values" translatable="false">
+        <item>1</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+    </string-array>
+
+    <string-array name="weather_temp_scale_entries">
+        <item>@string/weather_fahrenheit</item>
+        <item>@string/weather_celsius</item>
+    </string-array>
+    <string-array name="weather_temp_scale_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 </resources>

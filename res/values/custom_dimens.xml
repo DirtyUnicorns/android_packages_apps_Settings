@@ -27,4 +27,30 @@
     <dimen name="navbar_search_outerring_radius">170dp</dimen>
     <dimen name="navbar_search_outerring_diameter">340dp</dimen>
 
+	<!-- Weather forecast view -->
+	<dimen name="forecast_view_padding">12dp</dimen>
+	<dimen name="forecast_yahoo_logo">48dp</dimen>
+	<dimen name="forecast_days_icon">72dp</dimen>
+	<dimen name="forecast_days_padding">5dp</dimen>
+	<dimen name="forecast_credit_dialog_padding">4dp</dimen>
+	<dimen name="forecast_row_margin">20dp</dimen>
+	<dimen name="forecast_small_temp_margin">5dp</dimen>	
+
+	<dimen name="forecast_current_temp">36sp</dimen>
+	<dimen name="forecast_current_hi_lo_temp">16sp</dimen>
+	<dimen name="forecast_current_text_max">24sp</dimen>
+	<dimen name="forecast_current_text_min">18sp</dimen>
+	<dimen name="forecast_day_header">18sp</dimen>
+	<dimen name="forecast_hi_lo_text">12sp</dimen>
+	
+	<dimen name="notification_padding">10dp</dimen>
+	<dimen name="notification_large_icon">40dp</dimen>
+	<dimen name="notification_curent_temp">14sp</dimen>
+	<dimen name="notification_small_icon">36dp</dimen>
+	<dimen name="notification_day_header">14sp</dimen>
+	<dimen name="notification_hi_lo_text">10sp</dimen>
+	<dimen name="notification_hi_lo_margin">4dp</dimen>
+
+    <dimen name="settings_side_margin">@*android:dimen/preference_fragment_padding_side</dimen>
+
 </resources>

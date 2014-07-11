@@ -21,24 +21,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
          <PreferenceScreen
-            android:key="battery_style_pref"
-            android:layout="@layout/preference_statusbar_tweaks"
-            android:fragment="com.android.settings.du.BatteryIconStyle"
-            android:title="@string/status_bar_header" />
-
-         <PreferenceScreen
-            android:key="battery_style_pref"
-            android:layout="@layout/preference_statusbarcolor"
-            android:fragment="com.android.settings.du.StatusBarColor"
-            android:title="@string/custom_status_bar_header_title" />
-
-         <Preference
-            android:key="lockscreen_targets"
-            android:fragment="com.android.settings.du.Traffic"
-            android:layout="@layout/preference_traffic"
-            android:title="@string/misc_traffic" />
-
-         <PreferenceScreen
             android:key="interface_animation"
             android:title="@string/interface_animation_title"
             android:layout="@layout/preference_animations"

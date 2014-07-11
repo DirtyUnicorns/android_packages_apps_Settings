@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/cfx_weather" >
+
+    <com.android.settings.du.weather.ForecastPreference android:key="weather_forecast" />
+<!-- 
+    <PreferenceCategory
+        android:key="settings_category"
+        android:title="@string/settings" >
+-->
+        <ListPreference
+            android:defaultValue="network"
+            android:entries="@array/weather_location_entries"
+            android:entryValues="@array/weather_location_values"
+            android:key="weather_location_mode"
+            android:title="@string/location_mode_title" />
+
+        <ListPreference
+            android:defaultValue="15"
+            android:entries="@array/weather_interval_entries"
+            android:entryValues="@array/weather_interval_values"
+            android:key="weather_interval"
+            android:title="@string/weather_refresh_interval_title" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/weather_temp_scale_entries"
+            android:entryValues="@array/weather_temp_scale_values"
+            android:key="weather_temp_scale"
+            android:title="@string/weather_temp_scale_title" />
+
+        <Preference 
+            android:key="credits_pref"
+            android:title="@string/credits" />
+<!--    </PreferenceCategory> -->
+
+</PreferenceScreen>

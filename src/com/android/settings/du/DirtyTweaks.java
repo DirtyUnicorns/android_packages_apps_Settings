@@ -51,6 +51,7 @@ import android.widget.Toast;
 import com.android.internal.util.slim.DeviceUtils;
 import com.android.settings.du.GeneralUI;
 import com.android.settings.du.SystemCat;
+import com.android.settings.du.StatusbarCat;
 import com.android.settings.du.MultiTaskingCat;
 import com.android.settings.du.NavBarSettings;
 import com.android.settings.du.MiscCat;
@@ -176,9 +177,10 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new GeneralUI();
             frags[1] = new SystemCat();
-            frags[2] = new MultiTaskingCat();
-            frags[3] = new NavBarSettings();
-            frags[4] = new MiscCat();
+            frags[2] = new StatusbarCat();
+            frags[3] = new MultiTaskingCat();
+            frags[4] = new NavBarSettings();
+            frags[5] = new MiscCat();
         }
 
         @Override
@@ -203,6 +205,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
         titleString = new String[]{
                     getString(R.string.generalUI_title),
 	            getString(R.string.volume_steps_system_title),
+	            getString(R.string.statusbar_title),
 	            getString(R.string.multitasking_title),
                 getString(R.string.navigation_bar_category),
 	            getString(R.string.misc_category)};
@@ -210,6 +213,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
         titleString = new String[]{
                     getString(R.string.generalUI_title),
 	            getString(R.string.volume_steps_system_title),
+	            getString(R.string.statusbar_title),
 	            getString(R.string.multitasking_title),
                 getString(R.string.navigation_bar_category),
 	            getString(R.string.misc_category)};

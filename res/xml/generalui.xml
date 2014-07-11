@@ -57,11 +57,12 @@
             android:layout="@layout/preference_buildprop"
             android:fragment="com.android.settings.du.PropModder" />
 
-         <Preference
+         <PreferenceScreen
             android:key="initD"
-            android:fragment="com.android.settings.InitD"
+            android:fragment="com.android.settings.du.InitD"
             android:layout="@layout/preference_initd"
-            android:title="@string/init_d_title" />
+            android:title="@string/init_d_title" >
+         </PreferenceScreen>
 
          <Preference
             android:key="misc_tweaks"
