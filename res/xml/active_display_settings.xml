@@ -17,7 +17,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/ad_settings_title" >
 
-    <SwitchPreference
+    <CheckBoxPreference
         android:key="ad_enable"
         android:persistent="false"
         android:title="@string/ad_enable_title"

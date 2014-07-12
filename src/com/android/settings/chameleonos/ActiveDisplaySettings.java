@@ -17,6 +17,7 @@
 package com.android.settings.chameleonos;
 
 import android.app.ActionBar;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.hardware.SensorManager;
 import android.os.Bundle;
@@ -25,7 +26,7 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
-import android.preference.SwitchPreference;
+import android.preference.CheckBoxPreference;
 import android.provider.Settings;
 import android.text.TextUtils;
 import com.android.settings.R;
@@ -57,7 +58,7 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_THRESHOLD = "ad_threshold";
     private static final String KEY_TURNOFF_MODE = "ad_turnoff_mode";
 
-    private SwitchPreference mEnabledPref;
+    private CheckBoxPreference mEnabledPref;
     private CheckBoxPreference mShowTextPref;
     private CheckBoxPreference mAllNotificationsPref;
     private CheckBoxPreference mHideLowPriorityPref;
@@ -81,10 +82,10 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
         ActionBar actionBar = getActivity().getActionBar();
         actionBar.setIcon(R.drawable.ic_settings_dirt);
 
-        mEnabledPref = (SwitchPreference) findPreference(KEY_ENABLED);
+        mEnabledPref = (CheckBoxPreference) findPreference(KEY_ENABLED);
         mEnabledPref.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.ENABLE_ACTIVE_DISPLAY, 0) == 1));
-        mEnabledPref.setOnPreferenceChangeListener(this);
+        updateLNPrefs();
 
         mShowTextPref = (CheckBoxPreference) findPreference(KEY_SHOW_TEXT);
         mShowTextPref.setChecked((Settings.System.getInt(getContentResolver(),
@@ -164,11 +165,6 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
             int timeout = Integer.valueOf((String) newValue);
             updateRedisplaySummary(timeout);
             return true;
-        } else if (preference == mEnabledPref) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.ENABLE_ACTIVE_DISPLAY,
-                    ((Boolean) newValue).booleanValue() ? 1 : 0);
-            return true;
         } else if (preference == mPocketModePref) {
 	        int mode = Integer.valueOf((String) newValue);
 	        updatePocketModeSummary(mode);
@@ -207,6 +203,12 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.ACTIVE_DISPLAY_ALL_NOTIFICATIONS,
                     value ? 1 : 0);
+        } else if (preference == mEnabledPref) {
+            value = mEnabledPref.isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.ENABLE_ACTIVE_DISPLAY,
+                    value ? 1 : 0);
+            updateLNPrefs();
         } else if (preference == mHideLowPriorityPref) {
             value = mHideLowPriorityPref.isChecked();
             Settings.System.putInt(getContentResolver(),
@@ -287,6 +289,19 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
             return null;
 
         return new HashSet<String>(Arrays.asList(excluded.split("\\|")));
+    }
+
+     private void updateLNPrefs() {
+          ContentResolver resolver = getActivity().getContentResolver();
+          boolean enabled = (Settings.System.getInt(resolver,
+                  Settings.System.LOCKSCREEN_NOTIFICATIONS, 0) == 1) ||
+                  (Settings.System.getInt(resolver,
+                  Settings.System.LOCKSCREEN_NOTIFICATIONS, 0) == 1);
+        if (enabled) {
+            Settings.System.putInt(resolver,
+                Settings.System.ENABLE_ACTIVE_DISPLAY, 0);
+            mEnabledPref.setEnabled(false);
+        }
     }
 
     private void storeExcludedApps(Set<String> values) {
