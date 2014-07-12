@@ -73,32 +73,5 @@ public class ViewStats extends Activity {
 				}
 			}
 		});
-	}		
-			@Override
-			public boolean onCreateOptionsMenu(Menu menu) {
-				MenuInflater inflater = getMenuInflater();
-				inflater.inflate(R.menu.main, menu);
-				return super.onCreateOptionsMenu(menu);
-			}
-
-			@Override
-			public boolean onPrepareOptionsMenu(Menu menu) {
-
-				return super.onPrepareOptionsMenu(menu);
-			}
-
-			@Override
-			public boolean onOptionsItemSelected(MenuItem item) {
-				switch (item.getItemId()) {
-
-				case R.id.exit:
-					super.finish();
-					break;
-
-				default:
-
-				};
-
-				return super.onOptionsItemSelected(item);
-			}
+	}
 }

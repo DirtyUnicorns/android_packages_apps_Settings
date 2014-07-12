@@ -32,9 +32,6 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
 import android.preference.CheckBoxPreference;
 import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.widget.Toast;
 import com.android.settings.R;
 
@@ -162,53 +159,6 @@ public class AnonymousStats extends PreferenceActivity implements
 	@Override
 	public boolean onPreferenceChange(Preference preference, Object newValue) {
 		return false;
-	}
-
-	@Override
-	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
-			switch (event.getAction()) {
-			case KeyEvent.ACTION_DOWN:
-				if (event.getDownTime() - lastPressedTime < PERIOD) {
-					finish();
-				} else {
-					Toast.makeText(getApplicationContext(),
-							"Press again to exit.", Toast.LENGTH_SHORT).show();
-					lastPressedTime = event.getEventTime();
-				}
-				return true;
-			}
-		}
-		return false;
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.main, menu);
-		return super.onCreateOptionsMenu(menu);
-	}
-
-	@Override
-	public boolean onPrepareOptionsMenu(Menu menu) {
-
-		return super.onPrepareOptionsMenu(menu);
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-
-		case R.id.exit:
-			super.finish();
-			break;
-
-		default:
-
-		}
-		;
-
-		return super.onOptionsItemSelected(item);
 	}
 
 	@Override
