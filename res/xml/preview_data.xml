@@ -31,7 +31,7 @@
         style="?android:preferenceInformationStyle"
         android:title="@string/preview_device_title"
         android:summary="%s"
-        android:enabled="false" />
+        android:selectable="false" />
 
     <Preference
         android:key="preview_version"
@@ -59,7 +59,7 @@
         style="?android:preferenceInformationStyle"
         android:title="@string/preview_romversion_title"
         android:summary="%s"
-        android:selectable="true" />
+        android:selectable="false" />
 
 </PreferenceScreen>
 
