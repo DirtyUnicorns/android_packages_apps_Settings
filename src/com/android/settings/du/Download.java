@@ -100,7 +100,7 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
             startActivity(intent);
             return true;
         } else if (preference == mGerrit) {
-            Uri uri = Uri.parse("http://goo.gl/Ca13Nb");
+            Uri uri = Uri.parse("http://goo.gl/DrtoB0");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;
