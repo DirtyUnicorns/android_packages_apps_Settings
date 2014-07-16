@@ -34,10 +34,16 @@
         android:persistent="false" />
 
     <CheckBoxPreference
-            android:key="emulate_menu_key"
-            android:title="@string/emulate_menu_key_title"
-            android:summary="@string/emulate_menu_key_summary"
-            android:persistent="false"/>
+        android:key="emulate_menu_key"
+        android:title="@string/emulate_menu_key_title"
+        android:summary="@string/emulate_menu_key_summary"
+        android:persistent="false"/>
+
+    <Preference
+        android:key="back_to_kill"
+        android:fragment="com.android.settings.du.BackToKill"
+        android:title="@string/kill_app_longpress_back_title"
+        android:summary="@string/kill_app_longpress_back_summary" />
 
     <CheckBoxPreference
         android:key="custom_status_bar_header"

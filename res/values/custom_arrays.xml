@@ -1130,7 +1130,6 @@
         <item>@string/keys_action_voice_search</item>
         <item>@string/keys_action_in_app_search</item>
         <item>@string/keys_action_last_app</item>
-        <item>@string/keys_action_kill_app</item>
     </string-array>
 
     <string-array name="keys_action_values" translatable="false">
@@ -1143,7 +1142,6 @@
         <item>4</item>
         <item>5</item>
         <item>8</item>
-        <item>9</item>
     </string-array>
 
     <!-- Clear all button -->
@@ -1629,6 +1627,23 @@
     <string-array name="weather_temp_scale_values">
         <item>1</item>
         <item>2</item>
+    </string-array>
+
+    <!-- Back to Kill delay control -->
+    <string-array name="kill_app_longpress_back_delay_entries" translatable="false">
+        <item>0.5 second</item>
+        <item>1 seconds</item>
+        <item>2 seconds</item>
+        <item>3 seconds</item>
+        <item>4 seconds</item>
+    </string-array>
+
+    <string-array name="kill_app_longpress_back_delay_values" translatable="false">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
     </string-array>
 
 </resources>

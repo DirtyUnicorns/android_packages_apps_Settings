@@ -1713,6 +1713,7 @@
         <activity android:name=".du.Animations" />
         <activity android:name=".du.AppSidebar" />
         <activity android:name=".du.AppCircleBar" />
+        <activity android:name=".du.BackToKill" />
         <activity android:name=".du.BatteryStatusBar" />
         <activity android:name=".du.BatteryIconStyle" />
         <activity android:name=".du.BatteryBarStyle" />

@@ -1167,7 +1167,6 @@
     <string name="keys_action_home">Home button</string>
     <string name="keys_action_back">Back button</string>
     <string name="keys_action_last_app">Switch to last app</string>
-    <string name="keys_action_kill_app">Kill app</string>
     <string name="keys_action_normal">Normal press</string>
     <string name="keys_action_long">Long press</string>
     <string name="keys_action_double">Double tap</string>
@@ -2080,5 +2079,12 @@
     <string name="fri_short">Fri</string>
     <string name="sat_short">Sat</string>
     <string name="sun_short">Sun</string>
+
+    <!-- Kill app long-press back -->
+    <string name="kill_app_longpress_back">Kill app back button</string>
+    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back button</string>
+    <string name="kill_app_longpress_back_title">Back to Kill App</string>
+    <string name="kill_app_longpress_back_delay_title">Kill app back button delay</string>
+    <string name="kill_app_longpress_back_delay_summary">delay for Back to Kill</string>
 
 </resources>
