@@ -23,7 +23,8 @@
     <com.android.settings.du.PagerSlidingTabStrip
             android:id="@+id/tabs"
             android:layout_width="match_parent"
-            android:layout_height="48dip"
+            android:layout_height="48sp"
+            android:layout_gravity="top"
             android:background="@drawable/background_tab"
             du:dividerColor="@android:color/white"
             du:indicatorColor="@android:color/white" />

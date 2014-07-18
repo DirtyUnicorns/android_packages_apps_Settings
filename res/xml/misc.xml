@@ -20,10 +20,16 @@
     android:layout="@layout/preference_misc"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-         <Preference
-            android:key="download_center"
-            android:fragment="com.android.settings.du.Download"
-            android:layout="@layout/preference_download"
-            android:title="@string/download_category" />
+    <Preference
+        android:key="download_center"
+        android:fragment="com.android.settings.du.Download"
+        android:layout="@layout/preference_download"
+        android:title="@string/download_category" />
+
+    <PreferenceScreen
+        android:fragment="com.android.settings.du.DoubleTapToSleepSettings"
+        android:layout="@layout/preference_doubletap"
+        android:key="double_tap_sleep"
+        android:title="@string/double_tap_sleep_title" />
 
 </PreferenceScreen>
