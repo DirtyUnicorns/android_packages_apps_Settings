@@ -1718,6 +1718,7 @@
         <activity android:name=".du.BatteryBarStyle" />
         <activity android:name=".du.ButtonSettings" />
         <activity android:name=".du.CarrierLabel" />
+        <activity android:name=".du.DoubleTapToSleepSettings" />
         <activity android:name=".du.Download" />
         <activity android:name=".du.Halo" />
         <activity android:name=".du.DNDSettings" />

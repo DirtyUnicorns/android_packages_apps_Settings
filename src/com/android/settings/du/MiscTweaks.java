@@ -65,7 +65,6 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
     private static final String SREC_ENABLE_TOUCHES = "srec_enable_touches";
     private static final String SREC_ENABLE_MIC = "srec_enable_mic";
     private static final String STATUS_BAR_CUSTOM_HEADER = "custom_status_bar_header";
-    private static final String DOUBLE_TAP_TO_SLEEP = "double_tap_to_sleep";
 
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mStatusBarNotifCount;
@@ -80,7 +79,6 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
     private CheckBoxPreference mSrecEnableTouches;
     private CheckBoxPreference mSrecEnableMic;
     private CheckBoxPreference mStatusBarCustomHeader;
-    private CheckBoxPreference mDoubleTapGesture;
 
 
     @Override
@@ -160,10 +158,6 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
         mStatusBarCustomHeader = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_CUSTOM_HEADER);
         mStatusBarCustomHeader.setChecked(Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_CUSTOM_HEADER, 0) == 1);
-
-        mDoubleTapGesture = (CheckBoxPreference) findPreference(DOUBLE_TAP_TO_SLEEP);
-        mDoubleTapGesture.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.DOUBLE_TAP_TO_SLEEP, 0) == 1);
     }
 
     @Override
@@ -187,11 +181,6 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
             boolean checked = ((CheckBoxPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUS_BAR_CUSTOM_HEADER, checked ? 1:0);
-            return true;
-        } else if  (preference == mDoubleTapGesture) {
-            boolean checked = ((CheckBoxPreference)preference).isChecked();
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.DOUBLE_TAP_TO_SLEEP, checked ? 1:0);
             return true;
         } else if  (preference == mDisableIM) {
             boolean checked = ((CheckBoxPreference)preference).isChecked();

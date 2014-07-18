@@ -333,8 +333,16 @@
     <string name="camera_sounds_title">Camera shutter sound</string>
 
     <!-- Double tap to sleep -->
-    <string name="double_tap_to_sleep_title">Double tap to sleep</string>
-    <string name="double_tap_to_sleep_summary">Allow double tap in statusbar and the lock ring to turn off screen. If using a pin/password or pattern lockscreen double tap entry view to sleep</string>
+    <string name="double_tap_sleep_title">Double tap to sleep</string>
+    <string name="double_tap_sleep_secure_lockscreen_category">Secure lockscreen</string>
+    <string name="status_bar_double_tap_sleep_status_bar_title">Status bar</string>
+    <string name="status_bar_double_tap_sleep_status_bar_summary">Double tap anywhere on the status bar</string>
+    <string name="status_bar_double_tap_sleep_glowpad_title">Glow pad</string>
+    <string name="status_bar_double_tap_sleep_glowpad_summary">Double tap the glow pad</string>
+    <string name="status_bar_double_tap_sleep_pin_password_title">Pin and Password</string>
+    <string name="status_bar_double_tap_sleep_pin_password_summary">Double tap the text entry view</string>
+    <string name="status_bar_double_tap_sleep_pattern_title">Pattern</string>
+    <string name="status_bar_double_tap_sleep_pattern_summary">Double tap anywhere on the pattern view</string>
 
     <!-- Quiet hours -->
     <string name="quiet_hours_title">Quiet hours</string>
