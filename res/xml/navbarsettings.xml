@@ -22,8 +22,7 @@
 
          <com.android.settings.du.preference.SystemSettingSwitchPreference
             android:key="navigation_bar_show"
-            android:title="@string/navbar_enable_bar"
-            android:defaultValue="true" />
+            android:title="@string/navbar_enable_bar" />
 
          <PreferenceScreen
             android:key="navbar_style_dimen_settings"

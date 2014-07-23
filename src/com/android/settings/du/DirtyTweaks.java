@@ -103,7 +103,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
         super.onResume();
 
         if (!DeviceUtils.isTablet(getActivity())) {
-            mContainer.setPadding(30, 30, 30, 30);
+            mContainer.setPadding(0, 0, 0, 0);
         }
     }
 
@@ -207,7 +207,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
 	            getString(R.string.volume_steps_system_title),
 	            getString(R.string.statusbar_title),
 	            getString(R.string.multitasking_title),
-                getString(R.string.navigation_bar_category),
+                    getString(R.string.navigation_bar_category),
 	            getString(R.string.misc_category)};
         } else {
         titleString = new String[]{
@@ -215,7 +215,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
 	            getString(R.string.volume_steps_system_title),
 	            getString(R.string.statusbar_title),
 	            getString(R.string.multitasking_title),
-                getString(R.string.navigation_bar_category),
+                    getString(R.string.navigation_bar_category),
 	            getString(R.string.misc_category)};
         }
         return titleString;
