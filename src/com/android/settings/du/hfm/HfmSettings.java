@@ -16,6 +16,7 @@
 
 package com.android.settings.du.hfm;
 
+import android.app.ActionBar;
 import java.io.IOException;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
@@ -66,6 +67,9 @@ public class HfmSettings extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.hfm_settings);
         ContentResolver resolver = context.getContentResolver();
         PreferenceScreen prefScreen = getPreferenceScreen();
+
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         mHfmDisableAds = (CheckBoxPreference) findPreference(HFM_DISABLE_ADS);
         mHfmDisableAds.setChecked((Settings.System.getInt(resolver,
