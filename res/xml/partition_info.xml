@@ -19,30 +19,35 @@
 
     <!-- /System info -->
     <Preference android:key="system_part_info"
+        android:selectable="false"
         android:title="@string/partition_info_system"
         android:summary="@string/status_unavailable"
         />
 
     <!-- /Data info -->
     <Preference android:key="data_part_info"
+        android:selectable="false"
         android:title="@string/partition_info_data"
         android:summary="@string/status_unavailable"
         />
 
     <!-- /cache info -->
     <Preference android:key="cache_part_info"
+        android:selectable="false"
         android:title="@string/partition_info_cache"
         android:summary="@string/status_unavailable"
         />
 
     <!-- SDCard info (fat) -->
     <Preference android:key="sdcard_part_info_fat"
+        android:selectable="false"
         android:title="@string/partition_info_sdcard"
         android:summary="@string/status_unavailable"
         />
 
     <!-- SDCard info (ext) -->
     <Preference android:key="sdcard_part_info_ext"
+        android:selectable="false"
         android:title="@string/partition_info_sdext"
         android:summary="@string/status_unavailable"
         />

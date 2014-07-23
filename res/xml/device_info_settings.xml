@@ -28,13 +28,13 @@
         </PreferenceScreen>
 
         <!-- DU Changelog -->
-        <PreferenceScreen android:key="changelog"
+       <!-- <PreferenceScreen android:key="changelog"
                 android:title="@string/duchangelog"
                 android:summary="@string/du_summary">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.settings"
                     android:targetClass="us.zamzow.mazwoz.dirtyunicornschangelog.MainActivity" />
-        </PreferenceScreen>
+        </PreferenceScreen> -->
 
         <!-- DU Stats -->
         <PreferenceScreen
@@ -127,6 +127,7 @@
         <!-- Device hardware model -->
         <Preference android:key="device_model"
                 style="?android:preferenceInformationStyle"
+                android:selectable="false"
                 android:title="@string/model_number"
                 android:summary="@string/device_info_default"/>
 
@@ -145,12 +146,14 @@
         <!-- Device FCC equipment id -->
         <Preference android:key="fcc_equipment_id"
                 style="?android:preferenceInformationStyle"
+                android:selectable="false"
                 android:title="@string/fcc_equipment_id"
                 android:summary="@string/device_info_default"/>
 
         <!-- Device Baseband version -->
         <Preference android:key="baseband_version"
                 style="?android:preferenceInformationStyle"
+                android:selectable="false"
                 android:title="@string/baseband_version"
                 android:summary="@string/device_info_default"/>
 
@@ -163,12 +166,14 @@
         <!-- Detailed build version -->
         <Preference android:key="build_number"
                 style="?android:preferenceInformationStyle"
+                android:selectable="false"
                 android:title="@string/build_number"
                 android:summary="@string/device_info_default"/>
 
         <!-- SELinux status information -->
         <Preference android:key="selinux_status"
                 style="?android:preferenceInformationStyle"
+                android:selectable="false"
                 android:title="@string/selinux_status"
                 android:summary="@string/selinux_status_enforcing"/>
 
