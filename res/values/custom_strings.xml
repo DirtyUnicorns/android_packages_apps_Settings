@@ -539,9 +539,6 @@
     <string name="pref_vm_heapsize_title">Dalvik cache heapsize</string>
     <string name="pref_vm_heapsize_summary">This controls the size of the cache the Dalvik VM has access to</string>
     <string name="pref_vm_heapsize_alt_summary">Dalvik VM cache size: %s</string>
-    <string name="pref_lcd_density_title">LCD Density</string>
-    <string name="pref_lcd_density_summary">This controls the density of the LCD (dpi)</string>
-    <string name="pref_lcd_density_alt_summary">LCD Density: %s</string>
     <string name="showbuild_title">Show The Build.Prop</string>
     <string name="buildprop_summary">Find out whats in there</string>
     <string name="showbuild_dialog">Displaying /system/Build.Prop</string>
@@ -2094,5 +2091,27 @@
     <string name="kill_app_longpress_back_title">Back to Kill App</string>
     <string name="kill_app_longpress_back_delay_title">Kill app back button delay</string>
     <string name="kill_app_longpress_back_delay_summary">delay for Back to Kill</string>
+
+    <!-- Density changer -->
+    <string name="dpi">DPI</string>
+    <string name="su_dialog_error_title">Warning</string>
+    <string name="su_dialog_error_message">An error occurred.\n\nPlease check for root access. To activate go into superuser settings and enable root access.</string>
+    <string name="lcd_density_title">LCD Density</string>
+    <string name="lcd_density_category">Options</string>
+    <string name="follow_through_summary">Changing your default LCD density can sometimes cause certain apps to not function properly and/or the playstore to show apps being incompatible with your device</string>
+    <string name="stock_density_title">Change to stock values</string>
+    <string name="stock_density_summary">Tablets generally use 160 dpi while high end devices use 320 or 480 dpi. Older devices use 240 dpi</string>
+    <string name="stock_density_changed_summary">"Density set to: "</string>
+    <string name="reboot_title">Reboot your device</string>
+    <string name="reboot_summary">You need to reboot your device for your change to take effect</string>
+    <string name="custom_density_title">Change to whatever you like</string>
+    <string name="custom_density_summary_invalid">"INVALID DENSITY!"</string>
+    <string name="custom_density">custom</string>
+    <string name="set_custom_density_title">Set custom density</string>
+    <string name="set_custom_density_set">Set</string>
+    <string name="custom_density_dialog_title">WARNING!</string>
+    <string name="custom_density_dialog_summary">Changing your default LCD density can sometimes cause certain apps to not function properly and/or the playstore to show apps being incompatible with your device"</string>
+    <string name="custom_density_dialog_button_got">Got it!</string>
+    <string name="custom_density_dialog_button_reboot">Reboot now</string>
 
 </resources>
