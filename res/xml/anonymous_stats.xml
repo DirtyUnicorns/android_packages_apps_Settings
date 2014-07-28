@@ -19,9 +19,6 @@
     android:title="@string/anonymous_statistics_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <Preference
-        android:layout="@layout/thank_you" android:selectable="false"/>
-
     <CheckBoxPreference
         android:key="pref_anonymous_opt_in"
         android:defaultValue="true"
@@ -38,9 +35,4 @@
     <Preference
         android:key="pref_view_stats"
         android:title="@string/view_stats_title" />
-
-    <Preference
-        android:key="pref_uninstall_romstats"
-        android:title="@string/pref_uninstall" />
-
 </PreferenceScreen>
