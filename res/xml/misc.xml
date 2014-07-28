@@ -22,14 +22,21 @@
 
     <Preference
         android:key="download_center"
-        android:fragment="com.android.settings.du.Download"
+        android:title="@string/download_category"
         android:layout="@layout/preference_download"
-        android:title="@string/download_category" />
+        android:fragment="com.android.settings.du.Download" />
 
     <PreferenceScreen
-        android:fragment="com.android.settings.du.DoubleTapToSleepSettings"
-        android:layout="@layout/preference_doubletap"
         android:key="double_tap_sleep"
-        android:title="@string/double_tap_sleep_title" />
+        android:title="@string/double_tap_sleep_title"
+        android:layout="@layout/preference_doubletap"
+        android:fragment="com.android.settings.du.DoubleTapToSleepSettings" />
+
+    <PreferenceScreen
+        android:key="spam"
+        android:title="@string/block_notifications_title"
+        android:layout="@layout/preference_spam"
+        android:fragment="com.android.settings.du.SpamList" />
+
 
 </PreferenceScreen>

@@ -2088,6 +2088,12 @@
     <string name="kill_app_longpress_back_delay_title">Kill app back button delay</string>
     <string name="kill_app_longpress_back_delay_summary">delay for Back to Kill</string>
 
+    <!-- Spam Notifications -->
+    <string name="spam_added_title">Added %1$s</string>
+    <string name="spam_last_blocked_title">Last blocked %1$s</string>
+    <string name="block_notifications_title">Filter notifications</string>
+    <string name="no_filters_title">No filters set</string>
+
     <!-- Density changer -->
     <string name="dpi">DPI</string>
     <string name="su_dialog_error_title">Warning</string>
