@@ -36,14 +36,12 @@ import android.widget.Toast;
 import com.android.settings.R;
 
 public class AnonymousStats extends PreferenceActivity implements
-		DialogInterface.OnClickListener, DialogInterface.OnDismissListener,
 		Preference.OnPreferenceChangeListener {
 	private long lastPressedTime;
 
 	private static final int PERIOD = 2000;
 
 	private static final String VIEW_STATS = "pref_view_stats";
-	private static final String PREF_UNINSTALL = "pref_uninstall_romstats";
 
 	protected static final String ANONYMOUS_OPT_IN = "pref_anonymous_opt_in";
 	protected static final String ANONYMOUS_FIRST_BOOT = "pref_anonymous_first_boot";
@@ -52,9 +50,6 @@ public class AnonymousStats extends PreferenceActivity implements
 
 	private CheckBoxPreference mEnableReporting;
 	private Preference mViewStats;
-	private Preference btnUninstall;
-	private Dialog mOkDialog;
-	private boolean mOkClicked;
 	private SharedPreferences mPrefs;
 
 	@SuppressWarnings("deprecation")
@@ -65,46 +60,21 @@ public class AnonymousStats extends PreferenceActivity implements
 			addPreferencesFromResource(R.xml.anonymous_stats);
 			PreferenceScreen prefSet = getPreferenceScreen();
 
+                        AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+                        alertDialog.setMessage(this.getResources().getString(R.string.anonymous_statistics_warning));
+                        alertDialog.setTitle(R.string.anonymous_statistics_warning_title);
+                        alertDialog.show();
+
 			mPrefs = this.getSharedPreferences(Utilities.SETTINGS_PREF_NAME, 0);
 			mEnableReporting = (CheckBoxPreference) prefSet
 					.findPreference(ANONYMOUS_OPT_IN);
 			mViewStats = prefSet.findPreference(VIEW_STATS);
-			btnUninstall = prefSet.findPreference(PREF_UNINSTALL);
 
 			boolean firstBoot = mPrefs.getBoolean(ANONYMOUS_FIRST_BOOT, true);
 
 			if (mEnableReporting.isChecked() && firstBoot) {
 				mPrefs.edit().putBoolean(ANONYMOUS_FIRST_BOOT, false).apply();
 				ReportingServiceManager.launchService(this);
-			}
-
-			try {
-				PackageManager pm = getPackageManager();
-				ApplicationInfo appInfo = pm.getApplicationInfo(
-						getPackageName(), 0);
-
-				// Log.d(Utilities.TAG, "App is installed in: " +
-				// appInfo.sourceDir);
-				// Log.d(Utilities.TAG, "App is system: " + (appInfo.flags &
-				// ApplicationInfo.FLAG_SYSTEM));
-
-				if ((appInfo.sourceDir.startsWith("/data/app/"))
-						&& (appInfo.flags & ApplicationInfo.FLAG_SYSTEM) == 0) {
-					// it is a User app
-					btnUninstall
-							.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-								@Override
-								public boolean onPreferenceClick(Preference pref) {
-									uninstallSelf();
-									return true;
-								}
-							});
-				} else {
-					prefSet.removePreference(btnUninstall);
-				}
-
-			} catch (Exception e) {
-				prefSet.removePreference(btnUninstall);
 			}
 
 			NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
@@ -116,29 +86,7 @@ public class AnonymousStats extends PreferenceActivity implements
 	@Override
 	public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen,
 			Preference preference) {
-		if (preference == mEnableReporting) {
-			if (mEnableReporting.isChecked()) {
-				// Display the confirmation dialog
-				mOkClicked = false;
-				if (mOkDialog != null) {
-					mOkDialog.dismiss();
-					mOkDialog = null;
-				}
-				mOkDialog = new AlertDialog.Builder(this)
-						.setMessage(
-								this.getResources().getString(
-										R.string.anonymous_statistics_warning))
-						.setTitle(R.string.anonymous_statistics_warning_title)
-						.setPositiveButton(android.R.string.yes, this)
-						.setNeutralButton(
-								getString(R.string.anonymous_learn_more), this)
-						.setNegativeButton(android.R.string.no, this).show();
-				mOkDialog.setOnDismissListener(this);
-			} else {
-				// Disable reporting
-				mPrefs.edit().putBoolean(ANONYMOUS_OPT_IN, false).apply();
-			}
-		} else if (preference == mViewStats) {
+		if (preference == mViewStats) {
 			// Display the stats page
 			Intent intent = new Intent (this, ViewStats.class);
 			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -160,33 +108,4 @@ public class AnonymousStats extends PreferenceActivity implements
 	public boolean onPreferenceChange(Preference preference, Object newValue) {
 		return false;
 	}
-
-	@Override
-	public void onDismiss(DialogInterface dialog) {
-		if (!mOkClicked) {
-			mEnableReporting.setChecked(false);
-		}
-	}
-
-	@Override
-	public void onClick(DialogInterface dialog, int which) {
-		if (which == DialogInterface.BUTTON_POSITIVE) {
-			mOkClicked = true;
-			mPrefs.edit().putBoolean(ANONYMOUS_OPT_IN, true).apply();
-			ReportingServiceManager.launchService(this);
-		} else if (which == DialogInterface.BUTTON_NEGATIVE) {
-			mEnableReporting.setChecked(false);
-		} else {
-			Uri uri = Uri
-					.parse("http://www.cyanogenmod.com/blog/cmstats-what-it-is-and-why-you-should-opt-in");
-			startActivity(new Intent(Intent.ACTION_VIEW, uri));
-		}
-	}
-
-	public void uninstallSelf() {
-		Intent intent = new Intent(Intent.ACTION_DELETE);
-		intent.setData(Uri.parse("package:" + getPackageName()));
-		startActivity(intent);
-	}
-
 }
