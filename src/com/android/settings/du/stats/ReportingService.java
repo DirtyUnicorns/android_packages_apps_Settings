@@ -127,7 +127,7 @@ public class ReportingService extends Service {
 	@SuppressWarnings("deprecation")
 	private void promptUser() {
 		NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-		Notification n = new Notification(R.drawable.icon,
+		Notification n = new Notification(R.drawable.ic_dt_stats,
 				getString(R.string.notification_ticker),
 				System.currentTimeMillis());
 		Intent nI = new Intent(this, AnonymousStats.class);

@@ -61,6 +61,7 @@ public class AnonymousStats extends PreferenceActivity implements
 			PreferenceScreen prefSet = getPreferenceScreen();
 
                         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+                        alertDialog.setIcon(R.drawable.ic_dt_stats);
                         alertDialog.setMessage(this.getResources().getString(R.string.anonymous_statistics_warning));
                         alertDialog.setTitle(R.string.anonymous_statistics_warning_title);
                         alertDialog.show();
