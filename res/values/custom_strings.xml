@@ -1130,6 +1130,8 @@
     <!-- Navigation ring shortcuts -->
     <string name="navigation_bar_title">NavBar</string>
     <string name="navigation_ring_title">NavBar Ring</string>
+    <string name="navigation_bar_left_title">Left handed mode</string>
+    <string name="navigation_bar_left_summary">Place the navigation bar on the left side of the screen in landscape mode</string>
     <string name="navring_target_reset_message">Delete all user created navigation bar shortcuts and restore to default?</string>
     <string name="navring_target_reset">Navigation bar shortcuts reset to default</string>
     <string name="navring_action_open_ime_switcher">Open IME Switcher</string>
