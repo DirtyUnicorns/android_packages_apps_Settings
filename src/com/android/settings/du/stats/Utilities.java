@@ -106,7 +106,7 @@ public class Utilities {
 	}
 
 	public static String getRomVersion() {
-		return SystemProperties.get("ro.romstats.version", "7.7");
+		return SystemProperties.get("ro.romstats.version", "7.8");
 	}
 
 	public static long getTimeFrame() {
