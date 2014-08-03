@@ -117,4 +117,8 @@
     <!-- Fingerprint quick pulldown -->
     <string name="fp_quick_pulldown_title">Fingerprint quick pulldown</string>
     <string name="fp_quick_pulldown_summary">Expand the quick settings panel with only one swipe on the fingerprint sensor.</string>
+
+    <!-- Scramble PIN layout when unlocking -->
+    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
 </resources>
