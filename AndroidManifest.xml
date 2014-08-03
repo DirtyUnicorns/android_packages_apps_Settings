@@ -1737,6 +1737,7 @@
         <activity android:name=".du.PropModder" />
         <activity android:name=".du.Recents" />
         <activity android:name=".du.ScreenStateToggles" />
+        <activity android:name=".du.SpamList" />
         <activity android:name=".du.StatusBarColor" />
         <activity android:name=".du.Traffic" />
         <activity android:name=".du.animations.NotificationPanelSettings" />
