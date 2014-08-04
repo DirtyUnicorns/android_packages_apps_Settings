@@ -936,9 +936,19 @@
     <!-- Lockscreen style settings -->
     <string name="lockscreen_style_reset_message">Reset all lockscreen colors?</string>
     <string name="lockscreen_icon_title">Lock handle icon</string>
-    <string name="lockscreen_lock_icon_custom">Custom Icon</string>
-    <string name="lockscreen_lock_icon_default">Default Icon</string>
-    <string name="lockscreen_lock_icon_du">DU Icon</string>
+    <string name="lockscreen_lock_icon_custom">Custom</string>
+    <string name="lockscreen_lock_icon_default">Default</string>
+    <string name="lockscreen_lock_icon_du">DU Icon #1</string>
+    <string name="lockscreen_lock_icon_du_one">DU Icon #2</string>
+    <string name="lockscreen_lock_icon_du_two">DU Icon #3</string>
+    <string name="lockscreen_lock_icon_du_three">DU Icon #4</string>
+    <string name="lockscreen_lock_icon_du_four">DU Icon #5</string>
+    <string name="lockscreen_lock_icon_du_five">DU Icon #6</string>
+    <string name="lockscreen_lock_icon_du_six">DU Icon #7</string>
+    <string name="lockscreen_lock_icon_du_seven">DU Icon #8</string>
+    <string name="lockscreen_lock_icon_du_eight">DU Icon #9</string>
+    <string name="lockscreen_lock_icon_du_nine">DU Icon #10</string>
+    <string name="lockscreen_lock_icon_du_ten">DU Icon #11</string>
     <string name="lockscreen_colorize_handle_title">Colorize custom handle</string>
     <string name="lockscreen_colorize_handle_summary">Lock color will be set to your custom image</string>
     <string name="lockscreen_style_title">Theme options</string>

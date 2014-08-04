@@ -947,14 +947,34 @@
     <!-- Lockscreen lock icon values -->
     <string-array name="lock_icon_entries">
         <item>@string/lockscreen_lock_icon_custom</item>
-        <item>@string/lockscreen_lock_icon_du</item>
         <item>@string/lockscreen_lock_icon_default</item>
+        <item>@string/lockscreen_lock_icon_du</item>
+        <item>@string/lockscreen_lock_icon_du_one</item>
+        <item>@string/lockscreen_lock_icon_du_two</item>
+        <item>@string/lockscreen_lock_icon_du_three</item>
+        <item>@string/lockscreen_lock_icon_du_four</item>
+        <item>@string/lockscreen_lock_icon_du_five</item>
+        <item>@string/lockscreen_lock_icon_du_six</item>
+        <item>@string/lockscreen_lock_icon_du_seven</item>
+        <item>@string/lockscreen_lock_icon_du_eight</item>
+        <item>@string/lockscreen_lock_icon_du_nine</item>
+        <item>@string/lockscreen_lock_icon_du_ten</item>
     </string-array>
 
     <string-array name="lock_icon_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
     </string-array>
 
     <!-- Driving Mode -->
