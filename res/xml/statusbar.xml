@@ -21,27 +21,32 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
          <PreferenceScreen
-            android:key="battery_style_pref"
+            android:key="battery_and_clock"
             android:layout="@layout/preference_statusbar_tweaks"
             android:fragment="com.android.settings.du.BatteryIconStyle"
             android:title="@string/status_bar_header" />
 
          <PreferenceScreen
-            android:key="battery_style_pref"
+            android:key="carrier_label"
+            android:layout="@layout/preference_carrierlabel"
+            android:fragment="com.android.settings.du.CarrierLabel"
+            android:title="@string/carrier_label_title" />
+
+         <PreferenceScreen
+            android:key="statusbar_color"
             android:layout="@layout/preference_statusbarcolor"
             android:fragment="com.android.settings.du.StatusBarColor"
             android:title="@string/custom_status_bar_header_title" />
 
-         <Preference
-            android:key="lockscreen_targets"
+         <PreferenceScreen
+            android:key="traffic_indicators"
             android:fragment="com.android.settings.du.Traffic"
             android:layout="@layout/preference_traffic"
             android:title="@string/misc_traffic" />
 
          <PreferenceScreen
-            android:id="@+id/weather"
-            android:title="@string/weather_settings_title"
-            android:icon="@drawable/ic_du_weather"
+            android:key="weather"
+            android:fragment="com.android.settings.du.Weather"
             android:layout="@layout/preference_weather"
-            android:fragment="com.android.settings.du.Weather" />
+            android:title="@string/weather_settings_title" />
 </PreferenceScreen>

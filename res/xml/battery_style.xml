@@ -58,9 +58,4 @@
         android:fragment="com.android.settings.du.StatusBarClockStyle"
         android:key="clock_style_pref"
         android:title="@string/status_bar_clock" />
-
-    <PreferenceScreen
-        android:key="carrier_label"
-        android:fragment="com.android.settings.du.CarrierLabel"
-        android:title="@string/carrier_label_title" />
 </PreferenceScreen>
