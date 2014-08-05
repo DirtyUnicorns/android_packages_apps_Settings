@@ -1783,19 +1783,6 @@
     <string name="playstore_title">Play Store v4.9.13</string>
     <string name="playstore_summary">Updated playstore with material design</string>
 
-    <!-- screen state service -->
-    <string name="screen_state_toggles_title">Suspend Actions</string>
-    <string name="screen_state_toggles_enable_title">Enable</string>
-    <string name="screen_state_toggles_enable_summary">Actions will be executed on screen off. On screen on the previous state will be restored.</string>
-    <string name="screen_state_toggles_mobile_title">Mobile networks</string>
-    <string name="screen_state_toggles_location_title">Location</string>
-    <string name="screen_state_toggles_twog">Switch to 2G</string>
-    <string name="screen_state_toggles_twog_summary">Network mode will be switched to 2G on screen off</string>
-    <string name="screen_state_toggles_gps">Disable GPS</string>
-    <string name="screen_state_toggles_gps_summary">GPS based location service will be disabled on screen off</string>
-    <string name="screen_state_toggles_mobile_data">Disable mobile data</string>
-    <string name="screen_state_toggles_mobile_data_summary">Mobile data will be disabled on screen off</string>
-
     <!-- Toast Animations -->
     <string name="toast_animation_title">Toast</string>
     <string name="toast_none_animation">None</string>
@@ -2129,5 +2116,24 @@
     <string name="custom_density_dialog_summary">Changing your default LCD density can sometimes cause certain apps to not function properly and/or the playstore to show apps being incompatible with your device"</string>
     <string name="custom_density_dialog_button_got">Got it!</string>
     <string name="custom_density_dialog_button_reboot">Reboot now</string>
+
+    <!-- Telo Radio -->
+    <string name="telo_radio_settings_title">Connection manager</string>
+    <string name="telo_radio_options_category">Screen on options</string>
+    <string name="telo_radio_lte_title">LTE</string>
+    <string name="telo_radio_lte_summary">Select this option if you use LTE (4G).</string>
+    <string name="telo_radio_2g_wifi_title">2G on Wi-Fi</string>
+    <string name="telo_radio_2g_wifi_title_summary">When Wi-Fi is connected network mode is switched to 2G.</string>
+    <string name="telo_radio_2g_screenoff_category">Screen off options</string>
+    <string name="telo_radio_2g_screenoff_title">2G with screen off</string>
+    <string name="telo_radio_2g_screenoff_summary">The device will switch to 2G when the screen is off.</string>
+    <string name="telo_radio_2g_screenoff_timeout_title">Time to switch to 2G</string>
+    <string name="telo_radio_2g_3min">3 minutes</string>
+    <string name="telo_radio_2g_5min">5 minutes</string>
+    <string name="telo_radio_2g_10min">10 minutes</string>
+    <string name="telo_radio_2g_15min">15 minutes</string>
+    <string name="telo_radio_2g_20min">20 minutes</string>
+    <string name="telo_radio_go_3g_unlock_title">3G Unlock</string>
+    <string name="telo_radio_go_3g_unlock_summary">When device is unlocked network mode switches to 3G again.</string>
 
 </resources>
