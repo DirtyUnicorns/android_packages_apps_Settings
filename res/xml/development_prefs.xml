@@ -316,6 +316,7 @@
 
      <CheckBoxPreference
          android:key="chamber_of_unlocked_secrets"
-         android:title="@string/chamber_title" />
+         android:title="@string/chamber_title"
+         android:summary="@string/chamber_summary" />
 
 </PreferenceScreen>

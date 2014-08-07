@@ -1924,7 +1924,8 @@
 
     <!-- Chamber of Secrets -->
     <string name="chamber_title">Chamber of secrets</string>
-    <string name="chamber_toast">The chamber of secrets has opened</string>
+    <string name="chamber_summary">Used for debugging purposes\n(mainly for advanced users/developers)</string>
+    <string name="chamber_toast">Use at your own RISK!!!</string>
 
     <!-- Lockscreen rotation -->
     <string name="display_lockscreen_rotation_title">Lockscreen</string>
