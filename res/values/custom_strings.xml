@@ -185,9 +185,6 @@
     <string name="default_string">Default</string>
     <string name="additional_options_title">Additional options</string>
 
-    <!-- TRDS Settings -->
-    <string name="trds_settings_title">Dark UI</string>
-
     <!-- Quick settings -->
     <string name="quick_pulldown_title">Quick Settings pulldown</string>
     <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
@@ -1434,6 +1431,7 @@
 
     <!-- Themes -->
     <string name="theme_settings_title">Dark UI</string>
+    <string name="theme_settings_summary">Enabling Dark UI may or may not conflict with Theme Packs</string>
     <string name="theme_auto_mode_title">Switch theme</string>
     <string name="theme_auto_mode_off">Manual</string>
     <string name="theme_auto_mode_lightsensor">On light condition change</string>

@@ -56,6 +56,9 @@ public class ThemeSettings extends SettingsPreferenceFragment {
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_theme);
+
         mThemeAutoMode = (ListPreference) prefSet.findPreference(THEME_AUTO_MODE);
         mThemeAutoMode.setValue(String.valueOf(
                 Settings.Secure.getIntForUser(getContentResolver(),
