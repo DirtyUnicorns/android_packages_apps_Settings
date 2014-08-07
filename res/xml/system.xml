@@ -51,16 +51,16 @@
             android:title="@string/voice_tts_title" />
 
          <PreferenceScreen
-            android:key="connection_manager"
-            android:fragment="com.android.settings.du.TeloRadioSettings"
-            android:layout="@layout/preference_connectionmanager"
-            android:title="@string/telo_radio_settings_title" />
-
-         <PreferenceScreen
             android:id="@+id/wakelock_blocker"
             android:layout="@layout/preference_wakelockblocker"
             android:title="@string/wakelock_blocker"
             android:fragment="com.android.settings.du.WakeLockBlocker" />
+
+         <PreferenceScreen
+            android:id="@+id/screen_state_service"
+            android:layout="@layout/preference_suspend"
+            android:title="@string/screen_state_toggles_title"
+            android:fragment="com.android.settings.du.ScreenStateToggles" />
 
          <PreferenceScreen
             android:key="identicons"
