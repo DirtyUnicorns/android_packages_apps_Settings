@@ -30,6 +30,8 @@ import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.UserHandle;
+import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceGroup;
@@ -67,6 +69,7 @@ public class DNDSettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_HEADS_UP_TIMEOUT = "heads_up_timeout";
     private static final String KEY_HEADS_UP_FS_TIMEOUT = "heads_up_fullscreen_timeout";
+    private static final String PREF_HEADS_UP_EXPANDED = "heads_up_expanded";
 
     private PackageAdapter mPackageAdapter;
     private PackageManager mPackageManager;
@@ -76,6 +79,7 @@ public class DNDSettings extends SettingsPreferenceFragment implements
     private Preference mAddBlacklistPref;
     private SeekBarPreference mHeadsUpTimeout;
     private SeekBarPreference mHeadsUpFSTimeout;
+    private CheckBoxPreference mHeadsUpExpanded;
 
     private String mDndPackageList;
     private String mBlacklistPackageList;
@@ -120,6 +124,11 @@ public class DNDSettings extends SettingsPreferenceFragment implements
         mHeadsUpFSTimeout.setValue(Settings.System.getInt(getContentResolver(),
                 Settings.System.HEADS_UP_FS_TIMEOUT, 700));
         mHeadsUpFSTimeout.setOnPreferenceChangeListener(this);
+
+        mHeadsUpExpanded = (CheckBoxPreference) findPreference(PREF_HEADS_UP_EXPANDED);
+        mHeadsUpExpanded.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.HEADS_UP_EXPANDED, 0, UserHandle.USER_CURRENT) == 1);
+        mHeadsUpExpanded.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -433,6 +442,10 @@ public class DNDSettings extends SettingsPreferenceFragment implements
             int length = ((Integer) objValue).intValue();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.HEADS_UP_FS_TIMEOUT, length);
+        } else if (preference == mHeadsUpExpanded) {
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.HEADS_UP_EXPANDED,
+                    (Boolean) objValue ? 1 : 0, UserHandle.USER_CURRENT);
         }
         return true;
     }

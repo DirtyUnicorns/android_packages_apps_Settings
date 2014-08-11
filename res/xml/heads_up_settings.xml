@@ -22,6 +22,13 @@
             android:title="@string/heads_up_floating_window"
             android:defaultValue="true" />
 
+    <CheckBoxPreference
+            android:key="heads_up_expanded"
+            android:title="@string/heads_up_expanded_title"
+            android:summary="@string/heads_up_expanded_summary"
+            android:persistent="false"
+            android:defaultValue="false" />
+
     <com.android.settings.chameleonos.SeekBarPreference
             android:key="heads_up_timeout"
             android:title="@string/heads_up_timeout"
