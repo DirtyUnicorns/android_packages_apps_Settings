@@ -77,4 +77,18 @@
                 android:entries="@array/screen_off_animation_entries"
                 android:entryValues="@array/screen_off_animation_values" />
 
+        <com.android.settings.hardware.DisplayColor
+                android:key="color_calibration"
+                android:title="@string/color_calibration_title"
+                android:dialogTitle="@string/color_calibration_title"
+                android:summary="@string/color_calibration_summary"
+                android:persistent="false" />
+
+        <com.android.settings.hardware.DisplayGamma
+                android:key="gamma_tuning"
+                android:title="@string/gamma_tuning_title_head"
+                android:dialogTitle="@string/gamma_tuning_title_head"
+                android:summary="@string/gamma_tuning_summary_head"
+                android:persistent="false" />
+
 </PreferenceScreen>
