@@ -22,20 +22,56 @@
         android:title="@string/gapps_category">
 
     <Preference
-        android:key="core_gapps"
-        android:layout="@layout/preference_playstore"
-        android:title="@string/coregapps_title"
-        android:summary="@string/coregapps_summary" />
+        android:key="banks_standard_gapps"
+        android:layout="@layout/preference_banks"
+        android:title="@string/banks_standard_gapps_title"
+        android:summary="@string/banks_standard_gapps_summary" />
 
     <Preference
-        android:key="pa_gapps"
-        android:layout="@layout/preference_playstore"
-        android:title="@string/pagapps_title"
-        android:summary="@string/pagapps_summary" />
+        android:key="banks_minimal_gapps"
+        android:layout="@layout/preference_banks"
+        android:title="@string/banks_minimal_gapps_title"
+        android:summary="@string/banks_minimal_gapps_summary" />
+
+    <Preference
+        android:key="banks_minimal_google_search_gapps"
+        android:layout="@layout/preference_banks"
+        android:title="@string/banks_minimal_google_search_gapps_title"
+        android:summary="@string/banks_minimal_google_search_gapps_summary" />
+
+    <Preference
+        android:key="banks_gapps_addons"
+        android:layout="@layout/preference_banks"
+        android:title="@string/banks_gapps_addons_title"
+        android:summary="@string/banks_gapps_addons_summary" />
+
+    <Preference
+        android:key="pa_stock_gapps"
+        android:layout="@layout/preference_pagapps"
+        android:title="@string/pa_stock_gapps_title"
+        android:summary="@string/pa_stock_gapps_summary" />
+
+    <Preference
+        android:key="pa_mini_gapps"
+        android:layout="@layout/preference_pagapps"
+        android:title="@string/pa_mini_gapps_title"
+        android:summary="@string/pa_mini_gapps_summary" />
+
+    <Preference
+        android:key="pa_micro_gapps"
+        android:layout="@layout/preference_pagapps"
+        android:title="@string/pa_micro_gapps_title"
+        android:summary="@string/pa_micro_gapps_summary" />
+
+    <Preference
+        android:key="pa_full_gapps"
+        android:layout="@layout/preference_pagapps"
+        android:title="@string/pa_full_gapps_title"
+        android:summary="@string/pa_full_gapps_summary" />
 
     <Preference
         android:key="tbo_gapps"
-        android:layout="@layout/preference_playstore"
+        android:layout="@layout/preference_tbogapps"
         android:title="@string/tbogapps_title"
         android:summary="@string/tbogapps_summary" />
 
@@ -76,7 +112,7 @@
 
     <Preference
         android:key="playstore"
-        android:layout="@layout/preference_playstore"
+        android:layout="@layout/preference_pagapps"
         android:title="@string/playstore_title"
         android:summary="@string/playstore_summary" />
 
