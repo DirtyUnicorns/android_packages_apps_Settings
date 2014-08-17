@@ -1735,6 +1735,7 @@
         <activity android:name=".du.NavBarSettings" />
         <activity android:name=".du.NavbarDimenSettings" />
         <activity android:name=".du.NotificationDrawerStyle" />
+        <activity android:name=".du.OverscrollEffects" />
         <activity android:name=".du.PowerMenu" />
         <activity android:name=".du.PropModder" />
         <activity android:name=".du.Recents" />

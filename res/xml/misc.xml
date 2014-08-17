@@ -38,5 +38,10 @@
         android:layout="@layout/preference_spam"
         android:fragment="com.android.settings.du.SpamList" />
 
+    <PreferenceScreen
+        android:key="overscroll_effects"
+        android:title="@string/ui_overscroll_title"
+        android:layout="@layout/preference_overscroll"
+        android:fragment="com.android.settings.du.OverscrollEffects" />
 
 </PreferenceScreen>
