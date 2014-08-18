@@ -47,6 +47,9 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settings.util.Helpers;
+import com.android.settings.util.CMDProcessor;
+
+import java.io.File;
 
 public class MiscTweaks extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -66,6 +69,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
     private static final String SREC_ENABLE_MIC = "srec_enable_mic";
     private static final String STATUS_BAR_CUSTOM_HEADER = "custom_status_bar_header";
     private static final String STATUSBAR_6BAR_SIGNAL = "statusbar_6bar_signal";
+    private static final String DISABLE_BOOTAUDIO = "disable_bootaudio";
 
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mStatusBarNotifCount;
@@ -81,6 +85,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
     private CheckBoxPreference mSrecEnableMic;
     private CheckBoxPreference mStatusBarCustomHeader;
     private CheckBoxPreference mStatusBarSixBarSignal;
+    private CheckBoxPreference mDisableBootAudio;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -163,6 +168,18 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
         mStatusBarSixBarSignal = (CheckBoxPreference) findPreference(STATUSBAR_6BAR_SIGNAL);
         mStatusBarSixBarSignal.setChecked((Settings.System.getInt(resolver,
                 Settings.System.STATUSBAR_6BAR_SIGNAL, 0) == 1));
+
+        mDisableBootAudio = (CheckBoxPreference) findPreference("disable_bootaudio");
+
+        if(!new File("/system/media/audio.mp3").exists() &&
+                !new File("/system/media/boot_audio").exists() ) {
+            mDisableBootAudio.setEnabled(false);
+            mDisableBootAudio.setSummary(R.string.disable_bootaudio_summary_disabled);
+        } else {
+            mDisableBootAudio.setChecked(!new File("/system/media/audio.mp3").exists());
+            if (mDisableBootAudio.isChecked())
+                mDisableBootAudio.setSummary(R.string.disable_bootaudio_summary);
+        }
     }
 
     @Override
@@ -196,6 +213,21 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
             boolean checked = ((CheckBoxPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUSBAR_6BAR_SIGNAL, checked ? 1:0);
+            return true;
+        } else if (preference == mDisableBootAudio) {
+            boolean checked = ((CheckBoxPreference) preference).isChecked();
+            if (checked) {
+                Helpers.getMount("rw");
+                new CMDProcessor().su
+                        .runWaitFor("mv /system/media/audio.mp3 /system/media/boot_audio");
+                Helpers.getMount("ro");
+                preference.setSummary(R.string.disable_bootaudio_summary);
+            } else {
+                Helpers.getMount("rw");
+                new CMDProcessor().su
+                        .runWaitFor("mv /system/media/boot_audio /system/media/audio.mp3");
+                Helpers.getMount("ro");
+            }
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);

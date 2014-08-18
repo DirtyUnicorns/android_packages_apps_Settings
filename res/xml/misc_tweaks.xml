@@ -22,6 +22,11 @@
         android:title="@string/misc_tweaks_system"/>
 
     <CheckBoxPreference
+        android:key="disable_bootaudio"
+        android:title="@string/disable_bootaudio_title"
+        android:persistent="false" />
+
+    <CheckBoxPreference
         android:key="disable_fc_notifications"
         android:title="@string/disable_fc_notifications_title"
         android:summary="@string/disable_fc_notifications_summary"
