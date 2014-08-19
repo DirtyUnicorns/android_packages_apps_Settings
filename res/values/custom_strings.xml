@@ -1425,6 +1425,8 @@
     <string name="hfm_dialog_failed">Updating hosts file failed. Please try again.</string>
     <string name="hfm_dialog_success">/4 hosts sources successfully applied!</string>
     <string name="hfm_dialog_conn_error">Error: No network connectivity</string>
+    <string name="status_bar_six_bar_signal_title">Enable Six Bar Signal</string>
+    <string name="status_bar_six_bar_signal_summary">Enable to show six bar signal in statusbar/qs</string>
 
     <!-- Fast charge QS tile -->
     <string name="title_tile_fcharge">Fast charge</string>
