@@ -4898,6 +4898,6 @@
     <string name="regulatory_info_text"></string>
 
     <!-- Text for disabling immersive mode messages -->
-    <string name="disable_immersive_message_title">Diable Immersive Mode Messages</string>
+    <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
     <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
 </resources>
