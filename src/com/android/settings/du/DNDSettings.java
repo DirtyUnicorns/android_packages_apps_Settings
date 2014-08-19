@@ -70,6 +70,7 @@ public class DNDSettings extends SettingsPreferenceFragment implements
     private static final String KEY_HEADS_UP_TIMEOUT = "heads_up_timeout";
     private static final String KEY_HEADS_UP_FS_TIMEOUT = "heads_up_fullscreen_timeout";
     private static final String PREF_HEADS_UP_EXPANDED = "heads_up_expanded";
+    private static final String PREF_HEADS_UP_EXCLUDE_FROM_LOCK_SCREEN = "heads_up_exclude_from_lock_screen";
 
     private PackageAdapter mPackageAdapter;
     private PackageManager mPackageManager;
@@ -80,6 +81,7 @@ public class DNDSettings extends SettingsPreferenceFragment implements
     private SeekBarPreference mHeadsUpTimeout;
     private SeekBarPreference mHeadsUpFSTimeout;
     private CheckBoxPreference mHeadsUpExpanded;
+    private CheckBoxPreference mHeadsExcludeFromLockscreen;
 
     private String mDndPackageList;
     private String mBlacklistPackageList;
@@ -129,6 +131,11 @@ public class DNDSettings extends SettingsPreferenceFragment implements
         mHeadsUpExpanded.setChecked(Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.HEADS_UP_EXPANDED, 0, UserHandle.USER_CURRENT) == 1);
         mHeadsUpExpanded.setOnPreferenceChangeListener(this);
+
+        mHeadsExcludeFromLockscreen = (CheckBoxPreference) findPreference(PREF_HEADS_UP_EXCLUDE_FROM_LOCK_SCREEN);
+        mHeadsExcludeFromLockscreen.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.HEADS_UP_EXCLUDE_FROM_LOCK_SCREEN, 0, UserHandle.USER_CURRENT) == 1);
+        mHeadsExcludeFromLockscreen.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -445,6 +452,10 @@ public class DNDSettings extends SettingsPreferenceFragment implements
         } else if (preference == mHeadsUpExpanded) {
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.HEADS_UP_EXPANDED,
+                    (Boolean) objValue ? 1 : 0, UserHandle.USER_CURRENT);
+        } else if (preference == mHeadsExcludeFromLockscreen) {
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.HEADS_UP_EXCLUDE_FROM_LOCK_SCREEN,
                     (Boolean) objValue ? 1 : 0, UserHandle.USER_CURRENT);
         }
         return true;
