@@ -25,13 +25,19 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.preference.CheckBoxPreference;
+import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.Preference.OnPreferenceChangeListener;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.util.Log;
 import android.view.WindowManagerGlobal;
 import android.view.IWindowManager;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import com.android.internal.util.slim.DeviceUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -43,6 +49,11 @@ public class NavBarSettings extends SettingsPreferenceFragment implements
 
     private final Configuration mCurConfig = new Configuration();
 
+    private static final String MISC_CAT = "misc_cat";
+    private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
+
+    CheckBoxPreference mNavigationBarLeftPref;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +62,14 @@ public class NavBarSettings extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
 
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mNavigationBarLeftPref = (CheckBoxPreference) findPreference(KEY_NAVIGATION_BAR_LEFT);
+
+        if (!Utils.isPhone(getActivity())) {
+            if(mNavigationBarLeftPref != null)
+                getPreferenceScreen().removePreference(mNavigationBarLeftPref);
+                getPreferenceScreen().removePreference((PreferenceCategory) findPreference(MISC_CAT));
+        }
     }
 
     @Override
