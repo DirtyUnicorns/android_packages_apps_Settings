@@ -969,9 +969,6 @@
     <!-- ADB QS tile -->
     <string name="title_tile_network_adb">ADB over network</string>
 
-    <!-- GPS QS tile -->
-    <string name="title_tile_gps">GPS</string>
-
     <!-- StatusBar Battery -->
     <string name="bars_and_menus_category_status_bar_title">Status bar</string>
     <string name="recents_category">Recents</string>

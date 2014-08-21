@@ -49,7 +49,6 @@ import static com.android.internal.util.slim.QSConstants.TILE_WIFI;
 import static com.android.internal.util.slim.QSConstants.TILE_WIFIAP;
 import static com.android.internal.util.slim.QSConstants.TILE_REBOOT;
 import static com.android.internal.util.slim.QSConstants.TILE_NETWORKADB;
-import static com.android.internal.util.slim.QSConstants.TILE_GPS;
 import static com.android.internal.util.slim.QSConstants.TILE_FCHARGE;
 import static com.android.internal.util.slim.QSConstants.TILE_THEME;
 import static com.android.internal.util.slim.QSConstants.TILE_SCREENSHOT;
@@ -165,9 +164,6 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_QUICKRECORD, R.string.title_tile_quick_record,
                 "com.android.systemui:drawable/ic_qs_quickrecord"));
-        registerTile(new QuickSettingsUtil.TileInfo(
-                TILE_GPS, R.string.title_tile_gps,
-                "com.android.systemui:drawable/ic_qs_gps_off"));
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_FCHARGE, R.string.title_tile_fcharge,
                 "com.android.systemui:drawable/ic_qs_fcharge_off"));
