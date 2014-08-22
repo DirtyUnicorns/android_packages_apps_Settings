@@ -18,9 +18,6 @@
 
 package com.android.settings.du;
 
-import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.R;
-
 import android.app.ActionBar;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -29,9 +26,16 @@ import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
+
+import com.android.internal.util.slim.DeviceUtils;
+
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
 public class PowerMenu extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -86,9 +90,14 @@ public class PowerMenu extends SettingsPreferenceFragment implements
         mOnTheGoPowerMenu.setOnPreferenceChangeListener(this);
 
         mMobileDataPowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_MOBILE_DATA);
-        mMobileDataPowerMenu.setChecked(Settings.System.getInt(resolver,
+        if (mMobileDataPowerMenu != null) {
+            mMobileDataPowerMenu.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.MOBILE_DATA_IN_POWER_MENU, 0) == 1);
-        mMobileDataPowerMenu.setOnPreferenceChangeListener(this);
+                mMobileDataPowerMenu.setOnPreferenceChangeListener(this);
+            if (!DeviceUtils.deviceSupportsMobileData(getActivity())) {
+                getPreferenceScreen().removePreference(findPreference("power_menu_mobile_data"));
+            }
+        }
 
         mAirplaneModePowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_AIRPLANE_MODE);
         mAirplaneModePowerMenu.setChecked(Settings.System.getInt(resolver,

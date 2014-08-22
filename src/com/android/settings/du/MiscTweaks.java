@@ -42,6 +42,8 @@ import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
 
+import com.android.internal.util.slim.DeviceUtils;
+
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -63,6 +65,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
     private static final String VOICEMAIL_BREATH = "voicemail_breath";
     private static final String EMULATE_MENU_KEY = "emulate_menu_key";
     private static final String KEY_SHOW_4G = "show_4g_for_lte";
+    private static final String CATEGORY_STATUSBAR_SIGNAL = "statusbar_signal_title";
     private static final String DISABLE_FC_NOTIFICATIONS = "disable_fc_notifications";
     private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
     private static final String SREC_ENABLE_TOUCHES = "srec_enable_touches";
@@ -79,6 +82,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
     private CheckBoxPreference mVoicemailBreath;
     private CheckBoxPreference mEmulateMenuKey;
     private CheckBoxPreference mShow4G;
+    private PreferenceGroup mStatusbarSignalCategory;
     private CheckBoxPreference mDisableFC;
     private CheckBoxPreference mDisableIM;
     private CheckBoxPreference mSrecEnableTouches;
@@ -142,8 +146,17 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
                 Settings.System.EMULATE_HW_MENU_KEY, 0) == 1);
         mEmulateMenuKey.setOnPreferenceChangeListener(this);
 
+        mStatusbarSignalCategory = (PreferenceGroup) findPreference(CATEGORY_STATUSBAR_SIGNAL);
+
         mShow4G = (CheckBoxPreference) findPreference(KEY_SHOW_4G);
-            mShow4G.setOnPreferenceChangeListener(this);
+        if (mShow4G != null) {
+            mShow4G.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.SHOW_4G_FOR_LTE, 0) == 1);
+                mShow4G.setOnPreferenceChangeListener(this);
+            if (!DeviceUtils.deviceSupportsMobileData(getActivity())) {
+                mStatusbarSignalCategory.removePreference(findPreference(KEY_SHOW_4G));
+            }
+        }
 
         mDisableFC = (CheckBoxPreference) findPreference(DISABLE_FC_NOTIFICATIONS);
         mDisableFC.setChecked((Settings.System.getInt(resolver,
