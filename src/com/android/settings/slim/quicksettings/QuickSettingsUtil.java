@@ -33,6 +33,7 @@ import static com.android.internal.util.slim.QSConstants.TILE_LOCATION;
 import static com.android.internal.util.slim.QSConstants.TILE_LOCKSCREEN;
 import static com.android.internal.util.slim.QSConstants.TILE_MOBILEDATA;
 import static com.android.internal.util.slim.QSConstants.TILE_MUSIC;
+import static com.android.internal.util.slim.QSConstants.TILE_NETWORKMODE;
 import static com.android.internal.util.slim.QSConstants.TILE_NFC;
 import static com.android.internal.util.slim.QSConstants.TILE_QUICKRECORD;
 import static com.android.internal.util.slim.QSConstants.TILE_QUIETHOURS;
@@ -116,6 +117,9 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_MOBILEDATA, R.string.title_tile_mobiledata,
                 "com.android.systemui:drawable/ic_qs_signal_full_4"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_NETWORKMODE, R.string.title_tile_networkmode,
+                "com.android.systemui:drawable/ic_qs_2g3g_on"));
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_NFC, R.string.title_tile_nfc,
                 "com.android.systemui:drawable/ic_qs_nfc_on"));
@@ -232,6 +236,7 @@ public class QuickSettingsUtil {
         if (!DeviceUtils.deviceSupportsMobileData(context)) {
             removeTile(TILE_MOBILEDATA);
             removeTile(TILE_WIFIAP);
+            removeTile(TILE_NETWORKMODE);
         }
 
         // Don't show the bluetooth options if not supported
@@ -309,8 +314,35 @@ public class QuickSettingsUtil {
         return primitives;
     }
 
+    private static synchronized void refreshAvailableTiles(Context context) {
+        ContentResolver resolver = context.getContentResolver();
+
+        // Some phones run on networks not supported by the networkmode tile,
+        // so make it available only where supported
+        int networkState = -99;
+        try {
+            networkState = Settings.Global.getInt(resolver,
+                    Settings.Global.PREFERRED_NETWORK_MODE);
+        } catch (Settings.SettingNotFoundException e) {
+            Log.e(TAG, "Unable to retrieve PREFERRED_NETWORK_MODE", e);
+        }
+
+        switch (networkState) {
+            // list of supported network modes
+            case Phone.NT_MODE_WCDMA_PREF:
+            case Phone.NT_MODE_WCDMA_ONLY:
+            case Phone.NT_MODE_GSM_UMTS:
+            case Phone.NT_MODE_GSM_ONLY:
+                enableTile(TILE_NETWORKMODE);
+                break;
+            default:
+                disableTile(TILE_NETWORKMODE);
+                break;
+        }
+    }
     public static synchronized void updateAvailableTiles(Context context) {
         removeUnsupportedTiles(context);
+        refreshAvailableTiles(context);
     }
 
     public static boolean isTileAvailable(String id) {
