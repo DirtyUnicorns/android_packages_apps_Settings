@@ -1699,6 +1699,19 @@
                 android:value="com.android.settings.du.Halo" />
         </activity>
 
+        <!-- Pie -->
+        <activity android:name="Settings$PieActivity"
+                android:label="@string/pie_controls_title"
+                android:taskAffinity=""
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.du.Pie" />
+        </activity>
+
         <!-- Dirty Tweaks -->
         <activity android:name="Settings$DirtyTweaksActivity"
                 android:label="@string/dirt_settings_title"
@@ -1736,6 +1749,7 @@
         <activity android:name=".du.NavbarDimenSettings" />
         <activity android:name=".du.NotificationDrawerStyle" />
         <activity android:name=".du.OverscrollEffects" />
+        <activity android:name=".du.Pie" />
         <activity android:name=".du.PowerMenu" />
         <activity android:name=".du.PropModder" />
         <activity android:name=".du.Recents" />

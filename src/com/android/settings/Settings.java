@@ -94,6 +94,7 @@ import com.android.settings.du.NavBar;
 import com.android.settings.du.DNDSettings;
 import com.android.settings.du.hfm.HfmSettings;
 import com.android.settings.du.Halo;
+import com.android.settings.du.Pie;
 import com.android.settings.du.DirtyTweaks;
 import com.android.settings.tts.TextToSpeechSettings;
 import com.android.settings.users.UserSettings;
@@ -369,6 +370,7 @@ public class Settings extends PreferenceActivity
         DNDSettings.class.getName(),
         HfmSettings.class.getName(),
         Halo.class.getName(),
+        Pie.class.getName(),
         DirtyTweaks.class.getName()
     };
 
@@ -1215,5 +1217,6 @@ public class Settings extends PreferenceActivity
     public static class MiscTweaksActivity extends Settings { /* empty */ }
     public static class HfmSettingsActivity extends Settings { /* empty */ }
     public static class HaloActivity extends Settings { /* empty */ }
+    public static class PieActivity extends Settings { /* empty */ }
     public static class DirtyTweaksActivity extends Settings { /* empty */ }
 }

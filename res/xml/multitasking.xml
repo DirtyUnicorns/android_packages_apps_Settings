@@ -42,6 +42,12 @@
                 android:targetClass="org.omnirom.omniswitch.SettingsActivity" />
          </PreferenceScreen>
 
+         <PreferenceScreen
+            android:key="pie_control"
+            android:fragment="com.android.settings.du.Pie"
+            android:layout="@layout/preference_pie"
+            android:title="@string/pie_controls_title" />
+
          <Preference
             android:key="app_sidebar"
             android:fragment="com.android.settings.du.AppSidebar"
