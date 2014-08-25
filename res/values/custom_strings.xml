@@ -2283,4 +2283,8 @@
     <string name="pie_restart_launcher_title">Restart Launcher</string>
     <string name="pie_restart_launcher_summary">Changing screensize can have adverse effects. This option allows your launcher to regain sanity, the cost is a slight blackout (recommended)</string>
 
+    <!-- Screenshot Timeout -->
+    <string name="screenshot_timeout_title">Screenshot Timeout</string>
+    <string name="screenshot_timeout_summary">Select the timeout of screenshot toggle long press action</string>
+
 </resources>

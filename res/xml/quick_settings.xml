@@ -41,6 +41,13 @@
         android:summary="@string/flip_qs_tiles_summary"
         android:defaultValue="true" />
 
+    <ListPreference
+        android:key="screenshot_timeout"
+        android:title="@string/screenshot_timeout_title"
+        android:summary="@string/screenshot_timeout_summary"
+        android:entries="@array/screenshot_timeout_entries"
+        android:entryValues="@array/screenshot_timeout_values" />
+
     <PreferenceCategory
         android:key="quicksettings_tiles_style"
         android:title="@string/cm_style_tiles">

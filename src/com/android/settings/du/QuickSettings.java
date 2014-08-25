@@ -49,11 +49,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String QS_QUICK_ACCESS_LINKED = "qs_quick_access_linked";
     private static final String QUICK_SETTINGS_CATEGORY = "quick_settings_category";
     private static final String QUICK_PULLDOWN = "quick_pulldown";
+    private static final String SCREENSHOT_TIMEOUT = "screenshot_timeout";
 
     private CheckBoxPreference mQSQuickAccess;
     private CheckBoxPreference mQSQuickAccess_linked;
     private PreferenceCategory mQuickSettingsCategory;
     private ListPreference mQuickPulldown;
+    private ListPreference mScreenshotTimeout;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,6 +76,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mQSQuickAccess_linked = (CheckBoxPreference) prefSet.findPreference(QS_QUICK_ACCESS_LINKED);
         mQSQuickAccess_linked.setChecked((Settings.System.getInt(resolver,
                 Settings.System.QS_QUICK_ACCESS_LINKED, 0) == 1));
+
+        mScreenshotTimeout = (ListPreference) findPreference(SCREENSHOT_TIMEOUT);
+        mScreenshotTimeout.setOnPreferenceChangeListener(this);
 
         mQuickSettingsCategory = (PreferenceCategory) getPreferenceScreen().findPreference(QUICK_SETTINGS_CATEGORY);
         mQuickPulldown = (ListPreference) getPreferenceScreen().findPreference(QUICK_PULLDOWN);
@@ -113,6 +118,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.QS_QUICK_PULLDOWN, quickPulldownValue);
             updatePulldownSummary(quickPulldownValue);
+            return true;
+        } else if (preference == mScreenshotTimeout) {
+            int val = Integer.parseInt((String) objValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SCREENSHOT_TOGGLE_DELAY, val);
             return true;
         }
         return false;
