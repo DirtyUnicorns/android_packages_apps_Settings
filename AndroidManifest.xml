@@ -1750,6 +1750,7 @@
         <activity android:name=".du.NotificationDrawerStyle" />
         <activity android:name=".du.OverscrollEffects" />
         <activity android:name=".du.Pie" />
+        <activity android:name=".du.PieColor" />
         <activity android:name=".du.PowerMenu" />
         <activity android:name=".du.PropModder" />
         <activity android:name=".du.Recents" />
