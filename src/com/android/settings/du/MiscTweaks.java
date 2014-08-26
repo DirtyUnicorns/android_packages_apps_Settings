@@ -73,6 +73,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
     private static final String STATUS_BAR_CUSTOM_HEADER = "custom_status_bar_header";
     private static final String STATUSBAR_6BAR_SIGNAL = "statusbar_6bar_signal";
     private static final String DISABLE_BOOTAUDIO = "disable_bootaudio";
+    private static final String PREF_MENU_ARROWS = "navigation_bar_menu_arrow_keys";
 
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mStatusBarNotifCount;
@@ -90,6 +91,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
     private CheckBoxPreference mStatusBarCustomHeader;
     private CheckBoxPreference mStatusBarSixBarSignal;
     private CheckBoxPreference mDisableBootAudio;
+    private CheckBoxPreference mMenuArrowKeysCheckBox;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -145,6 +147,10 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
         mEmulateMenuKey.setChecked(Settings.System.getInt(resolver,
                 Settings.System.EMULATE_HW_MENU_KEY, 0) == 1);
         mEmulateMenuKey.setOnPreferenceChangeListener(this);
+
+        mMenuArrowKeysCheckBox = (CheckBoxPreference) findPreference(PREF_MENU_ARROWS);
+        mMenuArrowKeysCheckBox.setChecked((Settings.System.getInt(resolver,
+                Settings.System.NAVIGATION_BAR_MENU_ARROW_KEYS, 1) == 1));
 
         mStatusbarSignalCategory = (PreferenceGroup) findPreference(CATEGORY_STATUSBAR_SIGNAL);
 
@@ -241,6 +247,11 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
                         .runWaitFor("mv /system/media/boot_audio /system/media/audio.mp3");
                 Helpers.getMount("ro");
             }
+            return true;
+        } else if (preference == mMenuArrowKeysCheckBox) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_MENU_ARROW_KEYS, checked ? 1:0);
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);

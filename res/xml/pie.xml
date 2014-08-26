@@ -17,15 +17,22 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/pie_controls_title">
 
-    <PreferenceScreen
-            android:key="pie_color"
-            android:title="@string/pie_color_title"
-            android:fragment="com.android.settings.du.PieColor" />
-
     <SwitchPreference
         android:key="pie_controls"
-        android:title="@string/pie_controls_title"
-        android:summary="@string/pie_controls_summary" />
+        android:title="@string/pie_enable_title"
+        android:summary="@string/pie_enable_summary" />
+
+    <PreferenceScreen
+        android:key="pie_targets"
+        android:title="@string/pie_targets_title"
+        android:fragment="com.android.settings.du.PieTargets"
+        android:dependency="pie_controls" />
+
+    <PreferenceScreen
+        android:key="pie_color"
+        android:title="@string/pie_color_title"
+        android:fragment="com.android.settings.du.PieColor"
+        android:dependency="pie_controls" />
 
     <ListPreference
         android:key="pie_trigger"
@@ -98,12 +105,6 @@
         android:title="@string/pie_notifications_title"
         android:summary="@string/pie_notifications_summary"
         android:defaultValue="false"
-        android:dependency="pie_controls" />
-
-    <PreferenceScreen
-        android:key="pie_targets"
-        android:title="@string/pie_targets_title"
-        android:fragment="com.android.settings.du.PieTargets"
         android:dependency="pie_controls" />
 
 </PreferenceScreen>
