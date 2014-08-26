@@ -45,10 +45,14 @@
         android:persistent="false" />
 
     <CheckBoxPreference
+        android:key="navigation_bar_menu_arrow_keys"
+        android:title="@string/navigation_bar_menu_arrow_keys_title"
+        android:summary="@string/navigation_bar_menu_arrow_keys_summary" />
+
+    <CheckBoxPreference
         android:key="emulate_menu_key"
         android:title="@string/emulate_menu_key_title"
-        android:summary="@string/emulate_menu_key_summary"
-        android:persistent="false"/>
+        android:summary="@string/emulate_menu_key_summary" />
 
     <Preference
         android:key="back_to_kill"

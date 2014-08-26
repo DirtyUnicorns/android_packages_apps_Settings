@@ -2295,4 +2295,8 @@
     <string name="screenshot_timeout_title">Screenshot Timeout</string>
     <string name="screenshot_timeout_summary">Select the timeout of screenshot toggle long press action</string>
 
+    <!-- Menu Arrow Toggle -->
+    <string name="navigation_bar_menu_arrow_keys_title">Menu arrow keys</string>
+    <string name="navigation_bar_menu_arrow_keys_summary">Show arrow keys in the navigation bar while typing</string>
+
 </resources>
