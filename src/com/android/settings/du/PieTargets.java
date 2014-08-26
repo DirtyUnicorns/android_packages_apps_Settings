@@ -42,6 +42,7 @@ public class PieTargets extends SettingsPreferenceFragment implements OnPreferen
     private static final String PIE_TORCH = "pie_torch";
     private static final String PIE_ACTNOTIF = "pie_actnotif";
     private static final String PIE_POWER = "pie_power";
+    private static final String PIE_SCREENSHOT = "pie_screenshot";
 
     private CheckBoxPreference mPieMenu;
     private CheckBoxPreference mPieSearch;
@@ -50,6 +51,7 @@ public class PieTargets extends SettingsPreferenceFragment implements OnPreferen
     private CheckBoxPreference mPieTorch;
     private CheckBoxPreference mPieActNotif;
     private CheckBoxPreference mPiePower;
+    private CheckBoxPreference mPieScreenshot;
 
     private ContentResolver mResolver;
 
@@ -95,6 +97,9 @@ public class PieTargets extends SettingsPreferenceFragment implements OnPreferen
         mPiePower.setChecked(Settings.System.getInt(mResolver,
                 Settings.System.PIE_POWER, 0) != 0);
 
+        mPieScreenshot = (CheckBoxPreference) prefSet.findPreference(PIE_SCREENSHOT);
+        mPieScreenshot.setChecked(Settings.System.getInt(mResolver,
+                Settings.System.PIE_SCREENSHOT, 0) != 0);
     }
 
     @Override
@@ -127,6 +132,10 @@ public class PieTargets extends SettingsPreferenceFragment implements OnPreferen
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.PIE_POWER,
                     mPiePower.isChecked() ? 1 : 0);
+        } else if (preference == mPieScreenshot) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.PIE_SCREENSHOT,
+                    mPieScreenshot.isChecked() ? 1 : 0);
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
 
