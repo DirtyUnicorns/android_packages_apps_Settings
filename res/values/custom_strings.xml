@@ -1209,6 +1209,7 @@
     <string name="lockscreen_enable_power_menu_title">Power menu in lockscreen</string>
     <string name="power_menu_onthego_title">On-The-Go mode</string>
     <string name="power_menu_navbar_title">Navigation bar</string>
+    <string name="power_menu_wifi_title">WiFi</string>
 
     <!-- On-The-Go Mode -->
     <string name="title_tile_onthego">On-The-Go</string>
