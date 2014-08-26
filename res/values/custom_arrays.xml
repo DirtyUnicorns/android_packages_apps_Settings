@@ -1165,6 +1165,7 @@
         <item>@string/keys_action_voice_search</item>
         <item>@string/keys_action_in_app_search</item>
         <item>@string/keys_action_last_app</item>
+        <item>@string/hardware_keys_action_immersive_mode</item>
     </string-array>
 
     <string-array name="keys_action_values" translatable="false">
@@ -1177,6 +1178,7 @@
         <item>4</item>
         <item>5</item>
         <item>8</item>
+        <item>9</item>
     </string-array>
 
     <!-- Clear all button -->
