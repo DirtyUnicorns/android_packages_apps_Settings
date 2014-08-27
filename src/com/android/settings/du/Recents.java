@@ -381,12 +381,26 @@ public class Recents extends SettingsPreferenceFragment implements OnPreferenceC
             mRecentPanelBgColor.setEnabled(true);
             mRecentPanelLeftyMode.setEnabled(true);
             mRecentsShowTopmost.setEnabled(true);
+            mRecentClearAll.setEnabled(false);
+            mRecentClearAllPosition.setEnabled(false);
+            mRamBarMode.setEnabled(false);
+            mRamBarAppMemColor.setEnabled(false);
+            mRamBarCacheMemColor.setEnabled(false);
+            mRamBarTotalMemColor.setEnabled(false);
+            mRecentsColor.setEnabled(false);
         } else {
             mRecentPanelScale.setEnabled(false);
             mRecentPanelExpandedMode.setEnabled(false);
             mRecentPanelBgColor.setEnabled(false);
             mRecentPanelLeftyMode.setEnabled(false);
             mRecentsShowTopmost.setEnabled(false);
+            mRecentClearAll.setEnabled(true);
+            mRecentClearAllPosition.setEnabled(true);
+            mRamBarMode.setEnabled(true);
+            mRamBarAppMemColor.setEnabled(true);
+            mRamBarCacheMemColor.setEnabled(true);
+            mRamBarTotalMemColor.setEnabled(true);
+            mRecentsColor.setEnabled(true);
         }
     }
 }
