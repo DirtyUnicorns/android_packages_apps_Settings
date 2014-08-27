@@ -21,7 +21,7 @@
         android:key="enable_app_circle_bar"
         android:title="@string/app_circle_bar_title" />
 
-    <com.android.settings.AOSPAL.AppMultiSelectListPreference
+    <com.android.settings.du.AppMultiSelectListPreference
         android:key="app_circle_bar_included_apps"
         android:persistent="false"
         android:title="@string/app_circle_bar_included_apps_title"

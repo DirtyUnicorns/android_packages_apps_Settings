@@ -1,4 +1,4 @@
-package com.android.settings.AOSPAL;
+package com.android.settings.du;
 
 import android.app.ActionBar;
 import android.app.Activity;
