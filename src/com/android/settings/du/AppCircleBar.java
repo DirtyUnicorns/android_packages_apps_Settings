@@ -59,7 +59,7 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import com.android.settings.AOSPAL.AppMultiSelectListPreference;
+import com.android.settings.du.AppMultiSelectListPreference;
 import com.android.internal.util.slim.DeviceUtils;
 
 import java.util.HashSet;

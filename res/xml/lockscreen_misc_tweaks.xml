@@ -19,7 +19,7 @@
 
         <PreferenceScreen
             android:title="@string/lockscreen_notifications"
-            android:fragment="com.android.settings.AOSPAL.LockscreenNotifications" />
+            android:fragment="com.android.settings.du.LockscreenNotifications" />
 
         <CheckBoxPreference
             android:key="lockscreen_maximize_widgets"

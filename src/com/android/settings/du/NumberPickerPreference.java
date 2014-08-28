@@ -3,7 +3,7 @@
  * Thanks to the original author!
  */
 
-package com.android.settings.AOSPAL;
+package com.android.settings.du;
 
 import android.content.Context;
 import android.content.res.TypedArray;
