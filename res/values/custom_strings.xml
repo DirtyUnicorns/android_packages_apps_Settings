@@ -170,6 +170,7 @@
     <string name="status_bar_misc">Misc Tweaks</string>
     <string name="dirt_settings_title">Dirty Tweaks</string>
     <string name="powermenu_settings">Power Menu</string>
+    <string name="powermenu_cat">Shortcuts</string>
     <string name="recents_view">Clear-All button</string>
     <string name="misc_traffic">Traffic Indicators</string>
     <string name="animations_cat">Animations</string>
@@ -1435,7 +1436,7 @@
 
     <!-- Themes -->
     <string name="theme_settings_title">Dark UI</string>
-    <string name="theme_settings_summary">Enabling Dark UI may or may not conflict with Theme Packs</string>
+    <string name="theme_chooser_cat">Theme Chooser</string>
     <string name="theme_auto_mode_title">Switch theme</string>
     <string name="theme_auto_mode_off">Manual</string>
     <string name="theme_auto_mode_lightsensor">On light condition change</string>
