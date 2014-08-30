@@ -25,6 +25,11 @@
             android:title="@string/lockscreen_enable_power_menu_title"
             android:persistent="false" />
 
+    <PreferenceCategory
+        android:key="powermenu_cat"
+        android:title="@string/powermenu_cat">
+    </PreferenceCategory>
+
     <CheckBoxPreference
             android:key="power_menu_mobile_data"
             android:title="@string/power_menu_toggle_mobile_data_title"

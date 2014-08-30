@@ -21,8 +21,12 @@
         android:id="@+id/theme_settings"
         android:fragment="com.android.settings.slim.themes.ThemeSettings"
         android:icon="@drawable/ic_settings_theme"
-        android:title="@string/theme_settings_title"
-        android:summary="@string/theme_settings_summary" />
+        android:title="@string/theme_settings_title" />
+
+    <PreferenceCategory
+        android:key="themes_chooser_cat"
+        android:title="@string/theme_chooser_cat">
+    </PreferenceCategory>
 
     <!-- Theme Packs -->
     <Preference
