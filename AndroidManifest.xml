@@ -1634,6 +1634,19 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
+        <!-- Quick Settings -->
+        <activity android:name="Settings$QuickSettingsTilesActivity"
+                android:label="@string/quick_settings_title"
+                android:taskAffinity=""
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.slim.quicksettings.QuickSettingsTiles" />
+        </activity>
+
         <!-- App Circle Bar -->
         <activity android:name="Settings$MiscTweaksActivity"
                 android:label="@string/misc_tweaks_title"
