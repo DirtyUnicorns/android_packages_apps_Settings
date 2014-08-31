@@ -280,28 +280,6 @@ public class QuietHours extends SettingsPreferenceFragment implements
             Settings.System.putInt(resolver, Settings.System.QUIET_HOURS_ENABLED,
                     (Boolean) newValue ? 1 : 0);
             return true;
-        } else if (preference == mAutoEnable) {
-            int val = Integer.parseInt((String) newValue);
-            Settings.System.putInt(resolver, Settings.System.QUIET_HOURS_AUTOMATIC,
-                    val);
-            if (val != 0) {
-                AudioManager audioManager =
-                        (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
-                final int ringerMode = audioManager.getRingerMode();
-                boolean enabled = false;
-                if (ringerMode == AudioManager.RINGER_MODE_SILENT) {
-                    enabled = true;
-                } else if (ringerMode == AudioManager.RINGER_MODE_VIBRATE) {
-                    if (val == 2) {
-                        enabled = true;
-                    }
-                }
-                Settings.System.putInt(resolver, Settings.System.QUIET_HOURS_ENABLED,
-                        enabled ? 1 : 0);
-                mQuietHoursEnabled.setChecked(enabled);
-            }
-            mAutoEnable.setSummary(mAutoEnable.getEntries()[val]);
-            return true;
         } else if (preference == mQuietHoursRing) {
             Settings.System.putInt(resolver, Settings.System.QUIET_HOURS_RINGER,
                     (Boolean) newValue ? 1 : 0);
