@@ -64,6 +64,7 @@ import static com.android.internal.util.slim.QSConstants.TILE_NAVBAR;
 import static com.android.internal.util.slim.QSConstants.TILE_HEADSUP;
 import static com.android.internal.util.slim.QSConstants.TILE_CAMERA;
 import static com.android.internal.util.slim.QSConstants.TILE_CPUFREQ;
+import static com.android.internal.util.slim.QSConstants.TILE_DIRTYTWEAKS;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -211,6 +212,9 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_CPUFREQ, R.string.title_tile_cpufreq,
                 "com.android.systemui:drawable/ic_qs_cpufreq"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_DIRTYTWEAKS, R.string.title_tile_dirtytweaks,
+                "com.android.systemui:drawable/ic_qs_dirtytweaks"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {

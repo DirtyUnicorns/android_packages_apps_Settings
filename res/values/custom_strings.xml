@@ -719,6 +719,7 @@
     <string name="title_tile_headsup">Heads Up</string>
     <string name="title_tile_camera">Camera</string>
     <string name="title_tile_cpufreq">CPUFreq</string>
+    <string name="title_tile_dirtytweaks">Dirty Tweaks</string>
     <string name="dynamic_tile_ime_switcher">IME switcher</string>
     <string name="dynamic_tile_usb_tether">USB tether</string>
     <string name="dynamic_tile_alarm">Alarm</string>
