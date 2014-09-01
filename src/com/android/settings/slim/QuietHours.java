@@ -235,12 +235,6 @@ public class QuietHours extends SettingsPreferenceFragment implements
 
             mPreferencesChangeListener = new OnSharedPreferenceChangeListener() {
                 public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
-                    if (key.equals(KEY_AUTO_SMS_CALL)
-                            || key.equals(KEY_AUTO_SMS)
-                            || key.equals(KEY_CALL_BYPASS)
-                            || key.equals(KEY_SMS_BYPASS)) {
-                        SmsCallController.getInstance(mContext).scheduleService();
-                    }
                     if (key.equals(KEY_SMS_BYPASS_CODE)) {
                         setSmsBypassCodeSummary();
                     }
@@ -281,35 +275,10 @@ public class QuietHours extends SettingsPreferenceFragment implements
                     mQuietHoursTimeRange.getStartTime());
             Settings.System.putInt(resolver, Settings.System.QUIET_HOURS_END,
                     mQuietHoursTimeRange.getEndTime());
-            SmsCallController.getInstance(mContext).scheduleService();
             return true;
         } else if (preference == mQuietHoursEnabled) {
             Settings.System.putInt(resolver, Settings.System.QUIET_HOURS_ENABLED,
                     (Boolean) newValue ? 1 : 0);
-            SmsCallController.getInstance(mContext).scheduleService();
-            return true;
-        } else if (preference == mAutoEnable) {
-            int val = Integer.parseInt((String) newValue);
-            Settings.System.putInt(resolver, Settings.System.QUIET_HOURS_AUTOMATIC,
-                    val);
-            if (val != 0) {
-                AudioManager audioManager =
-                        (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
-                final int ringerMode = audioManager.getRingerMode();
-                boolean enabled = false;
-                if (ringerMode == AudioManager.RINGER_MODE_SILENT) {
-                    enabled = true;
-                } else if (ringerMode == AudioManager.RINGER_MODE_VIBRATE) {
-                    if (val == 2) {
-                        enabled = true;
-                    }
-                }
-                Settings.System.putInt(resolver, Settings.System.QUIET_HOURS_ENABLED,
-                        enabled ? 1 : 0);
-                mQuietHoursEnabled.setChecked(enabled);
-            }
-            mAutoEnable.setSummary(mAutoEnable.getEntries()[val]);
-            SmsCallController.getInstance(mContext).scheduleService();
             return true;
         } else if (preference == mQuietHoursRing) {
             Settings.System.putInt(resolver, Settings.System.QUIET_HOURS_RINGER,
