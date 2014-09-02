@@ -53,9 +53,4 @@
         android:title="@string/battery_text_charging_color"
         android:defaultValue="0xffffffff"
         alphaSlider="true" />
-
-    <PreferenceScreen
-        android:fragment="com.android.settings.du.StatusBarClockStyle"
-        android:key="clock_style_pref"
-        android:title="@string/status_bar_clock" />
 </PreferenceScreen>

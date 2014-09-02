@@ -21,10 +21,22 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
          <PreferenceScreen
-            android:key="battery_and_clock"
-            android:layout="@layout/preference_statusbar_tweaks"
+            android:key="battery"
+            android:layout="@layout/preference_battery"
             android:fragment="com.android.settings.du.BatteryIconStyle"
             android:title="@string/status_bar_header" />
+
+         <PreferenceScreen
+            android:key="clock_style_pref"
+            android:layout="@layout/preference_clock"
+            android:fragment="com.android.settings.du.StatusBarClockStyle"
+            android:title="@string/status_bar_clock" />
+
+         <PreferenceScreen
+            android:key="signal"
+            android:layout="@layout/preference_signal"
+            android:fragment="com.android.settings.du.Signal"
+            android:title="@string/statusbar_signal_title" />
 
          <PreferenceScreen
             android:key="carrier_label"

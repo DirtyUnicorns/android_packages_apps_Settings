@@ -39,12 +39,6 @@
         android:persistent="false" />
 
     <CheckBoxPreference
-        android:key="statusbar_6bar_signal"
-        android:title="@string/status_bar_six_bar_signal_title"
-        android:summary="@string/status_bar_six_bar_signal_summary"
-        android:persistent="false" />
-
-    <CheckBoxPreference
         android:key="navigation_bar_menu_arrow_keys"
         android:title="@string/navigation_bar_menu_arrow_keys_title"
         android:summary="@string/navigation_bar_menu_arrow_keys_summary" />
@@ -66,6 +60,12 @@
         android:summary="@string/custom_statusbar_header_summary"
         android:defaultValue="false" />
 
+    <CheckBoxPreference
+        android:key="status_bar_brightness_control"
+        android:title="@string/status_bar_toggle_brightness"
+        android:summary="@string/status_bar_toggle_brightness_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="misc_tweaks_srec"
         android:title="@string/misc_tweaks_srec">
@@ -83,58 +83,27 @@
         android:summary="@string/srec_enable_mic_summary"
         android:persistent="false" />
 
-   <PreferenceCategory
-            android:key="statusbar_signal_title"
-            android:title="@string/statusbar_signal_title">
+    <PreferenceCategory
+        android:key="breathing_notifications_title"
+        android:title="@string/breathing_notifications_title">
 
     <CheckBoxPreference
-            android:key="show_4g_for_lte"
-            android:title="@string/show_4G_for_LTE_title"
-            android:summary="@string/show_4G_for_LTE_summary"
-            android:defaultValue="false" />
+        android:key="sms_breath"
+        android:title="@string/sms_breath_title"
+        android:summary="@string/sms_breath_summary"
+        android:persistent="false"/>
 
     <CheckBoxPreference
-            android:key="status_bar_brightness_control"
-            android:title="@string/status_bar_toggle_brightness"
-            android:summary="@string/status_bar_toggle_brightness_summary"
-            android:defaultValue="false" />
+        android:key="missed_call_breath"
+        android:title="@string/missed_call_breath_title"
+        android:summary="@string/missed_call_breath_summary"
+        android:persistent="false"/>
 
     <CheckBoxPreference
-            android:key="status_bar_network_activity"
-            android:title="@string/show_activity_indicators_on_status_bar_title"
-            android:summary="@string/show_activity_indicators_on_status_bar_summary"
-            android:defaultValue="false" />
-
-    <CheckBoxPreference
-            android:key="status_bar_notif_count"
-            android:title="@string/status_bar_notif_count_title"
-            android:summary="@string/status_bar_notif_count_summary"
-            android:defaultValue="false" />
-
-    </PreferenceCategory>
-
-   <PreferenceCategory
-            android:key="breathing_notifications_title"
-            android:title="@string/breathing_notifications_title">
-
-        <CheckBoxPreference
-            android:key="sms_breath"
-            android:title="@string/sms_breath_title"
-            android:summary="@string/sms_breath_summary"
-            android:persistent="false"/>
-
-        <CheckBoxPreference
-            android:key="missed_call_breath"
-            android:title="@string/missed_call_breath_title"
-            android:summary="@string/missed_call_breath_summary"
-            android:persistent="false"/>
-
-        <CheckBoxPreference
-            android:key="voicemail_breath"
-            android:title="@string/voicemail_breath_title"
-            android:summary="@string/voicemail_breath_summary"
-            android:persistent="false"/>
-
+        android:key="voicemail_breath"
+        android:title="@string/voicemail_breath_title"
+        android:summary="@string/voicemail_breath_summary"
+        android:persistent="false"/>
     </PreferenceCategory>
 
 </PreferenceScreen>
