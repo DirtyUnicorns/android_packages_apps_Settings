@@ -51,6 +51,7 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
     Preference mPAFullGapps;
     Preference mTBOGapps;
     Preference mPlayStore;
+    Preference mFdroid;
     Preference mXposed;
     Preference mXposedMod;
     Preference mGerrit;
@@ -76,6 +77,7 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
         mPAFullGapps = findPreference("pa_full_gapps");
         mTBOGapps = findPreference("tbo_gapps");
         mPlayStore = findPreference("playstore");
+        mFdroid = findPreference("fdroid");
         mXposed = findPreference("xposed");
         mXposedMod = findPreference("xposed_mod");
         mGerrit = findPreference("gerrit");
@@ -135,6 +137,11 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
             return true;
         } else if (preference == mPlayStore) {
             Uri uri = Uri.parse("http://goo.gl/tWWgyJ");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+            return true;
+        } else if (preference == mFdroid) {
+            Uri uri = Uri.parse("https://f-droid.org/FDroid.apk");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;

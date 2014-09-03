@@ -1768,6 +1768,8 @@
     <string name="gerrit_summary">Modified version of mGerrit to view DU as default gerrit</string>
     <string name="playstore_title">Play Store v4.9.13</string>
     <string name="playstore_summary">Updated playstore with material design</string>
+    <string name="fdroid_title">F-droid</string>
+    <string name="fdroid_summary">Catalogue of FOSS (Free and Open Source Software) applications</string>
 
     <!-- screen state service -->
     <string name="screen_state_toggles_title">Suspend Actions</string>
