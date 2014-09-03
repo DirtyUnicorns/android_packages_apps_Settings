@@ -164,7 +164,7 @@
     <string name="statusbar_title">Status Bar</string>
     <string name="system_title">System</string>
     <string name="misc_title">Misc. Tweaks</string>
-    <string name="status_bar_header">Battery &amp; Clock</string>
+    <string name="status_bar_header">Battery</string>
     <string name="status_bar_style_title">Quick Settings Pulldown</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="status_bar_misc">Misc Tweaks</string>
@@ -286,7 +286,7 @@
     <string name="battery_stats_title">Statistics</string>
 
     <!-- Status bar | Clock -->
-    <string name="status_bar_clock">Clock and date</string>
+    <string name="status_bar_clock">Clock</string>
     <string name="status_bar_clock_title">Clock and date style</string>
     <string name="clock_title_enable">Alignment</string>
     <string name="clock_enabled">Enabled</string>
@@ -1400,6 +1400,7 @@
     <string name="hfm_dialog_conn_error">Error: No network connectivity</string>
     <string name="status_bar_six_bar_signal_title">Enable Six Bar Signal</string>
     <string name="status_bar_six_bar_signal_summary">Enable to show six bar signal in statusbar/qs</string>
+    <string name="hide_signal_bars_title">Hide Signal Bars</string>
 
     <!-- Fast charge QS tile -->
     <string name="title_tile_fcharge">Fast charge</string>
@@ -1468,7 +1469,7 @@
     <string name="lockscreen_glowpad_torch_summary">Press and hold lockscreen icon handle to enable torch</string>
 
     <!-- Status bar color -->
-    <string name="custom_status_bar_header_title">Status Bar Color</string>
+    <string name="custom_status_bar_header_title">Statusbar Color</string>
     <string name="custom_status_bar_color_title">Custom status bar color</string>
     <string name="status_bar_opaque_color">Opaque color</string>
     <string name="status_bar_transparent_color">Dimmed color</string>
@@ -1804,7 +1805,7 @@
     <string name="device_hostname">Device hostname</string>
 
     <!-- Statusbar Signal -->
-    <string name="statusbar_signal_title">Statusbar Signal</string>
+    <string name="statusbar_signal_title">Signal</string>
     <string name="show_4G_for_LTE_title">Show 4G while on LTE</string>
     <string name="show_4G_for_LTE_summary">Switch to 4G icon in statusbar while on LTE</string>
 
