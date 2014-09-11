@@ -959,6 +959,9 @@
         <item>@string/lockscreen_lock_icon_du_eight</item>
         <item>@string/lockscreen_lock_icon_du_nine</item>
         <item>@string/lockscreen_lock_icon_du_ten</item>
+        <item>@string/lockscreen_lock_icon_du_eleven</item>
+        <item>@string/lockscreen_lock_icon_du_twelve</item>
+        <item>@string/lockscreen_lock_icon_du_thirteen</item>
     </string-array>
 
     <string-array name="lock_icon_values" translatable="false">
@@ -975,6 +978,9 @@
         <item>10</item>
         <item>11</item>
         <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
     </string-array>
 
     <!-- Driving Mode -->

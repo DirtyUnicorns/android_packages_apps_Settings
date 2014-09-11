@@ -923,6 +923,9 @@
     <string name="lockscreen_lock_icon_du_eight">DU Icon #9</string>
     <string name="lockscreen_lock_icon_du_nine">DU Icon #10</string>
     <string name="lockscreen_lock_icon_du_ten">DU Icon #11</string>
+    <string name="lockscreen_lock_icon_du_eleven">DU Icon #12</string>
+    <string name="lockscreen_lock_icon_du_twelve">DU Icon #13</string>
+    <string name="lockscreen_lock_icon_du_thirteen">DU Icon #14</string>
     <string name="lockscreen_colorize_handle_title">Colorize custom handle</string>
     <string name="lockscreen_colorize_handle_summary">Lock color will be set to your custom image</string>
     <string name="lockscreen_style_title">Theme options</string>

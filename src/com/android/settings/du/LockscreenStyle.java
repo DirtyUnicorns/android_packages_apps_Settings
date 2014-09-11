@@ -360,6 +360,18 @@ public class LockscreenStyle extends SettingsPreferenceFragment
                 deleteLockIcon();
                 resizeDuLockten();
                 updateLockSummary();
+            } else if (indexOf == 13) {
+                deleteLockIcon();
+                resizeDuLockeleven();
+                updateLockSummary();
+            } else if (indexOf == 14) {
+                deleteLockIcon();
+                resizeDuLocktwelve();
+                updateLockSummary();
+            } else if (indexOf == 15) {
+                deleteLockIcon();
+                resizeDuLockthirteen();
+                updateLockSummary();
             } else if (indexOf == 1) {
                 deleteLockIcon();
                 updateLockSummary();
@@ -467,6 +479,15 @@ public class LockscreenStyle extends SettingsPreferenceFragment
         } else if (value.contains("ten")) {
             resId = R.string.lockscreen_lock_icon_du_ten;
             mLockIcon.setValueIndex(12);
+        } else if (value.contains("eleven")) {
+            resId = R.string.lockscreen_lock_icon_du_eleven;
+            mLockIcon.setValueIndex(13);
+        } else if (value.contains("twelve")) {
+            resId = R.string.lockscreen_lock_icon_du_twelve;
+            mLockIcon.setValueIndex(14);
+        } else if (value.contains("thirteen")) {
+            resId = R.string.lockscreen_lock_icon_du_thirteen;
+            mLockIcon.setValueIndex(15);
         } else {
             resId = R.string.lockscreen_lock_icon_custom;
             mLockIcon.setValueIndex(0);
@@ -517,6 +538,102 @@ public class LockscreenStyle extends SettingsPreferenceFragment
 
         mColorizeCustom.setEnabled(false);
         updateLockSummary();
+    }
+
+    private void resizeDuLockthirteen() {
+        Bitmap duLockthirteen = BitmapFactory.decodeResource(getResources(), R.drawable.du_lock_thirteen);
+        if (duLockthirteen != null) {
+            String path = null;
+            int px = requestImageSize();
+            duLockthirteen = Bitmap.createScaledBitmap(duLockthirteen, px, px, true);
+            try {
+                mLockImage.createNewFile();
+                mLockImage.setWritable(true, false);
+                File image = new File(getActivity().getFilesDir() + File.separator
+                            + "thirteen" + System.currentTimeMillis() + ".png");
+                path = image.getAbsolutePath();
+                mLockImage.renameTo(image);
+                FileOutputStream outPut = new FileOutputStream(image);
+                duLockthirteen.compress(Bitmap.CompressFormat.PNG, 100, outPut);
+                image.setReadable(true, false);
+                outPut.flush();
+                outPut.close();
+            } catch (Exception e) {
+                // Unicorns are better when they're dirty.
+                Log.e(TAG, e.getMessage(), e);
+                return;
+            }
+
+            deleteLockIcon();  // Delete current icon if it exists before saving new.
+            Settings.Secure.putString(getContentResolver(),
+                    Settings.Secure.LOCKSCREEN_LOCK_ICON, path);
+            mColorizeCustom.setEnabled(path != null);
+            updateLockSummary();
+        }
+    }
+
+    private void resizeDuLocktwelve() {
+        Bitmap duLocktwelve = BitmapFactory.decodeResource(getResources(), R.drawable.du_lock_twelve);
+        if (duLocktwelve != null) {
+            String path = null;
+            int px = requestImageSize();
+            duLocktwelve = Bitmap.createScaledBitmap(duLocktwelve, px, px, true);
+            try {
+                mLockImage.createNewFile();
+                mLockImage.setWritable(true, false);
+                File image = new File(getActivity().getFilesDir() + File.separator
+                            + "twelve" + System.currentTimeMillis() + ".png");
+                path = image.getAbsolutePath();
+                mLockImage.renameTo(image);
+                FileOutputStream outPut = new FileOutputStream(image);
+                duLocktwelve.compress(Bitmap.CompressFormat.PNG, 100, outPut);
+                image.setReadable(true, false);
+                outPut.flush();
+                outPut.close();
+            } catch (Exception e) {
+                // Unicorns are better when they're dirty.
+                Log.e(TAG, e.getMessage(), e);
+                return;
+            }
+
+            deleteLockIcon();  // Delete current icon if it exists before saving new.
+            Settings.Secure.putString(getContentResolver(),
+                    Settings.Secure.LOCKSCREEN_LOCK_ICON, path);
+            mColorizeCustom.setEnabled(path != null);
+            updateLockSummary();
+        }
+    }
+
+    private void resizeDuLockeleven() {
+        Bitmap duLockeleven = BitmapFactory.decodeResource(getResources(), R.drawable.du_lock_eleven);
+        if (duLockeleven != null) {
+            String path = null;
+            int px = requestImageSize();
+            duLockeleven = Bitmap.createScaledBitmap(duLockeleven, px, px, true);
+            try {
+                mLockImage.createNewFile();
+                mLockImage.setWritable(true, false);
+                File image = new File(getActivity().getFilesDir() + File.separator
+                            + "eleven" + System.currentTimeMillis() + ".png");
+                path = image.getAbsolutePath();
+                mLockImage.renameTo(image);
+                FileOutputStream outPut = new FileOutputStream(image);
+                duLockeleven.compress(Bitmap.CompressFormat.PNG, 100, outPut);
+                image.setReadable(true, false);
+                outPut.flush();
+                outPut.close();
+            } catch (Exception e) {
+                // Unicorns are better when they're dirty.
+                Log.e(TAG, e.getMessage(), e);
+                return;
+            }
+
+            deleteLockIcon();  // Delete current icon if it exists before saving new.
+            Settings.Secure.putString(getContentResolver(),
+                    Settings.Secure.LOCKSCREEN_LOCK_ICON, path);
+            mColorizeCustom.setEnabled(path != null);
+            updateLockSummary();
+        }
     }
 
     private void resizeDuLockten() {
