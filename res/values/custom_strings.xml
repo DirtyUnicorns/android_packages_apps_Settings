@@ -648,7 +648,7 @@
     <string name="add">Add</string>
 
     <!-- Quick Settings -->
-    <string name="quick_settings_title">Quick settings</string>
+    <string name="quick_settings_title">Quick Settings</string>
     <string name="tile_picker_title">Tiles and layout</string>
     <string name="tile_picker_summary">View, select or change the displayed tiles</string>
     <string name="tile_choose_title">Choose a tile</string>
@@ -1745,21 +1745,21 @@
     <string name="xposed_category">Xposed Framework</string>
     <string name="misc_category">Miscellaneous</string>
     <string name="banks_standard_gapps_title">Banks Standard Gapps</string>
-    <string name="banks_standard_gapps_summary">These include everything that you would normally see in a full gapps package</string>
+    <string name="banks_standard_gapps_summary">Everything that you would normally see in a full gapps package</string>
     <string name="banks_minimal_gapps_title">Banks Minimal Gapps</string>
-    <string name="banks_minimal_gapps_summary">These include the very minimal stuff you need to access the playstore</string>
+    <string name="banks_minimal_gapps_summary">Very minimal stuff you need to access the playstore</string>
     <string name="banks_minimal_google_search_gapps_title">Banks Minimal (Google Search) Gapps</string>
     <string name="banks_minimal_google_search_gapps_summary">Exactly the same as the minimal gapps but with Google Seach</string>
     <string name="banks_gapps_addons_title">Banks Gapps Addons</string>
-    <string name="banks_gapps_addons_summary">These are addons that are to be flashed AFTER you flash any of the packages above</string>
+    <string name="banks_gapps_addons_summary">Addons that are to be flashed AFTER you flash any of the packages above</string>
     <string name="pa_stock_gapps_title">PA Stock Gapps</string>
-    <string name="pa_stock_gapps_summary">These include everything that you would want and then more</string>
+    <string name="pa_stock_gapps_summary">Everything that you would want and then more</string>
     <string name="pa_mini_gapps_title">PA Mini Gapps</string>
-    <string name="pa_mini_gapps_summary">These are for those who use limited Google apps or prefer to install apps on their own</string>
+    <string name="pa_mini_gapps_summary">Very limited amount of GAPPS</string>
     <string name="pa_micro_gapps_title">PA Micro Gapps</string>
-    <string name="pa_micro_gapps_summary">These are users of legacy devices with small system partitions or those who prefer a minimalistic approach</string>
+    <string name="pa_micro_gapps_summary">For users of legacy devices with small system partitions</string>
     <string name="pa_full_gapps_title">PA Full Gapps</string>
-    <string name="pa_full_gapps_summary">These are similar to the PA Stock Package above except that it does NOT include Google Camera, Google Keyboard, Google Gallery2, and will NOT remove your Launcher, Keyboard, Browser, SMS App, or Pico TTS</string>
+    <string name="pa_full_gapps_summary">Similar to the PA Stock Package above except that it does NOT include Google Camera, Google Keyboard, Google Gallery2, and will NOT remove your Launcher, Keyboard, Browser, SMS App, or Pico TTS</string>
     <string name="tbogapps_title">Team BlackOut Gapps</string>
     <string name="tbogapps_summary">Just as the name implies, these GAPPS are blacked out / inverted to give you that beautiful dark look</string>
     <string name="xposed_warning">WARNING</string>
@@ -1771,7 +1771,7 @@
     <string name="gerrit_summary">Modified version of mGerrit to view DU as default gerrit</string>
     <string name="playstore_title">Play Store v4.9.13</string>
     <string name="playstore_summary">Updated playstore with material design</string>
-    <string name="fdroid_title">F-droid</string>
+    <string name="fdroid_title">F-Droid</string>
     <string name="fdroid_summary">Catalogue of FOSS (Free and Open Source Software) applications</string>
 
     <!-- screen state service -->

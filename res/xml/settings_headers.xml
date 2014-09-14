@@ -22,42 +22,36 @@
     <header android:id="@+id/wireless_section"
         android:title="@string/header_category_wireless_networks" />
 
-    <!-- Wifi -->
     <header
         android:id="@+id/wifi_settings"
         android:fragment="com.android.settings.wifi.WifiSettings"
         android:title="@string/wifi_settings_title"
         android:icon="@drawable/ic_settings_wireless" />
 
-    <!-- Bluetooth -->
     <header
         android:id="@+id/bluetooth_settings"
         android:fragment="com.android.settings.bluetooth.BluetoothSettings"
         android:title="@string/bluetooth_settings_title"
         android:icon="@drawable/ic_settings_bluetooth2" />
 
-    <!-- Location -->
     <header
         android:fragment="com.android.settings.location.LocationSettings"
         android:icon="@drawable/ic_settings_location"
         android:title="@string/location_settings_title"
         android:id="@+id/location_settings" />
 
-    <!-- Data Usage -->
     <header
         android:id="@+id/data_usage_settings"
         android:fragment="com.android.settings.DataUsageSummary"
         android:title="@string/data_usage_summary_title"
         android:icon="@drawable/ic_settings_data_usage" />
 
-    <!-- Operator hook -->
     <header
         android:fragment="com.android.settings.WirelessSettings"
         android:id="@+id/operator_settings">
         <intent android:action="com.android.settings.OPERATOR_APPLICATION_SETTING" />
     </header>
 
-    <!-- Other wireless and network controls -->
     <header
         android:id="@+id/wireless_settings"
         android:title="@string/radio_controls_title"
@@ -68,7 +62,6 @@
     <!-- CUSTOMIZATIONS -->
     <header android:title="@string/header_category_dirt" />
 
-    <!-- Dirty Tweaks -->
     <header
         android:id="@+id/dirt_settings"
         android:icon="@drawable/ic_settings_dirt"
@@ -76,14 +69,12 @@
         android:title="@string/dirt_settings" >
     </header>
 
-    <!-- Profiles -->
     <header
         android:id="@+id/profiles_settings"
         android:icon="@drawable/ic_settings_profiles"
         android:fragment="com.android.settings.profiles.ProfilesSettings"
         android:title="@string/profiles_settings_title" />
 
-    <!-- Themes -->
     <header
         android:id="@+id/cm_theme_settings"
         android:title="@string/themes_settings_title"
@@ -91,7 +82,6 @@
         android:fragment="com.android.settings.ThemeSettings"
         android:icon="@drawable/prd_ic_themepacks" />
 
-    <!-- Advanced Settings -->
     <header android:id="@+id/advanced_settings"
             android:title="@string/advanced_settings_title"
             android:icon="@drawable/ic_settings_advanced">
@@ -101,7 +91,6 @@
                 android:targetClass="com.cyanogenmod.settings.device.DeviceSettings" />
     </header>
 
-    <!-- Oppo N1 Parts -->
     <header
         android:id="@+id/omni_settings"
         android:title="@string/advanced_settings_title"
@@ -116,28 +105,24 @@
     <header android:id="@+id/device_section"
         android:title="@string/header_category_device" />
 
-    <!-- Home -->
     <header
         android:id="@+id/home_settings"
         android:icon="@drawable/ic_settings_home"
         android:fragment="com.android.settings.HomeSettings"
         android:title="@string/home_settings" />
 
-    <!-- Sound -->
     <header
         android:id="@+id/sound_settings"
         android:icon="@drawable/ic_settings_sound"
         android:fragment="com.android.settings.SoundSettings"
         android:title="@string/sound_settings" />
 
-    <!-- Display -->
     <header
         android:id="@+id/display_settings"
         android:icon="@drawable/ic_settings_display"
         android:fragment="com.android.settings.DisplaySettings"
         android:title="@string/display_settings" />
 
-    <!-- buttons -->
     <header
         android:id="@+id/button_settings"
         android:title="@string/header_button_settings"
@@ -145,49 +130,49 @@
         android:fragment="com.android.settings.du.ButtonSettings"
         android:icon="@drawable/ic_settings_buttons" />
 
-    <!-- Storage -->
     <header
         android:id="@+id/storage_settings"
         android:fragment="com.android.settings.deviceinfo.Memory"
         android:icon="@drawable/ic_settings_storage"
         android:title="@string/storage_settings" />
 
-    <!-- Battery -->
     <header
         android:id="@+id/battery_settings"
         android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"
         android:icon="@drawable/ic_settings_battery"
         android:title="@string/power_usage_summary_title" />
 
-    <!-- Backup and reset -->
+    <header
+        android:id="@+id/date_time_settings"
+        android:fragment="com.android.settings.DateTimeSettings"
+        android:icon="@drawable/ic_settings_date_time"
+        android:title="@string/date_and_time_settings_title" />
+
     <header
         android:fragment="com.android.settings.PrivacySettings"
         android:icon="@drawable/ic_settings_backup"
         android:title="@string/privacy_settings"
         android:id="@+id/privacy_settings" />
 
-    <!-- Manage users -->
     <header
         android:fragment="com.android.settings.users.UserSettings"
         android:icon="@drawable/ic_settings_multiuser"
         android:title="@string/user_settings_title"
         android:id="@+id/user_settings" />
 
-    <!-- Manage NFC payment apps -->
     <header
         android:fragment="com.android.settings.nfc.PaymentSettings"
         android:icon="@drawable/ic_settings_nfc_payment"
         android:title="@string/nfc_payment_settings_title"
         android:id="@+id/nfc_payment_settings" />
 
-    <!-- Manufacturer hook -->
     <header
         android:fragment="com.android.settings.WirelessSettings"
         android:id="@+id/manufacturer_settings">
         <intent android:action="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
     </header>
 
-    <!--  ACCOUNTS section -->
+    <!-- ACCOUNTS -->
     <header
             android:id="@+id/account_settings"
             android:title="@string/account_settings" />
@@ -200,68 +185,50 @@
             android:action="android.settings.ADD_ACCOUNT_SETTINGS"/>
     </header>
 
-    <!-- PERSONAL -->
-    <header android:id="@+id/personal_section"
-        android:title="@string/header_category_personal" />
+    <!-- SYSTEM -->
+    <header android:id="@+id/system_section"
+        android:title="@string/header_category_system" />
 
-    <!-- Application Settings -->
-    <header
-        android:fragment="com.android.settings.applications.ManageApplications"
-        android:icon="@drawable/ic_settings_applications"
-        android:title="@string/applications_settings"
-        android:id="@+id/application_settings" />
-
-    <!-- App Permissions -->
-    <header
-        android:id="@+id/appops_settings"
-        android:icon="@drawable/ic_settings_appops"
-        android:fragment="com.android.settings.applications.AppOpsSummary"
-        android:title="@string/appops_settings" />
-
-    <!-- Security -->
-    <header
-        android:fragment="com.android.settings.SecuritySettings"
-        android:icon="@drawable/ic_settings_security"
-        android:title="@string/security_settings_title"
-        android:id="@+id/security_settings" />
-
-    <!-- Language -->
     <header
         android:id="@+id/language_settings"
         android:fragment="com.android.settings.inputmethod.InputMethodAndLanguageSettings"
         android:icon="@drawable/ic_settings_language"
         android:title="@string/language_settings" />
 
-    <!-- SYSTEM -->
-    <header android:id="@+id/system_section"
-        android:title="@string/header_category_system" />
-
-    <!-- Date & Time -->
     <header
-        android:id="@+id/date_time_settings"
-        android:fragment="com.android.settings.DateTimeSettings"
-        android:icon="@drawable/ic_settings_date_time"
-        android:title="@string/date_and_time_settings_title" />
+        android:id="@+id/appops_settings"
+        android:icon="@drawable/ic_settings_appops"
+        android:fragment="com.android.settings.applications.AppOpsSummary"
+        android:title="@string/appops_settings" />
 
-    <!-- Accessibility feedback -->
+    <header
+        android:fragment="com.android.settings.SecuritySettings"
+        android:icon="@drawable/ic_settings_security"
+        android:title="@string/security_settings_title"
+        android:id="@+id/security_settings" />
+
+    <header
+        android:fragment="com.android.settings.applications.ManageApplications"
+        android:icon="@drawable/ic_settings_applications"
+        android:title="@string/applications_settings"
+        android:id="@+id/application_settings" />
+
     <header
         android:id="@+id/accessibility_settings"
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
         android:icon="@drawable/ic_settings_accessibility"
         android:title="@string/accessibility_settings" />
 
-    <!-- Print -->
     <header
         android:id="@+id/print_settings"
         android:fragment="com.android.settings.print.PrintSettingsFragment"
         android:icon="@*android:drawable/ic_print"
         android:title="@string/print_settings" />
 
-    <!-- Advanced Section -->
+    <!-- ADVANCED -->
     <header android:id="@+id/advanced_section"
         android:title="@string/advanced_category_title" />
 
-    <!-- SuperSU -->
     <header
         android:id="@+id/supersu_settings"
         android:icon="@drawable/ic_settings_supersu"
@@ -272,14 +239,12 @@
             android:targetClass="eu.chainfire.supersu.MainActivity" />
     </header>
 
-    <!-- Development -->
     <header
         android:id="@+id/development_settings"
         android:fragment="com.android.settings.DevelopmentSettings"
         android:icon="@drawable/ic_settings_development"
         android:title="@string/development_settings_title" />
 
-    <!-- About Device -->
     <header
         android:id="@+id/about_settings"
         android:fragment="com.android.settings.DeviceInfoSettings"
