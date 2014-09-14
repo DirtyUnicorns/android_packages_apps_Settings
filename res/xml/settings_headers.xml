@@ -202,6 +202,12 @@
         android:title="@string/appops_settings" />
 
     <header
+        android:id="@+id/proc_stats"
+        android:fragment="com.android.settings.applications.ProcessStatsUi"
+        android:icon="@drawable/ic_settings_process_stats"
+        android:title="@string/process_stats_summary_title" />
+
+    <header
         android:fragment="com.android.settings.SecuritySettings"
         android:icon="@drawable/ic_settings_security"
         android:title="@string/security_settings_title"

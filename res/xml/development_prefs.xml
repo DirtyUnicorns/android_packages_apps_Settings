@@ -57,12 +57,6 @@
         android:title="@string/bt_hci_snoop_log"
         android:summary="@string/bt_hci_snoop_log_summary"/>
 
-    <PreferenceScreen android:key="proc_stats"
-            android:title="@string/process_stats_summary_title"
-            android:summary="@string/process_stats_summary"
-            android:fragment="com.android.settings.applications.ProcessStatsUi">
-    </PreferenceScreen>
-
     <com.android.settings.HostnamePreference
         android:key="device_hostname"
         android:title="@string/device_hostname"
