@@ -46,6 +46,8 @@ public class MultiTaskingCat extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "MultiTaskingCat";
 
+    private static final String OMNISWITCH = "omniswitch";
+
     private final Configuration mCurConfig = new Configuration();
 
     @Override
@@ -54,6 +56,8 @@ public class MultiTaskingCat extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.multitasking);
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        removePreferenceIfPackageNotInstalled(findPreference(OMNISWITCH));
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
@@ -76,6 +80,24 @@ public class MultiTaskingCat extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
         return true;
+    }
+
+    private boolean removePreferenceIfPackageNotInstalled(Preference preference) {
+        String intentUri=((PreferenceScreen) preference).getIntent().toUri(1);
+        Pattern pattern = Pattern.compile("component=([^/]+)/");
+        Matcher matcher = pattern.matcher(intentUri);
+
+        String packageName=matcher.find()?matcher.group(1):null;
+        if(packageName != null) {
+            try {
+                getPackageManager().getPackageInfo(packageName, 0);
+            } catch (NameNotFoundException e) {
+                Log.e(TAG,"package "+packageName+" not installed, hiding preference.");
+                getPreferenceScreen().removePreference(preference);
+                return true;
+            }
+        }
+        return false;
     }
 
 }

@@ -33,7 +33,7 @@
             android:title="@string/category_heads_up" />
 
          <PreferenceScreen
-            android:id="@+id/omniswitch"
+            android:key="omniswitch"
             android:layout="@layout/preference_omniswitch"
             android:title="@string/omniswitch_settings_title" >
             <intent

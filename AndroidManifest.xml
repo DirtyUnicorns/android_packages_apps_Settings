@@ -1790,6 +1790,7 @@
         <activity android:name=".du.LockscreenOptions" />
         <activity android:name=".du.LockscreenMiscTweaks" />
         <activity android:name=".du.MiscTweaks" />
+        <activity android:name=".du.MultiTaskingCat" />
         <activity android:name=".du.NavBar" />
         <activity android:name=".du.NavRing" />
         <activity android:name=".du.NavBarSettings" />

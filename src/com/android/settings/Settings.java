@@ -1224,4 +1224,5 @@ public class Settings extends PreferenceActivity
     public static class PieActivity extends Settings { /* empty */ }
     public static class DirtyTweaksActivity extends Settings { /* empty */ }
     public static class QuickSettingsTilesActivity extends Settings { /* empty */ }
+    public static class MultiTaskingCatActivity extends Settings { /* empty */ }
 }
