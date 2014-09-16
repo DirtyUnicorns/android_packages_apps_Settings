@@ -77,7 +77,7 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="entries_battery_icon">
+    <string-array name="entries_battery_icon" translatable="false">
         <item>@string/battery_status_icon</item>
         <item>@string/battery_status_percentage</item>
         <item>@string/battery_status_icon_percentage</item>
@@ -101,7 +101,7 @@
         <item>8</item>
     </string-array>
 
-    <string-array name="circle_battery_animation_speed_entries" >
+    <string-array name="circle_battery_animation_speed_entries" translatable="false">
         <item>@string/circle_battery_animation_speed_none</item>
         <item>@string/circle_battery_animation_speed_slow</item>
         <item>@string/circle_battery_animation_speed_stock</item>
@@ -125,7 +125,7 @@
         <item>1</item>
     </string-array>
 
-    <string-array name="entries_status_bar_am_pm">
+    <string-array name="entries_status_bar_am_pm" translatable="false">
         <item>@string/am_pm_clock_none</item>
         <item>@string/am_pm_clock_small</item>
         <item>@string/am_pm_clock_normal</item>
@@ -137,7 +137,7 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="clock_date_display_entries">
+    <string-array name="clock_date_display_entries" translatable="false">
         <item>@string/clock_date_display_none</item>
         <item>@string/clock_date_display_small</item>
         <item>@string/clock_date_display_normal</item>
@@ -149,7 +149,7 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="clock_date_style_entries">
+    <string-array name="clock_date_style_entries" translatable="false">
         <item>@string/clock_date_style_normal</item>
         <item>@string/clock_date_style_lowercase</item>
         <item>@string/clock_date_style_uppercase</item>
@@ -236,7 +236,7 @@
         <item>5</item>
     </string-array>
 
-    <string-array name="entries_halo_state">
+    <string-array name="entries_halo_state" translatable="false">
         <item>@string/halo_state_black</item>
         <item>@string/halo_state_white</item>
     </string-array>
@@ -246,7 +246,7 @@
         <item>0</item>
     </string-array>
 
-    <string-array name="entries_halo_size">
+    <string-array name="entries_halo_size" translatable="false">
         <item>@string/halo_size_miniscule</item>
         <item>@string/halo_size_small</item>
         <item>@string/halo_size_default</item>
@@ -263,31 +263,31 @@
         <item>1.6</item>
     </string-array>
 
-    <string-array name="entries_halo_notification_count">
+    <string-array name="entries_halo_notification_count" translatable="false">
         <item>@string/halo_notification_count_none</item>
         <item>@string/halo_notification_count_total</item>
         <item>@string/halo_notification_count_individual</item>
         <item>@string/halo_notification_count_both</item>
     </string-array>
 
-    <string-array name="values_halo_notification_count">
+    <string-array name="values_halo_notification_count" translatable="false">
         <item>1</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
     </string-array>
 
-    <string-array name="entries_halo_msgbox_animation">
+    <string-array name="entries_halo_msgbox_animation" translatable="false">
         <item>@string/halo_msgbox_animation_none</item>
         <item>@string/halo_msgbox_animation_flip</item>
     </string-array>
 
-    <string-array name="values_halo_msgbox_animation">
+    <string-array name="values_halo_msgbox_animation" translatable="false">
         <item>1</item>
         <item>2</item>
     </string-array>
 
-    <string-array name="notification_wallpaper_entries">
+    <string-array name="notification_wallpaper_entries" translatable="false">
         <item>@string/notification_background_color_fill</item>
         <item>@string/notification_background_custom_image</item>
         <item>@string/notification_background_default_wallpaper</item>
@@ -299,7 +299,7 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="notification_wallpaper_landscape_entries">
+    <string-array name="notification_wallpaper_landscape_entries" translatable="false">
         <item>@string/notification_background_custom_image</item>
         <item>@string/notification_background_default_wallpaper</item>
     </string-array>
@@ -366,7 +366,7 @@
     </string-array>
 
     <!-- MediaScanner behavior on boot -->
-    <string-array name="media_scanner_on_boot_entries">
+    <string-array name="media_scanner_on_boot_entries" translatable="false">
         <item>@string/media_scanner_on_boot_enabled</item>
         <item>@string/media_scanner_on_boot_ask</item>
         <item>@string/media_scanner_on_boot_disabled</item>
@@ -560,7 +560,7 @@
         <item>@string/custom_density</item>
     </string-array>
 
-    <string-array name="lcd_density_stock_entries">
+    <string-array name="lcd_density_stock_entries" translatable="false">
         <item>160 -- mdpi</item>
         <item>240 -- hdpi</item>
         <item>320 -- xhdpi</item>
@@ -688,7 +688,7 @@
         <item>HSUPA Enabled (Uncapped)</item>
     </string-array>
 
-    <string-array name="entries_fast_up" translatable="false">
+    <string-array name="entries_fast_up">
         <item>disable</item>
         <item>1</item>
         <item>2</item>
@@ -789,7 +789,7 @@
     </string-array>
 
     <!--- Volume key cursor control -->
-    <string-array name="volume_key_cursor_control_entries">
+    <string-array name="volume_key_cursor_control_entries" translatable="false">
         <item>@string/disabled</item>
         <item>@string/volume_key_cursor_control_on</item>
         <item>@string/volume_key_cursor_control_on_reverse</item>
@@ -845,7 +845,7 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="entries_screentimeout_widget">
+    <string-array name="entries_screentimeout_widget" translatable="false">
         <item>@string/screentimeout_mode1</item>
         <item>@string/screentimeout_mode2</item>
     </string-array>
@@ -855,7 +855,7 @@
         <item>1</item>
     </string-array>
 
-    <string-array name="entries_ring_widget">
+    <string-array name="entries_ring_widget" translatable="false">
         <item>@string/sound_mode_silent</item>
         <item>@string/sound_mode_vibrate</item>
         <item>@string/sound_mode_sound</item>
@@ -894,7 +894,7 @@
         <item>Middle</item>
         <item>Bottom</item>
     </string-array>
-    <string-array name="tab_position_entryValues">
+    <string-array name="tab_position_entryValues" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -945,7 +945,7 @@
     </array>
 
     <!-- Lockscreen lock icon values -->
-    <string-array name="lock_icon_entries">
+    <string-array name="lock_icon_entries" translatable="false">
         <item>@string/lockscreen_lock_icon_custom</item>
         <item>@string/lockscreen_lock_icon_default</item>
         <item>@string/lockscreen_lock_icon_du</item>
@@ -984,7 +984,7 @@
     </string-array>
 
     <!-- Driving Mode -->
-    <string-array name="voice_tts_annoy_notif_entries">
+    <string-array name="voice_tts_annoy_notif_entries" translatable="false">
         <item>@string/voice_tts_annoy_notif_default</item>
         <item>@string/voice_tts_annoy_notif_3s</item>
         <item>@string/voice_tts_annoy_notif_5s</item>
@@ -1216,7 +1216,7 @@
     </string-array>
 
     <!-- Recents RAM bar-->
-    <string-array name="entries_ram_bar_mode">
+    <string-array name="entries_ram_bar_mode" translatable="false">
         <item>@string/ram_bar_none</item>
         <item>@string/ram_bar_apps</item>
         <item>@string/ram_bar_cache</item>
@@ -1276,7 +1276,7 @@
     </string-array>
 
     <!-- Themes -->
-    <string-array name="theme_auto_mode_entries">
+    <string-array name="theme_auto_mode_entries" translatable="false">
         <item>@string/theme_auto_mode_off</item>
         <item>@string/theme_auto_mode_lightsensor</item>
         <item>@string/theme_auto_mode_twilight</item>
@@ -1471,7 +1471,7 @@
     </string-array>
 
     <!-- Toast Animations -->
-    <string-array name="toast_animation_entries">
+    <string-array name="toast_animation_entries" translatable="false">
         <item>@string/toast_none_animation</item>
         <item>@string/toast_default_animation</item>
         <item>@string/toast_fade_animation</item>
@@ -1490,7 +1490,7 @@
         <item>@string/toast_Translucent_animation</item>
     </string-array>
 
-    <string-array name="toast_animation_values">
+    <string-array name="toast_animation_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -1510,7 +1510,7 @@
     </string-array>
 
     <!-- Listview animation -->
-    <string-array name="listview_animation_entries">
+    <string-array name="listview_animation_entries" translatable="false">
         <item>@string/listview_off</item>
         <item>@string/listview_wave_left</item>
         <item>@string/listview_wave_right</item>
@@ -1539,7 +1539,7 @@
     </string-array>
 
    <!-- Listview animation cache -->
-    <string-array name="listview_cache_entries">
+    <string-array name="listview_cache_entries" translatable="false">
         <item>@string/listview_cache_none</item>
         <item>@string/listview_cache_anim</item>
         <item>@string/listview_cache_scroll</item>
@@ -1554,7 +1554,7 @@
     </string-array>
 
     <!-- Listview Interpolator -->
-    <string-array name="listview_interpolator_entries">
+    <string-array name="listview_interpolator_entries" translatable="false">
         <item>@string/listview_off</item>
         <item>@string/listview_accelerate_interpolator</item>
         <item>@string/listview_decelerate_interpolator</item>
@@ -1580,7 +1580,7 @@
         <item>9</item>
     </string-array>
 
-    <string-array name="anim_controls_entries">
+    <string-array name="anim_controls_entries" translatable="false">
         <item>@string/animation_default</item>
         <item>@string/animation_fade</item>
         <item>@string/animation_slide_right</item>
@@ -1617,7 +1617,7 @@
     </string-array>
 
     <!-- Clock font style -->
-    <string-array name="clock_font_style_entries">
+    <string-array name="clock_font_style_entries" translatable="false">
         <item>@string/clock_font_bold</item>
         <item>@string/clock_font_condensed</item>
         <item>@string/clock_font_light</item>
@@ -1633,7 +1633,7 @@
         <item>4</item>
     </string-array>
 
-    <string-array name="weather_location_entries">
+    <string-array name="weather_location_entries" translatable="false">
         <item>@string/location_network</item>
         <item>@string/location_fused</item>
         <item>@string/location_passive</item>
@@ -1646,7 +1646,7 @@
         <item>gps</item>
     </string-array>
 
-    <string-array name="weather_interval_entries">
+    <string-array name="weather_interval_entries" translatable="false">
         <item>@string/one_minute</item>
         <item>@string/fifteen_minutes</item>
         <item>@string/thirty_minutes</item>
@@ -1663,11 +1663,11 @@
         <item>360</item>
     </string-array>
 
-    <string-array name="weather_temp_scale_entries">
+    <string-array name="weather_temp_scale_entries" translatable="false">
         <item>@string/weather_fahrenheit</item>
         <item>@string/weather_celsius</item>
     </string-array>
-    <string-array name="weather_temp_scale_values">
+    <string-array name="weather_temp_scale_values" translatable="false">
         <item>1</item>
         <item>2</item>
     </string-array>
@@ -1696,19 +1696,19 @@
     </string-array>
 
     <!-- Custom Overscroll Settings -->
-    <string-array name="overscroll_effect_entries">
+    <string-array name="overscroll_effect_entries" translatable="false">
         <item>@string/none_effect_title</item>
         <item>@string/edge_effect_title</item>
         <item>@string/bounce_effect_title</item>
     </string-array>
 
-    <string-array name="overscroll_effect_values">
+    <string-array name="overscroll_effect_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
 
-    <string-array name="overscroll_weight_entries">
+    <string-array name="overscroll_weight_entries" translatable="false">
         <item>@string/extra_heavy_title</item>
         <item>@string/heavy_title</item>
         <item>@string/medium_title</item>
@@ -1716,7 +1716,7 @@
         <item>@string/extra_light_title</item>
     </string-array>
 
-    <string-array name="overscroll_weight_values">
+    <string-array name="overscroll_weight_values" translatable="false">
         <item>1</item>
         <item>3</item>
         <item>5</item>
@@ -1725,7 +1725,7 @@
     </string-array>
 
     <!-- Recent panel -->
-    <string-array name="recent_panel_scale_entries">
+    <string-array name="recent_panel_scale_entries" translatable="false">
         <item>@string/recent_panel_100</item>
         <item>@string/recent_panel_85</item>
         <item>@string/recent_panel_70</item>
@@ -1737,7 +1737,7 @@
         <item>70</item>
     </string-array>
 
-    <string-array name="recent_panel_expanded_mode_entries">
+    <string-array name="recent_panel_expanded_mode_entries" translatable="false">
         <item>@string/recent_panel_expanded_mode_auto</item>
         <item>@string/recent_panel_expanded_mode_always</item>
         <item>@string/recent_panel_expanded_mode_never</item>
@@ -1750,7 +1750,7 @@
     </string-array>
 
     <!-- PIE -->
-    <string-array name="entries_pie_gravity">
+    <string-array name="entries_pie_gravity" translatable="false">
         <item>@string/pie_gravity_left</item>
         <item>@string/pie_gravity_top</item>
         <item>@string/pie_gravity_right</item>
@@ -1764,7 +1764,7 @@
         <item>3</item>
     </string-array>
 
-    <string-array name="entries_pie_size">
+    <string-array name="entries_pie_size" translatable="false">
         <item>@string/pie_size_small</item>
         <item>@string/pie_size_default</item>
         <item>@string/pie_size_large</item>
@@ -1778,7 +1778,7 @@
         <item>1.2</item>
     </string-array>
 
-    <string-array name="entries_pie_mode">
+    <string-array name="entries_pie_mode" translatable="false">
         <item>@string/pie_mode_bare</item>
         <item>@string/pie_mode_quick</item>
         <item>@string/pie_mode_default</item>
@@ -1792,7 +1792,7 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="entries_pie_angle">
+    <string-array name="entries_pie_angle" translatable="false">
         <item>@string/pie_angle_none</item>
         <item>@string/pie_angle_small</item>
         <item>@string/pie_angle_big</item>
@@ -1807,7 +1807,7 @@
         <item>18</item>
         <item>24</item>
     </string-array>
-    <string-array name="entries_pie_gap">
+    <string-array name="entries_pie_gap" translatable="false">
         <item>@string/pie_gap_none</item>
         <item>@string/pie_gap_small</item>
         <item>@string/pie_gap_big</item>
@@ -1821,7 +1821,7 @@
         <item>3</item>
     </string-array>
 
-    <string-array name="entries_pie_trigger">
+    <string-array name="entries_pie_trigger" translatable="false">
         <item>@string/pie_trigger_small</item>
         <item>@string/pie_trigger_normal</item>
         <item>@string/pie_trigger_big</item>
@@ -1836,7 +1836,7 @@
     </string-array>
 
     <!-- Screenshot Timeout -->
-    <string-array name="screenshot_timeout_entries">
+    <string-array name="screenshot_timeout_entries" translatable="false">
         <item>2 seconds</item>
         <item>5 seconds</item>
         <item>10 seconds</item>
@@ -1852,7 +1852,7 @@
     </string-array>
 
     <!-- QuietHours Mode -->
-    <string-array name="quiet_hours_mode_entries">
+    <string-array name="quiet_hours_mode_entries" translatable="false">
         <item>@string/quiet_hours_off</item>
         <item>@string/quiet_hours_timed</item>
         <item>@string/quiet_hours_forced</item>
@@ -1896,7 +1896,7 @@
     </string-array>
 
     <!-- Quiet hours auto switch -->
-    <string-array name="quiet_hours_auto_entries">
+    <string-array name="quiet_hours_auto_entries" translatable="false">
         <item>@string/disabled</item>
         <item>@string/quiet_hours_auto_silent</item>
         <item>@string/quiet_hours_auto_vibrate</item>
