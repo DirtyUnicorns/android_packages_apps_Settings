@@ -753,7 +753,7 @@
     <string name="disable_camera_widget_summary">Activer le widget appareil photo</string>
 
     <!-- App sidebar -->
-    <string name="app_sidebar_title">Appbar</string>
+    <string name="app_sidebar_title">Barre d\'Applications</string>
     <string name="app_sidebar_enable_title">Activer</string>
     <string name="app_sidebar_enable_summaryOn">Activé</string>
     <string name="app_sidebar_enable_summaryOff">Désactivé</string>
@@ -762,11 +762,11 @@
     <string name="app_sidebar_transparency_title">Transparence</string>
     <string name="app_sidebar_transparency_summary">Niveau de transparence</string>
     <string name="app_sidebar_position_title">Position</string>
-    <string name="app_sidebar_position_summary">Placer Appbar sur le côté gauche ou droit de l\'écran</string>
+    <string name="app_sidebar_position_summary">Barre d\'Applications sur le côté gauche ou droit de l\'écran</string>
     <string name="app_sidebar_position_left">Gauche</string>
     <string name="app_sidebar_position_right">Droit</string>
     <string name="app_sidebar_hide_labels_title">Masquer le nom des icônes</string>
-    <string name="app_sidebar_hide_labels_summary">Masquer le nom des icônes dans Appbar</string>
+    <string name="app_sidebar_hide_labels_summary">Masquer le nom des icônes dans Barre d\'Applications</string>
     <string name="tab_category">Onglet visible</string>
     <string name="use_tab_title">Onglet Affichage</string>
     <string name="use_tab_summary">Afficher un onglet visible sur le côté qui permet d\'afficher les applications quand elles sont touchées.</string>
@@ -925,6 +925,9 @@
     <string name="lockscreen_lock_icon_du_eight">Icône DU n°9</string>
     <string name="lockscreen_lock_icon_du_nine">Icône DU n°10</string>
     <string name="lockscreen_lock_icon_du_ten">Icône DU n°11</string>
+    <string name="lockscreen_lock_icon_du_eleven">Icône DU n°12</string>
+    <string name="lockscreen_lock_icon_du_twelve">Icône DU n°13</string>
+    <string name="lockscreen_lock_icon_du_thirteen">Icône DU n°14</string>
     <string name="lockscreen_colorize_handle_title">Colorier l\'icône de déverrouillage personnalisé</string>
     <string name="lockscreen_colorize_handle_summary">La couleur du cadenas sera appliquée à l\'icône de déverrouillage personnalisé</string>
     <string name="lockscreen_style_title">Options du thème</string>
@@ -2266,7 +2269,7 @@
     <string name="pie_actnotif_summary">Affiche le bouton des Notifications Étendues</string>
     <string name="pie_power_title">Bouton Marche/Arrêt</string>
     <string name="pie_power_summary">Affiche le bouton Marche/Arrêt</string>
-    <string name="pie_screenshot_title">Capture d\'Écran</string>
+    <string name="pie_screenshot_title">Capture d\'écran</string>
     <string name="pie_screenshot_summary">Affiche le bouton de Capture d\'Écran</string>
 
     <!-- Screenshot Timeout -->
@@ -2287,14 +2290,30 @@
     <!-- Quiet hours -->
     <string name="quiet_hours_title">Heures Silencieuses</string>
     <string name="quiet_hours_summary">Configurer les heures où l\'appareil doit être silencieux</string>
+    <string name="quiet_hours_mode">Mode</string>
+    <string name="quiet_hours_off">Désactivées</string>
+    <string name="quiet_hours_forced">Toujours activées</string>
+    <string name="quiet_hours_times_warning">Les plages horaires ne peuvent pas se chevaucher\u00A0: utilisation de la plages horaires la plus proche</string>
+    <string name="quiet_hours_wifi">Connexion Wi-Fi</string>
+    <string name="quiet_hours_wifi_on">Le Wi-Fi doit être connecté</string>
+    <string name="quiet_hours_wifi_off">Le Wi-Fi peut être dans n\'importe quel état</string>
+    <string name="quiet_hours_charging">Charge de l\'appareil</string>
+    <string name="quiet_hours_charging_off">L\'appareil peut être dans n\'importe quel état</string>
+    <string name="quiet_hours_charging_on">L\'appareil doit être en charge</string>
+    <string name="quiet_hours_timed">Selon les plages horaires définies</string>
+    <string name="quiet_hours_reset_times">Réinitialiser toutes les plages horaires à la configuration d\'origine\u00A0?</string>
+    <string name="quiet_hours_daily_times">Plages horaires quotidiennes</string>
+    <string name="quiet_hours_daily_on">Différentes pour chaque jour</string>
+    <string name="quiet_hours_daily_off">Même plage horaire pour tous les jours</string>
+    <string name="quiet_time_prefs_title">Plages horaires</string>
     <string name="quiet_hours_note_title">Note</string>
     <string name="quiet_hours_note_summary">Les appels entrants se comporteront comme d\'habitude pendant les heures silencieuses</string>
     <string name="quiet_hours_enabled">Activer les Heures Silencieuses</string>
     <string name="quiet_hours_enabled_on">Heures Silencieuses activées</string>
     <string name="quiet_hours_enabled_off">Heures Silencieuses désactivées</string>
     <string name="quiet_hours_auto_title">Selon le mode du son</string>
-    <string name="quiet_hours_auto_silent">Les Heures Silencieuses s\'activent lorsque le son est en mode Silence</string>
-    <string name="quiet_hours_auto_vibrate">Les Heures Silencieuses s\'activent lorsque le son est en mode Vibreur ou Silence</string>
+    <string name="quiet_hours_auto_silent">Lorsque le son est en mode Silence</string>
+    <string name="quiet_hours_auto_vibrate">Lorsque le son est en mode Vibreur ou Silence</string>
     <string name="quiet_hours_start">Début des Heures Silencieuses</string>
     <string name="quiet_hours_start_summary">Quand activer le silence</string>
     <string name="quiet_hours_end">Fin des Heures Silencieuses</string>
@@ -2323,7 +2342,7 @@
     <string name="quiet_hours_auto_string_explain">Message envoyé à toute personne qui vous contacte pendant
             les Heures Silencieuses</string>
     <string name="quiet_hours_auto_sms_null">[Message automatique] Je vous re-contacterai dès que possible.</string>
-    <string name="quiet_hours_auto_disabled">Activé</string>
+    <string name="quiet_hours_auto_disabled">Désactivé</string>
     <string name="quiet_hours_auto_enabled">Tous les numéros</string>
     <string name="quiet_hours_auto_contacts">Contacts uniquement</string>
     <string name="quiet_hours_auto_starred">Contacts favoris uniquement</string>
@@ -2344,6 +2363,14 @@
     <string name="quiet_hours_alarm_and">" et "</string>
     <string name="quiet_hours_alarm_dialog_title">HEURES SILENCIEUSES OUTREPASSÉES</string>
     <string name="quiet_hours_alarm_message">"  a rempli les conditions pour outrepasser les Heures Silencieuses\u00A0!"</string>
+
+    <string name="sunday">Dimanche</string>
+    <string name="monday">Lundi</string>
+    <string name="tuesday">Mardi</string>
+    <string name="wednesday">Mercredi</string>
+    <string name="thursday">Jeudi</string>
+    <string name="friday">Vendredi</string>
+    <string name="saturday">Samedi</string>
 
     <!-- time range preference -->
     <string name="start_time_title">Début</string>
