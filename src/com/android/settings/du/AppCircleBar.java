@@ -17,93 +17,102 @@
 package com.android.settings.du;
 
 import android.app.ActionBar;
-import android.app.Activity;
-import android.app.ActivityManager;
-import android.app.ActivityManagerNative;
+
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.DialogFragment;
-import android.content.ComponentName;
-import android.app.admin.DeviceAdminReceiver;
-import android.app.admin.DevicePolicyManager;
+import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.pm.ResolveInfo;
-import android.content.res.Configuration;
-import android.content.ContentResolver;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.RemoteException;
-import android.os.ServiceManager;
-import android.os.SystemProperties;
-import android.os.UserHandle;
-import android.preference.CheckBoxPreference;
-import android.preference.ListPreference;
 import android.preference.Preference;
-import android.preference.PreferenceCategory;
+import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
-import android.preference.Preference.OnPreferenceChangeListener;
-import android.text.Editable;
-import android.util.Slog;
-import android.view.IWindowManager;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.EditText;
-import android.preference.SeekBarPreference;
 import android.provider.Settings;
+import android.provider.Settings.SettingNotFoundException;
 import android.text.TextUtils;
 
-import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
+import com.android.settings.du.SeekBarPreferenceChOS;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
 import com.android.settings.du.AppMultiSelectListPreference;
 import com.android.internal.util.slim.DeviceUtils;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.lang.Thread;
-import java.util.ArrayList;
 import java.util.Arrays;
 
-public class AppCircleBar extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class AppCircleBar extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
+    private static final String TAG = "AppCircleSidebar";
+    private static final String KEY_TRIGGER_WIDTH = "trigger_width";
+    private static final String KEY_TRIGGER_TOP = "trigger_top";
+    private static final String KEY_TRIGGER_BOTTOM = "trigger_bottom";
 
     private static final String PREF_INCLUDE_APP_CIRCLE_BAR_KEY = "app_circle_bar_included_apps";
+    private SeekBarPreferenceChOS mTriggerWidthPref;
+    private SeekBarPreferenceChOS mTriggerTopPref;
+    private SeekBarPreferenceChOS mTriggerBottomPref;
 
     private AppMultiSelectListPreference mIncludedAppCircleBar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         addPreferencesFromResource(R.xml.appcirclebar);
 
         ActionBar actionBar = getActivity().getActionBar();
         actionBar.setIcon(R.drawable.ic_settings_dirt);
 
         PreferenceScreen prefSet = getPreferenceScreen();
-        final ContentResolver resolver = getActivity().getContentResolver();
+        ContentResolver resolver = getActivity().getContentResolver();
 
         mIncludedAppCircleBar = (AppMultiSelectListPreference) prefSet.findPreference(PREF_INCLUDE_APP_CIRCLE_BAR_KEY);
         Set<String> includedApps = getIncludedApps();
         if (includedApps != null) mIncludedAppCircleBar.setValues(includedApps);
         mIncludedAppCircleBar.setOnPreferenceChangeListener(this);
+
+        mTriggerWidthPref = (SeekBarPreferenceChOS) findPreference(KEY_TRIGGER_WIDTH);
+        mTriggerWidthPref.setValue(Settings.System.getInt(getContentResolver(),
+                Settings.System.APP_CIRCLE_BAR_TRIGGER_WIDTH, 10));
+        mTriggerWidthPref.setOnPreferenceChangeListener(this);
+
+        mTriggerTopPref = (SeekBarPreferenceChOS) findPreference(KEY_TRIGGER_TOP);
+        mTriggerTopPref.setValue(Settings.System.getInt(getContentResolver(),
+                Settings.System.APP_CIRCLE_BAR_TRIGGER_TOP, 0));
+        mTriggerTopPref.setOnPreferenceChangeListener(this);
+
+        mTriggerBottomPref = (SeekBarPreferenceChOS) findPreference(KEY_TRIGGER_BOTTOM);
+        mTriggerBottomPref.setValue(Settings.System.getInt(getContentResolver(),
+                Settings.System.APP_CIRCLE_BAR_TRIGGER_HEIGHT, 100));
+        mTriggerBottomPref.setOnPreferenceChangeListener(this);
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mIncludedAppCircleBar) {
-            storeIncludedApps((Set<String>) newValue);
+            storeIncludedApps((Set<String>) objValue);
+        } else if (preference == mTriggerWidthPref) {
+            int width = ((Integer)objValue).intValue();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.APP_CIRCLE_BAR_TRIGGER_WIDTH, width);
+            return true;
+        } else if (preference == mTriggerTopPref) {
+            int top = ((Integer)objValue).intValue();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.APP_CIRCLE_BAR_TRIGGER_TOP, top);
+            return true;
+        } else if (preference == mTriggerBottomPref) {
+            int bottom = ((Integer)objValue).intValue();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.APP_CIRCLE_BAR_TRIGGER_HEIGHT, bottom);
+            return true;
         } else {
             return false;
         }
+
         return true;
     }
 
@@ -123,11 +132,23 @@ public class AppCircleBar extends SettingsPreferenceFragment implements OnPrefer
             builder.append(delimiter);
             builder.append(value);
             delimiter = "|";
-		}
+        }
         Settings.System.putString(getActivity().getContentResolver(),
                 Settings.System.WHITELIST_APP_CIRCLE_BAR, builder.toString());
-	}
+    }
 
-    public static class DeviceAdminLockscreenReceiver extends DeviceAdminReceiver {}
+    @Override
+    public void onPause() {
+        super.onPause();
+        Settings.System.putInt(getContentResolver(),
+                Settings.System.APP_CIRCLE_BAR_SHOW_TRIGGER, 0);
+    }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        Settings.System.putInt(getContentResolver(),
+                Settings.System.APP_CIRCLE_BAR_SHOW_TRIGGER, 1);
+    }
 }
+
