@@ -30,6 +30,10 @@
             android:defaultValue="false" />
 
          <CheckBoxPreference
+            android:key="toggle_carrier_logo"
+            android:title="@string/disable_carrier_logo" />
+
+         <CheckBoxPreference
             android:key="pref_notification_shortcuts_hide_carrier"
             android:title="@string/hide_carrier_title" />
 
