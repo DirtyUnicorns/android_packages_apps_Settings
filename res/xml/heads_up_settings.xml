@@ -23,6 +23,12 @@
             android:defaultValue="true" />
 
     <CheckBoxPreference
+            android:key="show_heads_up_bottom"
+            android:title="@string/show_heads_up_bottom"
+            android:persistent="false"
+            android:defaultValue="false" />
+
+    <CheckBoxPreference
             android:key="heads_up_expanded"
             android:title="@string/heads_up_expanded_title"
             android:summary="@string/heads_up_expanded_summary"

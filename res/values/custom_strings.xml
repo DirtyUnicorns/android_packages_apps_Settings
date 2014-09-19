@@ -1958,6 +1958,7 @@
     <string name="heads_up_expanded_title">Always expanded</string>
     <string name="heads_up_expanded_summary">Show heads up notification always expanded</string>
     <string name="heads_up_exclude_from_lock_screen">Disable on lockscreen</string>
+    <string name="show_heads_up_bottom">Show on bottom</string>
 
     <!-- Anonymous Statistics -->
     <string name="main_title">Anonymous Usage Data</string>

@@ -51,6 +51,7 @@ import android.widget.TextView;
 import com.android.settings.chameleonos.SeekBarPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.util.Helpers;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -70,6 +71,7 @@ public class DNDSettings extends SettingsPreferenceFragment implements
     private static final String KEY_HEADS_UP_TIMEOUT = "heads_up_timeout";
     private static final String KEY_HEADS_UP_FS_TIMEOUT = "heads_up_fullscreen_timeout";
     private static final String PREF_HEADS_UP_EXPANDED = "heads_up_expanded";
+    private static final String SHOW_HEADS_UP_BOTTOM = "show_heads_up_bottom";
     private static final String PREF_HEADS_UP_EXCLUDE_FROM_LOCK_SCREEN = "heads_up_exclude_from_lock_screen";
 
     private PackageAdapter mPackageAdapter;
@@ -82,6 +84,7 @@ public class DNDSettings extends SettingsPreferenceFragment implements
     private SeekBarPreference mHeadsUpFSTimeout;
     private CheckBoxPreference mHeadsUpExpanded;
     private CheckBoxPreference mHeadsExcludeFromLockscreen;
+    private CheckBoxPreference mShowHeadsUpBottom;
 
     private String mDndPackageList;
     private String mBlacklistPackageList;
@@ -131,6 +134,11 @@ public class DNDSettings extends SettingsPreferenceFragment implements
         mHeadsUpExpanded.setChecked(Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.HEADS_UP_EXPANDED, 0, UserHandle.USER_CURRENT) == 1);
         mHeadsUpExpanded.setOnPreferenceChangeListener(this);
+
+        mShowHeadsUpBottom = (CheckBoxPreference) findPreference(SHOW_HEADS_UP_BOTTOM);
+        mShowHeadsUpBottom.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.SHOW_HEADS_UP_BOTTOM, 0, UserHandle.USER_CURRENT) == 1);
+        mShowHeadsUpBottom.setOnPreferenceChangeListener(this);
 
         mHeadsExcludeFromLockscreen = (CheckBoxPreference) findPreference(PREF_HEADS_UP_EXCLUDE_FROM_LOCK_SCREEN);
         mHeadsExcludeFromLockscreen.setChecked(Settings.System.getIntForUser(getContentResolver(),
@@ -453,6 +461,11 @@ public class DNDSettings extends SettingsPreferenceFragment implements
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.HEADS_UP_EXPANDED,
                     (Boolean) objValue ? 1 : 0, UserHandle.USER_CURRENT);
+        } else if (preference == mShowHeadsUpBottom) {
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.SHOW_HEADS_UP_BOTTOM,
+                    (Boolean) objValue ? 1 : 0, UserHandle.USER_CURRENT);
+            Helpers.restartSystemUI();
         } else if (preference == mHeadsExcludeFromLockscreen) {
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.HEADS_UP_EXCLUDE_FROM_LOCK_SCREEN,
