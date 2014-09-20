@@ -55,7 +55,7 @@
 
     <!-- Écran de verrouillage background -->
     <string name="lockscreen_background">Arrière-plan</string>
-    <string name="lockscreen_background_style_title">Style de l\'arrière-plan de l\'écran de déverrouillage</string>
+    <string name="lockscreen_background_style_title">Style de l\'arrière-plan</string>
     <string name="background_color_fill_title">Couleur d\'arrière-plan</string>
     <string name="background_default">Arrière-plan par défaut</string>
     <string name="background_color_fill">Couleur de remplissage</string>
@@ -189,7 +189,7 @@
     <string name="additional_options_title">Options supplémentaires</string>
 
     <!-- Quick settings -->
-    <string name="quick_pulldown_title">Accès rapide au volet des paramètres</string>
+    <string name="quick_pulldown_title">Accès rapide</string>
     <string name="quick_pulldown_summary">Côté %1$s de la barre d\'état tirée vers le bas</string>
     <string name="quick_pulldown_summary_left">Gauche</string>
     <string name="quick_pulldown_summary_right">Droit</string>
@@ -245,7 +245,7 @@
     <string name="traffic_timeout_25s">25 secondes</string>
 
     <!-- MIUI Traffic meter -->
-    <string name="status_bar_show_network_stats_title">Utiliser le style MIUI</string>
+    <string name="status_bar_show_network_stats_title">Style MIUI</string>
     <string name="status_bar_show_network_stats_summary">Utiliser l\'indicateur de vitesse MIUI NetStats au lieu de l\'indicateur classique</string>
     <string name="status_bar_network_stats_update_title">Fréquence de rafraîchissement</string>
 
@@ -499,8 +499,8 @@
     <string name="pref_wifi_scan_interval_title">Intervalle de scan WiFi</string>
     <string name="pref_wifi_scan_interval_summary">Délai entre deux balayages Wi-Fi quand aucun point d\'accès stocké n\'est disponible</string>
     <string name="pref_wifi_scan_alt_summary">Délai entre deux balayages Wi-Fi\u00A0: %s</string>
-    <string name="pref_max_events_title">Windows Manager : Nombre maximum d\'événements par seconde </string>
-    <string name="pref_max_events_summary">Il s\'agit d\'une valeur d\'exécution contrôlant le nombre d\'événements par seconde autorisés par le système</string>
+    <string name="pref_max_events_title">Événements par seconde </string>
+    <string name="pref_max_events_summary">Il s\'agit d\'une valeur d\'exécution contrôlant le nombre maximum d\'événements par seconde autorisés par le système</string>
     <string name="pref_max_events_alt_summary">Nombre maximum d\'événements\u00A0: %s</string>
     <string name="pref_ring_delay_title">Délai de la sonnerie du téléphone</string>
     <string name="pref_ring_delay_summary">Délai entre la réception d\'un appel et le déclenchement de la sonnerie</string>
@@ -517,7 +517,7 @@
     <string name="showbuild_version">Version</string>
     <string name="showbuild_label">Nous devrions examiner parce que le savoir est la moitié de la bataille</string>
     <string name="pref_fast_up_title">Bidouille HSUPA</string>
-    <string name="pref_fast_up_summary">*AVERTISSEMENT* Cela ajoute les valeurs nécessaires au build.prop, si elles ne sont pas déjà présentes</string>
+    <string name="pref_fast_up_summary">*AVERTISSEMENT* Modifie les valeurs nécessaires du build.prop, si elles ne sont pas déjà présentes</string>
     <string name="pref_fast_up_alt_summary">Accélération activée\u00A0: %s</string>
     <string name="pref_prox_delay_title">Délai du capteur de proximité</string>
     <string name="pref_prox_delay_summary">Délai entre le moment où le téléphone est éloignée de l\'oreille, et la réactivation de l\'écran, lors d\'un appel</string>
@@ -526,9 +526,9 @@
     <string name="pref_mod_version_summary">C\'est esthétique et n\'améliore pas le système</string>
     <string name="pref_mod_version_alt_summary">Numéro de Compilation\u00A0: %s</string>
     <string name="pref_mod_version_default"></string>
-    <string name="pref_sleep_title">Mode Sommeil PM</string>
-    <string name="pref_sleep_summary">Modifier la politique de veille la nuit</string>
-    <string name="pref_sleep_alt_summary">Mode Sommeil PM actuel\u00A0: %s</string>
+    <string name="pref_sleep_title">Mode Veille</string>
+    <string name="pref_sleep_summary">Modifier les paramètres de veille</string>
+    <string name="pref_sleep_alt_summary">Mode Veille actuel\u00A0: %s</string>
     <string name="pref_tcp_stack_title">Optimiser la pile TCP</string>
     <string name="pref_tcp_stack_summary">Modifie la taille du tampon pour de meilleures performances</string>
     <string name="pref_g_speed_title">Bidouille de la Vitesse 3G</string>
@@ -590,8 +590,8 @@
     <string name="ps_setrenice">Active setrenice</string>
     <string name="pt_tweaks">Super améliorations</string>
     <string name="ps_tweaks">Active les super améliorations</string>
-    <string name="pt_speedy_modified">Speedy modifié</string>
-    <string name="ps_speedy_modified">Active les améliorations Speedy modifié</string>
+    <string name="pt_speedy_modified">Speedy</string>
+    <string name="ps_speedy_modified">Active les améliorations Speedy</string>
     <string name="pt_loopy_smoothness_tweak">Loopy smoothness</string>
     <string name="ps_loopy_smoothness_tweak">Active les améliorations loopy smoothness</string>
     <string name="pt_init_d_credits">Développée par\u00A0:</string>
@@ -601,7 +601,7 @@
     <string name="db_exit">Sortir</string>
 
     <!--Écran de verrouillage blur-->
-    <string name="blur_behind_title">Effet de flou de l\'écran de déverrouillage</string>
+    <string name="blur_behind_title">Effet de flou</string>
     <string name="blur_behind_summary">Voir à travers l\'écran de déverrouillage avec un effet de flou</string>
     <string name="blur_radius_title">Effet de flou</string>
     <string name="blur_radius_summary">Intensité de l\'effet de flou</string>
@@ -1182,7 +1182,7 @@
     <string name="power_menu_toggle_mobile_data_title">Données mobiles</string>
     <string name="power_menu_toggle_airplane_mode_title">Mode avion</string>
     <string name="power_menu_toggle_sound_toggles_title">Son</string>
-    <string name="lockscreen_enable_power_menu_title">Menu Marche/Arrêt sur l\'écran de déverrouillage</string>
+    <string name="lockscreen_enable_power_menu_title">Afficher sur l\'écran de déverrouillage</string>
     <string name="power_menu_onthego_title">Mode On-The-Go</string>
     <string name="power_menu_navbar_title">Barre de navigation</string>
     <string name="power_menu_wifi_title">Wi-Fi</string>
@@ -1191,7 +1191,7 @@
     <string name="title_tile_onthego">On-The-Go</string>
 
     <!-- Recents Color bg -->
-    <string name="recents_panel_color_title">Couleur du panneau des Applications Récentes</string>
+    <string name="recents_panel_color_title">Couleur du panneau</string>
     <string name="recents_background_title">Divers</string>
 
     <!--  Recents clear all -->
@@ -1474,9 +1474,9 @@
     <string name="lockscreen_glowpad_torch_summary">Maintenir l\'anneau de l\'écran de déverrouillage appuyé pour activer la Lampe Torche</string>
 
     <!-- Status bar color -->
-    <string name="custom_status_bar_header_title">Couleur de la Barre d\'État</string>
+    <string name="custom_status_bar_header_title">Couleur</string>
     <string name="custom_status_bar_color_title">Couleur personnalisée</string>
-    <string name="status_bar_opaque_color">Couleur</string>
+    <string name="status_bar_opaque_color">Couleur des barres de statut et de navigation</string>
     <string name="status_bar_transparent_color">Couleur</string>
     <string name="status_bar_color_reset">Revenir à la configuration d\'origine\u00A0?</string>
     <string name="restart_status_bar_menu_title">Redémarrez la barre d\'état</string>
@@ -1484,7 +1484,7 @@
     <string name="restart_status_bar_message">Redémarrer l\'interface utilisateur du système changera les valeurs modifiées.</string>
     <string name="custom_system_icon_color_title">Icônes système</string>
     <string name="system_icon_color">Couleur des icônes</string>
-    <string name="custom_color_summary">Remplace la couleur des icônes système de l\'interface utilisateur</string>
+    <string name="custom_color_summary">Remplace la couleur de l\'interface utilisateur</string>
     <string name="custom_status_bar_apply_title">Appliquer</string>
     <string name="custom_status_bar_apply_summary">Redémarrer l\'interface utilisateur pour appliquer les modifications</string>
 
@@ -1934,8 +1934,8 @@
     <string name="app_circle_bar_included_apps_summary">Applications affichées dans le Cercle d\'Applications</string>
 
     <!-- Statusbar Second Clock -->
-    <string name="clock_use_second">Activer les Secondes</string>
-    <string name="clock_use_second_summary">Affiche les secondes dans l\'horloge de la barre d\'État</string>
+    <string name="clock_use_second">Secondes</string>
+    <string name="clock_use_second_summary">Affiche les secondes dans l\'horloge de la barre d\'état</string>
 
     <!-- Flip Tiles -->
     <string name="flip_qs_tiles_title">Tuiles Retournables</string>
@@ -1987,7 +1987,7 @@
     <string name="weather_header_title">En-Tête Météo</string>
     <string name="weather_header_summary">Ajoute une information météo dans l\'en-tête de la barre d\'état.</string>
     <string name="weather_notification_title">Notification Météo</string>
-    <string name="weather_notification_summary">Ajoute les informations météo sous forme de bandeau dans le volet des notifications</string>
+    <string name="weather_notification_summary">Ajoute un bandeau météo dans le volet des notifications</string>
 
     <string name="on">Allumé</string>
     <string name="off">Éteint</string>
@@ -2109,12 +2109,12 @@
     <string name="dpi">DPI</string>
     <string name="su_dialog_error_title">Attention</string>
     <string name="su_dialog_error_message">Une erreur s\'est produite.\n\nVérifiez l\'accès aux droits root. Rendez-vous dans les paramètres de SuperSu, et activez  l\'accès aux droits root.</string>
-    <string name="lcd_density_title">Densité de l\'Écran</string>
+    <string name="lcd_density_title">Densité de l\'écran</string>
     <string name="lcd_density_category">Options</string>
     <string name="follow_through_summary">Modifier les paramètres de densité de l\'écran peut provoquer le dysfonctionnement de certaines applications, et le Play Store peut afficher les applications comme incompatibles avec votre appareil</string>
     <string name="stock_density_title">Utiliser une Valeur Prédéfinie</string>
     <string name="stock_density_summary">Valeur usuelle pour les tablettes\u00A0: 160 dpi. Valeur usuelle pour les appareils récents\u00A0: 320 ou 480 dpi. Valeur usuelle pour les appareils plus vieux\u00A0: 240 dpi.</string>
-    <string name="stock_density_changed_summary">"Densité de l\'Écran\u00A0: "</string>
+    <string name="stock_density_changed_summary">"Densité de l\'écran\u00A0: "</string>
     <string name="reboot_title">Redémarrer</string>
     <string name="reboot_summary">L\'appareil doit être redémarré pour la prise en charge des nouveaux paramètres</string>
     <string name="custom_density_title">Utiliser une Valeur Personnalisée</string>
@@ -2270,10 +2270,10 @@
     <string name="pie_power_title">Bouton Marche/Arrêt</string>
     <string name="pie_power_summary">Affiche le bouton Marche/Arrêt</string>
     <string name="pie_screenshot_title">Capture d\'écran</string>
-    <string name="pie_screenshot_summary">Affiche le bouton de Capture d\'Écran</string>
+    <string name="pie_screenshot_summary">Affiche le bouton de Capture d\'écran</string>
 
     <!-- Screenshot Timeout -->
-    <string name="screenshot_timeout_title">Délai de Capture d\'Écran</string>
+    <string name="screenshot_timeout_title">Délai de Capture d\'écran</string>
     <string name="screenshot_timeout_summary">Temps en seconde avant la avant la capture d\'écran</string>
 
     <!-- Menu Arrow Toggle -->
@@ -2383,5 +2383,27 @@
 
     <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
     <string name="encryptionpassword_choose_your_password_header">Mot de Passe de Chiffrement</string>
+
+    <!-- Font size sample text. This needs to be a very short string, as it is shown in
+    multiple font sizes in a limited amount of space. -->
+    <string name="font_size_sample">Échantillon</string>
+
+    <!-- Used for diagnostic screens, precise translation is not necessary -->
+    <string name="intent_sender_data_label"><xliff:g id="data">Données\u00A0:</xliff:g></string>
+
+    <!-- Text shown for title of settings checkbox to maximize widgets [CHAR LIMIT=20]-->
+    <string name="security_maximize_widgets_title">Maximiser les widgets</string>
+
+    <!-- Wi-Fi settings screen, advanced, title for setting the wifi region code. -->
+    <string name="wifi_setting_countrycode_title">Code région du Wi-Fi</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi region code [CHAR LIMIT=50]-->
+    <string name="wifi_setting_countrycode_summary">Spécifier le code Wi-Fi de la région</string>
+    <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_countrycode_error">Erreur lors du paramétrage du code de région.</string>
+    <!-- Subtitle of dialog for editing data usage cycle length. [CHAR LIMIT=32] -->
+    <string name="data_usage_lengths_spinner_subtitle">Longueur du cycle\u00A0:</string>
+    <!-- Text for disabling immersive mode messages -->
+    <string name="disable_immersive_message_title">Message du Mode Immersif</string>
+    <string name="disable_immersive_message_summary">Masquer tous les message du Mode Immersif</string>
 
 </resources>

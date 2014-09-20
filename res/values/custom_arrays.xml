@@ -833,7 +833,7 @@
         <item>5</item>
     </string-array>
 
-    <string-array name="entries_network_widget">
+    <string-array name="entries_network_widget" translatable="false">
         <item>2G | 2G+3G</item>
         <item>2G | 3G</item>
         <item>2G | 3G | 2G+3G</item>
@@ -1524,7 +1524,7 @@
         <item>@string/listview_translate_right</item>
     </string-array>
 
-    <string-array name="listview_animation_values">
+    <string-array name="listview_animation_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -1546,7 +1546,7 @@
         <item>@string/listview_cache_all</item>
     </string-array>
 
-    <string-array name="listview_cache_values">
+    <string-array name="listview_cache_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -1567,7 +1567,7 @@
         <item>@string/listview_linear_interpolator</item>
     </string-array>
 
-    <string-array name="listview_interpolator_values">
+    <string-array name="listview_interpolator_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -1598,7 +1598,7 @@
         <item>@string/animation_random</item>
         </string-array>
 
-    <string-array name="anim_controls_values">
+    <string-array name="anim_controls_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
