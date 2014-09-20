@@ -648,6 +648,7 @@
     <string name="notification_show_wifi_ssid_title">Nom du réseau Wi-Fi</string>
     <string name="notification_show_wifi_ssid_summary">Afficher le nom du réseau Wi-Fi</string>
     <string name="add">Ajouter</string>
+    <string name="disable_carrier_logo">Désactiver le logo opérateur</string>
 
     <!-- Quick Settings -->
     <string name="quick_settings_title">Volet des paramètres</string>
@@ -1957,6 +1958,7 @@
     <string name="heads_up_expanded_title">Notifications Étendues</string>
     <string name="heads_up_expanded_summary">Les notifications s\'affichent toujours en mode étendu</string>
     <string name="heads_up_exclude_from_lock_screen">Ne pas afficher sur l\'écran de verrouillage</string>
+    <string name="show_heads_up_bottom">Afficher en bas</string>
 
     <!-- Anonymous Statistics -->
     <string name="main_title">Statistiques DU</string>
