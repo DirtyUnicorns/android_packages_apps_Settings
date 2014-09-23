@@ -39,6 +39,7 @@ import android.widget.EditText;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.utils.Helpers;
+import com.android.internal.util.slim.DeviceUtils;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
@@ -102,6 +103,9 @@ public class CarrierLabel extends SettingsPreferenceFragment  implements
         mToggleCarrierLogo = (CheckBoxPreference) findPreference(TOGGLE_CARRIER_LOGO);
         mToggleCarrierLogo.setChecked((Settings.System.getInt(mCr,
                 Settings.System.TOGGLE_CARRIER_LOGO, 0) == 1));
+            if (!DeviceUtils.deviceSupportsMobileData(getActivity())) {
+            mPrefSet.removePreference(mToggleCarrierLogo);
+        }
 
         // MIUI-like carrier Label color
         mCarrierColorPicker = (ColorPickerPreference) mPrefSet.findPreference(STATUS_BAR_CARRIER_COLOR);
