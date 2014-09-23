@@ -95,7 +95,7 @@ public class Pie extends SettingsPreferenceFragment
 
         mPieGravity = (ListPreference) prefSet.findPreference(PIE_GRAVITY);
         int pieGravity = Settings.System.getInt(mResolver,
-                Settings.System.PIE_GRAVITY, 3);
+                Settings.System.PIE_GRAVITY, 2);
         mPieGravity.setValue(String.valueOf(pieGravity));
         mPieGravity.setOnPreferenceChangeListener(this);
 
