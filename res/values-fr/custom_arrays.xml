@@ -20,24 +20,24 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string-array name="clock_date_format_entries_values">
-        <item>jj/MM/aa</item>
-        <item>MM/jj/aa</item>
-        <item>aaaa-MM-jj</item>
-        <item>aaaa-jj-MM</item>
-        <item>jj-MM-aaaa</item>
-        <item>MM-jj-aaaa</item>
-        <item>MMM jj</item>
-        <item>MMM jj, aaaa</item>
-        <item>MMMM jj, aaaa</item>
+        <item>dd/MM/yy</item>
+        <item>MM/dd/yy</item>
+        <item>yyyy-MM-dd</item>
+        <item>yyyy-dd-MM</item>
+        <item>dd-MM-yyyy</item>
+        <item>MM-dd-yyyy</item>
+        <item>MMM dd</item>
+        <item>MMM dd, yyyy</item>
+        <item>MMMM dd, yyyy</item>
         <item>EEE</item>
-        <item>EEE jj</item>
-        <item>EEE jj/MM</item>
-        <item>EEE MM/jj</item>
-        <item>EEE jj MMM</item>
-        <item>EEE MMM jj</item>
-        <item>EEE MMMM jj</item>
-        <item>EEEE jj/MM</item>
-        <item>EEEE MM/jj</item>
+        <item>EEE dd</item>
+        <item>EEE dd/MM</item>
+        <item>EEE MM/dd</item>
+        <item>EEE dd MMM</item>
+        <item>EEE MMM dd</item>
+        <item>EEE MMMM dd</item>
+        <item>EEEE dd/MM</item>
+        <item>EEEE MM/dd</item>
         <item>@string/clock_date_format_custom</item>
     </string-array>
 
