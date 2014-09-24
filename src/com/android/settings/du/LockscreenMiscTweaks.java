@@ -42,8 +42,6 @@ public class LockscreenMiscTweaks extends SettingsPreferenceFragment implements 
 
     private static final String KEY_ALLOW_ROTATION = "allow_rotation";
     private static final String KEY_SEE_TRHOUGH = "see_through";
-    private static final String KEY_BLUR_BEHIND = "blur_behind";
-    private static final String KEY_BLUR_RADIUS = "blur_radius";
     private static final String KEY_DISABLE_CAMERA_WIDGET = "disable_camera_widget";
     private static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
     private static final String LOCKSCREEN_MAXIMIZE_WIDGETS = "lockscreen_maximize_widgets";
@@ -51,8 +49,6 @@ public class LockscreenMiscTweaks extends SettingsPreferenceFragment implements 
 
     private CheckBoxPreference mSeeThrough;
     private CheckBoxPreference mAllowRotation;
-    private CheckBoxPreference mBlurBehind;
-    private SeekBarPreference mBlurRadius;
     private CheckBoxPreference mCameraWidget;
     private CheckBoxPreference mLockRingBattery;
     private CheckBoxPreference mMaximizeKeyguardWidgets;
@@ -100,16 +96,6 @@ public class LockscreenMiscTweaks extends SettingsPreferenceFragment implements 
         mAllowRotation = (CheckBoxPreference) findPreference(KEY_ALLOW_ROTATION);
         mAllowRotation.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.LOCKSCREEN_ROTATION, 0) == 1);
-
-        mBlurBehind = (CheckBoxPreference) findPreference(KEY_BLUR_BEHIND);
-        mBlurBehind.setChecked(Settings.System.getInt(getContentResolver(),
-            Settings.System.LOCKSCREEN_BLUR_BEHIND, 0) == 1);
-        mBlurRadius = (SeekBarPreference) findPreference(KEY_BLUR_RADIUS);
-        mBlurRadius.setProgress(Settings.System.getInt(getContentResolver(),
-            Settings.System.LOCKSCREEN_BLUR_RADIUS, 12));
-        mBlurRadius.setOnPreferenceChangeListener(this);
-
-        updateBlurPrefs();
     }
 
     @Override
@@ -154,39 +140,13 @@ public class LockscreenMiscTweaks extends SettingsPreferenceFragment implements 
                     Settings.System.LOCKSCREEN_MAXIMIZE_WIDGETS, mMaximizeKeyguardWidgets.isChecked()
                     ? 1 : 0);
             return true;
-
-        } else if (preference == mBlurBehind) {
-            Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_BLUR_BEHIND,
-                    mBlurBehind.isChecked() ? 1 : 0);
-            updateBlurPrefs();
-            return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     public boolean onPreferenceChange(Preference preference, Object value) {
-        if (preference == mBlurRadius) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.LOCKSCREEN_BLUR_RADIUS, (Integer)value);
-        }
 
-         return true;
-    }
-
-    public void updateBlurPrefs() {
-        // until i get around to digging through the frameworks to find where transparent lockscreen
-        // is breaking the animation for blur lets just be a little dirty dirty dirty...
-        if (mBlurBehind.isChecked()) {
-            mSeeThrough.setEnabled(false);
-            Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_SEE_THROUGH, 1);
-        } else {
-            mSeeThrough.setEnabled(true);
-            if (mSeeThrough.isChecked()) {
-                Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_SEE_THROUGH, 1);
-            } else {
-                Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_SEE_THROUGH, 0);
-            }
-        }
+        return true;
     }
 
     public static class DeviceAdminLockscreenReceiver extends DeviceAdminReceiver {}
