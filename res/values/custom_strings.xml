@@ -252,7 +252,6 @@
     <string name="sizer_title">System App Remover</string>
     <string name="caution">Caution!</string>
     <string name="sizer_message_startup">This tool allows you to delete system apps. Use with caution and only delete apps you know are safe to be removed.</string>
-    <string name="cancel">Cancel</string>
     <string name="sizer_message_delete">Are you sure you want to delete this app?</string>
     <string name="btn_delete">Delete selected APPs now!</string>
     <string name="delete_progress_title">Deleting</string>
@@ -769,11 +768,8 @@
     <string name="tab_size_title">Tab size</string>
     <string name="tab_size_summary">Change the size of the visible tab.</string>
     <string name="trigger_category">Trigger region</string>
-    <string name="trigger_width_title">Trigger width</string>
     <string name="trigger_width_summary">Adjust the width of the trigger area</string>
-    <string name="trigger_top_title">Trigger position</string>
     <string name="trigger_top_summary">Adjust the vertical postion of the trigger area</string>
-    <string name="trigger_bottom_title">Trigger height</string>
     <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
 
     <!-- Gesture Anywhere -->
