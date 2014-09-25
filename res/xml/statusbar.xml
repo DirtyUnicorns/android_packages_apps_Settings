@@ -51,10 +51,10 @@
             android:title="@string/custom_status_bar_header_title" />
 
          <PreferenceScreen
-            android:key="traffic_indicators"
+            android:key="traffic"
             android:fragment="com.android.settings.du.Traffic"
             android:layout="@layout/preference_traffic"
-            android:title="@string/misc_traffic" />
+            android:title="@string/network_traffic_title" />
 
          <PreferenceScreen
             android:key="weather"
