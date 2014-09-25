@@ -50,10 +50,10 @@
     <string name="volume_steps_system_title">Système</string>
     <string name="volume_steps_voice_call_title">Appel vocal</string>
 
-    <!-- Écran de verrouillage battery ring -->
+    <!-- Écran de déverrouillage battery ring -->
     <string name="battery_around_lockscreen_ring">Niveau de batterie autour de l\'anneau de déverrouillage</string>
 
-    <!-- Écran de verrouillage background -->
+    <!-- Écran de déverrouillage background -->
     <string name="lockscreen_background">Arrière-plan</string>
     <string name="lockscreen_background_style_title">Style de l\'arrière-plan</string>
     <string name="background_color_fill_title">Couleur d\'arrière-plan</string>
@@ -87,7 +87,7 @@
     <string name="pref_force_highend_gfx_title">Forcer les graphismes de haute résolution</string>
     <string name="pref_force_highend_gfx_summary">Permet des effets visuels de haute résolution tels que la barre d\'état/navigation transparente (redémarrage nécessaire)</string>
 
-    <!--Écran de verrouillage See Through-->
+    <!--Écran de déverrouillage See Through-->
     <string name="see_through_title">Affichage transparent</string>
     <string name="see_through_summary">Affiche l\'application en cours à travers l\'écran de déverrouillage. Vos données peuvent être visibles à ceux autour de vous</string>
 
@@ -100,7 +100,7 @@
     <string name="adb_notify">Notification de débogage USB</string>
     <string name="adb_notify_summary">Afficher une notification lorsque le débogage USB est actif</string>
 
-    <!-- Écran de verrouillage pin shuffle -->
+    <!-- Écran de déverrouillage pin shuffle -->
     <string name="lock_numpad_random_title">Changer l\'ordre des numéros du pavé numérique</string>
     <string name="lock_numpad_random_dialog_title">Ordre des numéros aléatoire</string>
     <string name="lock_numpad_random_off">Désactivé</string>
@@ -168,7 +168,7 @@
     <string name="misc_title">Autres réglages</string>
     <string name="status_bar_header">Batterie</string>
     <string name="status_bar_style_title">Accès rapide au volet des paramètres</string>
-    <string name="lockscreen_category">Écran de verrouillage</string>
+    <string name="lockscreen_category">Écran de déverrouillage</string>
     <string name="status_bar_misc">Autres réglages</string>
     <string name="dirt_settings_title">Dirty Tweaks</string>
     <string name="powermenu_settings">Menu marche/arrêt</string>
@@ -178,7 +178,7 @@
     <string name="animations_cat">Animations</string>
     <string name="interface_animation_title">Animations</string>
     <string name="lock_settings_misc_title">Autres réglages de l\'écran de déverrouillage</string>
-    <string name="lockscreen_screen_options">Écran de verrouillage</string>
+    <string name="lockscreen_screen_options">Écran de déverrouillage</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -254,7 +254,6 @@
     <string name="sizer_title">Suppression d\'applications système</string>
     <string name="caution">Attention\u00A0!</string>
     <string name="sizer_message_startup">Cet outil vous permet de supprimer des applications du système. À utiliser avec précaution et uniquement pour des applications dont la suppression est sans danger.</string>
-    <string name="cancel">Annuler</string>
     <string name="sizer_message_delete">Êtes-vous sûr de vouloir supprimer cette application\u00A0?</string>
     <string name="btn_delete">Supprimez les applications sélectionnées\u00A0!</string>
     <string name="delete_progress_title">Suppression</string>
@@ -334,7 +333,7 @@
 
     <!-- Double tap to sleep -->
     <string name="double_tap_sleep_title">Veille avec double appui</string>
-    <string name="double_tap_sleep_secure_lockscreen_category">Écran de verrouillage sécurisé</string>
+    <string name="double_tap_sleep_secure_lockscreen_category">Écran de déverrouillage sécurisé</string>
     <string name="status_bar_double_tap_sleep_status_bar_title">Barre d\'état</string>
     <string name="status_bar_double_tap_sleep_status_bar_summary">Éteindre l\'écran avec un double appui sur la barre d\'état</string>
     <string name="status_bar_double_tap_sleep_glowpad_title">Points lumineux</string>
@@ -600,12 +599,6 @@
     <string name="dm_init_d_error">Il semble que init.d n\'est pas correctement paramétré. Blâmez Kenneth !</string>
     <string name="db_exit">Sortir</string>
 
-    <!--Écran de verrouillage blur-->
-    <string name="blur_behind_title">Effet de flou</string>
-    <string name="blur_behind_summary">Voir à travers l\'écran de déverrouillage avec un effet de flou</string>
-    <string name="blur_radius_title">Effet de flou</string>
-    <string name="blur_radius_summary">Intensité de l\'effet de flou</string>
-
     <!-- Allow rotation -->
     <string name="allow_rotate_title">Rotation</string>
     <string name="allow_rotate_summary">Active le mode paysage de l\'écran de déverrouillage.</string>
@@ -648,7 +641,8 @@
     <string name="notification_show_wifi_ssid_title">Nom du réseau Wi-Fi</string>
     <string name="notification_show_wifi_ssid_summary">Afficher le nom du réseau Wi-Fi</string>
     <string name="add">Ajouter</string>
-    <string name="disable_carrier_logo">Désactiver le logo opérateur</string>
+    <string name="disable_carrier_logo">Logo opérateur</string>
+    <string name="disable_carrier_logo_summary">Afficher le logo opérateur</string>
 
     <!-- Quick Settings -->
     <string name="quick_settings_title">Volet des paramètres</string>
@@ -749,7 +743,7 @@
     <string name="title_quick_access_linked">Lier la disposition</string>
     <string name="summary_quick_access_linked">Utiliser la même disposition que le volet des paramètres</string>
 
-    <!-- Écran de verrouillage camera widget toggle -->
+    <!-- Écran de déverrouillage camera widget toggle -->
     <string name="disable_camera_widget_title">Widget Appareil photo</string>
     <string name="disable_camera_widget_summary">Activer le widget appareil photo</string>
 
@@ -776,11 +770,8 @@
     <string name="tab_size_title">Taille des onglets</string>
     <string name="tab_size_summary">Modifier la taille de l\'onglet visible.</string>
     <string name="trigger_category">Déclencheur</string>
-    <string name="trigger_width_title">Largeur</string>
     <string name="trigger_width_summary">Largeur du déclencheur</string>
-    <string name="trigger_top_title">Position</string>
     <string name="trigger_top_summary">Position verticale du déclencheur</string>
-    <string name="trigger_bottom_title">Taille</string>
     <string name="trigger_bottom_summary">Taille du déclencheur</string>
 
     <!-- Gesture Anywhere -->
@@ -882,7 +873,7 @@
     <string name="general">Général</string>
     <string name="layout">Disposition</string>
     <string name="privacy">Confidentialité</string>
-    <string name="lockscreen_notifications">Notifications de l\écran de déverrouillage</string>
+    <string name="lockscreen_notifications">Notifications</string>
     <string name="lockscreen_notifications_summary">Afficher les notifications en attente sur l\'écran de déverrouillage</string>
     <string name="pocket_mode">Mode Poche</string>
     <string name="pocket_mode_summary">Allume l\'écran et affiche toutes les notifications lorsque l\'appareil est sorti de la poche. Éteint l\'écran quand l\'appareil est remis dans la poche.</string>
@@ -929,8 +920,8 @@
     <string name="lockscreen_lock_icon_du_eleven">Icône DU n°12</string>
     <string name="lockscreen_lock_icon_du_twelve">Icône DU n°13</string>
     <string name="lockscreen_lock_icon_du_thirteen">Icône DU n°14</string>
-    <string name="lockscreen_colorize_handle_title">Colorier l\'icône de déverrouillage personnalisé</string>
-    <string name="lockscreen_colorize_handle_summary">La couleur du cadenas sera appliquée à l\'icône de déverrouillage personnalisé</string>
+    <string name="lockscreen_colorize_handle_title">Colorier l\'icône de déverrouillage</string>
+    <string name="lockscreen_colorize_handle_summary">Utiliser la couleur du cadenas pour l\'icône de déverrouillage personnalisé</string>
     <string name="lockscreen_style_title">Options du thème</string>
     <string name="lockscreen_frame_color_title">Contour</string>
     <string name="lockscreen_frame_color_summary">Couleur du contour du widget </string>
@@ -1693,8 +1684,8 @@
     <string name="profile_lockmode_insecure">Non sécurisé</string>
     <string name="profile_lockmode_disabled">Désactivé</string>
     <string name="profile_lockmode_default_summary">Conserver les paramètres système</string>
-    <string name="profile_lockmode_insecure_summary">Écran de verrouillage non sécurisé</string>
-    <string name="profile_lockmode_disabled_summary">Écran de verrouillage désactivé</string>
+    <string name="profile_lockmode_insecure_summary">Écran de déverrouillage non sécurisé</string>
+    <string name="profile_lockmode_disabled_summary">Écran de déverrouillage désactivé</string>
     <string name="profile_airplanemode_title">Mode Avion</string>
     <string name="profile_disable_screen_lock_summary">Désactiver l\'écran de verrouillage lorsque ce profil est utilisé</string>
     <string name="vibrator_type_ringer">Appels</string>
@@ -1714,7 +1705,7 @@
     <string name="toggleScreenTimeout">Mise en Veille</string>
     <string name="toggleAirplane">Mode Avion</string>
     <string name="toggleFlashlight">Flash</string>
-    <string name="toggleLockScreen">Écran de verrouillage</string>
+    <string name="toggleLockScreen">Écran de déverrouillage</string>
     <string name="toggleWimax">WiMAX</string>
     <string name="toggleNfc">NFC</string>
     <string name="profile_trigger_configure">Configurer l\'activation</string>
@@ -1924,15 +1915,18 @@
     <string name="chamber_toast">À utiliser à vos RISQUES et PÉRILS\u00A0!!!</string>
 
     <!-- Lockscreen rotation -->
-    <string name="display_lockscreen_rotation_title">Écran de verrouillage</string>
+    <string name="display_lockscreen_rotation_title">Écran de déverrouillage</string>
     <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
 
     <!-- Circle App Launcher -->
-    <string name="category_app_circle_bar_title">Cercle d\'Applications</string>
     <string name="app_circle_bar_title">Cercle d\'Applications</string>
-    <string name="app_circle_bar_summary">Affiche un lanceur d\'applications sous forme de cercle, après avoir appuyé sur le côté droit de l\'écran</string>
     <string name="app_circle_bar_included_apps_title">Applications</string>
-    <string name="app_circle_bar_included_apps_summary">Applications affichées dans le Cercle d\'Applications</string>
+    <string name="trigger_width_title">Largeur</string>
+    <string name="trigger_width_summary">Largeur du déclencheur</string>
+    <string name="trigger_top_title">Position</string>
+    <string name="trigger_top_summary">Position verticale du déclencheur</string>
+    <string name="trigger_bottom_title">Taille</string>
+    <string name="trigger_bottom_summary">Taille du déclencheur</string>
 
     <!-- Statusbar Second Clock -->
     <string name="clock_use_second">Secondes</string>
@@ -2308,11 +2302,6 @@
     <string name="quiet_hours_daily_on">Différentes pour chaque jour</string>
     <string name="quiet_hours_daily_off">Même plage horaire pour tous les jours</string>
     <string name="quiet_time_prefs_title">Plages horaires</string>
-    <string name="quiet_hours_note_title">Note</string>
-    <string name="quiet_hours_note_summary">Les appels entrants se comporteront comme d\'habitude pendant les heures silencieuses</string>
-    <string name="quiet_hours_enabled">Activer les Heures Silencieuses</string>
-    <string name="quiet_hours_enabled_on">Heures Silencieuses activées</string>
-    <string name="quiet_hours_enabled_off">Heures Silencieuses désactivées</string>
     <string name="quiet_hours_auto_title">Selon le mode du son</string>
     <string name="quiet_hours_auto_silent">Lorsque le son est en mode Silence</string>
     <string name="quiet_hours_auto_vibrate">Lorsque le son est en mode Vibreur ou Silence</string>
