@@ -103,7 +103,7 @@ public class Traffic extends SettingsPreferenceFragment
             (ColorPickerPreference) prefSet.findPreference(NETWORK_TRAFFIC_COLOR);
         mNetTrafficColor.setOnPreferenceChangeListener(this);
         int intColor = Settings.System.getInt(getContentResolver(),
-                Settings.System.NETWORK_TRAFFIC_COLOR, 0xff000000);
+                Settings.System.NETWORK_TRAFFIC_COLOR, 0xffffffff);
         String hexColor = String.format("#%08x", (0xffffffff & intColor));
             mNetTrafficColor.setSummary(hexColor);
             mNetTrafficColor.setNewPreviewColor(intColor);
