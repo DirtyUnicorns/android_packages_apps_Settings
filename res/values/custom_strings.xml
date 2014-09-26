@@ -2384,4 +2384,25 @@
     <!-- Vibration multiplier -->
     <string name="vibrator_multiplier_title">Vibration multiplier</string>
 
+    <!-- Custom QS Tiles -->
+    <string name="title_tile_custom">Custom</string>
+    <string name="custom_tile_dialog_text">Each action will add a new state to the tile. Each click changes to the next state. Long-press to add long-press actions. If no click action exists the long-action icon will be used for the tile. This allows you to change states by clicking and launch actions by long-pressing.</string>
+    <string name="custom_tile_dialog_title">Custom tile actions</string>
+    <string name="custom_toggle_extras">Custom tile extras</string>
+    <string name="custom_toggle_collapse_check">Collapse notification shade</string>
+    <string name="custom_toggle_match_state_check">Click action matches icon</string>
+    <string name="custom_tile_long_press">Longpress:</string>
+    <string name="custom_tile_null_warning">An action must be set first</string>
+    <string name="icon_picker_type">Select icon type:</string>
+    <string name="icon_default">Default</string>
+    <string name="icon_presets">System icons</string>
+    <string name="icon_custom">Gallery</string>
+    <string name="icon_pack">Icon pack</string>
+    <string name="icon_picker_choose_icon_title">Choose icon</string>
+    <string name="icon_color_mode_all_icons">All icons</string>
+    <string name="icon_color_mode_system_icons">System icons</string>
+    <string name="icon_color_mode_system_custom_icons">System and custom icons</string>
+    <string name="group_applications">Applications</string>
+    <string name="select_custom_app_title">Select custom application</string>
+
 </resources>
