@@ -613,6 +613,7 @@
     <string name="custom_carrier_label_explain">Please enter a new label. Enter an empty label to revert to stock label.</string>
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
     <string name="hide_carrier_title">Hide carrier label</string>
+    <string name="hide_carrier_summary">Hide carrier label in pulldown notification area</string>
     <string name="show_status_bar_carrier_title">MIUI-like carrier label</string>
     <string name="show_status_bar_carrier_summary">Shows carrier label in status bar</string>
     <string name="status_bar_carrier_color">MIUI-like carrier label Color</string>
@@ -621,6 +622,7 @@
     <string name="add">Add</string>
     <string name="disable_carrier_logo">Statusbar carrier logo</string>
     <string name="disable_carrier_logo_summary">Shows carrier logo in status bar</string>
+    <string name="no_carrier_on_keyguard_title">Hide carrier label in lockscreen</string>
 
     <!-- Quick Settings -->
     <string name="quick_settings_title">Quick Settings</string>
