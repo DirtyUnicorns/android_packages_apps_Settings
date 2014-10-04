@@ -332,7 +332,7 @@
     <string name="camera_sounds_title">Son de l\'obturateur de l\'appareil photo</string>
 
     <!-- Double tap to sleep -->
-    <string name="double_tap_sleep_title">Veille avec double appui</string>
+    <string name="double_tap_sleep_title">Veille par double appui</string>
     <string name="double_tap_sleep_secure_lockscreen_category">Écran de déverrouillage sécurisé</string>
     <string name="status_bar_double_tap_sleep_status_bar_title">Barre d\'état</string>
     <string name="status_bar_double_tap_sleep_status_bar_summary">Éteindre l\'écran avec un double appui sur la barre d\'état</string>
@@ -634,7 +634,8 @@
     <string name="custom_carrier_label_title">Modifier le libellé opérateur</string>
     <string name="custom_carrier_label_explain">Saisir un nouveau libellé. Entrer un libellé vide pour revenir au libellé d\'origine.</string>
     <string name="custom_carrier_label_notset">Libellé opérateur non défini</string>
-    <string name="hide_carrier_title">Masquer libellé opérateur</string>
+    <string name="hide_carrier_title">Masquer</string>
+    <string name="hide_carrier_summary">Masque le libellé opérateur sur la partie basse du volet des notifications</string>
     <string name="show_status_bar_carrier_title">Libellé Opérateur MIUI</string>
     <string name="show_status_bar_carrier_summary">Affiche le libellé opérateur dans la barre d\'état</string>
     <string name="status_bar_carrier_color">Couleur libellé Opérateur MIUI</string>
@@ -643,6 +644,7 @@
     <string name="add">Ajouter</string>
     <string name="disable_carrier_logo">Logo opérateur</string>
     <string name="disable_carrier_logo_summary">Afficher le logo opérateur</string>
+    <string name="no_carrier_on_keyguard_title">Masquer sur l\'écran de déverrouillage</string>
 
     <!-- Quick Settings -->
     <string name="quick_settings_title">Volet des paramètres</string>
