@@ -1807,6 +1807,7 @@
         <activity android:name=".du.Signal" />
         <activity android:name=".du.SpamList" />
         <activity android:name=".du.StatusBarColor" />
+        <activity android:name=".du.TintedStatusBar" />
         <activity android:name=".du.Traffic" />
         <activity android:name=".du.animations.NotificationPanelSettings" />
         <activity android:name=".du.animations.AnimationInterfaceSettings" />

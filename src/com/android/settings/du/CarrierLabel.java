@@ -41,8 +41,6 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.utils.Helpers;
 import com.android.internal.util.slim.DeviceUtils;
 
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
-
 public class CarrierLabel extends SettingsPreferenceFragment  implements
         Preference.OnPreferenceChangeListener {
 
@@ -52,11 +50,8 @@ public class CarrierLabel extends SettingsPreferenceFragment  implements
     private static final String PREF_NOTIFICATION_SHOW_WIFI_SSID = "notification_show_wifi_ssid";
     private static final String NOTIFICATION_SHORTCUTS_HIDE_CARRIER = "pref_notification_shortcuts_hide_carrier";
     private static final String STATUS_BAR_CARRIER = "status_bar_carrier";
-    private static final String STATUS_BAR_CARRIER_COLOR = "status_bar_carrier_color";
     private static final String TOGGLE_CARRIER_LOGO = "toggle_carrier_logo";
     private static final String NO_KEYGUARD_CARRIER = "no_carrier_label";
-
-    static final int DEFAULT_STATUS_CARRIER_COLOR = 0xffffffff;
 
     private ContentResolver mCr;
     private PreferenceScreen mPrefSet;
@@ -64,7 +59,6 @@ public class CarrierLabel extends SettingsPreferenceFragment  implements
     private CheckBoxPreference mHideCarrier;
     private CheckBoxPreference mStatusBarCarrier;
     private CheckBoxPreference mToggleCarrierLogo;
-    private ColorPickerPreference mCarrierColorPicker;
     private CheckBoxPreference mNoKeyguardCarrier;
 
     Preference mCustomLabel;
@@ -84,9 +78,6 @@ public class CarrierLabel extends SettingsPreferenceFragment  implements
 
         mCr = getContentResolver();
         mPrefSet = getPreferenceScreen();
-
-        int intColor;
-        String hexColor;
 
         // Custom Carrier Label Text
         mCustomLabel = findPreference(PREF_CUSTOM_CARRIER_LABEL);
@@ -108,15 +99,6 @@ public class CarrierLabel extends SettingsPreferenceFragment  implements
             if (!DeviceUtils.deviceSupportsMobileData(getActivity())) {
             mPrefSet.removePreference(mToggleCarrierLogo);
         }
-
-        // MIUI-like carrier Label color
-        mCarrierColorPicker = (ColorPickerPreference) mPrefSet.findPreference(STATUS_BAR_CARRIER_COLOR);
-        mCarrierColorPicker.setOnPreferenceChangeListener(this);
-        intColor = Settings.System.getInt(getActivity().getContentResolver(),
-                    Settings.System.STATUS_BAR_CARRIER_COLOR, DEFAULT_STATUS_CARRIER_COLOR);
-        hexColor = String.format("#%08x", (0xffffffff & intColor));
-        mCarrierColorPicker.setSummary(hexColor);
-        mCarrierColorPicker.setNewPreviewColor(intColor);
 
         // Hide Carrier Label
         mHideCarrier = (CheckBoxPreference) mPrefSet.findPreference(
@@ -201,14 +183,7 @@ public class CarrierLabel extends SettingsPreferenceFragment  implements
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mCarrierColorPicker) {
-            String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String.valueOf(newValue)));
-            preference.setSummary(hex);
-            int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.STATUS_BAR_CARRIER_COLOR, intHex);
-            return true;
-        } else if (preference == mShowWifiName) {
+        if (preference == mShowWifiName) {
             Settings.System.putInt(getActivity().getContentResolver(), Settings.System.NOTIFICATION_SHOW_WIFI_SSID,
                     ((CheckBoxPreference)preference).isChecked() ? 0 : 1);
             return true;

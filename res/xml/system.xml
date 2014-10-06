@@ -27,6 +27,12 @@
             android:fragment="com.android.settings.du.animations.AnimationInterfaceSettings" />
 
          <Preference
+            android:key="category_tinted_statusbar"
+            android:title="@string/title_tinted_statusbar"
+            android:layout="@layout/preference_tintedstatusbar"
+            android:fragment="com.android.settings.du.TintedStatusBar" />
+
+         <Preference
             android:fragment="com.android.settings.du.Recents"
             android:key="recents_ram_bar"
             android:layout="@layout/preference_recents"
