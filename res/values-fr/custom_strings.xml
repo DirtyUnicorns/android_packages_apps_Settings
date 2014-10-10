@@ -688,6 +688,7 @@
     <string name="title_tile_camera">Appareil Photo</string>
     <string name="title_tile_cpufreq">Fréquence CPU</string>
     <string name="title_tile_dirtytweaks">Dirty Tweaks</string>
+    <string name="title_tile_dynamiccolors">Couleurs dynamiques</string>
     <string name="dynamic_tile_ime_switcher">Sélecteur de Clavier</string>
     <string name="dynamic_tile_usb_tether">Partage de Connexion USB</string>
     <string name="dynamic_tile_alarm">Alarme</string>
@@ -2449,5 +2450,25 @@
     <string name="icon_color_mode_system_icons">Icônes système</string>
     <string name="icon_color_mode_system_custom_icons">Icônes système et personnalisées</string>
     <string name="group_applications">Applications</string>
+
+    <!-- Tinted statusbar -->
+    <string name="tinted_statusbar_title">Couleurs</string>
+    <string name="title_tinted_statusbar">Sélecteur de couleur dynamique</string>
+    <string name="title_tinted_statusbar_option">Appliquer la couleur de</string>
+    <string name="tinted_statusbar_off">Désactivé</string>
+    <string name="tinted_statusbar_actionbar">La barre d\'action</string>
+    <string name="tinted_statusbar_system">L\'écran</string>
+    <string name="tinted_statusbar_statusbar">Barre d\'état</string>
+    <string name="tinted_statusbar_navbar">Barre de navigation</string>
+    <string name="tinted_statusbar_all">Les deux</string>
+    <string name="tinted_statusbar_filter_title">Couleur inverse</string>
+    <string name="tinted_statusbar_filter_summary">Utilisation de la couleur inverse</string>
+    <string name="tinted_statusbar_transparent_title">Opacité de la barre d\'état</string>
+    <string name="tinted_navbar_transparent_title">Opacité de la barre de navigation</string>
+
+    <!-- Dialogs -->
+    <string name="dirtytweaks_dialog_title">Aidez-Nous, Aidez-Vous</string>
+    <string name="dirtytweaks_dialog_message">Malheureusement, nous ne sommes pas des magiciens !\n\nSi vous trouvez un bogue avec un de ces réglages, ouvrez un ticket d\'incident sur Jira ou contacter un développeur de DU en fournissant les éléments suivant :\n\n1) Journal d\'erreur (Logcat) ou Last_Kmsg\n2) Kernel et Modes installés\n3) Des informations utiles\n\nSans rapport de bogue correcte, ne vous attendez pas à ce que les problèmes soient corrigés. Rappelez-vous, nous ne sommes pas des magiciens, nous pouvons donc manquer des choses.</string>
+    <string name="dirtytweaks_dialog_toast">À LIRE ENTIÈREMENT !</string>
 
 </resources>
