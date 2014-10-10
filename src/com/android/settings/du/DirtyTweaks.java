@@ -109,7 +109,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, MENU_HELP, 0, "Help Us, Help You!!")
+        menu.add(0, MENU_HELP, 0, R.string.dirtytweaks_dialog_title)
                 .setIcon(R.drawable.ic_action_help)
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
     }
@@ -120,7 +120,7 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
             case MENU_HELP:
                 showDialogInner(MENU_HELP);
                 Toast.makeText(getActivity(),
-                (Html.fromHtml("READ THE WHOLE THING!!")),
+                (R.string.dirtytweaks_dialog_toast),
                 Toast.LENGTH_LONG).show();
                 return true;
             default:
@@ -150,8 +150,8 @@ public class DirtyTweaks extends SettingsPreferenceFragment {
                 case MENU_HELP:
                     return new AlertDialog.Builder(getActivity())
                     .setIcon(R.drawable.ic_action_help)
-                    .setTitle(Html.fromHtml("<font color='" + getResources().getColor(R.color.red) + "'>Help Us, Help You!!</font>"))
-                    .setMessage(Html.fromHtml("If you find a bug with any of these settings, please provide at least one of the following to the developers.<br><br><font color='" + getResources().getColor(R.color.red) + "'>1. Logcat</font><br><font color='" + getResources().getColor(R.color.red) + "'>2. What you were doing prior to your issue</font><br><font color='" + getResources().getColor(R.color.red) + "'>3. Your complete setup so we could possibly duplicate the issue</font><br>(<i>This means things like Kernel, Device, any MODs, etc</i>)<br><br>Providing us with little to no information does not help us, help you.<br><br>We are developers, <font color='" + getResources().getColor(R.color.red) + "'><big>NOT WIZARDS</big></font> and so we <font color='" + getResources().getColor(R.color.red) + "'><big>CAN NOT</big></font> read minds.<br><br>THANK YOU for your continued support!"))
+                    .setTitle(R.string.dirtytweaks_dialog_title)
+                    .setMessage(R.string.dirtytweaks_dialog_message)
                     .setCancelable(false)
                     .setNegativeButton(R.string.dlg_ok,
                         new DialogInterface.OnClickListener() {
