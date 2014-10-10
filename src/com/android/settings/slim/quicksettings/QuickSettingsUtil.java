@@ -68,6 +68,7 @@ import static com.android.internal.util.slim.QSConstants.TILE_HEADSUP;
 import static com.android.internal.util.slim.QSConstants.TILE_CAMERA;
 import static com.android.internal.util.slim.QSConstants.TILE_CPUFREQ;
 import static com.android.internal.util.slim.QSConstants.TILE_DIRTYTWEAKS;
+import static com.android.internal.util.slim.QSConstants.TILE_DYNAMICCOLORS;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -210,6 +211,9 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_NAVBAR, R.string.title_tile_navbar,
                 "com.android.systemui:drawable/ic_qs_navbar_on"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_DYNAMICCOLORS, R.string.title_tile_dynamiccolors,
+                "com.android.systemui:drawable/ic_qs_dynamiccolors_on"));
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_HEADSUP, R.string.title_tile_headsup,
                 "com.android.systemui:drawable/ic_qs_headsup_on"));
