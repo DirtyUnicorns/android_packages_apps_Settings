@@ -401,12 +401,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                 boolean value = mCameraWake.isChecked();
                 mCameraMusicControls.setEnabled(!value);
                 mCameraSleepOnRelease.setEnabled(value);
-                if (getResources().getBoolean(
-                    com.android.internal.R.bool.config_singleStageCameraKey)) {
-                    keysCameraCategory.removePreference(mCameraSleepOnRelease);
+
+                if (!res.getBoolean(R.bool.has_camera_key)) {
+                    prefScreen.removePreference(keysCameraCategory);
                }
-           } else {
-               prefs.removePreference(keysCameraCategory);
            }
 
             mEnableCustomBindings.setChecked((Settings.System.getInt(getActivity().

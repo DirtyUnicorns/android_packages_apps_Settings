@@ -22,6 +22,9 @@
     <!-- Whether or not device settings should be displayed or not for the device -->
     <bool name="has_advanced_settings">false</bool>
 
+    <!-- Whether or not camera settings should be displayed under buttons -->
+    <bool name="has_camera_key">false</bool>
+
     <!-- Whether there is a silent mode checkbox  -->
     <bool name="has_silent_mode">true</bool>
 
