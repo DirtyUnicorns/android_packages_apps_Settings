@@ -2453,14 +2453,14 @@
 
     <!-- Tinted statusbar -->
     <string name="tinted_statusbar_title">Couleurs</string>
-    <string name="title_tinted_statusbar">Sélecteur de couleur dynamique</string>
-    <string name="title_tinted_statusbar_option">Appliquer la couleur de</string>
+    <string name="title_tinted_statusbar">Couleur dynamique</string>
+    <string name="title_tinted_statusbar_option">Appliquer la couleur</string>
     <string name="tinted_statusbar_off">Désactivé</string>
-    <string name="tinted_statusbar_actionbar">La barre d\'action</string>
-    <string name="tinted_statusbar_system">L\'écran</string>
-    <string name="tinted_statusbar_statusbar">Barre d\'état</string>
-    <string name="tinted_statusbar_navbar">Barre de navigation</string>
-    <string name="tinted_statusbar_all">Les deux</string>
+    <string name="tinted_statusbar_actionbar">Couleur de la barre d\'action</string>
+    <string name="tinted_statusbar_system">Couleur de l\'écran</string>
+    <string name="tinted_statusbar_statusbar">À la barre d\'état</string>
+    <string name="tinted_statusbar_navbar">À la barre de navigation</string>
+    <string name="tinted_statusbar_all">Aux deux</string>
     <string name="tinted_statusbar_filter_title">Couleur inverse</string>
     <string name="tinted_statusbar_filter_summary">Utilisation de la couleur inverse</string>
     <string name="tinted_statusbar_transparent_title">Opacité de la barre d\'état</string>
@@ -2468,7 +2468,7 @@
 
     <!-- Dialogs -->
     <string name="dirtytweaks_dialog_title">Aidez-Nous, Aidez-Vous</string>
-    <string name="dirtytweaks_dialog_message">Malheureusement, nous ne sommes pas des magiciens !\n\nSi vous trouvez un bogue avec un de ces réglages, ouvrez un ticket d\'incident sur Jira ou contacter un développeur de DU en fournissant les éléments suivant :\n\n1) Journal d\'erreur (Logcat) ou Last_Kmsg\n2) Kernel et Modes installés\n3) Des informations utiles\n\nSans rapport de bogue correcte, ne vous attendez pas à ce que les problèmes soient corrigés. Rappelez-vous, nous ne sommes pas des magiciens, nous pouvons donc manquer des choses.</string>
+    <string name="dirtytweaks_dialog_message">Malheureusement, nous ne sommes pas des magiciens !\n\nSi vous trouvez un bogue avec un de ces réglages, ouvrez un ticket d\'incident sur Jira ou contactez un développeur de DU en fournissant les éléments suivant :\n\n1) Journal d\'erreur (Logcat) ou Last_Kmsg\n2) Kernel et Modes installés\n3) Des informations utiles\n\nSans rapport de bogue correcte, ne vous attendez pas à ce que les problèmes soient corrigés. Rappelez-vous, nous ne sommes pas des magiciens, nous pouvons donc manquer des choses.</string>
     <string name="dirtytweaks_dialog_toast">À LIRE ENTIÈREMENT !</string>
 
 </resources>
