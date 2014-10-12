@@ -69,21 +69,32 @@
             android:streamType="ring" />
 
     <CheckBoxPreference
-         android:key="vibrate_when_ringing"
-         android:title="@string/vibrate_when_ringing_title"
-         android:persistent="false" />
+            android:key="vibrate_when_ringing"
+            android:title="@string/vibrate_when_ringing_title"
+            android:persistent="false" />
+
+    <CheckBoxPreference
+            android:key="haptic_feedback"
+            android:title="@string/haptic_feedback_enable_title"
+            android:defaultValue="true" />
 
     <com.android.settings.widget.SeekBarPreference
             android:key="vibration_duration"
             android:title="@string/minimum_vibration_duration" />
 
     <ListPreference
-            android:key="vibrator_multiplier"
+             android:key="vibrator_multiplier"
              android:persistent="false"
              android:title="@string/vibrator_multiplier_title"
              android:dialogTitle="@string/vibrator_multiplier_title"
              android:entries="@array/vibration_multiplier_values"
              android:entryValues="@array/vibration_multiplier_values" />
+
+    <com.android.settings.hardware.VibratorIntensity
+            android:key="vibration_intensity"
+            android:title="@string/vibrator_intensity_title"
+            android:dialogTitle="@string/vibrator_intensity_title"
+            android:persistent="false" />
 
     <PreferenceCategory
             android:title="@string/sound_category_system_title"/>
@@ -128,17 +139,6 @@
             android:key="camera_sounds"
             android:title="@string/camera_sounds_title"
             android:defaultValue="true" />
-
-    <CheckBoxPreference
-            android:key="haptic_feedback"
-            android:title="@string/haptic_feedback_enable_title"
-            android:defaultValue="true" />
-
-    <com.android.settings.hardware.VibratorIntensity
-            android:key="vibration_intensity"
-            android:title="@string/vibrator_intensity_title"
-            android:dialogTitle="@string/vibrator_intensity_title"
-            android:persistent="false" />
 
     <CheckBoxPreference
             android:key="volume_adjust_sounds"
