@@ -2471,4 +2471,11 @@
     <string name="dirtytweaks_dialog_message">Malheureusement, nous ne sommes pas des magiciens !\n\nSi vous trouvez un bogue avec un de ces réglages, ouvrez un ticket d\'incident sur Jira ou contactez un développeur de DU en fournissant les éléments suivant :\n\n1) Journal d\'erreur (Logcat) ou Last_Kmsg\n2) Kernel et Modes installés\n3) Des informations utiles\n\nSans rapport de bogue correcte, ne vous attendez pas à ce que les problèmes soient corrigés. Rappelez-vous, nous ne sommes pas des magiciens, nous pouvons donc manquer des choses.</string>
     <string name="dirtytweaks_dialog_toast">À LIRE ENTIÈREMENT !</string>
 
+    <!-- Notify changed networks -->
+    <string name="wifi_notify_changed_networks">Notification de connexion Wi-Fi</string>
+    <string name="notify_changed_networks_default">Désactivée</string>
+    <string name="notify_changed_networks_toast">Animation Toast</string>
+    <string name="notify_changed_networks_notification">Notification</string>
+    <string name="notify_changed_networks_notification_sound">Notification et son</string>
+
 </resources>
