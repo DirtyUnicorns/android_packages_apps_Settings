@@ -17,10 +17,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/statusbar_signal_title" >
 
-   <PreferenceCategory
-        android:key="statusbar_signal_title"
-        android:title="@string/statusbar_signal_title">
-
     <com.android.settings.du.preference.SystemCheckBoxPreference
         android:key="statusbar_hide_signal_bars"
         android:title="@string/hide_signal_bars_title"
@@ -49,6 +45,5 @@
         android:title="@string/status_bar_notif_count_title"
         android:summary="@string/status_bar_notif_count_summary"
         android:defaultValue="false" />
-    </PreferenceCategory>
 
 </PreferenceScreen>

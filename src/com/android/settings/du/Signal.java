@@ -60,13 +60,12 @@ public class Signal extends SettingsPreferenceFragment implements
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
     private static final String STATUS_BAR_NETWORK_ACTIVITY = "status_bar_network_activity";
     private static final String KEY_SHOW_4G = "show_4g_for_lte";
-    private static final String CATEGORY_STATUSBAR_SIGNAL = "statusbar_signal_title";
     private static final String STATUSBAR_6BAR_SIGNAL = "statusbar_6bar_signal";
+    private static final String STATUSBAR_HIDE_SIGNAL_BARS = "statusbar_hide_signal_bars";
 
     private CheckBoxPreference mStatusBarNotifCount;
     private CheckBoxPreference mStatusBarNetworkActivity;
     private CheckBoxPreference mShow4G;
-    private PreferenceGroup mStatusbarSignalCategory;
     private CheckBoxPreference mStatusBarSixBarSignal;
 
     @Override
@@ -91,21 +90,24 @@ public class Signal extends SettingsPreferenceFragment implements
         mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
         mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
 
-        mStatusbarSignalCategory = (PreferenceGroup) findPreference(CATEGORY_STATUSBAR_SIGNAL);
-
         mShow4G = (CheckBoxPreference) findPreference(KEY_SHOW_4G);
         if (mShow4G != null) {
             mShow4G.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.SHOW_4G_FOR_LTE, 0) == 1);
                 mShow4G.setOnPreferenceChangeListener(this);
             if (!DeviceUtils.deviceSupportsMobileData(getActivity())) {
-                mStatusbarSignalCategory.removePreference(findPreference(KEY_SHOW_4G));
+                getPreferenceScreen().removePreference(findPreference(KEY_SHOW_4G));
             }
         }
 
         mStatusBarSixBarSignal = (CheckBoxPreference) findPreference(STATUSBAR_6BAR_SIGNAL);
         mStatusBarSixBarSignal.setChecked((Settings.System.getInt(resolver,
                 Settings.System.STATUSBAR_6BAR_SIGNAL, 0) == 1));
+
+        if (!DeviceUtils.deviceSupportsMobileData(getActivity())) {
+            getPreferenceScreen().removePreference(findPreference(STATUSBAR_6BAR_SIGNAL));
+            getPreferenceScreen().removePreference(findPreference(STATUSBAR_HIDE_SIGNAL_BARS));
+        }
     }
 
     @Override
