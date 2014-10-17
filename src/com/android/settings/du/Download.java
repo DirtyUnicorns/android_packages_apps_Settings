@@ -50,7 +50,6 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
     Preference mPAMicroGapps;
     Preference mPAFullGapps;
     Preference mTBOGapps;
-    Preference mPlayStore;
     Preference mFdroid;
     Preference mXposed;
     Preference mXposedMod;
@@ -76,7 +75,6 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
         mPAMicroGapps = findPreference("pa_micro_gapps");
         mPAFullGapps = findPreference("pa_full_gapps");
         mTBOGapps = findPreference("tbo_gapps");
-        mPlayStore = findPreference("playstore");
         mFdroid = findPreference("fdroid");
         mXposed = findPreference("xposed");
         mXposedMod = findPreference("xposed_mod");
@@ -132,11 +130,6 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
             return true;
         } else if (preference == mTBOGapps) {
             Uri uri = Uri.parse("http://goo.gl/QHLl7U");
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(intent);
-            return true;
-        } else if (preference == mPlayStore) {
-            Uri uri = Uri.parse("http://goo.gl/tWWgyJ");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;
