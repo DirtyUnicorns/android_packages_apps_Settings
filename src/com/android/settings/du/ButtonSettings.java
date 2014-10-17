@@ -217,6 +217,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             prefScreen.removePreference(keysMenuCategory);
             prefScreen.removePreference(keysAssistCategory);
             prefScreen.removePreference(keysAppSwitchCategory);
+            prefScreen.removePreference(keysCameraCategory);
         } else {
             mEnableCustomBindings = (SwitchPreference) prefScreen.findPreference(
                     KEYS_ENABLE_CUSTOM);
