@@ -49,6 +49,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settings.util.Helpers;
 import com.android.settings.util.CMDProcessor;
+import com.android.internal.util.slim.DeviceUtils;
 
 import java.io.File;
 
@@ -68,6 +69,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
     private static final String DISABLE_BOOTAUDIO = "disable_bootaudio";
     private static final String PREF_MENU_ARROWS = "navigation_bar_menu_arrow_keys";
     private static final String STATUS_BAR_CUSTOM_HEADER = "custom_status_bar_header";
+    private static final String BREATHING_NOTIFICATIONS = "breathing_notifications";
 
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mSMSBreath;
@@ -81,6 +83,7 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
     private CheckBoxPreference mDisableBootAudio;
     private CheckBoxPreference mMenuArrowKeysCheckBox;
     private CheckBoxPreference mStatusBarCustomHeader;
+    private PreferenceGroup mBreathingNotifications;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -120,6 +123,15 @@ public class MiscTweaks extends SettingsPreferenceFragment implements
         mVoicemailBreath.setChecked(Settings.System.getInt(resolver,
                 Settings.System.KEY_VOICEMAIL_BREATH, 0) == 1);
         mVoicemailBreath.setOnPreferenceChangeListener(this);
+
+        mBreathingNotifications = (PreferenceGroup) findPreference(BREATHING_NOTIFICATIONS);
+
+        if (!DeviceUtils.deviceSupportsMobileData(getActivity())) {
+            getPreferenceScreen().removePreference(findPreference(SMS_BREATH));
+            getPreferenceScreen().removePreference(findPreference(MISSED_CALL_BREATH));
+            getPreferenceScreen().removePreference(findPreference(VOICEMAIL_BREATH));
+            getPreferenceScreen().removePreference(findPreference(BREATHING_NOTIFICATIONS));
+        }
 
         mEmulateMenuKey = (CheckBoxPreference) prefSet.findPreference(EMULATE_MENU_KEY);
         mEmulateMenuKey.setChecked(Settings.System.getInt(resolver,

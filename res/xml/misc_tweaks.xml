@@ -84,7 +84,7 @@
         android:persistent="false" />
 
     <PreferenceCategory
-        android:key="breathing_notifications_title"
+        android:key="breathing_notifications"
         android:title="@string/breathing_notifications_title">
 
     <CheckBoxPreference
