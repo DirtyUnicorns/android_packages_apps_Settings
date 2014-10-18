@@ -1682,8 +1682,8 @@
         </activity>
 
         <!-- App Circle Bar -->
-        <activity android:name="Settings$MiscTweaksActivity"
-                android:label="@string/misc_tweaks_title"
+        <activity android:name="Settings$AppCircleBarActivity"
+                android:label="@string/app_circle_bar_title"
                 android:taskAffinity=""
                 android:excludeFromRecents="true">
             <intent-filter>
@@ -1691,7 +1691,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.du.MiscTweaks" />
+                android:value="com.android.settings.du.AppCircleBar" />
         </activity>
 
         <!-- Heads Up -->

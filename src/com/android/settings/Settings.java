@@ -89,7 +89,7 @@ import com.android.settings.print.PrintJobSettingsFragment;
 import com.android.settings.print.PrintServiceSettingsFragment;
 import com.android.settings.print.PrintSettingsFragment;
 import com.android.settings.profiles.ProfileEnabler;
-import com.android.settings.du.MiscTweaks;
+import com.android.settings.du.AppCircleBar;
 import com.android.settings.du.NavBar;
 import com.android.settings.du.DNDSettings;
 import com.android.settings.du.hfm.HfmSettings;
@@ -367,7 +367,7 @@ public class Settings extends PreferenceActivity
         QuietHours.class.getName(),
         ApnSettings.class.getName(),
         BlacklistSettings.class.getName(),
-        MiscTweaks.class.getName(),
+        AppCircleBar.class.getName(),
         NavBar.class.getName(),
         DNDSettings.class.getName(),
         HfmSettings.class.getName(),
@@ -1218,7 +1218,7 @@ public class Settings extends PreferenceActivity
     public static class AnimationInterfaceSettingsActivity extends Settings { /* empty */ }
     public static class NavBarActivity extends Settings { /* empty */ }
     public static class DNDSettingsActivity extends Settings { /* empty */ }
-    public static class MiscTweaksActivity extends Settings { /* empty */ }
+    public static class AppCircleBarActivity extends Settings { /* empty */ }
     public static class HfmSettingsActivity extends Settings { /* empty */ }
     public static class HaloActivity extends Settings { /* empty */ }
     public static class PieActivity extends Settings { /* empty */ }
