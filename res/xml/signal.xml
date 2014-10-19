@@ -46,4 +46,10 @@
         android:summary="@string/status_bar_notif_count_summary"
         android:defaultValue="false" />
 
+    <CheckBoxPreference
+        android:key="ticker_disabled"
+        android:title="@string/ticker_disabled_title"
+        android:summary="@string/ticker_disabled_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
