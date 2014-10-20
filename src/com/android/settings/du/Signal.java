@@ -43,7 +43,6 @@ import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
 
 import com.android.internal.util.slim.DeviceUtils;
-
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -62,11 +61,13 @@ public class Signal extends SettingsPreferenceFragment implements
     private static final String KEY_SHOW_4G = "show_4g_for_lte";
     private static final String STATUSBAR_6BAR_SIGNAL = "statusbar_6bar_signal";
     private static final String STATUSBAR_HIDE_SIGNAL_BARS = "statusbar_hide_signal_bars";
+    private static final String PREF_TICKER = "ticker_disabled";
 
     private CheckBoxPreference mStatusBarNotifCount;
     private CheckBoxPreference mStatusBarNetworkActivity;
     private CheckBoxPreference mShow4G;
     private CheckBoxPreference mStatusBarSixBarSignal;
+    private CheckBoxPreference mTicker;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,6 +84,11 @@ public class Signal extends SettingsPreferenceFragment implements
         mStatusBarNotifCount.setChecked(Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_NOTIF_COUNT, 0) == 1);
         mStatusBarNotifCount.setOnPreferenceChangeListener(this);
+
+        mTicker = (CheckBoxPreference) prefSet.findPreference(PREF_TICKER);
+        mTicker.setChecked(Settings.System.getInt(resolver,
+                Settings.System.TICKER_DISABLED, 0) == 1);
+        mTicker.setOnPreferenceChangeListener(this);
 
         mStatusBarNetworkActivity = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_NETWORK_ACTIVITY);
         mStatusBarNetworkActivity.setChecked(Settings.System.getInt(resolver,
@@ -126,7 +132,6 @@ public class Signal extends SettingsPreferenceFragment implements
         if (preference == mStatusBarNotifCount) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver, Settings.System.STATUS_BAR_NOTIF_COUNT, value ? 1 : 0);
-
         } else if (preference == mStatusBarNetworkActivity) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver,
@@ -135,6 +140,10 @@ public class Signal extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver,
                 Settings.System.SHOW_4G_FOR_LTE, value ? 1 : 0);
+        } else if (preference == mTicker) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver,
+                Settings.System.TICKER_DISABLED, value ? 1 : 0);
         } else {
             return false;
         }
