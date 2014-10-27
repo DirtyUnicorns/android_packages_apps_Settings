@@ -140,6 +140,8 @@
     <string name="gestures_long_spen_summary_head">Launch custom action on long press</string>
     <string name="gestures_double_spen_title_head">Double tap</string>
     <string name="gestures_double_spen_summary_head">Launch custom action on double tap</string>
+    <string name="double_tap_sleep_nav_bar_title">Navigation bar</string>
+    <string name="double_tap_sleep_nav_bar_summary">Double tap anywhere on the navigation bar</string>
 
     <!-- Gestures Options -->
     <string name="gestures_action_empty">No action</string>
