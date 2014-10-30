@@ -90,6 +90,7 @@ import com.android.settings.print.PrintServiceSettingsFragment;
 import com.android.settings.print.PrintSettingsFragment;
 import com.android.settings.profiles.ProfileEnabler;
 import com.android.settings.du.AppCircleBar;
+import com.android.settings.du.BatteryIconStyle;
 import com.android.settings.du.NavBar;
 import com.android.settings.du.DNDSettings;
 import com.android.settings.du.hfm.HfmSettings;
@@ -97,6 +98,7 @@ import com.android.settings.du.Halo;
 import com.android.settings.du.Pie;
 import com.android.settings.du.DirtyTweaks;
 import com.android.settings.slim.quicksettings.QuickSettingsTiles;
+import com.android.settings.slim.DisplayRotation;
 import com.android.settings.tts.TextToSpeechSettings;
 import com.android.settings.users.UserSettings;
 import com.android.settings.vpn2.VpnSettings;
@@ -368,6 +370,8 @@ public class Settings extends PreferenceActivity
         ApnSettings.class.getName(),
         BlacklistSettings.class.getName(),
         AppCircleBar.class.getName(),
+        BatteryIconStyle.class.getName(),
+        DisplayRotation.class.getName(),
         NavBar.class.getName(),
         DNDSettings.class.getName(),
         HfmSettings.class.getName(),
@@ -1219,6 +1223,8 @@ public class Settings extends PreferenceActivity
     public static class NavBarActivity extends Settings { /* empty */ }
     public static class DNDSettingsActivity extends Settings { /* empty */ }
     public static class AppCircleBarActivity extends Settings { /* empty */ }
+    public static class BatteryIconStyleActivity extends Settings { /* empty */ }
+    public static class DisplayRotationActivity extends Settings { /* empty */ }
     public static class HfmSettingsActivity extends Settings { /* empty */ }
     public static class HaloActivity extends Settings { /* empty */ }
     public static class PieActivity extends Settings { /* empty */ }
