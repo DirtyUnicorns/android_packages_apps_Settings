@@ -107,6 +107,7 @@ public class Traffic extends SettingsPreferenceFragment
         String hexColor = String.format("#%08x", (0xffffffff & intColor));
             mNetTrafficColor.setSummary(hexColor);
             mNetTrafficColor.setNewPreviewColor(intColor);
+            updateTrafficColor();
 
         if (TrafficStats.getTotalTxBytes() != TrafficStats.UNSUPPORTED &&
                 TrafficStats.getTotalRxBytes() != TrafficStats.UNSUPPORTED) {
@@ -132,60 +133,28 @@ public class Traffic extends SettingsPreferenceFragment
         }
     }
 
+    private void updateTrafficColor() {
+        int value = Settings.System.getInt(getActivity().getContentResolver(),
+               Settings.System.STATUS_BAR_TINTED_COLOR, 0);
+        if (value == 1 || value == 2) {
+            mNetTrafficColor.setEnabled(false);
+        } else {
+            mNetTrafficColor.setEnabled(true);
+        }
+    }
+
     private void updateNetworkTrafficState(int mIndex) {
         if (mIndex <= 0) {
             mNetTrafficUnit.setEnabled(false);
-            mNetTrafficColor.setEnabled(false);
             mNetTrafficPeriod.setEnabled(false);
             mNetTrafficAutohide.setEnabled(false);
             mNetTrafficAutohideThreshold.setEnabled(false);
         } else {
             mNetTrafficUnit.setEnabled(true);
-            mNetTrafficColor.setEnabled(true);
             mNetTrafficPeriod.setEnabled(true);
             mNetTrafficAutohide.setEnabled(true);
             mNetTrafficAutohideThreshold.setEnabled(true);
         }
-    }
-
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, MENU_RESET, 0, R.string.network_traffic_color_reset)
-                .setIcon(R.drawable.ic_settings_backup)
-                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case MENU_RESET:
-                resetToDefault();
-                return true;
-            default:
-                return super.onContextItemSelected(item);
-        }
-    }
-
-    private void resetToDefault() {
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
-        alertDialog.setTitle(R.string.network_traffic_color_reset);
-        alertDialog.setMessage(R.string.network_traffic_color_reset_message);
-        alertDialog.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                NetworkTrafficColorReset();
-            }
-        });
-        alertDialog.setNegativeButton(R.string.cancel, null);
-        alertDialog.create().show();
-    }
-
-    private void NetworkTrafficColorReset() {
-        Settings.System.putInt(getContentResolver(),
-                Settings.System.NETWORK_TRAFFIC_COLOR, DEFAULT_TRAFFIC_COLOR);
-
-        mNetTrafficColor.setNewPreviewColor(DEFAULT_TRAFFIC_COLOR);
-        String hexColor = String.format("#%08x", (0xffffffff & DEFAULT_TRAFFIC_COLOR));
-        mNetTrafficColor.setSummary(hexColor);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -206,6 +175,7 @@ public class Traffic extends SettingsPreferenceFragment
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.NETWORK_TRAFFIC_COLOR, intHex);
+            updateTrafficColor();
             return true;  
         } else if (preference == mNetTrafficUnit) {
             mNetTrafficVal = setBit(mNetTrafficVal, MASK_UNIT, ((String)newValue).equals("1"));

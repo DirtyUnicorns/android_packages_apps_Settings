@@ -130,6 +130,7 @@ implements OnPreferenceChangeListener {
             mColorPicker.setSummary(hexColor);
         }
         mColorPicker.setNewPreviewColor(intColor);
+        updateClockColor();
 
         mClockDateDisplay = (ListPreference) findPreference(PREF_CLOCK_DATE_DISPLAY);
         mClockDateDisplay.setOnPreferenceChangeListener(this);
@@ -209,6 +210,7 @@ implements OnPreferenceChangeListener {
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUSBAR_CLOCK_COLOR, intHex);
+            updateClockColor();
             return true;
         } else if (preference == mClockDateDisplay) {
             int val = Integer.parseInt((String) newValue);
@@ -334,6 +336,16 @@ implements OnPreferenceChangeListener {
         });
         alertDialog.setNegativeButton(R.string.cancel, null);
         alertDialog.create().show();
+    }
+
+    private void updateClockColor() {
+        int value = Settings.System.getInt(getActivity().getContentResolver(),
+               Settings.System.STATUS_BAR_TINTED_COLOR, 0);
+        if (value == 1 || value == 2) {
+            mColorPicker.setEnabled(false);
+        } else {
+            mColorPicker.setEnabled(true);
+        }
     }
 
     private void parseClockDateFormats() {
