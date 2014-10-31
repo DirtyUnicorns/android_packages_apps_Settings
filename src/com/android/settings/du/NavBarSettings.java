@@ -36,8 +36,10 @@ import android.view.WindowManagerGlobal;
 import android.view.IWindowManager;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import android.provider.Settings;
 
 import com.android.internal.util.slim.DeviceUtils;
+import com.android.settings.widget.SeekBarPreferenceGlow;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -50,8 +52,10 @@ public class NavBarSettings extends SettingsPreferenceFragment implements
     private final Configuration mCurConfig = new Configuration();
 
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
+    private static final String NAVIGATION_BUTTON_GLOW_TIME = "navigation_button_glow_time";
 
     CheckBoxPreference mNavigationBarLeftPref;
+    SeekBarPreferenceGlow mNavigationButtonGlowTime;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -61,6 +65,11 @@ public class NavBarSettings extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
 
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mNavigationButtonGlowTime = (SeekBarPreferenceGlow) getPreferenceScreen().findPreference(NAVIGATION_BUTTON_GLOW_TIME);
+        mNavigationButtonGlowTime.setDefault(Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.NAVIGATION_BUTTON_GLOW_TIME, 500));
+        mNavigationButtonGlowTime.setOnPreferenceChangeListener(this);
 
         mNavigationBarLeftPref = (CheckBoxPreference) findPreference(KEY_NAVIGATION_BAR_LEFT);
 
@@ -86,8 +95,11 @@ public class NavBarSettings extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
-        return true;
+	if (preference == mNavigationButtonGlowTime) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.NAVIGATION_BUTTON_GLOW_TIME, (Integer)objValue);
+            return true;
+        }
+        return false;
     }
-
 }
