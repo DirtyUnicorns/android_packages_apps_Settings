@@ -198,6 +198,18 @@ public class SecuritySettings extends RestrictedSettingsFragment
         // Add package manager to check if features are available
         PackageManager pm = getPackageManager();
 
+        // App security settings
+        addPreferencesFromResource(R.xml.security_settings_app_custom);
+        mBlacklist = (PreferenceScreen) root.findPreference(KEY_BLACKLIST);
+
+        // Determine options based on device telephony support
+        if (!pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
+            // No telephony, remove dependent options
+            PreferenceGroup appCategory = (PreferenceGroup)
+                    root.findPreference(KEY_APP_SECURITY_CATEGORY);
+            appCategory.removePreference(mBlacklist);
+        }
+
         // Add options for lock/unlock screen
         int resid = 0;
         if (!mLockPatternUtils.isSecure()) {
@@ -425,18 +437,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
             } else {
                 mToggleVerifyApps.setEnabled(false);
             }
-        }
-
-        // App security settings
-        addPreferencesFromResource(R.xml.security_settings_app_custom);
-        mBlacklist = (PreferenceScreen) root.findPreference(KEY_BLACKLIST);
-
-        // Determine options based on device telephony support
-        if (!pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
-            // No telephony, remove dependent options
-            PreferenceGroup appCategory = (PreferenceGroup)
-                    root.findPreference(KEY_APP_SECURITY_CATEGORY);
-            appCategory.removePreference(mBlacklist);
         }
 
         mNotificationAccess = findPreference(KEY_NOTIFICATION_ACCESS);
