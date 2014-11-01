@@ -49,7 +49,6 @@ public class NavBarSettings extends SettingsPreferenceFragment implements
 
     private final Configuration mCurConfig = new Configuration();
 
-    private static final String MISC_CAT = "misc_cat";
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
 
     CheckBoxPreference mNavigationBarLeftPref;
@@ -68,7 +67,6 @@ public class NavBarSettings extends SettingsPreferenceFragment implements
         if (!Utils.isPhone(getActivity())) {
             if(mNavigationBarLeftPref != null)
                 getPreferenceScreen().removePreference(mNavigationBarLeftPref);
-                getPreferenceScreen().removePreference((PreferenceCategory) findPreference(MISC_CAT));
         }
     }
 
