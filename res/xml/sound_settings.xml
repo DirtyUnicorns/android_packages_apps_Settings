@@ -140,6 +140,12 @@
             android:title="@string/camera_sounds_title"
             android:defaultValue="true" />
 
+    <com.android.settings.du.preference.SystemCheckBoxPreference
+            android:key="screenshot_sound"
+            android:title="@string/screenshot_sound_title"
+            android:summary="@string/screenshot_sound_summary"
+            android:defaultValue="true" />
+
     <CheckBoxPreference
             android:key="volume_adjust_sounds"
             android:title="@string/volume_adjust_sounds_enable_title"

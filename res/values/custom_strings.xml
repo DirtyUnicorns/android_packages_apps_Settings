@@ -2452,4 +2452,8 @@
     <!-- Navigation bar glow time -->
     <string name="navigation_button_glow_time_title">Button glow time</string>
 
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+    <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
+
 </resources>
