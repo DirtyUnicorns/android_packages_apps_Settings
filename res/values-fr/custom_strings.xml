@@ -142,6 +142,8 @@
     <string name="gestures_long_spen_summary_head">Définir l\'action personnalisée lors d\'un appui long</string>
     <string name="gestures_double_spen_title_head">Double appui</string>
     <string name="gestures_double_spen_summary_head">Définir l\'action personnalisée lors d\'un double appui</string>
+    <string name="double_tap_sleep_nav_bar_title">Barre de navigation</string>
+    <string name="double_tap_sleep_nav_bar_summary">Éteindre l\'écran avec un double appui sur la barre de navigation</string>
 
     <!-- Gestures Options -->
     <string name="gestures_action_empty">Aucune action</string>
@@ -1125,6 +1127,7 @@
     <string name="navring_action_screen_off">Mise en veille</string>
     <string name="navring_action_torch">Lampe torche</string>
     <string name="navring_action_google_now">Google Now</string>
+    <string name="navring_action_last_app">Basculer sur la dernière application</string>
     <string name="navring_choose_action_title">Choisir une action</string>
 
     <!-- Hardware keys -->
@@ -2477,5 +2480,18 @@
     <string name="notify_changed_networks_toast">Animation Toast</string>
     <string name="notify_changed_networks_notification">Notification</string>
     <string name="notify_changed_networks_notification_sound">Notification et son</string>
+
+    <!-- App moving -->
+    <string name="app_moving_enable">Activer le déplacement d\'application</string>
+    <string name="app_moving_disable">Désactiver le déplacement d\'application</string>
+    <string name="app_moving_reboot_title">Redémarrer\u00A0?</string>
+    <string name="app_moving_reboot_enabled_desc">Le déplacement d\'application est activé.\n\nL\'appareil doit être redémarré pour la prise en charge des nouveaux paramètres.</string>
+    <string name="app_moving_reboot_disabled_desc">Le déplacement d\'application est désactivé.\n\nL\'appareil doit être redémarré pour la prise en charge des nouveaux paramètres.</string>
+    <string name="app_moving_reboot_now_button">Redémarrer maintenant</string>
+    <string name="app_moving_reboot_later_button">Redémarrer plus tard</string>
+
+    <!-- ticker preference -->
+    <string name="ticker_disabled_title">Texte de notification</string>
+    <string name="ticker_disabled_summary">Ne pas faire défiler le texte des notifications entrantes dans la barre d\'état</string>
 
 </resources>
