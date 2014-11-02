@@ -2494,4 +2494,11 @@
     <string name="ticker_disabled_title">Texte de notification</string>
     <string name="ticker_disabled_summary">Ne pas faire défiler le texte des notifications entrantes dans la barre d\'état</string>
 
+    <!-- Navigation bar glow time -->
+    <string name="navigation_button_glow_time_title">Délai des points lumineux</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Capture d\'écran</string>
+    <string name="screenshot_sound_summary">Émettre un son lors de la capture d\'écran</string>
+
 </resources>
