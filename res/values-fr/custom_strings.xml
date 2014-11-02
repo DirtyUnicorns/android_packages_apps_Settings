@@ -1114,7 +1114,7 @@
     <string name="navigation_bar_title">Barre de navigation</string>
     <string name="navigation_ring_title">Anneau de la barre de navigation</string>
     <string name="navigation_bar_left_title">Mode gaucher</string>
-    <string name="navigation_bar_left_summary">En mode paysage, la barre de navigation est situé sur le côté gauche de l\'écran</string>
+    <string name="navigation_bar_left_summary">En mode paysage, la barre de navigation est située sur le côté gauche de l\'écran</string>
     <string name="navring_target_reset_message">Revenir à la configuration d\'origine\u00A0?</string>
     <string name="navring_target_reset">Raccourcis de la barre de navigation réinitialisés</string>
     <string name="navring_action_open_ime_switcher">Changer la méthode de saisie</string>
