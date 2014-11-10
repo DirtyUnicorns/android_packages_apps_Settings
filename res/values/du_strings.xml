@@ -55,4 +55,10 @@
     <string name="mod_version">DU version</string>
     <string name="mod_version_default">Unknown</string>
 
+    <!-- Share Dirty Unicorns -->
+    <string name="share_du_title">Share Dirty Unicorns</string>
+    <string name="share_du_summary">Let others know about Dirty Unicorns</string>
+    <string name="share_message">Check out what #DirtyUnicorns is all about @ http://goo.gl/emISQ1</string>
+    <string name="share_chooser_title">Share Dirty Unicorns</string>
+
 </resources>
