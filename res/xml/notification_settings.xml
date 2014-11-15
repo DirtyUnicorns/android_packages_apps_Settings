@@ -90,6 +90,12 @@
                 android:summary="@string/screenshot_sound_summary"
                 android:defaultValue="true" />
 
+        <PreferenceScreen
+                android:key="advanced_sound_settings"
+                android:title="@string/advanced_sound_title"
+                android:persistent="false"
+                android:fragment="com.android.settings.du.SoundSettings" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
