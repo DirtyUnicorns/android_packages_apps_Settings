@@ -2011,6 +2011,7 @@
 
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.Download" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.PowerMenu" />
+        <activity android:name="com.dirtyunicorns.dutweaks.fragments.Traffic" />
 
         <!-- End of DU activities -->
 
