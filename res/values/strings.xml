@@ -1929,6 +1929,8 @@
     <string name="haptic_feedback_enable_title">Vibrate on touch</string>
     <!-- Sound settings screen, setting option name checkbox to enable/disable audio recording features that improve audio recording in noisy environments -->
     <string name="audio_record_proc_title">Noise cancellation</string>
+    <!-- Allow disability of audio adjustment sound -->
+    <string name="volume_adjust_sound_title">Volume adjust sound</string>
     <!-- Volume description for media volume -->
     <string name="volume_media_description">Music, video, games, &amp; other media</string>
     <!-- Volume description for ringtone and notification volume -->
