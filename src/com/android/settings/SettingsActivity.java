@@ -68,6 +68,7 @@ import com.android.settings.accessibility.AccessibilitySettings;
 import com.android.settings.accessibility.CaptionPropertiesFragment;
 import com.android.settings.accounts.AccountSettings;
 import com.android.settings.accounts.AccountSyncSettings;
+import com.dirtyunicorns.dutweaks.DirtyTweaks;
 import com.android.settings.applications.InstalledAppDetails;
 import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ProcessStatsUi;
@@ -233,7 +234,8 @@ public class SettingsActivity extends Activity
             R.id.print_settings,
             R.id.nfc_payment_settings,
             R.id.home_settings,
-            R.id.dashboard
+            R.id.dashboard,
+            R.id.dirtytweaks
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
@@ -297,7 +299,8 @@ public class SettingsActivity extends Activity
             AppNotificationSettings.class.getName(),
             OtherSoundSettings.class.getName(),
             QuickLaunchSettings.class.getName(),
-            ApnSettings.class.getName()
+            ApnSettings.class.getName(),
+            DirtyTweaks.class.getName()
     };
 
 
@@ -1194,16 +1197,6 @@ public class SettingsActivity extends Activity
                 } else if (id == R.id.development_settings) {
                     if (!showDev || um.hasUserRestriction(
                             UserManager.DISALLOW_DEBUGGING_FEATURES)) {
-                        removeTile = true;
-                    }
-                } else if (id == R.id.dirtytweaks) {
-                    // Not sure why any user would uninstall Dirty Tweaks but if they do, let's remove this
-                    boolean supported = false;
-                    try {
-                        supported = (getPackageManager().getPackageInfo("com.dirtyunicorns.dutweaks", 0).versionCode >= 1);
-                    } catch (PackageManager.NameNotFoundException e) {
-                    }
-                    if (!supported) {
                         removeTile = true;
                     }
                 } else if (id == R.id.supersu_settings) {
