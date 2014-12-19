@@ -71,6 +71,7 @@ import com.android.settings.accessibility.CaptionPropertiesFragment;
 import com.android.settings.accounts.AccountSettings;
 import com.android.settings.accounts.AccountSyncSettings;
 import com.android.settings.applications.DrawOverlayDetails;
+import com.dirtyunicorns.dutweaks.DirtyTweaks;
 import com.android.settings.applications.InstalledAppDetails;
 import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ManageAssist;
@@ -278,7 +279,8 @@ public class SettingsActivity extends Activity
             R.id.print_settings,
             R.id.nfc_payment_settings,
             R.id.home_settings,
-            R.id.dashboard
+            R.id.dashboard,
+            R.id.dirtytweaks
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
@@ -354,6 +356,7 @@ public class SettingsActivity extends Activity
             ProcessStatsSummary.class.getName(),
             DrawOverlayDetails.class.getName(),
             WriteSettingsDetails.class.getName(),
+            DirtyTweaks.class.getName(),
     };
 
 
