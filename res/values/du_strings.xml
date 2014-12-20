@@ -89,4 +89,11 @@
     <string name="screenshot_sound_title">Screenshot sound</string>
     <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
 
+    <!-- Doze pulse (ambient display) notification timeout -->
+    <string name="doze_timeout_title">Ambient display timeout</string>
+    <string name="doze_timeout_summary">Time that the screen stays on for notification pulse</string>
+
+    <!-- Doze (ambient display) preference category -->
+    <string name="display_category_doze_options_title">Ambient display options</string>
+
 </resources>
