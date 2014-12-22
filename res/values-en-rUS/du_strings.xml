@@ -18,8 +18,7 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="header_category_custom">http://purl.org/dc/elements/1.1/
-</string>
+  <string name="header_category_custom">Customization</string>
   <string name="custom_title">Dirty Tweaks</string>
   <string name="duextrainfo">Extra information</string>
   <string name="duextrainfo_summary">Display extra info for cpu, display, etc</string>
