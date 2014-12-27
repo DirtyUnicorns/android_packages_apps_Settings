@@ -88,13 +88,6 @@ public final class SearchIndexableResources {
                         BluetoothSettings.class.getName(),
                         R.drawable.ic_settings_bluetooth2));
 
-        sResMap.put(SimSettings.class.getName(),
-                new SearchIndexableResource(
-                        Ranking.getRankForClassName(SimSettings.class.getName()),
-                        NO_DATA_RES_ID,
-                        SimSettings.class.getName(),
-                        R.drawable.ic_sim_sd));
-
         sResMap.put(DataUsageSummary.class.getName(),
                 new SearchIndexableResource(
                         Ranking.getRankForClassName(DataUsageSummary.class.getName()),
