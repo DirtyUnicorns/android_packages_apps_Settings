@@ -2009,6 +2009,14 @@
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.PowerMenu" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.Traffic" />
 
+        <receiver android:name="com.dirtyunicorns.dutweaks.fragments.IntentReceiver" >
+            <intent-filter>
+                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.dirtyunicorns.dutweaks.fragments.CheckHosts" />
+
         <!-- End of DU activities -->
 
         <provider
