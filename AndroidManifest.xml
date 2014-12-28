@@ -2005,6 +2005,7 @@
                 android:value="com.dirtyunicorns.dutweaks.DirtyTweaks" />
         </activity>
 
+        <activity android:name="com.dirtyunicorns.dutweaks.fragments.ButtonSettings" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.Download" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.MiscTweaks" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.PowerMenu" />
