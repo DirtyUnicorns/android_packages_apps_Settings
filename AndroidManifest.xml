@@ -2009,6 +2009,7 @@
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.Download" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.MiscTweaks" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.PowerMenu" />
+        <activity android:name="com.dirtyunicorns.dutweaks.fragments.QuickSettings" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.StatusbarClock" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.Traffic" />
 
