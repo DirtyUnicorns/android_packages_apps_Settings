@@ -1,4 +1,6 @@
 # Keep all Fragments in this package, which are used by reflection.
+-keep class com.dirtyunicorns.dutweaks.**
+-keep class com.dirtyunicorns.dutweaks.fragments.**
 -keep class com.android.settings.*Fragment
 -keep class com.android.settings.*Picker
 -keep class com.android.settings.*Settings
