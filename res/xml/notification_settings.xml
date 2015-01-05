@@ -84,12 +84,6 @@
                 android:persistent="false"
                 android:fragment="com.android.settings.notification.OtherSoundSettings" />
 
-        <com.dirtyunicorns.dutweaks.preference.SystemCheckBoxPreference
-                android:key="screenshot_sound"
-                android:title="@string/screenshot_sound_title"
-                android:summary="@string/screenshot_sound_summary"
-                android:defaultValue="true" />
-
         <PreferenceScreen
                 android:key="advanced_sound_settings"
                 android:title="@string/advanced_sound_title"
