@@ -2013,6 +2013,9 @@
 
         <service android:name="com.dirtyunicorns.dutweaks.fragments.CheckHosts" />
 
+        <activity android:name="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereBuilderActivity" />
+        <activity android:name="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereCreateGestureActivity" />
+
         <!-- End of DU activities -->
 
         <provider
