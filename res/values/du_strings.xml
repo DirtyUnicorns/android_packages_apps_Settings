@@ -209,4 +209,8 @@
     <!-- Hotspot idle -->
     <string name="wifi_hotspot_mode_title">Keep WiFi Hotspot on</string>
 
+    <!-- Battery saver color -->
+    <string name="battery_saver_title">Warning color</string>
+    <string name="battery_saver_style_reset_message">Reset battery saver warning color?</string>
+
 </resources>
