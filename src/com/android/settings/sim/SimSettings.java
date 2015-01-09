@@ -254,7 +254,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         for (int i = 0; i < subAvailableSize; ++i) {
             final SubInfoRecord sir = mAvailableSubInfos.get(i);
             if(sir != null){
-                simPref.addItem(sir.displayName, sir);
+                simPref.addItem(sir.displayName + " - " + Integer.toString(i+1), sir);
             }
         }
 
