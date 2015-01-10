@@ -93,40 +93,40 @@ public class MainActivity extends Activity {
     private void loadInfo() {
         ExtraInfo di = new ExtraInfo(this);
 
-        addCategory("BASIC INFO");
+        addCategory(getString(R.string.basicinfo));
 
-        addItem("Manufacturer", di.getBuildManufacturer(), true);
-        addItem("Hardware type", di.getPropHardware());
-        addItem("System partition", di.getSystemSize() + " Bytes");
-        addItem("Data partition", di.getDataSize() + " Bytes");
-        addItem("RAM", di.getProcMemTotal());
-        addItem("Bootloader", di.getPropBootloader());
+        addItem(getString(R.string.manufacturer), di.getBuildManufacturer(), true);
+        addItem(getString(R.string.hardwaretype), di.getPropHardware());
+        addItem(getString(R.string.systempartition), di.getSystemSize() + " " + getString(R.string.bytes));
+        addItem(getString(R.string.datapartition), di.getDataSize() + " " +getString(R.string.bytes));
+        addItem(getString(R.string.ram), di.getProcMemTotal());
+        addItem(getString(R.string.bootloader), di.getPropBootloader());
 
-        addCategory("CPU INFO");
+        addCategory(getString(R.string.cpuinfo));
 
-        addItem("Chipset / Processor", di.getProcCpuDescription());
-        addItem("Features", di.getProcCpuFeatures());
-        addItem("BogoMIPS", di.getProcCpuBogoMips());
-        addItem("ABI", di.getBuildCpuAbi());
-        addItem("ABI2", di.getPropCpuAbi2());
-        addItem("Architecture", di.getProcCpuArchitecture());
-        addItem("Implementer", di.getProcCpuImplementer());
-        addItem("Variant", di.getProcCpuVariant());
-        addItem("Part", di.getProcCpuPart());
-        addItem("Revision", di.getProcCpuRevision());
+        addItem(getString(R.string.chipset_processor), di.getProcCpuDescription());
+        addItem(getString(R.string.features), di.getProcCpuFeatures());
+        addItem(getString(R.string.bogomips), di.getProcCpuBogoMips());
+        addItem(getString(R.string.abi), di.getBuildCpuAbi());
+        addItem(getString(R.string.abitwo), di.getPropCpuAbi2());
+        addItem(getString(R.string.architecture), di.getProcCpuArchitecture());
+        addItem(getString(R.string.implementer), di.getProcCpuImplementer());
+        addItem(getString(R.string.variant), di.getProcCpuVariant());
+        addItem(getString(R.string.part), di.getProcCpuPart());
+        addItem(getString(R.string.revision), di.getProcCpuRevision());
 
-        addCategory("DISPLAY INFO");
+        addCategory(getString(R.string.displayinfo));
 
-        addItem("Diagonal", di.getDisplayDiagonalInches() + " Inches");
-        addItem("Width", di.getDisplayWidthInches() + " Inches");
-        addItem("Height", di.getDisplayHeightInches() + " Inches");
-        addItem("Width", di.getDisplayWidth() + " Pixels");
-        addItem("Height", di.getDisplayHeight() + " Pixels");
-        addItem("Density", di.getDisplayDensity());
-        addItem("DOTS PER INCH", di.getDisplayDpi());
-        addItem("Actual DPI X", di.getDisplayDpiX());
-        addItem("Actual DPI Y", di.getDisplayDpiY());
-        addItem("Refresh Rate", di.getDisplayRefreshRate());
+        addItem(getString(R.string.diagonal), di.getDisplayDiagonalInches() + " " +getString(R.string.inches));
+        addItem(getString(R.string.width), di.getDisplayWidthInches() + " " +getString(R.string.inches));
+        addItem(getString(R.string.height), di.getDisplayHeightInches() + " " +getString(R.string.inches));
+        addItem(getString(R.string.width), di.getDisplayWidth() + " " +getString(R.string.pixels));
+        addItem(getString(R.string.height), di.getDisplayHeight() + " " +getString(R.string.pixels));
+        addItem(getString(R.string.density), di.getDisplayDensity());
+        addItem(getString(R.string.dots_per_inch), di.getDisplayDpi());
+        addItem(getString(R.string.actualdpi_x), di.getDisplayDpiX());
+        addItem(getString(R.string.actualdpi_y), di.getDisplayDpiY());
+        addItem(getString(R.string.refresh_rate), di.getDisplayRefreshRate());
 
         }
 
