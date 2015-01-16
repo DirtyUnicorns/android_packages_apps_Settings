@@ -191,4 +191,7 @@
     <string name="pixels">Pixels</string>
     <string name="inches">Inches</string>
 
+    <!-- Themes Settings -->
+    <string name="themes_settings_title">Themes</string>
+
 </resources>
