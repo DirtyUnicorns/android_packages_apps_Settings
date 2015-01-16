@@ -2,7 +2,7 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_JAVA_LIBRARIES := bouncycastle conscrypt telephony-common
-LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4 android-support-v13 jsr305
+LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4 android-support-v7-cardview android-support-v13 jsr305
 
 LOCAL_MODULE_TAGS := optional
 
@@ -11,11 +11,13 @@ LOCAL_SRC_FILES := \
         src/com/android/settings/EventLogTags.logtags
 LOCAL_SRC_FILES += $(call all-java-files-under, ../DU-Tweaks/src)
 
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
+LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res
 LOCAL_RESOURCE_DIR += packages/apps/DU-Tweaks/res
+LOCAL_RESOURCE_DIR += frameworks/support/v7/cardview/res
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
-	--extra-packages com.dirtyunicorns.dutweaks
+	--extra-packages com.dirtyunicorns.dutweaks \
+        --extra-packages android.support.v7.cardview
 
 LOCAL_PACKAGE_NAME := Settings
 LOCAL_CERTIFICATE := platform
