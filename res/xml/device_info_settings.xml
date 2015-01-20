@@ -35,6 +35,15 @@
                     android:targetClass="com.android.settings.du.extrainfo.MainActivity" />
         </PreferenceScreen>
 
+        <!-- DU Changelog -->
+        <PreferenceScreen android:key="changelog"
+                android:title="@string/duchangelog" 
+                android:summary="@string/du_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.settings"
+                    android:targetClass="us.zamzow.mazwoz.dirtyunicornschangelog.MainActivity" />
+        </PreferenceScreen>
+
         <!-- DU Share -->
         <Preference
             android:key="share"

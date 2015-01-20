@@ -1994,6 +1994,11 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.MainActivity"
+                  android:label="@string/du_app_name"/>
+        <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.ListVersions"/>
+        <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.ChangeList"/>
+
         <activity android:name="Settings$DirtyTweaksActivity"
             android:label="@string/custom_title"
             android:taskAffinity="">

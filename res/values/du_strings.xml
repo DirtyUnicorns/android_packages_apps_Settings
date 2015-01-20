@@ -194,4 +194,9 @@
     <!-- Themes Settings -->
     <string name="themes_settings_title">Themes</string>
 
+    <!-- DU Changelog -->
+    <string name="duchangelog">Changelog</string>
+    <string name="du_summary">Check to see what has changed in DU</string>
+    <string name="du_app_name">DU Changelog</string>
+
 </resources>
