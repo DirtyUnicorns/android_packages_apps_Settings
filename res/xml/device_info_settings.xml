@@ -35,6 +35,16 @@
                     android:targetClass="com.android.settings.du.extrainfo.MainActivity" />
         </PreferenceScreen>
 
+        <!-- DU About -->
+        <PreferenceScreen
+            android:key="aboutdu"
+            android:title="@string/aboutdu"
+            android:summary="@string/aboutdu_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.dirtyunicorns.about"
+                    android:targetClass="com.dirtyunicorns.about.AboutActivity" />
+        </PreferenceScreen>
+
         <!-- DU Changelog -->
         <PreferenceScreen android:key="changelog"
                 android:title="@string/duchangelog" 
