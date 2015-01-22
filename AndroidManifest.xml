@@ -1167,7 +1167,7 @@
         <!-- Runs in the phone process since it needs access to the Phone object -->
         <activity android:name=".deviceinfo.Status"
                 android:label="@string/device_status_activity_title"
-                android:theme="@style/Theme.SubSettingsDialogWhenLarge"
+                android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar.MinWidth"
                 android:process="com.android.phone">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
