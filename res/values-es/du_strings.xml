@@ -138,4 +138,10 @@
   <string name="refresh_rate">Refresh Rate</string>
   <string name="pixels">Pixels</string>
   <string name="inches">Inches</string>
+  <string name="themes_settings_title">Themes</string>
+  <string name="duchangelog">Changelog</string>
+  <string name="du_summary">Check to see what has changed in DU</string>
+  <string name="du_app_name">DU Changelog</string>
+  <string name="aboutdu">About DU</string>
+  <string name="aboutdu_summary">Info about our devs, maintainers and rom features</string>
 </resources>
