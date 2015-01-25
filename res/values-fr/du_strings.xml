@@ -138,10 +138,10 @@
   <string name="refresh_rate">Taux de rafraîchissement</string>
   <string name="pixels">Pixels</string>
   <string name="inches">Pouces</string>
-  <string name="themes_settings_title">Themes</string>
-  <string name="duchangelog">Changelog</string>
-  <string name="du_summary">Check to see what has changed in DU</string>
-  <string name="du_app_name">DU Changelog</string>
-  <string name="aboutdu">About DU</string>
-  <string name="aboutdu_summary">Info about our devs, maintainers and rom features</string>
+  <string name="themes_settings_title">Thèmes</string>
+  <string name="duchangelog">Journaux des changements</string>
+  <string name="du_summary">Consultez ce qui a changé dans DU</string>
+  <string name="du_app_name">Journaux des changements de DU</string>
+  <string name="aboutdu">À propos de DU</string>
+  <string name="aboutdu_summary">Informations sur nos développeurs, nos mainteneurs, et sur les fonctionnalités de la ROM</string>
 </resources>
