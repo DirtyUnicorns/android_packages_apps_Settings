@@ -26,7 +26,7 @@
   <string name="mod_version_default">Неизвестно</string>
   <string name="share_du_title">Поделиться Dirty Unicorns</string>
   <string name="share_du_summary">Расскажите другим о Dirty Unicorns</string>
-  <string name="share_message">Check out what #DirtyUnicorns is all about @ http://goo.gl/emISQ1</string>
+  <string name="share_message">Проверьте, какие #DirtyUnicorns это все о @ http://goo.gl/emISQ1</string>
   <string name="share_chooser_title">Поделиться Dirty Unicorns</string>
   <string name="supersu_title">SuperSU</string>
   <string name="device_settings_title">Устройство</string>
@@ -120,7 +120,7 @@
   <string name="chipset_processor">Чипсет / процессор</string>
   <string name="features">Основные характеристики</string>
   <string name="bogomips">BogoMIPS</string>
-  <string name="abi">ABI</string>
+  <string name="abi">АБИ</string>
   <string name="abitwo">ABI2</string>
   <string name="architecture">Архитектура</string>
   <string name="implementer">Реализатор</string>
@@ -138,10 +138,10 @@
   <string name="refresh_rate">Частота Обновления</string>
   <string name="pixels">Пикселей</string>
   <string name="inches">Дюймов</string>
-  <string name="themes_settings_title">Themes</string>
-  <string name="duchangelog">Changelog</string>
-  <string name="du_summary">Check to see what has changed in DU</string>
-  <string name="du_app_name">DU Changelog</string>
-  <string name="aboutdu">About DU</string>
-  <string name="aboutdu_summary">Info about our devs, maintainers and rom features</string>
+  <string name="themes_settings_title">Темы</string>
+  <string name="duchangelog">История изменений</string>
+  <string name="du_summary">Проверьте, что нового в DU</string>
+  <string name="du_app_name">Список изменений DU</string>
+  <string name="aboutdu">О прошивке DU</string>
+  <string name="aboutdu_summary">Информация о наших разработчиках</string>
 </resources>
