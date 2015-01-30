@@ -138,10 +138,10 @@
   <string name="refresh_rate">Frissítési gyakoriság</string>
   <string name="pixels">Pixelek</string>
   <string name="inches">Hüvelyk</string>
-  <string name="themes_settings_title">Themes</string>
-  <string name="duchangelog">Changelog</string>
-  <string name="du_summary">Check to see what has changed in DU</string>
-  <string name="du_app_name">DU Changelog</string>
-  <string name="aboutdu">About DU</string>
-  <string name="aboutdu_summary">Info about our devs, maintainers and rom features</string>
+  <string name="themes_settings_title">Témák</string>
+  <string name="duchangelog">Változások listája</string>
+  <string name="du_summary">Nézze meg, mi változott a DU-ban</string>
+  <string name="du_app_name">DU Változások</string>
+  <string name="aboutdu">DU Névjegy</string>
+  <string name="aboutdu_summary">Információ a fejlesztőinkről, karbantartókról és rom funkciókról</string>
 </resources>
