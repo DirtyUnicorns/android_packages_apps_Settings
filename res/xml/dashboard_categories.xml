@@ -81,7 +81,7 @@
                 android:id="@+id/dirtytweaks"
                 android:title="@string/custom_title"
                 android:fragment="com.dirtyunicorns.dutweaks.DirtyTweaks"
-                android:icon="@drawable/ic_settings_dirtytweaks"
+                android:icon="@drawable/ic_dirtytweaks"
                 />
 
         <!-- Themes -->
@@ -255,7 +255,7 @@
         <!-- SuperSU -->
         <dashboard-tile
             android:id="@+id/supersu_settings"
-            android:icon="@drawable/ic_settings_supersu"
+            android:icon="@drawable/ic_supersu"
             android:title="@string/supersu_title">
             <intent
                 android:action="android.intent.action.MAIN"
