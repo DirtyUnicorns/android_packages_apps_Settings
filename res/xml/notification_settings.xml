@@ -72,6 +72,14 @@
                 android:title="@string/vibrate_when_ringing_title"
                 android:persistent="false" />
 
+        <!-- Volume panel timeout -->
+        <ListPreference
+            android:key="volume_panel_time_out"
+            android:title="@string/volume_panel_time_out_title"
+            android:entries="@array/volume_panel_time_out_entries"
+            android:entryValues="@array/volume_panel_time_out_values"
+            android:persistent="false" />
+
         <!-- Expand volume panel -->
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
                 android:key="volume_panel_expanded"
