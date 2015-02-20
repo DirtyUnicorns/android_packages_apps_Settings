@@ -115,6 +115,7 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings;
 import com.dirtyunicorns.dutweaks.fragments.NavBar;
+import com.dirtyunicorns.dutweaks.fragments.AppCircleBar;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -304,7 +305,8 @@ public class SettingsActivity extends Activity
             ApnSettings.class.getName(),
             DirtyTweaks.class.getName(),
             HeadsUpSettings.class.getName(),
-            NavBar.class.getName()
+            NavBar.class.getName(),
+            AppCircleBar.class.getName()
     };
 
 
