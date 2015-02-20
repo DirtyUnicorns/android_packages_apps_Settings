@@ -103,5 +103,6 @@ public class Settings extends SettingsActivity {
     public static class ApnSettingsActivity extends SettingsActivity { /* empty */ }
     public static class DuSettingsActivity extends SettingsActivity { /* empty */ }
     public static class HeadsUpSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class NavBarActivity extends SettingsActivity { /* empty */ }
 }
 
