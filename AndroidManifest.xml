@@ -1692,6 +1692,33 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
+        <!-- Navigation options -->
+        <activity android:name="Settings$NavBarActivity"
+                android:uiOptions="splitActionBarWhenNarrow"
+                android:label="@string/navigation_category"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.dutweaks.fragments.NavBar" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/security_settings" />
+        </activity>
+
+        <activity-alias android:name="com.dirtyunicorns.dutweaks.fragments.NavBar"
+                android:taskAffinity="com.android.settings"
+                android:label="@string/navigation_category"
+                android:targetActivity="Settings$NavBarActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.dirtyunicorns.dutweaks.fragments.NavBar" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                       android:resource="@id/security_settings" />
+        </activity-alias>
+
         <!-- Heads up notifications -->
         <activity android:name="Settings$HeadsUpSettingsActivity"
                 android:uiOptions="splitActionBarWhenNarrow"
