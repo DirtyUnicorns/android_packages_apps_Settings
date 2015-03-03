@@ -103,24 +103,10 @@
   <string name="screenshot_sound_summary">Émettre un son lors de la capture d\'écran</string>
 
     <!-- [CHAR LIMIT=NONE] App ops settings title, on main settings screen. If clicked, the user is taken to a settings screen for app operations -->
-  <string name="app_ops_settings_summary">Afficher ou éditer les autorisations des applications</string>
+  <string name="app_ops_settings_summary">Afficher ou modifier les autorisations des applications</string>
 
     <!-- Toast message when trying to open system app AppOps -->
-  <string name="appops_sys_app">Impossible de modifier les opérations pour les applications du système</string>
-
-    <!-- App ops permissions -->
-    <string-array name="app_ops_permissions">
-        <item>Autorisé</item>
-        <item>Ignoré</item>
-        <item>Toujours demander</item>
-    </string-array>
-
-    <!-- Doze pulse (ambient display) notification timeout -->
-  <string name="doze_timeout_title">Délai</string>
-  <string name="doze_timeout_summary">Durée d\'affichage de l\'écran lors de la réception de notification</string>
-
-    <!-- Doze (ambient display) preference category -->
-  <string name="display_category_doze_options_title">Options d\'adaptation de la luminosité</string>
+  <string name="appops_sys_app">Impossible de modifier les autorisations des applications système</string>
 
     <!-- MediaScanner behavior on boot -->
   <string name="options_settings_title">Options</string>
@@ -222,13 +208,13 @@
     <string name="themes_settings_title">Thèmes</string>
 
     <!-- DU Changelog -->
-    <string name="duchangelog">Journaux des changements</string>
-    <string name="du_summary">Lisez ce qui a changé dans DU</string>
+    <string name="duchangelog">DU Changelog</string>
+    <string name="du_summary">Consulter la liste des changements dans DU</string>
     <string name="du_app_name">Journaux des changements de DU</string>
 
     <!-- DU About -->
     <string name="aboutdu">À Propos de DU</string>
-    <string name="aboutdu_summary">Informations sur les développeurs, les mainteneurs, et les fonctionnalités de la ROM</string>
+    <string name="aboutdu_summary">Informations sur nos développeurs, nos mainteneurs, et sur les fonctionnalités de la ROM</string>
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Paramètres du voyant</string>
@@ -271,5 +257,56 @@
     <string name="profiles_add">Ajouter</string>
     <string name="profile_choose_app">Sélectionner une application</string>
     <string name="profile_reset_title">Réinitialiser</string>
+
+    <!-- Doze pulse (ambient display) options -->
+    <string name="doze_overwrite_value_title">Définir les délais</string>
+    <string name="doze_overwrite_value_summary">Permet de paramétrer les valeurs de réveil</string>
+    <string name="doze_list_mode_title">Mode Sommeil</string>
+    <string name="doze_list_mode_summary">Option pour configurer le mode Sommeil</string>
+    <string name="doze_pulse_title">Paramètres de délai</string>
+    <string name="doze_pulse_duration_in_title">Délai d\'ouverture</string>
+    <string name="doze_pulse_duration_in_summary"></string>
+    <string name="doze_pulse_duration_visible_title">Durée d\'affichage</string>
+    <string name="doze_pulse_duration_visible_summary"></string>
+    <string name="doze_pulse_duration_out_title">Délai de fermeture</string>
+    <string name="doze_pulse_duration_out_summary"></string>
+    <string name="doze_pulse_on_notifications_title">Impulsion des notifications</string>
+    <string name="doze_pulse_on_notifications_summary">Déclenchement pour les notifications en attente</string>
+    <string name="doze_shake_title">Paramètres du capteur de mouvement</string>
+    <string name="doze_shake_mode_title">Mode capteur de mouvement</string>
+    <string name="doze_shake_mode_summary">Déclenchement selon la valeur du capteur de mouvement</string>
+    <string name="doze_shake_mode_test_summary">Voulez-vous tester le capteur de mouvement ?</string>
+    <string name="doze_shake_mode_test_result">Appliquer la valeur actuelle ?</string>
+    <string name="doze_shake_test">Agiter votre appareil maintenant</string>
+    <string name="doze_shake_it">Mouvement détecté !</string>
+    <string name="doze_shake_acc_threshold_title">Seuil d\'agitation</string>
+    <string name="doze_shake_acc_threshold_summary">Paramètres du tremblement nécessaire pour déclencher l\'activation</string>
+    <string name="doze_time_mode_title">Affichage date et heure</string>
+    <string name="doze_time_mode_summary">Afficher l\'horloge lorsqu\'il n\'y a pas de notification</string>
+    <string name="twohundred_ms">200 ms</string>
+    <string name="fivehundred_ms">500 ms</string>
+    <string name="one_second">1 s</string>
+    <string name="one_second_default">1 s (par défaut)</string>
+    <string name="onehalf_second">1,5 s</string>
+    <string name="two_second">2 s</string>
+    <string name="twohalf_second">2,5 s</string>
+    <string name="three_second">3 s</string>
+    <string name="three_second_default">3 s (par défaut)</string>
+    <string name="threehalf_second">3,5 s</string>
+    <string name="four_second">4 s</string>
+    <string name="fourhalf_second">4,5 s</string>
+    <string name="five_second">5 s</string>
+    <string name="veryeasy_shake">Très doux</string>
+    <string name="easy_shake">Doux</string>
+    <string name="medium_shake">Par défaut</string>
+    <string name="hard_shake">Fort</string>
+    <string name="veryhard_shake">Très fort</string>
+    <string name="strong_shake">Puissant</string>
+    <string name="fully_mode">Mode complet</string>
+    <string name="pocket_shake_mode">Poche et agitation</string>
+    <string name="pocket_pulse_mode">Poche et impulsion</string>
+    <string name="pocket_only_mode">Poche</string>
+    <string name="shake_pulse_mode">Agitation et impulsion</string>
+    <string name="pulse_only_mode">Impulsion (par défaut)</string>
 
 </resources>
