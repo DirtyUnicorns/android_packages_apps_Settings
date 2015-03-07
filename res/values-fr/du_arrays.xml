@@ -22,8 +22,8 @@
 
     <!-- App ops permissions -->
     <string-array name="app_ops_permissions">
-        <item>Autorisé</item>
-        <item>Ignoré</item>
+        <item>Autoriser</item>
+        <item>Refuser</item>
         <item>Toujours demander</item>
     </string-array>
 
