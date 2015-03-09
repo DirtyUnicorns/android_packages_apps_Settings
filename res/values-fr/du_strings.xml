@@ -22,6 +22,8 @@
     <!-- Customization -->
   <string name="header_category_custom">PERSONNALISATION</string>
   <string name="custom_title">Dirty Tweaks</string>
+    <string name="duupdater">Mise à jour</string>
+    <string name="duupdater_summary">Restez à jour avec les dernières fonctionnalités et correctifs</string>
 
     <!-- DU Extra Info -->
   <string name="duextrainfo">Informations supplémentaires</string>
