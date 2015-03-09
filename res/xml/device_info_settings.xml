@@ -26,6 +26,16 @@
                     android:targetClass="com.android.settings.deviceinfo.Status" />
         </PreferenceScreen>
 
+        <!-- DU Updater -->
+        <PreferenceScreen
+            android:key="duupdater"
+            android:title="@string/duupdater"
+            android:summary="@string/duupdater_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.dirtyunicorns.duupdater"
+                    android:targetClass="com.dirtyunicorns.duupdater.MainActivity" />
+        </PreferenceScreen>
+
         <!-- DU Extra Info -->
         <PreferenceScreen android:key="extrainfo"
                 android:title="@string/duextrainfo"

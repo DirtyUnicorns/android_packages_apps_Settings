@@ -84,6 +84,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DU_SHARE = "share";
     private static final String KEY_CHANGELOG = "changelog";
     private static final String KEY_ABOUTDU = "aboutdu";
+    private static final String KEY_DUUPDATER = "duupdater";
 
     long[] mHits = new long[3];
 
