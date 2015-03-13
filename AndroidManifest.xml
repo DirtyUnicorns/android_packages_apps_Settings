@@ -2119,6 +2119,10 @@
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereBuilderActivity" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereCreateGestureActivity" />
 
+        <activity android:name="com.dirtyunicorns.dutweaks.fragments.HfmWhitelist"
+                  android:label="@string/hfm_whitelist_title"
+                  android:taskAffinity="com.dirtyunicorns.dutweaks" />
+
         <!-- End of DU activities -->
 
         <provider
