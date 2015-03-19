@@ -69,11 +69,6 @@
         android:persistent="false" />
 
     <PreferenceScreen
-        android:id="@+id/sim_settings"
-        android:title="@string/sim_settings_title"
-        android:fragment="com.android.settings.sim.SimSettings" />
-
-    <PreferenceScreen
         android:key="wimax_settings"
         android:title="@string/wimax_settings" >
         <intent
@@ -82,7 +77,7 @@
             android:targetClass="com.android.settings.wimax.WimaxSettings" />
     </PreferenceScreen>
 
-    <CheckBoxPreference
+    <SwitchPreference
         android:key="toggle_nsd"
         android:title="@string/nsd_quick_toggle_title"
         android:summary="@string/nsd_quick_toggle_summary"

@@ -89,10 +89,10 @@
             android:title="@string/enable_terminal_title"
             android:summary="@string/enable_terminal_summary" />
 
-       <!-- <SwitchPreference
+        <SwitchPreference
             android:key="bugreport_in_power"
             android:title="@string/bugreport_in_power"
-            android:summary="@string/bugreport_in_power_summary"/> -->
+            android:summary="@string/bugreport_in_power_summary"/>
 
         <SwitchPreference
             android:key="allow_mock_location"
@@ -264,9 +264,9 @@
             android:title="@string/media_category">
 
         <SwitchPreference
-                android:key="use_nuplayer"
-                android:title="@string/use_nuplayer"
-                android:summary="@string/use_nuplayer_summary"/>
+                android:key="use_awesomeplayer"
+                android:title="@string/use_awesomeplayer"
+                android:summary="@string/use_awesomeplayer_summary"/>
 
         <SwitchPreference
                 android:key="usb_audio"

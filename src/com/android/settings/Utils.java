@@ -64,21 +64,22 @@ import android.provider.ContactsContract.Data;
 import android.provider.ContactsContract.Profile;
 import android.provider.ContactsContract.RawContacts;
 import android.service.persistentdata.PersistentDataBlockManager;
+import android.telephony.SubscriptionInfo;
+import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
-import android.text.BidiFormatter;
-import android.text.TextDirectionHeuristics;
 import android.text.TextUtils;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.DisplayInfo;
 import android.view.Surface;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ListView;
 import android.widget.TabWidget;
 
-import com.android.internal.util.ImageUtils;
 import com.android.internal.util.UserIcons;
 import com.android.settings.UserSpinnerAdapter.UserDetails;
-import com.android.settings.dashboard.DashboardCategory;
 import com.android.settings.dashboard.DashboardTile;
 import com.android.settings.drawable.CircleFramedDrawable;
 
@@ -93,8 +94,6 @@ import java.util.Locale;
 
 public final class Utils {
     private static final String TAG = "Settings";
-
-    public static final String SYSTEM_UI_PACKAGE_NAME = "com.android.systemui";
 
     /**
      * Set the preference's title to the matching activity's label.
@@ -138,6 +137,14 @@ public final class Utils {
     private static final int SECONDS_PER_MINUTE = 60;
     private static final int SECONDS_PER_HOUR = 60 * 60;
     private static final int SECONDS_PER_DAY = 24 * 60 * 60;
+
+    // Device types
+    private static final int DEVICE_PHONE = 0;
+    private static final int DEVICE_HYBRID = 1;
+    private static final int DEVICE_TABLET = 2;
+
+    // Device type reference
+    private static int sDeviceType = -1;
 
     /**
      * Finds a matching activity for a preference's intent. If a matching
@@ -218,7 +225,8 @@ public final class Utils {
                         Bundle metaData = resolveInfo.activityInfo.metaData;
 
                         if (res != null && metaData != null) {
-                            icon = res.getDrawable(metaData.getInt(META_DATA_PREFERENCE_ICON));
+                            icon = res.getDrawable(
+                                    metaData.getInt(META_DATA_PREFERENCE_ICON), null);
                             title = res.getString(metaData.getInt(META_DATA_PREFERENCE_TITLE));
                             summary = res.getString(metaData.getInt(META_DATA_PREFERENCE_SUMMARY));
                         }
@@ -342,8 +350,7 @@ public final class Utils {
 
     /** Formats a double from 0.0..1.0 as a percentage. */
     private static String formatPercentage(double percentage) {
-      BidiFormatter bf = BidiFormatter.getInstance();
-      return bf.unicodeWrap(NumberFormat.getPercentInstance().format(percentage));
+      return NumberFormat.getPercentInstance().format(percentage);
     }
 
     public static boolean isBatteryPresent(Intent batteryChangedIntent) {
@@ -583,6 +590,40 @@ public final class Utils {
                 .getUsers().size() > 1;
     }
 
+    private static int getScreenType(Context context) {
+        if (sDeviceType == -1) {
+            WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+           DisplayInfo outDisplayInfo = new DisplayInfo();
+            wm.getDefaultDisplay().getDisplayInfo(outDisplayInfo);
+            int shortSize = Math.min(outDisplayInfo.logicalHeight, outDisplayInfo.logicalWidth);
+            int shortSizeDp = shortSize * DisplayMetrics.DENSITY_DEFAULT
+                    / outDisplayInfo.logicalDensityDpi;
+            if (shortSizeDp < 600) {
+                // 0-599dp: "phone" UI with a separate status & navigation bar
+                sDeviceType =  DEVICE_PHONE;
+            } else if (shortSizeDp < 720) {
+                // 600-719dp: "phone" UI with modifications for larger screens
+                sDeviceType = DEVICE_HYBRID;
+            } else {
+                // 720dp: "tablet" UI with a single combined status & navigation bar
+                sDeviceType = DEVICE_TABLET;
+            }
+        }
+        return sDeviceType;
+    }
+
+    public static boolean isPhone(Context context) {
+        return getScreenType(context) == DEVICE_PHONE;
+    }
+
+    public static boolean isHybrid(Context context) {
+        return getScreenType(context) == DEVICE_HYBRID;
+    }
+
+    public static boolean isTablet(Context context) {
+        return getScreenType(context) == DEVICE_TABLET;
+    }
+
     /**
      * Start a new instance of the activity, showing only the given fragment.
      * When launched in this mode, the given preference fragment will be instantiated and fill the
@@ -599,16 +640,52 @@ public final class Utils {
      * @param title String to display for the title of this set of preferences.
      */
     public static void startWithFragment(Context context, String fragmentName, Bundle args,
-            Fragment resultTo, int resultRequestCode, int titleResId, CharSequence title) {
+            Fragment resultTo, int resultRequestCode, int titleResId,
+            CharSequence title) {
         startWithFragment(context, fragmentName, args, resultTo, resultRequestCode,
-                titleResId, title, false /* not a shortcut */);
+                null /* titleResPackageName */, titleResId, title, false /* not a shortcut */);
+    }
+
+    /**
+     * Start a new instance of the activity, showing only the given fragment.
+     * When launched in this mode, the given preference fragment will be instantiated and fill the
+     * entire activity.
+     *
+     * @param context The context.
+     * @param fragmentName The name of the fragment to display.
+     * @param args Optional arguments to supply to the fragment.
+     * @param resultTo Option fragment that should receive the result of the activity launch.
+     * @param resultRequestCode If resultTo is non-null, this is the request code in which
+     *                          to report the result.
+     * @param titleResPackageName Optional package name for the resource id of the title.
+     * @param titleResId resource id for the String to display for the title of this set
+     *                   of preferences.
+     * @param title String to display for the title of this set of preferences.
+     */
+    public static void startWithFragment(Context context, String fragmentName, Bundle args,
+            Fragment resultTo, int resultRequestCode, String titleResPackageName, int titleResId,
+            CharSequence title) {
+        startWithFragment(context, fragmentName, args, resultTo, resultRequestCode,
+                titleResPackageName, titleResId, title, false /* not a shortcut */);
     }
 
     public static void startWithFragment(Context context, String fragmentName, Bundle args,
-            Fragment resultTo, int resultRequestCode, int titleResId, CharSequence title,
-            boolean isShortcut) {
-        Intent intent = onBuildStartFragmentIntent(context, fragmentName, args, titleResId,
-                title, isShortcut);
+            Fragment resultTo, int resultRequestCode, int titleResId,
+            CharSequence title, boolean isShortcut) {
+        Intent intent = onBuildStartFragmentIntent(context, fragmentName, args,
+                null /* titleResPackageName */, titleResId, title, isShortcut);
+        if (resultTo == null) {
+            context.startActivity(intent);
+        } else {
+            resultTo.startActivityForResult(intent, resultRequestCode);
+        }
+    }
+
+    public static void startWithFragment(Context context, String fragmentName, Bundle args,
+            Fragment resultTo, int resultRequestCode, String titleResPackageName, int titleResId,
+            CharSequence title, boolean isShortcut) {
+        Intent intent = onBuildStartFragmentIntent(context, fragmentName, args, titleResPackageName,
+                titleResId, title, isShortcut);
         if (resultTo == null) {
             context.startActivity(intent);
         } else {
@@ -617,9 +694,20 @@ public final class Utils {
     }
 
     public static void startWithFragmentAsUser(Context context, String fragmentName, Bundle args,
-            int titleResId, CharSequence title, boolean isShortcut, UserHandle userHandle) {
-        Intent intent = onBuildStartFragmentIntent(context, fragmentName, args, titleResId,
-                title, isShortcut);
+            int titleResId, CharSequence title, boolean isShortcut,
+            UserHandle userHandle) {
+        Intent intent = onBuildStartFragmentIntent(context, fragmentName, args,
+                null /* titleResPackageName */, titleResId, title, isShortcut);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        context.startActivityAsUser(intent, userHandle);
+    }
+
+    public static void startWithFragmentAsUser(Context context, String fragmentName, Bundle args,
+            String titleResPackageName, int titleResId, CharSequence title, boolean isShortcut,
+            UserHandle userHandle) {
+        Intent intent = onBuildStartFragmentIntent(context, fragmentName, args, titleResPackageName,
+                titleResId, title, isShortcut);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         context.startActivityAsUser(intent, userHandle);
@@ -634,6 +722,7 @@ public final class Utils {
      * @param context The Context.
      * @param fragmentName The name of the fragment to display.
      * @param args Optional arguments to supply to the fragment.
+     * @param titleResPackageName Optional package name for the resource id of the title.
      * @param titleResId Optional title resource id to show for this item.
      * @param title Optional title to show for this item.
      * @param isShortcut  tell if this is a Launcher Shortcut or not
@@ -641,11 +730,14 @@ public final class Utils {
      * fragment.
      */
     public static Intent onBuildStartFragmentIntent(Context context, String fragmentName,
-            Bundle args, int titleResId, CharSequence title, boolean isShortcut) {
+            Bundle args, String titleResPackageName, int titleResId, CharSequence title,
+            boolean isShortcut) {
         Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.setClass(context, SubSettings.class);
         intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT, fragmentName);
         intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_ARGUMENTS, args);
+        intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_TITLE_RES_PACKAGE_NAME,
+                titleResPackageName);
         intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_TITLE_RESID, titleResId);
         intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_TITLE, title);
         intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_AS_SHORTCUT, isShortcut);
@@ -865,6 +957,12 @@ public final class Utils {
      * Returns a circular icon for a user.
      */
     public static Drawable getUserIcon(Context context, UserManager um, UserInfo user) {
+        if (user.isManagedProfile()) {
+            // We use predefined values for managed profiles
+            Bitmap b = BitmapFactory.decodeResource(context.getResources(),
+                    com.android.internal.R.drawable.ic_corp_icon);
+            return CircleFramedDrawable.getInstance(context, b);
+        }
         if (user.iconPath != null) {
             Bitmap icon = um.getUserIcon(user.id);
             if (icon != null) {
@@ -872,6 +970,23 @@ public final class Utils {
             }
         }
         return UserIcons.getDefaultUserIcon(user.id, /* light= */ false);
+    }
+
+    /**
+     * Returns a label for the user, in the form of "User: user name" or "Work profile".
+     */
+    public static String getUserLabel(Context context, UserInfo info) {
+        if (info.isManagedProfile()) {
+            // We use predefined values for managed profiles
+            return context.getString(R.string.managed_user_title);
+        }
+        String name = info != null ? info.name : null;
+        if (name == null && info != null) {
+            name = Integer.toString(info.id);
+        } else if (info == null) {
+            name = context.getString(R.string.unknown);
+        }
+        return context.getResources().getString(R.string.running_process_item_user_label, name);
     }
 
     /**
@@ -883,9 +998,7 @@ public final class Utils {
         final TelephonyManager tm =
                 (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
 
-        // TODO: Uncomment to re-enable SimSettings.
-        // return tm.getSimCount() > 0;
-        return false;
+        return tm.getSimCount() > 1;
     }
 
     /**
@@ -972,6 +1085,43 @@ public final class Utils {
         return sb.toString();
     }
 
+    public static boolean isPackageInstalled(Context context, String pkg, boolean ignoreState) {
+        if (pkg != null) {
+            try {
+                PackageInfo pi = context.getPackageManager().getPackageInfo(pkg, 0);
+                if (!pi.applicationInfo.enabled && !ignoreState) {
+                    return false;
+                }
+            } catch (NameNotFoundException e) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public static boolean isPackageInstalled(Context context, String pkg) {
+        return isPackageInstalled(context, pkg, true);
+    }
+
+    public static Context createPackageContext(Context context, String packageName) {
+        try {
+            return context.createPackageContext(packageName, 0);
+        } catch (PackageManager.NameNotFoundException e) {
+            // fall through
+        }
+        return null;
+    }
+
+    public static Drawable getNamedDrawable(Context context, String name) {
+        if (context == null) {
+            return null;
+        }
+        final Resources res = context.getResources();
+        final int resId = res.getIdentifier(name, "drawable", context.getPackageName());
+        return resId > 0 ? res.getDrawable(resId) : null;
+    }
+
     /**
      * Locks the activity orientation to the current device orientation
      * @param activity
@@ -1005,14 +1155,62 @@ public final class Utils {
         activity.setRequestedOrientation(frozenRotation);
     }
 
-    public static Drawable getNamedDrawableFromSystemUI(Resources res, String name) {
-        if (res == null) {
-            return null;
+    /**
+     * finds a record with subId.
+     * Since the number of SIMs are few, an array is fine.
+     */
+    public static SubscriptionInfo findRecordBySubId(Context context, final int subId) {
+        final List<SubscriptionInfo> subInfoList =
+                SubscriptionManager.from(context).getActiveSubscriptionInfoList();
+        if (subInfoList != null) {
+            final int subInfoLength = subInfoList.size();
+
+            for (int i = 0; i < subInfoLength; ++i) {
+                final SubscriptionInfo sir = subInfoList.get(i);
+                if (sir != null && sir.getSubscriptionId() == subId) {
+                    return sir;
+                }
+            }
         }
-        int resId = res.getIdentifier(name, "drawable", SYSTEM_UI_PACKAGE_NAME);
-        if (resId > 0) {
-            Drawable d = res.getDrawable(resId);
-            return d;
+
+        return null;
+    }
+
+    /**
+     * finds a record with slotId.
+     * Since the number of SIMs are few, an array is fine.
+     */
+    public static SubscriptionInfo findRecordBySlotId(Context context, final int slotId) {
+        final List<SubscriptionInfo> subInfoList =
+                SubscriptionManager.from(context).getActiveSubscriptionInfoList();
+        if (subInfoList != null) {
+            final int subInfoLength = subInfoList.size();
+
+            for (int i = 0; i < subInfoLength; ++i) {
+                final SubscriptionInfo sir = subInfoList.get(i);
+                if (sir.getSimSlotIndex() == slotId) {
+                    //Right now we take the first subscription on a SIM.
+                    return sir;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Queries for the UserInfo of a user. Returns null if the user doesn't exist (was removed).
+     * @param userManager Instance of UserManager
+     * @param checkUser The user to check the existence of.
+     * @return UserInfo of the user or null for non-existent user.
+     */
+    public static UserInfo getExistingUser(UserManager userManager, UserHandle checkUser) {
+        final List<UserInfo> users = userManager.getUsers(true /* excludeDying */);
+        final int checkUserId = checkUser.getIdentifier();
+        for (UserInfo user : users) {
+            if (user.id == checkUserId) {
+                return user;
+            }
         }
         return null;
     }
