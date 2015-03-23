@@ -36,7 +36,6 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
@@ -339,18 +338,12 @@ public class AppOpsCategory extends ListFragment implements
         sa.startPreferencePanel(AppOpsDetails.class.getName(), args,
                 R.string.app_ops_settings, null, this, RESULT_APP_DETAILS);
     }
-    
+
     @Override public void onListItemClick(ListView l, View v, int position, long id) {
         AppOpEntry entry = mAdapter.getItem(position);
         if (entry != null) {
-            ApplicationInfo ai = entry.getAppEntry().getApplicationInfo();
-            mCurrentPkgName = ai.packageName;
-            boolean isSystem = ((ai.flags & ApplicationInfo.FLAG_SYSTEM) != 0);
-            if (!isSystem) {
-                startApplicationDetailsActivity();
-            } else {
-                Toast.makeText(getActivity(), getString(R.string.appops_sys_app), Toast.LENGTH_SHORT).show();
-            }
+            mCurrentPkgName = entry.getAppEntry().getApplicationInfo().packageName;
+            startApplicationDetailsActivity();
         }
     }
 
