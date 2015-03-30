@@ -178,6 +178,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 getPreferenceScreen().removePreference(pref);
             }
         }
+
+        // Remove KEY_REGULATORY_INFO by default, user can't select the regulatory info
+        removePreference(KEY_REGULATORY_INFO);
+
     }
 
     @Override
