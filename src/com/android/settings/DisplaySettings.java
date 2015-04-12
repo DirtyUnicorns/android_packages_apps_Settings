@@ -101,6 +101,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mLiftToWakePreference;
     private SwitchPreference mDozePreference;
     private SwitchPreference mAutoBrightnessPreference;
+    private PreferenceScreen mDozeFragement;
 
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {

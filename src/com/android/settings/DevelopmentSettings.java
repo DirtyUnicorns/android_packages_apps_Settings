@@ -540,7 +540,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mHaveDebugSettings = false;
         updateSwitchPreference(mEnableAdb, Settings.Global.getInt(cr,
                 Settings.Global.ADB_ENABLED, 0) != 0);
-        updateSwitch(mAdbNotify, Settings.Secure.getInt(cr,
+        updateSwitchPreference(mAdbNotify, Settings.Secure.getInt(cr,
                 Settings.Secure.ADB_NOTIFY, 1) != 0);
         if (mEnableTerminal != null) {
             updateSwitchPreference(mEnableTerminal,
@@ -1226,7 +1226,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     }
 
     private void updateCpuInfoOptions() {
-        updateCheckBox(mShowCpuInfo, Settings.Global.getInt(getActivity().getContentResolver(),
+        updateSwitchPreference(mShowCpuInfo, Settings.Global.getInt(getActivity().getContentResolver(),
                 Settings.Global.SHOW_CPU, 0) != 0);
     }
 
