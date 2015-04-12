@@ -501,12 +501,8 @@ public class AppOpsState {
                 }
                 for (int j=0; j<pkgOps.getOps().size(); j++) {
                     AppOpsManager.OpEntry opEntry = pkgOps.getOps().get(j);
-                    if (mAppOps.isControlAllowed(opEntry.getOp(),
-                            pkgOps.getPackageName())) {
-                        addOp(entries, pkgOps, appEntry, opEntry,
-                                packageName == null, packageName == null ? 0
-                                        : opToOrder[opEntry.getOp()]);
-                    }
+                    addOp(entries, pkgOps, appEntry, opEntry, packageName == null,
+                            packageName == null ? 0 : opToOrder[opEntry.getOp()]);
                 }
             }
         }
@@ -570,18 +566,9 @@ public class AppOpsState {
                         }
                         AppOpsManager.OpEntry opEntry = new AppOpsManager.OpEntry(
                                 permOps.get(k), AppOpsManager.MODE_ALLOWED, 0, 0, 0);
-
-                        if (mAppOps.isControlAllowed(opEntry.getOp(),
-                                pkgOps.getPackageName())) {
-                            dummyOps.add(opEntry);
-                            addOp(entries,
-                                    pkgOps,
-                                    appEntry,
-                                    opEntry,
-                                    packageName == null,
-                                    packageName == null ? 0 : opToOrder[opEntry
-                                            .getOp()]);
-                        }
+                        dummyOps.add(opEntry);
+                        addOp(entries, pkgOps, appEntry, opEntry, packageName == null,
+                                packageName == null ? 0 : opToOrder[opEntry.getOp()]);
                     }
                 }
             }
