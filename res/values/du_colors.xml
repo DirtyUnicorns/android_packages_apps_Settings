@@ -67,4 +67,7 @@
     <!-- Switch Bar Text Color -->
     <color name="switchbar_text_color">#ffffffff</color>
 
+    <!-- Personal Dictionary Add Icon -->
+    <drawable name="ic_menu_add_word">@drawable/ic_menu_add_dark</drawable>
+
 </resources>
