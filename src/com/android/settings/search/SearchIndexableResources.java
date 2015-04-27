@@ -51,6 +51,8 @@ import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.du.AmbientSettings;
 
+import com.dirtyunicorns.dutweaks.fragments.ButtonBrightnessSettings;
+
 import java.util.Collection;
 import java.util.HashMap;
 
@@ -278,6 +280,14 @@ public final class SearchIndexableResources {
                         NO_DATA_RES_ID,
                         AmbientSettings.class.getName(),
                         R.drawable.ic_settings_display));
+
+        sResMap.put(ButtonBrightnessSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(ButtonBrightnessSettings.class.getName()),
+                        NO_DATA_RES_ID,
+                        ButtonBrightnessSettings.class.getName(),
+                        R.drawable.ic_buttons));
+
     }
 
     private SearchIndexableResources() {

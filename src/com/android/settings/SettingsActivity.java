@@ -117,6 +117,7 @@ import com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings;
 import com.dirtyunicorns.dutweaks.fragments.NavBar;
 import com.dirtyunicorns.dutweaks.fragments.AppCircleBar;
 import com.android.settings.du.AmbientSettings;
+import com.dirtyunicorns.dutweaks.fragments.ButtonBrightnessSettings;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -313,7 +314,8 @@ public class SettingsActivity extends Activity
             HeadsUpSettings.class.getName(),
             NavBar.class.getName(),
             AppCircleBar.class.getName(),
-            AmbientSettings.class.getName()
+            AmbientSettings.class.getName(),
+            ButtonBrightnessSettings.class.getName()
     };
 
 

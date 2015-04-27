@@ -17,6 +17,7 @@
 package com.android.settings;
 
 import com.android.settings.applications.AppOpsSummary;
+import com.dirtyunicorns.dutweaks.fragments.ButtonBrightnessSettings;
 
 /**
  * Top-level Settings activity
@@ -106,4 +107,5 @@ public class Settings extends SettingsActivity {
     public static class NavBarActivity extends SettingsActivity { /* empty */ }
     public static class AppCircleBarActivity extends SettingsActivity { /* empty */ }
     public static class AmbientDisplaySettingsActivity extends SettingsActivity { /* empty */ }
+    public static class ButtonBrightnessSettings extends SettingsActivity { /* empty */ }
 }
