@@ -160,12 +160,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mDozeFragement = null;
         }
 
-        if (RotationPolicy.isRotationLockToggleVisible(activity)) {
-            mDisplayRotationPreference = (PreferenceScreen) findPreference(KEY_DISPLAY_ROTATION);
-        } else {
-            removePreference(KEY_DISPLAY_ROTATION);
-        }
-
         mWakeUpOptions = (PreferenceCategory) prefSet.findPreference(KEY_WAKEUP_CATEGORY);
         mWakeUpWhenPluggedOrUnplugged =
             (SwitchPreference) findPreference(KEY_WAKEUP_WHEN_PLUGGED_UNPLUGGED);
