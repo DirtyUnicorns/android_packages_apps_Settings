@@ -56,4 +56,10 @@
         android:defaultValue="false"
         android:persistent="false" />
 
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+        android:key="headset_plugged_in"
+        android:title="@string/headset_plugged_in_title"
+        android:summary="@string/headset_plugged_in_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
