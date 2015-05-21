@@ -39,6 +39,12 @@
   <string name="share_message">Découvrez la ROM Android #DirtyUnicorns sur http://goo.gl/emISQ1</string>
   <string name="share_chooser_title">Partager Dirty Unicorns</string>
 
+    <!-- Phone info -->
+    <!-- VoLTE provisioning flag on. Only shown in diagnostic screen, so precise translation is not needed. -->
+    <string name="volte_provisioned_flag_on">Activer l\'indicateur VoLTE</string>
+    <!-- VoLTE provisioning flag off. Only shown in diagnostic screen, so precise translation is not needed. -->
+    <string name="volte_provisioned_flag_off">Désactiver l\'indicateur VoLTE</string>
+
     <!-- SuperSU -->
   <string name="supersu_title">SuperSU</string>
 
