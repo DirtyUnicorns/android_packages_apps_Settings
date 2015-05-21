@@ -291,4 +291,8 @@
     <string name="shake_pulse_mode">Shake and pulse</string>
     <string name="pulse_only_mode">Pulse (default)</string>
 
+
+    <string name="headset_plugged_in_title">Headset Plugged In notification</string>
+    <string name="headset_plugged_in_summary">Enable notification for when the headset is plugged in</string>
+
 </resources>
