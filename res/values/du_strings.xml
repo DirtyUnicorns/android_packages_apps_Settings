@@ -295,4 +295,7 @@
     <!-- Settings main menu entry -->
     <string name="gesture_settings_title">Gestures</string>
 
+    <string name="headset_plugged_in_title">Headset Plugged In notification</string>
+    <string name="headset_plugged_in_summary">Enable notification for when the headset is plugged in</string>
+
 </resources>
