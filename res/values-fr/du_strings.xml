@@ -316,5 +316,7 @@
     <string name="pocket_only_mode">Poche</string>
     <string name="shake_pulse_mode">Agitation et impulsion</string>
     <string name="pulse_only_mode">Impulsion (par défaut)</string>
+    <string name="headset_plugged_in_title">Notification de casque connecté</string>
+    <string name="headset_plugged_in_summary">Activer la notification lorsque un casque est connecté</string>
 
 </resources>
