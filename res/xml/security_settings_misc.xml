@@ -17,6 +17,25 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   android:title="@string/security_settings_title">
 
+    <PreferenceCategory
+        android:key="app_security"
+        android:title="@string/app_security_title">
+
+         <Preference
+            android:fragment="com.android.settings.privacyguard.PrivacyGuardManager"
+            android:key="privacy_guard_manager"
+            android:summary="@string/privacy_guard_manager_summary"
+            android:title="@string/privacy_guard_manager_title" />
+
+        <Preference 
+            android:fragment="com.android.settings.applications.AppOpsSummary"
+            android:key="app_ops_summary"
+            android:summary="@string/app_ops_settings_summary"
+            android:title="@string/app_ops_settings"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
     <PreferenceCategory android:key="sim_lock"
             android:title="@string/sim_lock_settings_title"
             android:persistent="false">
@@ -51,11 +70,6 @@
                 android:summary="@string/manage_device_admin_summary"
                 android:persistent="false"
                 android:fragment="com.android.settings.DeviceAdminSettings"/>
-
-        <Preference android:title="@string/app_ops_settings"
-                android:summary="@string/app_ops_settings_summary"
-                android:persistent="false"
-                android:fragment="com.android.settings.applications.AppOpsSummary"/>
 
         <SwitchPreference android:key="toggle_install_applications"
                 android:title="@string/install_applications"
