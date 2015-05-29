@@ -18,6 +18,7 @@ package com.android.settings.notification;
 
 import android.content.ContentResolver;
 import android.content.Context;
+import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -145,9 +146,6 @@ public class IncreasingRingVolumePreference extends Preference implements
 
     @Override
     public void onStartTrackingTouch(SeekBar seekBar) {
-        if (seekBar == mStartVolumeSeekBar && mCallback != null) {
-            mCallback.onStartingSample();
-        }
     }
 
     @Override
@@ -168,7 +166,8 @@ public class IncreasingRingVolumePreference extends Preference implements
             mRampUpTimeValue.setText(
                     Formatter.formatShortElapsedTime(getContext(), seconds * 1000));
             if (fromTouch) {
-                Settings.System.putInt(cr, Settings.System.INCREASING_RING_RAMP_UP_TIME, seconds);
+                Settings.System.putInt(cr,
+                        Settings.System.INCREASING_RING_RAMP_UP_TIME, seconds);
             }
         }
     }
@@ -188,6 +187,11 @@ public class IncreasingRingVolumePreference extends Preference implements
                 Settings.System.DEFAULT_RINGTONE_URI);
         if (mRingtone != null) {
             mRingtone.setStreamType(AudioManager.STREAM_RING);
+            mRingtone.setAudioAttributes(
+                    new AudioAttributes.Builder(mRingtone.getAudioAttributes())
+                            .setFlags(AudioAttributes.FLAG_BYPASS_INTERRUPTION_POLICY |
+                                    AudioAttributes.FLAG_BYPASS_MUTE)
+                            .build());
         }
     }
 
@@ -207,6 +211,9 @@ public class IncreasingRingVolumePreference extends Preference implements
             return;
         }
         if (!isSamplePlaying()) {
+            if (mCallback != null) {
+                mCallback.onStartingSample();
+            }
             try {
                 mRingtone.play();
             } catch (Throwable e) {
