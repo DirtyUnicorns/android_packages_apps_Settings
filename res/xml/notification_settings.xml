@@ -56,7 +56,7 @@
                 android:title="@string/notification_volume_option_title" />
 
         <!-- Increasing ring -->
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
                 android:key="increasing_ring"
                 android:title="@string/increasing_ring_volume_option_title" />
 
