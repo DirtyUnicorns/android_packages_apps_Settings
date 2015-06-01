@@ -166,6 +166,9 @@
   <string name="camera_sounds_summary">Activer</string>
   <string name="camera_sound_warning_dialog_text">Désactiver le son de l\'obturateur de l\'appareil photo est illégal dans certaines régions ! Veuillez vérifier la législation applicable à votre pays</string>
 
+    <!-- Linked / unlinked notification volume -->
+    <string name="link_volume_option_title">Lier les volumes des notifications et de la sonnerie</string>
+
   <!-- Font size sample text. This needs to be a very short string, as it is shown in
      multiple font sizes in a limited amount of space. -->
   <string name="font_size_sample">Échantillon</string>
@@ -318,5 +321,30 @@
     <string name="pulse_only_mode">Impulsion (par défaut)</string>
     <string name="headset_plugged_in_title">Notification de casque connecté</string>
     <string name="headset_plugged_in_summary">Activer la notification lorsque un casque est connecté</string>
+
+    <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
+    <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
+
+    <!-- Privacy Settings Header item -->
+
+    <string name="privacy_settings_cyanogenmod_title">Confidentialité</string>
+
+    <!-- Privacy Guard -->
+    <string name="app_security_title">Protection des données</string>
+    <string name="privacy_guard_switch_label">Activer la protection des données</string>
+    <string name="privacy_guard_dlg_title">Activer la protection des données\u00A0?</string>
+    <string name="privacy_guard_dlg_text">Empêcher l\'application d\'accéder aux données personnelles telles que les contacts, les messages ou le journal d\'appels</string>
+    <string name="privacy_guard_dlg_system_app_text">Empêcher une application système d\'accéder aux données personnelles telles peut provoquer des dysfonctionnements avec d\'autres applications</string>
+    <string name="privacy_guard_default_title">Activer par défaut</string>
+    <string name="privacy_guard_default_summary">Activer par défaut pour les applications nouvellement installées</string>
+    <string name="privacy_guard_manager_title">Protection des données</string>
+    <string name="privacy_guard_manager_summary">Contrôler l\'accès des applications aux données personnelles</string>
+    <string name="privacy_guard_no_user_apps">Aucune application installée</string>
+    <string name="privacy_guard_help_title">Aide</string>
+    <string name="privacy_guard_reset_title">Réinitialiser</string>
+    <string name="privacy_guard_reset_text">Réinitialiser les autorisations\u00A0?</string>
+    <string name="privacy_guard_help_text">Dans cet écran, vous pouvez sélectionner par simple appui pour quelles applications la Protection des Données est activée.\n\nLes applications sélectionnées ne seront pas en mesure d\'accéder à vos données personnelles telles que les contacts, les messages ou le journal d\'appels.\n\nUn appui long sur une application permet de définir précisément ses autorisations\n\nPar défaut, les applications système ne sont pas affichées. Si vous voulez les afficher ou ne filtrer que les applications qui demandent un accès aux données personnelles, sélectionnez les options respectives dans le menu</string>
+    <string name="privacy_guard_manager_show_system_apps">Afficher les applications système</string>
+    <string name="privacy_guard_advanced_settings_title">Avancé</string>
 
 </resources>
