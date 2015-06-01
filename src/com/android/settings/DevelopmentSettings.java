@@ -200,7 +200,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private SwitchPreference mEnableOemUnlock;
     private SwitchPreference mAllowMockLocation;
     private SwitchPreference mDebugViewAttributes;
-    private SwitchPreference mAdbNotify;
 
     private PreferenceScreen mPassword;
     private String mDebugApp;
@@ -1692,7 +1691,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 mAdbNotify.setChecked(true);
                 mVerifyAppsOverUsb.setEnabled(true);
                 updateVerifyAppsOverUsbOptions();
-                updateBugreportOptions();
+                //updateBugreportOptions();
             } else {
                 // Reset the toggle
                 mEnableAdb.setChecked(false);
