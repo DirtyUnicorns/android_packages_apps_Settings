@@ -358,4 +358,11 @@
     <string name="increasing_ring_min_volume_title">Volume de démarrage</string>
     <string name="increasing_ring_ramp_up_time_title">Durée de progression</string>
 
+    <!-- Lockscreen pin shuffle -->
+    <string name="lock_numpad_random_title">Changer l\'ordre des numéros du pavé numérique</string>
+    <string name="lock_numpad_random_dialog_title">Ordre des numéros aléatoire</string>
+    <string name="lock_numpad_random_off">Désactivé</string>
+    <string name="lock_numpad_random_always">Toujours</string>
+    <string name="lock_numpad_random_on_request">Sur demande</string>
+
 </resources>
