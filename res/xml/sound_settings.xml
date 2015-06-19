@@ -57,6 +57,12 @@
         android:persistent="false" />
 
     <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+         android:key="headset_connect_player"
+         android:title="@string/headset_connect_player_title"
+         android:summary="@string/headset_connect_player_summary"
+         android:defaultValue="false" />
+
+    <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
         android:key="headset_plugged_in"
         android:title="@string/headset_plugged_in_title"
         android:summary="@string/headset_plugged_in_summary"
