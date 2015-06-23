@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--https://android.googlesource.com/platform/packages/apps/Settings/+/android-5.0.2_r1/res/values-fr/arrays.xml-->
+<!--  Copyright (C) 2014 The Dirty Unicorns Project
+
+  Parts Copyright (C) 2012-2013 The CyanogenMod Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- App ops permissions -->
+    <string-array name="app_ops_permissions">
+        <item>Erlaubt</item>
+        <item>Verweigert</item>
+        <item>Immer nachfragen</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <string-array name="app_ops_categories">
+        <item>Standort</item>
+        <item>Persönlich</item>
+        <item>SMS/MMS</item>
+        <item>Medien</item>
+        <item>Gerät</item>
+        <item>Startvorgang</item>
+    </string-array>
+
+
+    <!-- User display names for app ops codes -->
+    <string-array name="app_ops_summaries">
+        <item>Ungefährer Standort</item>
+        <item>Genauer Standort</item>
+        <item>GPS</item>
+        <item>Vibration</item>
+        <item>Kontakte lesen</item>
+        <item>Kontakte ändern</item>
+        <item>Anrufliste lesen</item>
+        <item>Anrufliste ändern</item>
+        <item>Kalender lesen</item>
+        <item>Kalender ändern</item>
+        <item>WLAN-Scan</item>
+        <item>Benachrichtigung</item>
+        <item>Mobilfunknetz-Scan</item>
+        <item>Telefonieren</item>
+        <item>SMS lesen</item>
+        <item>SMS schreiben</item>
+        <item>SMS empfangen</item>
+        <item>Notfall-SMS empfangen</item>
+        <item>MMS empfangen</item>
+        <item>WAP-Push-Nachricht empfangen</item>
+        <item>SMS senden</item>
+        <item>ICC-SMS lesen</item>
+        <item>ICC-SMS schreiben</item>
+        <item>Einstellungen ändern</item>
+        <item>An oberste Position ziehen</item>
+        <item>Auf Benachrichtigungen zugreifen</item>
+        <item>Kamera</item>
+        <item>Audio aufnehmen</item>
+        <item>Audio wiedergeben</item>
+        <item>Zwischenablage lesen</item>
+        <item>Zwischenablage ändern</item>
+        <item>Medienschaltflächen</item>
+        <item>Audiofokus</item>
+        <item>Gesamtlautstärke</item>
+        <item>Sprachlautstärke</item>
+        <item>Klingeltonlautstärke</item>
+        <item>Medienlautstärke</item>
+        <item>Weckerlautstärke</item>
+        <item>Benachrichtigungslautstärke</item>
+        <item>Bluetooth-Lautstärke</item>
+        <item>Aktiv lassen</item>
+        <item>Standort beobachten</item>
+        <item>Orte mit hohem Stromverbrauch überwachen</item>
+        <item>Nutzungsstatistiken abrufen</item>
+        <item>Mikrofon aus- oder einschalten</item>
+        <item>toast window</item>
+        <item>Projektion von Medieninhalten</item>
+        <item>VPN aktivieren</item>
+        <item>WLAN ändern</item>
+        <item>Bluetooth ändern</item>
+        <item>MMS senden</item>
+        <item>MMS lesen</item>
+        <item>MMS schreiben</item>
+        <item>Autostart</item>
+        <item>NFC ändern</item>
+        <item>SMS löschen</item>
+        <item>MMS löschen</item>
+        <item>Kontakte löschen</item>
+        <item>Anrufliste löschen</item>
+        <item>Daten ändern</item>
+        <item>Andere Konten</item>
+        <item>Telefoninfo lesen</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <string-array name="app_ops_labels">
+        <item>Standort</item>
+        <item>Standort</item>
+        <item>Standort</item>
+        <item>Vibration</item>
+        <item>Kontakte lesen</item>
+        <item>Kontakte ändern</item>
+        <item>Anrufliste lesen</item>
+        <item>Anrufliste ändern</item>
+        <item>Kalender lesen</item>
+        <item>Kalender ändern</item>
+        <item>Standort</item>
+        <item>Benachrichtigung posten</item>
+        <item>Standort</item>
+        <item>Telefonieren</item>
+        <item>SMS/MMS lesen</item>
+        <item>SMS/MMS schreiben</item>
+        <item>SMS/MMS empfangen</item>
+        <item>SMS/MMS empfangen</item>
+        <item>SMS/MMS empfangen</item>
+        <item>SMS/MMS empfangen</item>
+        <item>SMS/MMS senden</item>
+        <item>SMS/MMS lesen</item>
+        <item>SMS/MMS schreiben</item>
+        <item>Einstellungen ändern</item>
+        <item>An oberste Position ziehen</item>
+        <item>Auf Benachrichtigungen zugreifen</item>
+        <item>Kamera</item>
+        <item>Audio aufnehmen</item>
+        <item>Audio wiedergeben</item>
+        <item>Zwischenablage lesen</item>
+        <item>Zwischenablage ändern</item>
+        <item>Medienschaltflächen</item>
+        <item>Audiofokus</item>
+        <item>Gesamtlautstärke</item>
+        <item>Sprachlautstärke</item>
+        <item>Klingeltonlautstärke</item>
+        <item>Medienlautstärke</item>
+        <item>Weckerlautstärke</item>
+        <item>Benachrichtigungslautstärke</item>
+        <item>Bluetooth-Lautstärke</item>
+        <item>Aktiv lassen</item>
+        <item>Standort</item>
+        <item>Ort</item>
+        <item>Nutzungsstatistiken abrufen</item>
+        <item>Mikrofon aus- oder einschalten</item>
+        <item>Toast window</item>
+        <item>Projektion von Medieninhalten</item>
+        <item>VPN aktivieren</item>
+        <item>WLAN ändern</item>
+        <item>Bluetooth ändern</item>
+        <item>MMS senden</item>
+        <item>MMS lesen</item>
+        <item>MMS schreiben</item>
+        <item>Autostart</item>
+        <item>Nfc ändern</item>
+        <item>SMS löschen</item>
+        <item>MMS löschen</item>
+        <item>Kontakte löschen</item>
+        <item>Anrufliste löschen</item>
+        <item>Daten ändern</item>
+        <item>Andere Konten</item>
+        <item>Telefoninfo lesen</item>
+    </string-array>
+
+</resources>
