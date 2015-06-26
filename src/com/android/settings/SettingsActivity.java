@@ -113,6 +113,8 @@ import com.android.settings.wifi.AdvancedWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
+import com.android.settings.WifiCallingSettings;
+
 import com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings;
 import com.dirtyunicorns.dutweaks.fragments.AppCircleBar;
 import com.android.settings.du.AmbientSettings;
@@ -308,6 +310,7 @@ public class SettingsActivity extends Activity
             OtherSoundSettings.class.getName(),
             QuickLaunchSettings.class.getName(),
             ApnSettings.class.getName(),
+            WifiCallingSettings.class.getName(),
             DirtyTweaks.class.getName(),
             HeadsUpSettings.class.getName(),
             AppCircleBar.class.getName(),

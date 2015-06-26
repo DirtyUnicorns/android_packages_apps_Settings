@@ -49,6 +49,7 @@ import com.android.settings.voice.VoiceInputSettings;
 import com.android.settings.wifi.AdvancedWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
+import com.android.settings.WifiCallingSettings;
 import com.android.settings.du.AmbientSettings;
 
 import java.util.Collection;
@@ -278,6 +279,13 @@ public final class SearchIndexableResources {
                         NO_DATA_RES_ID,
                         AmbientSettings.class.getName(),
                         R.drawable.ic_settings_display));
+
+        sResMap.put(WifiCallingSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(WifiCallingSettings.class.getName()),
+                        R.xml.wifi_calling_settings,
+                        WifiCallingSettings.class.getName(),
+                        R.drawable.ic_settings_wireless));
     }
 
     private SearchIndexableResources() {
