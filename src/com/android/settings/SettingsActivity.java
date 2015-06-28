@@ -118,6 +118,7 @@ import com.dirtyunicorns.dutweaks.fragments.AppCircleBar;
 import com.dirtyunicorns.dutweaks.fragments.ButtonBrightnessSettings;
 import com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings;
 import com.dirtyunicorns.dutweaks.fragments.NavbarSettings;
+import com.dirtyunicorns.dutweaks.fragments.PieControl;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -315,7 +316,8 @@ public class SettingsActivity extends Activity
             AppCircleBar.class.getName(),
             AmbientSettings.class.getName(),
             ButtonBrightnessSettings.class.getName(),
-            NavbarSettings.class.getName()
+            NavbarSettings.class.getName(),
+            PieControl.class.getName()
     };
 
 
