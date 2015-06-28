@@ -69,6 +69,7 @@ import com.android.settings.accessibility.CaptionPropertiesFragment;
 import com.android.settings.accounts.AccountSettings;
 import com.android.settings.accounts.AccountSyncSettings;
 import com.dirtyunicorns.dutweaks.DirtyTweaks;
+import com.dirtyunicorns.dutweaks.fragments.PieControl;
 import com.android.settings.applications.InstalledAppDetails;
 import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ProcessStatsUi;
@@ -80,7 +81,6 @@ import com.android.settings.dashboard.NoHomeDialogFragment;
 import com.android.settings.dashboard.SearchResultsSummary;
 import com.android.settings.deviceinfo.Memory;
 import com.android.settings.deviceinfo.UsbSettings;
-import com.android.settings.du.AmbientSettings;
 import com.android.settings.fuelgauge.BatterySaverSettings;
 import com.android.settings.fuelgauge.PowerUsageSummary;
 import com.android.settings.notification.NotificationAppList;
@@ -312,6 +312,7 @@ public class SettingsActivity extends Activity
             QuickLaunchSettings.class.getName(),
             ApnSettings.class.getName(),
             WifiCallingSettings.class.getName(),
+            PieControl.class.getName(),
             DirtyTweaks.class.getName(),
             HeadsUpSettings.class.getName(),
             AppCircleBar.class.getName(),
