@@ -2166,6 +2166,11 @@
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereBuilderActivity" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereCreateGestureActivity" />
 
+        <receiver android:name="com.dirtyunicorns.dutweaks.OnBoot">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
         <!-- End of DU activities -->
 
         <activity android:name="Settings$WifiCallingSettingsActivity"
