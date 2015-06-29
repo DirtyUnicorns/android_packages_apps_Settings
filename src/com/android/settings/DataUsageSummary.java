@@ -504,6 +504,11 @@ public class DataUsageSummary extends HighlightingFragment implements Indexable 
         mMenuRestrictBackground.setVisible(
                 hasReadyMobileRadio(context) && isOwner && !appDetailMode);
 
+        if (context.getResources().getBoolean(
+                com.android.internal.R.bool.config_zero_balance_operator))
+            mMenuRestrictBackground.setEnabled(
+                    !mPolicyManager.getRestrictBackground2());
+
         final MenuItem metered = menu.findItem(R.id.data_usage_menu_metered);
         if (hasReadyMobileRadio(context) || hasWifiRadio(context)) {
             metered.setVisible(!appDetailMode);
