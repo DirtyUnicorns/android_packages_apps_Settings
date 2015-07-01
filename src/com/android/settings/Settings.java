@@ -108,4 +108,6 @@ public class Settings extends SettingsActivity {
     public static class AmbientDisplaySettingsActivity extends SettingsActivity { /* empty */ }
     public static class WifiCallingSettingsActivity extends SettingsActivity { /* empty */ }
     public static class NavbarSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class QSTilesSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class ExpandedDesktopSettingsActivity extends SettingsActivity { /* empty */ }
 }
