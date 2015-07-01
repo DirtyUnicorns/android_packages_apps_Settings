@@ -22,8 +22,8 @@
     <!-- Customization -->
   <string name="header_category_custom">PERSONNALISATION</string>
   <string name="custom_title">Dirty Tweaks</string>
-    <string name="duupdater">Mise à jour</string>
-    <string name="duupdater_summary">Restez à jour avec les dernières fonctionnalités et correctifs</string>
+  <string name="duupdater">Mise à jour</string>
+  <string name="duupdater_summary">Restez à jour avec les dernières fonctionnalités et correctifs</string>
 
     <!-- DU Extra Info -->
   <string name="duextrainfo">Informations supplémentaires</string>
@@ -41,9 +41,9 @@
 
     <!-- Phone info -->
     <!-- VoLTE provisioning flag on. Only shown in diagnostic screen, so precise translation is not needed. -->
-    <string name="volte_provisioned_flag_on">Activer l\'indicateur VoLTE</string>
+  <string name="volte_provisioned_flag_on">Activer l\'indicateur VoLTE</string>
     <!-- VoLTE provisioning flag off. Only shown in diagnostic screen, so precise translation is not needed. -->
-    <string name="volte_provisioned_flag_off">Désactiver l\'indicateur VoLTE</string>
+  <string name="volte_provisioned_flag_off">Désactiver l\'indicateur VoLTE</string>
 
     <!-- SuperSU -->
   <string name="supersu_title">SuperSU</string>
@@ -140,6 +140,7 @@
   <string name="safe_headset_volume_summary">Empêche les volumes sonores trop élevés lorsque le casque est branché</string>
   <string name="safe_headset_volume_warning_dialog_text">L\'écoute de la musique à des niveaux très élevés pendant des périodes de temps prolongées peut endommager l\'ouïe. Désactivez cette sécurité avec prudence.</string>
   <string name="notifications_category_title">Notifications</string>
+  <string name="sound_misc_category_title">Système</string>
   <string name="less_notification_sounds_title">Limiter les notification sonores</string>
   <string name="less_notification_sounds_summary">Diminuer le nombre de notification sonore pour chaque application à une fois par période définie</string>
   <string name="less_notification_sounds_default">Comportement par défaut</string>
@@ -167,7 +168,11 @@
   <string name="camera_sound_warning_dialog_text">Désactiver le son de l\'obturateur de l\'appareil photo est illégal dans certaines régions ! Veuillez vérifier la législation applicable à votre pays</string>
 
     <!-- Linked / unlinked notification volume -->
-    <string name="link_volume_option_title">Lier les volumes des notifications et de la sonnerie</string>
+  <string name="link_volume_option_title">Lier les volumes des notifications et de la sonnerie</string>
+
+    <!-- Launch music player when headset is connected -->
+  <string name="headset_connect_player_title">Démarrer lecteur de musique</string>
+  <string name="headset_connect_player_summary">Démarre le lecteur de musique par défaut au branchement du casque</string>
 
   <!-- Font size sample text. This needs to be a very short string, as it is shown in
      multiple font sizes in a limited amount of space. -->
@@ -180,10 +185,10 @@
   <string name="show_cpu_info_summary">Affiche en surimpression les informations du CPU</string>
   
     <!-- Android debugging over WiFi -->
-    <string name="adb_over_network">ADB par réseau</string>
-    <string name="adb_over_network_summary">Activer le débogage TCP/IP par les interfaces réseaux (Wi\u2010Fi, réseaux USB). Ce paramètre est réinitialisé au redémarrage</string>
+  <string name="adb_over_network">ADB par réseau</string>
+  <string name="adb_over_network_summary">Activer le débogage TCP/IP par les interfaces réseaux (Wi\u2010Fi, réseaux USB). Ce paramètre est réinitialisé au redémarrage</string>
     <!-- Warning for Adb over Network -->
-    <string name="adb_over_network_warning">AVERTISSEMENT\u00A0: Lorsque ADB par réseau est activé, votre téléphone est ouvert aux intrusions sur tous les réseaux connectés\u00A0!\n\nUtilisez cette fonctionnalité uniquement lorsque vous êtes connecté sur des réseaux sûrs.\n\nVoulez\u2010vous vraiment activer cette fonction\u00A0?</string>
+  <string name="adb_over_network_warning">AVERTISSEMENT\u00A0: Lorsque ADB par réseau est activé, votre téléphone est ouvert aux intrusions sur tous les réseaux connectés\u00A0!\n\nUtilisez cette fonctionnalité uniquement lorsque vous êtes connecté sur des réseaux sûrs.\n\nVoulez\u2010vous vraiment activer cette fonction\u00A0?</string>
 
   <!-- Battery saver color -->
   <string name="battery_saver_title">Couleur d\'avertissement</string>
@@ -222,147 +227,147 @@
   <string name="inches">Pouces</string>
 
     <!-- Themes Settings -->
-    <string name="themes_settings_title">Thèmes</string>
+  <string name="themes_settings_title">Thèmes</string>
 
     <!-- DU Changelog -->
-    <string name="duchangelog">DU Changelog</string>
-    <string name="du_summary">Consulter la liste des changements dans DU</string>
-    <string name="du_app_name">Journaux des changements de DU</string>
+  <string name="duchangelog">DU Changelog</string>
+  <string name="du_summary">Consulter la liste des changements dans DU</string>
+  <string name="du_app_name">Journaux des changements de DU</string>
 
     <!-- DU About -->
-    <string name="aboutdu">À Propos de DU</string>
-    <string name="aboutdu_summary">Informations sur nos développeurs, nos mainteneurs, et sur les fonctionnalités de la ROM</string>
+  <string name="aboutdu">À Propos de DU</string>
+  <string name="aboutdu_summary">Informations sur nos développeurs, nos mainteneurs, et sur les fonctionnalités de la ROM</string>
 
     <!-- Notification light dialogs -->
-    <string name="edit_light_settings">Paramètres du voyant</string>
-    <string name="pulse_speed_title">Durée et vitesse d\'impulsion</string>
-    <string name="default_time">Normale</string>
-    <string name="custom_time">Personnalisée</string>
-    <string name="dialog_delete_title">Supprimer</string>
-    <string name="dialog_delete_message">Voulez-vous supprimer les notifications de l\'application sélectionnée\u00A0?</string>
+  <string name="edit_light_settings">Paramètres du voyant</string>
+  <string name="pulse_speed_title">Durée et vitesse d\'impulsion</string>
+  <string name="default_time">Normale</string>
+  <string name="custom_time">Personnalisée</string>
+  <string name="dialog_delete_title">Supprimer</string>
+  <string name="dialog_delete_message">Voulez-vous supprimer les notifications de l\'application sélectionnée\u00A0?</string>
 
     <!-- Values for the notification light pulse spinners -->
-    <string name="pulse_length_always_on">Toujours allumée</string>
-    <string name="pulse_length_very_short">Très courte</string>
-    <string name="pulse_length_short">Courte</string>
-    <string name="pulse_length_normal">Normale</string>
-    <string name="pulse_length_long">Longue</string>
-    <string name="pulse_length_very_long">Très longue</string>
-    <string name="pulse_speed_very_fast">Très rapide</string>
-    <string name="pulse_speed_fast">Rapide</string>
-    <string name="pulse_speed_normal">Normale</string>
-    <string name="pulse_speed_slow">Lente</string>
-    <string name="pulse_speed_very_slow">Très lente</string>
+  <string name="pulse_length_always_on">Toujours allumée</string>
+  <string name="pulse_length_very_short">Très courte</string>
+  <string name="pulse_length_short">Courte</string>
+  <string name="pulse_length_normal">Normale</string>
+  <string name="pulse_length_long">Longue</string>
+  <string name="pulse_length_very_long">Très longue</string>
+  <string name="pulse_speed_very_fast">Très rapide</string>
+  <string name="pulse_speed_fast">Rapide</string>
+  <string name="pulse_speed_normal">Normale</string>
+  <string name="pulse_speed_slow">Lente</string>
+  <string name="pulse_speed_very_slow">Très lente</string>
 
     <!-- Battery light settings -->
-    <string name="battery_light_title">Voyant batterie</string>
-    <string name="battery_low_pulse_title">Clignoter si la batterie est faible</string>
-    <string name="battery_light_list_title">Couleurs</string>
-    <string name="battery_light_low_color_title">Batterie faible</string>
-    <string name="battery_light_medium_color_title">En charge</string>
-    <string name="battery_light_full_color_title">Chargée</string>
+  <string name="battery_light_title">Voyant batterie</string>
+  <string name="battery_low_pulse_title">Clignoter si la batterie est faible</string>
+  <string name="battery_light_list_title">Couleurs</string>
+  <string name="battery_light_low_color_title">Batterie faible</string>
+  <string name="battery_light_medium_color_title">En charge</string>
+  <string name="battery_light_full_color_title">Chargée</string>
 
     <!-- Lights settings screen, notification light settings -->
-    <string name="notification_light_title">Voyant de notification</string>
-    <string name="notification_light_general_title">Général</string>
-    <string name="notification_light_applist_title">Applications</string>
-    <string name="notification_light_phonelist_title">Téléphone</string>
-    <string name="notification_light_use_custom">Couleurs spécifiques</string>
-    <string name="notification_light_default_value">Défaut</string>
-    <string name="notification_light_missed_call_title">Appel manqué</string>
-    <string name="notification_light_voicemail_title">Messagerie vocale</string>
-    <string name="profiles_add">Ajouter</string>
-    <string name="profile_choose_app">Sélectionner une application</string>
-    <string name="profile_reset_title">Réinitialiser</string>
+  <string name="notification_light_title">Voyant de notification</string>
+  <string name="notification_light_general_title">Général</string>
+  <string name="notification_light_applist_title">Applications</string>
+  <string name="notification_light_phonelist_title">Téléphone</string>
+  <string name="notification_light_use_custom">Couleurs spécifiques</string>
+  <string name="notification_light_default_value">Défaut</string>
+  <string name="notification_light_missed_call_title">Appel manqué</string>
+  <string name="notification_light_voicemail_title">Messagerie vocale</string>
+  <string name="profiles_add">Ajouter</string>
+  <string name="profile_choose_app">Sélectionner une application</string>
+  <string name="profile_reset_title">Réinitialiser</string>
 
     <!-- Doze pulse (ambient display) options -->
-    <string name="doze_overwrite_value_title">Définir les délais</string>
-    <string name="doze_overwrite_value_summary">Permet de paramétrer les valeurs de réveil</string>
-    <string name="doze_list_mode_title">Mode Sommeil</string>
-    <string name="doze_list_mode_summary">Option pour configurer le mode Sommeil</string>
-    <string name="doze_pulse_title">Paramètres de délai</string>
-    <string name="doze_pulse_duration_in_title">Délai d\'ouverture</string>
-    <string name="doze_pulse_duration_in_summary"></string>
-    <string name="doze_pulse_duration_visible_title">Durée d\'affichage</string>
-    <string name="doze_pulse_duration_visible_summary"></string>
-    <string name="doze_pulse_duration_out_title">Délai de fermeture</string>
-    <string name="doze_pulse_duration_out_summary"></string>
-    <string name="doze_pulse_on_notifications_title">Impulsion des notifications</string>
-    <string name="doze_pulse_on_notifications_summary">Déclenchement pour les notifications en attente</string>
-    <string name="doze_shake_title">Paramètres du capteur de mouvement</string>
-    <string name="doze_shake_mode_title">Mode capteur de mouvement</string>
-    <string name="doze_shake_mode_summary">Déclenchement selon la valeur du capteur de mouvement</string>
-    <string name="doze_shake_mode_test_summary">Voulez-vous tester le capteur de mouvement ?</string>
-    <string name="doze_shake_mode_test_result">Appliquer la valeur actuelle ?</string>
-    <string name="doze_shake_test">Agiter votre appareil maintenant</string>
-    <string name="doze_shake_it">Mouvement détecté !</string>
-    <string name="doze_shake_acc_threshold_title">Seuil d\'agitation</string>
-    <string name="doze_shake_acc_threshold_summary">Paramètres du tremblement nécessaire pour déclencher l\'activation</string>
-    <string name="doze_time_mode_title">Affichage date et heure</string>
-    <string name="doze_time_mode_summary">Afficher l\'horloge lorsqu\'il n\'y a pas de notification</string>
-    <string name="twohundred_ms">200 ms</string>
-    <string name="fivehundred_ms">500 ms</string>
-    <string name="one_second">1 s</string>
-    <string name="one_second_default">1 s (par défaut)</string>
-    <string name="onehalf_second">1,5 s</string>
-    <string name="two_second">2 s</string>
-    <string name="twohalf_second">2,5 s</string>
-    <string name="three_second">3 s</string>
-    <string name="three_second_default">3 s (par défaut)</string>
-    <string name="threehalf_second">3,5 s</string>
-    <string name="four_second">4 s</string>
-    <string name="fourhalf_second">4,5 s</string>
-    <string name="five_second">5 s</string>
-    <string name="veryeasy_shake">Très doux</string>
-    <string name="easy_shake">Doux</string>
-    <string name="medium_shake">Par défaut</string>
-    <string name="hard_shake">Fort</string>
-    <string name="veryhard_shake">Très fort</string>
-    <string name="strong_shake">Puissant</string>
-    <string name="fully_mode">Mode complet</string>
-    <string name="pocket_shake_mode">Poche et agitation</string>
-    <string name="pocket_pulse_mode">Poche et impulsion</string>
-    <string name="pocket_only_mode">Poche</string>
-    <string name="shake_pulse_mode">Agitation et impulsion</string>
-    <string name="pulse_only_mode">Impulsion (par défaut)</string>
-    <string name="headset_plugged_in_title">Notification de casque connecté</string>
-    <string name="headset_plugged_in_summary">Activer la notification lorsque un casque est connecté</string>
+  <string name="doze_overwrite_value_title">Définir les délais</string>
+  <string name="doze_overwrite_value_summary">Permet de paramétrer les valeurs de réveil</string>
+  <string name="doze_list_mode_title">Mode Sommeil</string>
+  <string name="doze_list_mode_summary">Option pour configurer le mode Sommeil</string>
+  <string name="doze_pulse_title">Paramètres de délai</string>
+  <string name="doze_pulse_duration_in_title">Délai d\'ouverture</string>
+  <string name="doze_pulse_duration_in_summary"></string>
+  <string name="doze_pulse_duration_visible_title">Durée d\'affichage</string>
+  <string name="doze_pulse_duration_visible_summary"></string>
+  <string name="doze_pulse_duration_out_title">Délai de fermeture</string>
+  <string name="doze_pulse_duration_out_summary"></string>
+  <string name="doze_pulse_on_notifications_title">Impulsion des notifications</string>
+  <string name="doze_pulse_on_notifications_summary">Déclenchement pour les notifications en attente</string>
+  <string name="doze_shake_title">Paramètres du capteur de mouvement</string>
+  <string name="doze_shake_mode_title">Mode capteur de mouvement</string>
+  <string name="doze_shake_mode_summary">Déclenchement selon la valeur du capteur de mouvement</string>
+  <string name="doze_shake_mode_test_summary">Voulez-vous tester le capteur de mouvement ?</string>
+  <string name="doze_shake_mode_test_result">Appliquer la valeur actuelle ?</string>
+  <string name="doze_shake_test">Agiter votre appareil maintenant</string>
+  <string name="doze_shake_it">Mouvement détecté !</string>
+  <string name="doze_shake_acc_threshold_title">Seuil d\'agitation</string>
+  <string name="doze_shake_acc_threshold_summary">Paramètres du tremblement nécessaire pour déclencher l\'activation</string>
+  <string name="doze_time_mode_title">Affichage date et heure</string>
+  <string name="doze_time_mode_summary">Afficher l\'horloge lorsqu\'il n\'y a pas de notification</string>
+  <string name="twohundred_ms">200 ms</string>
+  <string name="fivehundred_ms">500 ms</string>
+  <string name="one_second">1 s</string>
+  <string name="one_second_default">1 s (par défaut)</string>
+  <string name="onehalf_second">1,5 s</string>
+  <string name="two_second">2 s</string>
+  <string name="twohalf_second">2,5 s</string>
+  <string name="three_second">3 s</string>
+  <string name="three_second_default">3 s (par défaut)</string>
+  <string name="threehalf_second">3,5 s</string>
+  <string name="four_second">4 s</string>
+  <string name="fourhalf_second">4,5 s</string>
+  <string name="five_second">5 s</string>
+  <string name="veryeasy_shake">Très doux</string>
+  <string name="easy_shake">Doux</string>
+  <string name="medium_shake">Par défaut</string>
+  <string name="hard_shake">Fort</string>
+  <string name="veryhard_shake">Très fort</string>
+  <string name="strong_shake">Puissant</string>
+  <string name="fully_mode">Mode complet</string>
+  <string name="pocket_shake_mode">Poche et agitation</string>
+  <string name="pocket_pulse_mode">Poche et impulsion</string>
+  <string name="pocket_only_mode">Poche</string>
+  <string name="shake_pulse_mode">Agitation et impulsion</string>
+  <string name="pulse_only_mode">Impulsion (par défaut)</string>
+  <string name="headset_plugged_in_title">Notification de casque connecté</string>
+  <string name="headset_plugged_in_summary">Activer la notification lorsque un casque est connecté</string>
 
     <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
-    <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
+  <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
 
     <!-- Privacy Settings Header item -->
 
-    <string name="privacy_settings_cyanogenmod_title">Confidentialité</string>
+  <string name="privacy_settings_cyanogenmod_title">Confidentialité</string>
 
     <!-- Privacy Guard -->
-    <string name="app_security_title">Protection des données</string>
-    <string name="privacy_guard_switch_label">Activer la protection des données</string>
-    <string name="privacy_guard_dlg_title">Activer la protection des données\u00A0?</string>
-    <string name="privacy_guard_dlg_text">Empêcher l\'application d\'accéder aux données personnelles telles que les contacts, les messages ou le journal d\'appels</string>
-    <string name="privacy_guard_dlg_system_app_text">Empêcher une application système d\'accéder aux données personnelles telles peut provoquer des dysfonctionnements avec d\'autres applications</string>
-    <string name="privacy_guard_default_title">Activer par défaut</string>
-    <string name="privacy_guard_default_summary">Activer par défaut pour les applications nouvellement installées</string>
-    <string name="privacy_guard_manager_title">Protection des données</string>
-    <string name="privacy_guard_manager_summary">Contrôler l\'accès des applications aux données personnelles</string>
-    <string name="privacy_guard_no_user_apps">Aucune application installée</string>
-    <string name="privacy_guard_help_title">Aide</string>
-    <string name="privacy_guard_reset_title">Réinitialiser</string>
-    <string name="privacy_guard_reset_text">Réinitialiser les autorisations\u00A0?</string>
-    <string name="privacy_guard_help_text">Dans cet écran, vous pouvez sélectionner par simple appui pour quelles applications la Protection des Données est activée.\n\nLes applications sélectionnées ne seront pas en mesure d\'accéder à vos données personnelles telles que les contacts, les messages ou le journal d\'appels.\n\nUn appui long sur une application permet de définir précisément ses autorisations\n\nPar défaut, les applications système ne sont pas affichées. Si vous voulez les afficher ou ne filtrer que les applications qui demandent un accès aux données personnelles, sélectionnez les options respectives dans le menu</string>
-    <string name="privacy_guard_manager_show_system_apps">Afficher les applications système</string>
-    <string name="privacy_guard_advanced_settings_title">Avancé</string>
+  <string name="app_security_title">Protection des données</string>
+  <string name="privacy_guard_switch_label">Activer la protection des données</string>
+  <string name="privacy_guard_dlg_title">Activer la protection des données\u00A0?</string>
+  <string name="privacy_guard_dlg_text">Empêcher l\'application d\'accéder aux données personnelles telles que les contacts, les messages ou le journal d\'appels</string>
+  <string name="privacy_guard_dlg_system_app_text">Empêcher une application système d\'accéder aux données personnelles telles peut provoquer des dysfonctionnements avec d\'autres applications</string>
+  <string name="privacy_guard_default_title">Activer par défaut</string>
+  <string name="privacy_guard_default_summary">Activer par défaut pour les applications nouvellement installées</string>
+  <string name="privacy_guard_manager_title">Protection des données</string>
+  <string name="privacy_guard_manager_summary">Contrôler l\'accès des applications aux données personnelles</string>
+  <string name="privacy_guard_no_user_apps">Aucune application installée</string>
+  <string name="privacy_guard_help_title">Aide</string>
+  <string name="privacy_guard_reset_title">Réinitialiser</string>
+  <string name="privacy_guard_reset_text">Réinitialiser les autorisations\u00A0?</string>
+  <string name="privacy_guard_help_text">Dans cet écran, vous pouvez sélectionner par simple appui pour quelles applications la Protection des Données est activée.\n\nLes applications sélectionnées ne seront pas en mesure d\'accéder à vos données personnelles telles que les contacts, les messages ou le journal d\'appels.\n\nUn appui long sur une application permet de définir précisément ses autorisations\n\nPar défaut, les applications système ne sont pas affichées. Si vous voulez les afficher ou ne filtrer que les applications qui demandent un accès aux données personnelles, sélectionnez les options respectives dans le menu</string>
+  <string name="privacy_guard_manager_show_system_apps">Afficher les applications système</string>
+  <string name="privacy_guard_advanced_settings_title">Avancé</string>
 
     <!-- Increasing ring tone volume -->
-    <string name="increasing_ring_volume_option_title">Sonnerie progressive</string>
-    <string name="increasing_ring_min_volume_title">Volume de démarrage</string>
-    <string name="increasing_ring_ramp_up_time_title">Durée de progression</string>
+  <string name="increasing_ring_volume_option_title">Sonnerie progressive</string>
+  <string name="increasing_ring_min_volume_title">Volume de démarrage</string>
+  <string name="increasing_ring_ramp_up_time_title">Durée de progression</string>
 
     <!-- Lockscreen pin shuffle -->
-    <string name="lock_numpad_random_title">Changer l\'ordre des numéros du pavé numérique</string>
-    <string name="lock_numpad_random_dialog_title">Ordre des numéros aléatoire</string>
-    <string name="lock_numpad_random_off">Désactivé</string>
-    <string name="lock_numpad_random_always">Toujours</string>
-    <string name="lock_numpad_random_on_request">Sur demande</string>
+  <string name="lock_numpad_random_title">Changer l\'ordre des numéros du pavé numérique</string>
+  <string name="lock_numpad_random_dialog_title">Ordre des numéros aléatoire</string>
+  <string name="lock_numpad_random_off">Désactivé</string>
+  <string name="lock_numpad_random_always">Toujours</string>
+  <string name="lock_numpad_random_on_request">Sur demande</string>
 
 </resources>
