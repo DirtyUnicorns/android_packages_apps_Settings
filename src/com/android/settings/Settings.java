@@ -109,4 +109,6 @@ public class Settings extends SettingsActivity {
     public static class ButtonBrightnessSettings extends SettingsActivity { /* empty */ }
     public static class NavbarSettingsActivity extends SettingsActivity { /* empty */ }
     public static class PieControlActivity extends SettingsActivity { /* empty */ }
+    public static class QSTilesSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class ExpandedDesktopSettingsActivity extends SettingsActivity { /* empty */ }
 }
