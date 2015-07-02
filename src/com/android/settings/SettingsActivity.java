@@ -318,7 +318,7 @@ public class SettingsActivity extends Activity
             HeadsUpSettings.class.getName(),
             AppCircleBar.class.getName(),
             AmbientSettings.class.getName(),
-            NavbarSettings.class.getName()
+            NavbarSettings.class.getName(),
             ExpandedDesktopPreferenceFragment.class.getName()
     };
 
