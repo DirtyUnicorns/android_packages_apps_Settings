@@ -80,6 +80,7 @@ import com.android.settings.dashboard.NoHomeDialogFragment;
 import com.android.settings.dashboard.SearchResultsSummary;
 import com.android.settings.deviceinfo.Memory;
 import com.android.settings.deviceinfo.UsbSettings;
+import com.android.settings.du.AmbientSettings;
 import com.android.settings.fuelgauge.BatterySaverSettings;
 import com.android.settings.fuelgauge.PowerUsageSummary;
 import com.android.settings.notification.NotificationAppList;
@@ -114,10 +115,10 @@ import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.WifiCallingSettings;
-
 import com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings;
 import com.dirtyunicorns.dutweaks.fragments.AppCircleBar;
 import com.android.settings.du.AmbientSettings;
+import com.dirtyunicorns.dutweaks.fragments.NavbarSettings;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -314,7 +315,8 @@ public class SettingsActivity extends Activity
             DirtyTweaks.class.getName(),
             HeadsUpSettings.class.getName(),
             AppCircleBar.class.getName(),
-            AmbientSettings.class.getName()
+            AmbientSettings.class.getName(),
+            NavbarSettings.class.getName()
     };
 
 
