@@ -370,4 +370,12 @@
   <string name="lock_numpad_random_always">Toujours</string>
   <string name="lock_numpad_random_on_request">Sur demande</string>
 
+  <string name="storage_options_category">Notifications</string>
+  <string name="storage_menu_options">Avancé</string>
+  <string name="storage_title_options">Options de stockage</string>
+  <string name="no_media_notification_title">Support de stockage retiré</string>
+  <string name="no_media_notification_summary">Affiche une notification lorsque le support de stockage est retiré</string>
+  <string name="mount_notification_title">Support de stockage monté</string>
+  <string name="mount_notification_summary">Affiche une notification persistante lorsque le support de stockage est  monté</string>
+
 </resources>
