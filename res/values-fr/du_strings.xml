@@ -376,6 +376,12 @@
   <string name="no_media_notification_title">Support de stockage retiré</string>
   <string name="no_media_notification_summary">Affiche une notification lorsque le support de stockage est retiré</string>
   <string name="mount_notification_title">Support de stockage monté</string>
-  <string name="mount_notification_summary">Affiche une notification persistante lorsque le support de stockage est  monté</string>
+  <string name="mount_notification_summary">Affiche une notification persistante lorsque le support de stockage est monté</string>
+
+    <!-- Keyguard notifications -->
+    <string name="app_notification_show_on_keyguard_title">Écran de déverrouillage</string>
+    <string name="app_notification_show_on_keyguard_summary">Afficher les notifications de cette application sur l\'écran de déverrouillage</string>
+    <string name="app_notification_no_ongoing_on_keyguard_title">Notifications persistantes</string>
+    <string name="app_notification_no_ongoing_on_keyguard_summary">Ne jamais afficher les notifications persistantes de cette application sur l\'écran de déverrouillage</string>
 
 </resources>
