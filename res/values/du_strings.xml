@@ -91,6 +91,9 @@
     <string name="screenshot_sound_title">Screenshot sound</string>
     <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
 
+    <!-- Allow notification lights -->
+    <string name="allow_lights_title">Allow notification lights</string>
+
     <!-- MediaScanner behavior on boot -->
     <string name="options_settings_title">Options</string>
     <string name="media_scanner_on_boot_title">MediaScanner behavior on boot</string>
