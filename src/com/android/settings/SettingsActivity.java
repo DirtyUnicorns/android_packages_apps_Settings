@@ -118,6 +118,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.dirtyunicorns.dutweaks.fragments.AppCircleBar;
 import com.dirtyunicorns.dutweaks.fragments.ButtonBrightnessSettings;
 import com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings;
+import com.android.settings.du.DisplayRotation;
 import com.dirtyunicorns.dutweaks.fragments.NavbarSettings;
 import com.dirtyunicorns.dutweaks.fragments.PieControl;
 
@@ -319,7 +320,8 @@ public class SettingsActivity extends Activity
             ButtonBrightnessSettings.class.getName(),
             NavbarSettings.class.getName(),
             PieControl.class.getName(),
-            ExpandedDesktopPreferenceFragment.class.getName()
+            ExpandedDesktopPreferenceFragment.class.getName(),
+            DisplayRotation.class.getName()
     };
 
 
