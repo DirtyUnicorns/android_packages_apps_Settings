@@ -119,6 +119,7 @@ import com.android.settings.WifiCallingSettings;
 import com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings;
 import com.dirtyunicorns.dutweaks.fragments.AppCircleBar;
 import com.android.settings.du.AmbientSettings;
+import com.android.settings.du.DisplayRotation;
 import com.dirtyunicorns.dutweaks.fragments.NavbarSettings;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -319,7 +320,8 @@ public class SettingsActivity extends Activity
             AppCircleBar.class.getName(),
             AmbientSettings.class.getName(),
             NavbarSettings.class.getName(),
-            ExpandedDesktopPreferenceFragment.class.getName()
+            ExpandedDesktopPreferenceFragment.class.getName(),
+            DisplayRotation.class.getName()
     };
 
 
