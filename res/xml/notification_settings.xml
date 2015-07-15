@@ -72,6 +72,12 @@
                 android:title="@string/vibrate_when_ringing_title"
                 android:persistent="false" />
 
+        <!-- Volume Steps -->
+        <PreferenceScreen
+                android:key="volume_steps"
+                android:title="@string/volume_steps_title"
+                android:fragment="com.android.settings.du.VolumeSteps" />
+
         <!-- Interruptions -->
         <PreferenceScreen
                 android:key="zen_mode"
