@@ -77,6 +77,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_WAKEUP_WHEN_PLUGGED_UNPLUGGED = "wakeup_when_plugged_unplugged";
     private static final String KEY_WAKEUP_CATEGORY = "category_wakeup_options";
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
+    private static final String KEY_SCREEN_OFF_GESTURE_SETTINGS = "screen_off_gesture_settings";
 
     private static final String KEY_DOZE_FRAGMENT = "doze_fragment";
 
@@ -174,6 +175,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                         Settings.System.WAKEUP_WHEN_PLUGGED_UNPLUGGED, 1) == 1);
             mWakeUpWhenPluggedOrUnplugged.setOnPreferenceChangeListener(this);
         }
+
+        Utils.updatePreferenceToSpecificActivityFromMetaDataOrRemove(getActivity(),
+                getPreferenceScreen(), KEY_SCREEN_OFF_GESTURE_SETTINGS);
 
     }
 
