@@ -388,7 +388,7 @@
     <string name="app_notification_no_ongoing_on_keyguard_summary">Ne jamais afficher les notifications persistantes de cette application sur l\'écran de déverrouillage</string>
 
     <!-- Hotspot idle -->
-    <string name="wifi_hotspot_mode_title">Durée d\'activation du point d\'accès Wi-Fi</string>
+    <string name="wifi_hotspot_mode_title">Veille du point d\'accès Wi-Fi</string>
 
     <!-- Volume Steps -->
     <string name="volume_steps_title">Incrémentation du volume</string>
@@ -405,5 +405,15 @@
     <string name="volume_steps_15">15</string>
     <string name="volume_steps_7">7</string>
     <string name="volume_steps_5">5</string>
+
+    <!-- https://github.com/omnirom/android_packages_apps_Settings/blob/android-4.4/res/values-fr/custom_strings.xml. -->
+
+    <!-- Wi-Fi settings screen, advanced, title for setting the wifi region code. -->
+    <string name="wifi_setting_countrycode_title">Code région du Wi-Fi</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi region code [CHAR LIMIT=50]-->
+    <string name="wifi_setting_countrycode_summary">Spécifier le code Wi-Fi de la région</string>
+    <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_countrycode_error">Un problème a été rencontré avec le paramétrage du code de région</string>
+    <string name="wifi_setting_countrycode_default">Par défaut</string>
 
 </resources>
