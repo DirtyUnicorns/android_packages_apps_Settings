@@ -85,7 +85,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DU_SHARE = "share";
     private static final String KEY_CHANGELOG = "changelog";
     private static final String KEY_ABOUTDU = "aboutdu";
+    private static final String KEY_ABOUTDU_PACKAGE_NAME = "com.dirtyunicorns.about";
     private static final String KEY_DUUPDATER = "duupdater";
+    private static final String KEY_DUUPDATER_PACKAGE_NAME = "com.dirtyunicorns.duupdater";
+
+    private PreferenceScreen mDuUpdater;
+    private PreferenceScreen mDuAbout;
 
     long[] mHits = new long[3];
 
@@ -94,6 +99,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.device_info_settings);
+        PreferenceScreen prefSet = getPreferenceScreen();
 
         setStringSummary(KEY_FIRMWARE_VERSION, Build.VERSION.RELEASE);
         findPreference(KEY_FIRMWARE_VERSION).setEnabled(true);
@@ -112,6 +118,18 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         } else if (!SELinux.isSELinuxEnforced()) {
             String status = getResources().getString(R.string.selinux_status_permissive);
             setStringSummary(KEY_SELINUX_STATUS, status);
+        }
+
+        //Remove DU Updater if package is removed
+        mDuUpdater = (PreferenceScreen) findPreference(KEY_DUUPDATER);
+        if (!Utils.isPackageInstalled(getActivity(), KEY_DUUPDATER_PACKAGE_NAME)) {
+            prefSet.removePreference(mDuUpdater);
+        }
+
+        //Remove DU About if package is removed
+        mDuAbout = (PreferenceScreen) findPreference(KEY_ABOUTDU);
+        if (!Utils.isPackageInstalled(getActivity(), KEY_ABOUTDU_PACKAGE_NAME)) {
+            prefSet.removePreference(mDuAbout);
         }
 
         // Remove selinux information if property is not present
