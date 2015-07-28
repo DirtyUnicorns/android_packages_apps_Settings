@@ -2236,8 +2236,8 @@
         <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.ChangeList"/>
 
         <activity android:name="Settings$DirtyTweaksActivity"
-            android:label="@string/custom_title"
-            android:taskAffinity="">
+                android:label="@string/custom_title"
+                android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
