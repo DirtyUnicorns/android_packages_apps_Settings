@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014 The Dirty Unicorns Project
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+
+    <!-- App ops permissions -->
+    <string-array name="app_ops_permissions">
+        <item>Ammesso</item>
+        <item>Ignorato</item>
+        <item>Chiedi Sempre</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <string-array name="app_ops_categories">
+        <item>Posizione</item>
+        <item>Personale</item>
+        <item>Messaggistica</item>
+        <item>Media</item>
+        <item>Dispositivo</item>
+        <item>Avvio</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <string-array name="app_ops_summaries">
+        <item>posizione non accurata </item>
+        <item>buona posizione</item>
+        <item>GPS</item>
+        <item>vibrare</item>
+        <item>leggere i contatti</item>
+        <item>modificare i contatti</item>
+        <item>leggere i log delle chiamate</item>
+        <item>modificare i log delle chiamate</item>
+        <item>leggere il calendario</item>
+        <item>modificare il calendario</item>
+        <item>scansione wi-fi</item>
+        <item>notifica</item>
+        <item>rilevazione della rete mobile</item>
+        <item>telefonata</item>
+        <item>leggere gli SMS</item>
+        <item>scrivere SMS</item>
+        <item>ricevere SMS</item>
+        <item>ricevere SMS di emergenza</item>
+        <item>ricevere MMS</item>
+        <item>ricevere messaggi WAP</item>
+        <item>inviare SMS</item>
+        <item>leggere ICC degli SMS</item>
+        <item>scrivere ICC degli SMS</item>
+        <item>modificare le impostazioni</item>
+        <item>elaborare sopra</item>
+        <item>accesso alle notifiche</item>
+        <item>camera</item>
+        <item>registrare audio</item>
+        <item>riprodurre audio</item>
+        <item>leggere gli appunti (clipboard)</item>
+        <item>modificare gli appunti (clipboard)</item>
+        <item>pulsanti multimediali</item>
+        <item>priorità audio</item>
+        <item>volume principale</item>
+        <item>volume della voce</item>
+        <item>volume della suoneria</item>
+        <item>volume delle applicazioni multimediali</item>
+        <item>volume degli allarmi</item>
+        <item>volume delle notifiche</item>
+        <item>volume del bluetooth </item>
+        <item>rimani attivo</item>
+        <item>monitoraggio posizione</item>
+        <item>monitorare la posizione ad alta potenza</item>
+        <item>ottenere statistiche di utilizzo</item>
+        <item>attiiva/disattiva il microfono</item>
+        <item>finestra toast</item>
+        <item>progetto multimediale</item>
+        <item>attiva VPN</item>
+        <item>utilizzo wlan</item>
+        <item>utilizzo bluetooth</item>
+        <item>inviare MMS</item>
+        <item>leggere MMS</item>
+        <item>scrivere MMS</item>
+        <item>auto avvio</item>
+        <item>utilizzo nfc</item>
+        <item>eliminare SMS</item>
+        <item>eliminare MMS</item>
+        <item>eliminare contatti</item>
+        <item>eliminare registro delle chiamate</item>
+        <item>cambiamento data</item>
+        <item>altri account</item>
+        <item>leggere informazioni del telefono</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <string-array name="app_ops_labels">
+        <item>Posizione</item>
+        <item>Posizione</item>
+        <item>Posizione</item>
+        <item>Vibrare</item>
+        <item>Leggere i contatti</item>
+        <item>Modificare i contatti</item>
+        <item>Leggere i log delle chiamate</item>
+        <item>Modificare i log delle chiamate</item>
+        <item>Leggere il calendario</item>
+        <item>Modificare il calendario</item>
+        <item>Posizione</item>
+        <item>Invia notifica</item>
+        <item>Posizione</item>
+        <item>Telefonata</item>
+        <item>Leggere SMS</item>
+        <item>Scrivere SMS</item>
+        <item>Ricevere SMS</item>
+        <item>Ricevere SMS</item>
+        <item>Ricevere MMS</item>
+        <item>Ricevere SMS</item>
+        <item>Inviare SMS</item>
+        <item>Leggere SMS</item>
+        <item>Scrivere SMS</item>
+        <item>Modificare le impostazioni</item>
+        <item>Elaborare Sopra</item>
+        <item>Accesso alle Notifiche</item>
+        <item>Camera</item>
+        <item>Registrare l\'audio</item>
+        <item>Riprodurre l\'audio</item>
+        <item>Leggere gli Appunti (clipboard)</item>
+        <item>Modificare gli Appunti (clipboard)</item>
+        <item>Pulsanti multimediali</item>
+        <item>Priorità audio</item>
+        <item>Volume Principale</item>
+        <item>Volume della Voce</item>
+        <item>Volume della Suoneria</item>
+        <item>Volume delle applicazioni multimediali</item>
+        <item>Volume degli allarmi</item>
+        <item>Volume delle notifiche</item>
+        <item>Volume ddel Bluetooth</item>
+        <item>Rimani Attivo</item>
+        <item>Posizione</item>
+        <item>Posizione</item>
+        <item>Ottieni le statistiche di utilizzo</item>
+        <item>Attiva/Disattiva il microfono</item>
+        <item>Finestra Toast</item>
+        <item>Progetto Multimediale</item>
+        <item>Attiva la VPN</item>
+        <item>Utilizzare la WLAN</item>
+        <item>Utilizzare il Bluetooth</item>
+        <item>Inviare MMS</item>
+        <item>Leggere MMS</item>
+        <item>Scrivere MMS</item>
+        <item>Auto Avvio</item>
+        <item>Utilizzare l\'Nfc</item>
+        <item>Elimina SMS</item>
+        <item>Elimina MMS</item>
+        <item>Elimina contatti</item>
+        <item>Elimina registro delle chiamate</item>
+        <item>Cambio Data</item>
+        <item>Altri Account</item>
+        <item>Leggere informazioni del telefono</item>
+    </string-array>
+
+    <!-- Hotspot idle -->
+    <string-array name="wifi_hotspot_mode_entries">
+        <item>Sempre</item>
+        <item>Spegne quando inattivo per 5 minuti</item>
+        <item>Spegne quando inattivo per 10 minuti</item>
+        <item>Spegne quando inattivo per 30 minuti</item>
+        <item>Spegne quando inattivo per 1 ora</item>
+    </string-array>
+
+    <string-array name="wifi_hotspot_mode_entryValues">
+        <item>Sempre</item>
+        <item>Disattiva per 5 minuti</item>
+        <item>Disattiva per 10 minuti</item>
+        <item>Disattiva per 30 minuti</item>
+        <item>Disattiva per 60 minuti</item>
+    </string-array>
+
+    <string-array name="wifi_hotspot_mode_summaries">
+        <item>Sempre</item>
+        <item>Spegne quando inattivo per 5 minuti</item>
+        <item>Spegne quando inattivo per 10 minuti</item>
+        <item>Spegne quando inattivo per 30 minuti</item>
+        <item>Spegne quando inattivo per 1 ora</item>
+    </string-array>
+
+        <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi region code. -->
+    <string-array name="wifi_countrycode_entries">
+        <item>Stati Uniti</item>
+        <item>Canada, Taiwan</item>
+        <item>Germania</item>
+        <item>Europa</item>
+        <item>Giappone, Russia</item>
+        <item>Australia</item>
+        <item>Indonesia</item>
+        <item>Cina</item>
+        <item>Korea</item>
+        <item>Turchia</item>
+        <item>Singapore</item>
+        <item>Brasile</item>
+    </string-array>
+</resources>
