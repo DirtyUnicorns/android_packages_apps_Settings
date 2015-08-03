@@ -212,8 +212,8 @@
     <string name="du_app_name">DU Changelog</string>
 
     <!-- DU About -->
-    <string name="aboutdu">About DU</string>
-    <string name="aboutdu_summary">Info about our devs, maintainers and rom features</string>
+    <string name="aboutdu">Info about DU</string>
+    <string name="aboutdu_summary">Information about our devs, maintainers and rom features</string>
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>

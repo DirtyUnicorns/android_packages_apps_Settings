@@ -17,34 +17,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
-        <!-- Device status - launches activity -->
-        <PreferenceScreen android:key="status_info"
-                android:title="@string/device_status" 
-                android:summary="@string/device_status_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.settings"
-                    android:targetClass="com.android.settings.deviceinfo.Status" />
-        </PreferenceScreen>
-
-        <!-- DU Updater -->
-        <PreferenceScreen
-            android:key="duupdater"
-            android:title="@string/duupdater"
-            android:summary="@string/duupdater_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.dirtyunicorns.duupdater"
-                    android:targetClass="com.dirtyunicorns.duupdater.MainActivity" />
-        </PreferenceScreen>
-
-        <!-- DU Extra Info -->
-        <PreferenceScreen android:key="extrainfo"
-                android:title="@string/duextrainfo"
-                android:summary="@string/duextrainfo_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.settings"
-                    android:targetClass="com.android.settings.du.extrainfo.MainActivity" />
-        </PreferenceScreen>
-
         <!-- DU About -->
         <PreferenceScreen
             android:key="aboutdu"
@@ -62,6 +34,16 @@
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.settings"
                     android:targetClass="us.zamzow.mazwoz.dirtyunicornschangelog.MainActivity" />
+        </PreferenceScreen>
+
+        <!-- DU Updater -->
+        <PreferenceScreen
+            android:key="duupdater"
+            android:title="@string/duupdater"
+            android:summary="@string/duupdater_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.dirtyunicorns.duupdater"
+                    android:targetClass="com.dirtyunicorns.duupdater.MainActivity" />
         </PreferenceScreen>
 
         <!-- DU Share -->
@@ -125,6 +107,24 @@
         <!-- Feedback on the device -->
         <PreferenceScreen android:key="device_feedback"
                 android:title="@string/device_feedback">
+        </PreferenceScreen>
+
+        <!-- DU Extra Info -->
+        <PreferenceScreen android:key="extrainfo"
+                android:title="@string/duextrainfo"
+                android:summary="@string/duextrainfo_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.settings"
+                    android:targetClass="com.android.settings.du.extrainfo.MainActivity" />
+        </PreferenceScreen>
+
+        <!-- Device status - launches activity -->
+        <PreferenceScreen android:key="status_info"
+                android:title="@string/device_status" 
+                android:summary="@string/device_status_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.settings"
+                    android:targetClass="com.android.settings.deviceinfo.Status" />
         </PreferenceScreen>
 
         <!-- Device hardware model -->
