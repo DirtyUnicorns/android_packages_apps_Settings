@@ -201,8 +201,6 @@ public class Memory extends SettingsPreferenceFragment
         boolean usbItemVisible = !isMassStorageEnabled()
                 && !um.hasUserRestriction(UserManager.DISALLOW_USB_FILE_TRANSFER);
         usb.setVisible(usbItemVisible);
-        final MenuItem advanced = menu.findItem(R.id.storage_options);
-        advanced.setVisible(mRemoveableStorage);
     }
 
     @Override
@@ -218,17 +216,6 @@ public class Memory extends SettingsPreferenceFragment
                             R.string.storage_title_usb, -1, null);
                 }
                 return true;
-            case R.id.storage_options:
-                if (getActivity() instanceof SettingsActivity) {
-                    ((SettingsActivity) getActivity()).startPreferencePanel(
-                            StorageSettings.class.getCanonicalName(),
-                            null, R.string.storage_title_options, null, this, 0);
-                } else {
-                    startFragment(this, StorageSettings.class.getCanonicalName(),
-                            R.string.storage_title_options, -1, null);
-                }
-                return true;
-
         }
         return super.onOptionsItemSelected(item);
     }
