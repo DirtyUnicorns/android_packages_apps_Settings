@@ -276,19 +276,22 @@ public class StorageVolumePreferenceCategory extends PreferenceCategory implemen
             addPreference(mFormatPreference);
         }
 
-        final IPackageManager pm = ActivityThread.getPackageManager();
-        try {
-            if (pm.isStorageLow()) {
-                mStorageLow = new Preference(context);
-                mStorageLow.setOrder(ORDER_STORAGE_LOW);
-                mStorageLow.setTitle(R.string.storage_low_title);
-                mStorageLow.setSummary(R.string.storage_low_summary);
-                addPreference(mStorageLow);
-            } else if (mStorageLow != null) {
-                removePreference(mStorageLow);
-                mStorageLow = null;
+        /* only add Storage low preference to INTERNAL STORAGE */
+        if (mVolume == null) {
+            final IPackageManager pm = ActivityThread.getPackageManager();
+            try {
+                if (pm.isStorageLow()) {
+                    mStorageLow = new Preference(context);
+                    mStorageLow.setOrder(ORDER_STORAGE_LOW);
+                    mStorageLow.setTitle(R.string.storage_low_title);
+                    mStorageLow.setSummary(R.string.storage_low_summary);
+                    addPreference(mStorageLow);
+                } else if (mStorageLow != null) {
+                    removePreference(mStorageLow);
+                    mStorageLow = null;
+                }
+            } catch (RemoteException e) {
             }
-        } catch (RemoteException e) {
         }
     }
 
