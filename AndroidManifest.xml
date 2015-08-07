@@ -2284,6 +2284,8 @@
 
         <service android:name="com.dirtyunicorns.dutweaks.fragments.CheckHosts" />
 
+        <activity android:name="com.dirtyunicorns.dutweaks.fragments.SystemappRemover" />
+		
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereBuilderActivity" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereCreateGestureActivity" />
 
