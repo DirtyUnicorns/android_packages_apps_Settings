@@ -387,4 +387,10 @@
     <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
     <string name="wifi_setting_countrycode_error">There was a problem setting the region code.</string>
     <string name="wifi_setting_countrycode_default">Default</string>
+
+    <!-- Doze notification color invert -->
+    <string name="doze_notification_color_invert_title">Color inversion</string>
+    <string name="doze_notification_color_invert_summary_off">Ambient display notifications will not be inverted. Use for dark themes.</string>
+    <string name="doze_notification_color_invert_summary_on">Ambient display notifications will show as inverted. Use for light/stock theme.</string>
+
 </resources>
