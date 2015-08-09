@@ -416,4 +416,9 @@
     <string name="wifi_setting_countrycode_error">Un problème a été rencontré avec le paramétrage du code de région</string>
     <string name="wifi_setting_countrycode_default">Par défaut</string>
 
+    <!-- Doze notification color invert -->
+    <string name="doze_notification_color_invert_title">Inversion des couleurs</string>
+    <string name="doze_notification_color_invert_summary_off">Les notifications du mode Veille ne seront pas inversées. À utiliser avec des thèmes sombres.</string>
+    <string name="doze_notification_color_invert_summary_on">Les notifications du mode Veille seront inversées. À utiliser avec des thèmes clairs et le thème par défaut.</string>
+
 </resources>
