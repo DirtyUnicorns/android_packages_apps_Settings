@@ -54,6 +54,7 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
     private static final String TAG = "AmbientSettings";
 
     private static final String KEY_DOZE = "doze";
+    private static final String KEY_DOZE_NOTIFICATION_INVERT = "doze_notification_invert_enabled";
     private static final String KEY_DOZE_OVERWRITE_VALUE = "doze_overwrite_value";
     private static final String KEY_DOZE_PULSE_IN = "doze_pulse_in";
     private static final String KEY_DOZE_PULSE_VISIBLE = "doze_pulse_visible";
@@ -67,6 +68,7 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
     private int mAccValue;
     private int mOldAccValue;
     private SwitchPreference mDozePreference;
+    private SwitchPreference mDozeNotifInvert;
     private ListPreference mDozeListMode;
     private ListPreference mDozePulseIn;
     private ListPreference mDozePulseVisible;
@@ -86,6 +88,9 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
 
         mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
         mDozePreference.setOnPreferenceChangeListener(this);
+
+        mDozeNotifInvert = (SwitchPreference) findPreference(KEY_DOZE_NOTIFICATION_INVERT);
+        mDozeNotifInvert.setOnPreferenceChangeListener(this);
 
         mDozePulseIn = (ListPreference) findPreference(KEY_DOZE_PULSE_IN);
         mDozePulseIn.setOnPreferenceChangeListener(this);
@@ -383,6 +388,10 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
             int value = Settings.Secure.getInt(getContentResolver(), Settings.Secure.DOZE_ENABLED, 1);
             mDozePreference.setChecked(value != 0);
         }
+        if (mDozeNotifInvert != null) {
+            int value = Settings.Secure.getInt(getContentResolver(), Settings.Secure.DOZE_NOTIFICATION_INVERT_ENABLED, 1);
+            mDozeNotifInvert.setChecked(value != 0);
+        }
     }
 
     @Override
@@ -399,6 +408,10 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
         if (preference == mDozePreference) {
             boolean value = (Boolean) objValue;
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.DOZE_ENABLED, value ? 1 : 0);
+        }
+        if (preference == mDozeNotifInvert) {
+            boolean value = (Boolean) objValue;
+            Settings.Secure.putInt(getContentResolver(), Settings.Secure.DOZE_NOTIFICATION_INVERT_ENABLED, value ? 1 : 0);
         }
         if (preference == mDozePulseIn) {
             int dozePulseIn = Integer.parseInt((String)objValue);
