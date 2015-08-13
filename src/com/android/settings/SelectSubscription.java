@@ -85,9 +85,7 @@ public class SelectSubscription extends  TabActivity {
 
             log("Creating SelectSub activity = " + i + " displayName = " + displayName);
 
-            // Add phone Id to the displayName to differentiate
-            // tag names of tabs
-            subscriptionPref = tabHost.newTabSpec(displayName + i);
+            subscriptionPref = tabHost.newTabSpec(tabLabel[i]);
             subscriptionPref.setIndicator(displayName);
 
             intent = new Intent().setClassName(pkg, targetClass)
