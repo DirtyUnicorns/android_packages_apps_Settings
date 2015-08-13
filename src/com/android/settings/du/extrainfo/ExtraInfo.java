@@ -93,8 +93,7 @@ public class ExtraInfo {
 
     public String getPropName() {           return getProp("ro.product.name"); }
     public String getPropHardware() {       return getProp("ro.hardware"); }
-    public String getPropBootloader() {     return getProp("ro.bootloader"); }
-    public String getPropCpuAbi2() {     return getProp("ro.product.cpu.abi2"); }
+    public String getPropCpuAbi2() {        return getProp("ro.product.cpu.abilist"); }
 
     private List<String> getProc(String proc) {
         List<String> list = new ArrayList<String>();
@@ -125,31 +124,46 @@ public class ExtraInfo {
 
     public List<String> getProcCpuInfo() {      return getProc("cpuinfo"); }
 
-    public String getProcCpuDescription() {     return getProcCpuField("Processor"); }
-    public String getProcCpuBogoMips() {        return getProcCpuField("BogoMIPS"); }
-    public String getProcCpuFeatures() {        return getProcCpuField("Features"); }
-    public String getProcCpuImplementer() {     return getProcCpuField("CPU implementer"); }
-    public String getProcCpuArchitecture() {    return getProcCpuField("CPU architecture"); }
-    public String getProcCpuVariant() {         return getProcCpuField("CPU variant"); }
-    public String getProcCpuPart() {            return getProcCpuField("CPU part"); }
-    public String getProcCpuRevision() {        return getProcCpuField("CPU revision"); }
+    public String getProcCpuModelName() {       return getProcCpuField("model name"); }
+    public String getProcCpuBogoMips() {        return getProcCpuField("bogomips"); }
+    public String getProcCpuFlags() {           return getProcCpuField("flags"); }
+    public String getProcCpuTotalCores() {      return getProcCpuField("cpu cores"); }
+    public String getProcCpuMhz() {             return getProcCpuField("cpu MHz"); }
+    public String getProcCpuAddressSizes() {    return getProcCpuField("address sizes"); }
 
-    public List<String> getProcMemInfo() { return getProc("meminfo"); }
+    public List<String> getProcMemInfo() {      return getProc("meminfo"); }
 
-    public String getProcMemTotal() { return getProcMemField("MemTotal"); }
-    public String getProcMemTotal(String scale) {
+    public String getProcRamTotal() {           return getProcMemField("MemTotal"); }
+
+    public String getProcRamTotal(String scale) {
         if (scale.length() == 0) return UNKNOWN;
-        String[] parts = getProcMemTotal().split("\\s", 2);
+        String[] parts = getProcRamTotal().split("\\s", 2);
         double value = 0.0;
         try { value = Double.valueOf(parts[0]); }
         catch (NumberFormatException e) {}
         return String.valueOf(ExtraInfoLib.scaleData(value, parts[0], scale));
     }
 
-    public String getProcVersion() { return getProc("version").get(0); }
-    public String getProcVersionKernel() {
-        String[] parts = getProc("version").get(0).split("\\s");
-        return parts[2];
+    public String getProcRamFree() {             return getProcMemField("MemFree"); }
+
+    public String getProcRamFree(String scale) {
+        if (scale.length() == 0) return UNKNOWN;
+        String[] parts = getProcRamFree().split("\\s", 2);
+        double value = 0.0;
+        try { value = Double.valueOf(parts[0]); }
+        catch (NumberFormatException e) {}
+        return String.valueOf(ExtraInfoLib.scaleData(value, parts[0], scale));
+    }
+
+    public String getProcCached() {             return getProcMemField("Cached"); }
+
+    public String getProcCached(String scale) {
+        if (scale.length() == 0) return UNKNOWN;
+        String[] parts = getProcCached().split("\\s", 2);
+        double value = 0.0;
+        try { value = Double.valueOf(parts[0]); }
+        catch (NumberFormatException e) {}
+        return String.valueOf(ExtraInfoLib.scaleData(value, parts[0], scale));
     }
 
 
