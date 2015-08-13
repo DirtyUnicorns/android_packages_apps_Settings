@@ -99,21 +99,18 @@ public class MainActivity extends Activity {
         addItem(getString(R.string.hardwaretype), di.getPropHardware());
         addItem(getString(R.string.systempartition), di.getSystemSize() + " " + getString(R.string.bytes));
         addItem(getString(R.string.datapartition), di.getDataSize() + " " +getString(R.string.bytes));
-        addItem(getString(R.string.ram), di.getProcMemTotal());
-        addItem(getString(R.string.bootloader), di.getPropBootloader());
+        addItem(getString(R.string.ram_total), di.getProcRamTotal());
+        addItem(getString(R.string.ram_free), di.getProcRamFree());
+        addItem(getString(R.string.cached_mem), di.getProcCached());
 
         addCategory(getString(R.string.cpuinfo));
 
-        addItem(getString(R.string.chipset_processor), di.getProcCpuDescription());
-        addItem(getString(R.string.features), di.getProcCpuFeatures());
-        addItem(getString(R.string.bogomips), di.getProcCpuBogoMips());
-        addItem(getString(R.string.abi), di.getBuildCpuAbi());
-        addItem(getString(R.string.abitwo), di.getPropCpuAbi2());
-        addItem(getString(R.string.architecture), di.getProcCpuArchitecture());
-        addItem(getString(R.string.implementer), di.getProcCpuImplementer());
-        addItem(getString(R.string.variant), di.getProcCpuVariant());
-        addItem(getString(R.string.part), di.getProcCpuPart());
-        addItem(getString(R.string.revision), di.getProcCpuRevision());
+        addItem(getString(R.string.cpu_model_name), di.getProcCpuModelName());
+        addItem(getString(R.string.cpu_bogomips), di.getProcCpuBogoMips());
+        addItem(getString(R.string.cpu_flags), di.getProcCpuFlags());
+        addItem(getString(R.string.cpu_total_cores), di.getProcCpuTotalCores());
+        addItem(getString(R.string.cpu_mhz), di.getProcCpuMhz());
+        addItem(getString(R.string.cpu_address_sizes), di.getProcCpuAddressSizes());
 
         addCategory(getString(R.string.displayinfo));
 
