@@ -1246,6 +1246,15 @@ public class SettingsActivity extends Activity
                     if (!supported) {
                         removeTile = true;
                     }
+                } else if (id == R.id.screen_off_gesture_settings) {
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("com.slim.device", 0).versionCode >= 1);
+                    } catch (PackageManager.NameNotFoundException e) {
+                    }
+                    if (!supported) {
+                        removeTile = true;
+                    }
                 }
 
                 if (UserHandle.MU_ENABLED && UserHandle.myUserId() != 0

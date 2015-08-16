@@ -103,6 +103,17 @@
                 android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
         </dashboard-tile>
 
+        <!-- Slim Gestures -->
+        <dashboard-tile
+            android:id="@+id/screen_off_gesture_settings"
+            android:title="@string/gesture_settings_title"
+            android:icon="@drawable/ic_settings_gestures">
+                <intent
+                    android:action="com.slim.action.LAUNCH_SCREEN_OFF_GESTURE_SETTINGS"
+                    android:targetPackage="com.slim.device"
+                    android:targetClass="com.slim.device.settings.ScreenOffGestureSettings" />
+        </dashboard-tile>
+
         <!-- Themes -->
         <!-- NOTE: Intent.parseIntent looks for "categories" tag and not "category" -->
         <dashboard-tile
