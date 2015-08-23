@@ -203,6 +203,15 @@
   <string name="hardwaretype">Type de matériel</string>
   <string name="systempartition">Partition du système</string>
   <string name="datapartition">Partition des données</string>
+  <string name="ram_total">Mémoire RAM totale</string>
+  <string name="ram_free">Mémoire RAM libre</string>
+  <string name="cached_mem">Taille du cache</string>
+  <string name="cpu_model_name">Nom</string>
+  <string name="cpu_bogomips">BogoMIPS</string>
+  <string name="cpu_flags">Fonctionnalités</string>
+  <string name="cpu_total_cores">Nombre de cœurs du processeur</string>
+  <string name="cpu_mhz">Fréquence du processeur</string>
+  <string name="cpu_address_sizes">Taille d\'adresse</string>
   <string name="ram">Mémoire RAM</string>
   <string name="bootloader">Version du Bootloader</string>
   <string name="bytes"> Bytes</string>
@@ -416,9 +425,18 @@
     <string name="wifi_setting_countrycode_error">Un problème a été rencontré avec le paramétrage du code de région</string>
     <string name="wifi_setting_countrycode_default">Par défaut</string>
 
+    <!-- Media ducking -->
+    <string name="interruptions_ignore_while_media_title">Empêcher la réduction du son</string>
+    <string name="interruptions_ignore_while_media_summary">Ne pas diminuer le volume sonore lors de la réception de notification</string>
+
     <!-- Doze notification color invert -->
     <string name="doze_notification_color_invert_title">Inversion des couleurs</string>
     <string name="doze_notification_color_invert_summary_off">Les notifications du mode Veille ne seront pas inversées. À utiliser avec des thèmes sombres.</string>
     <string name="doze_notification_color_invert_summary_on">Les notifications du mode Veille seront inversées. À utiliser avec des thèmes clairs et le thème par défaut.</string>
+
+    <!-- Keep screen on strings -->
+    <string name="keep_screen_on_never">Jamais</string>
+    <string name="keep_screen_on_debugging">En mode débogage USB</string>
+    <string name="keep_screen_on_charging">Lors du chargement</string>
 
 </resources>
