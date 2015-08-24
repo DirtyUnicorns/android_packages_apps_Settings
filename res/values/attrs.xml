@@ -109,4 +109,7 @@
     <attr name="switchBarMarginEnd" format="dimension" />
     <attr name="preferenceBackgroundColor" format="color" />
 
+    <!-- Minimum prediction score required to pass a gesture as recognized -->
+    <integer name="min_gesture_prediction_score">2</integer>
+
 </resources>
