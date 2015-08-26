@@ -53,6 +53,8 @@
 
     <!-- Advanced, Device specific (DeviceParts) settings  -->
     <string name="device_settings_title">Device</string>
+    <string name="screen_gestures_panel_title">Samsung Ambient Settings</string>
+    <string name="screen_gestures_panel_summary">Additional ambient display settings specific to Samsung devices</string>
 
     <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
     <string name="debug_LAN_category">LAN Settings</string>

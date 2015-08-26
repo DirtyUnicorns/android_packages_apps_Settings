@@ -62,6 +62,16 @@
                     android:defaultValue="true"
                     android:dependency="doze_overwrite_value" />
 
+            <PreferenceScreen
+                android:key="samsung_ad_settings"
+                android:title="@string/screen_gestures_panel_title"
+                android:summary="@string/screen_gestures_panel_summary" >
+                <intent
+                    android:action="com.cyanogenmod.action.LAUNCH_AD_SETTINGS"
+                    android:targetPackage="com.cyanogenmod.settings.ad"
+                    android:targetClass="com.cyanogenmod.settings.ad.TouchscreenGestureSettings" />
+            </PreferenceScreen>
+
             <PreferenceCategory
                     android:key="doze_pulse_category"
                     android:title="@string/doze_pulse_title" >
@@ -107,4 +117,5 @@
                         android:persistent="false"
                         android:dependency="doze" />
             </PreferenceCategory>
+
 </PreferenceScreen>
