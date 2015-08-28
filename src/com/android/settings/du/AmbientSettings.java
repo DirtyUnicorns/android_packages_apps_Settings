@@ -44,6 +44,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference;
 import com.android.settings.du.sensor.ShakeSensorManager;
+import com.android.settings.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,6 +65,8 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
     private static final String KEY_DOZE_SHAKE_CATEGORY = "doze_shake_category";
     private static final String KEY_DOZE_SHAKE_THRESHOLD = "doze_shake_threshold";
     private static final String KEY_DOZE_TIME_MODE = "doze_time_mode";
+    private static final String KEY_SAMSUNG_AD_SETTINGS = "samsung_ad_settings";
+    private static final String KEY_SAMSUNG_AD = "com.cyanogenmod.settings.ad";
 
     private int mAccValue;
     private int mOldAccValue;
@@ -78,6 +81,7 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
     private ShakeSensorManager mShakeSensorManager;
     private AlertDialog mDialog;
     private Button mShakeFoundButton;
+    private PreferenceScreen mSamsungAdSettings;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -85,6 +89,7 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
         final Activity activity = getActivity();
 
         addPreferencesFromResource(R.xml.ambient_settings);
+        PreferenceScreen prefSet = getPreferenceScreen();
 
         mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
         mDozePreference.setOnPreferenceChangeListener(this);
@@ -100,6 +105,11 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
 
         mDozePulseOut = (ListPreference) findPreference(KEY_DOZE_PULSE_OUT);
         mDozePulseOut.setOnPreferenceChangeListener(this);
+
+        mSamsungAdSettings = (PreferenceScreen) findPreference(KEY_SAMSUNG_AD_SETTINGS);
+        if (!Utils.isPackageInstalled(getActivity(), KEY_SAMSUNG_AD)) {
+            prefSet.removePreference(mSamsungAdSettings);
+        }
 
         if (isAccelerometerAvailable(activity)) {
             mDozeListMode = (ListPreference) findPreference(KEY_DOZE_LIST_MODE);
