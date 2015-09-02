@@ -91,6 +91,9 @@
     <string name="screenshot_sound_title">Bildschirmfoto Klang</string>
     <string name="screenshot_sound_summary">Spielt Klangeffekt beim Bildschirmfoto</string>
 
+    <!-- Allow notification lights -->
+    <string name="allow_lights_title">Benachrichtigungslichter erlauben</string>
+
     <!-- MediaScanner behavior on boot -->
     <string name="options_settings_title">Optionen</string>
     <string name="media_scanner_on_boot_title">Medienscanner Verhalten beim Starten</string>
@@ -144,6 +147,10 @@
     <!-- Linked / unlinked notification volume -->
     <string name="link_volume_option_title">Gleiche Lautstärke für Klingelton &amp; Benachrichtigungen</string>
     <string name="notification_volume_option_title">Benachrichtigungslautstärke</string>
+
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Musik-App starten</string>
+    <string name="headset_connect_player_summary">Standard Musik-App starten, wenn Headset angeschlossen wird</string>
 
     <!-- Font size sample text. This needs to be a very short string, as it is shown in
     multiple font sizes in a limited amount of space. -->
@@ -328,6 +335,7 @@
     <string name="privacy_guard_manager_show_system_apps">System-Apps anzeigen</string>
     <string name="privacy_guard_advanced_settings_title">Erweitert</string>
     <string name="privacy_guard_notification_title">Benachrichtigung</string>
+    <string name="privacy_guard_notifiation_summary">Benachrichtigung anzeigen, wenn Privacy Guard aktiv ist.</string>
 
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Ansteigende Klingeltonlautstärke</string>
@@ -340,4 +348,127 @@
     <string name="lock_numpad_random_off">Deaktiviert</string>
     <string name="lock_numpad_random_always">Immer</string>
     <string name="lock_numpad_random_on_request">Nur, wenn benötigt</string>
+
+    <string name="storage_options_category">Benachrichtigungen</string>
+    <string name="storage_menu_options">Fortgeschritten</string>
+    <string name="storage_title_options">Speicher-Optionen</string>
+    <string name="no_media_notification_title">Speicher Benachrichtigung</string>
+    <string name="no_media_notification_summary">Benachrichtigung anzeigen, wenn Medienspeicher entfernt wird</string>
+    <string name="mount_notification_title">Mount Benachrichtigung</string>
+    <string name="mount_notification_summary">Fortlaufende Benachrichtigung für gemounteten Speicher anzeigen</string>
+
+    <!-- Keyguard notifications -->
+    <string name="app_notification_show_on_keyguard_title">Auf Sperrbildschirm anzeigen</string>
+    <string name="app_notification_show_on_keyguard_summary">Benachrichtigungen dieser App auf dem Sperrbildschirm anzeigen</string>
+    <string name="app_notification_no_ongoing_on_keyguard_title">Fortlaufend auf Sperrbildschirm deaktivieren</string>
+    <string name="app_notification_no_ongoing_on_keyguard_summary">Fortlaufende Benachrichtigungen dieser App niemals auf dem Sperrbildschirm anzeigen</string>
+
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Lautstärke Stufen</string>
+    <string name="volume_steps_alarm_title">Lautstärke Stufen: Wecker</string>
+    <string name="volume_steps_dtmf_title">Lautstärke Stufen: DTMF</string>
+    <string name="volume_steps_music_title">Lautstärke Stufen: Musik</string>
+    <string name="volume_steps_notification_title">Lautstärke Stufen: Benachrichtigung</string>
+    <string name="volume_steps_ring_title">Lautstärke Stufen: Rufton</string>
+    <string name="volume_steps_system_title">Lautstärke Stufen: System</string>
+    <string name="volume_steps_voice_call_title">Lautstärke Stufen: Sprachanruf</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+
+    <!-- Hotspot idle -->
+    <string name="wifi_hotspot_mode_title">W-Lan-Hotspot aktiviert lassen</string>
+
+    <!-- Wi-Fi settings screen, advanced, title for setting the wifi region code. -->
+    <string name="wifi_setting_countrycode_title">W-Lan Region Code</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi region code [CHAR LIMIT=50]-->
+    <string name="wifi_setting_countrycode_summary">Region Code für W-Lan angeben</string>
+    <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_countrycode_error">Beim Setzen des Region Codes ist ein Fehler aufgetreten.</string>
+    <string name="wifi_setting_countrycode_default">Standard</string>
+
+    <!-- Media ducking -->
+    <string name="interruptions_ignore_while_media_title">Tonschwankungen verhindern</string>
+    <string name="interruptions_ignore_while_media_summary">Medien-Wiedergabelautstärke nicht reduzieren, wenn eine Benachrichtigung eintrifft.</string>
+
+    <!-- Doze notification color invert -->
+    <string name="doze_notification_color_invert_title">Farbumkehr</string>
+    <string name="doze_notification_color_invert_summary_off">Inaktivitätsdisplay-Benachrichtigungen werden nicht umgekehrt. Für dunkles Design verwenden.</string>
+    <string name="doze_notification_color_invert_summary_on">Inaktivitätsdisplay-Benachrichtigungen werden umgekehrt angezeigt. Für helles/stock Design verwenden.</string>
+
+    <!-- Keep screen on strings -->
+    <string name="keep_screen_on_never">Niemlas</string>
+    <string name="keep_screen_on_debugging">Während USB-Debugging</string>
+    <string name="keep_screen_on_charging">Während dem Laden</string>
+
+    <!-- Lock Gesture settings -->
+    <!-- Security & location settings screen, setting option name -->
+    <string name="lockgesture_change_lock_pattern_label">Entsperr-Geste ändern</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+    <string name="lockgesture_change_lock_pin_label">Entsperr-PIN ändern</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+    <string name="lockgesture_need_to_unlock">Gespeicherte Geste bestätigen</string>
+    <!-- Do not translate. -->
+    <string name="lockgesture_need_to_unlock_footer" />
+    <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
+    <string name="lockgesture_need_to_unlock_wrong">Erneut versuchen:</string>
+    <!-- Do not translate. -->
+    <string name="lockgesture_need_to_unlock_wrong_footer" />
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen.  This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
+    <string name="lockgesture_recording_intro_header">Entsperr-Geste zeichnen:</string>
+    <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
+    <string name="lockgesture_recording_intro_footer">Für Hilfe Menü aufrufen.</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
+    <string name="lockgesture_recording_inprogress">Finger entfernen, wenn fertig.</string>
+    <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
+    <string name="lockgesture_pattern_entered_header">Geste aufgezeichnet.</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
+    <string name="lockgesture_need_to_confirm">Geste zur Bestätigung erneut zeichnen:</string>
+    <string name="lockgesture_pattern_confirmed_header">Ihre neue Entsperr-Geste:</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  When they are ready to draw it once again to confirm it, they press this button. -->
+    <string name="lockgesture_confirm_button_text">Bestätigen</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
+    <string name="lockgesture_restart_button_text">Neu zeichnen</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
+    <string name="lockgesture_retry_button_text">Wiederholen</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
+    <string name="lockgesture_continue_button_text">Fortfahren</string>
+    <!-- Security & location settings screen, unlock screen activity title -->
+    <string name="lockgesture_settings_title">Entsperr-Geste</string>
+    <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
+    <string name="lockgesture_settings_enable_title">Geste verlangen</string>
+    <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
+    <string name="lockgesture_settings_enable_summary">Geste muss gezeichnet werden, um Bildschirm zu entsperren</string>
+    <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
+    <string name="lockgesture_settings_enable_visible_pattern_title">Geste sichtbar machen</string>
+    <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
+    <string name="lockgesture_settings_enable_power_button_instantly_locks">Power-Taste sperrt sofort</string>
+    <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
+    <string name="lockgesture_settings_choose_lock_pattern">Entsperr-Geste setzen</string>
+    <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
+    <string name="lockgesture_settings_change_lock_pattern">Entsperr-Geste ändern</string>
+    <!-- Security & location settings screen, the help instructions (an animation) caption -->
+    <string name="lockgesture_settings_help_how_to_record">Wie man eine Entsperr-Geste zeichnet</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
+    <string name="lockgesture_too_many_failed_confirmation_attempts_header">Zu viele ungültige Versuche!</string>
+    <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
+    <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Erneut versuchen in <xliff:g id="number">%d</xliff:g> Sekunden.</string>
+    <!-- Toast shown if setting gesture was successful -->
+    <string name="lockpassword_gesture_set_toast">Geste wurde gesetzt</string>
+    <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
+    <string name="lockpassword_confirm_your_gesture_header">Ihre Geste bestätigen</string>
+    <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
+    <string name="lockpassword_choose_your_gesture_header">Ihre Geste zeichnen</string>
+
+    <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
+    <string name="unlock_set_unlock_gesture_title">Geste</string>
+    <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
+    <string name="unlock_set_unlock_gesture_summary">Geringe Sicherheit, experimentell</string>
+
+    <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
+    <string name="unlock_set_unlock_mode_gesture">Geste</string>
+
 </resources>
