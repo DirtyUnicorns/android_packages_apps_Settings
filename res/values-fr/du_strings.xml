@@ -370,6 +370,8 @@
   <string name="privacy_guard_help_text">Dans cet écran, vous pouvez sélectionner par simple appui pour quelles applications la Protection des Données est activée.\n\nLes applications sélectionnées ne seront pas en mesure d\'accéder à vos données personnelles telles que les contacts, les messages ou le journal d\'appels.\n\nUn appui long sur une application permet de définir précisément ses autorisations\n\nPar défaut, les applications système ne sont pas affichées. Si vous voulez les afficher ou ne filtrer que les applications qui demandent un accès aux données personnelles, sélectionnez les options respectives dans le menu</string>
   <string name="privacy_guard_manager_show_system_apps">Afficher les applications système</string>
   <string name="privacy_guard_advanced_settings_title">Avancé</string>
+    <string name="privacy_guard_notification_title">Notification</string>
+    <string name="privacy_guard_notifiation_summary">Afficher une notification lorsque la protection des données est active</string>
 
     <!-- Increasing ring tone volume -->
   <string name="increasing_ring_volume_option_title">Sonnerie progressive</string>
