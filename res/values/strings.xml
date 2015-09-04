@@ -5804,7 +5804,7 @@
     <string name="zen_mode_option_no_interruptions">Don\'t interrupt</string>
 
     <!-- Sound & notification > Sound section: Title for the option defining the phone ringtone. [CHAR LIMIT=30] -->
-    <string name="ringtone_title">Phone ringtone</string>
+    <string name="ringtone_title">Default phone ringtone</string>
 
     <!-- Sound & notification > Sound section: Title for the option defining the default notification ringtone. [CHAR LIMIT=30] -->
     <string name="notification_ringtone_title">Default notification ringtone</string>
