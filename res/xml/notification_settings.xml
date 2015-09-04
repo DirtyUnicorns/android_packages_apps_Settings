@@ -72,6 +72,13 @@
                 android:title="@string/vibrate_when_ringing_title"
                 android:persistent="false" />
 
+        <!-- Expand volume panel -->
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+                android:key="volume_panel_expanded"
+                android:title="@string/volume_panel_expanded_title"
+                android:summary="@string/volume_panel_expanded_summary"
+                android:defaultValue="false" />
+
         <!-- Volume Steps -->
         <PreferenceScreen
                 android:key="volume_steps"
