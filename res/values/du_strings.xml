@@ -482,4 +482,8 @@
     <!-- Lock screen rotation -->
     <string name="display_lockscreen_rotation_title">Lock screen</string>
 
+    <!-- Expand volume panel -->
+    <string name="volume_panel_expanded_title">Expand volume panel</string>
+    <string name="volume_panel_expanded_summary">Show volume panel in expanded mode by default</string>
+
 </resources>
