@@ -505,4 +505,14 @@
     <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
     <string name="unlock_set_unlock_mode_gesture">Geste</string>
 
+    <!-- Lock screen rotation -->
+    <string name="display_lockscreen_rotation_title">Écran de déverrouillage</string>
+
+    <!-- Expand volume panel -->
+    <string name="volume_panel_expanded_title">Volet du volume étendu</string>
+    <string name="volume_panel_expanded_summary">Afficher le volet du volume en mode étendu par défaut</string>
+
+    <!-- Let's keep the ringtone strings consistent -->
+    <string name="ringtone_title">Sonnerie du téléphone par défaut</string>
+
 </resources>
