@@ -515,4 +515,14 @@
     <!-- Let's keep the ringtone strings consistent -->
     <string name="ringtone_title">Sonnerie du téléphone par défaut</string>
 
+    <!-- Volume pane timeout -->
+    <string name="category_panel_time_out">Délai de fermeture</string>
+    <string name="volume_panel_time_out_title">Délai de fermeture du volet du volume</string>
+    <string name="volume_panel_time_out_summary">Masquer après <xliff:g id="number">%d</xliff:g> secondes. Masquer automatiquement par appui à l\'extérieur du volet</string>
+    <string name="volume_panel_time_out_3sec">3 secondes (par défaut)</string>
+    <string name="volume_panel_time_out_5sec">5 secondes</string>
+    <string name="volume_panel_time_out_8sec">8 secondes</string>
+    <string name="volume_panel_time_out_12sec">12 secondes</string>
+    <string name="volume_panel_time_out_15sec">15 secondes</string>
+
 </resources>
