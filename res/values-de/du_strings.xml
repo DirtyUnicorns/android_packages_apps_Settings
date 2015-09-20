@@ -471,4 +471,25 @@
     <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
     <string name="unlock_set_unlock_mode_gesture">Geste</string>
 
+    <!-- Lock screen rotation -->
+    <string name="display_lockscreen_rotation_title">Sperrbildschirm</string>
+
+    <!-- Expand volume panel -->
+    <string name="volume_panel_expanded_title">Lautstärke-Regler erweitern</string>
+    <string name="volume_panel_expanded_summary">Lautstärke-Regler standardmäßig im Erweitert-Modus anzeigen</string>
+
+    <!-- Let's keep the ringtone strings consistent -->
+    <string name="ringtone_title">Standard-Klingelton</string>
+
+    <!-- Volume pane timeout -->
+    <string name="category_panel_time_out">Lautstärke-Regler Timeout</string>
+    <string name="volume_panel_time_out_title">Lautstärke-Regler Timeout</string>
+    <string name="volume_panel_time_out_summary">Nach <xliff:g id="number">%d</xliff:g> Sekunden ausblenden. Bei Berührung außerhalb autom. ausblenden</string>
+    <string name="volume_panel_time_out_3sec">3 Sekunden (Standard)</string>
+    <string name="volume_panel_time_out_5sec">5 Sekunden</string>
+    <string name="volume_panel_time_out_8sec">8 Sekunden</string>
+    <string name="volume_panel_time_out_12sec">12 Sekunden</string>
+    <string name="volume_panel_time_out_15sec">15 Sekunden</string>
+
+
 </resources>
