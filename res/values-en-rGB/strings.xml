@@ -413,6 +413,8 @@
     <string name="proxy_clear_text">Clear</string>
     <!-- HTTP proxy settings. The port number label. -->
     <string name="proxy_port_label">Proxy port</string>
+    <!-- HTTP proxy settings. The hint text field for port. -->
+    <string name="proxy_port_hint" translatable="false">8080</string>
     <!-- HTTP proxy settings. The exclusion list label. -->
     <string name="proxy_exclusionlist_label">Bypass proxy for</string>
     <!-- HTTP proxy settings. The hint text for proxy exclusion list. [CHAR LIMIT=50]-->
@@ -444,6 +446,8 @@
 
     <!-- HTTP proxy settings. Title for Proxy-Auto Config URL.  [CHAR LIMIT=25] -->
     <string name="proxy_url_title">"PAC URL: "</string>
+    <!-- HTTP proxy settings. Hint for Proxy-Auto Config URL. -->
+    <string name="proxy_url_hint" translatable="false">https://www.example.com/proxy.pac</string>
 
     <!-- Radio Info screen. Label for a status item.  Used for diagnostic info screens, precise translation isn't needed -->
     <string name="radio_info_signal_location_label">Location:</string>
@@ -1369,6 +1373,30 @@
     <!-- Wifi Display settings. Options dialog.  The name label used when prompting the user to rename the display. [CHAR LIMIT=20] -->
     <string name="wifi_display_options_name">Name</string>
 
+    <!-- Wifi Display settings. The sub heading for wireless display certification options. [CHAR LIMIT=40] -->
+    <string name="wifi_display_certification_heading" translatable="false">Certification</string>
+    <!-- Wifi Display settings. The section title for wireless display session info. [CHAR LIMIT=40] -->
+    <string name="wifi_display_session_info" translatable="false">Session info</string>
+    <!-- Wifi Display settings. The checkbox title for enabling listen mode during certification process. [CHAR LIMIT=40] -->
+    <string name="wifi_display_listen_mode" translatable="false">Enable listen mode</string>
+    <!-- Wifi Display settings. The checkbox title for enabling autonomous GO during certification process. [CHAR LIMIT=40] -->
+    <string name="wifi_display_autonomous_go" translatable="false">Enable autonomous GO</string>
+    <!-- Wifi Display settings. The button text for sending pause trigger during certification process. [CHAR LIMIT=40] -->
+    <string name="wifi_display_pause" translatable="false">Pause</string>
+    <!-- Wifi Display settings. The button text for sending play (resume) trigger during certification process. [CHAR LIMIT=40] -->
+    <string name="wifi_display_resume" translatable="false">Resume</string>
+    <!-- Wifi Display settings. The dropdown menu title for choosing WPS configuration during certification process. [CHAR LIMIT=40] -->
+    <string name="wifi_display_wps_config" translatable="false">WPS configuration</string>
+    <!-- Wifi Display settings. The dropdown menu title for choosing listen channel during certification process. [CHAR LIMIT=40] -->
+    <string name="wifi_display_listen_channel" translatable="false">Listen channel</string>
+    <!-- Wifi Display settings. The dropdown menu title for choosing operating channel during certification process. [CHAR LIMIT=40] -->
+    <string name="wifi_display_operating_channel" translatable="false">Operating channel</string>
+    <!-- Wifi 2.4GHz is used as an universal itendifier for 2.4GHz band -->
+    <string name="wifi_band_24ghz" translatable="false">2.4GHz</string>
+    <!-- Wifi Internal 5GHz as an universal itendifier for 5GHz band -->
+    <string name="wifi_band_5ghz" translatable="false">5GHz</string>
+
+
     <!-- NFC settings -->
     <!-- Used in the 1st-level settings screen to turn on NFC -->
     <string name="nfc_quick_toggle_title">NFC</string>
@@ -1549,6 +1577,8 @@
     <string name="wifi_frequency">Frequency</string>
     <!-- Label for the IP address of the connection -->
     <string name="wifi_ip_address">IP address</string>
+    <!-- Hint text for the IP address -->
+    <string name="wifi_ip_address_hint" translatable="false">192.168.1.128</string>
     <!-- Label for the EAP method of the network -->
     <string name="wifi_eap_method">EAP method</string>
     <!-- Label for the phase2 -->
@@ -1711,12 +1741,20 @@
     <string name="wifi_ip_settings_invalid_network_prefix_length">Type a network prefix length between 0 and 32.</string>
     <!-- Label for the DNS (first one) -->
     <string name="wifi_dns1">DNS 1</string>
+    <!-- Hint text for DNS -->
+    <string name="wifi_dns1_hint" translatable="false">8.8.8.8</string>
     <!-- Label for the DNS (second one)-->
     <string name="wifi_dns2">DNS 2</string>
+    <!-- Hint text for DNS -->
+    <string name="wifi_dns2_hint" translatable="false">8.8.4.4</string>
     <!-- Label for the gateway of the network -->
     <string name="wifi_gateway">Gateway</string>
+    <!-- Hint text for the gateway -->
+    <string name="wifi_gateway_hint" translatable="false">192.168.1.1</string>
     <!-- Label for the network prefix of the network [CHAR LIMIT=25]-->
     <string name="wifi_network_prefix_length">Network prefix length</string>
+    <!-- Hint text for network prefix length -->
+    <string name="wifi_network_prefix_length_hint" translatable="false">24</string>
 
     <!-- Wi-Fi p2p / Wi-Fi Direct settings -->
     <!-- Used in the 1st-level settings screen to launch Wi-fi Direct settings [CHAR LIMIT=25] -->
@@ -1775,6 +1813,89 @@
     <string name="wifi_tether_configure_subtext"><xliff:g id="network_ssid">%1$s</xliff:g> <xliff:g id="network_security">%2$s</xliff:g> portable Wi\u2011Fi hotspot</string>
     <!-- Default access point SSID used for tethering -->
     <string name="wifi_tether_configure_ssid_default">AndroidHotspot</string>
+
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Wi-Fi Testing on the diagnostic screen-->
+    <string name="testing_wifi_info" translatable="false">Wi-Fi information</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item for WifiManager disableNetwork API-->
+    <string name="disableNetwork" translatable="false">disableNetwork</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item for WifiManager enableNetwork API-->
+    <string name="enableNetwork" translatable="false">enableNetwork</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item for WifiManager disconnect API-->
+    <string name="disconnect" translatable="false">disconnect</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item for WifiManager getConfiguredNetworks API-->
+    <string name="getConfiguredNetworks" translatable="false">getConfiguredNetworks</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item for WifiManager getConnectionInfo API-->
+    <string name="getConnectionInfo" translatable="false">getConnectionInfo</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item on Wifi information screen-->
+    <string name="wifi_api_test" translatable="false">Wi-Fi API</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item on Wifi information screen-->
+    <string name="wifi_status_test" translatable="false">Wi-Fi status</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Button text on Wifi Status screen-->
+    <string name="wifi_update" translatable="false">Refresh stats</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="wifi_state_label" translatable="false">Wi-Fi state:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="network_state_label" translatable="false">Network state:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+        Label on Wifi Status screen-->
+    <string name="supplicant_state_label" translatable="false">Supplicant state:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="rssi_label" translatable="false">RSSI:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="bssid_label" translatable="false">BSSID:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="ssid_label" translatable="false">SSID:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="hidden_ssid_label" translatable="false">Hidden SSID:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="ipaddr_label" translatable="false">IPaddr:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="macaddr_label" translatable="false">MAC addr:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="networkid_label" translatable="false">Network ID:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="link_speed_label" translatable="false">Link speed:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="scan_list_label" translatable="false">Scan results:</string>
+
+    <!-- wifi state values-->
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
+    <string name="wifi_state_disabling" translatable="false">Disabling</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
+    <string name="wifi_state_disabled" translatable="false">Disabled</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
+    <string name="wifi_state_enabling" translatable="false">Enabling</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
+    <string name="wifi_state_enabled" translatable="false">Enabled</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
+    <string name="wifi_state_unknown" translatable="false">Unknown</string>
+
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item on Wifi information screen-->
+    <string name="wifi_config_info" translatable="false">Wi-Fi config</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Configuration screen-->
+    <string name="config_list_label" translatable="false">Configured networks</string>
 
     <!-- Sound and alerts settings -->
     <skip/>
@@ -1953,6 +2074,8 @@
     <string name="doze_summary">Wake screen when you pick up device or receive notifications</string>
     <!-- [CHAR LIMIT=30] Sound & display settings screen, setting option name to change font size -->
     <string name="title_font_size">Font size</string>
+    <!-- Sound & display settings screen, setting option summary displaying the currently selected font size -->
+    <string name="summary_font_size" translatable="false">%1$s</string>
     <!-- [CHAR LIMIT=40] Sound & display settings screen, title of dialog for picking font size -->
     <string name="dialog_title_font_size">Font size</string>
 
@@ -3649,6 +3772,8 @@
     <string name="color_yellow">Yellow</string>
     <!-- Label for the color magenta. [CHAR LIMIT=35] -->
     <string name="color_magenta">Magenta</string>
+    <!-- Label for custom colors, formats as a HTML color. -->
+    <string name="color_custom" translatable="false">#%1$02X%2$02X%3$02X</string>
 
     <!-- Title for a warning about security implications of enabling an accessibility
          service. [CHAR LIMIT=NONE] -->
@@ -4550,6 +4675,9 @@
     <!-- Message shown when the device is connected to a network [CHAR LIMIT=NONE] -->
     <string name="wifi_setup_description_connected">Touch <b>Next</b> to continue with setup.\n\nTouch <b>Back</b> to connect to a different Wi\u2011Fi network.</string>
 
+    <!-- Do not translate. This is a stub which will be removed soon. -->
+    <string name="time_zone_auto_stub" translatable="false">Select Time Zone</string>
+
     <!-- Content description of the enabled sync icon for accessibility. [CHAR LIMIT=NONE] -->
     <string name="accessibility_sync_enabled">Sync enabled</string>
     <!-- Content description of the disabled sync icon for accessibility. [CHAR LIMIT=NONE] -->
@@ -4764,7 +4892,7 @@
     <string name="disable_overlays_summary">Always use GPU for screen compositing</string>
 
     <!-- UI debug setting: simulate color space anomalies. [CHAR LIMIT=25] -->
-    <string name="simulate_color_space">Simulate color space</string>
+    <string name="simulate_color_space">Simulate colour space</string>
 
     <!-- UI debug setting: enable various types of OpenGL traces [CHAR LIMIT=25] -->
     <string name="enable_opengl_traces_title">Enable OpenGL traces</string>
@@ -5365,6 +5493,40 @@
     <!--  Help URLs for some screens. Not specified here. Specified in product overlays --><skip/>
     <!-- Help menu label [CHAR LIMIT=20] -->
     <string name="help_label">Help &amp; feedback</string>
+    <!-- Help URL, WiFi [DO NOT TRANSLATE] -->
+    <string name="help_url_wifi" translatable="false"></string>
+    <!-- Help URL, Bluetooth [DO NOT TRANSLATE] -->
+    <string name="help_url_bluetooth" translatable="false"></string>
+    <!-- Help URL, Data usage [DO NOT TRANSLATE] -->
+    <string name="help_url_data_usage" translatable="false"></string>
+    <!-- Help URL, More [DO NOT TRANSLATE] -->
+    <string name="help_url_more_networks" translatable="false"></string>
+    <!-- Help URL, Vpn [DO NOT TRANSLATE] -->
+    <string name="help_url_vpn" translatable="false"></string>
+    <!-- Help URL, Sound [DO NOT TRANSLATE] -->
+    <string name="help_url_sound" translatable="false"></string>
+    <!-- Help URL, Battery [DO NOT TRANSLATE] -->
+    <string name="help_url_battery" translatable="false"></string>
+    <!-- Help URL, Accounts [DO NOT TRANSLATE] -->
+    <string name="help_url_accounts" translatable="false"></string>
+    <!-- Help URL, Choose lockscreen [DO NOT TRANSLATE] -->
+    <string name="help_url_choose_lockscreen" translatable="false"></string>
+    <!-- Help URL, Backup & reset [DO NOT TRANSLATE] -->
+    <string name="help_url_backup_reset" translatable="false"></string>
+    <!-- Help URL, Tethering [DO NOT TRANSLATE] -->
+    <string name="help_url_tether" translatable="false"></string>
+    <!-- Help URL, Dreams [DO NOT TRANSLATE] -->
+    <string name="help_url_dreams" translatable="false"></string>
+    <!-- Help URL, User settings [DO NOT TRANSLATE] -->
+    <string name="help_url_users" translatable="false"></string>
+    <!-- Help URL, Location access [DO NOT TRANSLATE] -->
+    <string name="help_url_location_access" translatable="false"></string>
+    <!-- Help URL, Security settings [DO NOT TRANSLATE] -->
+    <string name="help_url_security" translatable="false"></string>
+    <!-- Help URL, Tap & pay [DO NOT TRANSLATE] -->
+    <string name="help_url_nfc_payment" translatable="false">https://support.google.com/mobile/?p=settings_nfcpayment</string>
+    <!-- Help URL, Remote display [DO NOT TRANSLATE] -->
+    <string name="help_url_remote_display" translatable="false"></string>
 
     <!-- User account title [CHAR LIMIT=30] -->
     <string name="user_account_title">Account for content</string>
@@ -5642,7 +5804,7 @@
     <string name="zen_mode_option_no_interruptions">Don\'t interrupt</string>
 
     <!-- Sound & notification > Sound section: Title for the option defining the phone ringtone. [CHAR LIMIT=30] -->
-    <string name="ringtone_title">Phone ringtone</string>
+    <string name="ringtone_title">Default phone ringtone</string>
 
     <!-- Sound & notification > Sound section: Title for the option defining the default notification ringtone. [CHAR LIMIT=30] -->
     <string name="notification_ringtone_title">Default notification ringtone</string>
@@ -5901,6 +6063,9 @@
    <!-- [CHAR LIMIT=35] Feedback on the device -->
    <string name="device_feedback">Send feedback about this device</string>
 
+    <!-- Full package name of OEM preferred device feedback reporter [DO NOT TRANSLATE] -->
+    <string name="oem_preferred_feedback_reporter" translatable="false"></string>
+
     <!-- PIN entry dialog title for entering the administrator PIN [CHAR LIMIT=none] -->
     <string name="restr_pin_enter_admin_pin">Enter administrator PIN</string>
 
@@ -6010,5 +6175,15 @@
    <string name="imei_information_title">IMEI information</string>
    <string name="imei_information_summary">IMEI relative information</string>
    <string name="slot_number">(Slot<xliff:g id="slot_num">%1$d</xliff:g>)</string>
+
+    <!-- Volume panel timeout -->
+    <string name="category_panel_time_out">Panel timeout</string>
+    <string name="volume_panel_time_out_title">Volume panel timeout</string>
+    <string name="volume_panel_time_out_summary">Hide before <xliff:g id="number">%d</xliff:g> seconds. Auto hide on touch outside</string>
+    <string name="volume_panel_time_out_3sec">3 seconds (default)</string>
+    <string name="volume_panel_time_out_5sec">5 seconds</string>
+    <string name="volume_panel_time_out_8sec">8 seconds</string>
+    <string name="volume_panel_time_out_12sec">12 seconds</string>
+    <string name="volume_panel_time_out_15sec">15 seconds</string>
 
 </resources>
