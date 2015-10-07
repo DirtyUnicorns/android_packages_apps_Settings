@@ -78,6 +78,19 @@
     <string name="unlock_quick_unlock_control_title">Schnelles entsperren</string>
     <string name="unlock_quick_unlock_control_summary">Automatisch entsperren, wenn die korrekte PIN/Passwort eingegeben wird</string>
 
+    <!-- Used for diagnostic screens, precise translation is not necessary -->
+    <string name="intent_sender_data_label"><xliff:g id="data">Fertig :</xliff:g></string>
+
+    <!-- Allow disability of audio adjustment sound -->
+    <string name="volume_adjust_sound_title">Ton bei Lautstärkeänderung</string>
+
+    <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
+    <string name="build_date">Build-Datum</string>
+    <string name="build_date_default">2012-01-01-0000</string>
+
+    <!-- [CHAR_LIMIT=40] Battery saver: Value for automatic entry option: pct% battery -->
+    <string name="battery_saver_turn_on_automatically_pct">Bei %1$d%% Akku</string>
+
     <!-- Root access -->
     <string name="root_access">Root-Zugriff</string>
     <string name="root_access_warning_title">Root-Zugriff erlauben?</string>
@@ -254,6 +267,7 @@
     <string name="notification_light_default_value">Standard</string>
     <string name="notification_light_missed_call_title">Verpasster Anruf</string>
     <string name="notification_light_voicemail_title">Sprachnachricht</string>
+    <string name="notification_light_screen_on">Licht bei aktiviertem Bildschirm</string>
     <string name="profiles_add">Hinzufügen</string>
     <string name="profile_choose_app">App auswählen</string>
     <string name="profile_reset_title">Zurücksetzen</string>
@@ -287,14 +301,14 @@
     <string name="fivehundred_ms">500 ms</string>
     <string name="one_second">1 s</string>
     <string name="one_second_default">1 s (Standard)</string>
-    <string name="onehalf_second">1.5 s</string>
+    <string name="onehalf_second">1,5 s</string>
     <string name="two_second">2 s</string>
-    <string name="twohalf_second">2.5 s</string>
+    <string name="twohalf_second">2,5 s</string>
     <string name="three_second">3 s</string>
     <string name="three_second_default">3 s (Standard)</string>
-    <string name="threehalf_second">3.5 s</string>
+    <string name="threehalf_second">3,5 s</string>
     <string name="four_second">4 s</string>
-    <string name="fourhalf_second">4.5 s</string>
+    <string name="fourhalf_second">4,5 s</string>
     <string name="five_second">5 s</string>
     <string name="veryeasy_shake">Sehr leicht</string>
     <string name="easy_shake">Leicht</string>
@@ -380,12 +394,12 @@
     <string name="volume_steps_5">5</string>
 
     <!-- Hotspot idle -->
-    <string name="wifi_hotspot_mode_title">W-Lan-Hotspot aktiviert lassen</string>
+    <string name="wifi_hotspot_mode_title">WLAN-Hotspot aktiviert lassen</string>
 
     <!-- Wi-Fi settings screen, advanced, title for setting the wifi region code. -->
-    <string name="wifi_setting_countrycode_title">W-Lan Region Code</string>
+    <string name="wifi_setting_countrycode_title">WLAN Region Code</string>
     <!-- Wi-Fi settings screen, setting summary for setting the wifi region code [CHAR LIMIT=50]-->
-    <string name="wifi_setting_countrycode_summary">Region Code für W-Lan angeben</string>
+    <string name="wifi_setting_countrycode_summary">Region Code für WLAN angeben</string>
     <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
     <string name="wifi_setting_countrycode_error">Beim Setzen des Region Codes ist ein Fehler aufgetreten.</string>
     <string name="wifi_setting_countrycode_default">Standard</string>
