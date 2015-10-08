@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--https://android.googlesource.com/platform/packages/apps/Settings/+/android-5.0.2_r1/res/values-fr/arrays.xml-->
+<!--  Copyright (C) 2014 The Dirty Unicorns Project
+
+  Parts Copyright (C) 2012-2013 The CyanogenMod Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+       <!-- App ops permissions -->
+<string-array name="app_ops_permissions">
+<item>Allowed</item>
+<item>Ignored</item>
+<item>Always ask</item>
+</string-array>
+
+<!-- Names of categories of app ops tabs -->
+<string-array name="app_ops_categories">
+<item>Location</item>
+<item>Personal</item>
+<item>Messaging</item>
+<item>Media</item>
+<item>Device</item>
+<item>Bootup</item>
+</string-array>
+
+<!-- User display names for app ops codes -->
+<string-array name="app_ops_summaries">
+<item>Coarse location</item>
+<item>Fine location</item>
+<item>GPS</item>
+<item>Vibrate</item>
+<item>Read contacts</item>
+<item>Write contacts</item>
+<item>Read call log</item>
+<item>Write call log</item>
+<item>Read calendar</item>
+<item>Modify calendar</item>
+<item>Wi-fi scan</item>
+<item>Notification</item>
+<item>Cell scan</item>
+<item>Call phone</item>
+<item>Read SMS</item>
+<item>Write SMS</item>
+<item>Receive SMS</item>
+<item>Receive emergency SMS</item>
+<item>Receive MMS</item>
+<item>Receive WAP push</item>
+<item>Send SMS</item>
+<item>Read ICC SMS</item>
+<item>Write ICC SMS</item>
+<item>Modify settings</item>
+<item>Draw on top</item>
+<item>Access notifications</item>
+<item>Camera</item>
+<item>Record audio</item>
+<item>Play audio</item>
+<item>Read clipboard</item>
+<item>Modify clipboard</item>
+<item>Media buttons</item>
+<item>Audio focus</item>
+<item>Master volume</item>
+<item>Voice volume</item>
+<item>Ring volume</item>
+<item>Media volume</item>
+<item>Alarm volume</item>
+<item>Notification volume</item>
+<item>Bluetooth volume</item>
+<item>Keep awake</item>
+<item>Monitor location</item>
+<item>Monitor high power location</item>
+<item>Get usage stats</item>
+<item>Mute/unmute microphone</item>
+<item>Toast window</item>
+<item>Project media</item>
+<item>Activate VPN</item>
+<item>Wlan change</item>
+<item>Bluetooth change</item>
+<item>Send MMS</item>
+<item>Read MMS</item>
+<item>Write MMS</item>
+<item>Auto start</item>
+<item>Nfc change</item>
+<item>Delete SMS</item>
+<item>Delete MMS</item>
+<item>Delete contacts</item>
+<item>Delete call log</item>
+<item>Data change</item>
+<item>Other accounts</item>
+<item>Read phone info</item>
+</string-array>
+
+<!-- User display names for app ops codes -->
+<string-array name="app_ops_labels">
+<item>Location</item>
+<item>Location</item>
+<item>Location</item>
+<item>Vibrate</item>
+<item>Read contacts</item>
+<item>Write contacts</item>
+<item>Read call log</item>
+<item>Write call log</item>
+<item>Read calendar</item>
+<item>Modify calendar</item>
+<item>Location</item>
+<item>Post notification</item>
+<item>Location</item>
+<item>Call phone</item>
+<item>Read SMS</item>
+<item>Write SMS</item>
+<item>Receive SMS</item>
+<item>Receive SMS</item>
+<item>Receive MMS</item>
+<item>Receive SMS</item>
+<item>Send SMS</item>
+<item>Read SMS</item>
+<item>Write SMS</item>
+<item>Modify settings</item>
+<item>Draw on top</item>
+<item>Access notifications</item>
+<item>Camera</item>
+<item>Record audio</item>
+<item>Play audio</item>
+<item>Read clipboard</item>
+<item>Modify clipboard</item>
+<item>Media buttons</item>
+<item>Audio focus</item>
+<item>Master volume</item>
+<item>Voice volume</item>
+<item>Ring volume</item>
+<item>Media volume</item>
+<item>Alarm volume</item>
+<item>Notification volume</item>
+<item>Bluetooth volume</item>
+<item>Keep awake</item>
+<item>Location</item>
+<item>Location</item>
+<item>Get usage stats</item>
+<item>Mute/unmute microphone</item>
+<item>Toast window</item>
+<item>Project media</item>
+<item>Activate VPN</item>
+<item>WLAN change</item>
+<item>Bluetooth change</item>
+<item>Send MMS</item>
+<item>Read MMS</item>
+<item>Write MMS</item>
+<item>Auto start</item>
+<item>Nfc change</item>
+<item>Delete SMS</item>
+<item>Delete MMS</item>
+<item>Delete contacts</item>
+<item>Delete call log</item>
+<item>Data change</item>
+<item>Other accounts</item>
+<item>Read phone info</item>
+</string-array>
+
+</resources>
