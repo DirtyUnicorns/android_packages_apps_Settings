@@ -66,7 +66,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String FILENAME_MSV = "/sys/board_properties/soc/msv";
 
     private static final String KEY_REGULATORY_INFO = "regulatory_info";
-    private static final String KEY_SYSTEM_UPDATE_SETTINGS = "system_update_settings";
     private static final String PROPERTY_URL_SAFETYLEGAL = "ro.url.safetylegal";
     private static final String PROPERTY_SELINUX_STATUS = "ro.build.selinux";
     private static final String KEY_KERNEL_VERSION = "kernel_version";
@@ -76,7 +75,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
     private static final String KEY_FIRMWARE_VERSION = "firmware_version";
     private static final String KEY_SECURITY_PATCH = "security_patch";
-    private static final String KEY_UPDATE_SETTING = "additional_system_update_settings";
     private static final String KEY_EQUIPMENT_ID = "fcc_equipment_id";
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
@@ -160,27 +158,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         if (TextUtils.isEmpty(getFeedbackReporterPackage(getActivity()))) {
             getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_FEEDBACK));
         }
-
-        /*
-         * Settings is a generic app and should not contain any device-specific
-         * info.
-         */
-        final Activity act = getActivity();
-
-        // These are contained by the root preference screen
-        PreferenceGroup parentPreference = getPreferenceScreen();
-        if (UserHandle.myUserId() == UserHandle.USER_OWNER) {
-            Utils.updatePreferenceToSpecificActivityOrRemove(act, parentPreference,
-                    KEY_SYSTEM_UPDATE_SETTINGS,
-                    Utils.UPDATE_PREFERENCE_FLAG_SET_TITLE_TO_MATCHING_ACTIVITY);
-        } else {
-            // Remove for secondary users
-            removePreference(KEY_SYSTEM_UPDATE_SETTINGS);
-        }
-
-        // Read platform settings for additional system update setting
-        removePreferenceIfBoolFalse(KEY_UPDATE_SETTING,
-                R.bool.config_additional_system_update_setting_enable);
 
         // Remove regulatory information if none present.
         final Intent intent = new Intent(Settings.ACTION_SHOW_REGULATORY_INFO);
@@ -266,37 +243,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             }
         } else if (preference.getKey().equals(KEY_DEVICE_FEEDBACK)) {
             sendFeedback();
-        } else if(preference.getKey().equals(KEY_SYSTEM_UPDATE_SETTINGS)) {
-            CarrierConfigManager configManager =
-                    (CarrierConfigManager) getSystemService(Context.CARRIER_CONFIG_SERVICE);
-            PersistableBundle b = configManager.getConfig();
-            if (b.getBoolean(CarrierConfigManager.KEY_CI_ACTION_ON_SYS_UPDATE_BOOL)) {
-                ciActionOnSysUpdate(b);
-            }
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
-    }
-
-    /**
-     * Trigger client initiated action (send intent) on system update
-     */
-    private void ciActionOnSysUpdate(PersistableBundle b) {
-        String intentStr = b.getString(CarrierConfigManager.
-                KEY_CI_ACTION_ON_SYS_UPDATE_INTENT_STRING);
-        if (!TextUtils.isEmpty(intentStr)) {
-            String extra = b.getString(CarrierConfigManager.
-                    KEY_CI_ACTION_ON_SYS_UPDATE_EXTRA_STRING);
-            String extraVal = b.getString(CarrierConfigManager.
-                    KEY_CI_ACTION_ON_SYS_UPDATE_EXTRA_VAL_STRING);
-
-            Intent intent = new Intent(intentStr);
-            if (!TextUtils.isEmpty(extra)) {
-                intent.putExtra(extra, extraVal);
-            }
-            Log.d(LOG_TAG, "ciActionOnSysUpdate: broadcasting intent " + intentStr +
-                    " with extra " + extra + ", " + extraVal);
-            getActivity().getApplicationContext().sendBroadcast(intent);
-        }
     }
 
     private void removePreferenceIfPropertyMissing(PreferenceGroup preferenceGroup,
@@ -495,13 +443,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 // Dont show feedback option if there is no reporter.
                 if (TextUtils.isEmpty(getFeedbackReporterPackage(context))) {
                     keys.add(KEY_DEVICE_FEEDBACK);
-                }
-                if (UserHandle.myUserId() != UserHandle.USER_OWNER) {
-                    keys.add(KEY_SYSTEM_UPDATE_SETTINGS);
-                }
-                if (!context.getResources().getBoolean(
-                        R.bool.config_additional_system_update_setting_enable)) {
-                    keys.add(KEY_UPDATE_SETTING);
                 }
                 return keys;
             }
