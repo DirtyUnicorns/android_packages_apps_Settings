@@ -51,4 +51,8 @@
     <string name="pixels">Pixels</string>
     <string name="inches">Inches</string>
 
+    <!-- DU version -->
+    <string name="mod_version">DU version</string>
+    <string name="mod_version_default">Unknown</string>
+
 </resources>
