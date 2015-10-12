@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2015 The Dirty Unicorns Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- DU Extra Info -->
+    <string name="duextrainfo">Extra information</string>
+    <string name="duextrainfo_summary">Display extra info for cpu, display, etc</string>
+    <string name="basicinfo">BASIC INFO</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="hardwaretype">Hardware type</string>
+    <string name="systempartition">System partition</string>
+    <string name="datapartition">Data partition</string>
+    <string name="ram">RAM</string>
+    <string name="bootloader">Bootloader</string>
+    <string name="bytes"> Bytes</string>
+    <string name="cpuinfo">CPU INFO</string>
+    <string name="chipset_processor">Chipset / Processor</string>
+    <string name="features">Features</string>
+    <string name="bogomips">BogoMIPS</string>
+    <string name="abi">ABI</string>
+    <string name="abitwo">ABI2</string>
+    <string name="architecture">Architecture</string>
+    <string name="implementer">Implementer</string>
+    <string name="variant">Variant</string>
+    <string name="part">Part</string>
+    <string name="revision">Revision</string>
+    <string name="displayinfo">DISPLAY INFO</string>
+    <string name="diagonal">Diagonal</string>
+    <string name="height">Height</string>
+    <string name="width">Width</string>
+    <string name="density">Density</string>
+    <string name="dots_per_inch">DOTS PER INCH</string>
+    <string name="actualdpi_x">Actual DPI X</string>
+    <string name="actualdpi_y">Actual DPI Y</string>
+    <string name="refresh_rate">Refresh Rate</string>
+    <string name="pixels">Pixels</string>
+    <string name="inches">Inches</string>
+
+</resources>

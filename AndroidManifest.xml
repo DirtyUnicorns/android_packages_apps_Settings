@@ -2526,6 +2526,18 @@
                        android:resource="@id/wireless_settings" />
         </activity>
 
+        <!-- Start of DU activities -->
+
+        <!-- DU Extra info -->
+        <activity android:name="com.android.settings.du.extrainfo.MainActivity"
+                  android:theme="@style/Theme.Material.Light.Dialog.NoActionBar.MinWidth">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- End of DU activities -->
+
         <provider
             android:name=".search.SettingsSearchIndexablesProvider"
             android:authorities="com.android.settings"
