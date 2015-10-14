@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2015 The Dirty Unicorns Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+     French translation for Dirty Unicorns
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Used for diagnostic screens, precise translation is not necessary -->
+    <string name="intent_sender_data_label"><xliff:g id="data">Données :</xliff:g></string>
+
+    <!-- DU Extra Info -->
+    <string name="duextrainfo">Infos supplémentaires</string>
+    <string name="duextrainfo_summary">Affiche des informations supplémentaires pour CPU, Affichage, etc</string>
+    <string name="basicinfo">BASIQUE</string>
+    <string name="manufacturer">Fabricant</string>
+    <string name="hardwaretype">Type de matériel</string>
+    <string name="systempartition">Partition système</string>
+    <string name="datapartition">Partition des données</string>
+    <string name="ram">Mémoire RAM</string>
+    <string name="bootloader">Bootloader</string>
+    <string name="bytes"> Bytes</string>
+    <string name="cpuinfo">CPU</string>
+    <string name="chipset_processor">Jeu de puces / Processeur</string>
+    <string name="features">Fonctionnalités</string>
+    <string name="bogomips">BogoMIPS</string>
+    <string name="abi">ABI</string>
+    <string name="abitwo">ABI2</string>
+    <string name="architecture">Architecture</string>
+    <string name="implementer">Implémentation</string>
+    <string name="variant">Variante</string>
+    <string name="part">Partie</string>
+    <string name="revision">Révision</string>
+    <string name="displayinfo">AFFICHAGE</string>
+    <string name="diagonal">Diagonale</string>
+    <string name="height">Hauteur</string>
+    <string name="width">Largeur</string>
+    <string name="density">Densité</string>
+    <string name="dots_per_inch">POINTS PAR POUCE</string>
+    <string name="actualdpi_x">PPP X réelle</string>
+    <string name="actualdpi_y">PPP Y réelle</string>
+    <string name="refresh_rate">Taux de rafraîchissement</string>
+    <string name="pixels">Pixels</string>
+    <string name="inches">Pouces</string>
+
+    <!-- DU version -->
+    <string name="mod_version">Version de DU</string>
+    <string name="mod_version_default">Inconnue</string>
+
+    <!-- Share Dirty Unicorns -->
+    <string name="share_du_title">Partager Dirty Unicorns</string>
+    <string name="share_du_summary">Faites découvrir Dirty Unicorns</string>
+    <string name="share_message">Découvrez la ROM Android #DirtyUnicorns sur http://goo.gl/emISQ1</string>
+    <string name="share_chooser_title">Partager Dirty Unicorns</string>
+
+    <!-- SuperSU -->
+    <string name="supersu_title">SuperSU</string>
+
+    <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
+    <string name="build_date">Date de compilation</string>
+    <string name="build_date_default">2012-01-01-0000</string>
+
+</resources>
