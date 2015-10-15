@@ -2536,6 +2536,17 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="Settings$DirtyTweaksActivity"
+            android:label="@string/custom_title"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.dutweaks.DirtyTweaks" />
+        </activity>
+
         <!-- End of DU activities -->
 
         <provider

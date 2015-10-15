@@ -80,6 +80,21 @@
 
     </dashboard-category>
 
+    <!-- CUSTOMIZATION -->
+    <dashboard-category
+            android:id="@+id/custom_section"
+            android:title="@string/header_category_custom" >
+
+        <!-- Dirty Tweaks -->
+        <dashboard-tile
+                android:id="@+id/dirtytweaks"
+                android:title="@string/custom_title"
+                android:fragment="com.dirtyunicorns.dutweaks.DirtyTweaks"
+                android:icon="@drawable/ic_dirtytweaks"
+                />
+
+    </dashboard-category>
+
     <!-- DEVICE -->
     <dashboard-category
             android:id="@+id/device_section"
