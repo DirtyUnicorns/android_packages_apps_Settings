@@ -10,12 +10,15 @@ LOCAL_SRC_FILES := \
         $(call all-java-files-under, src) \
         src/com/android/settings/EventLogTags.logtags
 LOCAL_SRC_FILES += $(call all-java-files-under, ../DU-Tweaks/src)
+LOCAL_SRC_FILES += $(call all-java-files-under, ../DU-Changelog/src)
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 LOCAL_RESOURCE_DIR += packages/apps/DU-Tweaks/res
+LOCAL_RESOURCE_DIR += packages/apps/DU-Changelog/res
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
-	--extra-packages com.dirtyunicorns.dutweaks
+	--extra-packages com.dirtyunicorns.dutweaks \
+        --extra-packages us.zamzow.mazwoz.dirtyunicornschangelog
 
 LOCAL_PACKAGE_NAME := Settings
 LOCAL_CERTIFICATE := platform

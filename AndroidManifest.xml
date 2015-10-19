@@ -2547,6 +2547,11 @@
                 android:value="com.dirtyunicorns.dutweaks.DirtyTweaks" />
         </activity>
 
+        <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.MainActivity"
+                  android:label="@string/du_app_name"/>
+        <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.ListVersions"/>
+        <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.ChangeList"/>
+
         <!-- End of DU activities -->
 
         <provider

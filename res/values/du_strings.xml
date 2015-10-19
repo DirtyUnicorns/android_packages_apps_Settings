@@ -68,4 +68,13 @@
     <string name="header_category_custom">Customization</string>
     <string name="custom_title">Dirty Tweaks</string>
 
+    <!-- DU Changelog -->
+    <string name="duchangelog">Changelog</string>
+    <string name="du_summary">Check to see what has changed in DU</string>
+    <string name="du_app_name">DU Changelog</string>
+
+    <!-- DU Updater -->
+    <string name="duupdater">Updater</string>
+    <string name="duupdater_summary">Stay up to date with the latest features and fixes</string>
+
 </resources>

@@ -83,6 +83,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
     private static final String KEY_MOD_VERSION = "mod_version";
     private static final String KEY_DU_SHARE = "share";
+    private static final String KEY_CHANGELOG = "changelog";
+    private static final String KEY_DUUPDATER = "duupdater";
 
     long[] mHits = new long[3];
 
