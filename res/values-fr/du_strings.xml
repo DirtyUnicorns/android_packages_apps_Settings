@@ -73,4 +73,8 @@
     <string name="build_date">Date de compilation</string>
     <string name="build_date_default">2012-01-01-0000</string>
 
+    <!-- Customization -->
+    <string name="header_category_custom">Personnalisation</string>
+    <string name="custom_title">Dirty Tweaks</string>
+
 </resources>
