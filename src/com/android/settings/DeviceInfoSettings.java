@@ -86,8 +86,11 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_CHANGELOG = "changelog";
     private static final String KEY_DUUPDATER = "duupdater";
     private static final String KEY_DUUPDATER_PACKAGE_NAME = "com.dirtyunicorns.duupdater";
+    private static final String KEY_ABOUTDU = "aboutdu";
+    private static final String KEY_ABOUTDU_PACKAGE_NAME = "com.dirtyunicorns.about";
 
     private PreferenceScreen mDuUpdater;
+    private PreferenceScreen mDuAbout;
 
     long[] mHits = new long[3];
 
@@ -146,6 +149,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         mDuUpdater = (PreferenceScreen) findPreference(KEY_DUUPDATER);
         if (!Utils.isPackageInstalled(getActivity(), KEY_DUUPDATER_PACKAGE_NAME)) {
             prefSet.removePreference(mDuUpdater);
+        }
+
+        //Remove DU About if package is removed
+        mDuAbout = (PreferenceScreen) findPreference(KEY_ABOUTDU);
+        if (!Utils.isPackageInstalled(getActivity(), KEY_ABOUTDU_PACKAGE_NAME)) {
+            prefSet.removePreference(mDuAbout);
         }
 
         // Remove selinux information if property is not present

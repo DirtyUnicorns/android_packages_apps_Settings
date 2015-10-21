@@ -77,4 +77,8 @@
     <string name="duupdater">Updater</string>
     <string name="duupdater_summary">Stay up to date with the latest features and fixes</string>
 
+    <!-- DU About -->
+    <string name="aboutdu">Info about DU</string>
+    <string name="aboutdu_summary">Information about our devs, maintainers and rom features</string>
+
 </resources>
