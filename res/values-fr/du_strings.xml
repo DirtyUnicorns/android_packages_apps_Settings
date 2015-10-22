@@ -77,4 +77,19 @@
     <string name="header_category_custom">Personnalisation</string>
     <string name="custom_title">Dirty Tweaks</string>
 
+    <string name="security_patch">Niveau du correctif de sécurité</string>
+
+    <!-- DU Changelog -->
+    <string name="duchangelog">Journaux des changements de DU</string>
+    <string name="du_summary">Consulter la liste des changements dans DU</string>
+    <string name="du_app_name">DU Changelog</string>
+
+    <!-- DU Updater -->
+    <string name="duupdater">Mise à jour</string>
+    <string name="duupdater_summary">Restez à jour avec les dernières fonctionnalités et les derniers correctifs</string>
+
+    <!-- DU About -->
+    <string name="aboutdu">À propos de DU</string>
+    <string name="aboutdu_summary">Informations sur nos développeurs, nos mainteneurs, et sur les fonctionnalités de la ROM</string>
+
 </resources>
