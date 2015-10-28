@@ -117,12 +117,12 @@
     <string name="pulse_speed_very_slow">Très lente</string>
 
     <!-- Battery light settings -->
-    <string name="battery_light_title">Voyant batterie</string>
-    <string name="battery_low_pulse_title">Clignoter si la batterie est faible</string>
+    <string name="battery_light_title">Voyant de batterie</string>
+    <string name="battery_low_pulse_title">Clignoter si batterie faible</string>
     <string name="battery_light_list_title">Couleurs</string>
     <string name="battery_light_low_color_title">Batterie faible</string>
-    <string name="battery_light_medium_color_title">En charge</string>
-    <string name="battery_light_full_color_title">Chargée</string>
+    <string name="battery_light_medium_color_title">Batterie en charge</string>
+    <string name="battery_light_full_color_title">Batterie chargée</string>
 
     <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Voyant de notification</string>
