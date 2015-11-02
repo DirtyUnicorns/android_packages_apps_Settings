@@ -76,6 +76,7 @@
     <!-- Customization -->
     <string name="header_category_custom">Personnalisation</string>
     <string name="custom_title">Dirty Tweaks</string>
+    <string name="themes_settings_title">Thèmes</string>
 
     <string name="security_patch">Niveau du correctif de sécurité</string>
 
