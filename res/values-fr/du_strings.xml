@@ -154,4 +154,13 @@
     <string name="ime_switcher_notify_summary">Affiche une notification permettant de changer de clavier</string>
     <string name="attention">Attention</string>
 
+    <!-- Media ducking -->
+    <string name="interruptions_ignore_while_media_title">Empêcher la réduction du son</string>
+    <string name="interruptions_ignore_while_media_summary">Ne pas diminuer le volume sonore lors de la réception de notification</string>
+
+    <!-- Doze notification color invert -->
+    <string name="doze_notification_color_invert_title">Inversion des couleurs</string>
+    <string name="doze_notification_color_invert_summary_off">Les notifications du mode Veille ne seront pas inversées. À utiliser avec des thèmes sombres.</string>
+    <string name="doze_notification_color_invert_summary_on">Les notifications du mode Veille seront inversées. À utiliser avec des thèmes clairs et le thème par défaut.</string>
+
 </resources>
