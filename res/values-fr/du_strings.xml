@@ -163,4 +163,80 @@
     <string name="doze_notification_color_invert_summary_off">Les notifications du mode Veille ne seront pas inversées. À utiliser avec des thèmes sombres.</string>
     <string name="doze_notification_color_invert_summary_on">Les notifications du mode Veille seront inversées. À utiliser avec des thèmes clairs et le thème par défaut.</string>
 
+    <!-- AOSP Translations -->
+    <!-- https://android.googlesource.com/platform/packages/apps/Settings/+/android-6.0.0_r26/res/values-fr/strings.xml -->
+    <!-- Title of the dialog shown when the user tries to skip fingerprint setup, asking them to confirm the action [CHAR LIMIT=40] -->
+    <string name="setup_fingerprint_enroll_enrolling_skip_title">Ignorer config. empreintes digitales ?</string>
+    <!-- Content of the dialog shown when the user tries to skip fingerprint setup, asking them to confirm the action [CHAR LIMIT=NONE] -->
+    <string name="setup_fingerprint_enroll_enrolling_skip_message">Vous avez choisi de déverrouiller votre téléphone à l\'aide de votre empreinte digitale. Si vous ignorez cette étape maintenant, vous devrez reprendre la configuration ultérieurement. L\'opération prend environ une minute.</string>
+    <!-- Dialog message for dialog which shows when finger cannot be enrolled. [CHAR LIMIT=45] -->
+    <string name="security_settings_fingerprint_enroll_error_dialog_title">L\'enregistrement n\'est pas terminé.</string>
+    <!-- Dialog message for dialog which shows when finger cannot be enrolled due to being idle too long. -->
+    <string name="security_settings_fingerprint_enroll_error_timeout_dialog_message">Délai d\'enregistrement de l\'empreinte digitale expiré. Veuillez réessayer.</string>
+    <!-- Dialog message for dialog which shows when finger cannot be enrolled due to an internal error or fingerprint can't be read. -->
+    <string name="security_settings_fingerprint_enroll_error_generic_dialog_message">L\'enregistrement de l\'empreinte digitale n\'a pas fonctionné. Veuillez réessayer ou utiliser un autre doigt.</string>
+    <!-- About phone settings screen, setting option name to show Manual [CHAR LIMIT=25] -->
+    <string name="manual">Manuel</string>
+    <!-- Phone Manual -->
+    <string name="settings_manual_activity_title">Manuel</string>
+    <!-- About phone settings screen, Manual dialog message when manual cannot be loaded -->
+    <string name="settings_manual_activity_unavailable">Un problème est survenu lors du chargement du manuel.</string>
+    <string name="keywords_color_mode">couleurs éclatantes rgb srgb couleur couleurs naturelles couleurs normales</string>
+    <!-- Decription of one of the choices in a dialog (with title defined in usb_use) that lets the
+         user select what the USB connection for this device should be used for. This choice
+         is for charging only. -->
+    <string name="usb_use_charging_only_desc">Uniquement pour charger cet appareil</string>
+    <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
+         select what the USB connection for this device should be used for. This choice
+         is for powering the other device only. -->
+    <string name="usb_use_power_only">Source d\'alimentation</string>
+    <!-- Decription of one of the choices in a dialog (with title defined in usb_use) that lets the
+         user select what the USB connection for this device should be used for. This choice
+         is for powering the other device only. -->
+    <string name="usb_use_power_only_desc">Charger l\'autre appareil connecté</string>
+    <!-- Description of one of the choices in a dialog (with title defined in usb_use) that lets the user
+         select what the USB connection for this device should be used for. This choice
+         is for transferring files via MTP. -->
+    <string name="usb_use_file_transfers_desc">Transférer des fichiers vers Windows ou Mac (MTP)</string>
+    <!-- Description of one of the choices in a dialog (with title defined in usb_use) that lets the user
+         select what the USB connection for this device should be used for. This choice
+         is for transferring photos via PTP. -->
+    <string name="usb_use_photo_transfers_desc">Transférer des photos ou des fichiers si MTP n\'est pas compatible (PTP)</string>
+    <!-- Description of one of the choices in a dialog (with title defined in usb_use) that lets the user
+         select what the USB connection for this device should be used for. This choice
+         is for entering MIDI mode. -->
+    <string name="usb_use_MIDI_desc">Utiliser l\'appareil pour l\'entrée MIDI</string>
+
+    <!-- Title of setting that controls gesture to open camera [CHAR LIMIT=40] -->
+    <string name="camera_gesture_title">Double rotation pour l\'appareil photo</string>
+
+    <!-- Description of setting that controls gesture to open camera [CHAR LIMIT=NONE] -->
+    <string name="camera_gesture_desc">Ouvrez l\'application Appareil photo en faisant pivoter votre poignet deux fois.</string>
+
+    <!-- Title of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=40] -->
+    <string name="camera_double_tap_power_gesture_title">Appuyer deux fois sur bouton Marche/Arrêt pour lancer caméra</string>
+
+    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
+    <string name="camera_double_tap_power_gesture_desc">Lancez rapidement la caméra sans déverrouiller l\'écran.</string>
+
+    <!-- Name of each color mode for the display. [CHAR LIMIT=40] -->
+    <string-array name="color_mode_names">
+        <item>Couleurs éclatantes (par défaut)</item>
+        <item>Couleurs naturelles</item>
+        <item>Couleurs normales</item>
+    </string-array>
+
+    <!-- Description of each color mode for the display. [CHAR LIMIT=NONE] -->
+    <string-array name="color_mode_descriptions">
+        <item>Couleurs améliorées</item>
+        <item>Couleurs naturelles vues par l\'œil</item>
+        <item>Couleurs optimisées pour les contenus numériques</item>
+    </string-array>
+
+    <!-- Name of feature to change color setting for the display [CHAR LIMIT=60] -->
+    <string name="picture_color_mode">Mode de couleur des images</string>
+
+    <!-- Description of feature to change color setting for the display [CHAR LIMIT=NONE] -->
+    <string name="picture_color_mode_desc">Utiliser sRGB</string>
+
 </resources>
