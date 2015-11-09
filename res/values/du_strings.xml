@@ -64,6 +64,9 @@
     <!-- SuperSU -->
     <string name="supersu_title">SuperSU</string>
 
+    <!-- Google -->
+    <string name="google_title">Google</string>
+
     <!-- Customization -->
     <string name="header_category_custom">Customization</string>
     <string name="custom_title">Dirty Tweaks</string>
