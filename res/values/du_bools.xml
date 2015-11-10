@@ -20,5 +20,7 @@
     <bool name="def_battery_light_enabled">true</bool>
     <!-- Default value for battery light pulse -->
     <bool name="def_battery_light_pulse">true</bool>
+    <!-- Config for pulsing battery light -->
+    <bool name="config_ledCanPulse">false</bool>
 
 </resources>
