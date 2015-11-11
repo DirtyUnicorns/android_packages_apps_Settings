@@ -2575,6 +2575,7 @@
         </receiver>
 
         <service android:name="com.dirtyunicorns.dutweaks.fragments.AdBlocker_CheckHosts" />
+        <activity android:name="com.dirtyunicorns.dutweaks.fragments.Traffic" />
 
         <!-- End of DU activities -->
 
