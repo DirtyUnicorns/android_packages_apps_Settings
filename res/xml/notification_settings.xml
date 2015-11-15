@@ -91,6 +91,12 @@
         android:title="@string/notification_section_header" >
 
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+                android:key="headset_plugged_in"
+                android:title="@string/headset_plugged_in_title"
+                android:summary="@string/headset_plugged_in_summary"
+                android:defaultValue="false" />
+
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
                 android:key="zen_disable_ducking_during_media_playback"
                 android:title="@string/interruptions_ignore_while_media_title"
                 android:summary="@string/interruptions_ignore_while_media_summary"
