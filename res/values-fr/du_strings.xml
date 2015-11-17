@@ -138,6 +138,7 @@
     <string name="notification_light_missed_call_title">Appel manqué</string>
     <string name="notification_light_voicemail_title">Messagerie vocale</string>
     <string name="notification_light_screen_on">Voyants sur écran allumé</string>
+    <string name="allow_lights_title">Voyants en mode Ne pas déranger</string>
 
     <!-- Keyboard and Input methods  -->
     <string name="title_keyboard_input">Options avancées</string>
