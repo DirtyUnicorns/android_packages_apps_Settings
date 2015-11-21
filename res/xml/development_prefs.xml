@@ -65,6 +65,12 @@
             android:title="@string/debug_debugging_category">
 
         <SwitchPreference
+            android:key="adb_over_network"
+            android:title="@string/adb_over_network"
+            android:summary="@string/adb_over_network_summary"
+            android:dependency="enable_adb"/>
+
+        <SwitchPreference
             android:key="enable_adb"
             android:title="@string/enable_adb"
             android:summary="@string/enable_adb_summary"/>
