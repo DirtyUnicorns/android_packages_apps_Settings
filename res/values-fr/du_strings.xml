@@ -262,4 +262,12 @@
     <string name="headset_plugged_in_title">Notification de casque connecté</string>
     <string name="headset_plugged_in_summary">Activer la notification lorsqu\'un casque est connecté</string>
 
+    <!-- Wi-Fi settings screen, advanced, title for setting the wifi region code. -->
+    <string name="wifi_setting_countrycode_title">Code région du Wi-Fi</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi region code [CHAR LIMIT=50]-->
+    <string name="wifi_setting_countrycode_summary">Spécifier le code Wi-Fi de la région</string>
+    <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_countrycode_error">Un problème a été rencontré avec le paramétrage du code de région</string>
+    <string name="wifi_setting_countrycode_default">Par défaut</string>
+
 </resources>
