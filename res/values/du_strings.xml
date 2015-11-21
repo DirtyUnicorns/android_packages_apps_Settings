@@ -202,4 +202,8 @@
     <!-- Device Hostname -->
     <string name="device_hostname">Device hostname</string>
 
+    <!-- USB debugging notification -->
+    <string name="adb_notify">USB debugging notify</string>
+    <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
+
 </resources>
