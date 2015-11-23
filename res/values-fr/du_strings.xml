@@ -158,6 +158,12 @@
     <string name="ime_switcher_notify_summary">Affiche une notification permettant de changer de clavier</string>
     <string name="attention">Attention</string>
 
+    <!-- Android debugging over WiFi -->
+    <string name="adb_over_network">ADB par réseau</string>
+    <string name="adb_over_network_summary">Activer le débogage TCP/IP par les interfaces réseaux (Wi\u2010Fi, réseaux USB). Ce paramètre est réinitialisé au redémarrage.</string>
+    <!-- Warning for Adb over Network -->
+    <string name="adb_over_network_warning">AVERTISSEMENT\u00A0: Lorsque ADB par réseau est activé, votre téléphone est ouvert aux intrusions sur tous les réseaux connectés\u00A0!\n\nUtilisez cette fonctionnalité uniquement lorsque vous êtes connecté sur des réseaux sûrs.\n\nVoulez\u2010vous vraiment activer cette fonction\u00A0?</string>
+
     <!-- Media ducking -->
     <string name="interruptions_ignore_while_media_title">Empêcher la réduction du son</string>
     <string name="interruptions_ignore_while_media_summary">Ne pas diminuer le volume sonore lors de la réception de notification</string>
@@ -246,6 +252,16 @@
     <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
     <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
 
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_disabled">Désactivée</string>
+    <string name="display_rotation_unit">degrés</string>
+    <string name="display_rotation_category_title">Modes de rotation</string>
+    <string name="display_rotation_0_title">0 degré</string>
+    <string name="display_rotation_90_title">90 degrés</string>
+    <string name="display_rotation_180_title">180 degrés</string>
+    <string name="display_rotation_270_title">270 degrés</string>
+
     <!-- Scramble PIN Layout on Lockscreen -->
     <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
     <string name="unlock_scramble_pin_layout_summary">Mélanger la disposition des chiffres de saisie du code PIN lors du déverrouillage</string>
@@ -269,5 +285,12 @@
     <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
     <string name="wifi_setting_countrycode_error">Un problème a été rencontré avec le paramétrage du code de région</string>
     <string name="wifi_setting_countrycode_default">Par défaut</string>
+
+    <!-- Device Hostname -->
+    <string name="device_hostname">Nom de l\'appareil</string>
+
+    <!-- USB debugging notification -->
+    <string name="adb_notify">Notification de débogage USB</string>
+    <string name="adb_notify_summary">Afficher une notification lorsque le débogage USB est actif</string>
 
 </resources>
