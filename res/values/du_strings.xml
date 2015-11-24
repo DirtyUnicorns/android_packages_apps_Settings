@@ -206,4 +206,7 @@
     <string name="adb_notify">USB debugging notify</string>
     <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
 
+    <!-- Hotspot idle -->
+    <string name="wifi_hotspot_mode_title">Keep WiFi Hotspot on</string>
+
 </resources>

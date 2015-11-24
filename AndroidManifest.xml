@@ -1974,6 +1974,13 @@
             </intent-filter>
        </receiver>
 
+        <!-- Hotspot idle -->
+        <service android:name=".wifi.HotspotService" >
+            <intent-filter>
+                <action android:name="com.android.settings.wifi.HotspotService" />
+            </intent-filter>
+        </service>
+
         <!-- Standard picker for widgets -->
         <activity android:name="AppWidgetPickActivity"
                 android:label="@string/widget_picker_title"
