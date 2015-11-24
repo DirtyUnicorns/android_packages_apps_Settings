@@ -85,6 +85,10 @@
     <string name="aboutdu">Info about DU</string>
     <string name="aboutdu_summary">Information about our devs, maintainers and rom features</string>
 
+    <!-- Developer Tools -->
+    <string name="developer_tools_title">Developer tools</string>
+    <string name="developer_tools_summary">Advanced debugging tools</string>
+
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
     <string name="pulse_speed_title">Pulse length and speed</string>
