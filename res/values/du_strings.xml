@@ -249,4 +249,9 @@
     <string name="camera_double_tap_power_gesture_title">Enable double tap to launch</string>
     <string name="camera_double_tap_power_gesture_desc">Double tap on the power button to launch right lockscreen target</string>
 
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="ok_string">Ok</string>
+
 </resources>
