@@ -293,4 +293,7 @@
     <string name="adb_notify">Notification de débogage USB</string>
     <string name="adb_notify_summary">Afficher une notification lorsque le débogage USB est actif</string>
 
+    <!-- Hotspot idle -->
+    <string name="wifi_hotspot_mode_title">Veille du point d\'accès Wi-Fi</string>
+
 </resources>
