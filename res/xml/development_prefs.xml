@@ -351,4 +351,14 @@
 
      </PreferenceCategory>
 
+    <PreferenceScreen android:key="developer_tools"
+            android:title="@string/developer_tools_title"
+            android:summary="@string/developer_tools_summary"
+            android:persistent="false" >
+        <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.development"
+                android:targetClass="com.android.development.Development" />
+    </PreferenceScreen>
+
 </PreferenceScreen>
