@@ -96,6 +96,10 @@
     <string name="aboutdu">À propos de DU</string>
     <string name="aboutdu_summary">Informations sur nos développeurs, nos mainteneurs, et sur les fonctionnalités de la ROM</string>
 
+    <!-- Developer Tools -->
+    <string name="developer_tools_title">Outils développeurs</string>
+    <string name="developer_tools_summary">Outils de débogage avancés</string>
+
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Paramètres du voyant</string>
     <string name="pulse_speed_title">Durée et vitesse d\'impulsion</string>
@@ -262,6 +266,9 @@
     <string name="display_rotation_180_title">180 degrés</string>
     <string name="display_rotation_270_title">270 degrés</string>
 
+    <!-- Lock screen rotation -->
+    <string name="display_lockscreen_rotation_title">Écran de déverrouillage</string>
+
     <!-- Scramble PIN Layout on Lockscreen -->
     <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
     <string name="unlock_scramble_pin_layout_summary">Mélanger la disposition des chiffres de saisie du code PIN lors du déverrouillage</string>
@@ -296,4 +303,10 @@
     <!-- Hotspot idle -->
     <string name="wifi_hotspot_mode_title">Veille du point d\'accès Wi-Fi</string>
 
+    <!-- Battery saver color -->
+    <string name="battery_saver_title">Couleur d\'avertissement</string>
+    <string name="battery_saver_style_reset_message">Réinitialiser la couleur d\'avertissement de batterie faible ?</string>
+
+    <!-- Linked / unlinked notification volume -->
+    <string name="link_volume_option_title">Lier les volumes des notifications et de la sonnerie</string>
 </resources>
