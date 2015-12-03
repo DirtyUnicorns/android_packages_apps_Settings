@@ -309,4 +309,11 @@
 
     <!-- Linked / unlinked notification volume -->
     <string name="link_volume_option_title">Lier les volumes des notifications et de la sonnerie</string>
+
+	<!-- Wakeup section under Display settings -->
+    <string name="wakeup_section_header">Options de réveil</string>
+
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Réveiller par touche Volume</string>
+    <string name="volume_rocker_wake_summary">Sortir l\'appareil de la veille en appuyant sur une des touches Volume</string>
 </resources>
