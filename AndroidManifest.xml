@@ -2584,6 +2584,8 @@
         <service android:name="com.dirtyunicorns.dutweaks.fragments.AdBlocker_CheckHosts" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.Traffic" />
 
+        <activity android:name="com.dirtyunicorns.dutweaks.fragments.SystemappRemover" />
+		
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereBuilderActivity" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereCreateGestureActivity" />
 
