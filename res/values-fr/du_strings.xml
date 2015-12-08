@@ -309,8 +309,9 @@
 
     <!-- Linked / unlinked notification volume -->
     <string name="link_volume_option_title">Lier les volumes des notifications et de la sonnerie</string>
+    <string name="ring_notification_volume_option_title">Volume des notifications et de la sonnerie</string>
 
-	<!-- Wakeup section under Display settings -->
+    <!-- Wakeup section under Display settings -->
     <string name="wakeup_section_header">Options de réveil</string>
 
     <!-- Volume rocker wake -->

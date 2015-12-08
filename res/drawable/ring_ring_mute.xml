@@ -15,4 +15,4 @@ Copyright (C) 2014 The Android Open Source Project
 -->
 <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
         android:src="@drawable/ic_call_mute_white"
-        android:tint="?android:attr/colorAccent" />
+        android:tint="?android:attr/colorControlNormal" />
