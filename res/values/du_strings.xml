@@ -301,4 +301,10 @@
     <string name="dashboard_tileview_double_lines_summary_on">Show dashboard tile titles in 1 line</string>
     <string name="dashboard_tileview_double_lines_summary_off">Show dashboard tile titles in 2 lines</string>
 
+    <!-- Keyguard notifications options -->
+    <string name="app_notification_show_on_keyguard_title">Show on lockscreen</string>
+    <string name="app_notification_show_on_keyguard_summary">Show notifications from this app on the lockscreen</string>
+    <string name="app_notification_no_ongoing_on_keyguard_title">Disable ongoing on lockscreen</string>
+    <string name="app_notification_no_ongoing_on_keyguard_summary">Never show ongoing notifications from this app on the lockscreen</string>
+
 </resources>
