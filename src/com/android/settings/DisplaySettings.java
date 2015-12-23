@@ -60,6 +60,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.android.settings.du.DisplayRotation;
+import com.android.settings.du.NumberPickerPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -84,6 +85,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE = "camera_double_tap_power_gesture";
     private static final String KEY_WAKE_WHEN_PLUGGED_OR_UNPLUGGED = "wake_when_plugged_or_unplugged";
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
+    private static final String DT2L_TARGET_VIBRATE_CONFIG = "dt2l_target_vibrate_config";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
@@ -102,6 +104,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mCameraGesturePreference;
     private SwitchPreference mCameraDoubleTapPowerGesturePreference;
     private SwitchPreference mWakeWhenPluggedOrUnplugged;
+    private NumberPickerPreference mDt2lTargetVibrateConfig;
+
+    private ContentResolver mCr;
+    private PreferenceScreen mPrefSet;
+
+    private static final int MIN_VIB_VALUE = 1;
+    private static final int MAX_VIB_VALUE = 750;
 
     private static final String ROTATION_ANGLE_0 = "0";
     private static final String ROTATION_ANGLE_90 = "90";
@@ -129,6 +138,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.display_settings);
 
+        mPrefSet = getPreferenceScreen();
+
+        mCr = getActivity().getContentResolver();
+
         mScreenSaverPreference = findPreference(KEY_SCREEN_SAVER);
         if (mScreenSaverPreference != null
                 && getResources().getBoolean(
@@ -147,6 +160,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         mFontSizePref = (WarnedListPreference) findPreference(KEY_FONT_SIZE);
         mFontSizePref.setOnPreferenceChangeListener(this);
         mFontSizePref.setOnPreferenceClickListener(this);
+
+        mDt2lTargetVibrateConfig = (NumberPickerPreference) mPrefSet.findPreference(DT2L_TARGET_VIBRATE_CONFIG);
+        mDt2lTargetVibrateConfig.setOnPreferenceChangeListener(this);
+        mDt2lTargetVibrateConfig.setOnPreferenceClickListener(this);
+        mDt2lTargetVibrateConfig.setMinValue(MIN_VIB_VALUE);
+        mDt2lTargetVibrateConfig.setMaxValue(MAX_VIB_VALUE);
+        int cvConfig = Settings.System.getInt(mCr, Settings.System.DT2L_TARGET_VIBRATE_CONFIG, 1);
+        mDt2lTargetVibrateConfig.setCurrentValue(cvConfig);
 
         if (isAutomaticBrightnessAvailable(getResources())) {
             mAutoBrightnessPreference = (SwitchPreference) findPreference(KEY_AUTO_BRIGHTNESS);
@@ -536,6 +557,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.Secure.putInt(getContentResolver(), CAMERA_GESTURE_DISABLED,
                     value ? 0 : 1 /* Backwards because setting is for disabling */);
+        }
+        if (preference == mDt2lTargetVibrateConfig) {
+            int value = Integer.parseInt(objValue.toString());
+            Settings.System.putInt(mCr, Settings.System.DT2L_TARGET_VIBRATE_CONFIG,
+                    value);
         }
         if (preference == mCameraDoubleTapPowerGesturePreference) {
             boolean value = (Boolean) objValue;

@@ -63,12 +63,6 @@
                 android:summary="@string/camera_gesture_desc"
                 android:persistent="false" />
 
-        <SwitchPreference
-                android:key="camera_double_tap_power_gesture"
-                android:title="@string/camera_double_tap_power_gesture_title"
-                android:summary="@string/camera_double_tap_power_gesture_desc"
-                android:persistent="false" />
-
         <PreferenceScreen
                 android:key="screensaver"
                 android:title="@string/screensaver_settings_title"
@@ -124,5 +118,23 @@
                 android:title="@string/wake_when_plugged_or_unplugged_title"
                 android:summary="@string/wake_when_plugged_or_unplugged_summary"
                 android:defaultValue="false" />
+
+        <PreferenceCategory
+            android:key="dt2l_target_category"
+            android:title="@string/dt2l_target_category">
+
+        <SwitchPreference
+                android:key="camera_double_tap_power_gesture"
+                android:title="@string/camera_double_tap_power_gesture_title"
+                android:summary="@string/camera_double_tap_power_gesture_desc"
+                android:persistent="false" />
+
+        <com.android.settings.du.NumberPickerPreference
+                android:key="dt2l_target_vibrate_config"
+                android:title="@string/dt2l_target_vib_title"
+                android:summary="@string/dt2l_target_vib_summary"
+                android:dependency="camera_double_tap_power_gesture" />
+
+        </PreferenceCategory>
 
 </PreferenceScreen>

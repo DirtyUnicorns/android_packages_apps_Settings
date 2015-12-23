@@ -242,4 +242,11 @@
     <string name="notification_volume_option_title">Notification volume</string>
     <string name="ring_notification_volume_option_title">Ring and notification volume</string>
 
+    <!-- Double tap to launch target -->
+    <string name="dt2l_target_category">Double tap to launch options</string>
+    <string name="dt2l_target_vib_title">Adjust target\'s vibration</string>
+    <string name="dt2l_target_vib_summary">Adjust the vibration when double tapping the power button</string>
+    <string name="camera_double_tap_power_gesture_title">Enable double tap to launch</string>
+    <string name="camera_double_tap_power_gesture_desc">Double tap on the power button to launch right lockscreen target</string>
+
 </resources>
