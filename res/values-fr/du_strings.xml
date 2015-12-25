@@ -228,10 +228,10 @@
     <string name="camera_gesture_desc">Ouvrez l\'application Appareil photo en faisant pivoter votre poignet deux fois.</string>
 
     <!-- Title of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=40] -->
-    <string name="camera_double_tap_power_gesture_title">Appuyer deux fois sur bouton Marche/Arrêt pour lancer caméra</string>
+    <string name="camera_double_tap_power_gesture_title">Bouton Marche/Arrêt</string>
 
     <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
-    <string name="camera_double_tap_power_gesture_desc">Lancez rapidement la caméra sans déverrouiller l\'écran.</string>
+    <string name="camera_double_tap_power_gesture_desc">Démarrer l\'appareil photo sans déverrouiller l\'écran.</string>
 
     <!-- Name of each color mode for the display. [CHAR LIMIT=40] -->
     <string-array name="color_mode_names">
@@ -327,6 +327,11 @@
     <!-- Linked / unlinked notification volume -->
     <string name="link_volume_option_title">Lier les volumes des notifications et de la sonnerie</string>
     <string name="ring_notification_volume_option_title">Volume des notifications et de la sonnerie</string>
+
+    <!-- Double tap to launch target -->
+    <string name="dt2l_target_category">Double appui</string>
+    <string name="dt2l_target_vib_title">Niveau de vibration</string>
+    <string name="dt2l_target_vib_summary">Ajustez la vibration lors du double appui sur le bouton Marche/Arrêt</string>
 
     <!-- Wakeup section under Display settings -->
     <string name="wakeup_section_header">Options de réveil</string>
