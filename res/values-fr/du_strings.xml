@@ -339,4 +339,10 @@
     <!-- Volume rocker wake -->
     <string name="volume_rocker_wake_title">Réveiller par touche Volume</string>
     <string name="volume_rocker_wake_summary">Sortir l\'appareil de la veille en appuyant sur une des touches Volume</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Réinitialiser les statistiques</string>
+    <string name="battery_stats_message">Les statistiques de l\'historique de la batterie vont être réinitialisées</string>
+    <string name="ok_string">OK</string>
+
 </resources>
