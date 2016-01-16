@@ -24,6 +24,13 @@
             android:key="dial_pad_tones"
             android:title="@string/dial_pad_tones_title" />
 
+    <!-- Camera shutter sounds -->
+    <SwitchPreference
+        android:key="camera_sounds"
+        android:title="@string/camera_sounds_title"
+        android:summary="@string/camera_sounds_summary"
+        android:defaultValue="true" />
+
     <!-- Screenshot sounds -->
     <SwitchPreference
         android:key="screenshot_sound"

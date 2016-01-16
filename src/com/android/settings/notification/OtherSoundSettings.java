@@ -32,8 +32,10 @@ import android.os.Vibrator;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings.Global;
 import android.provider.Settings.System;
-import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v14.preference.SwitchPreference;
 import android.telephony.TelephonyManager;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
@@ -43,6 +45,8 @@ import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
+import com.android.internal.util.du.DuUtils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -50,7 +54,8 @@ import java.util.List;
 import static com.android.settings.notification.SettingPref.TYPE_GLOBAL;
 import static com.android.settings.notification.SettingPref.TYPE_SYSTEM;
 
-public class OtherSoundSettings extends SettingsPreferenceFragment implements Indexable {
+public class OtherSoundSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener, Indexable {
+
     private static final String TAG = "OtherSoundSettings";
 
     private static final int DEFAULT_ON = 1;
@@ -74,6 +79,9 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_VIBRATE_ON_TOUCH = "vibrate_on_touch";
     private static final String KEY_DOCK_AUDIO_MEDIA = "dock_audio_media";
     private static final String KEY_EMERGENCY_TONE = "emergency_tone";
+    private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
+    private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
+    private static final String KEY_CAMERA2_PACKAGE_NAME = "com.android.camera2";
 
     // Boot Sounds needs to be a system property so it can be accessed during boot.
     private static final String KEY_BOOT_SOUNDS = "boot_sounds";
@@ -198,6 +206,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     };
 
     private SwitchPreference mBootSounds;
+    private SwitchPreference mCameraSounds;
 
     private final SettingsObserver mSettingsObserver = new SettingsObserver();
 
@@ -218,6 +227,16 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.other_sound_settings);
+
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mCameraSounds = (SwitchPreference) findPreference(KEY_CAMERA_SOUNDS);
+        if (!DuUtils.isPackageInstalled(getActivity(), KEY_CAMERA2_PACKAGE_NAME)) {
+            prefScreen.removePreference(mCameraSounds);
+        } else {
+        mCameraSounds.setChecked(SystemProperties.getBoolean(PROP_CAMERA_SOUND, true));
+        mCameraSounds.setOnPreferenceChangeListener(this);
+        }
 
         mContext = getActivity();
 
@@ -243,6 +262,18 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     public void onPause() {
         super.onPause();
         mSettingsObserver.register(false);
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        final String key = preference.getKey();
+        if (KEY_CAMERA_SOUNDS.equals(key)) {
+           if ((Boolean) objValue) {
+               SystemProperties.set(PROP_CAMERA_SOUND, "1");
+           } else {
+               SystemProperties.set(PROP_CAMERA_SOUND, "0");
+           }
+        }
+        return true;
     }
 
     @Override

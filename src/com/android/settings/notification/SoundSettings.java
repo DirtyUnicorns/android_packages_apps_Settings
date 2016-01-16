@@ -497,7 +497,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
                         // otherwise notification volume will only change after next
                         // change of ringer volume
                         final int ringerVolume = mAudioManager.getStreamVolume(AudioSystem.STREAM_RING);
-                        mAudioManager.setStreamVolume(AudioSystem.STREAM_NOTIFICATION, ringerVolume, 0);  
+                        mAudioManager.setStreamVolume(AudioSystem.STREAM_NOTIFICATION, ringerVolume, 0);
                     }
                     Settings.System.putInt(getContentResolver(),
                             Settings.System.VOLUME_LINK_NOTIFICATION, val ? 1 : 0);
