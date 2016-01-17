@@ -2598,6 +2598,48 @@
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereBuilderActivity" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereCreateGestureActivity" />
 
+        <!-- Navigation settings activity. -->
+        <activity android:name="Settings$NavigationSettingsActivity"
+                android:label="@string/navigation_category"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.dutweaks.fragments.NavbarSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/dirtytweaks" />
+        </activity>
+
+       <!-- System action picker -->
+        <activity android:name="com.dirtyunicorns.dutweaks.ActionPickerDialogActivity"
+                android:theme="@style/Theme.SettingsDialog"
+                android:label="@string/choose_action_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+       <!-- Icon pack picker -->
+        <activity android:name="com.dirtyunicorns.dutweaks.IconPickerActivity"
+                android:theme="@style/Theme.SettingsDialog"
+                android:label="@string/icon_pack_picker_dialog_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+       <!-- Icon pack grid -->
+        <activity android:name="com.dirtyunicorns.dutweaks.IconPackGridActivity"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
         <!-- End of DU activities -->
 
         <provider
