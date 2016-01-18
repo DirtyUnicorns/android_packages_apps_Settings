@@ -100,6 +100,39 @@
     <string name="developer_tools_title">Outils développeurs</string>
     <string name="developer_tools_summary">Outils de débogage avancés</string>
 
+    <!-- Less notification sounds -->
+    <string name="sound_title">Son</string>
+    <string name="safe_headset_volume_title">Sécurité du volume</string>
+    <string name="safe_headset_volume_summary">Empêche les volumes sonores trop élevés lorsque le casque est branché</string>
+    <string name="safe_headset_volume_warning_dialog_text">L\'écoute de la musique à des niveaux très élevés pendant des périodes de temps prolongées peut endommager l\'ouïe. Désactivez cette sécurité avec prudence.</string>
+    <string name="notifications_category_title">Notifications</string>
+    <string name="sound_misc_category_title">Système</string>
+    <string name="less_notification_sounds_title">Limiter les notification sonores</string>
+    <string name="less_notification_sounds_summary">Diminuer le nombre de notification sonore pour chaque application à une fois par période définie</string>
+    <string name="less_notification_sounds_default">Comportement par défaut</string>
+    <string name="less_notification_sounds_3s">3 secondes</string>
+    <string name="less_notification_sounds_5s">5 secondes</string>
+    <string name="less_notification_sounds_10s">10 secondes</string>
+    <string name="less_notification_sounds_15s">15 secondes</string>
+    <string name="less_notification_sounds_30s">30 secondes</string>
+    <string name="less_notification_sounds_45s">45 secondes</string>
+    <string name="less_notification_sounds_1m">1 minute</string>
+    <string name="less_notification_sounds_2m">2 minutes</string>
+    <string name="less_notification_sounds_5m">5 minutes</string>
+
+    <!-- Volume Keys Media Control -->
+    <string name="volume_keys_control_media_stream">Contrôle des médias</string>
+    <string name="volume_keys_control_media_stream_summary">Les touches de volume contrôlent le volume des médias plutôt que celui des notifications</string>
+
+    <!-- Camera sound -->
+    <string name="camera_sounds_title">Son de l\'obturateur de l\'appareil photo</string>
+    <string name="camera_sounds_summary">Activer</string>
+    <string name="camera_sound_warning_dialog_text">Désactiver le son de l\'obturateur de l\'appareil photo est illégal dans certaines régions ! Veuillez vérifier la législation applicable à votre pays</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Capture d\'écran</string>
+    <string name="screenshot_sound_summary">Émettre un son lors de la capture d\'écran</string>
+
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Paramètres du voyant</string>
     <string name="pulse_speed_title">Durée et vitesse d\'impulsion</string>
