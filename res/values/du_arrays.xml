@@ -16,6 +16,19 @@
  -->
 <resources>
 
+    <!-- Dashboard columns -->
+    <string-array name="dashboard_columns_entries">
+        <item>@string/dashboard_columns_default</item>
+        <item>@string/dashboard_columns_two</item>
+        <item>@string/dashboard_columns_three</item>
+    </string-array>
+
+    <string-array name="dashboard_columns_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
     <!-- Less notification sounds -->
     <string-array name="less_notification_sounds_entries">
         <item>@string/less_notification_sounds_default</item>
