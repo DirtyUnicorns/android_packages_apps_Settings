@@ -104,7 +104,7 @@
     <string name="sound_title">Son</string>
     <string name="safe_headset_volume_title">Sécurité du volume</string>
     <string name="safe_headset_volume_summary">Empêche les volumes sonores trop élevés lorsque le casque est branché</string>
-    <string name="safe_headset_volume_warning_dialog_text">L\'écoute de la musique à des niveaux très élevés pendant des périodes de temps prolongées peut endommager l\'ouïe. Désactivez cette sécurité avec prudence.</string>
+    <string name="safe_headset_volume_warning_dialog_text">L\'écoute de la musique à des niveaux très élevés pendant des périodes de temps prolongées peut endommager l\'ouïe. Désactiver cette sécurité avec prudence.</string>
     <string name="notifications_category_title">Notifications</string>
     <string name="sound_misc_category_title">Système</string>
     <string name="less_notification_sounds_title">Limiter les notification sonores</string>
@@ -268,7 +268,7 @@
 
     <!-- Name of each color mode for the display. [CHAR LIMIT=40] -->
     <string-array name="color_mode_names">
-        <item>Couleurs éclatantes (par défaut)</item>
+        <item>Couleurs éclatantes (Par défaut)</item>
         <item>Couleurs naturelles</item>
         <item>Couleurs normales</item>
     </string-array>
@@ -377,5 +377,19 @@
     <string name="battery_stats_reset">Réinitialiser les statistiques</string>
     <string name="battery_stats_message">Les statistiques de l\'historique de la batterie vont être réinitialisées</string>
     <string name="ok_string">OK</string>
+
+    <!-- Dashboard columns -->
+    <string name="dashboard_columns_title">Nombre de colonnes</string>
+    <string name="dashboard_columns_summary">Définir le nombre de colonnes affichées dans le tableau de bord</string>
+    <string name="dashboard_columns_dialog_title">Nombre de colonnes</string>
+    <string name="dashboard_columns_default">Une (Par défaut)</string>
+    <string name="dashboard_columns_two">Deux</string>
+    <string name="dashboard_columns_three">Trois</string>
+
+    <!-- Dashboard tileview double lines -->
+    <string name="dashboard_category">Paramètres du tableau de bord</string>
+    <string name="dashboard_tileview_double_lines_title">Nombre de ligne</string>
+    <string name="dashboard_tileview_double_lines_summary_on">Afficher les intitulés du tableau de bord sur une ligne</string>
+    <string name="dashboard_tileview_double_lines_summary_off">Afficher les intitulés du tableau de bord sur deux lignes</string>
 
 </resources>
