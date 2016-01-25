@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2015 The Dirty Unicorns Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources>
+
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi region code. -->
+    <string-array name="wifi_countrycode_entries">
+        <item>Vereinigte Staaten</item>
+        <item>Kanada, Taiwan</item>
+        <item>Deutschland</item>
+        <item>Europa</item>
+        <item>Japan, Russland</item>
+        <item>Australien</item>
+        <item>Indonesien</item>
+        <item>China</item>
+        <item>Korea</item>
+        <item>Türkei</item>
+        <item>Singapur</item>
+        <item>Brasilien</item>
+    </string-array>
+
+    <!-- Hotspot idle -->
+    <string-array name="wifi_hotspot_mode_entries">
+        <item>Immer</item>
+        <item>Nach 5 Minuten ausschalten</item>
+        <item>Nach 10 Minuten ausschalten</item>
+        <item>Nach 30 Minuten ausschalten</item>
+        <item>Nach einer Stunde ausschalten</item>
+    </string-array>
+
+    <string-array name="wifi_hotspot_mode_entryValues">
+        <item>Immer</item>
+        <item>Nach 5 Minuten ausschalten</item>
+        <item>Nach 10 Minuten ausschalten</item>
+        <item>Nach 30 Minuten ausschalten</item>
+        <item>Nach einer Stunde ausschalten</item>
+    </string-array>
+
+    <string-array name="wifi_hotspot_mode_summaries">
+        <item>Immer</item>
+        <item>Nach 5 Minuten ausschalten</item>
+        <item>Nach 10 Minuten ausschalten</item>
+        <item>Nach 30 Minuten ausschalten</item>
+        <item>Nach einer Stunde ausschalten</item>
+    </string-array>
+
+</resources>
