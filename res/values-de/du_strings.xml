@@ -46,7 +46,7 @@
     <string name="density">Dichte</string>
     <string name="dots_per_inch">Punkte pro Inch (DPI)</string>
     <string name="actualdpi_x">Reale DPI-X</string>
-    <string name="actualdpi_y">Reali DPI-Y</string>
+    <string name="actualdpi_y">Reale DPI-Y</string>
     <string name="refresh_rate">Wiederholrate</string>
     <string name="pixels">Pixel</string>
     <string name="inches">Inch</string>
@@ -70,7 +70,7 @@
     <!-- Customization -->
     <string name="header_category_custom">Personalisierung</string>
     <string name="custom_title">Dirty Tweaks</string>
-    <string name="themes_settings_title">Themen</string>
+    <string name="themes_settings_title">Designs</string>
 
     <!-- DU Changelog -->
     <string name="duchangelog">Changelog</string>
@@ -196,8 +196,8 @@
 
     <!-- Doze notification color invert -->
     <string name="doze_notification_color_invert_title">Farbumkehr</string>
-    <string name="doze_notification_color_invert_summary_off">Farbe der Benachrichtigungen bei Inaktivitätsdisplay nicht umkehren. Für dunkle Themen benutzen.</string>
-    <string name="doze_notification_color_invert_summary_on">Farbe der Benachrichtigungen bei Inaktivitätsdisplay umkehren. Für helle Themen/Standardthema benutzen.</string>
+    <string name="doze_notification_color_invert_summary_off">Farbe der Benachrichtigungen bei Inaktivitätsdisplay nicht umkehren. Für dunkle Designs benutzen.</string>
+    <string name="doze_notification_color_invert_summary_on">Farbe der Benachrichtigungen bei Inaktivitätsdisplay umkehren. Für helle Designs/Standarddesign benutzen.</string>
 
     <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
     <string name="bluetooth_accept_all_files">Alle Dateitypen akzeptieren</string>
@@ -287,14 +287,20 @@
     <string name="dashboard_columns_title">Übersichtsspalten</string>
     <string name="dashboard_columns_summary">Ändere die Anzahl der Spalten in der Einstellungsübersicht</string>
     <string name="dashboard_columns_dialog_title">Spalten auswählen</string>
-    <string name="dashboard_columns_default">Eine (Standard)</string>
+    <string name="dashboard_columns_default">Eine</string>
     <string name="dashboard_columns_two">Zwei</string>
     <string name="dashboard_columns_three">Drei</string>
 
     <!-- Dashboard tileview double lines -->
-    <string name="dashboard_category">Einstellungsübersicht</string>
-    <string name="dashboard_tileview_double_lines_title">Einstellungsübersichttitel</string>
+    <string name="dashboard_category">Einstellungskategorien</string>
+    <string name="dashboard_tileview_double_lines_title">Einstellungskategorien</string>
     <string name="dashboard_tileview_double_lines_summary_on">In einer Zeile anzeigen</string>
     <string name="dashboard_tileview_double_lines_summary_off">In zwei Zeilen anzeigen</string>
+
+    <!-- Keyguard notifications options -->
+    <string name="app_notification_show_on_keyguard_title">Auf dem Sperrbildschirm anzeigen</string>
+    <string name="app_notification_show_on_keyguard_summary">Zeigt Benachrichtigungen dieser App auf dem Sperrbildschirm an</string>
+    <string name="app_notification_no_ongoing_on_keyguard_title">Permanente Benachrichtigungen auf dem Sperrbildschirm deaktivieren</string>
+    <string name="app_notification_no_ongoing_on_keyguard_summary">Nie permanente Benachrichtigungen dieser App auf dem Sperrbildschirm</string>
 
 </resources>
