@@ -382,7 +382,7 @@
     <string name="dashboard_columns_title">Nombre de colonnes</string>
     <string name="dashboard_columns_summary">Définir le nombre de colonnes affichées dans le tableau de bord</string>
     <string name="dashboard_columns_dialog_title">Nombre de colonnes</string>
-    <string name="dashboard_columns_default">Une (Par défaut)</string>
+    <string name="dashboard_columns_one">Une</string>
     <string name="dashboard_columns_two">Deux</string>
     <string name="dashboard_columns_three">Trois</string>
 
