@@ -2590,6 +2590,12 @@
             </intent-filter>
         </receiver>
 
+        <receiver android:name="com.android.settings.du.OnBoot">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
         <service android:name="com.dirtyunicorns.dutweaks.fragments.AdBlocker_CheckHosts" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.Traffic" />
 
