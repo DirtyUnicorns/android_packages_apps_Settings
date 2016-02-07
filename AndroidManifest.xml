@@ -2600,9 +2600,11 @@
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.Traffic" />
 
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.SystemappRemover" />
-		
+
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereBuilderActivity" />
         <activity android:name="com.dirtyunicorns.dutweaks.fragments.GestureAnywhereCreateGestureActivity" />
+
+        <activity android:name="com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings" />
 
         <!-- Navigation settings activity. -->
         <activity android:name="Settings$NavigationSettingsActivity"
