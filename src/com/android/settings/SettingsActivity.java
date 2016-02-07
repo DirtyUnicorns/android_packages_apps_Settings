@@ -73,7 +73,9 @@ import com.android.settings.accounts.AccountSyncSettings;
 import com.android.settings.applications.DrawOverlayDetails;
 import com.dirtyunicorns.dutweaks.DirtyTweaks;
 import com.dirtyunicorns.dutweaks.fragments.ExpandedDesktop;
+import com.dirtyunicorns.dutweaks.fragments.FlingSettings;
 import com.dirtyunicorns.dutweaks.fragments.NavbarSettings;
+import com.dirtyunicorns.dutweaks.fragments.SmartbarSettings;
 import com.android.settings.applications.InstalledAppDetails;
 import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ManageAssist;
@@ -363,7 +365,9 @@ public class SettingsActivity extends Activity
             DirtyTweaks.class.getName(),
             ExpandedDesktop.class.getName(),
             DisplayRotation.class.getName(),
-            NavbarSettings.class.getName()
+            NavbarSettings.class.getName(),
+            FlingSettings.class.getName(),
+            SmartbarSettings.class.getName()
     };
 
 
