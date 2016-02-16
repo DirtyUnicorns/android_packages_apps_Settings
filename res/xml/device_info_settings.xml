@@ -24,7 +24,7 @@
             android:summary="@string/aboutdu_summary">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.dirtyunicorns.about"
-                    android:targetClass="com.dirtyunicorns.about.AboutActivity" />
+                    android:targetClass="com.dirtyunicorns.about.MainActivity" />
         </PreferenceScreen>
 
         <!-- DU Changelog -->
