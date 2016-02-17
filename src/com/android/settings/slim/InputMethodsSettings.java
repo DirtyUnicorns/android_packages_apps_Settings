@@ -72,16 +72,10 @@ public class InputMethodsSettings extends SettingsPreferenceFragment implements
                 Settings.System.DISABLE_FULLSCREEN_KEYBOARD, 0) == 1);
         mDisableFullscreenKeyboard.setOnPreferenceChangeListener(this);
 
-        // Enable or disable mStatusBarImeSwitcher based on boolean value: config_show_cmIMESwitcher
-        final Preference keyImeSwitcherPref = findPreference(KEY_IME_SWITCHER);
-        if (keyImeSwitcherPref != null) {
-            if (!getResources().getBoolean(com.android.internal.R.bool.config_show_IMESwitcher)) {
-                getPreferenceScreen().removePreference(keyImeSwitcherPref);
-            } else {
-                mStatusBarImeSwitcher = (SwitchPreference) keyImeSwitcherPref;
-                mStatusBarImeSwitcher.setOnPreferenceChangeListener(this);
-            }
-        }
+        mStatusBarImeSwitcher = (SwitchPreference)findPreference(KEY_IME_SWITCHER);
+        mStatusBarImeSwitcher.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_IME_SWITCHER, 1) == 1);
+        mStatusBarImeSwitcher.setOnPreferenceChangeListener(this);
 
         mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
         if(mVolumeKeyCursorControl != null) {
@@ -121,17 +115,6 @@ public class InputMethodsSettings extends SettingsPreferenceFragment implements
         mKeyboardRotationTimeout.setSummary(
             getString(R.string.keyboard_rotation_timeout_summary,
             mKeyboardRotationTimeout.getEntry()));
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-
-        if (mStatusBarImeSwitcher != null) {
-            mStatusBarImeSwitcher.setChecked(Settings.System.getInt(getContentResolver(),
-                    Settings.System.STATUS_BAR_IME_SWITCHER, 1) != 0);
-        }
-
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
