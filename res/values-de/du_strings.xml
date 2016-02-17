@@ -54,6 +54,8 @@
     <!-- DU version -->
     <string name="mod_version">DU-Version</string>
     <string name="mod_version_default">Unbekannt</string>
+    <string name="build_date">Build-Datum</string>
+    <string name="build_date_default">2012-01-01-0000</string>
 
     <!-- Share Dirty Unicorns -->
     <string name="share_du_title">Dirty Unicorns teilen</string>
@@ -287,15 +289,18 @@
     <string name="dashboard_columns_title">Übersichtsspalten</string>
     <string name="dashboard_columns_summary">Ändere die Anzahl der Spalten in der Einstellungsübersicht</string>
     <string name="dashboard_columns_dialog_title">Spalten auswählen</string>
-    <string name="dashboard_columns_default">Eine</string>
+    <string name="dashboard_columns_one">Eine</string>
     <string name="dashboard_columns_two">Zwei</string>
     <string name="dashboard_columns_three">Drei</string>
 
     <!-- Dashboard tileview double lines -->
-    <string name="dashboard_category">Einstellungskategorien</string>
-    <string name="dashboard_tileview_double_lines_title">Einstellungskategorien</string>
+    <string name="dashboard_category">Übersicht</string>
+    <string name="dashboard_tileview_double_lines_title">Kategorien</string>
     <string name="dashboard_tileview_double_lines_summary_on">In einer Zeile anzeigen</string>
     <string name="dashboard_tileview_double_lines_summary_off">In zwei Zeilen anzeigen</string>
+    <string name="dashboard_tileview_double_lines_summary">Zeigt den Text der Kategorien in 2 Zeilen an</string>
+    <string name="dashboard_tileview_dividers_title">Trennlinien</string>
+    <string name="dashboard_tileview_dividers_summary">Trennlinien ausblenden</string>
 
     <!-- Keyguard notifications options -->
     <string name="app_notification_show_on_keyguard_title">Auf dem Sperrbildschirm anzeigen</string>
