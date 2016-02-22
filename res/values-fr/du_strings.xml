@@ -378,24 +378,27 @@
     <string name="battery_stats_message">Les statistiques de l\'historique de la batterie vont être réinitialisées</string>
     <string name="ok_string">OK</string>
 
-    <!-- Dashboard columns -->
+    <!-- Dashboard settings -->
+    <string name="dashboard_category">Paramètres du tableau de bord</string>
     <string name="dashboard_columns_title">Nombre de colonnes</string>
-    <string name="dashboard_columns_summary">Définir le nombre de colonnes affichées dans le tableau de bord</string>
+    <string name="dashboard_columns_summary">Définir le nombre de colonnes du tableau de bord</string>
     <string name="dashboard_columns_dialog_title">Nombre de colonnes</string>
     <string name="dashboard_columns_one">Une</string>
     <string name="dashboard_columns_two">Deux</string>
     <string name="dashboard_columns_three">Trois</string>
-
-    <!-- Dashboard tileview double lines -->
-    <string name="dashboard_category">Paramètres du tableau de bord</string>
-    <string name="dashboard_tileview_double_lines_title">Nombre de ligne</string>
-    <string name="dashboard_tileview_double_lines_summary_on">Afficher les intitulés du tableau de bord sur une ligne</string>
-    <string name="dashboard_tileview_double_lines_summary_off">Afficher les intitulés du tableau de bord sur deux lignes</string>
+    <string name="dashboard_tileview_double_lines_title">Nombre de lignes</string>
+    <string name="dashboard_tileview_double_lines_summary">Afficher les intitulés du tableau de bord sur deux lignes</string>
+    <string name="dashboard_tileview_dividers_title">Séparateurs</string>
+    <string name="dashboard_tileview_dividers_summary">Masquer les séparateurs du tableau de bord</string>
 
     <!-- Keyguard notifications options -->
     <string name="app_notification_show_on_keyguard_title">Écran de déverrouillage</string>
     <string name="app_notification_show_on_keyguard_summary">Afficher les notifications de cette application sur l\'écran de déverrouillage</string>
     <string name="app_notification_no_ongoing_on_keyguard_title">Notifications persistantes</string>
     <string name="app_notification_no_ongoing_on_keyguard_summary">Ne pas afficher les notifications persistantes de cette application sur l\'écran de déverrouillage</string>
+
+    <!-- Flashlight notification -->
+    <string name="flashlight_notification_title">Notification lampe de poche</string>
+    <string name="flashlight_notification_summary">Activer la notification lorsque la lampe de poche est en cours d\'utilisation</string>
 
 </resources>
