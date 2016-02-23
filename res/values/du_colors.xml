@@ -91,4 +91,10 @@
     <color name="blacklist_enabled">#DD2C00</color>
     <color name="blacklist_disabled">#D7D7D7</color>
 
+    <!-- Filter Spinner Text Color -->
+    <color name="filter_spinner_text_color">@color/text_color_white</color>
+
+    <!-- App Name Text Color -->
+    <color name="app_name_text_color">@color/text_color_white</color>
+
 </resources>
