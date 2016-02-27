@@ -391,6 +391,13 @@
     <string name="dashboard_tileview_dividers_title">Séparateurs</string>
     <string name="dashboard_tileview_dividers_summary">Masquer les séparateurs du tableau de bord</string>
 
+    <!-- Optional Dashboard Switches -->
+    <string name="dashboard_switches_title">Interrupteurs</string>
+    <string name="dashboard_switches_off">Désactivé</string>
+    <string name="dashboard_switches_on">Activé</string>
+    <string name="dashboard_switches_summary">Modifier la position des interrupteurs du tableau de bord</string>
+    <string name="dashboard_switches_dialog_title">État des interrupteurs</string>
+
     <!-- Keyguard notifications options -->
     <string name="app_notification_show_on_keyguard_title">Écran de déverrouillage</string>
     <string name="app_notification_show_on_keyguard_summary">Afficher les notifications de cette application sur l\'écran de déverrouillage</string>
