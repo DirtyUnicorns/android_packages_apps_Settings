@@ -87,6 +87,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_WAKE_WHEN_PLUGGED_OR_UNPLUGGED = "wake_when_plugged_or_unplugged";
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
     private static final String DT2L_TARGET_VIBRATE_CONFIG = "dt2l_target_vibrate_config";
+    private static final String KEY_PROXIMITY_WAKE = "proximity_on_wake";
 
     private static final String DASHBOARD_COLUMNS = "dashboard_columns";
     private static final String DASHBOARD_SWITCHES = "dashboard_switches";
@@ -212,6 +213,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mTapToWakePreference.setOnPreferenceChangeListener(this);
         } else {
             removePreference(KEY_TAP_TO_WAKE);
+        }
+
+        boolean proximityCheckOnWait = getResources().getBoolean(
+                com.android.internal.R.bool.config_proximityCheckOnWake);
+        if (!proximityCheckOnWait) {
+            removePreference(KEY_PROXIMITY_WAKE);
+            Settings.System.putInt(getContentResolver(), Settings.System.PROXIMITY_ON_WAKE, 0);
         }
 
         if (isCameraGestureAvailable(getResources())) {
