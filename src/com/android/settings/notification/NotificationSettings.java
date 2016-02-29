@@ -44,7 +44,6 @@ import android.os.Vibrator;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
-import android.preference.PreferenceScreen;
 import android.preference.SeekBarVolumizer;
 import android.preference.TwoStatePreference;
 import android.preference.SwitchPreference;
@@ -56,7 +55,6 @@ import android.util.Log;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.widget.LockPatternUtils;
-import com.android.internal.util.du.DuUtils;
 import com.android.settings.DropDownPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -69,7 +67,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-public class NotificationSettings extends SettingsPreferenceFragment implements Indexable, Preference.OnPreferenceChangeListener {
+public class NotificationSettings extends SettingsPreferenceFragment implements Indexable {
     private static final String TAG = "NotificationSettings";
 
     private static final String KEY_SOUND = "sound";
@@ -87,7 +85,6 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private static final String KEY_NOTIFICATION_ACCESS = "manage_notification_access";
     private static final String KEY_ZEN_ACCESS = "manage_zen_access";
     private static final String KEY_ZEN_MODE = "zen_mode";
-    private static final String FLASHLIGHT_NOTIFICATION = "flashlight_notification";
     private static final String KEY_INCREASING_RING_VOLUME = "increasing_ring_volume";
 
     private static final String[] RESTRICTED_KEYS = {
@@ -125,7 +122,6 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private VolumeSeekBarPreference mRingPreference;
     private VolumeSeekBarPreference mNotificationPreference;
 
-    private SwitchPreference mFlashlightNotification;
     private TwoStatePreference mIncreasingRing;
     private IncreasingRingVolumePreference mIncreasingRingVolume;
     private Preference mPhoneRingtonePreference;
@@ -166,8 +162,6 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         }
 
         addPreferencesFromResource(R.xml.notification_settings);
-        PreferenceScreen prefSet = getPreferenceScreen();
-        ContentResolver resolver = getActivity().getContentResolver();
 
         mSoundCategory = (PreferenceCategory) findPreference(KEY_SOUND);
 
@@ -189,15 +183,6 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
             mSoundCategory.removePreference(mSoundCategory.findPreference(KEY_RING_VOLUME));
             mSoundCategory.removePreference(mSoundCategory.findPreference(
                     KEY_VOLUME_LINK_NOTIFICATION));
-        }
-
-        mFlashlightNotification = (SwitchPreference) findPreference(FLASHLIGHT_NOTIFICATION);
-        mFlashlightNotification.setOnPreferenceChangeListener(this);
-        if (!DuUtils.deviceSupportsFlashLight(getActivity())) {
-            prefSet.removePreference(mFlashlightNotification);
-        } else {
-        mFlashlightNotification.setChecked((Settings.System.getInt(resolver,
-                Settings.System.FLASHLIGHT_NOTIFICATION, 0) == 1));
         }
 
         initRingtones(mSoundCategory);
@@ -782,17 +767,6 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
                     break;
             }
         }
-    }
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if  (preference == mFlashlightNotification) {
-            boolean checked = ((SwitchPreference)preference).isChecked();
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.FLASHLIGHT_NOTIFICATION, checked ? 1:0);
-            return true;
-        }
-        return false;
     }
 
     private class Receiver extends BroadcastReceiver {

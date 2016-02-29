@@ -115,12 +115,6 @@
         android:title="@string/notification_section_header" >
 
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
-                android:key="flashlight_notification"
-                android:title="@string/flashlight_notification_title"
-                android:summary="@string/flashlight_notification_summary"
-                android:defaultValue="false" />
-
-        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
                 android:key="headset_plugged_in"
                 android:title="@string/headset_plugged_in_title"
                 android:summary="@string/headset_plugged_in_summary"
