@@ -129,6 +129,11 @@
     <string name="camera_sounds_summary">Activer</string>
     <string name="camera_sound_warning_dialog_text">Désactiver le son de l\'obturateur de l\'appareil photo est illégal dans certaines régions ! Veuillez vérifier la législation applicable à votre pays</string>
 
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Sonnerie progressive</string>
+    <string name="increasing_ring_min_volume_title">Volume de démarrage</string>
+    <string name="increasing_ring_ramp_up_time_title">Durée de progression</string>
+
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Capture d\'écran</string>
     <string name="screenshot_sound_summary">Émettre un son lors de la capture d\'écran</string>
