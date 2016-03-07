@@ -52,7 +52,7 @@ import com.android.internal.telephony.util.BlacklistUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SubSettings;
-import com.android.settings.nexus.BaseSystemSettingSwitchBar;
+import com.android.settings.du.BaseSystemSettingSwitchBar;
 
 import java.util.HashMap;
 
