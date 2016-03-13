@@ -73,20 +73,10 @@
                 android:title="@string/lift_to_wake_title"
                 android:persistent="false" />
 
-        <SwitchPreference
-                android:key="doze"
+        <PreferenceScreen
+                android:key="doze_fragment"
                 android:title="@string/doze_title"
-                android:summary="@string/doze_summary"
-                android:persistent="false" />
-
-        <!-- Doze notification color invert -->
-        <com.dirtyunicorns.dutweaks.preference.SecureSettingSwitchPreference
-                android:key="doze_notification_invert_enabled"
-                android:title="@string/doze_notification_color_invert_title"
-                android:summaryOn="@string/doze_notification_color_invert_summary_on"
-                android:summaryOff="@string/doze_notification_color_invert_summary_off"
-                android:dependency="doze"
-                android:defaultValue="true" />
+                android:fragment="com.android.settings.du.AmbientSettings" />
 
         <SwitchPreference
                 android:key="tap_to_wake"
