@@ -444,4 +444,44 @@
     <string name="remove_blacklist_entry">Supprimer ce numéro de téléphone de la liste des numéros de téléphone bloqués ?</string>
     <string name="select_contact">Sélectionner un contact</string>
 
+    <!-- Name of the setting to change the display's color temperature -->
+    <string name="color_temperature">Température des couleurs</string>
+
+    <!-- Description of the setting to change the display's color temperature -->
+    <string name="color_temperature_desc">Utiliser les couleurs froides</string>
+
+    <!-- Toast message letting the user know the color temperature setting is not immediate -->
+    <string name="color_temperature_toast">Pour appliquer le changement de couleur, éteindre l\'écran</string>
+
+    <!-- Doze pulse options -->
+    <string name="summary_doze_enabled">Activé</string>
+    <string name="summary_doze_disabled">Désactivé</string>
+    <string name="doze_overwrite_value_title">Paramètres avancés</string>
+    <string name="doze_overwrite_value_summary">Modifier les valeurs par défaut</string>
+    <string name="doze_pulse_title">Valeurs du mode Veille</string>
+    <string name="doze_pulse_duration_in_title">Délai d\'ouverture</string>
+    <string name="doze_pulse_duration_visible_title">Durée d\'affichage</string>
+    <string name="doze_pulse_duration_out_title">Délai de fermeture</string>
+    <string name="doze_trigger_pickup_title">Prise en main</string>
+    <string name="doze_trigger_pickup_summary_on">Activer l\'écran lors de la prise en main de l\'appareil</string>
+    <string name="doze_trigger_pickup_summary_off">Ne pas activer l\'écran lors de la prise en main de l\'appareil</string>
+    <string name="doze_trigger_notification_title">Notifications</string>
+    <string name="doze_trigger_notification_summary_on">Activer l\'écran lors de la réception de notifications</string>
+    <string name="doze_trigger_notification_summary_off">Ne pas activer l\'écran lors de la réception de notifications</string>
+    <string name="doze_brightness_level_title">Niveau de luminosité</string>
+    <string name="onehundred_ms">100 ms</string>
+    <string name="twofifty_ms">250 ms</string>
+    <string name="fivehundred_ms_default">500 ms (Par défaut)</string>
+    <string name="sevenfifty_ms">750 ms</string>
+    <string name="one_second">1 s</string>
+    <string name="onehalf_second">1,5 s</string>
+    <string name="two_second">2 s</string>
+    <string name="twohalf_second">2,5 s</string>
+    <string name="three_second_default">3 s (Par défaut)</string>
+    <string name="threehalf_second">3,5 s</string>
+    <string name="four_second">4 s</string>
+    <string name="fourhalf_second">4,5 s</string>
+    <string name="five_second">5 s</string>
+
+
 </resources>
