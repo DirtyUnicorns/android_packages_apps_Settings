@@ -211,6 +211,8 @@
                 android:targetClass="com.google.android.gms.app.settings.GoogleSettingsLink" />
         </dashboard-tile>
 
+        <external-tiles />
+
     </dashboard-category>
 
     <!-- System -->
