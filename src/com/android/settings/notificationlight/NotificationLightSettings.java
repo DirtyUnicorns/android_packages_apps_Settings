@@ -45,8 +45,8 @@ import com.android.internal.logging.MetricsLogger;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.cyanogenmod.PackageListAdapter;
-import com.android.settings.cyanogenmod.PackageListAdapter.PackageItem;
+import com.android.settings.du.PackageListAdapter;
+import com.android.settings.du.PackageListAdapter.PackageItem;
 import com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
