@@ -74,6 +74,7 @@ import com.android.settings.applications.DrawOverlayDetails;
 import com.dirtyunicorns.dutweaks.DirtyTweaks;
 import com.dirtyunicorns.dutweaks.fragments.ExpandedDesktop;
 import com.dirtyunicorns.dutweaks.fragments.FlingSettings;
+import com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings;
 import com.dirtyunicorns.dutweaks.fragments.NavbarSettings;
 import com.dirtyunicorns.dutweaks.fragments.SmartbarSettings;
 import com.android.settings.applications.InstalledAppDetails;
@@ -369,7 +370,8 @@ public class SettingsActivity extends Activity
             NavbarSettings.class.getName(),
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
-            BlacklistSettings.class.getName()
+            BlacklistSettings.class.getName(),
+            HeadsUpSettings.class.getName()
     };
 
 
