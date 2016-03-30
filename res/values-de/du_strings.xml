@@ -120,6 +120,11 @@
     <string name="camera_sounds_summary">Aktiviert den Kamera-Auslöseton</string>
     <string name="camera_sound_warning_dialog_text">Deaktivieren des Kamera-Auslösetons ist in einigen Ländern illegal! Informiere dich über die Gesetze deines Landes bevor du diesen deaktivierst!</string>
 
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Klingelton steigern</string>
+    <string name="increasing_ring_min_volume_title">Start Lautstärke</string>
+    <string name="increasing_ring_ramp_up_time_title">Steigerung nach</string>
+
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Bildschirmfototon</string>
     <string name="screenshot_sound_summary">Spielt einen Ton beim erstellen eines Bildschirmfotos ab</string>
@@ -285,27 +290,94 @@
     <string name="battery_stats_message">Der Akkuverlauf wird zurückgesetzt</string>
     <string name="ok_string">Ok</string>
 
-    <!-- Dashboard columns -->
+    <!-- Dashboard settings -->
+    <string name="dashboard_category">Übersicht</string>
     <string name="dashboard_columns_title">Übersichtsspalten</string>
-    <string name="dashboard_columns_summary">Ändere die Anzahl der Spalten in der Einstellungsübersicht</string>
+    <string name="dashboard_columns_summary">Ändere die Anzahl der Spalten in der Übersicht</string>
     <string name="dashboard_columns_dialog_title">Spalten auswählen</string>
     <string name="dashboard_columns_one">Eine</string>
     <string name="dashboard_columns_two">Zwei</string>
     <string name="dashboard_columns_three">Drei</string>
-
-    <!-- Dashboard tileview double lines -->
-    <string name="dashboard_category">Übersicht</string>
     <string name="dashboard_tileview_double_lines_title">Kategorien</string>
-    <string name="dashboard_tileview_double_lines_summary_on">In einer Zeile anzeigen</string>
-    <string name="dashboard_tileview_double_lines_summary_off">In zwei Zeilen anzeigen</string>
     <string name="dashboard_tileview_double_lines_summary">Zeigt den Text der Kategorien in 2 Zeilen an</string>
     <string name="dashboard_tileview_dividers_title">Trennlinien</string>
     <string name="dashboard_tileview_dividers_summary">Trennlinien ausblenden</string>
+
+    <!-- Optional Dashboard Switches -->
+    <string name="dashboard_switches_title">Schalter</string>
+    <string name="dashboard_switches_off">Schalter ausgeblendet</string>
+    <string name="dashboard_switches_on">Schalter eingeblendet</string>
+    <string name="dashboard_switches_summary">Ändere die Position der Schalter</string>
+    <string name="dashboard_switches_dialog_title">Zustand wählen</string>
 
     <!-- Keyguard notifications options -->
     <string name="app_notification_show_on_keyguard_title">Auf dem Sperrbildschirm anzeigen</string>
     <string name="app_notification_show_on_keyguard_summary">Zeigt Benachrichtigungen dieser App auf dem Sperrbildschirm an</string>
     <string name="app_notification_no_ongoing_on_keyguard_title">Permanente Benachrichtigungen auf dem Sperrbildschirm deaktivieren</string>
     <string name="app_notification_no_ongoing_on_keyguard_summary">Nie permanente Benachrichtigungen dieser App auf dem Sperrbildschirm</string>
+
+    <!-- Blacklist preferences -->
+    <string name="app_security_title">Privatsphäre</string>
+    <string name="blacklist_title">Blockierte Anruferliste</string>
+    <string name="blacklist_edit_dialog_title">Blockierte Telefonnummern ändern</string>
+    <string name="blacklist_prefs">Einstellungen</string>
+    <string name="blacklist_button_delete">Löschen</string>
+    <string name="blacklist_empty_text">Sie haben keine blockierten Nummern. Fügen Sie durch Drücken der (+)-Taste einen Eintrag hinzu.</string>
+    <string name="blacklist_disabled_empty_text">Aktivieren Sie diese Option, um zu verhindern, dass bestimmte Telefonnumern Sie anrufen oder anschreiben.</string>
+    <string name="blacklist_summary_disabled">Deaktiviert</string>
+    <string name="blacklist_summary">Sie werden keine Anrufe oder Nachrichten von Telefonnummern erhalten, die auf der Blockierliste stehen.</string>
+    <string name="blacklist_notify">Benachrichtigung anzeigen</string>
+    <string name="blacklist_private_numbers_title">Private Nummern</string>
+    <string name="blacklist_private_numbers_summary_disabled">Anrufe von privaten Nummern nicht blockieren.</string>
+    <string name="blacklist_private_numbers_summary">Eingehende <xliff:g id="type">%s</xliff:g> von privaten Nummern blockieren.</string>
+    <string name="blacklist_unknown_numbers_title">Unbekannte Nummern</string>
+    <string name="blacklist_unknown_numbers_summary_disabled">Anrufe oder Nachrichten von Nummern, die nicht in der Kontaktliste sind, nicht blockieren.</string>
+    <string name="blacklist_unknown_numbers_summary">Eingehende <xliff:g id="type">%s</xliff:g> von Nummern, die nicht in der Kontaktliste sind, blockieren.</string>
+    <string name="blacklist_summary_type_calls_only">Anrufe</string>
+    <string name="blacklist_summary_type_messages_only">Nachrichten</string>
+    <string name="blacklist_summary_type_calls_and_messages">Anrufe und Nachrichten</string>
+    <string name="blacklist_regex_title">Platzhalter benutzen</string>
+    <string name="blacklist_regex_summary">Benutze . als Platzhalter und * für Wiederholung. Z.B. blockiert 123.* Nummern, die mit 123 beginnen, und .*123.* blockiert Nummer, die 123 beinhalten.</string>
+    <string name="blacklist_policy_block_calls">Eingehende Anrufe blockieren</string>
+    <string name="blacklist_policy_block_messages">Eingehende Nachrichten blockieren</string>
+    <string name="blacklist_bad_number_add">Kann ungültige Telefonnummer nicht hinzufügen</string>
+
+    <!-- Blacklist management -->
+    <string name="remove_blacklist_number_title">Nummer entfernen</string>
+    <string name="remove_blacklist_entry">Möchten Sie diese blockierte Telefonnummer entfernen?</string>
+    <string name="select_contact">Kontakt auswählen</string>
+
+    <!-- Doze pulse options -->
+    <string name="summary_doze_enabled">Aktiviert</string>
+    <string name="summary_doze_disabled">Deaktiviert</string>
+    <string name="doze_overwrite_value_title">Standardwerte überschreiben</string>
+    <string name="doze_overwrite_value_summary">Standardwerte dürfen überschrieben werden</string>
+    <string name="doze_pulse_title">Vom Benutzer konfigurierbare Einstellungen</string>
+    <string name="doze_pulse_duration_in_title">Einblenden</string>
+    <string name="doze_pulse_duration_in_summary"></string>
+    <string name="doze_pulse_duration_visible_title">Sichtbare Dauer</string>
+    <string name="doze_pulse_duration_visible_summary"></string>
+    <string name="doze_pulse_duration_out_title">Ausblenden</string>
+    <string name="doze_pulse_duration_out_summary"></string>
+    <string name="doze_trigger_pickup_title">Hochhebe-Sensor</string>
+    <string name="doze_trigger_pickup_summary_on">Pulse wird durch den Hochhebe-Sensor ausgelöst</string>
+    <string name="doze_trigger_pickup_summary_off">Hochhebe-Sensor wird nicht als Auslöser benutzt</string>
+    <string name="doze_trigger_notification_title">Benachrichtigung</string>
+    <string name="doze_trigger_notification_summary_on">Pulse wird durch Benachrichtigungen ausgelöst</string>
+    <string name="doze_trigger_notification_summary_off">Benachrichtigungen werden nicht als Auslöser benutzt</string>
+    <string name="doze_brightness_level_title">Helligkeits-Level</string>
+    <string name="onehundred_ms">100 ms</string>
+    <string name="twofifty_ms">250 ms</string>
+    <string name="fivehundred_ms_default">500 ms (Standard)</string>
+    <string name="sevenfifty_ms">750 ms</string>
+    <string name="one_second">1 s</string>
+    <string name="onehalf_second">1.5 s</string>
+    <string name="two_second">2 s</string>
+    <string name="twohalf_second">2.5 s</string>
+    <string name="three_second_default">3 s (Standard)</string>
+    <string name="threehalf_second">3.5 s</string>
+    <string name="four_second">4 s</string>
+    <string name="fourhalf_second">4.5 s</string>
+    <string name="five_second">5 s</string>
 
 </resources>
