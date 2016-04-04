@@ -27,6 +27,7 @@ public class OnBoot extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+        Boolean mSelinuxCmdline = false;
         ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
         List<ActivityManager.RunningAppProcessInfo> procInfos = activityManager.getRunningAppProcesses();
         for(int i = 0; i < procInfos.size(); i++)
@@ -43,12 +44,21 @@ public class OnBoot extends BroadcastReceiver {
             }
             SharedPreferences sharedpreferences = settingsContext.getSharedPreferences("com.android.settings_preferences",
                     Context.MODE_PRIVATE);
+
+            if (CMDProcessor.runShellCommand("getenforce").getStdout().contains("Enforcing")) {
+                mSelinuxCmdline = true;
+                Log.d(TAG, "cmdline: selinux:Enforcing");
+            } else {
+                mSelinuxCmdline = false;
+                Log.d(TAG, "cmdline: selinux:Permissive");
+            }
+
             if(sharedpreferences.getBoolean("selinux", true)) {
-                if (CMDProcessor.runShellCommand("getenforce").getStdout().contains("Permissive")) {
+                if (mSelinuxCmdline == false) {
                     CMDProcessor.runSuCommand("setenforce 1");
                 }
             } else if (!sharedpreferences.getBoolean("selinux", true)) {
-                if (CMDProcessor.runShellCommand("getenforce").getStdout().contains("Enforcing")) {
+                if (mSelinuxCmdline == true) {
                     CMDProcessor.runSuCommand("setenforce 0");
                     showToast(context.getString(R.string.selinux_permissive_toast_title), context);
                 }
