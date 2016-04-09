@@ -132,6 +132,7 @@ import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
+import com.android.settings.du.AmbientSettings;
 import com.android.settings.du.DisplayRotation;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -371,7 +372,8 @@ public class SettingsActivity extends Activity
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
             BlacklistSettings.class.getName(),
-            HeadsUpSettings.class.getName()
+            HeadsUpSettings.class.getName(),
+            AmbientSettings.class.getName()
     };
 
 

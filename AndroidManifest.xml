@@ -2515,6 +2515,20 @@
                 android:resource="@id/dirtytweaks" />
         </activity>
 
+        <!-- Ambient Display settings activity. -->
+        <activity android:name="Settings$AmbientDisplaySettingsActivity"
+                android:label="@string/doze_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.du.AmbientSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/dirtytweaks" />
+        </activity>
+
         <!-- Expanded desktop settings activity. -->
         <activity android:name="Settings$ExpandedDesktopSettingsActivity"
                 android:label="@string/expanded_desktop_category"
