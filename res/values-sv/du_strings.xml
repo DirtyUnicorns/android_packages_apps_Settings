@@ -18,8 +18,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- DU Extra Info -->
   <string name="duextrainfo">Extra information</string>
-  <string name="duextrainfo_summary">Display extra info for cpu, display, etc</string>
-  <string name="basicinfo">BASIC INFO</string>
+  <string name="duextrainfo_summary">Visa extra information för cpu, display, etc</string>
+  <string name="basicinfo">GRUNDLÄGGANDE INFORMATION</string>
   <string name="manufacturer">Manufacturer</string>
   <string name="hardwaretype">Hardware type</string>
   <string name="systempartition">System partition</string>

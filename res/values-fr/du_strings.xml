@@ -237,7 +237,7 @@
   <string name="battery_saver_style_reset_message">Configuration d\'origine</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Lier les volumes des notifications et de la sonnerie</string>
-  <string name="notification_volume_option_title">Notification volume</string>
+  <string name="notification_volume_option_title">Volume des notifications</string>
   <string name="ring_notification_volume_option_title">Volume des notifications et de la sonnerie</string>
   <!-- Double tap to launch target -->
   <string name="dt2l_target_category">Double appui</string>

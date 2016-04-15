@@ -1843,7 +1843,7 @@
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="kernel_version">Wersja jądra</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
-  <string name="build_date">Build date</string>
+  <string name="build_date">Data kompilacji</string>
   <string name="build_date_default">2012-01-01-0000</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="selinux_status">Stan SELinux</string>
@@ -2907,7 +2907,7 @@
   <string name="running_processes_header_footer">Wykorzystanie pamięci RAM przez aplikacje</string>
   <!-- [CHAR LIMIT=20] Running processes/services header: prefix for line showing RAM
          used by system. -->
-  <string name="running_processes_header_system_prefix">System</string>
+  <string name="running_processes_header_system_prefix">Systemowe</string>
   <!-- [CHAR LIMIT=20] Running processes/services header: prefix for line showing RAM
          used by apps. -->
   <string name="running_processes_header_apps_prefix">Aplikacje</string>
@@ -3270,7 +3270,7 @@
   <!-- Title for the accessibility preference category of accessibility services. [CHAR LIMIT=25] -->
   <string name="accessibility_services_title">Usługi</string>
   <!-- Title for the accessibility preference category of system related preferences. [CHAR LIMIT=25] -->
-  <string name="accessibility_system_title">System</string>
+  <string name="accessibility_system_title">Systemowe</string>
   <!-- Title for the accessibility preference category of display related preferences. [CHAR LIMIT=25] -->
   <string name="accessibility_display_title">Ekran</string>
   <!-- Title for the accessibility preference screen to enable video captioning. [CHAR LIMIT=35] -->
@@ -4108,7 +4108,7 @@
   <string name="sound_category_call_ringtone_vibrate_title">Dzwonek i wibracje przy połączeniu</string>
   <!-- Category title for system-wide notification and feedback settings in the Sound Setting.
          [CHAR LIMIT=40] -->
-  <string name="sound_category_system_title">System</string>
+  <string name="sound_category_system_title">Systemowe</string>
   <!-- Wifi Setup For Setup Wizard with XL screen -->
   <!-- Title shown in Wifi Setup Wizard with XL screen -->
   <string name="wifi_setup_title">Konfiguracja Wi-Fi</string>
@@ -4699,7 +4699,7 @@
   <!-- Toast message when a certificate is missing. [CHAR LIMIT=100] -->
   <string name="vpn_missing_cert">Brak certyfikatu. Edytuj profil.</string>
   <!-- Tab label for built-in system CA certificates. -->
-  <string name="trusted_credentials_system_tab">System</string>
+  <string name="trusted_credentials_system_tab">Systemowe</string>
   <!-- Tab label for user added CA certificates. -->
   <string name="trusted_credentials_user_tab">Własne</string>
   <!-- Button label for disabling a system CA certificate. -->
@@ -4958,7 +4958,7 @@
   <!-- Help URL, Remote display [DO NOT TRANSLATE] -->
   <!-- Help URL, Fingerprint [DO NOT TRANSLATE] -->
   <!-- User account title [CHAR LIMIT=30] -->
-  <string name="user_account_title">Konto na materiały</string>
+  <string name="user_account_title">Konto dla treści</string>
   <!-- User picture title [CHAR LIMIT=30] -->
   <string name="user_picture_title">Identyfikator zdjęcia</string>
   <!-- Extreme threats title.  [CHAR LIMIT=30] -->
@@ -5957,9 +5957,9 @@
   <!-- Description of feature to change color setting for the display [CHAR LIMIT=NONE] -->
   <string name="picture_color_mode_desc">Użyj sRGB</string>
   <!-- Name of the setting to change the display's color temperature -->
-  <string name="color_temperature">Cool color temperature</string>
+  <string name="color_temperature">Chłodna temperatura barw</string>
   <!-- Description of the setting to change the display's color temperature -->
-  <string name="color_temperature_desc">Use cooler display colors</string>
+  <string name="color_temperature_desc">Użyj chłodniejszych kolorów ekranu</string>
   <!-- Toast message letting the user know the color temperature setting is not immediate -->
-  <string name="color_temperature_toast">To apply color change, turn off screen</string>
+  <string name="color_temperature_toast">Aby zastosować zmianę koloru, należy wyłączyć ekran</string>
 </resources>

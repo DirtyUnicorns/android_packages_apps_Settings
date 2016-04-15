@@ -1831,7 +1831,7 @@
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="kernel_version">Version du noyau</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
-  <string name="build_date">Build date</string>
+  <string name="build_date">Date de compilation</string>
   <string name="build_date_default">2012-01-01-0000</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="selinux_status">État SELinux</string>
@@ -5936,9 +5936,9 @@
   <!-- Description of feature to change color setting for the display [CHAR LIMIT=NONE] -->
   <string name="picture_color_mode_desc">Utiliser sRGB</string>
   <!-- Name of the setting to change the display's color temperature -->
-  <string name="color_temperature">Cool color temperature</string>
+  <string name="color_temperature">Température des couleurs</string>
   <!-- Description of the setting to change the display's color temperature -->
-  <string name="color_temperature_desc">Use cooler display colors</string>
+  <string name="color_temperature_desc">Utiliser les couleurs froides</string>
   <!-- Toast message letting the user know the color temperature setting is not immediate -->
-  <string name="color_temperature_toast">To apply color change, turn off screen</string>
+  <string name="color_temperature_toast">Pour appliquer le changement de couleur, éteindre l\'écran</string>
 </resources>
