@@ -148,7 +148,7 @@
     <string name="large_font">Large</string>
 
     <!-- Do not translate. label for font size preview.  Does not need to be translated. -->
-    <string name="font_size_preview_text">Servez à ce monsieur une bière et des kiwis.</string>
+    <string name="font_size_preview_text" translatable="false">Servez à ce monsieur une bière et des kiwis.</string>
     <!-- Button. Chosen when they want to save the chosen text size. -->
     <string name="font_size_save">OK</string>
 
@@ -510,7 +510,7 @@
     <!-- The title of the dialog to pick an activity.  This is shown when there are multiple activities that can do a particular action.  For example, suppose you click on the "Share" menu item in the Browser.  Since you can share the webpage URL via many communication methods, this dialog would come up with choices like "Email", "IM", etc.  This is a generic message, and the previous example is a single possible scenario (so please don't assume it's for the browser or anything :) ). -->
     <string name="activity_picker_label">Choose activity</string>
     <!-- Do not translate. -->
-    <string name="debug_intent_sender_label">Debug intent sender</string>
+    <string name="debug_intent_sender_label" translatable="false">Debug intent sender</string>
     <!-- The title of the activity to see random device info. -->
     <string name="device_info_label">Device info</string>
     <!-- The title of the activity to adjust display settings -->
@@ -2160,9 +2160,9 @@
     <!-- [CHAR LIMIT=100] Main settings screen item's summary for the SD card and storage settings -->
     <string name="storage_settings_summary" product="default">Unmount SD card, view available storage</string>
     <!-- Do not translate. About phone, status item title -->
-    <string name="status_imei">IMEI</string>
+    <string name="status_imei" translatable="false">IMEI</string>
     <!-- Do not translate. About phone, status item title -->
-    <string name="status_imei_sv">IMEI SV</string>
+    <string name="status_imei_sv" translatable="false">IMEI SV</string>
     <!-- About tablet, status item title.  The Mobile Directory Number [CHAR LIMIT=30] -->
     <string name="status_number" product="tablet">MDN</string>
     <!-- About phone, status item title.  The phone number of the current device [CHAR LIMIT=30] -->
@@ -3527,7 +3527,7 @@
     <!-- In the Testing screen.  The item title of the activity that shows a bunch of phone-related information.  -->
     <string name="testing_phone_info" product="default">Phone information</string>
     <!-- Do not translate. In the Testing screen. The item title of the activity that shows a bunch of SIM-related operations.  -->
-    <string name="testing_sim_toolkit">SIM toolkit</string>
+    <string name="testing_sim_toolkit" translatable="false">SIM toolkit</string>
 
     <!-- Input methods Settings -->
     <string name="input_methods_settings_title">Text input</string>
@@ -4100,7 +4100,7 @@
     <!-- [CHAR LIMIT=25] Label for battery stats phone signal strength graph -->
     <string name="battery_stats_phone_signal_label">Cellular network signal</string>
     <!-- Battery usage during last unplugged period -->
-    <string name="battery_stats_last_duration">@string/menu_stats_last_unplugged</string>
+    <string name="battery_stats_last_duration" translatable="false">@string/menu_stats_last_unplugged</string>
     <!-- CPU awake time title -->
     <string name="awake">Device awake time</string>
     <!-- Wifi on time -->
