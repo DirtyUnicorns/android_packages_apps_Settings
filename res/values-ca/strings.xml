@@ -131,7 +131,6 @@
   <!-- choice for the font size spinner -->
   <string name="large_font">Gran</string>
   <!-- Do not translate. label for font size preview.  Does not need to be translated. -->
-  <string name="font_size_preview_text">Servez à ce monsieur une bière et des kiwis.</string>
   <!-- Button. Chosen when they want to save the chosen text size. -->
   <string name="font_size_save">D\'acord</string>
   <!-- Title for a notification shown. [CHAR LIMIT=25] -->
@@ -451,7 +450,6 @@
   <!-- The title of the dialog to pick an activity.  This is shown when there are multiple activities that can do a particular action.  For example, suppose you click on the "Share" menu item in the Browser.  Since you can share the webpage URL via many communication methods, this dialog would come up with choices like "Email", "IM", etc.  This is a generic message, and the previous example is a single possible scenario (so please don't assume it's for the browser or anything :) ). -->
   <string name="activity_picker_label">Selecció de l\'activitat</string>
   <!-- Do not translate. -->
-  <string name="debug_intent_sender_label">Debug intent sender</string>
   <!-- The title of the activity to see random device info. -->
   <string name="device_info_label">Informació del dispositiu</string>
   <!-- The title of the activity to adjust display settings -->
@@ -840,27 +838,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Les característiques de protecció del dispositiu necessiten el teu patró per funcionar."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"Les característiques de protecció del dispositiu necessiten el teu patró per funcionar.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"Les característiques de protecció del dispositiu necessiten el teu patró per funcionar.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Les empremtes digitals que tinguis desades també se suprimiran del dispositiu i no podràs fer-les servir per desbloquejar el telèfon, per autoritzar compres ni per iniciar la sessió a les aplicacions.\""</string>
+</xliff:g>Les empremtes digitals que tinguis desades també se suprimiran del dispositiu i no podràs fer-les servir per desbloquejar el telèfon, per autoritzar compres ni per iniciar la sessió a les aplicacions.\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Les característiques de protecció del dispositiu necessiten el teu PIN per funcionar."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"Les característiques de protecció del dispositiu necessiten el teu PIN per funcionar.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"Les característiques de protecció del dispositiu necessiten el teu PIN per funcionar.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Les empremtes digitals que tinguis desades també se suprimiran del dispositiu i no podràs fer-les servir per desbloquejar el telèfon, per autoritzar compres ni per iniciar la sessió a les aplicacions.\""</string>
+</xliff:g>Les empremtes digitals que tinguis desades també se suprimiran del dispositiu i no podràs fer-les servir per desbloquejar el telèfon, per autoritzar compres ni per iniciar la sessió a les aplicacions.\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Les característiques de protecció del dispositiu necessiten la teva contrasenya per funcionar."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"Les característiques de protecció del dispositiu necessiten la teva contrasenya per funcionar.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"Les característiques de protecció del dispositiu necessiten la teva contrasenya per funcionar.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Les empremtes digitals que tinguis desades també se suprimiran del dispositiu i no podràs fer-les servir per desbloquejar el telèfon, per autoritzar compres ni per iniciar la sessió a les aplicacions.\""</string>
+</xliff:g>Les empremtes digitals que tinguis desades també se suprimiran del dispositiu i no podràs fer-les servir per desbloquejar el telèfon, per autoritzar compres ni per iniciar la sessió a les aplicacions.\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Les característiques de protecció del dispositiu necessiten el teu bloqueig de pantalla per funcionar."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"Les característiques de protecció del dispositiu necessiten el teu bloqueig de pantalla per funcionar.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"Les característiques de protecció del dispositiu necessiten el teu bloqueig de pantalla per funcionar.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Les empremtes digitals que tinguis desades també se suprimiran del dispositiu i no podràs fer-les servir per desbloquejar el telèfon, per autoritzar compres ni per iniciar la sessió a les aplicacions.\""</string>
+</xliff:g>Les empremtes digitals que tinguis desades també se suprimiran del dispositiu i no podràs fer-les servir per desbloquejar el telèfon, per autoritzar compres ni per iniciar la sessió a les aplicacions.\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Sí, suprimeix-la</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
@@ -1860,9 +1858,7 @@
   <!-- [CHAR LIMIT=100] Main settings screen item's summary for the SD card and storage settings -->
   <string name="storage_settings_summary" product="default">Desactiva la targeta SD, visualitza l\'emmagatzematge disponible</string>
   <!-- Do not translate. About phone, status item title -->
-  <string name="status_imei">IMEI</string>
   <!-- Do not translate. About phone, status item title -->
-  <string name="status_imei_sv">IMEI SV</string>
   <!-- About tablet, status item title.  The Mobile Directory Number [CHAR LIMIT=30] -->
   <string name="status_number" product="tablet">MDN</string>
   <!-- About phone, status item title.  The phone number of the current device [CHAR LIMIT=30] -->
@@ -3055,7 +3051,6 @@
   <!-- In the Testing screen.  The item title of the activity that shows a bunch of phone-related information.  -->
   <string name="testing_phone_info" product="default">Informació del telèfon</string>
   <!-- Do not translate. In the Testing screen. The item title of the activity that shows a bunch of SIM-related operations.  -->
-  <string name="testing_sim_toolkit">SIM toolkit</string>
   <!-- Input methods Settings -->
   <string name="input_methods_settings_title">Introducció de text</string>
   <!-- Setting name for Input Method chooser -->
@@ -3530,7 +3525,6 @@
   <!-- [CHAR LIMIT=25] Label for battery stats phone signal strength graph -->
   <string name="battery_stats_phone_signal_label">Senyal de la xarxa mòbil</string>
   <!-- Battery usage during last unplugged period -->
-  <string name="battery_stats_last_duration">@string/menu_stats_last_unplugged</string>
   <!-- CPU awake time title -->
   <string name="awake">Temps d\'activació del dispositiu</string>
   <!-- Wifi on time -->

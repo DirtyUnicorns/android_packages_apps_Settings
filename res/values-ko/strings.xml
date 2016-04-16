@@ -131,7 +131,6 @@
   <!-- choice for the font size spinner -->
   <string name="large_font">크게</string>
   <!-- Do not translate. label for font size preview.  Does not need to be translated. -->
-  <string name="font_size_preview_text">Servez à ce monsieur une bière et des kiwis.</string>
   <!-- Button. Chosen when they want to save the chosen text size. -->
   <string name="font_size_save">확인</string>
   <!-- Title for a notification shown. [CHAR LIMIT=25] -->
@@ -451,7 +450,6 @@
   <!-- The title of the dialog to pick an activity.  This is shown when there are multiple activities that can do a particular action.  For example, suppose you click on the "Share" menu item in the Browser.  Since you can share the webpage URL via many communication methods, this dialog would come up with choices like "Email", "IM", etc.  This is a generic message, and the previous example is a single possible scenario (so please don't assume it's for the browser or anything :) ). -->
   <string name="activity_picker_label">작업 선택</string>
   <!-- Do not translate. -->
-  <string name="debug_intent_sender_label">Debug intent sender</string>
   <!-- The title of the activity to see random device info. -->
   <string name="device_info_label">장치정보</string>
   <!-- The title of the activity to adjust display settings -->
@@ -839,27 +837,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"기기 보호 기능은 패턴 없이 작동하지 않습니다."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"기기 보호 기능은 패턴 없이 작동하지 않습니다. <xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"기기 보호 기능은 패턴 없이 작동하지 않습니다. <xliff:g id="EMPTY_LINE">
 
-</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\""</string>
+</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"기기 보호 기능은 PIN 없이 작동하지 않습니다."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"기기 보호 기능은 PIN 없이 작동하지 않습니다.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"기기 보호 기능은 PIN 없이 작동하지 않습니다.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\""</string>
+</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"기기 보호 기능은 비밀번호 없이 작동하지 않습니다."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"기기 보호 기능은 비밀번호 없이 작동하지 않습니다. <xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"기기 보호 기능은 비밀번호 없이 작동하지 않습니다. <xliff:g id="EMPTY_LINE">
 
-</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\""</string>
+</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"기기 보호 기능은 화면 잠금 없이 작동하지 않습니다."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"기기 보호 기능은 화면 잠금 없이 작동하지 않습니다. <xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"기기 보호 기능은 화면 잠금 없이 작동하지 않습니다. <xliff:g id="EMPTY_LINE">
 
-</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\""</string>
+</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">네, 삭제합니다.</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
@@ -1852,9 +1850,7 @@
   <!-- [CHAR LIMIT=100] Main settings screen item's summary for the SD card and storage settings -->
   <string name="storage_settings_summary" product="default">SD 카드 마운트 해제, 사용 가능한 저장공간 보기</string>
   <!-- Do not translate. About phone, status item title -->
-  <string name="status_imei">IMEI</string>
   <!-- Do not translate. About phone, status item title -->
-  <string name="status_imei_sv">IMEI SV</string>
   <!-- About tablet, status item title.  The Mobile Directory Number [CHAR LIMIT=30] -->
   <string name="status_number" product="tablet">MDN</string>
   <!-- About phone, status item title.  The phone number of the current device [CHAR LIMIT=30] -->
@@ -3047,7 +3043,6 @@
   <!-- In the Testing screen.  The item title of the activity that shows a bunch of phone-related information.  -->
   <string name="testing_phone_info" product="default">휴대전화 정보</string>
   <!-- Do not translate. In the Testing screen. The item title of the activity that shows a bunch of SIM-related operations.  -->
-  <string name="testing_sim_toolkit">SIM toolkit</string>
   <!-- Input methods Settings -->
   <string name="input_methods_settings_title">텍스트 입력</string>
   <!-- Setting name for Input Method chooser -->
@@ -3522,7 +3517,6 @@
   <!-- [CHAR LIMIT=25] Label for battery stats phone signal strength graph -->
   <string name="battery_stats_phone_signal_label">이동통신망 신호</string>
   <!-- Battery usage during last unplugged period -->
-  <string name="battery_stats_last_duration">@string/menu_stats_last_unplugged</string>
   <!-- CPU awake time title -->
   <string name="awake">장치 무중단 가동 시간</string>
   <!-- Wifi on time -->

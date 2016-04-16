@@ -131,7 +131,6 @@
   <!-- choice for the font size spinner -->
   <string name="large_font">大</string>
   <!-- Do not translate. label for font size preview.  Does not need to be translated. -->
-  <string name="font_size_preview_text">Servez à ce monsieur une bière et des kiwis.</string>
   <!-- Button. Chosen when they want to save the chosen text size. -->
   <string name="font_size_save">確定</string>
   <!-- Title for a notification shown. [CHAR LIMIT=25] -->
@@ -451,7 +450,6 @@
   <!-- The title of the dialog to pick an activity.  This is shown when there are multiple activities that can do a particular action.  For example, suppose you click on the "Share" menu item in the Browser.  Since you can share the webpage URL via many communication methods, this dialog would come up with choices like "Email", "IM", etc.  This is a generic message, and the previous example is a single possible scenario (so please don't assume it's for the browser or anything :) ). -->
   <string name="activity_picker_label">選擇活動</string>
   <!-- Do not translate. -->
-  <string name="debug_intent_sender_label">Debug intent sender</string>
   <!-- The title of the activity to see random device info. -->
   <string name="device_info_label">裝置資訊</string>
   <!-- The title of the activity to adjust display settings -->
@@ -839,27 +837,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"如果移除您的解鎖圖形，裝置保護功能將無法運作。"</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"如果移除您的解鎖圖形，裝置保護功能將無法運作。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"如果移除您的解鎖圖形，裝置保護功能將無法運作。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>您儲存的指紋會一併從這部裝置中移除，因此您將無法使用指紋解鎖手機、授權購物交易或登入應用程式。\""</string>
+</xliff:g>您儲存的指紋會一併從這部裝置中移除，因此您將無法使用指紋解鎖手機、授權購物交易或登入應用程式。\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"如果移除您的 PIN 碼，裝置保護功能將無法運作。"</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"如果移除您的 PIN 碼，裝置保護功能將無法運作。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"如果移除您的 PIN 碼，裝置保護功能將無法運作。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>您儲存的指紋會一併從這部裝置中移除，因此您將無法使用指紋解鎖手機、授權購物交易或登入應用程式。\""</string>
+</xliff:g>您儲存的指紋會一併從這部裝置中移除，因此您將無法使用指紋解鎖手機、授權購物交易或登入應用程式。\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"如果移除您的密碼，裝置保護功能將無法運作。"</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"如果移除您的密碼，裝置保護功能將無法運作。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"如果移除您的密碼，裝置保護功能將無法運作。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>您儲存的指紋會一併從這部裝置中移除，因此您將無法使用指紋解鎖手機、授權購物交易或登入應用程式。\""</string>
+</xliff:g>您儲存的指紋會一併從這部裝置中移除，因此您將無法使用指紋解鎖手機、授權購物交易或登入應用程式。\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"如果移除您的螢幕鎖定，裝置保護功能將無法運作。"</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"如果移除您的螢幕鎖定，裝置保護功能將無法運作。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"如果移除您的螢幕鎖定，裝置保護功能將無法運作。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>您儲存的指紋會一併從這部裝置中移除，因此您將無法使用指紋解鎖手機、授權購物交易或登入應用程式。\""</string>
+</xliff:g>您儲存的指紋會一併從這部裝置中移除，因此您將無法使用指紋解鎖手機、授權購物交易或登入應用程式。\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">是，移除裝置保護措施</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
@@ -1852,9 +1850,7 @@
   <!-- [CHAR LIMIT=100] Main settings screen item's summary for the SD card and storage settings -->
   <string name="storage_settings_summary" product="default">卸載 SD 卡，檢視可用儲存媒體。</string>
   <!-- Do not translate. About phone, status item title -->
-  <string name="status_imei">IMEI</string>
   <!-- Do not translate. About phone, status item title -->
-  <string name="status_imei_sv">IMEI SV</string>
   <!-- About tablet, status item title.  The Mobile Directory Number [CHAR LIMIT=30] -->
   <string name="status_number" product="tablet">MDN</string>
   <!-- About phone, status item title.  The phone number of the current device [CHAR LIMIT=30] -->
@@ -3047,7 +3043,6 @@
   <!-- In the Testing screen.  The item title of the activity that shows a bunch of phone-related information.  -->
   <string name="testing_phone_info" product="default">手機資訊</string>
   <!-- Do not translate. In the Testing screen. The item title of the activity that shows a bunch of SIM-related operations.  -->
-  <string name="testing_sim_toolkit">SIM toolkit</string>
   <!-- Input methods Settings -->
   <string name="input_methods_settings_title">文字輸入法</string>
   <!-- Setting name for Input Method chooser -->
@@ -3522,7 +3517,6 @@
   <!-- [CHAR LIMIT=25] Label for battery stats phone signal strength graph -->
   <string name="battery_stats_phone_signal_label">行動網路訊號</string>
   <!-- Battery usage during last unplugged period -->
-  <string name="battery_stats_last_duration">@string/menu_stats_last_unplugged</string>
   <!-- CPU awake time title -->
   <string name="awake">裝置清醒時間</string>
   <!-- Wifi on time -->

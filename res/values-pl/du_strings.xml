@@ -55,7 +55,7 @@
   <!-- Share Dirty Unicorns -->
   <string name="share_du_title">Udostępnij Dirty Unicorns</string>
   <string name="share_du_summary">Daj znać innym o Dirty Unicorns</string>
-  <string name="share_message">Check out what #DirtyUnicorns is all about @ http://goo.gl/emISQ1</string>
+  <string name="share_message">Dowiedz się wszystkiego o #DirtyUnicorns @ http://goo.gl/emISQ1</string>
   <string name="share_chooser_title">Udostępnij Dirty Unicorns</string>
   <!-- SuperSU -->
   <string name="supersu_title">SuperSU</string>
@@ -71,10 +71,10 @@
   <string name="du_app_name">Lista zmian DU</string>
   <!-- DU Updater -->
   <string name="duupdater">Aktualizacje DU</string>
-  <string name="duupdater_summary">Stay up to date with the latest features and fixes</string>
+  <string name="duupdater_summary">Bądź na bieżąco z najnowszymi funkcjonalnościami i poprawkami</string>
   <!-- DU About -->
   <string name="aboutdu">O DirtyUnicorns</string>
-  <string name="aboutdu_summary">Information about our devs, maintainers and rom features</string>
+  <string name="aboutdu_summary">Informacja o deweloperach, opiekunach i funkcjonalnościach Romu</string>
   <!-- Developer Tools -->
   <string name="developer_tools_title">Narzędzia deweloperskie</string>
   <string name="developer_tools_summary">Zaawansowane narzędzia debugowania</string>
@@ -110,7 +110,7 @@
   <string name="increasing_ring_ramp_up_time_title">Odstęp podgłaszania</string>
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Dźwięk zrzutu ekranu</string>
-  <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
+  <string name="screenshot_sound_summary">Dźwięk wykonania zrzutu ekranu</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Ustawienia diody LED</string>
   <string name="pulse_speed_title">Długość i prędkość pulsowania</string>
@@ -154,7 +154,7 @@
   <!-- Keyboard and Input methods  -->
   <string name="title_keyboard_input">Opcje zaawansowane</string>
   <string name="disable_fullscreen_keyboard_title">Wyłącz klawiaturę pełnoekranową</string>
-  <string name="disable_fullscreen_keyboard_summary">Landscape keyboard will never take up entire screen</string>
+  <string name="disable_fullscreen_keyboard_summary">Pełnoekranowa klawiatura nigdy nie zajmie całego ekranu</string>
   <string name="volume_key_cursor_control_title">Kontrola kursora przyciskami głośności</string>
   <string name="volume_key_cursor_control_on">Głośność w górę/w dół przesuwa kursor w lewo/prawo</string>
   <string name="volume_key_cursor_control_on_reverse">Głośność w górę/w dół przesuwa kursor w prawo/lewo</string>
@@ -164,7 +164,7 @@
   <string name="keyboard_rotation_timeout_summary">Disables auto-rotate sensor <xliff:g id="rotate_timeout">%1$s</xliff:g> seconds after keyboard is hidden</string>
   <string name="keyboard_rotation_dialog">This feature forces auto-rotate to turn on temporarily while the keyboard is shown.  It has no effect when auto-rotate is already enabled.</string>
   <string name="show_enter_key_title">Pokaż klawisz Enter</string>
-  <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
+  <string name="show_enter_key_summary">Wymuś wyświetlanie klawisza enter zamiast klawisza emotikon</string>
   <string name="ime_switcher_notify">Powiadomienie wyboru klawiatury</string>
   <string name="ime_switcher_notify_summary">Display input method selector notification</string>
   <string name="attention">Uwaga</string>
@@ -213,7 +213,7 @@
   <string name="device_hostname">Nazwa hosta</string>
   <!-- USB debugging notification -->
   <string name="adb_notify">Powiadomienie o debugowaniu USB</string>
-  <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
+  <string name="adb_notify_summary">Wyświetla powiadomienie, gdy debugowanie USB jest aktywne</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Poziomy głośności</string>
   <string name="volume_steps_alarm_title">Poziom głośności: Alarm</string>

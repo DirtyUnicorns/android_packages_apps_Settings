@@ -20,10 +20,10 @@
   <string name="duextrainfo">Extra information</string>
   <string name="duextrainfo_summary">Visa extra information för cpu, display, etc</string>
   <string name="basicinfo">GRUNDLÄGGANDE INFORMATION</string>
-  <string name="manufacturer">Manufacturer</string>
-  <string name="hardwaretype">Hardware type</string>
-  <string name="systempartition">System partition</string>
-  <string name="datapartition">Data partition</string>
+  <string name="manufacturer">Tillverkare</string>
+  <string name="hardwaretype">Maskinvarutyp</string>
+  <string name="systempartition">Systempartitionen</string>
+  <string name="datapartition">Datapartition</string>
   <string name="ram">RAM</string>
   <string name="bootloader">Bootloader</string>
   <string name="bytes"> Bytes</string>

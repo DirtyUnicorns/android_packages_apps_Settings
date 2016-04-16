@@ -19,7 +19,7 @@
   <!-- DU Extra Info -->
   <string name="duextrainfo">Extra információ</string>
   <string name="duextrainfo_summary">Extra info megjelenítése: cpu, kijelző, stb</string>
-  <string name="basicinfo">BASIC INFO</string>
+  <string name="basicinfo">ALAP INFO</string>
   <string name="manufacturer">Gyártó</string>
   <string name="hardwaretype">Hardver típusa</string>
   <string name="systempartition">Rendszer partíció</string>
@@ -34,9 +34,9 @@
   <string name="abi">ABI</string>
   <string name="abitwo">ABI2</string>
   <string name="architecture">Architektúra</string>
-  <string name="implementer">Implementer</string>
+  <string name="implementer">Végrehajtó</string>
   <string name="variant">Variáns</string>
-  <string name="part">Part</string>
+  <string name="part">Rész</string>
   <string name="revision">Revizió</string>
   <string name="displayinfo">KIJELZŐ INFO</string>
   <string name="diagonal">Átló</string>
