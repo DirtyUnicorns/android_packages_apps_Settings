@@ -28,6 +28,7 @@ public class OnBoot extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Boolean mSelinuxCmdline = false;
+        Boolean mSelinuxSwitch = false;
         ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
         List<ActivityManager.RunningAppProcessInfo> procInfos = activityManager.getRunningAppProcesses();
         for(int i = 0; i < procInfos.size(); i++)
@@ -42,8 +43,6 @@ public class OnBoot extends BroadcastReceiver {
             } catch (Exception e) {
                 Log.e(TAG, "Package not found", e);
             }
-            SharedPreferences sharedpreferences = settingsContext.getSharedPreferences("com.android.settings_preferences",
-                    Context.MODE_PRIVATE);
 
             if (CMDProcessor.runShellCommand("getenforce").getStdout().contains("Enforcing")) {
                 mSelinuxCmdline = true;
@@ -53,15 +52,25 @@ public class OnBoot extends BroadcastReceiver {
                 Log.d(TAG, "cmdline: selinux:Permissive");
             }
 
-            if(sharedpreferences.getBoolean("selinux", true)) {
-                if (mSelinuxCmdline == false) {
-                    CMDProcessor.runSuCommand("setenforce 1");
+            SharedPreferences sharedpreferences = settingsContext.getSharedPreferences("com.android.settings_preferences",
+                    Context.MODE_PRIVATE);
+
+            if (sharedpreferences.contains("selinux")) {
+                mSelinuxSwitch = sharedpreferences.getBoolean("selinux", false);
+                if(mSelinuxSwitch == true) {
+                    if (mSelinuxCmdline == false) {
+                        Log.d(TAG, "Setting selinux to Enforcing");
+                        CMDProcessor.runShellCommand("echo 1 > /sys/fs/selinux/enforce");
+                    }
+                } else if (mSelinuxSwitch == false) {
+                    if (mSelinuxCmdline == true) {
+                        Log.d(TAG, "Setting selinux to Permissive");
+                        CMDProcessor.runShellCommand("echo 0 > /sys/fs/selinux/enforce");
+                        showToast(context.getString(R.string.selinux_permissive_toast_title), context);
+                    }
                 }
-            } else if (!sharedpreferences.getBoolean("selinux", true)) {
-                if (mSelinuxCmdline == true) {
-                    CMDProcessor.runSuCommand("setenforce 0");
-                    showToast(context.getString(R.string.selinux_permissive_toast_title), context);
-                }
+            } else {
+                Log.d(TAG, "SharedPreference do not exists");
             }
         }
     }
