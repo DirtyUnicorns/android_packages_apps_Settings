@@ -280,7 +280,7 @@
   <!-- Label for chosen font size -->
   <string name="display_font_size_label">Schriftgröße:</string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
-  <string name="intent_sender_data_label"><xliff:g id="data">Data:</xliff:g></string>
+  <string name="intent_sender_data_label"><xliff:g id="data">Daten:</xliff:g></string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
   <string name="intent_sender_sendbroadcast_text"><xliff:g id="BROADCAST">broadcast</xliff:g> senden</string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
@@ -980,7 +980,7 @@
   <!-- Pairing dialog text to remind user to enter the passkey on the other device. [CHAR LIMIT=NONE] -->
   <string name="bluetooth_enter_passkey_other_device">Möglicherweise musst du diesen Zugangscode auch auf dem anderen Gerät eingeben.</string>
   <!-- Message for confirmation of passkey to complete pairing. [CHAR LIMIT=NONE] -->
-  <string name="bluetooth_confirm_passkey_msg">To pair with:&lt;br&gt;&lt;b&gt;<xliff:g id="device_name">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Make sure it is showing this passkey:&lt;br&gt;&lt;b&gt;<xliff:g id="passkey">%2$s</xliff:g>&lt;/b&gt;</string>
+  <string name="bluetooth_confirm_passkey_msg">Um mit folgendem Gerät zu verbinden:&lt;br&gt;&lt;b&gt;<xliff:g id="device_name">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Stellen Sie sicher, dass folgendes Passwort angezeigt wird:&lt;br&gt;&lt;b&gt;<xliff:g id="passkey">%2$s</xliff:g>&lt;/b&gt;</string>
   <!-- Message when bluetooth incoming pairing request for (2.1 devices) dialog is showing -->
   <string name="bluetooth_incoming_pairing_msg">Von:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Pairing mit diesem Gerät durchführen?</string>
   <!-- Message when bluetooth dialog when passkey or pin needs to be displayed. -->
@@ -1562,7 +1562,7 @@
   <!-- Sound and alerts settings -->
   <!-- Main Settings screen setting option name to go into the display settings screen -->
   <string name="home_settings">Startseite</string>
-  <string name="display_settings_title">Display</string>
+  <string name="display_settings_title">Bildschirm</string>
   <!-- Sound settings screen heading -->
   <string name="sound_settings">Töne</string>
   <!-- Sound settings screen, setting option summary text -->
@@ -1623,11 +1623,11 @@
   <!-- Image description for alarm volume mute button. -->
   <string name="volume_alarm_mute">Wecker stummschalten</string>
   <!-- Dock settings title, top level -->
-  <string name="dock_settings">Dock</string>
+  <string name="dock_settings">Docking-Station</string>
   <!-- Dock settings title -->
   <string name="dock_settings_title">Dock-Einstellungen</string>
   <!-- Dock audio settings -->
-  <string name="dock_audio_settings_title">Audio</string>
+  <string name="dock_audio_settings_title">Ton</string>
   <!-- Dock audio summary for docked to desk dock -->
   <string name="dock_audio_summary_desk">Einstellungen für angeschlossenes Desktop-Dock</string>
   <!-- Dock audio summary for docked to car dock -->
@@ -1674,7 +1674,7 @@
   <string name="search_settings_summary">Sucheinstellungen und Suchverlauf verwalten</string>
   <!-- Display settings -->
   <!-- Sound & display settings screen, section header for settings related to display -->
-  <string name="display_settings">Display</string>
+  <string name="display_settings">Bildschirm</string>
   <!-- Sound & display settings screen, accelerometer-based rotation check box label -->
   <string name="accelerometer_title">Display automatisch drehen</string>
   <!-- Sound & display settings screen, accelerometer-based rotation summary text when check box is selected -->
@@ -1833,7 +1833,7 @@
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="kernel_version">Kernel-Version</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
-  <string name="build_date">Build date</string>
+  <string name="build_date">Build-Datum</string>
   <string name="build_date_default">2012-01-01-0000</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="selinux_status">SELinux-Status</string>
@@ -3674,9 +3674,9 @@
   <string name="menu_stats_refresh">Aktualisieren</string>
   <!-- TODO: Remove it once the same entry in SettingsLib is translated. -->
   <!-- Label for kernel threads in battery usage -->
-  <string name="process_kernel_label">Android OS</string>
+  <string name="process_kernel_label">Android-Betriebssystem</string>
   <!-- Label for mediaserver process in battery usage -->
-  <string name="process_mediaserver_label">Mediaserver</string>
+  <string name="process_mediaserver_label">Medienserver</string>
   <!-- Label for dex2oat process in battery usage used for the optimization of one or more apps -->
   <string name="process_dex2oat_label">App-Optimierung</string>
   <!-- [CHAR_LIMIT=40] Battery saver: Label for feature, title + menu item -->
@@ -5731,7 +5731,7 @@
   <!-- Body text of prompt dialog app can invoke to turn off optimization [CHAR LIMIT=NONE] -->
   <string name="high_power_prompt_body">Darf die App \"<xliff:g id="APP_NAME">%1$s</xliff:g>\" im Hintergrund verbunden bleiben? Dies erhöht möglicherweise die Akkunutzung.</string>
   <!-- Summary of power usage for an app [CHAR LIMIT=NONE] -->
-  <string name="battery_summary"><xliff:g id="percentage" example="2">%1$d</xliff:g>%% use since last full charge</string>
+  <string name="battery_summary"><xliff:g id="percentage" example="2">%1$d</xliff:g>%% Verbrauch seit letzer vollständiger Ladung</string>
   <!-- Summary for app with no battery usage [CHAR LIMIT=NONE] -->
   <string name="no_battery_summary">Kein Verbrauch seit dem letzten vollen Aufladen</string>
   <!-- Link to an apps notification settings [CHAR LIMIT=50] -->
@@ -5934,9 +5934,9 @@
   <!-- Description of feature to change color setting for the display [CHAR LIMIT=NONE] -->
   <string name="picture_color_mode_desc">sRGB verwenden</string>
   <!-- Name of the setting to change the display's color temperature -->
-  <string name="color_temperature">Cool color temperature</string>
+  <string name="color_temperature">Kühle Farbtemperatur</string>
   <!-- Description of the setting to change the display's color temperature -->
-  <string name="color_temperature_desc">Use cooler display colors</string>
+  <string name="color_temperature_desc">Kühlere Display-Farben verwenden</string>
   <!-- Toast message letting the user know the color temperature setting is not immediate -->
-  <string name="color_temperature_toast">To apply color change, turn off screen</string>
+  <string name="color_temperature_toast">Um die Farbänderung zu übernehmen, Bildschirm deaktivieren</string>
 </resources>

@@ -155,9 +155,9 @@
   <string name="title_keyboard_input">Erweiterte Optionen</string>
   <string name="disable_fullscreen_keyboard_title">Deaktiviere Vollbild-Tastatur</string>
   <string name="disable_fullscreen_keyboard_summary">Im Querformat wird die Tastatur niemals das ganze Display einnehmen</string>
-  <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-  <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-  <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+  <string name="volume_key_cursor_control_title">Lautstärketasten-Cursor-Steuerung</string>
+  <string name="volume_key_cursor_control_on">Lauter-/Leiser-Taste bewegt den Cursor nach links/rechts</string>
+  <string name="volume_key_cursor_control_on_reverse">Lauter-/Leiser-Taste bewegt den Cursor nach rechts/links</string>
   <string name="keyboard_rotation_toggle_title">Automatische Tastatur-Rotation</string>
   <string name="keyboard_rotation_toggle_summary">Erzwinge die Auto-Rotation, wenn die Tastatur dargestellt wird</string>
   <string name="keyboard_rotation_timeout_title">Timeout der Auto-Rotation</string>
@@ -322,12 +322,12 @@
   <string name="fivehundred_ms_default">500 ms (Standard)</string>
   <string name="sevenfifty_ms">750 ms</string>
   <string name="one_second">1 s</string>
-  <string name="onehalf_second">1.5 s</string>
+  <string name="onehalf_second">1,5 s</string>
   <string name="two_second">2 s</string>
-  <string name="twohalf_second">2.5 s</string>
+  <string name="twohalf_second">2,5 s</string>
   <string name="three_second_default">3 s (Standard)</string>
-  <string name="threehalf_second">3.5 s</string>
+  <string name="threehalf_second">3,5 s</string>
   <string name="four_second">4 s</string>
-  <string name="fourhalf_second">4.5 s</string>
+  <string name="fourhalf_second">4,5 s</string>
   <string name="five_second">5 s</string>
 </resources>
