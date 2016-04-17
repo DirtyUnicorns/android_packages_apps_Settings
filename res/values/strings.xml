@@ -228,7 +228,7 @@
     <string name="bluetooth_disable_profile_message">This will disable:&lt;br>&lt;b><xliff:g id="profile_name">%1$s</xliff:g>&lt;/b>&lt;br>&lt;br>From:&lt;br>&lt;b><xliff:g id="device_name">%2$s</xliff:g>&lt;/b></string>
 
     <!-- Bluetooth settings.  Message when the device state is unknown -->
-    <string name="bluetooth_unknown" />
+    <string name="bluetooth_unknown" translatable="false" />
     <!--Bluetooth settings screen, summary text for Bluetooth device with no name -->
     <string name="bluetooth_device">Unnamed Bluetooth device</string>
     <!--Bluetooth settings screen, text that appears in heading bar when scanning for devices -->
@@ -955,7 +955,7 @@
     <!-- Title for preference that disables unlock security [CHAR LIMIT=22] -->
     <string name="unlock_set_unlock_off_title">None</string>
     <!-- Summary for preference that disables unlock security [CHAR LIMIT=45] -->
-    <string name="unlock_set_unlock_off_summary"></string>
+    <string name="unlock_set_unlock_off_summary" translatable="false"></string>
 
     <!-- Title for preference that disables unlock security [CHAR LIMIT=22] -->
     <string name="unlock_set_unlock_none_title">Swipe</string>
@@ -1195,7 +1195,7 @@
     <string name="bluetooth_pairing_shares_phonebook">Allow <xliff:g id="device_name">%1$s</xliff:g> to access your contacts and call history</string>
 
     <!-- Title for BT error dialogs. -->
-    <string name="bluetooth_error_title"></string>
+    <string name="bluetooth_error_title" translatable="false"></string>
 
     <!-- Message for the error dialog when BT connecting operation fails generically. -->
     <string name="bluetooth_connecting_error_message">Couldn\u2019t connect to <xliff:g id="device_name">%1$s</xliff:g>.</string>
@@ -2252,9 +2252,9 @@
     <string name="sd_mount" product="default">Mount SD card</string>
 
     <!-- Subtext for Mount USB storage in Storage settings. User should never see this since we use automount. -->
-    <string name="sd_mount_summary" product="nosdcard"></string>
+    <string name="sd_mount_summary" product="nosdcard" translatable="false"></string>
     <!-- Subtext for Mount SD Card in Storage settings. User should never see this since we use automount. -->
-    <string name="sd_mount_summary" product="default"></string>
+    <string name="sd_mount_summary" product="default" translatable="false"></string>
     <!-- SD card & phone storage settings item title that will result in the phone formatting the USB storage.   [CHAR LIMIT=25] -->
     <string name="sd_format" product="nosdcard">Erase USB storage</string>
     <!-- SD card & phone storage settings item title that will result in the phone formatting the SD card.   [CHAR LIMIT=25] -->
@@ -2282,9 +2282,9 @@
     <!-- SD card eject confirmation dialog  -->
     <string name="dlg_confirm_unmount_text" product="default">If you unmount the SD card, some apps you are using will stop and may be unavailable until you remount the SD card.</string>
     <!-- SD card eject error dialog title   [CHAR LIMIT=30] -->
-    <string name="dlg_error_unmount_title" product="nosdcard"></string>
+    <string name="dlg_error_unmount_title" product="nosdcard" translatable="false"></string>
     <!-- SD card eject error dialog title   -->
-    <string name="dlg_error_unmount_title" product="default"></string>
+    <string name="dlg_error_unmount_title" product="default" translatable="false"></string>
     <!-- SD card eject error dialog text   [CHAR LIMIT=NONE] -->
     <string name="dlg_error_unmount_text" product="nosdcard">Couldn\u2019t unmount USB storage. Try again later.</string>
     <!-- SD card eject error dialog text   -->
@@ -2601,7 +2601,7 @@
     <!-- Edit access point screen menu option to discard the user's changes for this APN -->
     <string name="menu_cancel">Discard</string>
     <!-- APN error dialog title -->
-    <string name="error_title"></string>
+    <string name="error_title" translatable="false"></string>
     <!-- APN error dialog messages: -->
     <string name="error_name_empty">The Name field can\u2019t be empty.</string>
     <!-- APN error dialog messages: -->
@@ -3184,7 +3184,7 @@
     <!-- Manage applications, individual application screen, confirmation dialog button. Displays when user selects to "Clear data". -->
     <string name="dlg_cancel">Cancel</string>
     <!-- Manage applications, individual application dialog box title. Shown when the user somehow got into a state where it wants to manage some app that isn't found. -->
-    <string name="app_not_found_dlg_title"></string>
+    <string name="app_not_found_dlg_title" translatable="false"></string>
     <!-- Manage applications, individual application dialog box message. Shown when the user somehow got into a state where it wants to manage some app that isn't found. -->
     <string name="app_not_found_dlg_text"> The app wasn\u2019t found in the list of installed apps.</string>
     <!-- Manage applications, individual application dialog box message. Shown when there was an error trying to clear the data. -->
@@ -3258,7 +3258,7 @@
     <!-- [CHAR LIMIT=200] Manage applications, text for dialog when killing persistent apps-->
     <string name="force_stop_dlg_text">If you force stop an app, it may misbehave.</string>
     <!-- Manage applications, text for dialog when moving an app -->
-    <string name="move_app_failed_dlg_title"></string>
+    <string name="move_app_failed_dlg_title" translatable="false"></string>
     <!-- Manage applications, text for dialog moving an app -->
     <string name="move_app_failed_dlg_text">Couldn\u2019t move app. <xliff:g id="reason">%1$s</xliff:g></string>
     <!-- Manage applications, application installation location title -->
@@ -4602,7 +4602,7 @@
     <string name="credentials_settings_not_available">Credentials are not available for this user</string>
 
     <!-- Title of dialog to enable credential storage [CHAR LIMIT=30] -->
-    <string name="credentials_unlock"></string>
+    <string name="credentials_unlock" translatable="false"></string>
     <!-- Description of dialog to enable credential storage [CHAR LIMIT=NONE] -->
     <string name="credentials_unlock_hint">Type the password for credential storage.</string>
     <!-- Description of the input box for the old password [CHAR LIMIT=30] -->
@@ -4674,7 +4674,7 @@
     <string name="local_backup_password_toast_validation_failure">Failure setting backup password</string>
 
     <!-- Dialog title for confirmation to erase backup data from server -->
-    <string name="backup_erase_dialog_title"></string>
+    <string name="backup_erase_dialog_title" translatable="false"></string>
     <!-- Dialog title for confirmation to erase backup data from server -->
     <string name="backup_erase_dialog_message">Stop backing up your Wi\u2011Fi passwords, bookmarks, other settings, and app data, plus erase all copies on Google servers?</string>
     <!-- Dialog title for confirmation to erase full backup data from server -->
@@ -5811,7 +5811,7 @@
     <string name="user_image_photo_selector">Select photo</string>
 
     <!-- Text to display in regulatory info screen (from device overlay). -->
-    <string name="regulatory_info_text"></string>
+    <string name="regulatory_info_text" translatable="false"></string>
 
     <!-- Title for SIM card settings during Setup Wizard.  [CHAR LIMIT=40] -->
     <string name="sim_setup_wizard_title">SIM cards</string>
