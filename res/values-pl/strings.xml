@@ -1350,7 +1350,7 @@
   <string name="wifi_wps_nfc_enter_password">Podaj hasło do sieci</string>
   <string name="wifi_scan_always_turnon_message">Aby poprawić dokładność lokalizacji (i w innych celach), <xliff:g id="APP_NAME">%1$s</xliff:g> chce włączyć skanowanie sieci – nawet gdy Wi-Fi jest wyłączone.\n\nZezwolić na to wszystkim aplikacjom, które chcą wykonywać skanowanie?</string>
   <!-- Message informing the user how to turn off  [CHAR LIMIT=200] -->
-  <string name="wifi_scan_always_turnoff_message">Aby wyłączyć tę opcję, w rozszerzonym menu otwórz Zaawansowane.</string>
+  <string name="wifi_scan_always_turnoff_message">Aby wyłączyć tę opcję, przejdź do Zaawansowanych w rozwijanym menu.</string>
   <string name="wifi_scan_always_confirm_allow">Zezwól</string>
   <string name="wifi_scan_always_confirm_deny">Odrzuć</string>
   <!-- Dialog label to sign in to a Hotspot. [CHAR LIMIT=50]-->

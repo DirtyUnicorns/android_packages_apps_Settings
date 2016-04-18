@@ -81,12 +81,12 @@
   <!-- Less notification sounds -->
   <string name="sound_title">Dźwięk</string>
   <string name="safe_headset_volume_title">Bezpieczna głośność słuchawek</string>
-  <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is first plugged in</string>
-  <string name="safe_headset_volume_warning_dialog_text">Listening at high volume for long periods may damage your hearing. Disable it with caution.</string>
+  <string name="safe_headset_volume_summary">Zapobiegaj wysokiej głośności przy pierwszym podłączeniu słuchawek</string>
+  <string name="safe_headset_volume_warning_dialog_text">Używanie słuchawek przy wysokim poziomie głośności może spowodować trwałe uszkodzenie słuchu. Rozważnie korzystaj z tej opcji.</string>
   <string name="notifications_category_title">Powiadomienia</string>
   <string name="sound_misc_category_title">Systemowe</string>
   <string name="less_notification_sounds_title">Zmniejszenie częstotliwości dźwięków powiadomień</string>
-  <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
+  <string name="less_notification_sounds_summary">Ogranicz ilość dźwięków powiadomień każdej aplikacji do jednego w wybranym czasie</string>
   <string name="less_notification_sounds_default">Domyślne zachowanie</string>
   <string name="less_notification_sounds_3s">3 sekundy</string>
   <string name="less_notification_sounds_5s">5 sekund</string>
@@ -99,11 +99,11 @@
   <string name="less_notification_sounds_5m">5 minut</string>
   <!-- Volume Keys Media Control -->
   <string name="volume_keys_control_media_stream">Sterowanie multimediami</string>
-  <string name="volume_keys_control_media_stream_summary">Volume keys control media volume rather than notifications</string>
+  <string name="volume_keys_control_media_stream_summary">Przyciski głośności kontrolują głośność mediów zamiast powiadomień</string>
   <!-- Camera sound -->
   <string name="camera_sounds_title">Dźwięk migawki aparatu</string>
   <string name="camera_sounds_summary">Włącz dźwięk migawki aparatu</string>
-  <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
+  <string name="camera_sound_warning_dialog_text">Wyłączenie dźwięku migawki aparatu jest nielegalne w niektórych regionach! Sprawdź, czy w Twoim państwie jest to zgodne z prawem.</string>
   <!-- Increasing ring tone volume -->
   <string name="increasing_ring_volume_option_title">Narastająca głośność dzwonka</string>
   <string name="increasing_ring_min_volume_title">Głośność początkowa</string>
@@ -161,25 +161,25 @@
   <string name="keyboard_rotation_toggle_title">Automatyczny obrót klawiatury</string>
   <string name="keyboard_rotation_toggle_summary">Wymuś auto-obracanie, gdy klawiatura jest wyświetlana</string>
   <string name="keyboard_rotation_timeout_title">Opóźnienie autoobracania</string>
-  <string name="keyboard_rotation_timeout_summary">Disables auto-rotate sensor <xliff:g id="rotate_timeout">%1$s</xliff:g> seconds after keyboard is hidden</string>
-  <string name="keyboard_rotation_dialog">This feature forces auto-rotate to turn on temporarily while the keyboard is shown.  It has no effect when auto-rotate is already enabled.</string>
+  <string name="keyboard_rotation_timeout_summary">Wyłącza czujnik automatycznego obracania ekranu <xliff:g id="rotate_timeout">%1$s</xliff:g> sekund po schowaniu klawiatury</string>
+  <string name="keyboard_rotation_dialog">Ta funkcja wymusza tymczasowe włączenie auto-obracania, gdy klawiatura jest wyświetlana. Funkcja ta nie ma żadnego wpływu na auto-obrót jeśli został on już wcześniej włączony.</string>
   <string name="show_enter_key_title">Pokaż klawisz Enter</string>
   <string name="show_enter_key_summary">Wymuś wyświetlanie klawisza enter zamiast klawisza emotikon</string>
   <string name="ime_switcher_notify">Powiadomienie wyboru klawiatury</string>
-  <string name="ime_switcher_notify_summary">Display input method selector notification</string>
+  <string name="ime_switcher_notify_summary">Wyświetl powiadomienie wyboru klawiatury</string>
   <string name="attention">Uwaga</string>
   <!-- Android debugging over WiFi -->
   <string name="adb_over_network">ADB przez sieć</string>
-  <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi-Fi, USB networks). This setting is reset on reboot</string>
+  <string name="adb_over_network_summary">Aktywuj debugowanie TCP/IP przez interfejs sieciowy (Wi-Fi, sieci USB). Ustawienie zostanie zresetowane po ponownym uruchomieniu</string>
   <!-- Warning for Adb over Network -->
   <string name="adb_over_network_warning">UWAGA: Kiedy ADB przez sieć jest aktywne, telefon jest otwarty na instrukcje w każdej połączonej sieci, w tym GSM!\n\nUżywaj tej funkcji tylko, gdy jesteś połączony z zaufanymi sieciami.\n\nCzy na pewno chcesz aktywować?</string>
   <!-- Media ducking -->
   <string name="interruptions_ignore_while_media_title">Zapobiegaj przyciszaniu dźwięku</string>
-  <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
+  <string name="interruptions_ignore_while_media_summary">Nie zmniejszaj głośności odtwarzania mediów po odebraniu powiadomienia</string>
   <!-- Doze notification color invert -->
   <string name="doze_notification_color_invert_title">Odwrócenie kolorów</string>
-  <string name="doze_notification_color_invert_summary_off">Ambient display notifications will not be inverted. Use for dark themes.</string>
-  <string name="doze_notification_color_invert_summary_on">Ambient display notifications will show as inverted. Use for light/stock theme.</string>
+  <string name="doze_notification_color_invert_summary_off">Czarne powiadomienia Ambient Display. Użyj dla ciemnego motywu.</string>
+  <string name="doze_notification_color_invert_summary_on">Białe powiadomienia Ambient Display. Użyj dla jasnego/domyślnego motywu.</string>
   <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
   <string name="bluetooth_accept_all_files">Akceptuj wszystkie typy plików</string>
   <!-- Display : Rotation -->
@@ -195,19 +195,19 @@
   <string name="display_lockscreen_rotation_title">Ekran blokady</string>
   <!-- Scramble PIN Layout on Lockscreen -->
   <string name="unlock_scramble_pin_layout_title">Pomieszany układ</string>
-  <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+  <string name="unlock_scramble_pin_layout_summary">Pomieszany układ cyfr przy wpisywaniu kodu PIN</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Wybudź przy podłączeniu</string>
-  <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Włącz ekran podczas podłączania i odłączania źródła zasilania</string>
   <!-- Headset Plugged In notification -->
   <string name="headset_plugged_in_title">Powiadomienie podłączonych słuchawek</string>
-  <string name="headset_plugged_in_summary">Enable notification for when the headset is plugged in</string>
+  <string name="headset_plugged_in_summary">Wyświetl powiadomienie podczas podłączania słuchawek</string>
   <!-- Wi-Fi settings screen, advanced, title for setting the wifi region code. -->
   <string name="wifi_setting_countrycode_title">Kod regionu Wi-Fi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi region code [CHAR LIMIT=50]-->
   <string name="wifi_setting_countrycode_summary">Określ kod regionu dla Wi-Fi</string>
   <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_countrycode_error">There was a problem setting the region code.</string>
+  <string name="wifi_setting_countrycode_error">Wystąpił błąd przy ustawianiu kodu regionu.</string>
   <string name="wifi_setting_countrycode_default">Domyślny</string>
   <!-- Device Hostname -->
   <string name="device_hostname">Nazwa hosta</string>
@@ -242,17 +242,17 @@
   <!-- Double tap to launch target -->
   <string name="dt2l_target_category">Działanie po dwukrotnym dotknięciu</string>
   <string name="dt2l_target_vib_title">Dostosuj wibracje</string>
-  <string name="dt2l_target_vib_summary">Adjust the vibration when double tapping the power button</string>
+  <string name="dt2l_target_vib_summary">Dostosuj wibrację po podwójnym kliknięciu przycisku zasilania</string>
   <string name="camera_double_tap_power_gesture_title">Włącz uruchamianie podwójnym kliknięciem</string>
-  <string name="camera_double_tap_power_gesture_desc">Double tap on the power button to launch right lockscreen target</string>
+  <string name="camera_double_tap_power_gesture_desc">Dwukrotnie naciśnij na przycisk zasilania, aby uruchomić prawy skrót ekranu blokady</string>
   <!-- Battery stats reset -->
   <string name="battery_stats_reset">Zresetuj statystyki</string>
-  <string name="battery_stats_message">Battery history stats are going to be reset</string>
+  <string name="battery_stats_message">Statystyki baterii zostaną zresetowane</string>
   <string name="ok_string">Ok</string>
   <!-- Dashboard settings -->
   <string name="dashboard_category">Opcje panelu ustawień</string>
   <string name="dashboard_columns_title">Kolumny Ustawień</string>
-  <string name="dashboard_columns_summary">Change the number of columns displayed in the dashboard</string>
+  <string name="dashboard_columns_summary">Zmień ilość kolumn wyświetlanych w ustawieniach</string>
   <string name="dashboard_columns_dialog_title">Wybierz kolumny ustawień</string>
   <string name="dashboard_columns_one">Jedna</string>
   <string name="dashboard_columns_two">Dwie</string>
@@ -265,57 +265,57 @@
   <string name="dashboard_switches_title">Przełączniki w ustawieniach</string>
   <string name="dashboard_switches_off">Przełączniki wyłączone</string>
   <string name="dashboard_switches_on">Przełączniki włączone</string>
-  <string name="dashboard_switches_summary">Change the position of the dashboard switches</string>
+  <string name="dashboard_switches_summary">Zmień położenie przełączników w ustawieniach</string>
   <string name="dashboard_switches_dialog_title">Wybierz stan przełącznika</string>
   <!-- Keyguard notifications options -->
   <string name="app_notification_show_on_keyguard_title">Pokaż na ekranie blokady</string>
-  <string name="app_notification_show_on_keyguard_summary">Show notifications from this app on the lockscreen</string>
+  <string name="app_notification_show_on_keyguard_summary">Pokaż powiadomienia z tej aplikacji na ekranie blokady</string>
   <string name="app_notification_no_ongoing_on_keyguard_title">Wyłącz trwałe powiadomienia na ekranie blokady</string>
-  <string name="app_notification_no_ongoing_on_keyguard_summary">Never show ongoing notifications from this app on the lockscreen</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">Nigdy nie pokazuj trwałych powiadomień z tej aplikacji na ekranie blokady</string>
   <!-- Blacklist preferences -->
   <string name="app_security_title">Prywatność</string>
   <string name="blacklist_title">Lista zablokowanych numerów</string>
   <string name="blacklist_edit_dialog_title">Edytuj zablokowany numer telefonu</string>
   <string name="blacklist_prefs">Ustawienia</string>
   <string name="blacklist_button_delete">Usuń</string>
-  <string name="blacklist_empty_text">You don\'t have any blocked numbers. Add an entry by touching the Add (+) button.</string>
-  <string name="blacklist_disabled_empty_text">To prevent phone numbers from calling or messaging you, enable the blocked caller list.</string>
+  <string name="blacklist_empty_text">Nie masz żadnych numerów na czarnej liście. Dodaj numer przyciskiem (+).</string>
+  <string name="blacklist_disabled_empty_text">Aby zabronić numerom telefonu na kontakt z tobą, włącz czarną listę rozmówców.</string>
   <string name="blacklist_summary_disabled">Wyłączona</string>
-  <string name="blacklist_summary">You will not receive incoming calls or messages from phone numbers on the blocked caller list</string>
+  <string name="blacklist_summary">Nie otrzymasz przychodzących połączeń i wiadomości od numerów z czarnej listy</string>
   <string name="blacklist_notify">Pokaż powiadomienie</string>
   <string name="blacklist_private_numbers_title">Numery prywatne</string>
   <string name="blacklist_private_numbers_summary_disabled">Nie blokuj połączeń z numerów zastrzeżonych</string>
-  <string name="blacklist_private_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from private numbers</string>
+  <string name="blacklist_private_numbers_summary">Blokuj przychodzące <xliff:g id="type">%s</xliff:g> z numerów prywatnych</string>
   <string name="blacklist_unknown_numbers_title">Nieznane numery</string>
-  <string name="blacklist_unknown_numbers_summary_disabled">Don\'t block calls or messages from numbers not in the contact list</string>
-  <string name="blacklist_unknown_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from numbers not in the contact list</string>
+  <string name="blacklist_unknown_numbers_summary_disabled">Nie blokuj połączeń lub wiadomości z numerów, które nie są w Twojej liście kontaktów</string>
+  <string name="blacklist_unknown_numbers_summary">Blokuj przychodzące <xliff:g id="type">%s</xliff:g> z numerów które nie są na liście kontaktów</string>
   <string name="blacklist_summary_type_calls_only">rozmowy</string>
   <string name="blacklist_summary_type_messages_only">wiadomości</string>
   <string name="blacklist_summary_type_calls_and_messages">połączenia i wiadomości</string>
   <string name="blacklist_regex_title">Użyj symboli wieloznacznych</string>
-  <string name="blacklist_regex_summary">Use . as a wildcard and * for repetition. E.g. 123.* blocks numbers starting with 123 and .*123.* blocks numbers containing 123</string>
+  <string name="blacklist_regex_summary">Użyj \".\" i \"*\" jako zamiennika dowolnego ciągu powtórzeń. Np. 123.* blokuje numery zaczynające się od 123, a .*123.* blokuje numery zawierające 123</string>
   <string name="blacklist_policy_block_calls">Blokuj połączenia przychodzące</string>
   <string name="blacklist_policy_block_messages">Blokuj przychodzące wiadomości</string>
-  <string name="blacklist_bad_number_add">Unable to add invalid phone number to blocked caller list</string>
+  <string name="blacklist_bad_number_add">Nie można dodać błędnego numeru do czarnej listy</string>
   <!-- Blacklist management -->
   <string name="remove_blacklist_number_title">Usuń numer</string>
-  <string name="remove_blacklist_entry">Do you want to remove this blocked phone number?</string>
+  <string name="remove_blacklist_entry">Czy chcesz usunąć numer z czarnej listy?</string>
   <string name="select_contact">Wybierz kontakt</string>
   <!-- Doze pulse options -->
   <string name="summary_doze_enabled">Włączony</string>
   <string name="summary_doze_disabled">Wyłączone</string>
   <string name="doze_overwrite_value_title">Nadpisz domyślne</string>
-  <string name="doze_overwrite_value_summary">Allow override of default values with user config</string>
+  <string name="doze_overwrite_value_summary">Pozwól nadpisać domyślną wartość konfiguracją użytkownika</string>
   <string name="doze_pulse_title">Konfigurowalne przez użytkownika</string>
   <string name="doze_pulse_duration_in_title">Zanikanie</string>
   <string name="doze_pulse_duration_visible_title">Czas widoczności</string>
   <string name="doze_pulse_duration_out_title">Zanikanie</string>
   <string name="doze_trigger_pickup_title">Aktywacja przy podniesieniu urządzenia</string>
-  <string name="doze_trigger_pickup_summary_on">Pulse will be triggered by pick up sensor</string>
-  <string name="doze_trigger_pickup_summary_off">Pick up sensor will not be utilized as a trigger</string>
+  <string name="doze_trigger_pickup_summary_on">Impuls będzie uruchamiany przez podniesienie telefonu</string>
+  <string name="doze_trigger_pickup_summary_off">Podnoszenie telefonu nie będzie wykorzystywane do uruchamiania</string>
   <string name="doze_trigger_notification_title">Uruchamianie przez powiadomienia</string>
   <string name="doze_trigger_notification_summary_on">Impulsy powiadomień będą uruchamiane przez powiadomienia</string>
-  <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
+  <string name="doze_trigger_notification_summary_off">Powiadomienia nie będą wykorzystywane do uruchamiania</string>
   <string name="doze_brightness_level_title">Poziom jasności</string>
   <string name="onehundred_ms">100 ms</string>
   <string name="twofifty_ms">250 ms</string>

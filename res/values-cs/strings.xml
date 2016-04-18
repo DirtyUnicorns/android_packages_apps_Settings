@@ -280,7 +280,7 @@
   <!-- Label for chosen font size -->
   <string name="display_font_size_label">Velikost písma:</string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
-  <string name="intent_sender_data_label"><xliff:g id="data">Data:</xliff:g></string>
+  <string name="intent_sender_data_label"><xliff:g id="data"> údaje: </xliff:g></string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
   <string name="intent_sender_sendbroadcast_text">Odeslat <xliff:g id="BROADCAST">broadcast</xliff:g></string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
@@ -839,27 +839,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Bez bezpečnostního gesta nebudou funkce ochrany zařízení fungovat."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"Bez bezpečnostního gesta nebudou funkce ochrany zařízení fungovat.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"Bez bezpečnostního gesta nebudou funkce ochrany zařízení fungovat.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Ze zařízení budou odstraněny i uložené otisky prstů, a tak nebudete moci telefon odemknout, potvrzovat nákupy ani se přihlašovat do aplikací.\"\""</string>
+</xliff:g>Ze zařízení budou odstraněny i uložené otisky prstů, a tak nebudete moci telefon odemknout, potvrzovat nákupy ani se přihlašovat do aplikací.\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Bez kódu PIN nebudou funkce ochrany zařízení fungovat."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"Bez kódu PIN nebudou funkce ochrany zařízení fungovat.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"Bez kódu PIN nebudou funkce ochrany zařízení fungovat.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Ze zařízení budou odstraněny i uložené otisky prstů, a tak nebudete moci telefon odemknout, potvrzovat nákupy ani se přihlašovat do aplikací.\"\""</string>
+</xliff:g>Ze zařízení budou odstraněny i uložené otisky prstů, a tak nebudete moci telefon odemknout, potvrzovat nákupy ani se přihlašovat do aplikací.\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Bez hesla nebudou funkce ochrany zařízení fungovat."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"Bez hesla nebudou funkce ochrany zařízení fungovat.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"Bez hesla nebudou funkce ochrany zařízení fungovat.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Ze zařízení budou odstraněny i uložené otisky prstů, a tak nebudete moci telefon odemknout, potvrzovat nákupy ani se přihlašovat do aplikací.\"\""</string>
+</xliff:g>Ze zařízení budou odstraněny i uložené otisky prstů, a tak nebudete moci telefon odemknout, potvrzovat nákupy ani se přihlašovat do aplikací.\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Bez zámku obrazovky nebudou funkce ochrany zařízení fungovat."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"Bez zámku obrazovky nebudou funkce ochrany zařízení fungovat.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"Bez zámku obrazovky nebudou funkce ochrany zařízení fungovat.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Ze zařízení budou odstraněny i uložené otisky prstů, a tak nebudete moci telefon odemknout, potvrzovat nákupy ani se přihlašovat do aplikací.\"\""</string>
+</xliff:g>Ze zařízení budou odstraněny i uložené otisky prstů, a tak nebudete moci telefon odemknout, potvrzovat nákupy ani se přihlašovat do aplikací.\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Ano, odstranit</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
@@ -1841,7 +1841,7 @@
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="kernel_version">Verze jádra</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
-  <string name="build_date">Build date</string>
+  <string name="build_date">Datum sestavení</string>
   <string name="build_date_default">2012-01-01-0000</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="selinux_status">Stav zabezpečení SELinux</string>

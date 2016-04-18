@@ -154,7 +154,7 @@
   <!-- Battery Info screen. Value for a status item.  Used for diagnostic info screens, precise translation isn't needed -->
   <string name="battery_info_status_full">Батарея заряжена</string>
   <!-- Used as setting title (for checkbox) on second screen after selecting Bluetooth settings -->
-  <string name="bluetooth">Bluetooth</string>
+  <string name="bluetooth">Устройства Bluetooth</string>
   <!-- Bluetooth settings screen, summary after selecting Discoverable check box [CHAR LIMIT=50] -->
   <string name="bluetooth_is_discoverable">Виден другим Bluetooth-устройствам: <xliff:g id="DISCOVERABLE_TIME_PERIOD">%1$s</xliff:g></string>
   <!-- Bluetooth settings screen, summary when Discoverable duration is set to "forever" [CHAR LIMIT=50] -->
@@ -280,7 +280,7 @@
   <!-- Label for chosen font size -->
   <string name="display_font_size_label">Размер шрифта:</string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
-  <string name="intent_sender_data_label"><xliff:g id="data">Data:</xliff:g></string>
+  <string name="intent_sender_data_label">Данные:</string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
   <string name="intent_sender_sendbroadcast_text">Отправить <xliff:g id="BROADCAST">broadcast</xliff:g></string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
@@ -956,13 +956,13 @@
   <string name="manage_trust_agents_summary">Посмотреть или отключить агенты доверия</string>
   <!-- Bluetooth settings -->
   <!-- Bluetooth settings check box title on Main Settings screen -->
-  <string name="bluetooth_quick_toggle_title">Bluetooth</string>
+  <string name="bluetooth_quick_toggle_title">Устройства Bluetooth</string>
   <!-- Bluetooth settings check box summary for turning on bluetooth -->
   <string name="bluetooth_quick_toggle_summary">Включить Bluetooth</string>
   <!--Used as title on second screen after selecting Bluetooth settings -->
-  <string name="bluetooth_settings">Bluetooth</string>
+  <string name="bluetooth_settings">Устройства Bluetooth</string>
   <!--Wireless controls screen, settings title for the item to take you to the bluetooth settings screen -->
-  <string name="bluetooth_settings_title">Bluetooth</string>
+  <string name="bluetooth_settings_title">Устройства Bluetooth</string>
   <!--Wireless controls screen, settings summary for the item tot ake you to the bluetooth settings screen -->
   <string name="bluetooth_settings_summary">Настройка подключений, видимости и имени устройства</string>
   <!-- ======================================================================================= -->
@@ -1841,8 +1841,8 @@
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="kernel_version">Версия ядра</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
-  <string name="build_date">Build date</string>
-  <string name="build_date_default">2012-01-01-0000</string>
+  <string name="build_date">Дата сборки</string>
+  <string name="build_date_default">01-01-2012-0000</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="selinux_status">Статус SELinux</string>
   <!-- About phone screen, show when a value of some status item is unavailable. -->
@@ -3558,7 +3558,7 @@
   <!-- Label for power consumed by Wi-Fi -->
   <string name="power_wifi">Wi-Fi</string>
   <!-- Label for power consumed by Bluetooth -->
-  <string name="power_bluetooth">Bluetooth</string>
+  <string name="power_bluetooth">Устройства Bluetooth</string>
   <!-- Label for power consumed by Cell idle -->
   <string name="power_cell">Связь с сетью</string>
   <!-- Label for power consumed by Calling -->
@@ -3943,7 +3943,7 @@
   <!-- Spoken description for the Wi-Fi power control gadget. -->
   <string name="gadget_wifi">Wi-Fi</string>
   <!-- Spoken description for the Bluetooth power control gadget. -->
-  <string name="gadget_bluetooth">Bluetooth</string>
+  <string name="gadget_bluetooth">Устройства Bluetooth</string>
   <!-- Spoken description for the Location power control gadget. -->
   <string name="gadget_location">Определение местоположения</string>
   <!-- Spoken description for the data synchronization gadget. -->
@@ -3959,7 +3959,7 @@
   <!-- Brightness gadget value used to describe minimum brightness state. -->
   <string name="gadget_brightness_state_off">минимум</string>
   <!-- Title of preference to enter the VPN settings activity -->
-  <string name="vpn_settings_title">VPN</string>
+  <string name="vpn_settings_title">Настройки VPN</string>
   <!-- Title of preference group for credential storage settings [CHAR LIMIT=30] -->
   <string name="credentials_title">Хранилище учетных данных</string>
   <!-- Title of preference to install certificates from SD card [CHAR LIMIT=30] -->
@@ -4293,7 +4293,7 @@
   <string name="cant_sync_dialog_title">Не удалось синхронизировать данные</string>
   <!-- Messaage shown in dialog when you can't manually sync -->
   <string name="cant_sync_dialog_message">Синхронизация отключена. Чтобы включить ее, временно разрешите передачу данных в фоновом режиме и автоматическую синхронизацию.</string>
-  <string name="wimax_settings">4G</string>
+  <string name="wimax_settings">Трафик 4G</string>
   <string name="status_wimax_mac_address">МАС-адрес для 4G</string>
   <!-- This is displayed to the user when the device needs to be decrypted -->
   <string name="enter_password">Чтобы запустить Android, введите пароль</string>
@@ -5011,7 +5011,7 @@
   <!-- Restrictions summary for configuring wifi and mobile [CHAR LIMIT=100] -->
   <string name="restriction_wifi_config_summary">Разрешить изменение настроек Wi‑Fi и мобильной сети</string>
   <!-- Restrictions title for changing bluetooth configuration [CHAR LIMIT=35] -->
-  <string name="restriction_bluetooth_config_title">Bluetooth</string>
+  <string name="restriction_bluetooth_config_title">Устройства Bluetooth</string>
   <!-- Restrictions summary for changing bluetooth configuration [CHAR LIMIT=100] -->
   <string name="restriction_bluetooth_config_summary">Разрешить изменение настроек Bluetooth-подключения</string>
   <!-- Restrictions title for allowing NFC transfers [CHAR LIMIT=35] -->

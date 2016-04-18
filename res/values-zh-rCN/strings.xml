@@ -280,7 +280,7 @@
   <!-- Label for chosen font size -->
   <string name="display_font_size_label">字号：</string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
-  <string name="intent_sender_data_label"><xliff:g id="data">Data:</xliff:g></string>
+  <string name="intent_sender_data_label"><xliff:g id="data"> 数据： </xliff:g></string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
   <string name="intent_sender_sendbroadcast_text">发送<xliff:g id="BROADCAST">broadcast</xliff:g></string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
@@ -837,27 +837,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"移除您的解锁图案后，设备保护功能将无法使用。"</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"移除您的解锁图案后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"移除您的解锁图案后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\""</string>
+</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"移除您的 PIN 码后，设备保护功能将无法使用。"</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"移除您的 PIN 码后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"移除您的 PIN 码后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\""</string>
+</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"移除您的密码后，设备保护功能将无法使用。"</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"移除您的密码后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"移除您的密码后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\""</string>
+</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"移除您的屏幕锁定方式后，设备保护功能将无法使用。"</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"移除您的屏幕锁定方式后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"移除您的屏幕锁定方式后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\""</string>
+</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">是，移除</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
@@ -1825,7 +1825,7 @@
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="kernel_version">内核版本</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
-  <string name="build_date">Build date</string>
+  <string name="build_date">编译日期</string>
   <string name="build_date_default">2012-01-01-0000</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="selinux_status">SELinux 状态</string>
@@ -5917,9 +5917,9 @@
   <!-- Description of feature to change color setting for the display [CHAR LIMIT=NONE] -->
   <string name="picture_color_mode_desc">使用 sRGB</string>
   <!-- Name of the setting to change the display's color temperature -->
-  <string name="color_temperature">Cool color temperature</string>
+  <string name="color_temperature">冷色温</string>
   <!-- Description of the setting to change the display's color temperature -->
-  <string name="color_temperature_desc">Use cooler display colors</string>
+  <string name="color_temperature_desc">使用更冷的显示颜色</string>
   <!-- Toast message letting the user know the color temperature setting is not immediate -->
-  <string name="color_temperature_toast">To apply color change, turn off screen</string>
+  <string name="color_temperature_toast">关闭屏幕以应用颜色修改</string>
 </resources>
