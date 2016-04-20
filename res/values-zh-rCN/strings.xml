@@ -837,27 +837,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"移除您的解锁图案后，设备保护功能将无法使用。"</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"移除您的解锁图案后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"移除您的解锁图案后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\"\""</string>
+</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"移除您的 PIN 码后，设备保护功能将无法使用。"</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"移除您的 PIN 码后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"移除您的 PIN 码后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\"\""</string>
+</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"移除您的密码后，设备保护功能将无法使用。"</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"移除您的密码后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"移除您的密码后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\"\""</string>
+</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"移除您的屏幕锁定方式后，设备保护功能将无法使用。"</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"移除您的屏幕锁定方式后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"移除您的屏幕锁定方式后，设备保护功能将无法使用。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\"\""</string>
+</xliff:g>您保存的指纹也将从此设备上移除。如此一来，您就无法通过指纹解锁手机、授权购买交易或登录应用。\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">是，移除</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
