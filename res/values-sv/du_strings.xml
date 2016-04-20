@@ -29,7 +29,7 @@
   <string name="bytes"> Bytes</string>
   <string name="cpuinfo">CPU INFO</string>
   <string name="chipset_processor">Chipset / Processor</string>
-  <string name="features">Features</string>
+  <string name="features">Funktioner</string>
   <string name="bogomips">BogoMIPS</string>
   <string name="abi">ABI</string>
   <string name="abitwo">ABI2</string>
