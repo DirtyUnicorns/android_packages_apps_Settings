@@ -67,14 +67,14 @@
   <string name="themes_settings_title">Motywy</string>
   <!-- DU Changelog -->
   <string name="duchangelog">Lista zmian DU</string>
-  <string name="du_summary">Sprawdź co się zmieniło w DU</string>
+  <string name="du_summary">Sprawdź, co się zmieniło</string>
   <string name="du_app_name">Lista zmian DU</string>
   <!-- DU Updater -->
   <string name="duupdater">Aktualizacje DU</string>
   <string name="duupdater_summary">Bądź na bieżąco z najnowszymi funkcjonalnościami i poprawkami</string>
   <!-- DU About -->
   <string name="aboutdu">O DirtyUnicorns</string>
-  <string name="aboutdu_summary">Informacja o deweloperach, opiekunach i funkcjonalnościach Romu</string>
+  <string name="aboutdu_summary">Informacje o naszych deweloperach, opiekunach i twórcach funkcji romu</string>
   <!-- Developer Tools -->
   <string name="developer_tools_title">Narzędzia deweloperskie</string>
   <string name="developer_tools_summary">Zaawansowane narzędzia debugowania</string>
@@ -243,7 +243,7 @@
   <string name="dt2l_target_category">Działanie po dwukrotnym dotknięciu</string>
   <string name="dt2l_target_vib_title">Dostosuj wibracje</string>
   <string name="dt2l_target_vib_summary">Dostosuj wibrację po podwójnym kliknięciu przycisku zasilania</string>
-  <string name="camera_double_tap_power_gesture_title">Włącz uruchamianie podwójnym kliknięciem</string>
+  <string name="camera_double_tap_power_gesture_title">Uruchamianie podwójnym kliknięciem</string>
   <string name="camera_double_tap_power_gesture_desc">Dwukrotnie naciśnij na przycisk zasilania, aby uruchomić prawy skrót ekranu blokady</string>
   <!-- Battery stats reset -->
   <string name="battery_stats_reset">Zresetuj statystyki</string>
@@ -251,22 +251,22 @@
   <string name="ok_string">Ok</string>
   <!-- Dashboard settings -->
   <string name="dashboard_category">Opcje panelu ustawień</string>
-  <string name="dashboard_columns_title">Kolumny Ustawień</string>
+  <string name="dashboard_columns_title">Ilość kolumn</string>
   <string name="dashboard_columns_summary">Zmień ilość kolumn wyświetlanych w ustawieniach</string>
   <string name="dashboard_columns_dialog_title">Wybierz kolumny ustawień</string>
   <string name="dashboard_columns_one">Jedna</string>
   <string name="dashboard_columns_two">Dwie</string>
   <string name="dashboard_columns_three">Trzy</string>
-  <string name="dashboard_tileview_double_lines_title">Widok tytułów ustawień</string>
+  <string name="dashboard_tileview_double_lines_title">Zawijanie tytułów</string>
   <string name="dashboard_tileview_double_lines_summary">Wyświetlaj tytuły ustawień w dwóch linijkach</string>
-  <string name="dashboard_tileview_dividers_title">Separatory w ustawieniach</string>
+  <string name="dashboard_tileview_dividers_title">Separatory</string>
   <string name="dashboard_tileview_dividers_summary">Ukryj separatory w ustawieniach</string>
   <!-- Optional Dashboard Switches -->
-  <string name="dashboard_switches_title">Przełączniki w ustawieniach</string>
-  <string name="dashboard_switches_off">Przełączniki wyłączone</string>
-  <string name="dashboard_switches_on">Przełączniki włączone</string>
+  <string name="dashboard_switches_title">Przełączniki</string>
+  <string name="dashboard_switches_off">Wyłączone</string>
+  <string name="dashboard_switches_on">Włączone</string>
   <string name="dashboard_switches_summary">Zmień położenie przełączników w ustawieniach</string>
-  <string name="dashboard_switches_dialog_title">Wybierz stan przełącznika</string>
+  <string name="dashboard_switches_dialog_title">Wybierz stan przełączników</string>
   <!-- Keyguard notifications options -->
   <string name="app_notification_show_on_keyguard_title">Pokaż na ekranie blokady</string>
   <string name="app_notification_show_on_keyguard_summary">Pokaż powiadomienia z tej aplikacji na ekranie blokady</string>
