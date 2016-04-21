@@ -17,15 +17,15 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- DU Extra Info -->
-  <string name="duextrainfo">Extra information</string>
-  <string name="duextrainfo_summary">Display extra info for cpu, display, etc</string>
-  <string name="basicinfo">BASIC INFO</string>
+  <string name="duextrainfo">Ekstra bilgi</string>
+  <string name="duextrainfo_summary">Cpu, ekran, vb için ekstra bilgi görüntüle</string>
+  <string name="basicinfo">TEMEL BİLGİLER</string>
   <string name="manufacturer">Manufacturer</string>
   <string name="hardwaretype">Hardware type</string>
   <string name="systempartition">System partition</string>
-  <string name="datapartition">Data partition</string>
+  <string name="datapartition">Veri bölümü</string>
   <string name="ram">RAM</string>
-  <string name="bootloader">Bootloader</string>
+  <string name="bootloader">Önyükleyici (Bootloader)</string>
   <string name="bytes"> Bytes</string>
   <string name="cpuinfo">CPU INFO</string>
   <string name="chipset_processor">Chipset / Processor</string>
@@ -33,30 +33,30 @@
   <string name="bogomips">BogoMIPS</string>
   <string name="abi">ABI</string>
   <string name="abitwo">ABI2</string>
-  <string name="architecture">Architecture</string>
+  <string name="architecture">Mimari</string>
   <string name="implementer">Implementer</string>
   <string name="variant">Variant</string>
   <string name="part">Part</string>
-  <string name="revision">Revision</string>
-  <string name="displayinfo">DISPLAY INFO</string>
-  <string name="diagonal">Diagonal</string>
-  <string name="height">Height</string>
+  <string name="revision">Revizyon</string>
+  <string name="displayinfo">EKRAN BİLGİSİ</string>
+  <string name="diagonal">Köşegen</string>
+  <string name="height">Yükseklik</string>
   <string name="width">Width</string>
   <string name="density">Density</string>
   <string name="dots_per_inch">DOTS PER INCH</string>
   <string name="actualdpi_x">Actual DPI X</string>
-  <string name="actualdpi_y">Actual DPI Y</string>
-  <string name="refresh_rate">Refresh Rate</string>
-  <string name="pixels">Pixels</string>
+  <string name="actualdpi_y">Gerçek DPI Y</string>
+  <string name="refresh_rate">Yenileme Hızı</string>
+  <string name="pixels">Pikseller</string>
   <string name="inches">Inches</string>
   <!-- DU version -->
   <string name="mod_version">DU version</string>
   <string name="mod_version_default">Unknown</string>
   <!-- Share Dirty Unicorns -->
-  <string name="share_du_title">Share Dirty Unicorns</string>
-  <string name="share_du_summary">Let others know about Dirty Unicorns</string>
-  <string name="share_message">Check out what #DirtyUnicorns is all about @ http://goo.gl/emISQ1</string>
-  <string name="share_chooser_title">Share Dirty Unicorns</string>
+  <string name="share_du_title">Dirty Unicorns\'u paylaş</string>
+  <string name="share_du_summary">Başkalarının Dirty Unicorns hakkında bilgilendirin</string>
+  <string name="share_message">#DirtyUnicorns hakkında herşey @ http://goo.gl/emISQ1</string>
+  <string name="share_chooser_title">Dirty Unicorns\'u paylaş</string>
   <!-- SuperSU -->
   <string name="supersu_title">SuperSU</string>
   <!-- Google -->
@@ -66,11 +66,11 @@
   <string name="custom_title">Dirty Tweaks</string>
   <string name="themes_settings_title">Themes</string>
   <!-- DU Changelog -->
-  <string name="duchangelog">Changelog</string>
-  <string name="du_summary">Check to see what has changed in DU</string>
-  <string name="du_app_name">DU Changelog</string>
+  <string name="duchangelog">Değişiklik kayıtları</string>
+  <string name="du_summary">DU içinde nelerin değiştiğini görmek için kontrol edin</string>
+  <string name="du_app_name">DU Değişiklik kayıtları</string>
   <!-- DU Updater -->
-  <string name="duupdater">Updater</string>
+  <string name="duupdater">Güncelleyici</string>
   <string name="duupdater_summary">Stay up to date with the latest features and fixes</string>
   <!-- DU About -->
   <string name="aboutdu">Info about DU</string>
@@ -79,23 +79,23 @@
   <string name="developer_tools_title">Developer tools</string>
   <string name="developer_tools_summary">Advanced debugging tools</string>
   <!-- Less notification sounds -->
-  <string name="sound_title">Sound</string>
-  <string name="safe_headset_volume_title">Safe headset volume</string>
-  <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is first plugged in</string>
-  <string name="safe_headset_volume_warning_dialog_text">Listening at high volume for long periods may damage your hearing. Disable it with caution.</string>
-  <string name="notifications_category_title">Notifications</string>
+  <string name="sound_title">Ses</string>
+  <string name="safe_headset_volume_title">Güvenli kulaklık ses seviyesi</string>
+  <string name="safe_headset_volume_summary">Kulaklık ilk bağlandığında yüksek ses düzeylerini engelle</string>
+  <string name="safe_headset_volume_warning_dialog_text">Uzun süre yüksek seste müzik dinlemek kulaklarınıza zarar verebilir. Dikkatlice devre dışı bırakın.</string>
+  <string name="notifications_category_title">Bildirimler</string>
   <string name="sound_misc_category_title">System</string>
   <string name="less_notification_sounds_title">Less frequent notification sounds</string>
   <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
   <string name="less_notification_sounds_default">Default Behaviour</string>
   <string name="less_notification_sounds_3s">3 seconds</string>
   <string name="less_notification_sounds_5s">5 seconds</string>
-  <string name="less_notification_sounds_10s">10 seconds</string>
-  <string name="less_notification_sounds_15s">15 seconds</string>
-  <string name="less_notification_sounds_30s">30 seconds</string>
-  <string name="less_notification_sounds_45s">45 seconds</string>
-  <string name="less_notification_sounds_1m">1 minute</string>
-  <string name="less_notification_sounds_2m">2 minutes</string>
+  <string name="less_notification_sounds_10s">10 Saniye</string>
+  <string name="less_notification_sounds_15s">15 saniye</string>
+  <string name="less_notification_sounds_30s">30 saniye</string>
+  <string name="less_notification_sounds_45s">45 Saniye</string>
+  <string name="less_notification_sounds_1m">1 dakika</string>
+  <string name="less_notification_sounds_2m">2 dakika</string>
   <string name="less_notification_sounds_5m">5 minutes</string>
   <!-- Volume Keys Media Control -->
   <string name="volume_keys_control_media_stream">Media control</string>
@@ -107,16 +107,16 @@
   <!-- Increasing ring tone volume -->
   <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
   <string name="increasing_ring_min_volume_title">Start volume</string>
-  <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
+  <string name="increasing_ring_ramp_up_time_title">Yükselme zamanı</string>
   <!-- Screenshot sound -->
-  <string name="screenshot_sound_title">Screenshot sound</string>
-  <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
+  <string name="screenshot_sound_title">Ekran görüntüsü alındı sesi</string>
+  <string name="screenshot_sound_summary">Ekran görüntüsü alındığında ses çal</string>
   <!-- Notification light dialogs -->
-  <string name="edit_light_settings">Edit light settings</string>
-  <string name="pulse_speed_title">Pulse length and speed</string>
+  <string name="edit_light_settings">Bildirim ışığı ayarlarını düzenle</string>
+  <string name="pulse_speed_title">Yanma hızı ve süresi</string>
   <string name="default_time">Normal</string>
-  <string name="custom_time">Custom</string>
-  <string name="dialog_delete_title">Delete</string>
+  <string name="custom_time">Özel</string>
+  <string name="dialog_delete_title">Sil</string>
   <string name="dialog_delete_message">Remove selected item?</string>
   <string name="profiles_add">Add</string>
   <string name="profile_choose_app">Choose app</string>
@@ -126,16 +126,16 @@
   <string name="pulse_length_very_short">Very short</string>
   <string name="pulse_length_short">Short</string>
   <string name="pulse_length_normal">Normal</string>
-  <string name="pulse_length_long">Long</string>
-  <string name="pulse_length_very_long">Very long</string>
-  <string name="pulse_speed_very_fast">Very fast</string>
-  <string name="pulse_speed_fast">Fast</string>
+  <string name="pulse_length_long">Uzun</string>
+  <string name="pulse_length_very_long">Çok uzun</string>
+  <string name="pulse_speed_very_fast">Çok hızlı</string>
+  <string name="pulse_speed_fast">Hızlı</string>
   <string name="pulse_speed_normal">Normal</string>
-  <string name="pulse_speed_slow">Slow</string>
-  <string name="pulse_speed_very_slow">Very slow</string>
+  <string name="pulse_speed_slow">Yavaş</string>
+  <string name="pulse_speed_very_slow">Çok yavaş</string>
   <!-- Battery light settings -->
-  <string name="battery_light_title">Battery light</string>
-  <string name="battery_low_pulse_title">Pulse if battery low</string>
+  <string name="battery_light_title">Pil ışığı</string>
+  <string name="battery_low_pulse_title">Pil düşük seviyede ise yanıp sön</string>
   <string name="battery_light_list_title">Colors</string>
   <string name="battery_light_low_color_title">Battery low</string>
   <string name="battery_light_medium_color_title">Charging</string>
@@ -148,16 +148,16 @@
   <string name="notification_light_use_custom">Use custom values</string>
   <string name="notification_light_default_value">Default</string>
   <string name="notification_light_missed_call_title">Missed call</string>
-  <string name="notification_light_voicemail_title">Voicemail</string>
-  <string name="notification_light_screen_on">Lights with screen on</string>
-  <string name="allow_lights_title">Lights in do not disturb mode</string>
+  <string name="notification_light_voicemail_title">Sesli mail</string>
+  <string name="notification_light_screen_on">Ekran açıkken yanıp sön</string>
+  <string name="allow_lights_title">Rahatsız etmeyin modunda ışıklar</string>
   <!-- Keyboard and Input methods  -->
-  <string name="title_keyboard_input">Advanced options</string>
-  <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
-  <string name="disable_fullscreen_keyboard_summary">Landscape keyboard will never take up entire screen</string>
-  <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-  <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-  <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+  <string name="title_keyboard_input">Gelişmiş seçenekler</string>
+  <string name="disable_fullscreen_keyboard_title">Tam ekran klavyeyi devre dışı bırak</string>
+  <string name="disable_fullscreen_keyboard_summary">Yatay klavye tüm ekranı asla kaplamayacak</string>
+  <string name="volume_key_cursor_control_title">Ses seviyesi tuşu ile imleç kontrolü</string>
+  <string name="volume_key_cursor_control_on">Ses arttırma/azaltma imleci sol/sağa kaydırır</string>
+  <string name="volume_key_cursor_control_on_reverse">Ses arttırma/azaltma imleci sağa/sola kaydırır</string>
   <string name="keyboard_rotation_toggle_title">Auto keyboard rotation</string>
   <string name="keyboard_rotation_toggle_summary">Force auto-rotate when keyboard is shown</string>
   <string name="keyboard_rotation_timeout_title">Auto-rotate timeout</string>
@@ -170,26 +170,26 @@
   <string name="attention">Attention</string>
   <!-- Android debugging over WiFi -->
   <string name="adb_over_network">ADB over network</string>
-  <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi-Fi, USB networks). This setting is reset on reboot</string>
+  <string name="adb_over_network_summary">Ağ arayüzleri (Wi-Fi, USB ağları) üzerinde TCP/IP ayıklamayı etkinleştir. Bu ayar, yeniden başlatıldığında sıfırlanır</string>
   <!-- Warning for Adb over Network -->
-  <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks, including GSM data network!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
+  <string name="adb_over_network_warning">UYARI: ADB üzerinden ağ aktifken telefonunuz GSM veri ağı dahil tüm bağlı ağlar üzerinden kötüye kullanımlara açık olacaktır!\n\nBu özelliği sadece güvenilir ağlara bağlıyken kullanın.\n\nBu özellik açılsın mı?</string>
   <!-- Media ducking -->
   <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
   <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
   <!-- Doze notification color invert -->
-  <string name="doze_notification_color_invert_title">Color inversion</string>
+  <string name="doze_notification_color_invert_title">Rengi ters çevirme</string>
   <string name="doze_notification_color_invert_summary_off">Ambient display notifications will not be inverted. Use for dark themes.</string>
   <string name="doze_notification_color_invert_summary_on">Ambient display notifications will show as inverted. Use for light/stock theme.</string>
   <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
-  <string name="bluetooth_accept_all_files">Accept all file types</string>
+  <string name="bluetooth_accept_all_files">Tüm dosya türlerini kabul et</string>
   <!-- Display : Rotation -->
-  <string name="display_rotation_title">Rotation</string>
-  <string name="display_rotation_disabled">Disabled</string>
-  <string name="display_rotation_unit">degrees</string>
-  <string name="display_rotation_category_title">Rotation modes</string>
-  <string name="display_rotation_0_title">0 degrees</string>
-  <string name="display_rotation_90_title">90 degrees</string>
-  <string name="display_rotation_180_title">180 degrees</string>
+  <string name="display_rotation_title">Ekran döndürme</string>
+  <string name="display_rotation_disabled">Devre Dışı</string>
+  <string name="display_rotation_unit">dereceler</string>
+  <string name="display_rotation_category_title">Döndürme modları</string>
+  <string name="display_rotation_0_title">0 derece</string>
+  <string name="display_rotation_90_title">90 derece</string>
+  <string name="display_rotation_180_title">180 derece</string>
   <string name="display_rotation_270_title">270 degrees</string>
   <!-- Lock screen rotation -->
   <string name="display_lockscreen_rotation_title">Lock screen</string>
@@ -208,22 +208,22 @@
   <string name="wifi_setting_countrycode_summary">Specify the region code for Wi-Fi</string>
   <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">There was a problem setting the region code.</string>
-  <string name="wifi_setting_countrycode_default">Default</string>
+  <string name="wifi_setting_countrycode_default">Varsayılan</string>
   <!-- Device Hostname -->
-  <string name="device_hostname">Device hostname</string>
+  <string name="device_hostname">Cihaz ağ adı</string>
   <!-- USB debugging notification -->
-  <string name="adb_notify">USB debugging notify</string>
-  <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
+  <string name="adb_notify">USB hata ayıklama bildirimi</string>
+  <string name="adb_notify_summary">USB hata ayıklama bağlandığında bildirim gösterir</string>
   <!-- Volume Steps -->
-  <string name="volume_steps_title">Volume steps</string>
-  <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
-  <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
-  <string name="volume_steps_music_title">Volume steps: Music</string>
-  <string name="volume_steps_notification_title">Volume steps: Notification</string>
-  <string name="volume_steps_ring_title">Volume steps: Ringer</string>
-  <string name="volume_steps_system_title">Volume steps: System</string>
-  <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
-  <string name="volume_steps_reset">Reset</string>
+  <string name="volume_steps_title">Ses Adımları</string>
+  <string name="volume_steps_alarm_title">Ses adımları: Alarm</string>
+  <string name="volume_steps_dtmf_title">Ses adımları: DTMF</string>
+  <string name="volume_steps_music_title">Ses adımları: Müzik</string>
+  <string name="volume_steps_notification_title">Ses adımları: Bildirim</string>
+  <string name="volume_steps_ring_title">Ses adımları: Zil sesi</string>
+  <string name="volume_steps_system_title">Ses adımları: Sistem</string>
+  <string name="volume_steps_voice_call_title">Ses adımları: Sesli Arama</string>
+  <string name="volume_steps_reset">Sıfırla</string>
   <string name="volume_steps_60">60</string>
   <string name="volume_steps_45">45</string>
   <string name="volume_steps_30">30</string>
@@ -254,9 +254,9 @@
   <string name="dashboard_columns_title">Dashboard Columns</string>
   <string name="dashboard_columns_summary">Change the number of columns displayed in the dashboard</string>
   <string name="dashboard_columns_dialog_title">Select dashboard columns</string>
-  <string name="dashboard_columns_one">One</string>
-  <string name="dashboard_columns_two">Two</string>
-  <string name="dashboard_columns_three">Three</string>
+  <string name="dashboard_columns_one">Bir</string>
+  <string name="dashboard_columns_two">İki</string>
+  <string name="dashboard_columns_three">Üç</string>
   <string name="dashboard_tileview_double_lines_title">Dashboard title view</string>
   <string name="dashboard_tileview_double_lines_summary">Show dashboard tile titles in 2 lines</string>
   <string name="dashboard_tileview_dividers_title">Dashboard dividers</string>

@@ -17,8 +17,8 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- DU Extra Info -->
-  <string name="duextrainfo">Extra information</string>
-  <string name="duextrainfo_summary">Display extra info for cpu, display, etc</string>
+  <string name="duextrainfo">Informații suplimentare</string>
+  <string name="duextrainfo_summary">Afișează și alte info pentru procesor, ecran, etc</string>
   <string name="basicinfo">BASIC INFO</string>
   <string name="manufacturer">Manufacturer</string>
   <string name="hardwaretype">Hardware type</string>
