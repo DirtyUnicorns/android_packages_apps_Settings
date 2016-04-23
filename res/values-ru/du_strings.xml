@@ -74,7 +74,7 @@
   <string name="duupdater_summary">Stay up to date with the latest features and fixes</string>
   <!-- DU About -->
   <string name="aboutdu">Информация о DU</string>
-  <string name="aboutdu_summary">Information about our devs, maintainers and rom features</string>
+  <string name="aboutdu_summary">Информация о наших разработчиках, сопровождающих устройства и функциях прошивки</string>
   <!-- Developer Tools -->
   <string name="developer_tools_title">Инструменты разработчика</string>
   <string name="developer_tools_summary">Расширенные инструменты отладки</string>
@@ -88,15 +88,15 @@
   <string name="less_notification_sounds_title">Менее частые звуки уведомлений</string>
   <string name="less_notification_sounds_summary">Ограничить звуки уведомлений: каждое приложение воспроизводит звук один раз в заданный временной отрезок</string>
   <string name="less_notification_sounds_default">Поведение по умолчанию</string>
-  <string name="less_notification_sounds_3s">3 seconds</string>
-  <string name="less_notification_sounds_5s">5 seconds</string>
-  <string name="less_notification_sounds_10s">10 seconds</string>
-  <string name="less_notification_sounds_15s">15 seconds</string>
-  <string name="less_notification_sounds_30s">30 seconds</string>
+  <string name="less_notification_sounds_3s">3 сек.</string>
+  <string name="less_notification_sounds_5s">5 сек.</string>
+  <string name="less_notification_sounds_10s">10 сек.</string>
+  <string name="less_notification_sounds_15s">15 сек.</string>
+  <string name="less_notification_sounds_30s">30 сек.</string>
   <string name="less_notification_sounds_45s">45 секунд</string>
-  <string name="less_notification_sounds_1m">1 minute</string>
-  <string name="less_notification_sounds_2m">2 minutes</string>
-  <string name="less_notification_sounds_5m">5 minutes</string>
+  <string name="less_notification_sounds_1m">1 мин</string>
+  <string name="less_notification_sounds_2m">2 мин</string>
+  <string name="less_notification_sounds_5m">5 мин</string>
   <!-- Volume Keys Media Control -->
   <string name="volume_keys_control_media_stream">Управление мультимедиа</string>
   <string name="volume_keys_control_media_stream_summary">Кнопки громкости контролируют громкость мультимедиа, а не уведомлений</string>
@@ -114,13 +114,13 @@
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Изменение настроек индикатора</string>
   <string name="pulse_speed_title">Длительность и скорость мигания</string>
-  <string name="default_time">Normal</string>
-  <string name="custom_time">Custom</string>
+  <string name="default_time">По умолчанию</string>
+  <string name="custom_time">Пользовательское</string>
   <string name="dialog_delete_title">Удалить</string>
   <string name="dialog_delete_message">Удалить выбранный элемент?</string>
   <string name="profiles_add">Добавить</string>
   <string name="profile_choose_app">Выбор приложения</string>
-  <string name="profile_reset_title">Reset</string>
+  <string name="profile_reset_title">Сброс</string>
   <!-- Values for the notification light pulse spinners -->
   <string name="pulse_length_always_on">Всегда включено</string>
   <string name="pulse_length_very_short">Very short</string>
@@ -172,9 +172,9 @@
   <string name="adb_over_network">Режим отладки по сети</string>
   <string name="adb_over_network_summary">Включить отладку TCP/IP через сетевые интерфейсы (Wi-Fi, USB сети). Эта установка сбрасывается при перезагрузке</string>
   <!-- Warning for Adb over Network -->
-  <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks, including GSM data network!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
+  <string name="adb_over_network_warning">ВНИМАНИЕ: когда включена отладка по сети, устройство открыто для неконтролируемого доступа из всех подключённых сетей, включая сети передачи данных GSM! Используйте эту функцию только тогда, когда вы подключены к доверенным сетям. Вы действительно хотите включить эту функцию?</string>
   <!-- Media ducking -->
-  <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
+  <string name="interruptions_ignore_while_media_title">Не приглушать звук</string>
   <string name="interruptions_ignore_while_media_summary">Не уменьшить громкость воспроизведения мультимедиа при поступлении уведомления</string>
   <!-- Doze notification color invert -->
   <string name="doze_notification_color_invert_title">Инверсия цветов</string>
@@ -197,11 +197,11 @@
   <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
   <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
   <!-- Wake on Plug -->
-  <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
+  <string name="wake_when_plugged_or_unplugged_title">Включение при зарядке</string>
   <string name="wake_when_plugged_or_unplugged_summary">Включать экран при подключении или отключении зарядного устройства</string>
   <!-- Headset Plugged In notification -->
-  <string name="headset_plugged_in_title">Headset Plugged In notification</string>
-  <string name="headset_plugged_in_summary">Enable notification for when the headset is plugged in</string>
+  <string name="headset_plugged_in_title">Значок гарнитуры</string>
+  <string name="headset_plugged_in_summary">Отображать уведомление при подключении гарнитуры</string>
   <!-- Wi-Fi settings screen, advanced, title for setting the wifi region code. -->
   <string name="wifi_setting_countrycode_title">Код региона Wi-Fi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi region code [CHAR LIMIT=50]-->
@@ -217,13 +217,13 @@
   <!-- Volume Steps -->
   <string name="volume_steps_title">Уровни громкости</string>
   <string name="volume_steps_alarm_title">Уровни громкости: Будильник</string>
-  <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
-  <string name="volume_steps_music_title">Volume steps: Music</string>
-  <string name="volume_steps_notification_title">Volume steps: Notification</string>
-  <string name="volume_steps_ring_title">Volume steps: Ringer</string>
-  <string name="volume_steps_system_title">Volume steps: System</string>
-  <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
-  <string name="volume_steps_reset">Reset</string>
+  <string name="volume_steps_dtmf_title">Уровни громкости: DTMF</string>
+  <string name="volume_steps_music_title">Уровни громкости: музыка</string>
+  <string name="volume_steps_notification_title">Уровни громкости: Уведомления</string>
+  <string name="volume_steps_ring_title">Уровни громкости: Звонок</string>
+  <string name="volume_steps_system_title">Уровни громкости: Система</string>
+  <string name="volume_steps_voice_call_title">Уровни громкости: голосовой вызов</string>
+  <string name="volume_steps_reset">Сброс</string>
   <string name="volume_steps_60">60</string>
   <string name="volume_steps_45">45</string>
   <string name="volume_steps_30">30</string>
@@ -277,7 +277,7 @@
   <string name="blacklist_title">Список заблокированных абонентов</string>
   <string name="blacklist_edit_dialog_title">Изменить номер заблокированного телефона</string>
   <string name="blacklist_prefs">Настройки</string>
-  <string name="blacklist_button_delete">Delete</string>
+  <string name="blacklist_button_delete">Удалить</string>
   <string name="blacklist_empty_text">У вас нет номеров в черном списке. Добавьте его при помощи кнопки Добавить (+).</string>
   <string name="blacklist_disabled_empty_text">To prevent phone numbers from calling or messaging you, enable the blocked caller list.</string>
   <string name="blacklist_summary_disabled">Отключен</string>
