@@ -85,7 +85,7 @@
   <!-- Phone Info screen. Status label.  Used for diagnostic info screens, precise translation isn't needed -->
   <string name="radioInfo_service_off">Rádio desativado</string>
   <!-- Phone Info screen. Status label.  Used for diagnostic info screens, precise translation isn't needed -->
-  <string name="radioInfo_roaming_in">Roaming</string>
+  <string name="radioInfo_roaming_in">Fora de área de cobertura</string>
   <!-- Phone Info screen. Status label.  Used for diagnostic info screens, precise translation isn't needed -->
   <string name="radioInfo_roaming_not">Não está em roaming</string>
   <!-- Phone Info screen. Status label.  Used for diagnostic info screens, precise translation isn't needed -->
@@ -132,7 +132,7 @@
   <string name="large_font">Grande</string>
   <!-- Do not translate. label for font size preview.  Does not need to be translated. -->
   <!-- Button. Chosen when they want to save the chosen text size. -->
-  <string name="font_size_save">OK</string>
+  <string name="font_size_save">Ok</string>
   <!-- Title for a notification shown. [CHAR LIMIT=25] -->
   <string name="sdcard_setting" product="nosdcard">Armaz. USB</string>
   <!-- Title for a notification shown. -->
@@ -280,7 +280,7 @@
   <!-- Label for chosen font size -->
   <string name="display_font_size_label">Tamanho da fonte:</string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
-  <string name="intent_sender_data_label"><xliff:g id="data">Data:</xliff:g></string>
+  <string name="intent_sender_data_label"><xliff:g id="data">Dados:</xliff:g></string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
   <string name="intent_sender_sendbroadcast_text">Enviar<xliff:g id="BROADCAST">broadcast</xliff:g></string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
@@ -301,7 +301,7 @@
   <!-- HTTP proxy settings. The exclusion list label. -->
   <string name="proxy_exclusionlist_label">Evitar proxy para</string>
   <!-- HTTP proxy settings. The hint text for proxy exclusion list. [CHAR LIMIT=50]-->
-  <string name="proxy_exclusionlist_hint">example.com,mycomp.test.com,localhost</string>
+  <string name="proxy_exclusionlist_hint">exemplo.com, mycomp.test.com, localhost</string>
   <!-- HTTP proxy settings. The button to restore the defaults. -->
   <string name="proxy_defaultView_text">Restaurar padrões</string>
   <!-- HTTP proxy settings. The button to save. -->
@@ -309,7 +309,7 @@
   <!-- HTTP proxy settings. The text field for the hostname -->
   <string name="proxy_hostname_label">Hostname do proxy</string>
   <!-- HTTP proxy settings. The hint text field for the hostname. [CHAR LIMIT=50] -->
-  <string name="proxy_hostname_hint">proxy.example.com</string>
+  <string name="proxy_hostname_hint">proxy.exemplo.com</string>
   <!-- HTTP proxy settings. Title if there is an error-->
   <string name="proxy_error">Atenção</string>
   <!-- HTTP proxy settings. Button to get rid of error box-->
@@ -2290,7 +2290,7 @@
   <!-- Master clear progress screen title [CHAR LIMIT=30] -->
   <string name="master_clear_progress_title">Apagando</string>
   <!-- Master clear progress screen text [CHAR LIMIT=75] -->
-  <string name="master_clear_progress_text">Aguarde...</string>
+  <string name="master_clear_progress_text">Please wait\u2026</string>
   <!-- Main settings screen, Call settings title for item to go into the call settings -->
   <string name="call_settings_title">Conf. de chamada</string>
   <!-- Main settings screen, Call settings summary for item to go into call settings -->
@@ -3876,7 +3876,7 @@
   <string name="tts_status_not_supported"><xliff:g id="LOCALE">%1$s</xliff:g> não é suportado</string>
   <!-- On main TTS Settings screen, current TTS engine status for the current default language,
          tts engine is queried for status [CHAR LIMIT=150] -->
-  <string name="tts_status_checking">Verificando…</string>
+  <string name="tts_status_checking">Checking\u2026</string>
   <!-- On main TTS Settings screen, text for divider under which all TTS engines are listed -->
   <string name="tts_engines_section">Mecanismos</string>
   <!-- On main TTS Settings screen, text preceded by the TTS engine name, clicking this button will launch the engine settings -->
@@ -4894,7 +4894,7 @@
   <!-- Button the user can click to indicate he understood and dismiss the screen -->
   <string name="nfc_how_it_works_got_it">Entendi</string>
   <!-- NFC More... title.  [CHAR LIMIT=40] -->
-  <string name="nfc_more_title">Mais...</string>
+  <string name="nfc_more_title">More\u2026</string>
   <!-- Label for the dialog that is shown when the user is asked to set a
          preferred payment application -->
   <string name="nfc_payment_set_default_label">Definir como preferência?</string>
@@ -5050,7 +5050,7 @@
   <!-- Message for selecting sim for data in settings.  [CHAR LIMIT=40] -->
   <string name="select_sim_for_data">Selecionar um SIM de dados</string>
   <!-- Message for switching data SIM; switching takes a while -->
-  <string name="data_switch_started">Trocando SIM de dados. Isso pode demorar um pouco...</string>
+  <string name="data_switch_started">Switching data SIM, this may take up to a minute\u2026</string>
   <!-- Message for selecting sim for call in settings.  [CHAR LIMIT=40] -->
   <string name="select_sim_for_calls">Ligar com</string>
   <!-- Title for selecting a SIM card.  [CHAR LIMIT=40] -->
@@ -5169,7 +5169,7 @@
   <!-- Text for button to confirm writing tag -->
   <string name="write_tag">Gravar</string>
   <!-- Text to inform the user to tap a tag to complete the setup process -->
-  <string name="status_awaiting_tap">Toque em uma marca para gravar…</string>
+  <string name="status_awaiting_tap">Tap a tag to write\u2026</string>
   <!-- Text to inform the user that the network key entered was incorrect -->
   <string name="status_invalid_password">Senha inválida, tente novamente.</string>
   <!-- Text displayed when tag successfully writen -->
@@ -5284,7 +5284,7 @@
   <!-- Sound & notification > Do Not Disturb access > Text to display when the list is empty. [CHAR LIMIT=NONE] -->
   <string name="zen_access_empty_text">Nenhum app instalado solicitou o acesso \"Não perturbe\"</string>
   <!-- [CHAR LIMIT=NONE] Text when loading app list in notification settings -->
-  <string name="loading_notification_apps">Carregando apps…</string>
+  <string name="loading_notification_apps">Loading apps\u2026</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option title -->
   <string name="app_notification_block_title">Bloquear tudo</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option description-->

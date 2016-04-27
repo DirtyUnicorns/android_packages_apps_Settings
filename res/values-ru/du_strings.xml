@@ -123,12 +123,12 @@
   <string name="profile_reset_title">Сброс</string>
   <!-- Values for the notification light pulse spinners -->
   <string name="pulse_length_always_on">Всегда включено</string>
-  <string name="pulse_length_very_short">Very short</string>
-  <string name="pulse_length_short">Short</string>
-  <string name="pulse_length_normal">Normal</string>
-  <string name="pulse_length_long">Long</string>
-  <string name="pulse_length_very_long">Very long</string>
-  <string name="pulse_speed_very_fast">Very fast</string>
+  <string name="pulse_length_very_short">Очень короткий</string>
+  <string name="pulse_length_short">Короткий</string>
+  <string name="pulse_length_normal">Нормальный</string>
+  <string name="pulse_length_long">Длинный</string>
+  <string name="pulse_length_very_long">Очень длинный</string>
+  <string name="pulse_speed_very_fast">Очень быстрый</string>
   <string name="pulse_speed_fast">Быстрый</string>
   <string name="pulse_speed_normal">Нормальный</string>
   <string name="pulse_speed_slow">Медленный</string>
@@ -149,8 +149,8 @@
   <string name="notification_light_default_value">По умолчанию</string>
   <string name="notification_light_missed_call_title">Пропущенный вызов</string>
   <string name="notification_light_voicemail_title">Голосовая почта</string>
-  <string name="notification_light_screen_on">Lights with screen on</string>
-  <string name="allow_lights_title">Lights in do not disturb mode</string>
+  <string name="notification_light_screen_on">Индикация при вкл. экране</string>
+  <string name="allow_lights_title">Индикация в режиме Не беспокоить</string>
   <!-- Keyboard and Input methods  -->
   <string name="title_keyboard_input">Дополнительные опции</string>
   <string name="disable_fullscreen_keyboard_title">Отключить полноэкранную клавиатуру</string>
@@ -165,7 +165,7 @@
   <string name="keyboard_rotation_dialog">Эта функция заставляет автоповорот включиться временно когда отображается клавиатура. Не действует при включенном автоповороте.</string>
   <string name="show_enter_key_title">Показывать клавишу \"Ввод\"</string>
   <string name="show_enter_key_summary">Принудительно показывать кнопку ввода вместо кнопки смайликов</string>
-  <string name="ime_switcher_notify">Selector notification</string>
+  <string name="ime_switcher_notify">Переключатель способа ввода</string>
   <string name="ime_switcher_notify_summary">Показывать уведомление выбора способа ввода</string>
   <string name="attention">Внимание</string>
   <!-- Android debugging over WiFi -->
@@ -192,7 +192,7 @@
   <string name="display_rotation_180_title">180 градусов</string>
   <string name="display_rotation_270_title">270 градусов</string>
   <!-- Lock screen rotation -->
-  <string name="display_lockscreen_rotation_title">Lock screen</string>
+  <string name="display_lockscreen_rotation_title">Блокировка экрана</string>
   <!-- Scramble PIN Layout on Lockscreen -->
   <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
   <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
@@ -208,7 +208,7 @@
   <string name="wifi_setting_countrycode_summary">Укажите код региона Wi-Fi</string>
   <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">При настройке кода региона Wi-Fi возникла неполадка.</string>
-  <string name="wifi_setting_countrycode_default">Default</string>
+  <string name="wifi_setting_countrycode_default">По умолчанию</string>
   <!-- Device Hostname -->
   <string name="device_hostname">Имя хоста</string>
   <!-- USB debugging notification -->
@@ -279,37 +279,37 @@
   <string name="blacklist_prefs">Настройки</string>
   <string name="blacklist_button_delete">Удалить</string>
   <string name="blacklist_empty_text">У вас нет номеров в черном списке. Добавьте его при помощи кнопки Добавить (+).</string>
-  <string name="blacklist_disabled_empty_text">To prevent phone numbers from calling or messaging you, enable the blocked caller list.</string>
+  <string name="blacklist_disabled_empty_text">Включите чёрный список, чтобы заблокировать вызовы и сообщения с номеров из этого списка.</string>
   <string name="blacklist_summary_disabled">Отключен</string>
   <string name="blacklist_summary">Никакие звонки или сообщения не будут получены от номеров, указанных в \"черном\" списке</string>
   <string name="blacklist_notify">Показывать уведомления</string>
-  <string name="blacklist_private_numbers_title">Private numbers</string>
-  <string name="blacklist_private_numbers_summary_disabled">Don\'t block calls from private numbers</string>
+  <string name="blacklist_private_numbers_title">Скрытые номера</string>
+  <string name="blacklist_private_numbers_summary_disabled">Не блокировать вызовы от скрытых номеров</string>
   <string name="blacklist_private_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from private numbers</string>
   <string name="blacklist_unknown_numbers_title">Неизвестные номера</string>
   <string name="blacklist_unknown_numbers_summary_disabled">Не блокировать вызовы или сообщения от номеров не из списка контактов</string>
   <string name="blacklist_unknown_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from numbers not in the contact list</string>
-  <string name="blacklist_summary_type_calls_only">calls</string>
-  <string name="blacklist_summary_type_messages_only">messages</string>
-  <string name="blacklist_summary_type_calls_and_messages">calls and messages</string>
+  <string name="blacklist_summary_type_calls_only">вызовы</string>
+  <string name="blacklist_summary_type_messages_only">сообщения</string>
+  <string name="blacklist_summary_type_calls_and_messages">вызовы и сообщения</string>
   <string name="blacklist_regex_title">Use wildcards</string>
   <string name="blacklist_regex_summary">Используйте \".\" как начало маски и \"*\" вместо любых символов. Например, выражение \"123.*\" будет блокировать номера, начинающиеся с \"123\", а \".*123.*\" — номера, содержащие \"123\"</string>
-  <string name="blacklist_policy_block_calls">Block incoming calls</string>
-  <string name="blacklist_policy_block_messages">Block incoming messages</string>
-  <string name="blacklist_bad_number_add">Unable to add invalid phone number to blocked caller list</string>
+  <string name="blacklist_policy_block_calls">Блокировать входящие вызовы</string>
+  <string name="blacklist_policy_block_messages">Блокировать входящие сообщения</string>
+  <string name="blacklist_bad_number_add">Не удается добавить неверный номер телефона в чёрный список</string>
   <!-- Blacklist management -->
-  <string name="remove_blacklist_number_title">Remove number</string>
-  <string name="remove_blacklist_entry">Do you want to remove this blocked phone number?</string>
-  <string name="select_contact">Select contact</string>
+  <string name="remove_blacklist_number_title">Удалить номер</string>
+  <string name="remove_blacklist_entry">Вы действительно хотите удалить данный номер из чёрного списка?</string>
+  <string name="select_contact">Выбор контакта</string>
   <!-- Doze pulse options -->
-  <string name="summary_doze_enabled">Enabled</string>
-  <string name="summary_doze_disabled">Disabled</string>
+  <string name="summary_doze_enabled">Включить</string>
+  <string name="summary_doze_disabled">Отключить</string>
   <string name="doze_overwrite_value_title">Перезаписать значения по умолчанию</string>
   <string name="doze_overwrite_value_summary">Разрешить изменение пользователем настроек по умолчанию</string>
   <string name="doze_pulse_title">Настраиваемые параметры пользователя</string>
-  <string name="doze_pulse_duration_in_title">Fade in</string>
-  <string name="doze_pulse_duration_visible_title">Visible duration</string>
-  <string name="doze_pulse_duration_out_title">Fade out</string>
+  <string name="doze_pulse_duration_in_title">Появление</string>
+  <string name="doze_pulse_duration_visible_title">Продолжительность</string>
+  <string name="doze_pulse_duration_out_title">Затухание</string>
   <string name="doze_trigger_pickup_title">Pick up sensor trigger</string>
   <string name="doze_trigger_pickup_summary_on">Pulse will be triggered by pick up sensor</string>
   <string name="doze_trigger_pickup_summary_off">Pick up sensor will not be utilized as a trigger</string>
@@ -317,17 +317,17 @@
   <string name="doze_trigger_notification_summary_on">Pulse will be triggered by notifications</string>
   <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
   <string name="doze_brightness_level_title">Уровень яркости</string>
-  <string name="onehundred_ms">100 ms</string>
-  <string name="twofifty_ms">250 ms</string>
-  <string name="fivehundred_ms_default">500 ms (default)</string>
-  <string name="sevenfifty_ms">750 ms</string>
-  <string name="one_second">1 s</string>
-  <string name="onehalf_second">1.5 s</string>
-  <string name="two_second">2 s</string>
-  <string name="twohalf_second">2.5 s</string>
-  <string name="three_second_default">3 s (default)</string>
-  <string name="threehalf_second">3.5 s</string>
-  <string name="four_second">4 s</string>
-  <string name="fourhalf_second">4.5 s</string>
-  <string name="five_second">5 s</string>
+  <string name="onehundred_ms">100 мс</string>
+  <string name="twofifty_ms">250 мс</string>
+  <string name="fivehundred_ms_default">500 мс (по умолчанию)</string>
+  <string name="sevenfifty_ms">750 мс</string>
+  <string name="one_second">1 сек.</string>
+  <string name="onehalf_second">1.5 сек.</string>
+  <string name="two_second">2 сек.</string>
+  <string name="twohalf_second">2.5 сек.</string>
+  <string name="three_second_default">3 сек. (по умолчанию)</string>
+  <string name="threehalf_second">3.5 сек.</string>
+  <string name="four_second">4 сек.</string>
+  <string name="fourhalf_second">4.5 сек.</string>
+  <string name="five_second">5 с</string>
 </resources>
