@@ -2290,7 +2290,7 @@
   <!-- Master clear progress screen title [CHAR LIMIT=30] -->
   <string name="master_clear_progress_title">Törlés</string>
   <!-- Master clear progress screen text [CHAR LIMIT=75] -->
-  <string name="master_clear_progress_text">Please wait\u2026</string>
+  <string name="master_clear_progress_text">Kérjük, várjon\u2026</string>
   <!-- Main settings screen, Call settings title for item to go into the call settings -->
   <string name="call_settings_title">Hívásbeállítások</string>
   <!-- Main settings screen, Call settings summary for item to go into call settings -->
@@ -3876,7 +3876,7 @@
   <string name="tts_status_not_supported">A(z) <xliff:g id="LOCALE">%1$s</xliff:g> nyelvet nem támogatja a rendszer</string>
   <!-- On main TTS Settings screen, current TTS engine status for the current default language,
          tts engine is queried for status [CHAR LIMIT=150] -->
-  <string name="tts_status_checking">Checking\u2026</string>
+  <string name="tts_status_checking">Ellenőrzés\u2026</string>
   <!-- On main TTS Settings screen, text for divider under which all TTS engines are listed -->
   <string name="tts_engines_section">Motorok</string>
   <!-- On main TTS Settings screen, text preceded by the TTS engine name, clicking this button will launch the engine settings -->
@@ -4894,7 +4894,7 @@
   <!-- Button the user can click to indicate he understood and dismiss the screen -->
   <string name="nfc_how_it_works_got_it">Értem</string>
   <!-- NFC More... title.  [CHAR LIMIT=40] -->
-  <string name="nfc_more_title">More\u2026</string>
+  <string name="nfc_more_title">Több\u2026</string>
   <!-- Label for the dialog that is shown when the user is asked to set a
          preferred payment application -->
   <string name="nfc_payment_set_default_label">Beállítja előnyben részesítettként?</string>
@@ -5169,7 +5169,7 @@
   <!-- Text for button to confirm writing tag -->
   <string name="write_tag">Írás</string>
   <!-- Text to inform the user to tap a tag to complete the setup process -->
-  <string name="status_awaiting_tap">Tap a tag to write\u2026</string>
+  <string name="status_awaiting_tap">Érintsen meg egy címkét az íráshoz\u2026</string>
   <!-- Text to inform the user that the network key entered was incorrect -->
   <string name="status_invalid_password">Érvénytelen jelszó, próbálja újra.</string>
   <!-- Text displayed when tag successfully writen -->
@@ -5284,7 +5284,7 @@
   <!-- Sound & notification > Do Not Disturb access > Text to display when the list is empty. [CHAR LIMIT=NONE] -->
   <string name="zen_access_empty_text">Egy telepített alkalmazás sem kért „Ne zavarjanak” elérést</string>
   <!-- [CHAR LIMIT=NONE] Text when loading app list in notification settings -->
-  <string name="loading_notification_apps">Loading apps\u2026</string>
+  <string name="loading_notification_apps">Alkalmazások betöltése\u2026</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option title -->
   <string name="app_notification_block_title">Az összes letiltása</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option description-->
