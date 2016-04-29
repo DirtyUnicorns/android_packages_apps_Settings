@@ -1921,6 +1921,8 @@
   <string name="memory_size">Całkowita pojemność</string>
   <!-- SD card & phone storage settings summary. Displayed when the total memory usage is being calculated. Will be replaced with a number like "12.3 GB" when finished calucating. [CHAR LIMIT=30] -->
   <string name="memory_calculating_size">Obliczanie...</string>
+  <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of Android system. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
+  <string name="memory_android_system_usage">Android System</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of applications installed. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
   <string name="memory_apps_usage">Aplikacje i ich dane</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of media on the device. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
@@ -2075,6 +2077,10 @@
   <string name="storage_internal_forget_confirm_title">Zapomnieć nośnik <xliff:g id="NAME">^1</xliff:g>?</string>
   <!-- Body of dialog confirming that user wants to forget an internal storage device [CHAR LIMIT=NONE]-->
   <string name="storage_internal_forget_confirm">Wszystkie aplikacje, zdjęcia i dane zapisane na nośniku <xliff:g id="NAME">^1</xliff:g> zostaną na zawsze utracone.</string>
+  <!-- Item title describing storage used by Android system [CHAR LIMIT=48] -->
+  <string name="storage_detail_android_system">Android System</string>
+  <!-- Toast message shown when storage item of Android system is clicked [CHAR LIMIT=NONE]-->
+  <string name="storage_detail_android_system_version">Android System <xliff:g id="version">%s</xliff:g></string>
   <!-- Item title describing storage used by apps [CHAR LIMIT=48]-->
   <string name="storage_detail_apps">Aplikacje</string>
   <!-- Item title describing storage used by images [CHAR LIMIT=48]-->
@@ -2298,7 +2304,7 @@
   <!-- Master clear progress screen title [CHAR LIMIT=30] -->
   <string name="master_clear_progress_title">Wymazuję</string>
   <!-- Master clear progress screen text [CHAR LIMIT=75] -->
-  <string name="master_clear_progress_text">Please wait\u2026</string>
+  <string name="master_clear_progress_text">Proszę czekać\u2026</string>
   <!-- Main settings screen, Call settings title for item to go into the call settings -->
   <string name="call_settings_title">Ustawienia połączeń</string>
   <!-- Main settings screen, Call settings summary for item to go into call settings -->
@@ -3884,7 +3890,7 @@
   <string name="tts_status_not_supported">Język <xliff:g id="LOCALE">%1$s</xliff:g> nie jest obsługiwany</string>
   <!-- On main TTS Settings screen, current TTS engine status for the current default language,
          tts engine is queried for status [CHAR LIMIT=150] -->
-  <string name="tts_status_checking">Checking\u2026</string>
+  <string name="tts_status_checking">Sprawdzanie\u2026</string>
   <!-- On main TTS Settings screen, text for divider under which all TTS engines are listed -->
   <string name="tts_engines_section">Mechanizmy</string>
   <!-- On main TTS Settings screen, text preceded by the TTS engine name, clicking this button will launch the engine settings -->
@@ -4902,7 +4908,7 @@
   <!-- Button the user can click to indicate he understood and dismiss the screen -->
   <string name="nfc_how_it_works_got_it">OK</string>
   <!-- NFC More... title.  [CHAR LIMIT=40] -->
-  <string name="nfc_more_title">More\u2026</string>
+  <string name="nfc_more_title">Więcej\u2026</string>
   <!-- Label for the dialog that is shown when the user is asked to set a
          preferred payment application -->
   <string name="nfc_payment_set_default_label">Ustawić jako Twoją preferencję?</string>
@@ -5058,7 +5064,7 @@
   <!-- Message for selecting sim for data in settings.  [CHAR LIMIT=40] -->
   <string name="select_sim_for_data">Wybierz kartę SIM do transmisji danych</string>
   <!-- Message for switching data SIM; switching takes a while -->
-  <string name="data_switch_started">Switching data SIM, this may take up to a minute\u2026</string>
+  <string name="data_switch_started">Przełączanie karty SIM do transmisji danych. Może to chwilę potrwać\u2026</string>
   <!-- Message for selecting sim for call in settings.  [CHAR LIMIT=40] -->
   <string name="select_sim_for_calls">Zadzwoń, używając karty:</string>
   <!-- Title for selecting a SIM card.  [CHAR LIMIT=40] -->
@@ -5177,7 +5183,7 @@
   <!-- Text for button to confirm writing tag -->
   <string name="write_tag">Zapisz</string>
   <!-- Text to inform the user to tap a tag to complete the setup process -->
-  <string name="status_awaiting_tap">Tap a tag to write\u2026</string>
+  <string name="status_awaiting_tap">Kliknij tag, aby zapisać\u2026</string>
   <!-- Text to inform the user that the network key entered was incorrect -->
   <string name="status_invalid_password">Nieprawidłowe hasło. Spróbuj ponownie.</string>
   <!-- Text displayed when tag successfully writen -->
@@ -5293,7 +5299,7 @@
   <!-- Sound & notification > Do Not Disturb access > Text to display when the list is empty. [CHAR LIMIT=NONE] -->
   <string name="zen_access_empty_text">Żadne zainstalowane aplikacje nie prosiły o dostęp do funkcji „Nie przeszkadzać”.</string>
   <!-- [CHAR LIMIT=NONE] Text when loading app list in notification settings -->
-  <string name="loading_notification_apps">Loading apps\u2026</string>
+  <string name="loading_notification_apps">Ładowanie aplikacji\u2026</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option title -->
   <string name="app_notification_block_title">Blokuj wszystkie</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option description-->
