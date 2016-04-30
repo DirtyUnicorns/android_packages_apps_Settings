@@ -1905,6 +1905,8 @@
   <string name="memory_size">총 공간</string>
   <!-- SD card & phone storage settings summary. Displayed when the total memory usage is being calculated. Will be replaced with a number like "12.3 GB" when finished calucating. [CHAR LIMIT=30] -->
   <string name="memory_calculating_size">계산 중...</string>
+  <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of Android system. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
+  <string name="memory_android_system_usage">Android System</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of applications installed. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
   <string name="memory_apps_usage">앱 및 앱 데이터</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of media on the device. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
@@ -2059,6 +2061,10 @@
   <string name="storage_internal_forget_confirm_title"><xliff:g id="NAME">^1</xliff:g>을(를) 삭제하시겠습니까?</string>
   <!-- Body of dialog confirming that user wants to forget an internal storage device [CHAR LIMIT=NONE]-->
   <string name="storage_internal_forget_confirm"><xliff:g id="NAME">^1</xliff:g>에 저장된 앱, 사진, 데이터가 모두 완전히 삭제됩니다.</string>
+  <!-- Item title describing storage used by Android system [CHAR LIMIT=48] -->
+  <string name="storage_detail_android_system">Android System</string>
+  <!-- Toast message shown when storage item of Android system is clicked [CHAR LIMIT=NONE]-->
+  <string name="storage_detail_android_system_version">Android System <xliff:g id="version">%s</xliff:g></string>
   <!-- Item title describing storage used by apps [CHAR LIMIT=48]-->
   <string name="storage_detail_apps">앱</string>
   <!-- Item title describing storage used by images [CHAR LIMIT=48]-->
