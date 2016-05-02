@@ -1922,7 +1922,7 @@
   <!-- SD card & phone storage settings summary. Displayed when the total memory usage is being calculated. Will be replaced with a number like "12.3 GB" when finished calucating. [CHAR LIMIT=30] -->
   <string name="memory_calculating_size">Výpočet…</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of Android system. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
-  <string name="memory_android_system_usage">Android System</string>
+  <string name="memory_android_system_usage">Systém Android</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of applications installed. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
   <string name="memory_apps_usage">Aplikace a data aplikací</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of media on the device. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
@@ -2078,9 +2078,9 @@
   <!-- Body of dialog confirming that user wants to forget an internal storage device [CHAR LIMIT=NONE]-->
   <string name="storage_internal_forget_confirm">Všechny aplikace, fotky a data uložená v tomto úložišti <xliff:g id="NAME">^1</xliff:g> budou navždy ztracena.</string>
   <!-- Item title describing storage used by Android system [CHAR LIMIT=48] -->
-  <string name="storage_detail_android_system">Android System</string>
+  <string name="storage_detail_android_system">Systém Android</string>
   <!-- Toast message shown when storage item of Android system is clicked [CHAR LIMIT=NONE]-->
-  <string name="storage_detail_android_system_version">Android System <xliff:g id="version">%s</xliff:g></string>
+  <string name="storage_detail_android_system_version">Systém Android <xliff:g id="version">%s </xliff:g></string>
   <!-- Item title describing storage used by apps [CHAR LIMIT=48]-->
   <string name="storage_detail_apps">Aplikace</string>
   <!-- Item title describing storage used by images [CHAR LIMIT=48]-->
@@ -2304,7 +2304,7 @@
   <!-- Master clear progress screen title [CHAR LIMIT=30] -->
   <string name="master_clear_progress_title">Mazání</string>
   <!-- Master clear progress screen text [CHAR LIMIT=75] -->
-  <string name="master_clear_progress_text">Please wait\u2026</string>
+  <string name="master_clear_progress_text">Prosím čekejte\u2026</string>
   <!-- Main settings screen, Call settings title for item to go into the call settings -->
   <string name="call_settings_title">Nastavení hovorů</string>
   <!-- Main settings screen, Call settings summary for item to go into call settings -->
@@ -2886,7 +2886,7 @@
   <!-- [CHAR LIMIT=10] Running services, summary of foreground processes -->
   <string name="service_foreground_processes">Využito: <xliff:g id="MEMORY">%1$s</xliff:g></string>
   <!-- [CHAR LIMIT=10] Running services, label for chart showing memory use. -->
-  <string name="memory">RAM</string>
+  <string name="memory">Paměť RAM</string>
   <!-- Text to label a process entry with the process name. -->
   <string name="service_process_name"><xliff:g id="process">%1$s</xliff:g></string>
   <!-- TODO: Remove it once the same entry in SettingsLib is translated. -->
@@ -3890,7 +3890,7 @@
   <string name="tts_status_not_supported">Jazyk <xliff:g id="LOCALE">%1$s</xliff:g> není podporován</string>
   <!-- On main TTS Settings screen, current TTS engine status for the current default language,
          tts engine is queried for status [CHAR LIMIT=150] -->
-  <string name="tts_status_checking">Checking\u2026</string>
+  <string name="tts_status_checking">Probíhá kontrola\u2026</string>
   <!-- On main TTS Settings screen, text for divider under which all TTS engines are listed -->
   <string name="tts_engines_section">Moduly</string>
   <!-- On main TTS Settings screen, text preceded by the TTS engine name, clicking this button will launch the engine settings -->
@@ -4294,7 +4294,7 @@
   <!-- What to show in messaging that refers to this provider, e.g. AccountSyncSettings -->
   <string name="provider_label">Zobrazit odběry</string>
   <!-- Formatter in AccountSyncSettings for each application we wish to synchronize, e.g. "Sync Calendar" -->
-  <string name="sync_item_title"><xliff:g id="authority" example="Calendar">%s</xliff:g></string>
+  <string name="sync_item_title"><xliff:g id="authority" example="Kalendář">%s </xliff:g></string>
   <!-- Title of dialog shown when you can't manually sync an item because it's disabled -->
   <string name="cant_sync_dialog_title">Nelze ručně synchronizovat</string>
   <!-- Messaage shown in dialog when you can't manually sync -->
@@ -4515,7 +4515,7 @@
   <!-- Tab title for showing Wi-Fi data usage. [CHAR LIMIT=10] -->
   <string name="data_usage_tab_wifi">Wi-Fi</string>
   <!-- Tab title for showing Ethernet data usage. [CHAR LIMIT=10] -->
-  <string name="data_usage_tab_ethernet">Ethernet</string>
+  <string name="data_usage_tab_ethernet">Síť Ethernet</string>
   <!-- Tab title for showing combined mobile data usage. [CHAR LIMIT=20] -->
   <string name="data_usage_tab_mobile">Mobilní</string>
   <!-- Tab title for showing 4G data usage. [CHAR LIMIT=10] -->
@@ -4908,7 +4908,7 @@
   <!-- Button the user can click to indicate he understood and dismiss the screen -->
   <string name="nfc_how_it_works_got_it">Rozumím</string>
   <!-- NFC More... title.  [CHAR LIMIT=40] -->
-  <string name="nfc_more_title">More\u2026</string>
+  <string name="nfc_more_title">Více\u2026</string>
   <!-- Label for the dialog that is shown when the user is asked to set a
          preferred payment application -->
   <string name="nfc_payment_set_default_label">Nastavit jako předvolbu?</string>
@@ -4983,7 +4983,7 @@
   <!-- Call Manager settings title.  [CHAR LIMIT=50] -->
   <string name="call_manager_title">Správce hovorů</string>
   <!-- Call Manager settings summary.  [CHAR LIMIT=50] -->
-  <string name="call_manager_summary"><xliff:g id="app">%1$s</xliff:g></string>
+  <string name="call_manager_summary"><xliff:g id="app">%1$s </xliff:g></string>
   <!-- Cell Broadcast settings title.  [CHAR LIMIT=50] -->
   <string name="cell_broadcast_settings">Výstražné zprávy o výjimečné situaci</string>
   <!-- Network operators settings title.  [CHAR LIMIT=50] -->
@@ -5064,7 +5064,7 @@
   <!-- Message for selecting sim for data in settings.  [CHAR LIMIT=40] -->
   <string name="select_sim_for_data">Vyberte SIM kartu pro data</string>
   <!-- Message for switching data SIM; switching takes a while -->
-  <string name="data_switch_started">Switching data SIM, this may take up to a minute\u2026</string>
+  <string name="data_switch_started">Přepínání datové SIM, to může trvat několik minut\u2026</string>
   <!-- Message for selecting sim for call in settings.  [CHAR LIMIT=40] -->
   <string name="select_sim_for_calls">Volat pomocí</string>
   <!-- Title for selecting a SIM card.  [CHAR LIMIT=40] -->
@@ -5140,7 +5140,7 @@
   <string name="keywords_more_default_sms_app">textová zpráva SMS odesílání zpráv</string>
   <string name="keywords_more_mobile_networks">mobilní operátor mobilní data bezdrátový přenos 4g 3g 2g lte</string>
   <string name="keywords_wifi_calling">wifi wi-fi hovor volání</string>
-  <string name="keywords_home">launcher</string>
+  <string name="keywords_home">spouštěč</string>
   <string name="keywords_display">obrazovka dotykový displej</string>
   <string name="keywords_display_brightness_level">ztlumit obrazovka dotykový displej baterie</string>
   <string name="keywords_display_auto_brightness">ztlumit obrazovka dotykový displej baterie</string>
@@ -5152,7 +5152,7 @@
   <string name="keywords_storage">místo disk pevný disk zařízení využití</string>
   <string name="keywords_battery">využití energie nabití</string>
   <string name="keywords_spell_checker">pravopis slovník kontrola pravopisu automatické opravy</string>
-  <string name="keywords_voice_input">recognizer input speech speak language hands-free hand free recognition offensive word audio history bluetooth headset</string>
+  <string name="keywords_voice_input">vstupní rozpoznávání řeči mluvit jazykem hands-free volné ruce uznání urážlivé slovo audio historie bluetooth headset</string>
   <string name="keywords_text_to_speech_output">sazba jazyk výchozí řeč mluvit tts usnadnění přístupnost čtečka nevidomí</string>
   <string name="keywords_date_and_time">hodiny čas</string>
   <string name="keywords_network_reset">resetovat obnovení továrního nastavení</string>
@@ -5160,7 +5160,7 @@
   <string name="keywords_printing">tiskárna</string>
   <string name="keywords_sounds_and_notifications">reproduktor pípnutí</string>
   <string name="keywords_sounds_and_notifications_interruptions">nerušit vyrušení vyrušit</string>
-  <string name="keywords_app">RAM</string>
+  <string name="keywords_app">Paměť RAM</string>
   <string name="keywords_location">okolí poloha historie hlášení</string>
   <string name="keywords_location_mode">přesnost</string>
   <string name="keywords_accounts">účet</string>
@@ -5183,7 +5183,7 @@
   <!-- Text for button to confirm writing tag -->
   <string name="write_tag">Zapsat</string>
   <!-- Text to inform the user to tap a tag to complete the setup process -->
-  <string name="status_awaiting_tap">Tap a tag to write\u2026</string>
+  <string name="status_awaiting_tap">Klepnutím na značku pište\u2026</string>
   <!-- Text to inform the user that the network key entered was incorrect -->
   <string name="status_invalid_password">Neplatné heslo, zkuste to znovu.</string>
   <!-- Text displayed when tag successfully writen -->
@@ -5299,7 +5299,7 @@
   <!-- Sound & notification > Do Not Disturb access > Text to display when the list is empty. [CHAR LIMIT=NONE] -->
   <string name="zen_access_empty_text">O přístup při nastavení Nerušit nepožádaly žádné nainstalované aplikace</string>
   <!-- [CHAR LIMIT=NONE] Text when loading app list in notification settings -->
-  <string name="loading_notification_apps">Loading apps\u2026</string>
+  <string name="loading_notification_apps">Načítání aplikací\u2026</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option title -->
   <string name="app_notification_block_title">Blokovat vše</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option description-->
@@ -5719,7 +5719,7 @@
   <!-- Description of app rarely running [CHAR LIMIT=45] -->
   <string name="rarely_running">Spuštěno výjimečně (<xliff:g id="PERCENTAGE">%s</xliff:g>)</string>
   <!-- Maximum memory usage key [CHAR LIMIT=25] -->
-  <string name="memory_max_use">Maximum</string>
+  <string name="memory_max_use">Maximální</string>
   <!-- Average memory usage key [CHAR LIMIT=25] -->
   <string name="memory_avg_use">Průměr</string>
   <!-- Maximum memory used by an app [CHAR LIMIT=25] -->
@@ -5957,9 +5957,9 @@
   <!-- Description of feature to change color setting for the display [CHAR LIMIT=NONE] -->
   <string name="picture_color_mode_desc">Použije se barevný prostor sRGB</string>
   <!-- Name of the setting to change the display's color temperature -->
-  <string name="color_temperature">Cool color temperature</string>
+  <string name="color_temperature">Správná barevná teplota</string>
   <!-- Description of the setting to change the display's color temperature -->
-  <string name="color_temperature_desc">Use cooler display colors</string>
+  <string name="color_temperature_desc">Použít chladnější barvy displeje</string>
   <!-- Toast message letting the user know the color temperature setting is not immediate -->
-  <string name="color_temperature_toast">To apply color change, turn off screen</string>
+  <string name="color_temperature_toast">Chcete-li aplikovat změnu barvy, vypněte obrazovku</string>
 </resources>
