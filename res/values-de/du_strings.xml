@@ -109,8 +109,8 @@
   <string name="increasing_ring_min_volume_title">Start Lautstärke</string>
   <string name="increasing_ring_ramp_up_time_title">Steigerung nach</string>
   <!-- Screenshot sound -->
-  <string name="screenshot_sound_title">Bildschirmfototon</string>
-  <string name="screenshot_sound_summary">Spielt einen Ton beim erstellen eines Bildschirmfotos ab</string>
+  <string name="screenshot_sound_title">Bildschirmfoto-Ton</string>
+  <string name="screenshot_sound_summary">Spielt einen Ton beim Erstellen eines Bildschirmfotos ab</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Farbeinstellungen ändern</string>
   <string name="pulse_speed_title">Pulsdauer und Geschwindigkeit</string>
