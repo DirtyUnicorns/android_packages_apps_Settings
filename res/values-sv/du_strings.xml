@@ -34,7 +34,7 @@
   <string name="abi">ABI</string>
   <string name="abitwo">ABI2</string>
   <string name="architecture">Arkitektur</string>
-  <string name="implementer">Implementer</string>
+  <string name="implementer">Implementerar</string>
   <string name="variant">Variant</string>
   <string name="part">Del</string>
   <string name="revision">Revision</string>
