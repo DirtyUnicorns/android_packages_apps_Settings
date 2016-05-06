@@ -66,7 +66,7 @@
   <string name="custom_title">Dirty Tweaks</string>
   <string name="themes_settings_title">Thèmes</string>
   <!-- DU Changelog -->
-  <string name="duchangelog">Notes de version</string>
+  <string name="duchangelog">Note de version</string>
   <string name="du_summary">Consulter la liste des changements dans DU</string>
   <string name="du_app_name">DU Changelog</string>
   <!-- DU Updater -->

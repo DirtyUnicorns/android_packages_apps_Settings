@@ -197,33 +197,33 @@
   <string name="unlock_scramble_pin_layout_title">Disposición aleatoria</string>
   <string name="unlock_scramble_pin_layout_summary">Cambiar la disposición de los números del PIN para desbloquear el dispositivo</string>
   <!-- Wake on Plug -->
-  <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
-  <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+  <string name="wake_when_plugged_or_unplugged_title">Encender con cargador</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Encender la pantalla al conectar o desconectar el cargador</string>
   <!-- Headset Plugged In notification -->
-  <string name="headset_plugged_in_title">Headset Plugged In notification</string>
-  <string name="headset_plugged_in_summary">Enable notification for when the headset is plugged in</string>
+  <string name="headset_plugged_in_title">Notificación de auricular conectado</string>
+  <string name="headset_plugged_in_summary">Activar notificación para cuando se conecta el auricular</string>
   <!-- Wi-Fi settings screen, advanced, title for setting the wifi region code. -->
-  <string name="wifi_setting_countrycode_title">Wi-Fi region code</string>
+  <string name="wifi_setting_countrycode_title">Código de región Wi-Fi</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi region code [CHAR LIMIT=50]-->
-  <string name="wifi_setting_countrycode_summary">Specify the region code for Wi-Fi</string>
+  <string name="wifi_setting_countrycode_summary">Especifique el código de región para Wi-Fi</string>
   <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_countrycode_error">There was a problem setting the region code.</string>
-  <string name="wifi_setting_countrycode_default">Default</string>
+  <string name="wifi_setting_countrycode_error">Ocurrió un error al establecer el código de región.</string>
+  <string name="wifi_setting_countrycode_default">Por defecto</string>
   <!-- Device Hostname -->
-  <string name="device_hostname">Device hostname</string>
+  <string name="device_hostname">Nombre del dispositivo</string>
   <!-- USB debugging notification -->
-  <string name="adb_notify">USB debugging notify</string>
-  <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
+  <string name="adb_notify">Notificación de depuración USB</string>
+  <string name="adb_notify_summary">Mostrar una notificación cuando el modo de depuración USB esté conectado</string>
   <!-- Volume Steps -->
-  <string name="volume_steps_title">Volume steps</string>
-  <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
-  <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
-  <string name="volume_steps_music_title">Volume steps: Music</string>
-  <string name="volume_steps_notification_title">Volume steps: Notification</string>
-  <string name="volume_steps_ring_title">Volume steps: Ringer</string>
-  <string name="volume_steps_system_title">Volume steps: System</string>
-  <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
-  <string name="volume_steps_reset">Reset</string>
+  <string name="volume_steps_title">Niveles de volumen</string>
+  <string name="volume_steps_alarm_title">Niveles de volumen: Alarma</string>
+  <string name="volume_steps_dtmf_title">Niveles de volumen: DTMF</string>
+  <string name="volume_steps_music_title">Niveles de volumen: Música</string>
+  <string name="volume_steps_notification_title">Niveles de volumen: Notificaciones</string>
+  <string name="volume_steps_ring_title">Niveles de volumen: Tono de llamada</string>
+  <string name="volume_steps_system_title">Niveles de volumen: Sistema</string>
+  <string name="volume_steps_voice_call_title">Niveles de volumen: Llamada</string>
+  <string name="volume_steps_reset">Restablecer</string>
   <string name="volume_steps_60">60</string>
   <string name="volume_steps_45">45</string>
   <string name="volume_steps_30">30</string>
@@ -231,35 +231,35 @@
   <string name="volume_steps_7">7</string>
   <string name="volume_steps_5">5</string>
   <!-- Hotspot idle -->
-  <string name="wifi_hotspot_mode_title">Keep WiFi Hotspot on</string>
+  <string name="wifi_hotspot_mode_title">Mantener el punto de acceso WiFi encendido</string>
   <!-- Battery saver color -->
-  <string name="battery_saver_title">Warning color</string>
-  <string name="battery_saver_style_reset_message">Reset battery saver warning color?</string>
+  <string name="battery_saver_title">Color de advertencia</string>
+  <string name="battery_saver_style_reset_message">¿Restablecer el color de la advertencia para el ahorro de batería?</string>
   <!-- Linked / unlinked notification volume -->
-  <string name="link_volume_option_title">Link ring and notification volumes</string>
-  <string name="notification_volume_option_title">Notification volume</string>
-  <string name="ring_notification_volume_option_title">Ring and notification volume</string>
+  <string name="link_volume_option_title">Unir volumen de llamada y notificación</string>
+  <string name="notification_volume_option_title">Volumen de notificaciones</string>
+  <string name="ring_notification_volume_option_title">Volumen de llamada y notificaciones</string>
   <!-- Double tap to launch target -->
-  <string name="dt2l_target_category">Double tap to launch options</string>
-  <string name="dt2l_target_vib_title">Adjust target\'s vibration</string>
-  <string name="dt2l_target_vib_summary">Adjust the vibration when double tapping the power button</string>
-  <string name="camera_double_tap_power_gesture_title">Enable double tap to launch</string>
-  <string name="camera_double_tap_power_gesture_desc">Double tap on the power button to launch right lockscreen target</string>
+  <string name="dt2l_target_category">Opciones de doble tap para lanzar</string>
+  <string name="dt2l_target_vib_title">Ajustar vibración del acceso directo</string>
+  <string name="dt2l_target_vib_summary">Ajusta la vibración cuando pulsas dos veces el boton de encendido</string>
+  <string name="camera_double_tap_power_gesture_title">Activar doble pulsación para lanzar</string>
+  <string name="camera_double_tap_power_gesture_desc">Doble toque en el botón de encendido lanza el acceso directo de la derecha de la pantalla de bloqueo</string>
   <!-- Battery stats reset -->
-  <string name="battery_stats_reset">Reset stats</string>
-  <string name="battery_stats_message">Battery history stats are going to be reset</string>
-  <string name="ok_string">Ok</string>
+  <string name="battery_stats_reset">Reiniciar estadísticas</string>
+  <string name="battery_stats_message">Estadísticas de la batería van a reiniciarse</string>
+  <string name="ok_string">Aceptar</string>
   <!-- Dashboard settings -->
-  <string name="dashboard_category">Dashboard settings</string>
-  <string name="dashboard_columns_title">Dashboard Columns</string>
-  <string name="dashboard_columns_summary">Change the number of columns displayed in the dashboard</string>
-  <string name="dashboard_columns_dialog_title">Select dashboard columns</string>
-  <string name="dashboard_columns_one">One</string>
-  <string name="dashboard_columns_two">Two</string>
-  <string name="dashboard_columns_three">Three</string>
-  <string name="dashboard_tileview_double_lines_title">Dashboard title view</string>
-  <string name="dashboard_tileview_double_lines_summary">Show dashboard tile titles in 2 lines</string>
-  <string name="dashboard_tileview_dividers_title">Dashboard dividers</string>
+  <string name="dashboard_category">Configuraciones del panel de ajustes</string>
+  <string name="dashboard_columns_title">Columnas del panel de ajustes</string>
+  <string name="dashboard_columns_summary">Cambiar el número de columnas que aparecen en el panel de ajustes</string>
+  <string name="dashboard_columns_dialog_title">Seleccionar columnas del panel de ajustes</string>
+  <string name="dashboard_columns_one">Una</string>
+  <string name="dashboard_columns_two">Dos</string>
+  <string name="dashboard_columns_three">Tres</string>
+  <string name="dashboard_tileview_double_lines_title">Vista del título del panel de ajustes</string>
+  <string name="dashboard_tileview_double_lines_summary">Ver el título del panel de ajustes en dos líneas</string>
+  <string name="dashboard_tileview_dividers_title">Divisores del panel de ajustes</string>
   <string name="dashboard_tileview_dividers_summary">Ocultar separadores de elementos de ajustes</string>
   <!-- Optional Dashboard Switches -->
   <string name="dashboard_switches_title">Interruptores de pantalla de ajustes</string>
