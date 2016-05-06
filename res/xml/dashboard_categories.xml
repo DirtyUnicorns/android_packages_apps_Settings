@@ -136,6 +136,8 @@
                 android:icon="@drawable/ic_settings_home"
                 />
 
+        <external-tiles />
+
         <!-- Display -->
         <dashboard-tile
                 android:id="@+id/display_settings"
@@ -210,8 +212,6 @@
                 android:targetPackage="com.google.android.gms"
                 android:targetClass="com.google.android.gms.app.settings.GoogleSettingsLink" />
         </dashboard-tile>
-
-        <external-tiles />
 
     </dashboard-category>
 
