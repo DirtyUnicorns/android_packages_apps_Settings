@@ -28,8 +28,8 @@
   <string name="bootloader">Bootloader</string>
   <string name="bytes"> Bytes</string>
   <string name="cpuinfo">INFORMAÇÃO DE CPU</string>
-  <string name="chipset_processor">Chipset / Processor</string>
-  <string name="features">Features</string>
+  <string name="chipset_processor">Chipset / processador</string>
+  <string name="features">Recursos</string>
   <string name="bogomips">BogoMIPS</string>
   <string name="abi">ABI</string>
   <string name="abitwo">ABI2</string>
@@ -37,24 +37,24 @@
   <string name="implementer">Implementador</string>
   <string name="variant">Variante</string>
   <string name="part">Parte</string>
-  <string name="revision">Revision</string>
-  <string name="displayinfo">DISPLAY INFO</string>
+  <string name="revision">Revisão</string>
+  <string name="displayinfo">INFORMAÇÃO DE TELA</string>
   <string name="diagonal">Diagonal</string>
-  <string name="height">Height</string>
-  <string name="width">Width</string>
-  <string name="density">Density</string>
-  <string name="dots_per_inch">DOTS PER INCH</string>
-  <string name="actualdpi_x">Actual DPI X</string>
-  <string name="actualdpi_y">Actual DPI Y</string>
-  <string name="refresh_rate">Refresh Rate</string>
+  <string name="height">Altura</string>
+  <string name="width">Largura</string>
+  <string name="density">Densidade</string>
+  <string name="dots_per_inch">PONTOS POR POLEGADA</string>
+  <string name="actualdpi_x">DPI X Atual</string>
+  <string name="actualdpi_y">DPI Y Atual</string>
+  <string name="refresh_rate">Taxa de atualização</string>
   <string name="pixels">Pixels</string>
-  <string name="inches">Inches</string>
+  <string name="inches">Polegadas</string>
   <!-- DU version -->
-  <string name="mod_version">DU version</string>
-  <string name="mod_version_default">Unknown</string>
+  <string name="mod_version">Versão Dirty Unicorns</string>
+  <string name="mod_version_default">Desconhecido</string>
   <!-- Share Dirty Unicorns -->
-  <string name="share_du_title">Share Dirty Unicorns</string>
-  <string name="share_du_summary">Let others know about Dirty Unicorns</string>
+  <string name="share_du_title">Divulgar Dirty Unicorns</string>
+  <string name="share_du_summary">Ajude a divulgar sobre a Dirty Unicorns</string>
   <string name="share_message">Check out what #DirtyUnicorns is all about @ http://goo.gl/emISQ1</string>
   <string name="share_chooser_title">Share Dirty Unicorns</string>
   <!-- SuperSU -->
@@ -62,13 +62,13 @@
   <!-- Google -->
   <string name="google_title">Google</string>
   <!-- Customization -->
-  <string name="header_category_custom">Customization</string>
+  <string name="header_category_custom">Customização</string>
   <string name="custom_title">Dirty Tweaks</string>
   <string name="themes_settings_title">Themes</string>
   <!-- DU Changelog -->
   <string name="duchangelog">Changelog</string>
   <string name="du_summary">Veja o que mudo na DU</string>
-  <string name="du_app_name">DU Changelog</string>
+  <string name="du_app_name">Log de Alterações DU</string>
   <!-- DU Updater -->
   <string name="duupdater">Updater</string>
   <string name="duupdater_summary">Stay up to date with the latest features and fixes</string>

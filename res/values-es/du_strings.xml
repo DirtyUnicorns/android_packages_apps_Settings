@@ -38,7 +38,7 @@
   <string name="variant">Variante</string>
   <string name="part">Parte</string>
   <string name="revision">Revisión</string>
-  <string name="displayinfo">INFORMACIÖN DE PANTALLA</string>
+  <string name="displayinfo">INFORMACIÓN DE PANTALLA</string>
   <string name="diagonal">Diagonal</string>
   <string name="height">Alto</string>
   <string name="width">Ancho</string>
@@ -50,7 +50,7 @@
   <string name="pixels">Pixeles</string>
   <string name="inches">Pulgadas</string>
   <!-- DU version -->
-  <string name="mod_version">Versión DU</string>
+  <string name="mod_version">Versión de DU</string>
   <string name="mod_version_default">Desconocida</string>
   <!-- Share Dirty Unicorns -->
   <string name="share_du_title">Compartir Dirty Unicorns</string>
@@ -67,7 +67,7 @@
   <string name="themes_settings_title">Temas</string>
   <!-- DU Changelog -->
   <string name="duchangelog">Changelog</string>
-  <string name="du_summary">Revise para ver qué ha cambiado en DU</string>
+  <string name="du_summary">Revise lo que se ha cambiado en DU</string>
   <string name="du_app_name">Changelog de DU</string>
   <!-- DU Updater -->
   <string name="duupdater">Actualizador</string>
@@ -82,7 +82,7 @@
   <string name="sound_title">Sonido</string>
   <string name="safe_headset_volume_title">Volumen seguro de auriculares</string>
   <string name="safe_headset_volume_summary">Al conectar los auriculares por primera vez, controlar que el volumen no sea demasiado alto</string>
-  <string name="safe_headset_volume_warning_dialog_text">Escucha a un volumen alto durante períodos prolongados puede dañar su oído. Desactívelo con precaución.</string>
+  <string name="safe_headset_volume_warning_dialog_text">Escuchar a un volumen alto durante períodos prolongados puede dañar su audición Desactívelo con precaución.</string>
   <string name="notifications_category_title">Notificaciones</string>
   <string name="sound_misc_category_title">Sistema</string>
   <string name="less_notification_sounds_title">Sonidos de notificación menos frecuentes</string>
