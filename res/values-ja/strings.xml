@@ -837,27 +837,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"パターンがないと、端末保護機能は利用できません。"</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"パターンがないと、端末保護機能は利用できません。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"パターンがないと、端末保護機能は利用できません。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>保存してある指紋もこの端末から削除されるため、指紋認証を使用してスマートフォンのロック解除、購入の許可、アプリへのログインを行うことはできなくなります。\"\"\"\""</string>
+</xliff:g>保存してある指紋もこの端末から削除されるため、指紋認証を使用してスマートフォンのロック解除、購入の許可、アプリへのログインを行うことはできなくなります。\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"PINがないと、端末保護機能は利用できません。"</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"PINがないと、端末保護機能は利用できません。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"PINがないと、端末保護機能は利用できません。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>保存してある指紋もこの端末から削除されるため、指紋認証を使用してスマートフォンのロック解除、購入の許可、アプリへのログインを行うことはできなくなります。\"\"\"\""</string>
+</xliff:g>保存してある指紋もこの端末から削除されるため、指紋認証を使用してスマートフォンのロック解除、購入の許可、アプリへのログインを行うことはできなくなります。\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"パスワードがないと、端末保護機能は利用できません。"</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"パスワードがないと、端末保護機能は利用できません。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"パスワードがないと、端末保護機能は利用できません。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>保存してある指紋もこの端末から削除されるため、指紋認証を使用してスマートフォンのロック解除、購入の許可、アプリへのログインを行うことはできなくなります。\"\"\"\""</string>
+</xliff:g>保存してある指紋もこの端末から削除されるため、指紋認証を使用してスマートフォンのロック解除、購入の許可、アプリへのログインを行うことはできなくなります。\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"画面ロックがないと、端末保護機能は利用できません。"</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"画面ロックがないと、端末保護機能は利用できません。<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"画面ロックがないと、端末保護機能は利用できません。<xliff:g id="EMPTY_LINE">
 
-</xliff:g>保存してある指紋もこの端末から削除されるため、指紋認証を使用してスマートフォンのロック解除、購入の許可、アプリへのログインを行うことはできなくなります。\"\"\"\""</string>
+</xliff:g>保存してある指紋もこの端末から削除されるため、指紋認証を使用してスマートフォンのロック解除、購入の許可、アプリへのログインを行うことはできなくなります。\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">削除する</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->

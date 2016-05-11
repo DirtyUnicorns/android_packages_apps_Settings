@@ -837,27 +837,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"기기 보호 기능은 패턴 없이 작동하지 않습니다."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"기기 보호 기능은 패턴 없이 작동하지 않습니다. <xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"기기 보호 기능은 패턴 없이 작동하지 않습니다. <xliff:g id="EMPTY_LINE">
 
-</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\"\"\"\""</string>
+</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"기기 보호 기능은 PIN 없이 작동하지 않습니다."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"기기 보호 기능은 PIN 없이 작동하지 않습니다.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"기기 보호 기능은 PIN 없이 작동하지 않습니다.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\"\"\"\""</string>
+</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"기기 보호 기능은 비밀번호 없이 작동하지 않습니다."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"기기 보호 기능은 비밀번호 없이 작동하지 않습니다. <xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"기기 보호 기능은 비밀번호 없이 작동하지 않습니다. <xliff:g id="EMPTY_LINE">
 
-</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\"\"\"\""</string>
+</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"기기 보호 기능은 화면 잠금 없이 작동하지 않습니다."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"기기 보호 기능은 화면 잠금 없이 작동하지 않습니다. <xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"기기 보호 기능은 화면 잠금 없이 작동하지 않습니다. <xliff:g id="EMPTY_LINE">
 
-</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\"\"\"\""</string>
+</xliff:g>저장된 지문 파일이 이 기기에서 삭제되며 지문을 이용해 휴대전화의 잠금을 해제하거나, 구매를 승인하거나, 앱에 로그인할 수 없게 됩니다.\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">네, 삭제합니다.</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->

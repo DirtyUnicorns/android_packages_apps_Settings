@@ -839,27 +839,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Без графического ключа не будет работать защита устройства."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"Без графического ключа не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"Без графического ключа не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\""</string>
+</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Без PIN-кода не будет работать защита устройства."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"Без PIN-кода не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"Без PIN-кода не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\""</string>
+</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Без пароля не будет работать защита устройства."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"Без пароля не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"Без пароля не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\""</string>
+</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Без блокировки экрана не будет работать защита устройства."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"Без блокировки экрана не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"Без блокировки экрана не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\""</string>
+</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Да, отключить</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
