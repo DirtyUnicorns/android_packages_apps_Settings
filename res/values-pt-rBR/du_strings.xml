@@ -55,8 +55,8 @@
   <!-- Share Dirty Unicorns -->
   <string name="share_du_title">Divulgar Dirty Unicorns</string>
   <string name="share_du_summary">Ajude a divulgar sobre a Dirty Unicorns</string>
-  <string name="share_message">Check out what #DirtyUnicorns is all about @ http://goo.gl/emISQ1</string>
-  <string name="share_chooser_title">Share Dirty Unicorns</string>
+  <string name="share_message">Confira sobre tudo a #DirtyUnicorns em @ http://goo.gl/emISQ1</string>
+  <string name="share_chooser_title">Divulgar Dirty Unicorns</string>
   <!-- SuperSU -->
   <string name="supersu_title">SuperSU</string>
   <!-- Google -->
@@ -70,18 +70,18 @@
   <string name="du_summary">Veja o que mudo na DU</string>
   <string name="du_app_name">Log de Alterações DU</string>
   <!-- DU Updater -->
-  <string name="duupdater">Updater</string>
-  <string name="duupdater_summary">Stay up to date with the latest features and fixes</string>
+  <string name="duupdater">Atualizador</string>
+  <string name="duupdater_summary">Mantenha-se atualizado com as últimas funcionalidades e correções</string>
   <!-- DU About -->
-  <string name="aboutdu">Info about DU</string>
-  <string name="aboutdu_summary">Information about our devs, maintainers and rom features</string>
+  <string name="aboutdu">Informação sobre a DU</string>
+  <string name="aboutdu_summary">Informação sobre nossos desenvolvedores, mantenedores e características da rom</string>
   <!-- Developer Tools -->
   <string name="developer_tools_title">Ferramentas do Desenvolvedor</string>
   <string name="developer_tools_summary">Ferramentas avançadas de depuração</string>
   <!-- Less notification sounds -->
   <string name="sound_title">Sound</string>
-  <string name="safe_headset_volume_title">Safe headset volume</string>
-  <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is first plugged in</string>
+  <string name="safe_headset_volume_title">Volume seguro do fone de ouvido</string>
+  <string name="safe_headset_volume_summary">Evitar volume alto quando o fone de ouvido for inserido pela primeira vez</string>
   <string name="safe_headset_volume_warning_dialog_text">Ouvir em volume alto por longos períodos pode prejudicar sua audição. Desative esta opção com cuidado.</string>
   <string name="notifications_category_title">Notificações</string>
   <string name="sound_misc_category_title">Sistema</string>
