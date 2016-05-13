@@ -64,7 +64,7 @@
   <!-- Customization -->
   <string name="header_category_custom">Customização</string>
   <string name="custom_title">Dirty Tweaks</string>
-  <string name="themes_settings_title">Themes</string>
+  <string name="themes_settings_title">Temas</string>
   <!-- DU Changelog -->
   <string name="duchangelog">Changelog</string>
   <string name="du_summary">Veja o que mudo na DU</string>
