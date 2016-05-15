@@ -1280,7 +1280,7 @@ public class SettingsActivity extends Activity
                 } else if (id == R.id.mobile_networks) {
                     // Remove Mobile Data Settings if Mobile network is not available (wifi only).
                     if (isSecondaryUser || Utils.isWifiOnly(getApplicationContext())
-                || mUm.hasUserRestriction(UserManager.DISALLOW_CONFIG_MOBILE_NETWORKS)) {
+                || mUm.hasUserRestriction(UserManager.DISALLOW_CONFIG_MOBILE_NETWORKS) || Utils.isSwitchesEnabled(this)) {
                         removeTile = true;
                     }
                 } else if (id == R.id.bluetooth_settings) {
