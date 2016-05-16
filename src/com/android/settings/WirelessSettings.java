@@ -297,6 +297,12 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
             removePreference(KEY_MOBILE_NETWORK_SETTINGS);
             removePreference(KEY_MANAGE_MOBILE_PLAN);
         }
+
+        if (!Utils.isSwitchesEnabled(mContext)) {
+            removePreference(KEY_MOBILE_NETWORK_SETTINGS);
+            removePreference(KEY_MANAGE_MOBILE_PLAN);
+        }
+
         // Remove Mobile Network Settings and Manage Mobile Plan
         // if config_show_mobile_plan sets false.
         final boolean isMobilePlanEnabled = this.getResources().getBoolean(

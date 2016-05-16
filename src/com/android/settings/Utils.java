@@ -69,6 +69,7 @@ import android.provider.ContactsContract.Contacts;
 import android.provider.ContactsContract.Data;
 import android.provider.ContactsContract.Profile;
 import android.provider.ContactsContract.RawContacts;
+import android.provider.Settings;
 import android.service.persistentdata.PersistentDataBlockManager;
 import android.telephony.TelephonyManager;
 import android.text.Spannable;
@@ -1268,6 +1269,11 @@ public final class Utils {
             }
         }
         return estimatedTotal;
+    }
+
+    public static boolean isSwitchesEnabled(Context context) {
+        return Settings.System.getInt(context.getContentResolver(),
+                Settings.System.DASHBOARD_SWITCHES, 0) != 1;
     }
 }
 
