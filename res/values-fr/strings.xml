@@ -838,23 +838,23 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Les fonctionnalités de protection de l'appareil ne fonctionnent pas sans votre schéma."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"Les fonctionnalités de protection de l'appareil ne fonctionnent pas sans votre schéma.<xliff:g id="EMPTY_LINE">
-</xliff:g>Vos empreintes digitales enregistrées seront également supprimées de cet appareil, et vous ne pourrez plus les utiliser pour déverrouiller votre téléphone, autoriser des achats ni vous connecter à des applications.\"\"\"\"\"\""</string>
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"Les fonctionnalités de protection de l'appareil ne fonctionnent pas sans votre schéma.<xliff:g id="EMPTY_LINE">
+</xliff:g>Vos empreintes digitales enregistrées seront également supprimées de cet appareil, et vous ne pourrez plus les utiliser pour déverrouiller votre téléphone, autoriser des achats ni vous connecter à des applications.\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Les fonctionnalités de protection de l'appareil ne fonctionnent pas sans votre code."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"Les fonctionnalités de protection de l'appareil ne fonctionnent pas sans votre code.<xliff:g id="EMPTY_LINE">
-</xliff:g>Vos empreintes digitales enregistrées seront également supprimées de cet appareil, et vous ne pourrez plus les utiliser pour déverrouiller votre téléphone, autoriser des achats ni vous connecter à des applications.\"\"\"\"\"\""</string>
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"Les fonctionnalités de protection de l'appareil ne fonctionnent pas sans votre code.<xliff:g id="EMPTY_LINE">
+</xliff:g>Vos empreintes digitales enregistrées seront également supprimées de cet appareil, et vous ne pourrez plus les utiliser pour déverrouiller votre téléphone, autoriser des achats ni vous connecter à des applications.\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Les fonctionnalités de protection de l'appareil ne fonctionnent pas sans votre mot de passe."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"Les fonctionnalités de protection de l'appareil ne fonctionnent pas sans votre mot de passe.<xliff:g id="EMPTY_LINE">
-</xliff:g>Vos empreintes digitales enregistrées seront également supprimées de cet appareil, et vous ne pourrez plus les utiliser pour déverrouiller votre téléphone, autoriser des achats ni vous connecter à des applications.\"\"\"\"\"\""</string>
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"Les fonctionnalités de protection de l'appareil ne fonctionnent pas sans votre mot de passe.<xliff:g id="EMPTY_LINE">
+</xliff:g>Vos empreintes digitales enregistrées seront également supprimées de cet appareil, et vous ne pourrez plus les utiliser pour déverrouiller votre téléphone, autoriser des achats ni vous connecter à des applications.\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Les fonctionnalités de protection de l'appareil ne fonctionnent pas sans le verrouillage de l'écran."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"Les fonctionnalités de protection de l'appareil ne fonctionnent pas sans le verrouillage de l'écran.<xliff:g id="EMPTY_LINE">
-</xliff:g>Vos empreintes digitales enregistrées seront également supprimées de cet appareil, et vous ne pourrez plus les utiliser pour déverrouiller votre téléphone, autoriser des achats ni vous connecter à des applications.\"\"\"\"\"\""</string>
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"Les fonctionnalités de protection de l'appareil ne fonctionnent pas sans le verrouillage de l'écran.<xliff:g id="EMPTY_LINE">
+</xliff:g>Vos empreintes digitales enregistrées seront également supprimées de cet appareil, et vous ne pourrez plus les utiliser pour déverrouiller votre téléphone, autoriser des achats ni vous connecter à des applications.\"\"\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Oui, supprimer</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->

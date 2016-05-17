@@ -66,7 +66,7 @@
   <string name="custom_title">Dirty Tweaks</string>
   <string name="themes_settings_title">Temas</string>
   <!-- DU Changelog -->
-  <string name="duchangelog">Changelog</string>
+  <string name="duchangelog">Log de alterações</string>
   <string name="du_summary">Veja o que mudo na DU</string>
   <string name="du_app_name">Log de Alterações DU</string>
   <!-- DU Updater -->
@@ -243,8 +243,8 @@
   <string name="dt2l_target_category">Toque duplo para carregar as opções</string>
   <string name="dt2l_target_vib_title">Ajustar a vibração alvo</string>
   <string name="dt2l_target_vib_summary">Ajustar a vibração com toque duplo no botão power</string>
-  <string name="camera_double_tap_power_gesture_title">Habilitar o toque duplo para carregar</string>
-  <string name="camera_double_tap_power_gesture_desc">Double tap on the power button to launch right lockscreen target</string>
+  <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
+  <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
   <!-- Battery stats reset -->
   <string name="battery_stats_reset">Zerar as estatísticas</string>
   <string name="battery_stats_message">Os históricos de estatísticas da bateria serão reiniciados</string>

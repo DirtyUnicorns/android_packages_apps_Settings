@@ -55,7 +55,7 @@
   <!-- Share Dirty Unicorns -->
   <string name="share_du_title">Поделиться Dirty Unicorns</string>
   <string name="share_du_summary">Расскажите другим о Dirty Unicorns</string>
-  <string name="share_message">Check out what #DirtyUnicorns is all about @ http://goo.gl/emISQ1</string>
+  <string name="share_message">Понравилось и хотите ещё больше? Добро пожаловать в наше сообщество #DirtyUnicorns @ http://goo.gl/emISQ1</string>
   <string name="share_chooser_title">Поделиться Dirty Unicorns</string>
   <!-- SuperSU -->
   <string name="supersu_title">Суперпользователь</string>
@@ -71,7 +71,7 @@
   <string name="du_app_name">Список изменений DU</string>
   <!-- DU Updater -->
   <string name="duupdater">Обновления</string>
-  <string name="duupdater_summary">Stay up to date with the latest features and fixes</string>
+  <string name="duupdater_summary">Оставайтесь в курсе с последними функциями и исправлениями</string>
   <!-- DU About -->
   <string name="aboutdu">Информация о DU</string>
   <string name="aboutdu_summary">Информация о наших разработчиках, сопровождающих устройства и функциях прошивки</string>
@@ -243,8 +243,8 @@
   <string name="dt2l_target_category">Настройки двойного нажатия для запуска</string>
   <string name="dt2l_target_vib_title">Adjust target\'s vibration</string>
   <string name="dt2l_target_vib_summary">Adjust the vibration when double tapping the power button</string>
-  <string name="camera_double_tap_power_gesture_title">Вкл двойное нажатие для запуска</string>
-  <string name="camera_double_tap_power_gesture_desc">Двойное нажатие на кнопку питания для запуска правой цели экрана блокировки</string>
+  <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
+  <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
   <!-- Battery stats reset -->
   <string name="battery_stats_reset">Сбросить статистику</string>
   <string name="battery_stats_message">Статистика батареи будет сброшена</string>

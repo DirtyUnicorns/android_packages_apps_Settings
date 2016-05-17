@@ -243,8 +243,8 @@
   <string name="dt2l_target_category">Doppeltes Tippen zum Starten</string>
   <string name="dt2l_target_vib_title">Vibration anpassen</string>
   <string name="dt2l_target_vib_summary">Passt die Vibration beim doppelten Tippen des Powerbuttons an</string>
-  <string name="camera_double_tap_power_gesture_title">Doppeltes Tippen zum Starten aktivieren</string>
-  <string name="camera_double_tap_power_gesture_desc">Doppeltes Tippen auf den Powerbutton um die rechte Sperrbildschirmverknüpfung zu starten</string>
+  <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
+  <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
   <!-- Battery stats reset -->
   <string name="battery_stats_reset">Statistik zurücksetzen</string>
   <string name="battery_stats_message">Der Akkuverlauf wird zurückgesetzt</string>

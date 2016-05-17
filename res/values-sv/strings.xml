@@ -838,27 +838,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Funktionerna för enhetsskydd fungerar inte utan det grafiska lösenordet."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"Funktionerna för enhetsskydd fungerar inte utan det grafiska lösenordet.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"Funktionerna för enhetsskydd fungerar inte utan det grafiska lösenordet.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Sparade fingeravtryck tas också bort från enheten och kan inte användas för att låsa upp mobilen, godkänna köp eller logga in i appar.\"\"\"\"\""</string>
+</xliff:g>Sparade fingeravtryck tas också bort från enheten och kan inte användas för att låsa upp mobilen, godkänna köp eller logga in i appar.\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Funktionerna för enhetsskydd fungerar inte utan pinkoden."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"Funktionerna för enhetsskydd fungerar inte utan pinkoden.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"Funktionerna för enhetsskydd fungerar inte utan pinkoden.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Sparade fingeravtryck tas också bort från enheten och kan inte användas för att låsa upp mobilen, godkänna köp eller logga in i appar.\"\"\"\"\""</string>
+</xliff:g>Sparade fingeravtryck tas också bort från enheten och kan inte användas för att låsa upp mobilen, godkänna köp eller logga in i appar.\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Funktionerna för enhetsskydd fungerar inte utan lösenordet."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"Funktionerna för enhetsskydd fungerar inte utan lösenordet.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"Funktionerna för enhetsskydd fungerar inte utan lösenordet.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Sparade fingeravtryck tas också bort från enheten och kan inte användas för att låsa upp mobilen, godkänna köp eller logga in i appar.\"\"\"\"\""</string>
+</xliff:g>Sparade fingeravtryck tas också bort från enheten och kan inte användas för att låsa upp mobilen, godkänna köp eller logga in i appar.\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Funktionerna för enhetsskydd fungerar inte utan skärmlåset."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"Funktionerna för enhetsskydd fungerar inte utan skärmlåset.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"Funktionerna för enhetsskydd fungerar inte utan skärmlåset.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Sparade fingeravtryck tas också bort från enheten och kan inte användas för att låsa upp mobilen, godkänna köp eller logga in i appar.\"\"\"\"\""</string>
+</xliff:g>Sparade fingeravtryck tas också bort från enheten och kan inte användas för att låsa upp mobilen, godkänna köp eller logga in i appar.\"\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Ja, ta bort</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
@@ -4405,7 +4405,7 @@
   <!-- UI debug setting: force hardware acceleration summary [CHAR LIMIT=50] -->
   <string name="force_hw_ui_summary">Tvingad användning av GPU för 2D-ritning</string>
   <!-- UI debug setting: force anti-aliasing to render apps [CHAR LIMIT=25] -->
-  <string name="force_msaa">Force 4x MSAA</string>
+  <string name="force_msaa">Tvinga 4x MSAA</string>
   <!-- UI debug setting: force anti-aliasing summary [CHAR LIMIT=50] -->
   <string name="force_msaa_summary">Aktivera 4x MSAA i OpenGL ES 2.0-appar</string>
   <!-- UI debug setting: show when non-rectangular clip operations are used [CHAR LIMIT=100] -->
@@ -4679,7 +4679,7 @@
   <!-- Menu item to delete a VPN profile. [CHAR LIMIT=40] -->
   <string name="vpn_menu_delete">Ta bort profil</string>
   <!-- Menu item to select always-on VPN profile. [CHAR LIMIT=40] -->
-  <string name="vpn_menu_lockdown">Always-on VPN</string>
+  <string name="vpn_menu_lockdown">Alltid-på VPN</string>
   <!-- Summary describing the always-on VPN feature. [CHAR LIMIT=NONE] -->
   <string name="vpn_lockdown_summary">Välj en VPN-profil som du alltid vill vara ansluten till. Nätverkstrafik tillåts bara när du är ansluten till detta VPN.</string>
   <!-- List item indicating that no always-on VPN is selected. [CHAR LIMIT=64] -->
@@ -4900,7 +4900,7 @@
   <!-- Button the user can click to indicate he understood and dismiss the screen -->
   <string name="nfc_how_it_works_got_it">OK</string>
   <!-- NFC More... title.  [CHAR LIMIT=40] -->
-  <string name="nfc_more_title">More\u2026</string>
+  <string name="nfc_more_title">Mer\u2026</string>
   <!-- Label for the dialog that is shown when the user is asked to set a
          preferred payment application -->
   <string name="nfc_payment_set_default_label">Vill du ange den här som standard?</string>
@@ -4975,7 +4975,7 @@
   <!-- Call Manager settings title.  [CHAR LIMIT=50] -->
   <string name="call_manager_title">Samtalshanterare</string>
   <!-- Call Manager settings summary.  [CHAR LIMIT=50] -->
-  <string name="call_manager_summary"><xliff:g id="app">%1$s</xliff:g></string>
+  <string name="call_manager_summary"><xliff:g id="app">%1$s </xliff:g></string>
   <!-- Cell Broadcast settings title.  [CHAR LIMIT=50] -->
   <string name="cell_broadcast_settings">Nödsändningar</string>
   <!-- Network operators settings title.  [CHAR LIMIT=50] -->

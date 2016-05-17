@@ -243,8 +243,8 @@
   <string name="dt2l_target_category">Opciones de doble tap para lanzar</string>
   <string name="dt2l_target_vib_title">Ajustar vibración del acceso directo</string>
   <string name="dt2l_target_vib_summary">Ajusta la vibración cuando pulsas dos veces el boton de encendido</string>
-  <string name="camera_double_tap_power_gesture_title">Activar doble pulsación para lanzar</string>
-  <string name="camera_double_tap_power_gesture_desc">Doble toque en el botón de encendido lanza el acceso directo de la derecha de la pantalla de bloqueo</string>
+  <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
+  <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
   <!-- Battery stats reset -->
   <string name="battery_stats_reset">Reiniciar estadísticas</string>
   <string name="battery_stats_message">Estadísticas de la batería van a reiniciarse</string>

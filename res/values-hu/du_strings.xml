@@ -54,7 +54,7 @@
   <string name="mod_version_default">Ismeretlen</string>
   <!-- Share Dirty Unicorns -->
   <string name="share_du_title">Dirty Unicorns megosztása</string>
-  <string name="share_du_summary">Segíts, hogy mások is megismerjék a Dirty Unicorns romot</string>
+  <string name="share_du_summary">Segíts, hogy mások is megismerjék a Dirty Unicorns ROM</string>
   <string name="share_message">Nézd meg, hogy a #DirtyUnicorns miről is szól @ http://goo.gl/emISQ1</string>
   <string name="share_chooser_title">Dirty Unicorns megosztása</string>
   <!-- SuperSU -->
@@ -67,14 +67,14 @@
   <string name="themes_settings_title">Témák</string>
   <!-- DU Changelog -->
   <string name="duchangelog">Változáslista</string>
-  <string name="du_summary">Nézd meg mi változott a DU romban</string>
+  <string name="du_summary">Nézd meg mi változott a DU ROMban</string>
   <string name="du_app_name">DU változáslista</string>
   <!-- DU Updater -->
   <string name="duupdater">Frissítő</string>
   <string name="duupdater_summary">Légy naprakész a legújabb funkciókkal és javításokkal</string>
   <!-- DU About -->
   <string name="aboutdu">Info a DU romról</string>
-  <string name="aboutdu_summary">Információ fejlesztőinkről, segítőkről és rom funkciókról</string>
+  <string name="aboutdu_summary">Információ fejlesztőinkről, segítőkről és ROM funkciókról</string>
   <!-- Developer Tools -->
   <string name="developer_tools_title">Fejlesztői eszközök</string>
   <string name="developer_tools_summary">Speciális hibakeresési eszközök</string>
@@ -243,8 +243,8 @@
   <string name="dt2l_target_category">Kétszer érintve indít beállításai</string>
   <string name="dt2l_target_vib_title">Rezgés beállítása</string>
   <string name="dt2l_target_vib_summary">Rezgés erősségének megadása bekapcsoló gomb dupla érintésére</string>
-  <string name="camera_double_tap_power_gesture_title">Kétszer érintve indít engedlyezése</string>
-  <string name="camera_double_tap_power_gesture_desc">Érintse meg kétszer a bekapcsoló gombot, hogy elindítsa a zárképernyő jobb oldali célját</string>
+  <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
+  <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
   <!-- Battery stats reset -->
   <string name="battery_stats_reset">Statisztika törlése</string>
   <string name="battery_stats_message">Akkumulátor használati statisztika törlésre kerül</string>

@@ -1906,7 +1906,7 @@
   <!-- SD card & phone storage settings summary. Displayed when the total memory usage is being calculated. Will be replaced with a number like "12.3 GB" when finished calucating. [CHAR LIMIT=30] -->
   <string name="memory_calculating_size">正在计算...</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of Android system. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
-  <string name="memory_android_system_usage">Android System</string>
+  <string name="memory_android_system_usage">Android 系统</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of applications installed. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
   <string name="memory_apps_usage">应用和应用数据</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of media on the device. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
@@ -2062,9 +2062,9 @@
   <!-- Body of dialog confirming that user wants to forget an internal storage device [CHAR LIMIT=NONE]-->
   <string name="storage_internal_forget_confirm">此<xliff:g id="NAME">^1</xliff:g>上存储的所有应用、照片和数据将会永久丢失。</string>
   <!-- Item title describing storage used by Android system [CHAR LIMIT=48] -->
-  <string name="storage_detail_android_system">Android System</string>
+  <string name="storage_detail_android_system">Android 系统</string>
   <!-- Toast message shown when storage item of Android system is clicked [CHAR LIMIT=NONE]-->
-  <string name="storage_detail_android_system_version">Android System <xliff:g id="version">%s</xliff:g></string>
+  <string name="storage_detail_android_system_version">Android 系统 <xliff:g id="version">%s</xliff:g></string>
   <!-- Item title describing storage used by apps [CHAR LIMIT=48]-->
   <string name="storage_detail_apps">应用</string>
   <!-- Item title describing storage used by images [CHAR LIMIT=48]-->

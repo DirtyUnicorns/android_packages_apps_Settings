@@ -18,7 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- DU Extra Info -->
   <string name="duextrainfo">扩展信息</string>
-  <string name="duextrainfo_summary">显示 cpu、显示屏等额外信息</string>
+  <string name="duextrainfo_summary">显示处理器、屏幕等额外信息</string>
   <string name="basicinfo">基本信息</string>
   <string name="manufacturer">制造商</string>
   <string name="hardwaretype">硬件类型</string>
@@ -29,21 +29,21 @@
   <string name="bytes"> 字节</string>
   <string name="cpuinfo">处理器信息</string>
   <string name="chipset_processor">芯片/处理器</string>
-  <string name="features">特点</string>
+  <string name="features">技术特性</string>
   <string name="bogomips">BogoMIPS</string>
   <string name="abi">ABI</string>
   <string name="abitwo">ABI2</string>
-  <string name="architecture">Architecture</string>
+  <string name="architecture">架构</string>
   <string name="implementer">Implementer</string>
   <string name="variant">Variant</string>
   <string name="part">Part</string>
-  <string name="revision">Revision</string>
-  <string name="displayinfo">显示信息</string>
-  <string name="diagonal">对角</string>
+  <string name="revision">修订版本</string>
+  <string name="displayinfo">屏幕信息</string>
+  <string name="diagonal">屏幕尺寸</string>
   <string name="height">高</string>
   <string name="width">宽</string>
-  <string name="density">密度</string>
-  <string name="dots_per_inch">每英寸点数</string>
+  <string name="density">像素密度类别</string>
+  <string name="dots_per_inch">像素密度 (点/英尺)</string>
   <string name="actualdpi_x">实际 DPI X</string>
   <string name="actualdpi_y">实际 DPI Y</string>
   <string name="refresh_rate">刷新频率</string>
@@ -53,9 +53,9 @@
   <string name="mod_version">Dirty Unicorns 版本</string>
   <string name="mod_version_default">未知</string>
   <!-- Share Dirty Unicorns -->
-  <string name="share_du_title">分享Dirty Unicorns</string>
+  <string name="share_du_title">分享 Dirty Unicorns</string>
   <string name="share_du_summary">让更多人知道 Dirty Unicorns</string>
-  <string name="share_message">查看关于Dirty Unicorns的所有@ http://goo.gl/emISQ1</string>
+  <string name="share_message">查看更多关于 #Dirty Unicorns 的资讯 @ http://goo.gl/emISQ1</string>
   <string name="share_chooser_title">分享Dirty Unicorns</string>
   <!-- SuperSU -->
   <string name="supersu_title">超级用户</string>
@@ -243,8 +243,8 @@
   <string name="dt2l_target_category">双击启动选项</string>
   <string name="dt2l_target_vib_title">调整振动</string>
   <string name="dt2l_target_vib_summary">调整双击电源按钮时的振动强度</string>
-  <string name="camera_double_tap_power_gesture_title">启用双击启动</string>
-  <string name="camera_double_tap_power_gesture_desc">双击电源键启动锁屏界面右边的目标</string>
+  <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
+  <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
   <!-- Battery stats reset -->
   <string name="battery_stats_reset">重置统计数据</string>
   <string name="battery_stats_message">电池的历史数据将被重置</string>
