@@ -1833,7 +1833,7 @@
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="kernel_version">Versión del kernel</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
-  <string name="build_date">Build date</string>
+  <string name="build_date">Fecha de compilación</string>
   <string name="build_date_default">2012-01-01-0000</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="selinux_status">Estado de SELinux</string>
@@ -1914,7 +1914,7 @@
   <!-- SD card & phone storage settings summary. Displayed when the total memory usage is being calculated. Will be replaced with a number like "12.3 GB" when finished calucating. [CHAR LIMIT=30] -->
   <string name="memory_calculating_size">Calculando…</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of Android system. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
-  <string name="memory_android_system_usage">Android System</string>
+  <string name="memory_android_system_usage">Sistema Android</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of applications installed. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
   <string name="memory_apps_usage">Aplicaciones y sus datos</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of media on the device. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
@@ -2070,9 +2070,9 @@
   <!-- Body of dialog confirming that user wants to forget an internal storage device [CHAR LIMIT=NONE]-->
   <string name="storage_internal_forget_confirm">Las aplicaciones, las fotos y los datos almacenados en este dispositivo de almacenamiento (<xliff:g id="NAME">^1</xliff:g>) se perderán de forma permanente.</string>
   <!-- Item title describing storage used by Android system [CHAR LIMIT=48] -->
-  <string name="storage_detail_android_system">Android System</string>
+  <string name="storage_detail_android_system">Sistema Android</string>
   <!-- Toast message shown when storage item of Android system is clicked [CHAR LIMIT=NONE]-->
-  <string name="storage_detail_android_system_version">Android System <xliff:g id="version">%s</xliff:g></string>
+  <string name="storage_detail_android_system_version">Sistema Android <xliff:g id="version">%s </xliff:g></string>
   <!-- Item title describing storage used by apps [CHAR LIMIT=48]-->
   <string name="storage_detail_apps">Aplicaciones</string>
   <!-- Item title describing storage used by images [CHAR LIMIT=48]-->
@@ -2296,7 +2296,7 @@
   <!-- Master clear progress screen title [CHAR LIMIT=30] -->
   <string name="master_clear_progress_title">Borrando</string>
   <!-- Master clear progress screen text [CHAR LIMIT=75] -->
-  <string name="master_clear_progress_text">Please wait\u2026</string>
+  <string name="master_clear_progress_text">Por favor espere\u2026</string>
   <!-- Main settings screen, Call settings title for item to go into the call settings -->
   <string name="call_settings_title">Ajustes de llamadas</string>
   <!-- Main settings screen, Call settings summary for item to go into call settings -->
@@ -3882,7 +3882,7 @@
   <string name="tts_status_not_supported">No se admite el <xliff:g id="LOCALE">%1$s</xliff:g></string>
   <!-- On main TTS Settings screen, current TTS engine status for the current default language,
          tts engine is queried for status [CHAR LIMIT=150] -->
-  <string name="tts_status_checking">Checking\u2026</string>
+  <string name="tts_status_checking">Comprobando\u2026</string>
   <!-- On main TTS Settings screen, text for divider under which all TTS engines are listed -->
   <string name="tts_engines_section">Motores</string>
   <!-- On main TTS Settings screen, text preceded by the TTS engine name, clicking this button will launch the engine settings -->
@@ -4256,7 +4256,7 @@
   <!-- Data synchronization settings screen, checkbox setting option name. Controls whether Gmail should be synced.  Should use "Gmail" to refer to this app.-->
   <string name="sync_gmail">Gmail</string>
   <!-- Data synchronization settings screen, checkbox setting option name. Controls whether Calendar shoudl be synced. -->
-  <string name="sync_calendar">Calendar</string>
+  <string name="sync_calendar">Calendario</string>
   <!-- Data synchronization settings screen, checkbox setting option name -->
   <string name="sync_contacts">Contactos</string>
   <!-- Message introducing the user to Google Sync. -->
@@ -4900,7 +4900,7 @@
   <!-- Button the user can click to indicate he understood and dismiss the screen -->
   <string name="nfc_how_it_works_got_it">Entendido</string>
   <!-- NFC More... title.  [CHAR LIMIT=40] -->
-  <string name="nfc_more_title">More\u2026</string>
+  <string name="nfc_more_title">Más\u2026</string>
   <!-- Label for the dialog that is shown when the user is asked to set a
          preferred payment application -->
   <string name="nfc_payment_set_default_label">¿Establecer como preferencia?</string>
@@ -5056,7 +5056,7 @@
   <!-- Message for selecting sim for data in settings.  [CHAR LIMIT=40] -->
   <string name="select_sim_for_data">Selecciona una SIM de datos</string>
   <!-- Message for switching data SIM; switching takes a while -->
-  <string name="data_switch_started">Switching data SIM, this may take up to a minute\u2026</string>
+  <string name="data_switch_started">Cambiando SIM de datos. Este proceso puede durar un minuto\2026</string>
   <!-- Message for selecting sim for call in settings.  [CHAR LIMIT=40] -->
   <string name="select_sim_for_calls">Llamar con</string>
   <!-- Title for selecting a SIM card.  [CHAR LIMIT=40] -->
@@ -5175,7 +5175,7 @@
   <!-- Text for button to confirm writing tag -->
   <string name="write_tag">Editar</string>
   <!-- Text to inform the user to tap a tag to complete the setup process -->
-  <string name="status_awaiting_tap">Tap a tag to write\u2026</string>
+  <string name="status_awaiting_tap">Toca una etiqueta para editarla\u2026</string>
   <!-- Text to inform the user that the network key entered was incorrect -->
   <string name="status_invalid_password">Contraseña no válida. Vuelve a intentarlo.</string>
   <!-- Text displayed when tag successfully writen -->
@@ -5290,7 +5290,7 @@
   <!-- Sound & notification > Do Not Disturb access > Text to display when the list is empty. [CHAR LIMIT=NONE] -->
   <string name="zen_access_empty_text">Ninguna aplicación instalada ha solicitado acceso de No molestar</string>
   <!-- [CHAR LIMIT=NONE] Text when loading app list in notification settings -->
-  <string name="loading_notification_apps">Loading apps\u2026</string>
+  <string name="loading_notification_apps">Cargando aplicaciones\2026</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option title -->
   <string name="app_notification_block_title">Bloquear todo</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option description-->

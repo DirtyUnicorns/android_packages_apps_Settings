@@ -17,17 +17,17 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- DU Extra Info -->
-  <string name="duextrainfo">Extra information</string>
-  <string name="duextrainfo_summary">Display extra info for cpu, display, etc</string>
-  <string name="basicinfo">BASIC INFO</string>
-  <string name="manufacturer">Manufacturer</string>
-  <string name="hardwaretype">Hardware type</string>
-  <string name="systempartition">System partition</string>
-  <string name="datapartition">Data partition</string>
-  <string name="ram">RAM</string>
+  <string name="duextrainfo">額外資訊</string>
+  <string name="duextrainfo_summary">顯示 cpu、顯示器等額外資訊</string>
+  <string name="basicinfo">基本資訊</string>
+  <string name="manufacturer">製造商</string>
+  <string name="hardwaretype">硬體類型</string>
+  <string name="systempartition">系統分割區</string>
+  <string name="datapartition">資料分割區</string>
+  <string name="ram">記憶體</string>
   <string name="bootloader">Bootloader</string>
-  <string name="bytes"> Bytes</string>
-  <string name="cpuinfo">CPU INFO</string>
+  <string name="bytes"> 位元組</string>
+  <string name="cpuinfo">CPU 資訊</string>
   <string name="chipset_processor">Chipset / Processor</string>
   <string name="features">Features</string>
   <string name="bogomips">BogoMIPS</string>

@@ -79,7 +79,7 @@
   <string name="developer_tools_title">Ferramentas do Desenvolvedor</string>
   <string name="developer_tools_summary">Ferramentas avançadas de depuração</string>
   <!-- Less notification sounds -->
-  <string name="sound_title">Sound</string>
+  <string name="sound_title">Som</string>
   <string name="safe_headset_volume_title">Volume seguro do fone de ouvido</string>
   <string name="safe_headset_volume_summary">Evitar volume alto quando o fone de ouvido for inserido pela primeira vez</string>
   <string name="safe_headset_volume_warning_dialog_text">Ouvir em volume alto por longos períodos pode prejudicar sua audição. Desative esta opção com cuidado.</string>
@@ -141,29 +141,29 @@
   <string name="battery_light_medium_color_title">Carregando</string>
   <string name="battery_light_full_color_title">Fully charged</string>
   <!-- Lights settings screen, notification light settings -->
-  <string name="notification_light_title">Notification light</string>
-  <string name="notification_light_general_title">General</string>
-  <string name="notification_light_applist_title">Apps</string>
-  <string name="notification_light_phonelist_title">Phone</string>
-  <string name="notification_light_use_custom">Use custom values</string>
+  <string name="notification_light_title">Luz de notificação</string>
+  <string name="notification_light_general_title">Gerais</string>
+  <string name="notification_light_applist_title">Aplicativos</string>
+  <string name="notification_light_phonelist_title">Telefone</string>
+  <string name="notification_light_use_custom">Utilizar valores personalizados</string>
   <string name="notification_light_default_value">Default</string>
   <string name="notification_light_missed_call_title">Missed call</string>
   <string name="notification_light_voicemail_title">Voicemail</string>
   <string name="notification_light_screen_on">Lights with screen on</string>
-  <string name="allow_lights_title">Lights in do not disturb mode</string>
+  <string name="allow_lights_title">Luzes no modo não perturbe</string>
   <!-- Keyboard and Input methods  -->
-  <string name="title_keyboard_input">Advanced options</string>
-  <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
-  <string name="disable_fullscreen_keyboard_summary">Landscape keyboard will never take up entire screen</string>
+  <string name="title_keyboard_input">Opções avançadas</string>
+  <string name="disable_fullscreen_keyboard_title">Desativar teclado em tela cheia</string>
+  <string name="disable_fullscreen_keyboard_summary">Teclado em paisagem nunca ocupará a tela inteira</string>
   <string name="volume_key_cursor_control_title">Volume key cursor control</string>
   <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
   <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
   <string name="keyboard_rotation_toggle_title">Auto keyboard rotation</string>
   <string name="keyboard_rotation_toggle_summary">Force auto-rotate when keyboard is shown</string>
-  <string name="keyboard_rotation_timeout_title">Auto-rotate timeout</string>
-  <string name="keyboard_rotation_timeout_summary">Disables auto-rotate sensor <xliff:g id="rotate_timeout">%1$s</xliff:g> seconds after keyboard is hidden</string>
-  <string name="keyboard_rotation_dialog">This feature forces auto-rotate to turn on temporarily while the keyboard is shown.  It has no effect when auto-rotate is already enabled.</string>
-  <string name="show_enter_key_title">Show enter key</string>
+  <string name="keyboard_rotation_timeout_title">Tempo limite da auto-rotação</string>
+  <string name="keyboard_rotation_timeout_summary">Desabilita sensor de auto-rotação <xliff:g id="rotate_timeout">%1$s</xliff:g> segundos após esconder teclado</string>
+  <string name="keyboard_rotation_dialog">Este recurso liga a auto-rotação temporariamente quando o teclado é exibido. Não tem nenhum efeito quando a auto-rotação já está ativada.</string>
+  <string name="show_enter_key_title">Exibir tecla \"Enter\"</string>
   <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
   <string name="ime_switcher_notify">Selector notification</string>
   <string name="ime_switcher_notify_summary">Display input method selector notification</string>

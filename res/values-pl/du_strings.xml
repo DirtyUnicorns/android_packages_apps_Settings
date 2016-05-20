@@ -243,8 +243,8 @@
   <string name="dt2l_target_category">Działanie po dwukrotnym dotknięciu</string>
   <string name="dt2l_target_vib_title">Dostosuj wibracje</string>
   <string name="dt2l_target_vib_summary">Dostosuj wibrację po podwójnym kliknięciu przycisku zasilania</string>
-  <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
-  <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
+  <string name="camera_double_tap_power_gesture_title">Naciśnij przycisk zasilania dwa razy, aby włączyć aparat</string>
+  <string name="camera_double_tap_power_gesture_desc">Szybkie uruchamianie aparatu bez odblokowywania ekranu</string>
   <!-- Battery stats reset -->
   <string name="battery_stats_reset">Zresetuj statystyki</string>
   <string name="battery_stats_message">Statystyki baterii zostaną zresetowane</string>
