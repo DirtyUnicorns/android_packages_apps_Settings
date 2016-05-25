@@ -148,18 +148,18 @@
   <string name="notification_light_use_custom">Utilizar valores personalizados</string>
   <string name="notification_light_default_value">Default</string>
   <string name="notification_light_missed_call_title">Missed call</string>
-  <string name="notification_light_voicemail_title">Voicemail</string>
-  <string name="notification_light_screen_on">Lights with screen on</string>
+  <string name="notification_light_voicemail_title">Correios de Voz</string>
+  <string name="notification_light_screen_on">Luzes com tela ligada</string>
   <string name="allow_lights_title">Luzes no modo não perturbe</string>
   <!-- Keyboard and Input methods  -->
   <string name="title_keyboard_input">Opções avançadas</string>
   <string name="disable_fullscreen_keyboard_title">Desativar teclado em tela cheia</string>
   <string name="disable_fullscreen_keyboard_summary">Teclado em paisagem nunca ocupará a tela inteira</string>
-  <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-  <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-  <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
-  <string name="keyboard_rotation_toggle_title">Auto keyboard rotation</string>
-  <string name="keyboard_rotation_toggle_summary">Force auto-rotate when keyboard is shown</string>
+  <string name="volume_key_cursor_control_title">Controlar o cursor com as teclas de volume</string>
+  <string name="volume_key_cursor_control_on">Volume para cima/baixo move o cursor para esquerda/direita</string>
+  <string name="volume_key_cursor_control_on_reverse">Tecla de volume para cima/baixo move o cursor para direita/esquerda</string>
+  <string name="keyboard_rotation_toggle_title">Rotação automática do teclado</string>
+  <string name="keyboard_rotation_toggle_summary">Forçar auto-rotação quando o teclado é exibido</string>
   <string name="keyboard_rotation_timeout_title">Tempo limite da auto-rotação</string>
   <string name="keyboard_rotation_timeout_summary">Desabilita sensor de auto-rotação <xliff:g id="rotate_timeout">%1$s</xliff:g> segundos após esconder teclado</string>
   <string name="keyboard_rotation_dialog">Este recurso liga a auto-rotação temporariamente quando o teclado é exibido. Não tem nenhum efeito quando a auto-rotação já está ativada.</string>

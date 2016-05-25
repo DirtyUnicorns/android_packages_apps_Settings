@@ -132,7 +132,7 @@
   <string name="large_font">Groot</string>
   <!-- Do not translate. label for font size preview.  Does not need to be translated. -->
   <!-- Button. Chosen when they want to save the chosen text size. -->
-  <string name="font_size_save">OK</string>
+  <string name="font_size_save">Oké</string>
   <!-- Title for a notification shown. [CHAR LIMIT=25] -->
   <string name="sdcard_setting" product="nosdcard">USB-opslag</string>
   <!-- Title for a notification shown. -->
@@ -313,7 +313,7 @@
   <!-- HTTP proxy settings. Title if there is an error-->
   <string name="proxy_error">Let op</string>
   <!-- HTTP proxy settings. Button to get rid of error box-->
-  <string name="proxy_error_dismiss">OK</string>
+  <string name="proxy_error_dismiss">Oké</string>
   <!-- HTTP proxy settings. The error if the hostname is not valid -->
   <string name="proxy_error_invalid_host">De hostnaam die je hebt ingevoerd, is ongeldig.</string>
   <!-- HTTP proxy settings. The error if the exclusion list is not valid -->
@@ -470,7 +470,7 @@
   <!-- Button label for generic cancel action [CHAR LIMIT=20] -->
   <string name="cancel">Annuleren</string>
   <!-- Button label for generic OK action [CHAR LIMIT=20] -->
-  <string name="okay">OK</string>
+  <string name="okay">Oké</string>
   <!-- Button label for generic forget action [CHAR LIMIT=20] -->
   <string name="forget">Vergeten</string>
   <!-- Button label for generic save action [CHAR LIMIT=20] -->
@@ -664,7 +664,7 @@
   <!-- Label text shown in fingerprint dialog for renaming a fingerprint template [CHAR LIMIT=22] -->
   <string name="security_settings_fingerprint_enroll_dialog_name_label">Naam</string>
   <!-- Button text shown in fingerprint dialog that allows the user to rename a fingerprint template [CHAR LIMIT=22] -->
-  <string name="security_settings_fingerprint_enroll_dialog_ok">OK</string>
+  <string name="security_settings_fingerprint_enroll_dialog_ok">Oké</string>
   <!-- Button text shown in fingerprint dialog that allows the user to delete the fingerprint template [CHAR LIMIT=22] -->
   <string name="security_settings_fingerprint_enroll_dialog_delete">Verwijderen</string>
   <!-- Title shown in fingerprint enrollment dialog to begin enrollment [CHAR LIMIT=29]-->
@@ -926,7 +926,7 @@
   <!-- [CHAR_LIMIT=NONE] Error shown when the user tries to set an ascending or descending sequence of digits -->
   <string name="lockpassword_pin_no_sequential_digits">Een oplopende, aflopende of herhaalde reeks cijfers is niet toegestaan</string>
   <!-- Label for ChoosePassword/PIN OK button -->
-  <string name="lockpassword_ok_label">OK</string>
+  <string name="lockpassword_ok_label">Oké</string>
   <!-- Label for ChoosePassword/PIN OK button -->
   <string name="lockpassword_cancel_label">Annuleren</string>
   <!-- Label for LockPatternTutorial Cancel button -->
@@ -1791,7 +1791,7 @@
   <!-- SIM card lock settings screen, toast after not entering correct SIM PIN [CHAR LIMIT=40] -->
   <string name="sim_lock_failed">Kan status van simkaartblokkering niet wijzigen.\nPincode mogelijk onjuist.</string>
   <!-- SIM card lock settings screen, SIM PIN dialog button labels: [CHAR LIMIT=40] -->
-  <string name="sim_enter_ok">OK</string>
+  <string name="sim_enter_ok">Oké</string>
   <!-- SIM card lock settings screen, SIM PIN dialog button labels: [CHAR LIMIT=40] -->
   <string name="sim_enter_cancel">Annuleren</string>
   <!-- Multiple SIMs found title.  [CHAR LIMIT=40] -->
@@ -1833,7 +1833,7 @@
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="kernel_version">Kernel-versie</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
-  <string name="build_date">Build date</string>
+  <string name="build_date">Build datum</string>
   <string name="build_date_default">2012-01-01-0000</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="selinux_status">SELinux-status</string>
@@ -1914,7 +1914,7 @@
   <!-- SD card & phone storage settings summary. Displayed when the total memory usage is being calculated. Will be replaced with a number like "12.3 GB" when finished calucating. [CHAR LIMIT=30] -->
   <string name="memory_calculating_size">Berekenen…</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of Android system. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
-  <string name="memory_android_system_usage">Android System</string>
+  <string name="memory_android_system_usage">Android Systeem</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of applications installed. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
   <string name="memory_apps_usage">Apps en app-gegevens</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of media on the device. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
@@ -2070,9 +2070,9 @@
   <!-- Body of dialog confirming that user wants to forget an internal storage device [CHAR LIMIT=NONE]-->
   <string name="storage_internal_forget_confirm">Alle apps, foto\'s en gegevens die zijn opgeslagen op deze <xliff:g id="NAME">^1</xliff:g>, gaan definitief verloren.</string>
   <!-- Item title describing storage used by Android system [CHAR LIMIT=48] -->
-  <string name="storage_detail_android_system">Android System</string>
+  <string name="storage_detail_android_system">Android Systeem</string>
   <!-- Toast message shown when storage item of Android system is clicked [CHAR LIMIT=NONE]-->
-  <string name="storage_detail_android_system_version">Android System <xliff:g id="version">%s</xliff:g></string>
+  <string name="storage_detail_android_system_version">Android Systeem <xliff:g id="version">%s</xliff:g></string>
   <!-- Item title describing storage used by apps [CHAR LIMIT=48]-->
   <string name="storage_detail_apps">Apps</string>
   <!-- Item title describing storage used by images [CHAR LIMIT=48]-->
@@ -2296,7 +2296,7 @@
   <!-- Master clear progress screen title [CHAR LIMIT=30] -->
   <string name="master_clear_progress_title">Wissen</string>
   <!-- Master clear progress screen text [CHAR LIMIT=75] -->
-  <string name="master_clear_progress_text">Please wait\u2026</string>
+  <string name="master_clear_progress_text">Wacht alstublieft\u2026</string>
   <!-- Main settings screen, Call settings title for item to go into the call settings -->
   <string name="call_settings_title">Oproepinstellingen</string>
   <!-- Main settings screen, Call settings summary for item to go into call settings -->
@@ -2757,7 +2757,7 @@
   <!-- Manage applications, individual application screen, confirmation dialog message. Displays when user selects to "Clear data". It warns the user of the consequences of clearing the data for an app. -->
   <string name="clear_data_dlg_text">Alle gegevens van deze app worden permanent verwijderd. Dit omvat alle bestanden, instellingen, accounts, databases, enzovoort.</string>
   <!-- Manage applications, individual application screen, confirmation dialog button. Displays when user selects to "Clear data". Goes through with the clearing of the data. -->
-  <string name="dlg_ok">OK</string>
+  <string name="dlg_ok">Oké</string>
   <!-- Manage applications, individual application screen, confirmation dialog button. Displays when user selects to "Clear data". -->
   <string name="dlg_cancel">Annuleren</string>
   <!-- Manage applications, individual application dialog box title. Shown when the user somehow got into a state where it wants to manage some app that isn't found. -->
@@ -3027,7 +3027,7 @@
   <!-- User dictionary settings. Text on the dialog button mask advanced options. [CHAR LIMIT=15] -->
   <string name="user_dict_settings_add_dialog_less_options">Minder opties</string>
   <!-- User dictionary settings. Text on the dialog button to confirm adding a word. [CHAR LIMIT=15] -->
-  <string name="user_dict_settings_add_dialog_confirm">OK</string>
+  <string name="user_dict_settings_add_dialog_confirm">Oké</string>
   <!-- User dictionary settings. Label to put before the word field (that's the word that will actually be added to the user dictionary when OK is pressed). [CHAR LIMIT=20] -->
   <string name="user_dict_settings_add_word_option_name">Woord:</string>
   <!-- User dictionary settings. Label to put before the shortcut field (once a shortcut is registered, the user can type the shortcut and get the word it points to in the suggestions). [CHAR LIMIT=20] -->
@@ -3882,7 +3882,7 @@
   <string name="tts_status_not_supported"><xliff:g id="LOCALE">%1$s</xliff:g> wordt niet ondersteund</string>
   <!-- On main TTS Settings screen, current TTS engine status for the current default language,
          tts engine is queried for status [CHAR LIMIT=150] -->
-  <string name="tts_status_checking">Checking\u2026</string>
+  <string name="tts_status_checking">Controleren\u2026</string>
   <!-- On main TTS Settings screen, text for divider under which all TTS engines are listed -->
   <string name="tts_engines_section">Engines</string>
   <!-- On main TTS Settings screen, text preceded by the TTS engine name, clicking this button will launch the engine settings -->
@@ -4679,7 +4679,7 @@
   <!-- Menu item to delete a VPN profile. [CHAR LIMIT=40] -->
   <string name="vpn_menu_delete">Profiel verwijderen</string>
   <!-- Menu item to select always-on VPN profile. [CHAR LIMIT=40] -->
-  <string name="vpn_menu_lockdown">Always-on VPN</string>
+  <string name="vpn_menu_lockdown">Altijd-aan VPN</string>
   <!-- Summary describing the always-on VPN feature. [CHAR LIMIT=NONE] -->
   <string name="vpn_lockdown_summary">Selecteer een VPN-profiel waarmee je altijd verbonden wilt blijven. Netwerkverkeer wordt alleen toegestaan bij verbinding met dit VPN.</string>
   <!-- List item indicating that no always-on VPN is selected. [CHAR LIMIT=64] -->
@@ -4900,7 +4900,7 @@
   <!-- Button the user can click to indicate he understood and dismiss the screen -->
   <string name="nfc_how_it_works_got_it">Ik snap het</string>
   <!-- NFC More... title.  [CHAR LIMIT=40] -->
-  <string name="nfc_more_title">More\u2026</string>
+  <string name="nfc_more_title">Meer\u2026</string>
   <!-- Label for the dialog that is shown when the user is asked to set a
          preferred payment application -->
   <string name="nfc_payment_set_default_label">Instellen als je voorkeur?</string>
@@ -5056,7 +5056,7 @@
   <!-- Message for selecting sim for data in settings.  [CHAR LIMIT=40] -->
   <string name="select_sim_for_data">Selecteer een simkaart voor gegevens</string>
   <!-- Message for switching data SIM; switching takes a while -->
-  <string name="data_switch_started">Switching data SIM, this may take up to a minute\u2026</string>
+  <string name="data_switch_started">Data SIM overschakelen, dit kan een minuut duren\u2026</string>
   <!-- Message for selecting sim for call in settings.  [CHAR LIMIT=40] -->
   <string name="select_sim_for_calls">Bellen met</string>
   <!-- Title for selecting a SIM card.  [CHAR LIMIT=40] -->
@@ -5175,7 +5175,7 @@
   <!-- Text for button to confirm writing tag -->
   <string name="write_tag">Schrijven</string>
   <!-- Text to inform the user to tap a tag to complete the setup process -->
-  <string name="status_awaiting_tap">Tap a tag to write\u2026</string>
+  <string name="status_awaiting_tap">Tik op een tag om te schrijven\u2026</string>
   <!-- Text to inform the user that the network key entered was incorrect -->
   <string name="status_invalid_password">Ongeldig wachtwoord. Probeer het opnieuw.</string>
   <!-- Text displayed when tag successfully writen -->
@@ -5290,7 +5290,7 @@
   <!-- Sound & notification > Do Not Disturb access > Text to display when the list is empty. [CHAR LIMIT=NONE] -->
   <string name="zen_access_empty_text">Er zijn geen geïnstalleerde apps die toegang tot \'Niet storen\' hebben aangevraagd</string>
   <!-- [CHAR LIMIT=NONE] Text when loading app list in notification settings -->
-  <string name="loading_notification_apps">Loading apps\u2026</string>
+  <string name="loading_notification_apps">Apps laden\u2026</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option title -->
   <string name="app_notification_block_title">Alles blokkeren</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option description-->
