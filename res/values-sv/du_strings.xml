@@ -143,67 +143,67 @@
   <!-- Lights settings screen, notification light settings -->
   <string name="notification_light_title">Notifikationsljus</string>
   <string name="notification_light_general_title">Allmänt</string>
-  <string name="notification_light_applist_title">Apps</string>
-  <string name="notification_light_phonelist_title">Phone</string>
-  <string name="notification_light_use_custom">Use custom values</string>
-  <string name="notification_light_default_value">Default</string>
-  <string name="notification_light_missed_call_title">Missed call</string>
-  <string name="notification_light_voicemail_title">Voicemail</string>
-  <string name="notification_light_screen_on">Lights with screen on</string>
-  <string name="allow_lights_title">Lights in do not disturb mode</string>
+  <string name="notification_light_applist_title">Appar</string>
+  <string name="notification_light_phonelist_title">Telefon</string>
+  <string name="notification_light_use_custom">Använd anpassade värden</string>
+  <string name="notification_light_default_value">Standard</string>
+  <string name="notification_light_missed_call_title">Missat samtal</string>
+  <string name="notification_light_voicemail_title">Röstbrev</string>
+  <string name="notification_light_screen_on">Lampor med skärmen på</string>
+  <string name="allow_lights_title">Lampor vid stör ej läge</string>
   <!-- Keyboard and Input methods  -->
-  <string name="title_keyboard_input">Advanced options</string>
-  <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
-  <string name="disable_fullscreen_keyboard_summary">Landscape keyboard will never take up entire screen</string>
-  <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-  <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-  <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
-  <string name="keyboard_rotation_toggle_title">Auto keyboard rotation</string>
-  <string name="keyboard_rotation_toggle_summary">Force auto-rotate when keyboard is shown</string>
-  <string name="keyboard_rotation_timeout_title">Auto-rotate timeout</string>
-  <string name="keyboard_rotation_timeout_summary">Disables auto-rotate sensor <xliff:g id="rotate_timeout">%1$s</xliff:g> seconds after keyboard is hidden</string>
-  <string name="keyboard_rotation_dialog">This feature forces auto-rotate to turn on temporarily while the keyboard is shown.  It has no effect when auto-rotate is already enabled.</string>
-  <string name="show_enter_key_title">Show enter key</string>
-  <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
-  <string name="ime_switcher_notify">Selector notification</string>
-  <string name="ime_switcher_notify_summary">Display input method selector notification</string>
-  <string name="attention">Attention</string>
+  <string name="title_keyboard_input">Avancerade alternativ</string>
+  <string name="disable_fullscreen_keyboard_title">Inaktivera fullskärmstangentbord</string>
+  <string name="disable_fullscreen_keyboard_summary">Landskapstangentbord kommer aldrig ta upp hela skärmen</string>
+  <string name="volume_key_cursor_control_title">Volymknappar styr markören</string>
+  <string name="volume_key_cursor_control_on">Volymknapparna upp/ned flyttar markören vänster/höger</string>
+  <string name="volume_key_cursor_control_on_reverse">Volym upp/ned flyttar markören höger/vänster</string>
+  <string name="keyboard_rotation_toggle_title">Automatisk tangentbordsrotation</string>
+  <string name="keyboard_rotation_toggle_summary">Tvinga auto-rotation när tangentbordet visas</string>
+  <string name="keyboard_rotation_timeout_title">Time-out för automatisk rotation</string>
+  <string name="keyboard_rotation_timeout_summary">Inaktiverar automatiskrotations sensor <xliff:g id="rotate_timeout">%1$s </xliff:g> sekunder efter tangentbord är dold</string>
+  <string name="keyboard_rotation_dialog">Denna funktion tvingar auto-rotera för att aktiveras tillfälligt medan tangentbordet visas.  Det har ingen effekt när auto-rotera är aktiverat.</string>
+  <string name="show_enter_key_title">Visa enterknapp</string>
+  <string name="show_enter_key_summary">Tvinga tangentbord att visa enter istället för emojiknapp</string>
+  <string name="ime_switcher_notify">Inmatningsavisering</string>
+  <string name="ime_switcher_notify_summary">Visa inmatningsväxlar notifieringen</string>
+  <string name="attention">Observera</string>
   <!-- Android debugging over WiFi -->
-  <string name="adb_over_network">ADB over network</string>
-  <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi-Fi, USB networks). This setting is reset on reboot</string>
+  <string name="adb_over_network">ADB över nätverk</string>
+  <string name="adb_over_network_summary">Aktivera TCP/IP-felsökning över nätverksgränssnitt (Wi-Fi, USB-nätverk). Denna inställning återställs vid omstart</string>
   <!-- Warning for Adb over Network -->
-  <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks, including GSM data network!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
+  <string name="adb_over_network_warning">VARNING: När ADB över nätverk är aktiverad, är din telefon öppen för intrång på alla anslutna nätverk, inklusive GSM-datanätverk!\n\nAnvänd enbart denna funktion när du är ansluten till pålitliga nätverk.\n\nVill du verkligen aktivera den här funktionen?</string>
   <!-- Media ducking -->
-  <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
-  <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
+  <string name="interruptions_ignore_while_media_title">Förhindra audio ducking</string>
+  <string name="interruptions_ignore_while_media_summary">Minska inte volymen på mediauppspelning när ett meddelande anländer</string>
   <!-- Doze notification color invert -->
-  <string name="doze_notification_color_invert_title">Color inversion</string>
-  <string name="doze_notification_color_invert_summary_off">Ambient display notifications will not be inverted. Use for dark themes.</string>
-  <string name="doze_notification_color_invert_summary_on">Ambient display notifications will show as inverted. Use for light/stock theme.</string>
+  <string name="doze_notification_color_invert_title">Inverterade färger</string>
+  <string name="doze_notification_color_invert_summary_off">Omgivande display notifikationer kommer inte inverteras. Används för mörka teman.</string>
+  <string name="doze_notification_color_invert_summary_on">Omgivande display notifikationer kommer att visas inverterade. Använd för ljus/stock tema.</string>
   <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
-  <string name="bluetooth_accept_all_files">Accept all file types</string>
+  <string name="bluetooth_accept_all_files">Acceptera alla filtyper</string>
   <!-- Display : Rotation -->
-  <string name="display_rotation_title">Rotation</string>
-  <string name="display_rotation_disabled">Disabled</string>
-  <string name="display_rotation_unit">degrees</string>
-  <string name="display_rotation_category_title">Rotation modes</string>
-  <string name="display_rotation_0_title">0 degrees</string>
-  <string name="display_rotation_90_title">90 degrees</string>
-  <string name="display_rotation_180_title">180 degrees</string>
-  <string name="display_rotation_270_title">270 degrees</string>
+  <string name="display_rotation_title">Rotering</string>
+  <string name="display_rotation_disabled">Inaktiverad</string>
+  <string name="display_rotation_unit">grader</string>
+  <string name="display_rotation_category_title">Rotationslägen</string>
+  <string name="display_rotation_0_title">0 grader</string>
+  <string name="display_rotation_90_title">90 grader</string>
+  <string name="display_rotation_180_title">180 grader</string>
+  <string name="display_rotation_270_title">270 grader</string>
   <!-- Lock screen rotation -->
-  <string name="display_lockscreen_rotation_title">Lock screen</string>
+  <string name="display_lockscreen_rotation_title">Låsskärm</string>
   <!-- Scramble PIN Layout on Lockscreen -->
-  <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-  <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+  <string name="unlock_scramble_pin_layout_title">Kasta om layout</string>
+  <string name="unlock_scramble_pin_layout_summary">Kasta om PIN-layout vid upplåsning av enheten</string>
   <!-- Wake on Plug -->
-  <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
-  <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+  <string name="wake_when_plugged_or_unplugged_title">Vakna vid inkoppling</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Starta skärmen vid anslutning eller frånkoppling av strömkälla</string>
   <!-- Headset Plugged In notification -->
-  <string name="headset_plugged_in_title">Headset Plugged In notification</string>
-  <string name="headset_plugged_in_summary">Enable notification for when the headset is plugged in</string>
+  <string name="headset_plugged_in_title">Notifikation vid inkoppling av headset</string>
+  <string name="headset_plugged_in_summary">Aktivera meddelanden när headsetet är anslutet</string>
   <!-- Wi-Fi settings screen, advanced, title for setting the wifi region code. -->
-  <string name="wifi_setting_countrycode_title">Wi-Fi region code</string>
+  <string name="wifi_setting_countrycode_title">Wi-Fi-regionskod</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi region code [CHAR LIMIT=50]-->
   <string name="wifi_setting_countrycode_summary">Ange regionskoden för Wi-Fi</string>
   <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
@@ -241,7 +241,7 @@
   <string name="ring_notification_volume_option_title">Ring- och aviseringsvolym</string>
   <!-- Double tap to launch target -->
   <string name="dt2l_target_category">Dubbelklicka för att visa alternativ</string>
-  <string name="dt2l_target_vib_title">Adjust target\'s vibration</string>
+  <string name="dt2l_target_vib_title">Justera målets vibration</string>
   <string name="dt2l_target_vib_summary">Adjust the vibration when double tapping the power button</string>
   <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
   <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
@@ -298,28 +298,28 @@
   <string name="blacklist_policy_block_messages">Block incoming messages</string>
   <string name="blacklist_bad_number_add">Unable to add invalid phone number to blocked caller list</string>
   <!-- Blacklist management -->
-  <string name="remove_blacklist_number_title">Remove number</string>
-  <string name="remove_blacklist_entry">Do you want to remove this blocked phone number?</string>
-  <string name="select_contact">Select contact</string>
+  <string name="remove_blacklist_number_title">Ta bort nummer</string>
+  <string name="remove_blacklist_entry">Vill du ta bort det här blockerade numret?</string>
+  <string name="select_contact">Välj kontakt</string>
   <!-- Doze pulse options -->
-  <string name="summary_doze_enabled">Enabled</string>
-  <string name="summary_doze_disabled">Disabled</string>
-  <string name="doze_overwrite_value_title">Overwrite defaults</string>
-  <string name="doze_overwrite_value_summary">Allow override of default values with user config</string>
-  <string name="doze_pulse_title">User configurable settings</string>
-  <string name="doze_pulse_duration_in_title">Fade in</string>
-  <string name="doze_pulse_duration_visible_title">Visible duration</string>
-  <string name="doze_pulse_duration_out_title">Fade out</string>
-  <string name="doze_trigger_pickup_title">Pick up sensor trigger</string>
-  <string name="doze_trigger_pickup_summary_on">Pulse will be triggered by pick up sensor</string>
-  <string name="doze_trigger_pickup_summary_off">Pick up sensor will not be utilized as a trigger</string>
-  <string name="doze_trigger_notification_title">Notification trigger</string>
-  <string name="doze_trigger_notification_summary_on">Pulse will be triggered by notifications</string>
-  <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
-  <string name="doze_brightness_level_title">Brightness level</string>
+  <string name="summary_doze_enabled">Aktiverad</string>
+  <string name="summary_doze_disabled">Inaktiverad</string>
+  <string name="doze_overwrite_value_title">Skriva över standardvärden</string>
+  <string name="doze_overwrite_value_summary">Tillåt överskrivning av standardvärden med användarens konfiguration</string>
+  <string name="doze_pulse_title">Användare - konfigurerbara inställningar</string>
+  <string name="doze_pulse_duration_in_title">Tona in</string>
+  <string name="doze_pulse_duration_visible_title">Synliga varaktighet</string>
+  <string name="doze_pulse_duration_out_title">Tona ut</string>
+  <string name="doze_trigger_pickup_title">Plocka upp sensor utlöser</string>
+  <string name="doze_trigger_pickup_summary_on">Pulse kommer utlösas av plocka upp sensor</string>
+  <string name="doze_trigger_pickup_summary_off">Plocka upp sensorn kommer att inte kunna utnyttjas som en utlösande faktor</string>
+  <string name="doze_trigger_notification_title">Notifikationstrigger</string>
+  <string name="doze_trigger_notification_summary_on">Pulse kommer utlösas av notifikationer</string>
+  <string name="doze_trigger_notification_summary_off">Notifikation kommer inte att utnyttjas som en utlösande faktor</string>
+  <string name="doze_brightness_level_title">Ljusstyrka</string>
   <string name="onehundred_ms">100 ms</string>
   <string name="twofifty_ms">250 ms</string>
-  <string name="fivehundred_ms_default">500 ms (default)</string>
+  <string name="fivehundred_ms_default">500 ms (standard)</string>
   <string name="sevenfifty_ms">750 ms</string>
   <string name="one_second">1 s</string>
   <string name="onehalf_second">1.5 s</string>

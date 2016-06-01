@@ -139,15 +139,15 @@
   <string name="battery_light_list_title">Cores</string>
   <string name="battery_light_low_color_title">Bateria fraca</string>
   <string name="battery_light_medium_color_title">Carregando</string>
-  <string name="battery_light_full_color_title">Fully charged</string>
+  <string name="battery_light_full_color_title">Totalmente carregado</string>
   <!-- Lights settings screen, notification light settings -->
   <string name="notification_light_title">Luz de notificação</string>
   <string name="notification_light_general_title">Gerais</string>
   <string name="notification_light_applist_title">Aplicativos</string>
   <string name="notification_light_phonelist_title">Telefone</string>
   <string name="notification_light_use_custom">Utilizar valores personalizados</string>
-  <string name="notification_light_default_value">Default</string>
-  <string name="notification_light_missed_call_title">Missed call</string>
+  <string name="notification_light_default_value">Padrão</string>
+  <string name="notification_light_missed_call_title">Chamada perdida</string>
   <string name="notification_light_voicemail_title">Correios de Voz</string>
   <string name="notification_light_screen_on">Luzes com tela ligada</string>
   <string name="allow_lights_title">Luzes no modo não perturbe</string>
@@ -165,7 +165,7 @@
   <string name="keyboard_rotation_dialog">Este recurso liga a auto-rotação temporariamente quando o teclado é exibido. Não tem nenhum efeito quando a auto-rotação já está ativada.</string>
   <string name="show_enter_key_title">Exibir tecla \"Enter\"</string>
   <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
-  <string name="ime_switcher_notify">Selector notification</string>
+  <string name="ime_switcher_notify">Notificação do método de entrada</string>
   <string name="ime_switcher_notify_summary">Display input method selector notification</string>
   <string name="attention">Attention</string>
   <!-- Android debugging over WiFi -->

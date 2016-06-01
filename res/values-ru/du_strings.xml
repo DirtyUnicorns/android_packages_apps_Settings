@@ -178,8 +178,8 @@
   <string name="interruptions_ignore_while_media_summary">Не уменьшить громкость воспроизведения мультимедиа при поступлении уведомления</string>
   <!-- Doze notification color invert -->
   <string name="doze_notification_color_invert_title">Инверсия цветов</string>
-  <string name="doze_notification_color_invert_summary_off">Ambient display notifications will not be inverted. Use for dark themes.</string>
-  <string name="doze_notification_color_invert_summary_on">Ambient display notifications will show as inverted. Use for light/stock theme.</string>
+  <string name="doze_notification_color_invert_summary_off">Уведомления не будут инвертированы. Используйте для темных тем.</string>
+  <string name="doze_notification_color_invert_summary_on">Уведомления будут инвертированы. Используйте для светлых/стоковых тем.</string>
   <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
   <string name="bluetooth_accept_all_files">Принимать все типы файлов</string>
   <!-- Display : Rotation -->
@@ -194,8 +194,8 @@
   <!-- Lock screen rotation -->
   <string name="display_lockscreen_rotation_title">Блокировка экрана</string>
   <!-- Scramble PIN Layout on Lockscreen -->
-  <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-  <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+  <string name="unlock_scramble_pin_layout_title">Перемешать кнопки</string>
+  <string name="unlock_scramble_pin_layout_summary">Переставить кнопки ввода PIN-кода в случайном порядке</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Включение при зарядке</string>
   <string name="wake_when_plugged_or_unplugged_summary">Включать экран при подключении или отключении зарядного устройства</string>
@@ -241,10 +241,10 @@
   <string name="ring_notification_volume_option_title">Громкость звонка и уведомлений</string>
   <!-- Double tap to launch target -->
   <string name="dt2l_target_category">Настройки двойного нажатия для запуска</string>
-  <string name="dt2l_target_vib_title">Adjust target\'s vibration</string>
-  <string name="dt2l_target_vib_summary">Adjust the vibration when double tapping the power button</string>
-  <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
-  <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
+  <string name="dt2l_target_vib_title">Настройка целевого объекта вибрации</string>
+  <string name="dt2l_target_vib_summary">Настройка вибрации при двойном нажатии кнопки питания</string>
+  <string name="camera_double_tap_power_gesture_title">Нажмите кнопку питания дважды для камеры</string>
+  <string name="camera_double_tap_power_gesture_desc">Быстро открыть камеру без разблокировки экрана</string>
   <!-- Battery stats reset -->
   <string name="battery_stats_reset">Сбросить статистику</string>
   <string name="battery_stats_message">Статистика батареи будет сброшена</string>
@@ -285,14 +285,14 @@
   <string name="blacklist_notify">Показывать уведомления</string>
   <string name="blacklist_private_numbers_title">Скрытые номера</string>
   <string name="blacklist_private_numbers_summary_disabled">Не блокировать вызовы от скрытых номеров</string>
-  <string name="blacklist_private_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from private numbers</string>
+  <string name="blacklist_private_numbers_summary">Блокировать входящие от скрытых номеров</string>
   <string name="blacklist_unknown_numbers_title">Неизвестные номера</string>
   <string name="blacklist_unknown_numbers_summary_disabled">Не блокировать вызовы или сообщения от номеров не из списка контактов</string>
-  <string name="blacklist_unknown_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from numbers not in the contact list</string>
+  <string name="blacklist_unknown_numbers_summary">Блокировать входящие от номеров не из списка контактов</string>
   <string name="blacklist_summary_type_calls_only">вызовы</string>
   <string name="blacklist_summary_type_messages_only">сообщения</string>
   <string name="blacklist_summary_type_calls_and_messages">вызовы и сообщения</string>
-  <string name="blacklist_regex_title">Use wildcards</string>
+  <string name="blacklist_regex_title">Использовать маски</string>
   <string name="blacklist_regex_summary">Используйте \".\" как начало маски и \"*\" вместо любых символов. Например, выражение \"123.*\" будет блокировать номера, начинающиеся с \"123\", а \".*123.*\" — номера, содержащие \"123\"</string>
   <string name="blacklist_policy_block_calls">Блокировать входящие вызовы</string>
   <string name="blacklist_policy_block_messages">Блокировать входящие сообщения</string>
@@ -310,10 +310,10 @@
   <string name="doze_pulse_duration_in_title">Появление</string>
   <string name="doze_pulse_duration_visible_title">Продолжительность</string>
   <string name="doze_pulse_duration_out_title">Затухание</string>
-  <string name="doze_trigger_pickup_title">Pick up sensor trigger</string>
+  <string name="doze_trigger_pickup_title">Подобрать датчик триггера</string>
   <string name="doze_trigger_pickup_summary_on">Pulse will be triggered by pick up sensor</string>
-  <string name="doze_trigger_pickup_summary_off">Pick up sensor will not be utilized as a trigger</string>
-  <string name="doze_trigger_notification_title">Notification trigger</string>
+  <string name="doze_trigger_pickup_summary_off">Уведомления не будут использованы для запуска</string>
+  <string name="doze_trigger_notification_title">Триггер для уведомлений</string>
   <string name="doze_trigger_notification_summary_on">Pulse will be triggered by notifications</string>
   <string name="doze_trigger_notification_summary_off">Уведомления не будут использованы для запуска</string>
   <string name="doze_brightness_level_title">Уровень яркости</string>

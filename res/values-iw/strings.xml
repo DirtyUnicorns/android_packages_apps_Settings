@@ -629,6 +629,8 @@
   <!-- message shown for menu item that launches fingerprint settings or enrollment -->
   <plurals name="security_settings_fingerprint_preference_summary">
     <item quantity="one">טביעת אצבע <xliff:g id="COUNT_0">%1$d</xliff:g> הוגדרה</item>
+    <item quantity="two"><xliff:g id="COUNT_1">%1$d</xliff:g> טביעות אצבע הוגדרו</item>
+    <item quantity="many"><xliff:g id="COUNT_1">%1$d</xliff:g> טביעות אצבע הוגדרו</item>
     <item quantity="other"><xliff:g id="COUNT_1">%1$d</xliff:g> טביעות אצבע הוגדרו</item>
   </plurals>
   <!-- message shown in summary field when no fingerprints are registered -->
@@ -894,31 +896,43 @@
   <!-- Error shown when in PASSWORD mode and password doesn't contain the required number of letters -->
   <plurals name="lockpassword_password_requires_letters">
     <item quantity="one">הסיסמה צריכה להכיל אות אחת לפחות.</item>
+    <item quantity="two">‏הסיסמה צריכה להכיל %d אותיות לפחות.</item>
+    <item quantity="many">‏הסיסמה צריכה להכיל %d אותיות לפחות.</item>
     <item quantity="other">‏הסיסמה צריכה להכיל %d אותיות לפחות.</item>
   </plurals>
   <!-- Error shown when in PASSWORD mode and password doesn't contain the required number of lowercase letters -->
   <plurals name="lockpassword_password_requires_lowercase">
     <item quantity="one">הסיסמה צריכה להכיל אות קטנה אחת לפחות.</item>
+    <item quantity="two">‏הסיסמה צריכה להכיל %d אותיות קטנות לפחות.</item>
+    <item quantity="many">‏הסיסמה צריכה להכיל %d אותיות קטנות לפחות.</item>
     <item quantity="other">‏הסיסמה צריכה להכיל %d אותיות קטנות לפחות.</item>
   </plurals>
   <!-- Error shown when in PASSWORD mode and password doesn't contain the required number of uppercase letters -->
   <plurals name="lockpassword_password_requires_uppercase">
     <item quantity="one">הסיסמה צריכה להכיל אות גדולה אחת לפחות.</item>
+    <item quantity="two">‏הסיסמה צריכה להכיל %d אותיות גדולות לפחות.</item>
+    <item quantity="many">‏הסיסמה צריכה להכיל %d אותיות גדולות לפחות.</item>
     <item quantity="other">‏הסיסמה צריכה להכיל %d אותיות גדולות לפחות.</item>
   </plurals>
   <!-- Error shown when in PASSWORD mode and password doesn't contain the required number of numerical digits -->
   <plurals name="lockpassword_password_requires_numeric">
     <item quantity="one">הסיסמה צריכה להכיל ספרה אחת לפחות.</item>
+    <item quantity="two">‏הסיסמה צריכה להכיל %d ספרות לפחות.</item>
+    <item quantity="many">‏הסיסמה צריכה להכיל %d ספרות לפחות.</item>
     <item quantity="other">‏הסיסמה צריכה להכיל %d ספרות לפחות.</item>
   </plurals>
   <!-- Error shown when in PASSWORD mode and password doesn't contain the required number of special symbols -->
   <plurals name="lockpassword_password_requires_symbols">
     <item quantity="one">הסיסמה צריכה להכיל סמל מיוחד אחד לפחות.</item>
+    <item quantity="two">‏הסיסמה צריכה להכיל %d סמלים מיוחדים לפחות.</item>
+    <item quantity="many">‏הסיסמה צריכה להכיל %d סמלים מיוחדים לפחות.</item>
     <item quantity="other">‏הסיסמה צריכה להכיל %d סמלים מיוחדים לפחות.</item>
   </plurals>
   <!-- Error shown when in PASSWORD mode and password doesn't contain the required number of non-letter characters -->
   <plurals name="lockpassword_password_requires_nonletter">
     <item quantity="one">הסיסמה צריכה להכיל תו אחד לפחות שאינו אות.</item>
+    <item quantity="two">‏הסיסמה צריכה להכיל %d תווים לפחות שאינם אותיות.</item>
+    <item quantity="many">‏הסיסמה צריכה להכיל %d תווים לפחות שאינם אותיות.</item>
     <item quantity="other">‏הסיסמה צריכה להכיל %d תווים לפחות שאינם אותיות.</item>
   </plurals>
   <!-- Error shown when in PASSWORD mode and password has been used recently. Please keep this string short! -->
@@ -1812,6 +1826,8 @@
   <!-- Instructions telling the user that they entered the wrong SIM PIN while trying to unlock the keyguard.  Displayed in a dialog box.  [CHAR LIMIT=100] -->
   <plurals name="wrong_pin_code">
     <item quantity="one">‏קוד PIN שגוי של כרטיס SIM. נותר לך ניסיון <xliff:g id="NUMBER_0">%d</xliff:g> לפני שיהיה עליך ליצור קשר עם הספק כדי לבטל את נעילת המכשיר.</item>
+    <item quantity="two">‏קוד PIN שגוי של כרטיס SIM. נותרו לך <xliff:g id="NUMBER_1">%d</xliff:g> ניסיונות.</item>
+    <item quantity="many">‏קוד PIN שגוי של כרטיס SIM. נותרו לך <xliff:g id="NUMBER_1">%d</xliff:g> ניסיונות.</item>
     <item quantity="other">‏קוד PIN שגוי של כרטיס SIM. נותרו לך <xliff:g id="NUMBER_1">%d</xliff:g> ניסיונות.</item>
   </plurals>
   <!-- Instructions telling the user that the operation to unlock the keyguard with SIM PIN failed. Displayed in one line in a large font.  [CHAR LIMIT=40] -->
@@ -5275,6 +5291,8 @@
          and are therefore able to read the user's notifications -->
   <plurals name="manage_notification_access_summary_nonzero">
     <item quantity="one">‏אפליקציה %d יכולה לקרוא הודעות</item>
+    <item quantity="two">‏%d אפליקציות יכולות לקרוא הודעות</item>
+    <item quantity="many">‏%d אפליקציות יכולות לקרוא הודעות</item>
     <item quantity="other">‏%d אפליקציות יכולות לקרוא הודעות</item>
   </plurals>
   <!-- String to show in the list of notification listeners, when none is installed -->
@@ -5422,11 +5440,15 @@
   <!-- [CHAR LIMIT=NONE] Zen mode summary spoken when changing mode by voice: switch to alarms only for < 60 minutes. -->
   <plurals name="zen_mode_summary_alarms_only_by_minute">
     <item quantity="one">שנה ל‘רק התראות‘ למשך דקה אחת, עד <xliff:g id="FORMATTEDTIME_0">%2$s</xliff:g></item>
+    <item quantity="two">שנה ל‘רק התראות‘ למשך <xliff:g id="DURATION">%1$d</xliff:g> דקות (עד <xliff:g id="FORMATTEDTIME_1">%2$s</xliff:g>)</item>
+    <item quantity="many">שנה ל‘רק התראות‘ למשך <xliff:g id="DURATION">%1$d</xliff:g> דקות (עד <xliff:g id="FORMATTEDTIME_1">%2$s</xliff:g>)</item>
     <item quantity="other">שנה ל‘רק התראות‘ למשך <xliff:g id="DURATION">%1$d</xliff:g> דקות (עד <xliff:g id="FORMATTEDTIME_1">%2$s</xliff:g>)</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Zen mode summary spoken when changing mode by voice: switch to alarms only for N hours. -->
   <plurals name="zen_mode_summary_alarms_only_by_hour">
     <item quantity="one">שנה ל‘רק התראות‘ למשך שעה אחת, עד <xliff:g id="FORMATTEDTIME_0">%2$s</xliff:g></item>
+    <item quantity="two">שנה ל‘רק התראות‘ למשך <xliff:g id="DURATION">%1$d</xliff:g> שעות, עד <xliff:g id="FORMATTEDTIME_1">%2$s</xliff:g></item>
+    <item quantity="many">שנה ל‘רק התראות‘ למשך <xliff:g id="DURATION">%1$d</xliff:g> שעות, עד <xliff:g id="FORMATTEDTIME_1">%2$s</xliff:g></item>
     <item quantity="other">שנה ל‘רק התראות‘ למשך <xliff:g id="DURATION">%1$d</xliff:g> שעות, עד <xliff:g id="FORMATTEDTIME_1">%2$s</xliff:g></item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Zen mode summary spoken when changing mode by voice: switch to alarms only until a specific time. -->
@@ -5574,16 +5596,22 @@
   <!-- Permissions preference summary [CHAR LIMIT=40] -->
   <plurals name="permissions_summary">
     <item quantity="one">הוענקה הרשאה <xliff:g id="COUNT_0">%d</xliff:g></item>
+    <item quantity="two">הוענקו <xliff:g id="COUNT_1">%d</xliff:g> הרשאות</item>
+    <item quantity="many">הוענקו <xliff:g id="COUNT_1">%d</xliff:g> הרשאות</item>
     <item quantity="other">הוענקו <xliff:g id="COUNT_1">%d</xliff:g> הרשאות</item>
   </plurals>
   <!-- Runtime permissions preference summary [CHAR LIMIT=40] -->
   <plurals name="runtime_permissions_summary">
     <item quantity="one">הוענקה הרשאה <xliff:g id="COUNT_0">%d</xliff:g> מתוך <xliff:g id="COUNT_1">%d</xliff:g></item>
+    <item quantity="two">הוענקו <xliff:g id="COUNT_2">%d</xliff:g> הרשאות מתוך <xliff:g id="COUNT_3">%d</xliff:g></item>
+    <item quantity="many">הוענקו <xliff:g id="COUNT_2">%d</xliff:g> הרשאות מתוך <xliff:g id="COUNT_3">%d</xliff:g></item>
     <item quantity="other">הוענקו <xliff:g id="COUNT_2">%d</xliff:g> הרשאות מתוך <xliff:g id="COUNT_3">%d</xliff:g></item>
   </plurals>
   <!-- Runtime permissions preference summary.  Number of additional permissions granted. [CHAR LIMIT=40] -->
   <plurals name="runtime_permissions_additional_count">
     <item quantity="one">הרשאה <xliff:g id="COUNT_0">%d</xliff:g> נוספת</item>
+    <item quantity="two"><xliff:g id="COUNT_1">%d</xliff:g> הרשאות נוספות</item>
+    <item quantity="many"><xliff:g id="COUNT_1">%d</xliff:g> הרשאות נוספות</item>
     <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> הרשאות נוספות</item>
   </plurals>
   <!-- Runtime permissions preference summary, shown when the app has no permissions granted. [CHAR LIMIT=40] -->
@@ -5644,6 +5672,8 @@
   <!-- Description of settings item that leads to list of all apps with Domain URLs [CHAR LIMIT=NONE] -->
   <plurals name="domain_urls_apps_summary">
     <item quantity="one">אפליקציה אחת יכולה לפתוח את הקישורים הנתמכים שלה</item>
+    <item quantity="two"><xliff:g id="COUNT">%d</xliff:g> אפליקציות יכולות לפתוח את הקישורים הנתמכים שלהן</item>
+    <item quantity="many"><xliff:g id="COUNT">%d</xliff:g> אפליקציות יכולות לפתוח את הקישורים הנתמכים שלהן</item>
     <item quantity="other"><xliff:g id="COUNT">%d</xliff:g> אפליקציות יכולות לפתוח את הקישורים הנתמכים שלהן</item>
   </plurals>
   <!-- Explanation that the app that will ALWAYS be launched to open web links to domains that it understands -->
@@ -5730,6 +5760,8 @@
   <!-- Description of number of apps with high power turned on [CHAR LIMIT=NONE] -->
   <plurals name="high_power_count">
     <item quantity="one">לאפליקציה אחת מותר להתעלם מהאופטימיזציה של הסוללה</item>
+    <item quantity="two">ל-<xliff:g id="COUNT">%d</xliff:g> אפליקציות מותר להתעלם מהאופטימיזציה של הסוללה</item>
+    <item quantity="many">ל-<xliff:g id="COUNT">%d</xliff:g> אפליקציות מותר להתעלם מהאופטימיזציה של הסוללה</item>
     <item quantity="other">ל-<xliff:g id="COUNT">%d</xliff:g> אפליקציות מותר להתעלם מהאופטימיזציה של הסוללה</item>
   </plurals>
   <!-- Title of prompt dialog app can invoke to turn off optimization [CHAR LIMIT=NONE] -->
@@ -5839,6 +5871,8 @@
   <!-- Description of number of apps using memory [CHAR LIMIT=NONE] -->
   <plurals name="memory_usage_apps_summary">
     <item quantity="one">אפליקציה אחת השתמשה בזיכרון ב-<xliff:g id="DURATION_0">%2$s</xliff:g> האחרונות</item>
+    <item quantity="two"><xliff:g id="COUNT">%1$d</xliff:g> אפליקציות השתמשו בזיכרון ב-<xliff:g id="DURATION_1">%2$s</xliff:g> האחרונות</item>
+    <item quantity="many"><xliff:g id="COUNT">%1$d</xliff:g> אפליקציות השתמשו בזיכרון ב-<xliff:g id="DURATION_1">%2$s</xliff:g> האחרונות</item>
     <item quantity="other"><xliff:g id="COUNT">%1$d</xliff:g> אפליקציות השתמשו בזיכרון ב-<xliff:g id="DURATION_1">%2$s</xliff:g> האחרונות</item>
   </plurals>
   <!-- Label for frequency that the app is runnig (e.g. always, sometimes, etc.) [CHAR LIMIT=25] -->
