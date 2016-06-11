@@ -242,24 +242,24 @@
   <!-- Double tap to launch target -->
   <string name="dt2l_target_category">Dubbelklicka för att visa alternativ</string>
   <string name="dt2l_target_vib_title">Justera målets vibration</string>
-  <string name="dt2l_target_vib_summary">Adjust the vibration when double tapping the power button</string>
-  <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
-  <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
+  <string name="dt2l_target_vib_summary">Justera vibrationen vid dubbeltryck på strömknappen</string>
+  <string name="camera_double_tap_power_gesture_title">Tryck på powerknappen två gånger för kamera</string>
+  <string name="camera_double_tap_power_gesture_desc">Snabbtöppna kamera utan att låsa upp skärmen</string>
   <!-- Battery stats reset -->
-  <string name="battery_stats_reset">Reset stats</string>
-  <string name="battery_stats_message">Battery history stats are going to be reset</string>
+  <string name="battery_stats_reset">Återställ statistik</string>
+  <string name="battery_stats_message">Batteriets historik kommer att återställas</string>
   <string name="ok_string">Ok</string>
   <!-- Dashboard settings -->
-  <string name="dashboard_category">Dashboard settings</string>
-  <string name="dashboard_columns_title">Dashboard Columns</string>
-  <string name="dashboard_columns_summary">Change the number of columns displayed in the dashboard</string>
+  <string name="dashboard_category">DashboardInställningar</string>
+  <string name="dashboard_columns_title">Dashboardkolumner</string>
+  <string name="dashboard_columns_summary">Ändra antalet kolumner som visas i instrumentpanelen</string>
   <string name="dashboard_columns_dialog_title">Select dashboard columns</string>
-  <string name="dashboard_columns_one">One</string>
-  <string name="dashboard_columns_two">Two</string>
-  <string name="dashboard_columns_three">Three</string>
+  <string name="dashboard_columns_one">Ett</string>
+  <string name="dashboard_columns_two">Två</string>
+  <string name="dashboard_columns_three">Tre</string>
   <string name="dashboard_tileview_double_lines_title">Dashboard title view</string>
   <string name="dashboard_tileview_double_lines_summary">Show dashboard tile titles in 2 lines</string>
-  <string name="dashboard_tileview_dividers_title">Dashboard dividers</string>
+  <string name="dashboard_tileview_dividers_title">Dashboardavgränsare</string>
   <string name="dashboard_tileview_dividers_summary">Hide dashboard tile dividers</string>
   <!-- Optional Dashboard Switches -->
   <string name="dashboard_switches_title">Dashboard Switches</string>
@@ -268,26 +268,26 @@
   <string name="dashboard_switches_summary">Change the position of the dashboard switches</string>
   <string name="dashboard_switches_dialog_title">Select switch state</string>
   <!-- Keyguard notifications options -->
-  <string name="app_notification_show_on_keyguard_title">Show on lockscreen</string>
-  <string name="app_notification_show_on_keyguard_summary">Show notifications from this app on the lockscreen</string>
-  <string name="app_notification_no_ongoing_on_keyguard_title">Disable ongoing on lockscreen</string>
-  <string name="app_notification_no_ongoing_on_keyguard_summary">Never show ongoing notifications from this app on the lockscreen</string>
+  <string name="app_notification_show_on_keyguard_title">Visa på låsskärmen</string>
+  <string name="app_notification_show_on_keyguard_summary">Visa meddelanden från denna app på låsskärmen</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">Inaktivera pågående på låsskärmen</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">Visa aldrig pågående notifikationer från denna appen på låsskärmen</string>
   <!-- Blacklist preferences -->
-  <string name="app_security_title">Privacy</string>
-  <string name="blacklist_title">Blocked caller list</string>
-  <string name="blacklist_edit_dialog_title">Edit blocked phone number</string>
-  <string name="blacklist_prefs">Settings</string>
-  <string name="blacklist_button_delete">Delete</string>
+  <string name="app_security_title">Sekretess</string>
+  <string name="blacklist_title">Blockerade nummerlista</string>
+  <string name="blacklist_edit_dialog_title">Redigera blockerade nummer</string>
+  <string name="blacklist_prefs">Inställningar</string>
+  <string name="blacklist_button_delete">Radera</string>
   <string name="blacklist_empty_text">You don\'t have any blocked numbers. Add an entry by touching the Add (+) button.</string>
   <string name="blacklist_disabled_empty_text">To prevent phone numbers from calling or messaging you, enable the blocked caller list.</string>
-  <string name="blacklist_summary_disabled">Disabled</string>
+  <string name="blacklist_summary_disabled">Inaktiverad</string>
   <string name="blacklist_summary">You will not receive incoming calls or messages from phone numbers on the blocked caller list</string>
-  <string name="blacklist_notify">Show notification</string>
-  <string name="blacklist_private_numbers_title">Private numbers</string>
-  <string name="blacklist_private_numbers_summary_disabled">Don\'t block calls from private numbers</string>
-  <string name="blacklist_private_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from private numbers</string>
-  <string name="blacklist_unknown_numbers_title">Unknown numbers</string>
-  <string name="blacklist_unknown_numbers_summary_disabled">Don\'t block calls or messages from numbers not in the contact list</string>
+  <string name="blacklist_notify">Visa notifikation</string>
+  <string name="blacklist_private_numbers_title">Privata nummer</string>
+  <string name="blacklist_private_numbers_summary_disabled">Blockera inte samtal från privata nummer</string>
+  <string name="blacklist_private_numbers_summary">Blockera inkommande <xliff:g id="type">%s</xliff:g> från privata nummer</string>
+  <string name="blacklist_unknown_numbers_title">Okända nummer</string>
+  <string name="blacklist_unknown_numbers_summary_disabled">Blockera inte samtal eller meddelanden från nummer som inte finns i kontaktlistan</string>
   <string name="blacklist_unknown_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from numbers not in the contact list</string>
   <string name="blacklist_summary_type_calls_only">calls</string>
   <string name="blacklist_summary_type_messages_only">messages</string>

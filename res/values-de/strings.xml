@@ -3772,7 +3772,7 @@
   <string name="menu_proc_stats_type_cached">Im Cache</string>
   <!-- Voice input/output settings -->
   <!-- Title of setting on main settings screen. This item will take the user to the screen to tweak settings related to speech functionality -->
-  <string name="voice_input_output_settings">Spracheingabe&amp;-ausgabe</string>
+  <string name="voice_input_output_settings">Spracheingabe &amp; -ausgabe</string>
   <!-- Main voice input/output settings screen title -->
   <string name="voice_input_output_settings_title">Einstellungen für Spracheingabe &amp; -ausgabe</string>
   <!-- Title of voice search settings list item within voice input/output settings -->

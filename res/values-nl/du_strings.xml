@@ -18,7 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- DU Extra Info -->
   <string name="duextrainfo">Extra informatie</string>
-  <string name="duextrainfo_summary">Extra info weergeven voor cpu, display, etc</string>
+  <string name="duextrainfo_summary">Extra info weergeven voor cpu, scherm, etc</string>
   <string name="basicinfo">BASISINFO</string>
   <string name="manufacturer">Fabrikant</string>
   <string name="hardwaretype">Hardwaretype</string>
@@ -29,7 +29,7 @@
   <string name="bytes"> Bytes</string>
   <string name="cpuinfo">CPU INFO</string>
   <string name="chipset_processor">Chipset / Processor</string>
-  <string name="features">Features</string>
+  <string name="features">Kenmerken</string>
   <string name="bogomips">BogoMIPS</string>
   <string name="abi">ABI</string>
   <string name="abitwo">ABI2</string>
@@ -46,7 +46,7 @@
   <string name="dots_per_inch">DOTS PER INCH</string>
   <string name="actualdpi_x">Huidige DPI X</string>
   <string name="actualdpi_y">Huidige DPI Y</string>
-  <string name="refresh_rate">Vernieuwingsfrequentie</string>
+  <string name="refresh_rate">Verversfrequentie</string>
   <string name="pixels">Pixels</string>
   <string name="inches">Inches</string>
   <!-- DU version -->
@@ -67,7 +67,7 @@
   <string name="themes_settings_title">Thema\'s</string>
   <!-- DU Changelog -->
   <string name="duchangelog">Changelog</string>
-  <string name="du_summary">Kijk wat er is veranderd in DU</string>
+  <string name="du_summary">Bekijk wat er is veranderd in DU</string>
   <string name="du_app_name">DU Changelog</string>
   <!-- DU Updater -->
   <string name="duupdater">Updater</string>

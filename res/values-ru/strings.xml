@@ -956,13 +956,13 @@
   <string name="manage_trust_agents_summary">Посмотреть или отключить агенты доверия</string>
   <!-- Bluetooth settings -->
   <!-- Bluetooth settings check box title on Main Settings screen -->
-  <string name="bluetooth_quick_toggle_title">Устройства Bluetooth</string>
+  <string name="bluetooth_quick_toggle_title">Bluetooth</string>
   <!-- Bluetooth settings check box summary for turning on bluetooth -->
   <string name="bluetooth_quick_toggle_summary">Включить Bluetooth</string>
   <!--Used as title on second screen after selecting Bluetooth settings -->
-  <string name="bluetooth_settings">Устройства Bluetooth</string>
+  <string name="bluetooth_settings">Bluetooth</string>
   <!--Wireless controls screen, settings title for the item to take you to the bluetooth settings screen -->
-  <string name="bluetooth_settings_title">Устройства Bluetooth</string>
+  <string name="bluetooth_settings_title">Bluetooth</string>
   <!--Wireless controls screen, settings summary for the item tot ake you to the bluetooth settings screen -->
   <string name="bluetooth_settings_summary">Настройка подключений, видимости и имени устройства</string>
   <!-- ======================================================================================= -->
@@ -2042,7 +2042,7 @@
   <!-- Summary of a single storage volume, constrasting available and total storage space. [CHAR LIMIT=48]-->
   <string name="storage_volume_summary">Использовано <xliff:g id="USED">%1$s</xliff:g> из <xliff:g id="TOTAL">%2$s</xliff:g></string>
   <!-- Summary of a single storage volume used space. [CHAR LIMIT=24] -->
-  <string name="storage_size_large">\"<xliff:g id="NUMBER">^1</xliff:g>"<small><small>" <xliff:g id="UNIT">^2</xliff:g>"</small></small></string>
+  <string name="storage_size_large"><xliff:g id="number" example="128">^1</xliff:g><small><small> <xliff:g id="unit" example="KB">^2</xliff:g></small></small></string>
   <!-- Summary of a single storage volume total space. [CHAR LIMIT=48]-->
   <string name="storage_volume_used">использовано из <xliff:g id="TOTAL">%1$s</xliff:g></string>
   <!-- Summary of a single storage volume total space. [CHAR LIMIT=48]-->
@@ -2078,9 +2078,9 @@
   <!-- Body of dialog confirming that user wants to forget an internal storage device [CHAR LIMIT=NONE]-->
   <string name="storage_internal_forget_confirm">Вы потеряете доступ к данным, хранящимся на устройстве \"<xliff:g id="NAME">^1</xliff:g>\".</string>
   <!-- Item title describing storage used by Android system [CHAR LIMIT=48] -->
-  <string name="storage_detail_android_system">Android System</string>
+  <string name="storage_detail_android_system">Операционная система</string>
   <!-- Toast message shown when storage item of Android system is clicked [CHAR LIMIT=NONE]-->
-  <string name="storage_detail_android_system_version">Android System <xliff:g id="version">%s</xliff:g></string>
+  <string name="storage_detail_android_system_version">Версия:  <xliff:g id="version">%s</xliff:g></string>
   <!-- Item title describing storage used by apps [CHAR LIMIT=48]-->
   <string name="storage_detail_apps">Приложения</string>
   <!-- Item title describing storage used by images [CHAR LIMIT=48]-->
@@ -3564,7 +3564,7 @@
   <!-- Label for power consumed by Wi-Fi -->
   <string name="power_wifi">Wi-Fi</string>
   <!-- Label for power consumed by Bluetooth -->
-  <string name="power_bluetooth">Устройства Bluetooth</string>
+  <string name="power_bluetooth">Bluetooth</string>
   <!-- Label for power consumed by Cell idle -->
   <string name="power_cell">Связь с сетью</string>
   <!-- Label for power consumed by Calling -->
@@ -3949,7 +3949,7 @@
   <!-- Spoken description for the Wi-Fi power control gadget. -->
   <string name="gadget_wifi">Wi-Fi</string>
   <!-- Spoken description for the Bluetooth power control gadget. -->
-  <string name="gadget_bluetooth">Устройства Bluetooth</string>
+  <string name="gadget_bluetooth">Bluetooth</string>
   <!-- Spoken description for the Location power control gadget. -->
   <string name="gadget_location">Определение местоположения</string>
   <!-- Spoken description for the data synchronization gadget. -->
