@@ -68,7 +68,7 @@
   <!-- DU Changelog -->
   <string name="duchangelog">Lista zmian DU</string>
   <string name="du_summary">Sprawdź, co się zmieniło</string>
-  <string name="du_app_name">Lista zmian DU</string>
+  <string name="du_app_name">Lista zmian</string>
   <!-- DU Updater -->
   <string name="duupdater">Aktualizacje DU</string>
   <string name="duupdater_summary">Bądź na bieżąco z najnowszymi funkcjonalnościami i poprawkami</string>

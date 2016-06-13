@@ -241,7 +241,7 @@
   <string name="ring_notification_volume_option_title">Громкость звонка и уведомлений</string>
   <!-- Double tap to launch target -->
   <string name="dt2l_target_category">Настройки двойного нажатия для запуска</string>
-  <string name="dt2l_target_vib_title">Настройка целевого объекта вибрации</string>
+  <string name="dt2l_target_vib_title">Настройка силы вибрации</string>
   <string name="dt2l_target_vib_summary">Настройка вибрации при двойном нажатии кнопки питания</string>
   <string name="camera_double_tap_power_gesture_title">Нажмите кнопку питания дважды для камеры</string>
   <string name="camera_double_tap_power_gesture_desc">Быстро открыть камеру без разблокировки экрана</string>
