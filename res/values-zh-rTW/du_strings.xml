@@ -34,10 +34,10 @@
   <string name="abi">ABI</string>
   <string name="abitwo">ABI2</string>
   <string name="architecture">架構</string>
-  <string name="implementer">Implementer</string>
-  <string name="variant">Variant</string>
-  <string name="part">Part</string>
-  <string name="revision">Revision</string>
+  <string name="implementer">實施者</string>
+  <string name="variant">變異</string>
+  <string name="part">部分</string>
+  <string name="revision">修訂版本</string>
   <string name="displayinfo">顯示資訊</string>
   <string name="diagonal">對角</string>
   <string name="height">高</string>
@@ -74,7 +74,7 @@
   <string name="duupdater_summary">獲得最新的功能與問題修復</string>
   <!-- DU About -->
   <string name="aboutdu">關於 DU</string>
-  <string name="aboutdu_summary">Information about our devs, maintainers and rom features</string>
+  <string name="aboutdu_summary">關於我們開發者的資訊，維護者及ROM特點</string>
   <!-- Developer Tools -->
   <string name="developer_tools_title">開發人員工具</string>
   <string name="developer_tools_summary">進階除錯工具</string>
@@ -112,7 +112,7 @@
   <string name="screenshot_sound_title">螢幕擷取音效</string>
   <string name="screenshot_sound_summary">擷取螢幕畫面時播放音效</string>
   <!-- Notification light dialogs -->
-  <string name="edit_light_settings">Edit light settings</string>
+  <string name="edit_light_settings">提示燈編輯設定</string>
   <string name="pulse_speed_title">閃爍長度與速度</string>
   <string name="default_time">正常</string>
   <string name="custom_time">自訂</string>
@@ -170,16 +170,16 @@
   <string name="attention">注意</string>
   <!-- Android debugging over WiFi -->
   <string name="adb_over_network">網路 ADB</string>
-  <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi-Fi, USB networks). This setting is reset on reboot</string>
+  <string name="adb_over_network_summary">啟用透過網路接口 (Wi-Fi、USB 網路) 進行 TCP/IP 偵錯。該設定會於重新啟動後重設</string>
   <!-- Warning for Adb over Network -->
-  <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks, including GSM data network!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
+  <string name="adb_over_network_warning">警告：當ADB透過網絡啟用時，您的裝置會對所有已連線的網絡(包括GSM數據網絡) 開放接收指令！\n\n只有當您連線到信任的網路時才使用此功能。\n\n您真的要啟用此功能？</string>
   <!-- Media ducking -->
   <string name="interruptions_ignore_while_media_title">防止音量迴避</string>
   <string name="interruptions_ignore_while_media_summary">收到通知時不要降低媒體音量</string>
   <!-- Doze notification color invert -->
   <string name="doze_notification_color_invert_title">色彩反轉</string>
-  <string name="doze_notification_color_invert_summary_off">Ambient display notifications will not be inverted. Use for dark themes.</string>
-  <string name="doze_notification_color_invert_summary_on">Ambient display notifications will show as inverted. Use for light/stock theme.</string>
+  <string name="doze_notification_color_invert_summary_off">主動顯示通知不會反轉顏色，使用在深色主題.</string>
+  <string name="doze_notification_color_invert_summary_on">主動顯示通知將反轉顏色 使用在亮色主題</string>
   <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
   <string name="bluetooth_accept_all_files">接受所有檔案類型</string>
   <!-- Display : Rotation -->
@@ -305,15 +305,15 @@
   <string name="summary_doze_enabled">已啟用</string>
   <string name="summary_doze_disabled">已停用</string>
   <string name="doze_overwrite_value_title">覆寫預設值</string>
-  <string name="doze_overwrite_value_summary">Allow override of default values with user config</string>
-  <string name="doze_pulse_title">User configurable settings</string>
+  <string name="doze_overwrite_value_summary">允許使用者覆寫預設數值</string>
+  <string name="doze_pulse_title">使用者可配置的設定</string>
   <string name="doze_pulse_duration_in_title">淡入</string>
-  <string name="doze_pulse_duration_visible_title">Visible duration</string>
+  <string name="doze_pulse_duration_visible_title">可見的持續時間</string>
   <string name="doze_pulse_duration_out_title">淡出</string>
-  <string name="doze_trigger_pickup_title">Pick up sensor trigger</string>
+  <string name="doze_trigger_pickup_title">感應器觸發</string>
   <string name="doze_trigger_pickup_summary_on">Pulse will be triggered by pick up sensor</string>
   <string name="doze_trigger_pickup_summary_off">Pick up sensor will not be utilized as a trigger</string>
-  <string name="doze_trigger_notification_title">Notification trigger</string>
+  <string name="doze_trigger_notification_title">通知觸發</string>
   <string name="doze_trigger_notification_summary_on">Pulse will be triggered by notifications</string>
   <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
   <string name="doze_brightness_level_title">亮度</string>
@@ -330,4 +330,6 @@
   <string name="four_second">4 秒</string>
   <string name="fourhalf_second">4.5 秒</string>
   <string name="five_second">5 秒</string>
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
 </resources>

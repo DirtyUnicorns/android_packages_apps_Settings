@@ -330,4 +330,6 @@
   <string name="four_second">4 mp</string>
   <string name="fourhalf_second">4.5 mp</string>
   <string name="five_second">5 mp</string>
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
 </resources>

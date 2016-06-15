@@ -838,27 +838,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"As funcionalidades de proteção do dispositivo não funcionam sem a sequência."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"As funcionalidades de proteção do dispositivo não funcionam sem a sequência.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"As funcionalidades de proteção do dispositivo não funcionam sem a sequência.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>As suas impressões digitais guardadas também são removidas deste dispositivo e não pode desbloquear o telemóvel, autorizar compras ou iniciar sessão em aplicações com elas.\"\"\"\"\"\"\""</string>
+</xliff:g>As suas impressões digitais guardadas também são removidas deste dispositivo e não pode desbloquear o telemóvel, autorizar compras ou iniciar sessão em aplicações com elas.\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"As funcionalidades de proteção do dispositivo não funcionam sem o PIN."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"As funcionalidades de proteção do dispositivo não funcionam sem o PIN.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"As funcionalidades de proteção do dispositivo não funcionam sem o PIN.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>As suas impressões digitais guardadas também são removidas do dispositivo e não pode desbloquear o telemóvel, autorizar compras ou iniciar sessão em aplicações com elas.\"\"\"\"\"\"\""</string>
+</xliff:g>As suas impressões digitais guardadas também são removidas do dispositivo e não pode desbloquear o telemóvel, autorizar compras ou iniciar sessão em aplicações com elas.\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"As funcionalidades de proteção do dispositivo não funcionam sem a palavra-passe."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"As funcionalidades de proteção do dispositivo não funcionam sem a palavra-passe.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"As funcionalidades de proteção do dispositivo não funcionam sem a palavra-passe.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>As suas impressões digitais guardadas também são removidas deste dispositivo e não pode desbloquear o telemóvel, autorizar compras ou iniciar sessão em aplicações com elas.\"\"\"\"\"\""</string>
+</xliff:g>As suas impressões digitais guardadas também são removidas deste dispositivo e não pode desbloquear o telemóvel, autorizar compras ou iniciar sessão em aplicações com elas.\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"As funcionalidades de proteção do dispositivo não funcionam sem o bloqueio de ecrã."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"As funcionalidades de proteção do dispositivo não funcionam sem o bloqueio de ecrã.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"As funcionalidades de proteção do dispositivo não funcionam sem o bloqueio de ecrã.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>As suas impressões digitais guardadas também são removidas deste dispositivo e não pode desbloquear o telemóvel, autorizar compras ou iniciar sessão em aplicações com elas.\"\"\"\"\"\""</string>
+</xliff:g>As suas impressões digitais guardadas também são removidas deste dispositivo e não pode desbloquear o telemóvel, autorizar compras ou iniciar sessão em aplicações com elas.\"\"\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Sim, remover</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->

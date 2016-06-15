@@ -838,27 +838,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Toestelbeskermingkenmerke sal nie sonder jou patroon werk nie."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"Toestelbeskermingkenmerke sal nie sonder jou patroon werk nie.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"Toestelbeskermingkenmerke sal nie sonder jou patroon werk nie.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Jou gestoorde vingerafdrukke sal ook van hierdie toestel af verwyder word, en jy sal nie met hulle jou foon kan ontsluit, aankope kan magtig, of by programme kan aanmeld nie.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Jou gestoorde vingerafdrukke sal ook van hierdie toestel af verwyder word, en jy sal nie met hulle jou foon kan ontsluit, aankope kan magtig, of by programme kan aanmeld nie.\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Toestelbeskermingkenmerke sal nie sonder jou PIN werk nie."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"Toestelbeskermingkenmerke sal nie sonder jou PIN werk nie.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"Toestelbeskermingkenmerke sal nie sonder jou PIN werk nie.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Jou gestoorde vingerafdrukke sal ook van hierdie toestel af verwyder word, en jy sal nie met hulle jou foon kan ontsluit, aankope kan magtig, of by programme kan aanmeld nie.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Jou gestoorde vingerafdrukke sal ook van hierdie toestel af verwyder word, en jy sal nie met hulle jou foon kan ontsluit, aankope kan magtig, of by programme kan aanmeld nie.\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Toestelbeskermingkenmerke sal nie sonder jou wagwoord werk nie."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"Toestelbeskermingkenmerke sal nie sonder jou wagwoord werk nie.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"Toestelbeskermingkenmerke sal nie sonder jou wagwoord werk nie.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Jou gestoorde vingerafdrukke sal ook van hierdie toestel af verwyder word, en jy sal nie met hulle jou foon kan ontsluit, aankope kan magtig, of by programme kan aanmeld nie.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Jou gestoorde vingerafdrukke sal ook van hierdie toestel af verwyder word, en jy sal nie met hulle jou foon kan ontsluit, aankope kan magtig, of by programme kan aanmeld nie.\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Toestelbeskermingkenmerke sal nie sonder jou skermslot werk nie."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"Toestelbeskermingkenmerke sal nie sonder jou skermslot werk nie.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"Toestelbeskermingkenmerke sal nie sonder jou skermslot werk nie.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Jou gestoorde vingerafdrukke sal ook van hierdie toestel af verwyder word, en jy sal nie met hulle jou foon kan ontsluit, aankope kan magtig, of by programme kan aanmeld nie.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Jou gestoorde vingerafdrukke sal ook van hierdie toestel af verwyder word, en jy sal nie met hulle jou foon kan ontsluit, aankope kan magtig, of by programme kan aanmeld nie.\"\"\"\"\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Ja, verwyder</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->

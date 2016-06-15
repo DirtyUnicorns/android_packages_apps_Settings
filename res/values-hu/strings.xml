@@ -838,27 +838,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Az eszközvédelmi funkciók nem működnek a minta nélkül."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"Az eszközvédelmi funkciók nem működnek a minta nélkül.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"Az eszközvédelmi funkciók nem működnek a minta nélkül.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>A mentett ujjlenyomatok is törlődnek az eszközről, és a segítségükkel nem fogja tudni feloldani a telefon zárolását, jóváhagyni a vásárlásokat, illetve bejelentkezni az alkalmazásokba.\"\"\"\"\"\""</string>
+</xliff:g>A mentett ujjlenyomatok is törlődnek az eszközről, és a segítségükkel nem fogja tudni feloldani a telefon zárolását, jóváhagyni a vásárlásokat, illetve bejelentkezni az alkalmazásokba.\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Az eszközvédelmi funkciók nem működnek a PIN-kód nélkül."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"Az eszközvédelmi funkciók nem működnek a PIN-kód nélkül.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"Az eszközvédelmi funkciók nem működnek a PIN-kód nélkül.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>A mentett ujjlenyomatok is törlődnek az eszközről, és a segítségükkel nem fogja tudni feloldani a telefon zárolását, jóváhagyni a vásárlásokat, illetve bejelentkezni az alkalmazásokba.\"\"\"\"\"\""</string>
+</xliff:g>A mentett ujjlenyomatok is törlődnek az eszközről, és a segítségükkel nem fogja tudni feloldani a telefon zárolását, jóváhagyni a vásárlásokat, illetve bejelentkezni az alkalmazásokba.\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Az eszközvédelmi funkciók nem működnek a jelszó nélkül."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"Az eszközvédelmi funkciók nem működnek a jelszó nélkül.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"Az eszközvédelmi funkciók nem működnek a jelszó nélkül.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>A mentett ujjlenyomatok is törlődnek az eszközről, és a segítségükkel nem fogja tudni feloldani a telefon zárolását, jóváhagyni a vásárlásokat, illetve bejelentkezni az alkalmazásokba.\"\"\"\"\"\""</string>
+</xliff:g>A mentett ujjlenyomatok is törlődnek az eszközről, és a segítségükkel nem fogja tudni feloldani a telefon zárolását, jóváhagyni a vásárlásokat, illetve bejelentkezni az alkalmazásokba.\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Az eszközvédelmi funkciók nem működnek a képernyőzár nélkül."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"Az eszközvédelmi funkciók nem működnek a képernyőzár nélkül.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"Az eszközvédelmi funkciók nem működnek a képernyőzár nélkül.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>A mentett ujjlenyomatok is törlődnek az eszközről, és a segítségükkel nem fogja tudni feloldani a telefon zárolását, jóváhagyni a vásárlásokat, illetve bejelentkezni az alkalmazásokba.\"\"\"\"\"\""</string>
+</xliff:g>A mentett ujjlenyomatok is törlődnek az eszközről, és a segítségükkel nem fogja tudni feloldani a telefon zárolását, jóváhagyni a vásárlásokat, illetve bejelentkezni az alkalmazásokba.\"\"\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Igen, kikapcsolom</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->

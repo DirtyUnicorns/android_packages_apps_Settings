@@ -838,27 +838,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Functies voor apparaatbeveiliging werken niet zonder je patroon."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"Functies voor apparaatbeveiliging werken niet zonder je patroon.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"Functies voor apparaatbeveiliging werken niet zonder je patroon.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Je opgeslagen vingerafdrukken worden ook verwijderd van dit apparaat en het is niet mogelijk je je telefoon te ontgrendelen, aankopen te autoriseren of in te loggen bij apps zonder deze vingerafdrukken.\"\"\"\"\"\"\""</string>
+</xliff:g>Je opgeslagen vingerafdrukken worden ook verwijderd van dit apparaat en het is niet mogelijk je je telefoon te ontgrendelen, aankopen te autoriseren of in te loggen bij apps zonder deze vingerafdrukken.\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Functies voor apparaatbeveiliging werken niet zonder je pincode."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"Functies voor apparaatbeveiliging werken niet zonder je pincode.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"Functies voor apparaatbeveiliging werken niet zonder je pincode.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Je opgeslagen vingerafdrukken worden ook verwijderd van dit apparaat en het is niet mogelijk je je telefoon te ontgrendelen, aankopen te autoriseren of in te loggen bij apps zonder deze vingerafdrukken.\"\"\"\"\"\"\""</string>
+</xliff:g>Je opgeslagen vingerafdrukken worden ook verwijderd van dit apparaat en het is niet mogelijk je je telefoon te ontgrendelen, aankopen te autoriseren of in te loggen bij apps zonder deze vingerafdrukken.\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Functies voor apparaatbeveiliging werken niet zonder je wachtwoord."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"Functies voor apparaatbeveiliging werken niet zonder je wachtwoord.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"Functies voor apparaatbeveiliging werken niet zonder je wachtwoord.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Je opgeslagen vingerafdrukken worden ook verwijderd van dit apparaat en het is niet mogelijk je je telefoon te ontgrendelen, aankopen te autoriseren of in te loggen bij apps zonder deze vingerafdrukken.\"\"\"\"\"\"\""</string>
+</xliff:g>Je opgeslagen vingerafdrukken worden ook verwijderd van dit apparaat en het is niet mogelijk je je telefoon te ontgrendelen, aankopen te autoriseren of in te loggen bij apps zonder deze vingerafdrukken.\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Functies voor apparaatbeveiliging werken niet zonder je schermvergendeling."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"Functies voor apparaatbeveiliging werken niet zonder je schermvergendeling.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"Functies voor apparaatbeveiliging werken niet zonder je schermvergendeling.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Je opgeslagen vingerafdrukken worden ook verwijderd van dit apparaat en het is niet mogelijk je je telefoon te ontgrendelen, aankopen te autoriseren of in te loggen bij apps zonder deze vingerafdrukken.\"\"\"\"\"\"\""</string>
+</xliff:g>Je opgeslagen vingerafdrukken worden ook verwijderd van dit apparaat en het is niet mogelijk je je telefoon te ontgrendelen, aankopen te autoriseren of in te loggen bij apps zonder deze vingerafdrukken.\"\"\"\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Ja, verwijderen</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->

@@ -164,10 +164,10 @@
   <string name="keyboard_rotation_timeout_summary">Desabilita sensor de auto-rotação <xliff:g id="rotate_timeout">%1$s</xliff:g> segundos após esconder teclado</string>
   <string name="keyboard_rotation_dialog">Este recurso liga a auto-rotação temporariamente quando o teclado é exibido. Não tem nenhum efeito quando a auto-rotação já está ativada.</string>
   <string name="show_enter_key_title">Exibir tecla \"Enter\"</string>
-  <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
+  <string name="show_enter_key_summary">Forçar exibição da tecla \"Enter\" no teclado ao invés da tecla de emoticon</string>
   <string name="ime_switcher_notify">Notificação do método de entrada</string>
-  <string name="ime_switcher_notify_summary">Display input method selector notification</string>
-  <string name="attention">Attention</string>
+  <string name="ime_switcher_notify_summary">Exibir notificação de método de entrada</string>
+  <string name="attention">Atenção</string>
   <!-- Android debugging over WiFi -->
   <string name="adb_over_network">ADB over network</string>
   <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi-Fi, USB networks). This setting is reset on reboot</string>
@@ -330,4 +330,6 @@
   <string name="four_second">4 s</string>
   <string name="fourhalf_second">4.5 s</string>
   <string name="five_second">5 s</string>
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
 </resources>

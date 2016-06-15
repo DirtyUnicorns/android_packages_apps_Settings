@@ -311,10 +311,10 @@
   <string name="doze_pulse_duration_visible_title">Продолжительность</string>
   <string name="doze_pulse_duration_out_title">Затухание</string>
   <string name="doze_trigger_pickup_title">Подобрать датчик триггера</string>
-  <string name="doze_trigger_pickup_summary_on">Pulse will be triggered by pick up sensor</string>
+  <string name="doze_trigger_pickup_summary_on">Пульсация экрана при запрете спящего режима будет переключаться датчиком подбора</string>
   <string name="doze_trigger_pickup_summary_off">Уведомления не будут использованы для запуска</string>
   <string name="doze_trigger_notification_title">Триггер для уведомлений</string>
-  <string name="doze_trigger_notification_summary_on">Pulse will be triggered by notifications</string>
+  <string name="doze_trigger_notification_summary_on">Пульсация экрана при запрете спящего режима будет переключаться уведомлениями</string>
   <string name="doze_trigger_notification_summary_off">Уведомления не будут использованы для запуска</string>
   <string name="doze_brightness_level_title">Уровень яркости</string>
   <string name="onehundred_ms">100 мс</string>
@@ -330,4 +330,6 @@
   <string name="four_second">4 сек.</string>
   <string name="fourhalf_second">4.5 сек.</string>
   <string name="five_second">5 с</string>
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
 </resources>

@@ -330,4 +330,6 @@
   <string name="four_second">4秒</string>
   <string name="fourhalf_second">4.5秒</string>
   <string name="five_second">5秒</string>
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
 </resources>
