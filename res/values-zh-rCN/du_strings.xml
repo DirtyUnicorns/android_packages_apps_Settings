@@ -331,5 +331,5 @@
   <string name="fourhalf_second">4.5秒</string>
   <string name="five_second">5秒</string>
   <!-- Volume settings - Volume adjustment sound -->
-  <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+  <string name="volume_adjust_sounds_title">音量键调节声音</string>
 </resources>

@@ -46,7 +46,7 @@
   <!-- Settings main menu category heading. Personal (Accounts, security, language, backup...). [CHAR LIMIT=40] -->
   <string name="header_category_access">Acesso</string>
   <!-- Settings main menu category heading. System (Updates, data, accessibility, about phone). [CHAR LIMIT=40] -->
-  <string name="header_category_system">Sistema</string>
+  <string name="header_category_system">Avançado</string>
   <!-- Phone info -->
   <!-- Phone Info screen. Button label to turn on the radio . Only shown in diagnostic screen, so precise translation is not needed. -->
   <string name="turn_on_radio">Ativar o rádio</string>
@@ -334,7 +334,7 @@
   <!-- Radio Info screen. Label for a status item.  Used for diagnostic info screens, precise translation isn't needed -->
   <string name="radio_info_neighboring_location_label">CID vizinho:</string>
   <!-- Radio Info screen. Label for a status item.  Used for diagnostic info screens, precise translation isn't needed -->
-  <string name="radio_info_cellinfo_label">CellInfo:</string>
+  <string name="radio_info_cellinfo_label">Informações do Celular:</string>
   <!-- Radio Info screen. Label for a status item.  Used for diagnostic info screens, precise translation isn't needed -->
   <string name="radio_info_dcrtinfo_label">DcRtInfo:</string>
   <!-- Radio Info screen. Label for a status item.  Used for diagnostic info screens, precise translation isn't needed -->
@@ -838,27 +838,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Os recursos de proteção do dispositivo não funcionarão sem seu padrão."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem seu padrão.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem seu padrão.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Os recursos de proteção do dispositivo não funcionarão sem seu PIN."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem seu PIN.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem seu PIN.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Os recursos de proteção do dispositivo não funcionarão sem sua senha."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem sua senha.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem sua senha.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Os recursos de proteção do dispositivo não funcionarão sem seu bloqueio de tela."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem seu bloqueio de tela.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem seu bloqueio de tela.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Sim, remover</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
@@ -1623,7 +1623,7 @@
   <!-- Image description for alarm volume mute button. -->
   <string name="volume_alarm_mute">Desativar alarmes</string>
   <!-- Dock settings title, top level -->
-  <string name="dock_settings">Dock</string>
+  <string name="dock_settings">Gaveta</string>
   <!-- Dock settings title -->
   <string name="dock_settings_title">Configurações de dock</string>
   <!-- Dock audio settings -->
@@ -1833,7 +1833,7 @@
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="kernel_version">Versão do kernel</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
-  <string name="build_date">Build date</string>
+  <string name="build_date">Data da Build</string>
   <string name="build_date_default">2012-01-01-0000</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="selinux_status">Status do SELinux</string>
@@ -1914,7 +1914,7 @@
   <!-- SD card & phone storage settings summary. Displayed when the total memory usage is being calculated. Will be replaced with a number like "12.3 GB" when finished calucating. [CHAR LIMIT=30] -->
   <string name="memory_calculating_size">Calculando...</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of Android system. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
-  <string name="memory_android_system_usage">Android System</string>
+  <string name="memory_android_system_usage">Sistema Android</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of applications installed. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
   <string name="memory_apps_usage">Apps e dados de apps</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of media on the device. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
@@ -2070,9 +2070,9 @@
   <!-- Body of dialog confirming that user wants to forget an internal storage device [CHAR LIMIT=NONE]-->
   <string name="storage_internal_forget_confirm">Todos os apps, fotos e dados armazenados nesse <xliff:g id="NAME">^1</xliff:g> serão perdidos permanentemente.</string>
   <!-- Item title describing storage used by Android system [CHAR LIMIT=48] -->
-  <string name="storage_detail_android_system">Android System</string>
+  <string name="storage_detail_android_system">Sistema Android</string>
   <!-- Toast message shown when storage item of Android system is clicked [CHAR LIMIT=NONE]-->
-  <string name="storage_detail_android_system_version">Android System <xliff:g id="version">%s</xliff:g></string>
+  <string name="storage_detail_android_system_version">Sistema Android <xliff:g id="version">%s </xliff:g></string>
   <!-- Item title describing storage used by apps [CHAR LIMIT=48]-->
   <string name="storage_detail_apps">Apps</string>
   <!-- Item title describing storage used by images [CHAR LIMIT=48]-->
@@ -2157,7 +2157,7 @@
   <string name="battery_level_title">Nível da bateria</string>
   <!-- APN Settings -->
   <!-- APN settings screen title -->
-  <string name="apn_settings">APNs</string>
+  <string name="apn_settings">Pontos de acesso APN</string>
   <!-- Screen title after user selects APNs setting option -->
   <string name="apn_edit">Editar ponto de acesso</string>
   <!-- Edit access point label summary text when no value has been set -->
@@ -2296,7 +2296,7 @@
   <!-- Master clear progress screen title [CHAR LIMIT=30] -->
   <string name="master_clear_progress_title">Apagando</string>
   <!-- Master clear progress screen text [CHAR LIMIT=75] -->
-  <string name="master_clear_progress_text">Please wait\u2026</string>
+  <string name="master_clear_progress_text">Por favor, aguarde\u2026</string>
   <!-- Main settings screen, Call settings title for item to go into the call settings -->
   <string name="call_settings_title">Conf. de chamada</string>
   <!-- Main settings screen, Call settings summary for item to go into call settings -->
@@ -5875,7 +5875,7 @@
   <!-- Settings title in main settings screen for SYSTEM_ALERT_WINDOW [CHAR LIMIT=45] -->
   <string name="system_alert_window_settings">Sobrepor a outros apps</string>
   <!-- Title for the apps with SYSTEM_ALERT_WINDOW permission/privilege [CHAR LIMIT=20] -->
-  <string name="system_alert_window_apps_title">Apps</string>
+  <string name="system_alert_window_apps_title">Aplicativos</string>
   <!-- Title for the apps that are allowed to draw on top of other apps [CHAR LIMIT=60] -->
   <string name="system_alert_window_access_title">Sobrepor a outros apps</string>
   <!-- Label for setting which controls whether app can draw overlays [CHAR LIMIT=45] -->
@@ -5940,9 +5940,9 @@
   <!-- Description of feature to change color setting for the display [CHAR LIMIT=NONE] -->
   <string name="picture_color_mode_desc">Usar sRGB</string>
   <!-- Name of the setting to change the display's color temperature -->
-  <string name="color_temperature">Cool color temperature</string>
+  <string name="color_temperature">Temperatura de cor da tela</string>
   <!-- Description of the setting to change the display's color temperature -->
-  <string name="color_temperature_desc">Use cooler display colors</string>
+  <string name="color_temperature_desc">Use cores de exibição</string>
   <!-- Toast message letting the user know the color temperature setting is not immediate -->
-  <string name="color_temperature_toast">To apply color change, turn off screen</string>
+  <string name="color_temperature_toast">Para aplicar a alteração de cor, desligar a tela</string>
 </resources>

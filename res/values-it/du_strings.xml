@@ -215,14 +215,14 @@
   <string name="adb_notify">Notifica debug USB</string>
   <string name="adb_notify_summary">Visualizza una notifica quando il debug USB è collegato</string>
   <!-- Volume Steps -->
-  <string name="volume_steps_title">Livelli Volume</string>
+  <string name="volume_steps_title">Livelli volume</string>
   <string name="volume_steps_alarm_title">Livelli volume: Sveglia</string>
   <string name="volume_steps_dtmf_title">Livelli volume: DTMF</string>
   <string name="volume_steps_music_title">Livelli volume: Musica</string>
-  <string name="volume_steps_notification_title">Step Volume: Notifiche</string>
-  <string name="volume_steps_ring_title">Step Volume: Suoneria</string>
+  <string name="volume_steps_notification_title">Livelli volume: Notifiche</string>
+  <string name="volume_steps_ring_title">Livelli volume: Suoneria</string>
   <string name="volume_steps_system_title">Livelli volume: Sistema</string>
-  <string name="volume_steps_voice_call_title">Livelli Volume: Chiamate vocali</string>
+  <string name="volume_steps_voice_call_title">Livelli volume: Chiamate vocali</string>
   <string name="volume_steps_reset">Ripristina</string>
   <string name="volume_steps_60">60</string>
   <string name="volume_steps_45">45</string>
@@ -262,9 +262,9 @@
   <string name="dashboard_tileview_dividers_title">Divisori impostazioni</string>
   <string name="dashboard_tileview_dividers_summary">Nascondi i divisori nelle impostazioni</string>
   <!-- Optional Dashboard Switches -->
-  <string name="dashboard_switches_title">Interruttori impostazioni</string>
-  <string name="dashboard_switches_off">Interruttori off</string>
-  <string name="dashboard_switches_on">Interruttori on</string>
+  <string name="dashboard_switches_title">Impostazione interruttori</string>
+  <string name="dashboard_switches_off">Nascosti</string>
+  <string name="dashboard_switches_on">Visibili</string>
   <string name="dashboard_switches_summary">Modifica la posizione degli interruttori nelle impostazioni</string>
   <string name="dashboard_switches_dialog_title">Seleziona lo stato dell\'interruttore</string>
   <!-- Keyguard notifications options -->
@@ -310,11 +310,11 @@
   <string name="doze_pulse_duration_in_title">Dissolvenza in entrata</string>
   <string name="doze_pulse_duration_visible_title">Durata visibilità</string>
   <string name="doze_pulse_duration_out_title">Dissolvenza</string>
-  <string name="doze_trigger_pickup_title">Attivazione con gesture di sollevamento</string>
-  <string name="doze_trigger_pickup_summary_on">Consente di mostrare Ambient Display quando il dispositivo viene sollevato</string>
-  <string name="doze_trigger_pickup_summary_off">Il sensore di sollevamento non sarà utilizzato come attivazione</string>
-  <string name="doze_trigger_notification_title">Trigger di notifica</string>
-  <string name="doze_trigger_notification_summary_on">Ambient Display verrà attivato dalle notifiche</string>
+  <string name="doze_trigger_pickup_title">Scegliere un gesto di avvio</string>
+  <string name="doze_trigger_pickup_summary_on">Pulse sarà attivato dal gesto evento del sensore</string>
+  <string name="doze_trigger_pickup_summary_off">Pick up sensore gesto non sarà utilizzato come un meccanismo di attivazione</string>
+  <string name="doze_trigger_notification_title">Avvio notifica</string>
+  <string name="doze_trigger_notification_summary_on">Pulse verrà attivato dalle notifiche</string>
   <string name="doze_trigger_notification_summary_off">Le notifiche non saranno utilizzate come attivazione</string>
   <string name="doze_brightness_level_title">Livello di luminosità</string>
   <string name="onehundred_ms">100 ms</string>
@@ -331,5 +331,5 @@
   <string name="fourhalf_second">4.5 s</string>
   <string name="five_second">5 s</string>
   <!-- Volume settings - Volume adjustment sound -->
-  <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+  <string name="volume_adjust_sounds_title">Suono regolazione volume</string>
 </resources>
