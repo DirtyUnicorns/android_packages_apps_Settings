@@ -331,5 +331,5 @@
   <string name="fourhalf_second">4.5 s</string>
   <string name="five_second">5 s</string>
   <!-- Volume settings - Volume adjustment sound -->
-  <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+  <string name="volume_adjust_sounds_title">Geluid bij volume wijzigen</string>
 </resources>
