@@ -69,7 +69,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-public class NotificationSettings extends SettingsPreferenceFragment implements Indexable, OnPreferenceChangeListener {
+public class NotificationSettings extends SettingsPreferenceFragment implements Indexable, Preference.OnPreferenceChangeListener {
     private static final String TAG = "NotificationSettings";
 
     private static final String KEY_SOUND = "sound";
@@ -194,7 +194,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         mVolumeDialogTimeout.setDefault(1500);
         mVolumeDialogTimeout.isMilliseconds(true);
         mVolumeDialogTimeout.setInterval(1);
-        mVolumeDialogTimeout.minimumValue(1000);
+        mVolumeDialogTimeout.minimumValue(100);
         mVolumeDialogTimeout.multiplyValue(100);
         mVolumeDialogTimeout.setOnPreferenceChangeListener(this);
 
@@ -213,6 +213,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         refreshZenAccess();
         updateRingerMode();
         updateEffectsSuppressor();
+        updateState();
     }
 
     @Override
@@ -240,7 +241,6 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
                 pref.setEnabled(!isRestricted);
             }
         }
-        updateState();
     }
 
     @Override
