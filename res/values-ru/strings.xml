@@ -839,27 +839,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Без графического ключа не будет работать защита устройства."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"Без графического ключа не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"\"Без графического ключа не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Без PIN-кода не будет работать защита устройства."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"Без PIN-кода не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"\"Без PIN-кода не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Без пароля не будет работать защита устройства."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"Без пароля не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"\"Без пароля не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Без блокировки экрана не будет работать защита устройства."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"Без блокировки экрана не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"\"Без блокировки экрана не будет работать защита устройства.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Сохраненные отпечатки пальцев будут удалены, поэтому вы больше не сможете снимать блокировку, совершать покупки и входить в приложения с их помощью.\"\"\"\"\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Да, отключить</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
@@ -4585,9 +4585,9 @@
   <!-- Body of dialog shown before user restricts background data usage. This is for multiuser phones. [CHAR LIMIT=NONE] -->
   <string name="data_usage_restrict_background_multiuser" product="default">Если ограничить передачу данных в фоновом режиме по мобильной сети, некоторые приложения и сервисы не будут работать без подключения к сети Wi-Fi.\n\nНастройки будут изменены для всех пользователей устройства.</string>
   <!-- Label displaying current network data usage warning threshold. [CHAR LIMIT=18] -->
-  <string name="data_usage_sweep_warning"><font size="12">\"Предупреждение\"</font>\n<font size="21">\"<xliff:g id="NUMBER">^1</xliff:g>"</font>\" \"<font size="9">\"<xliff:g id="UNIT">^2</xliff:g>"</font></string>
+  <string name="data_usage_sweep_warning"><font size="12">Предупреждение</font>\n<font size="21"><xliff:g id="number" example="128">^1</xliff:g></font> <font size="9"><xliff:g id="unit" example="KB">^2</xliff:g></font></string>
   <!-- Label displaying current network data usage limit threshold. [CHAR LIMIT=18] -->
-  <string name="data_usage_sweep_limit"><font size="12">\"Лимит\"</font>\n<font size="21">\"<xliff:g id="NUMBER">^1</xliff:g>"</font>\" \"<font size="9">\"<xliff:g id="UNIT">^2</xliff:g>"</font></string>
+  <string name="data_usage_sweep_limit"><font size="12">Лимит</font>\n<font size="21"><xliff:g id="number" example="128">^1</xliff:g></font> <font size="9"><xliff:g id="unit" example="KB">^2</xliff:g></font></string>
   <!-- TODO: Remove it once the same entry in SettingsLib is translated. -->
   <!-- Title of data usage item that represents all uninstalled applications. [CHAR LIMIT=48] -->
   <string name="data_usage_uninstalled_apps">Удаленные приложения</string>

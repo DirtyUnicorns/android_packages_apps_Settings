@@ -2937,9 +2937,9 @@
   <!-- Running service details, stop confirmation dialog title. Displays when user selects selects to stop a system service. -->
   <string name="runningservicedetails_stop_dlg_title">Systemdienst beenden?</string>
   <!-- Running service details, stop confirmation descriptive text. Displays when user selects selects to stop a system service. -->
-  <string name="runningservicedetails_stop_dlg_text" product="tablet">Wenn du diesen Dienst beendest, funktionieren möglicherweise einige Funktionen deines Tablets nicht mehr richtig, bis du es aus- und wieder einschaltest.</string>
+  <string name="runningservicedetails_stop_dlg_text" product="tablet">Wenn Sie diesen Dienst beenden, funktionieren möglicherweise einige Funktionen Ihres Tablets nicht mehr richtig, bis Sie es neu starten.</string>
   <!-- Running service details, stop confirmation descriptive text. Displays when user selects selects to stop a system service. -->
-  <string name="runningservicedetails_stop_dlg_text" product="default">Wenn du diesen Dienst beendest, funktionieren möglicherweise einige Funktionen deines Telefons nicht mehr richtig, bis du es aus- und wieder einschaltest.</string>
+  <string name="runningservicedetails_stop_dlg_text" product="default">Wenn Sie diesen Dienst beenden, funktionieren möglicherweise einige Funktionen Ihres Telefons nicht mehr richtig, bis Sie es neu starten.</string>
   <!-- Language Settings -->
   <!-- Title of setting on main settings screen.  This item will take the user to the screen to tweak settings realted to locale and text -->
   <string name="language_settings">Sprache &amp; Eingabe</string>
@@ -3104,7 +3104,7 @@
   <!-- [CHAR LIMIT=NONE] Setting checkbox title for Whether to include bug report item in power menu. -->
   <string name="bugreport_in_power">Verknüpfung zu Fehlerbericht</string>
   <!-- [CHAR LIMIT=NONE] Setting checkbox summary for Whether to include bug report item in power -->
-  <string name="bugreport_in_power_summary">Schaltfläche zum Abrufen von Fehlerberichten im Menü \"Ein/Aus\" anzeigen</string>
+  <string name="bugreport_in_power_summary">Schaltfläche zum Abrufen von Fehlerberichten im Startmenü anzeigen</string>
   <!-- Setting Checkbox title whether to keep the screen on when plugged in to a power source -->
   <string name="keep_screen_on">Aktiv lassen</string>
   <!-- setting Checkbox summary whether to keep the screen on when plugged in  -->

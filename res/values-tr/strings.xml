@@ -280,7 +280,7 @@
   <!-- Label for chosen font size -->
   <string name="display_font_size_label">Yazı tipi boyutu:</string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
-  <string name="intent_sender_data_label"><xliff:g id="data">Data:</xliff:g></string>
+  <string name="intent_sender_data_label"><xliff:g id="data">Veri:</xliff:g></string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
   <string name="intent_sender_sendbroadcast_text"><xliff:g id="BROADCAST">broadcast</xliff:g> gönder</string>
   <!-- Used for diagnostic screens, precise translation is not necessary -->
@@ -378,7 +378,7 @@
   <!-- Radio Info screen. Label for a status item.  Used for diagnostic info screens, precise translation isn't needed -->
   <string name="radio_info_set_perferred_label">Tercih edilen şebeke türünü ayarla:</string>
   <!-- Radio Info screen. Label for a status item.  Used for diagnostic info screens, precise translation isn't needed -->
-  <string name="radio_info_ping_ipaddr">Ping IpAddr:</string>
+  <string name="radio_info_ping_ipaddr">Ping IpAdres:</string>
   <!-- Radio Info screen. Label for a status item.  Used for diagnostic info screens, precise translation isn't needed -->
   <string name="radio_info_ping_hostname">Ping Ana Makine Adı (www.google.com.tr):</string>
   <!-- Radio Info screen. Label for a status item.  Used for diagnostic info screens, precise translation isn't needed -->
@@ -838,27 +838,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Cihaz koruma özellikleri deseniniz olmadan çalışmayacak."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri deseniniz olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri deseniniz olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Cihaz koruma özellikleri PIN'iniz olmadan çalışmayacak."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri PIN'iniz olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri PIN'iniz olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Cihaz koruma özellikleri şifreniz olmadan çalışmayacak."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri şifreniz olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri şifreniz olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Cihaz koruma özellikleri ekran kilidi olmadan çalışmayacak."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri ekran kilidi olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri ekran kilidi olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\""</string>
+</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Evet, kaldır</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
@@ -2310,12 +2310,12 @@
   <!-- Tethering controls, item title to go into the tethering settings when only Bluetooth tethering is available [CHAR LIMIT=25]-->
   <string name="tether_settings_title_bluetooth">Bluetooth tethering</string>
   <!-- Tethering controls, item title to go into the tethering settings when USB and Bluetooth tethering are available [CHAR LIMIT=25]-->
-  <string name="tether_settings_title_usb_bluetooth">Tethering</string>
+  <string name="tether_settings_title_usb_bluetooth">Usb internet payl</string>
   <!-- Tethering controls, item title to go into the tethering settings when USB, Bluetooth and Wifi tethering are available [CHAR LIMIT=25]-->
   <string name="tether_settings_title_all">Tethering ve taşnblr hotspot</string>
   <!-- USB Tethering options -->
   <string name="usb_title">USB</string>
-  <string name="usb_tethering_button_text">USB tethering</string>
+  <string name="usb_tethering_button_text">USB internet paylaşımı</string>
   <!-- USB available subtext - shown when USB is connected but not currently being tethered -->
   <string name="usb_tethering_available_subtext">USB bağlandı, bağlantıyı kontrol edin</string>
   <!-- USB tethered subtext - shown when USB is connected and being tethered -->
@@ -3713,7 +3713,7 @@
   <!-- [CHAR LIMIT=NONE] Label for process stats, text for stats type -->
   <string name="process_stats_type_cached">Önbelleğe alındı</string>
   <!-- [CHAR LIMIT=NONE] Label OS "process" app -->
-  <string name="process_stats_os_label">Android OS</string>
+  <string name="process_stats_os_label">Android İS</string>
   <!-- [CHAR LIMIT=NONE] Name of OS "process" for all native processes -->
   <string name="process_stats_os_native">Yerel</string>
   <!-- [CHAR LIMIT=NONE] Name of OS "process" for all kernel memory -->
@@ -3882,7 +3882,7 @@
   <string name="tts_status_not_supported"><xliff:g id="LOCALE">%1$s</xliff:g> desteklenmiyor</string>
   <!-- On main TTS Settings screen, current TTS engine status for the current default language,
          tts engine is queried for status [CHAR LIMIT=150] -->
-  <string name="tts_status_checking">Checking\u2026</string>
+  <string name="tts_status_checking">Denetleniyor\2026</string>
   <!-- On main TTS Settings screen, text for divider under which all TTS engines are listed -->
   <string name="tts_engines_section">Motorlar</string>
   <!-- On main TTS Settings screen, text preceded by the TTS engine name, clicking this button will launch the engine settings -->
@@ -4900,7 +4900,7 @@
   <!-- Button the user can click to indicate he understood and dismiss the screen -->
   <string name="nfc_how_it_works_got_it">Anladım</string>
   <!-- NFC More... title.  [CHAR LIMIT=40] -->
-  <string name="nfc_more_title">More\u2026</string>
+  <string name="nfc_more_title">Daha fazlası\u2026</string>
   <!-- Label for the dialog that is shown when the user is asked to set a
          preferred payment application -->
   <string name="nfc_payment_set_default_label">Tercihiniz olarak ayarlansın mı?</string>
@@ -5056,7 +5056,7 @@
   <!-- Message for selecting sim for data in settings.  [CHAR LIMIT=40] -->
   <string name="select_sim_for_data">Veri için bir SIM kart seçin</string>
   <!-- Message for switching data SIM; switching takes a while -->
-  <string name="data_switch_started">Switching data SIM, this may take up to a minute\u2026</string>
+  <string name="data_switch_started">Veri için kullanılan SIM kart değiştiriliyor. Bu işlem bir dakika kadar sürebilir\2026</string>
   <!-- Message for selecting sim for call in settings.  [CHAR LIMIT=40] -->
   <string name="select_sim_for_calls">Telefon etmek için şu SIM kartı kullan:</string>
   <!-- Title for selecting a SIM card.  [CHAR LIMIT=40] -->
@@ -5940,7 +5940,7 @@
   <!-- Description of feature to change color setting for the display [CHAR LIMIT=NONE] -->
   <string name="picture_color_mode_desc">sRGB\'yi kullan</string>
   <!-- Name of the setting to change the display's color temperature -->
-  <string name="color_temperature">Cool color temperature</string>
+  <string name="color_temperature">Ekran renk sıcaklığı</string>
   <!-- Description of the setting to change the display's color temperature -->
   <string name="color_temperature_desc">Use cooler display colors</string>
   <!-- Toast message letting the user know the color temperature setting is not immediate -->

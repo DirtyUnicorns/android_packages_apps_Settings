@@ -19,36 +19,36 @@
   <!-- DU Extra Info -->
   <string name="duextrainfo">Extra information</string>
   <string name="duextrainfo_summary">Display extra info for cpu, display, etc</string>
-  <string name="basicinfo">BASIC INFO</string>
-  <string name="manufacturer">Manufacturer</string>
-  <string name="hardwaretype">Hardware type</string>
+  <string name="basicinfo">ОСНОВНА ІНФОРМАЦІЯ</string>
+  <string name="manufacturer">Виробник</string>
+  <string name="hardwaretype">Тип устаткування</string>
   <string name="systempartition">System partition</string>
   <string name="datapartition">Data partition</string>
-  <string name="ram">RAM</string>
-  <string name="bootloader">Bootloader</string>
-  <string name="bytes"> Bytes</string>
+  <string name="ram">Оперативна пам\'ять</string>
+  <string name="bootloader">Завантажувач</string>
+  <string name="bytes"> Байти</string>
   <string name="cpuinfo">CPU INFO</string>
-  <string name="chipset_processor">Chipset / Processor</string>
+  <string name="chipset_processor">Чіпсет / процесор</string>
   <string name="features">Features</string>
   <string name="bogomips">BogoMIPS</string>
   <string name="abi">ABI</string>
   <string name="abitwo">ABI2</string>
-  <string name="architecture">Architecture</string>
-  <string name="implementer">Implementer</string>
+  <string name="architecture">Архітектура</string>
+  <string name="implementer">Виробник</string>
   <string name="variant">Variant</string>
   <string name="part">Part</string>
   <string name="revision">Revision</string>
-  <string name="displayinfo">DISPLAY INFO</string>
-  <string name="diagonal">Diagonal</string>
-  <string name="height">Height</string>
-  <string name="width">Width</string>
+  <string name="displayinfo">ВІДОБРАЖЕННЯ ІНФОРМАЦІЇ</string>
+  <string name="diagonal">Діагональ</string>
+  <string name="height">Висота</string>
+  <string name="width">Ширина</string>
   <string name="density">Density</string>
   <string name="dots_per_inch">DOTS PER INCH</string>
   <string name="actualdpi_x">Actual DPI X</string>
-  <string name="actualdpi_y">Actual DPI Y</string>
-  <string name="refresh_rate">Refresh Rate</string>
-  <string name="pixels">Pixels</string>
-  <string name="inches">Inches</string>
+  <string name="actualdpi_y">Фактичний DPI Y</string>
+  <string name="refresh_rate">Частота оновлення</string>
+  <string name="pixels">Пікселі</string>
+  <string name="inches">Дюйми</string>
   <!-- DU version -->
   <string name="mod_version">DU version</string>
   <string name="mod_version_default">Unknown</string>
@@ -58,17 +58,17 @@
   <string name="share_message">Check out what #DirtyUnicorns is all about @ http://goo.gl/emISQ1</string>
   <string name="share_chooser_title">Share Dirty Unicorns</string>
   <!-- SuperSU -->
-  <string name="supersu_title">SuperSU</string>
+  <string name="supersu_title">Суперкористувач</string>
   <!-- Google -->
-  <string name="google_title">Google</string>
+  <string name="google_title">Googlе</string>
   <!-- Customization -->
   <string name="header_category_custom">Customization</string>
   <string name="custom_title">Dirty Tweaks</string>
-  <string name="themes_settings_title">Themes</string>
+  <string name="themes_settings_title">Теми</string>
   <!-- DU Changelog -->
-  <string name="duchangelog">Changelog</string>
+  <string name="duchangelog">Список змін</string>
   <string name="du_summary">Check to see what has changed in DU</string>
-  <string name="du_app_name">DU Changelog</string>
+  <string name="du_app_name">Список змін DU</string>
   <!-- DU Updater -->
   <string name="duupdater">Updater</string>
   <string name="duupdater_summary">Stay up to date with the latest features and fixes</string>
@@ -76,30 +76,30 @@
   <string name="aboutdu">Info about DU</string>
   <string name="aboutdu_summary">Information about our devs, maintainers and rom features</string>
   <!-- Developer Tools -->
-  <string name="developer_tools_title">Developer tools</string>
+  <string name="developer_tools_title">Інструменти розробника</string>
   <string name="developer_tools_summary">Advanced debugging tools</string>
   <!-- Less notification sounds -->
-  <string name="sound_title">Sound</string>
+  <string name="sound_title">Сигнал</string>
   <string name="safe_headset_volume_title">Safe headset volume</string>
   <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is first plugged in</string>
   <string name="safe_headset_volume_warning_dialog_text">Listening at high volume for long periods may damage your hearing. Disable it with caution.</string>
-  <string name="notifications_category_title">Notifications</string>
-  <string name="sound_misc_category_title">System</string>
+  <string name="notifications_category_title">Сповіщення</string>
+  <string name="sound_misc_category_title">Система</string>
   <string name="less_notification_sounds_title">Less frequent notification sounds</string>
   <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
   <string name="less_notification_sounds_default">Default Behaviour</string>
   <string name="less_notification_sounds_3s">3 seconds</string>
-  <string name="less_notification_sounds_5s">5 seconds</string>
+  <string name="less_notification_sounds_5s">5 секунд</string>
   <string name="less_notification_sounds_10s">10 seconds</string>
   <string name="less_notification_sounds_15s">15 seconds</string>
   <string name="less_notification_sounds_30s">30 seconds</string>
-  <string name="less_notification_sounds_45s">45 seconds</string>
-  <string name="less_notification_sounds_1m">1 minute</string>
-  <string name="less_notification_sounds_2m">2 minutes</string>
-  <string name="less_notification_sounds_5m">5 minutes</string>
+  <string name="less_notification_sounds_45s">45 секунд</string>
+  <string name="less_notification_sounds_1m">1 хвилина</string>
+  <string name="less_notification_sounds_2m">2 хвилини</string>
+  <string name="less_notification_sounds_5m">5 хвилин</string>
   <!-- Volume Keys Media Control -->
-  <string name="volume_keys_control_media_stream">Media control</string>
-  <string name="volume_keys_control_media_stream_summary">Volume keys control media volume rather than notifications</string>
+  <string name="volume_keys_control_media_stream">Керування мультимедіа</string>
+  <string name="volume_keys_control_media_stream_summary">Кнопки регулювання гучності контролювати гучність мультимедіа, а не повідомлення</string>
   <!-- Camera sound -->
   <string name="camera_sounds_title">Camera shutter sound</string>
   <string name="camera_sounds_summary">Enable camera shutter sound</string>
@@ -112,13 +112,13 @@
   <string name="screenshot_sound_title">Screenshot sound</string>
   <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
   <!-- Notification light dialogs -->
-  <string name="edit_light_settings">Edit light settings</string>
+  <string name="edit_light_settings">Змінити налаштування індикатора</string>
   <string name="pulse_speed_title">Pulse length and speed</string>
   <string name="default_time">Normal</string>
   <string name="custom_time">Custom</string>
-  <string name="dialog_delete_title">Delete</string>
-  <string name="dialog_delete_message">Remove selected item?</string>
-  <string name="profiles_add">Add</string>
+  <string name="dialog_delete_title">Видалити</string>
+  <string name="dialog_delete_message">Видалити вибрані елементи?</string>
+  <string name="profiles_add">Додати</string>
   <string name="profile_choose_app">Choose app</string>
   <string name="profile_reset_title">Reset</string>
   <!-- Values for the notification light pulse spinners -->
@@ -136,17 +136,17 @@
   <!-- Battery light settings -->
   <string name="battery_light_title">Battery light</string>
   <string name="battery_low_pulse_title">Pulse if battery low</string>
-  <string name="battery_light_list_title">Colors</string>
-  <string name="battery_light_low_color_title">Battery low</string>
-  <string name="battery_light_medium_color_title">Charging</string>
+  <string name="battery_light_list_title">Кольори</string>
+  <string name="battery_light_low_color_title">Низький заряд батареї</string>
+  <string name="battery_light_medium_color_title">Заряджання</string>
   <string name="battery_light_full_color_title">Fully charged</string>
   <!-- Lights settings screen, notification light settings -->
   <string name="notification_light_title">Notification light</string>
-  <string name="notification_light_general_title">General</string>
-  <string name="notification_light_applist_title">Apps</string>
-  <string name="notification_light_phonelist_title">Phone</string>
-  <string name="notification_light_use_custom">Use custom values</string>
-  <string name="notification_light_default_value">Default</string>
+  <string name="notification_light_general_title">Загальні</string>
+  <string name="notification_light_applist_title">Додатки</string>
+  <string name="notification_light_phonelist_title">Телефон</string>
+  <string name="notification_light_use_custom">Використовувати налаштування користувача</string>
+  <string name="notification_light_default_value">За заумовчанням</string>
   <string name="notification_light_missed_call_title">Missed call</string>
   <string name="notification_light_voicemail_title">Voicemail</string>
   <string name="notification_light_screen_on">Lights with screen on</string>
@@ -161,7 +161,7 @@
   <string name="keyboard_rotation_toggle_title">Auto keyboard rotation</string>
   <string name="keyboard_rotation_toggle_summary">Force auto-rotate when keyboard is shown</string>
   <string name="keyboard_rotation_timeout_title">Auto-rotate timeout</string>
-  <string name="keyboard_rotation_timeout_summary">Disables auto-rotate sensor <xliff:g id="rotate_timeout">%1$s</xliff:g> seconds after keyboard is hidden</string>
+  <string name="keyboard_rotation_timeout_summary">Вимкнення датчика автоповороту через <xliff:g id="rotate_timeout">%1$s</xliff:g> секунд після приховування клавіатури</string>
   <string name="keyboard_rotation_dialog">This feature forces auto-rotate to turn on temporarily while the keyboard is shown.  It has no effect when auto-rotate is already enabled.</string>
   <string name="show_enter_key_title">Show enter key</string>
   <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
@@ -332,4 +332,6 @@
   <string name="five_second">5 s</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+  <!-- Volume dialog timeout -->
+  <string name="volume_dialog_timeout_title">Volume dialog timeout</string>
 </resources>

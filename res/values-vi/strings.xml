@@ -837,27 +837,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Các tính năng bảo vệ thiết bị sẽ không hoạt động mà không có mẫu của bạn."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"Các tính năng bảo vệ thiết bị sẽ không hoạt động mà không có mẫu của bạn.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"\"Các tính năng bảo vệ thiết bị sẽ không hoạt động mà không có mẫu của bạn.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Dấu vân tay đã lưu của bạn cũng sẽ bị xóa khỏi thiết bị này và bạn sẽ không thể mở khóa điện thoại, ủy quyền mua hay đăng nhập vào các ứng dụng bằng dấu vân tay\".\"\"\"\"\"\"\"\""</string>
+</xliff:g>Dấu vân tay đã lưu của bạn cũng sẽ bị xóa khỏi thiết bị này và bạn sẽ không thể mở khóa điện thoại, ủy quyền mua hay đăng nhập vào các ứng dụng bằng dấu vân tay\".\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Các tính năng bảo vệ thiết bị sẽ không hoạt động mà không có mã PIN của bạn."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"Các tính năng bảo vệ thiết bị sẽ không hoạt động mà không có mã PIN của bạn.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"\"Các tính năng bảo vệ thiết bị sẽ không hoạt động mà không có mã PIN của bạn.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Dấu vân tay đã lưu của bạn cũng sẽ bị xóa khỏi thiết bị này và bạn sẽ không thể mở khóa điện thoại, ủy quyền mua hoặc đăng nhập vào các ứng dụng bằng dấu vân tay\".\"\"\"\"\"\"\"\""</string>
+</xliff:g>Dấu vân tay đã lưu của bạn cũng sẽ bị xóa khỏi thiết bị này và bạn sẽ không thể mở khóa điện thoại, ủy quyền mua hoặc đăng nhập vào các ứng dụng bằng dấu vân tay\".\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Các tính năng bảo vệ thiết bị sẽ không hoạt động mà không có mật khẩu của bạn."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"Các tính năng bảo vệ thiết bị sẽ không hoạt động mà không có mật khẩu của bạn.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"\"Các tính năng bảo vệ thiết bị sẽ không hoạt động mà không có mật khẩu của bạn.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Dấu vân tay đã lưu của bạn cũng sẽ bị xóa khỏi thiết bị này và bạn sẽ không thể mở khóa điện thoại, ủy quyền mua hay đăng nhập vào các ứng dụng bằng dấu vân tay.\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>Dấu vân tay đã lưu của bạn cũng sẽ bị xóa khỏi thiết bị này và bạn sẽ không thể mở khóa điện thoại, ủy quyền mua hay đăng nhập vào các ứng dụng bằng dấu vân tay.\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Các tính năng bảo vệ thiết bị sẽ không hoạt động mà không có khóa màn hình của bạn."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"Các tính năng bảo vệ thiết bị sẽ không hoạt động mà không có khóa màn hình của bạn.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"\"Các tính năng bảo vệ thiết bị sẽ không hoạt động mà không có khóa màn hình của bạn.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Dấu vân tay đã lưu của bạn cũng sẽ bị xóa khỏi thiết bị này và bạn sẽ không thể mở khóa điện thoại, ủy quyền mua hoặc đăng nhập vào các ứng dụng bằng dấu vân tay\".\"\"\"\"\"\"\"\""</string>
+</xliff:g>Dấu vân tay đã lưu của bạn cũng sẽ bị xóa khỏi thiết bị này và bạn sẽ không thể mở khóa điện thoại, ủy quyền mua hoặc đăng nhập vào các ứng dụng bằng dấu vân tay\".\"\"\"\"\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Có, xóa</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->

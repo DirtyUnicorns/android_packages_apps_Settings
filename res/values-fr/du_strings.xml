@@ -18,7 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- DU Extra Info -->
   <string name="duextrainfo">Infos supplémentaires</string>
-  <string name="duextrainfo_summary">Affiche des informations supplémentaires pour CPU, Affichage, etc</string>
+  <string name="duextrainfo_summary">Affiche des informations supplémentaires sur le CPU, l\'affichage, etc</string>
   <string name="basicinfo">BASIQUE</string>
   <string name="manufacturer">Fabricant</string>
   <string name="hardwaretype">Type de matériel</string>
@@ -85,8 +85,8 @@
   <string name="safe_headset_volume_warning_dialog_text">L\'écoute de la musique à des niveaux très élevés pendant des périodes de temps prolongées peut endommager l\'ouïe. Désactiver cette sécurité avec prudence.</string>
   <string name="notifications_category_title">Notifications</string>
   <string name="sound_misc_category_title">Système</string>
-  <string name="less_notification_sounds_title">Limiter les notification sonores</string>
-  <string name="less_notification_sounds_summary">Diminuer le nombre de notification sonore pour chaque application à une fois par période définie</string>
+  <string name="less_notification_sounds_title">Limiter les notifications sonores</string>
+  <string name="less_notification_sounds_summary">Restreindre le nombre de notification sonore pour chaque application à une fois par période définie</string>
   <string name="less_notification_sounds_default">Comportement par défaut</string>
   <string name="less_notification_sounds_3s">3 secondes</string>
   <string name="less_notification_sounds_5s">5 secondes</string>
@@ -234,7 +234,7 @@
   <string name="wifi_hotspot_mode_title">Veille du point d\'accès Wi-Fi</string>
   <!-- Battery saver color -->
   <string name="battery_saver_title">Couleur d\'avertissement</string>
-  <string name="battery_saver_style_reset_message">Configuration d\'origine</string>
+  <string name="battery_saver_style_reset_message">Revenir à la configuration d\'origine ?</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Lier les volumes des notifications et de la sonnerie</string>
   <string name="notification_volume_option_title">Volume des notifications</string>
@@ -263,8 +263,8 @@
   <string name="dashboard_tileview_dividers_summary">Masquer les séparateurs du tableau de bord</string>
   <!-- Optional Dashboard Switches -->
   <string name="dashboard_switches_title">Interrupteurs</string>
-  <string name="dashboard_switches_off">Désactivé</string>
-  <string name="dashboard_switches_on">Activé</string>
+  <string name="dashboard_switches_off">Désactivés</string>
+  <string name="dashboard_switches_on">Activés</string>
   <string name="dashboard_switches_summary">Modifier la position des interrupteurs du tableau de bord</string>
   <string name="dashboard_switches_dialog_title">État des interrupteurs</string>
   <!-- Keyguard notifications options -->
@@ -285,10 +285,10 @@
   <string name="blacklist_notify">Afficher une notification</string>
   <string name="blacklist_private_numbers_title">Numéros masqués</string>
   <string name="blacklist_private_numbers_summary_disabled">Ne pas bloquer les appels provenant de numéros masqués</string>
-  <string name="blacklist_private_numbers_summary">Bloquer les <xliff:g id="type">%s</xliff:g> entrant des numéros masqués</string>
+  <string name="blacklist_private_numbers_summary">Bloquer les <xliff:g id="type">%s</xliff:g> entrants des numéros masqués</string>
   <string name="blacklist_unknown_numbers_title">Numéros inconnus</string>
   <string name="blacklist_unknown_numbers_summary_disabled">Ne pas bloquer les appels ou les messages provenant de numéros non présents dans le répertoire</string>
-  <string name="blacklist_unknown_numbers_summary">Bloquer les <xliff:g id="type">%s</xliff:g> entrant des numéros non présents dans le répertoire</string>
+  <string name="blacklist_unknown_numbers_summary">Bloquer les <xliff:g id="type">%s</xliff:g> entrants des numéros non présents dans le répertoire</string>
   <string name="blacklist_summary_type_calls_only">appels</string>
   <string name="blacklist_summary_type_messages_only">SMS</string>
   <string name="blacklist_summary_type_calls_and_messages">appels et SMS</string>
@@ -296,7 +296,7 @@
   <string name="blacklist_regex_summary">Utiliser \".\" comme joker et \"*\" pour la répétition. Exemple\u00A0: 123.* bloque les numéros de téléphone commençant par 123, et .*123.* bloque les numéros de téléphone contenant 123</string>
   <string name="blacklist_policy_block_calls">Bloquer les appels entrants</string>
   <string name="blacklist_policy_block_messages">Bloquer les SMS entrants</string>
-  <string name="blacklist_bad_number_add">Impossible d\'ajouter un numéro de téléphone incorrecte à la liste des numéros de téléphone bloqués</string>
+  <string name="blacklist_bad_number_add">Impossible d\'ajouter un numéro de téléphone incorrect à la liste des numéros de téléphone bloqués</string>
   <!-- Blacklist management -->
   <string name="remove_blacklist_number_title">Supprimer un numéro</string>
   <string name="remove_blacklist_entry">Supprimer ce numéro de téléphone de la liste des numéros de téléphone bloqués ?</string>
@@ -332,4 +332,6 @@
   <string name="five_second">5 s</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Sons au réglage du volume</string>
+  <!-- Volume dialog timeout -->
+  <string name="volume_dialog_timeout_title">Volume dialog timeout</string>
 </resources>

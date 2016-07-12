@@ -18,65 +18,65 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- DU Extra Info -->
   <string name="duextrainfo">Další informace</string>
-  <string name="duextrainfo_summary">Display extra info for cpu, display, etc</string>
-  <string name="basicinfo">BASIC INFO</string>
-  <string name="manufacturer">Manufacturer</string>
-  <string name="hardwaretype">Hardware type</string>
-  <string name="systempartition">System partition</string>
-  <string name="datapartition">Data partition</string>
+  <string name="duextrainfo_summary">Zobrazit další informace o procesoru, displeji, atd</string>
+  <string name="basicinfo">ZÁKLADNÍ INFORMACE</string>
+  <string name="manufacturer">Výrobce</string>
+  <string name="hardwaretype">Typ hardwaru</string>
+  <string name="systempartition">Systémový oddíl</string>
+  <string name="datapartition">Oddíl dat</string>
   <string name="ram">RAM</string>
   <string name="bootloader">Bootloader</string>
   <string name="bytes"> Bytes</string>
-  <string name="cpuinfo">CPU INFO</string>
-  <string name="chipset_processor">Chipset / Processor</string>
-  <string name="features">Features</string>
+  <string name="cpuinfo">INFORMACE O CPU</string>
+  <string name="chipset_processor">Chipset / procesor</string>
+  <string name="features">Funkce</string>
   <string name="bogomips">BogoMIPS</string>
   <string name="abi">ABI</string>
   <string name="abitwo">ABI2</string>
-  <string name="architecture">Architecture</string>
-  <string name="implementer">Implementer</string>
-  <string name="variant">Variant</string>
-  <string name="part">Part</string>
-  <string name="revision">Revision</string>
-  <string name="displayinfo">DISPLAY INFO</string>
-  <string name="diagonal">Diagonal</string>
-  <string name="height">Height</string>
-  <string name="width">Width</string>
-  <string name="density">Density</string>
-  <string name="dots_per_inch">DOTS PER INCH</string>
-  <string name="actualdpi_x">Actual DPI X</string>
-  <string name="actualdpi_y">Actual DPI Y</string>
-  <string name="refresh_rate">Refresh Rate</string>
-  <string name="pixels">Pixels</string>
-  <string name="inches">Inches</string>
+  <string name="architecture">Architektura</string>
+  <string name="implementer">Implementátor</string>
+  <string name="variant">Varianta</string>
+  <string name="part">Díl</string>
+  <string name="revision">Revize</string>
+  <string name="displayinfo">INFORMACE O DISPLEJI</string>
+  <string name="diagonal">Diagonální</string>
+  <string name="height">Výška</string>
+  <string name="width">Šířka</string>
+  <string name="density">Hustota</string>
+  <string name="dots_per_inch">BODY NA PALEC</string>
+  <string name="actualdpi_x">Aktuální DPI X</string>
+  <string name="actualdpi_y">Aktuální DPI Y</string>
+  <string name="refresh_rate">Aktualizovat frekvenci</string>
+  <string name="pixels">Pixely</string>
+  <string name="inches">Palce</string>
   <!-- DU version -->
-  <string name="mod_version">DU version</string>
-  <string name="mod_version_default">Unknown</string>
+  <string name="mod_version">DU verze</string>
+  <string name="mod_version_default">Neznámé</string>
   <!-- Share Dirty Unicorns -->
-  <string name="share_du_title">Share Dirty Unicorns</string>
-  <string name="share_du_summary">Let others know about Dirty Unicorns</string>
-  <string name="share_message">Check out what #DirtyUnicorns is all about @ http://goo.gl/emISQ1</string>
-  <string name="share_chooser_title">Share Dirty Unicorns</string>
+  <string name="share_du_title">Sdílet Dirty Unicorns</string>
+  <string name="share_du_summary">Informovat ostatní o Dirty Unicorns</string>
+  <string name="share_message">Podívejte se, co #DirtyUnicorns všechno je @ http://goo.gl/emISQ1</string>
+  <string name="share_chooser_title">Sdílet Dirty Unicorns</string>
   <!-- SuperSU -->
   <string name="supersu_title">SuperSU</string>
   <!-- Google -->
   <string name="google_title">Google</string>
   <!-- Customization -->
-  <string name="header_category_custom">Customization</string>
+  <string name="header_category_custom">Přizpůsobení</string>
   <string name="custom_title">Dirty Tweaks</string>
-  <string name="themes_settings_title">Themes</string>
+  <string name="themes_settings_title">Motivy</string>
   <!-- DU Changelog -->
-  <string name="duchangelog">Changelog</string>
-  <string name="du_summary">Check to see what has changed in DU</string>
-  <string name="du_app_name">DU Changelog</string>
+  <string name="duchangelog">Seznam změn</string>
+  <string name="du_summary">Zkontrolujte, co se změnilo v DU</string>
+  <string name="du_app_name">Seznam změn</string>
   <!-- DU Updater -->
-  <string name="duupdater">Updater</string>
-  <string name="duupdater_summary">Stay up to date with the latest features and fixes</string>
+  <string name="duupdater">Aktualizace</string>
+  <string name="duupdater_summary">Držte krok s nejnovějšími funkcemi a opravy</string>
   <!-- DU About -->
-  <string name="aboutdu">Info about DU</string>
-  <string name="aboutdu_summary">Information about our devs, maintainers and rom features</string>
+  <string name="aboutdu">Informace o DU</string>
+  <string name="aboutdu_summary">Informace o našich vývojářích, správcích a funkce rom</string>
   <!-- Developer Tools -->
-  <string name="developer_tools_title">Developer tools</string>
+  <string name="developer_tools_title">Nástroje pro vývojáře</string>
   <string name="developer_tools_summary">Advanced debugging tools</string>
   <!-- Less notification sounds -->
   <string name="sound_title">Sound</string>
@@ -135,25 +135,25 @@
   <string name="pulse_speed_very_slow">Very slow</string>
   <!-- Battery light settings -->
   <string name="battery_light_title">Battery light</string>
-  <string name="battery_low_pulse_title">Pulse if battery low</string>
-  <string name="battery_light_list_title">Colors</string>
-  <string name="battery_light_low_color_title">Battery low</string>
-  <string name="battery_light_medium_color_title">Charging</string>
-  <string name="battery_light_full_color_title">Fully charged</string>
+  <string name="battery_low_pulse_title">Blikat, když je baterie nízká</string>
+  <string name="battery_light_list_title">Barvy</string>
+  <string name="battery_light_low_color_title">Nízký stav baterie</string>
+  <string name="battery_light_medium_color_title">Nabíjí se</string>
+  <string name="battery_light_full_color_title">Plně nabito</string>
   <!-- Lights settings screen, notification light settings -->
-  <string name="notification_light_title">Notification light</string>
-  <string name="notification_light_general_title">General</string>
-  <string name="notification_light_applist_title">Apps</string>
-  <string name="notification_light_phonelist_title">Phone</string>
-  <string name="notification_light_use_custom">Use custom values</string>
-  <string name="notification_light_default_value">Default</string>
-  <string name="notification_light_missed_call_title">Missed call</string>
-  <string name="notification_light_voicemail_title">Voicemail</string>
-  <string name="notification_light_screen_on">Lights with screen on</string>
-  <string name="allow_lights_title">Lights in do not disturb mode</string>
+  <string name="notification_light_title">Led notifikace</string>
+  <string name="notification_light_general_title">Obecné</string>
+  <string name="notification_light_applist_title">Aplikace</string>
+  <string name="notification_light_phonelist_title">Telefon</string>
+  <string name="notification_light_use_custom">Nastavit vlastní hodnoty</string>
+  <string name="notification_light_default_value">Standardní</string>
+  <string name="notification_light_missed_call_title">Zmeškaný hovor</string>
+  <string name="notification_light_voicemail_title">Hlasová schránka</string>
+  <string name="notification_light_screen_on">Světla s obrazovkou zapnuta</string>
+  <string name="allow_lights_title">Světla v režim Nerušit</string>
   <!-- Keyboard and Input methods  -->
-  <string name="title_keyboard_input">Advanced options</string>
-  <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
+  <string name="title_keyboard_input">Rozšířené možnosti</string>
+  <string name="disable_fullscreen_keyboard_title">Vypnout klávesnici na celou obrazovku</string>
   <string name="disable_fullscreen_keyboard_summary">Landscape keyboard will never take up entire screen</string>
   <string name="volume_key_cursor_control_title">Volume key cursor control</string>
   <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
@@ -332,4 +332,6 @@
   <string name="five_second">5 s</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+  <!-- Volume dialog timeout -->
+  <string name="volume_dialog_timeout_title">Volume dialog timeout</string>
 </resources>

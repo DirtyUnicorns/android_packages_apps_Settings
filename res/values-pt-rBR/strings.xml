@@ -838,27 +838,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Os recursos de proteção do dispositivo não funcionarão sem seu padrão."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem seu padrão.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem seu padrão.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Os recursos de proteção do dispositivo não funcionarão sem seu PIN."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem seu PIN.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem seu PIN.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Os recursos de proteção do dispositivo não funcionarão sem sua senha."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem sua senha.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem sua senha.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Os recursos de proteção do dispositivo não funcionarão sem seu bloqueio de tela."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem seu bloqueio de tela.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"\"Os recursos de proteção do dispositivo não funcionarão sem seu bloqueio de tela.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>Suas impressões digitais também serão removidas deste dispositivo e não será possível desbloquear o smartphone, autorizar compras ou fazer login em apps com elas.\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Sim, remover</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
@@ -2314,7 +2314,7 @@
   <!-- Tethering controls, item title to go into the tethering settings when USB, Bluetooth and Wifi tethering are available [CHAR LIMIT=25]-->
   <string name="tether_settings_title_all">Tethering e acesso portátil</string>
   <!-- USB Tethering options -->
-  <string name="usb_title">USB</string>
+  <string name="usb_title">Usb</string>
   <string name="usb_tethering_button_text">Vínculo USB</string>
   <!-- USB available subtext - shown when USB is connected but not currently being tethered -->
   <string name="usb_tethering_available_subtext">USB conectado, marque para vincular</string>
@@ -2609,7 +2609,7 @@
   <!-- Applications settings screen, setting option summary for the user to go to the screen to manage installed applications  -->
   <string name="manageapplications_settings_summary">Gerenciar e remover apps instalados</string>
   <!-- Applications settings title, on main settings screen. If clicked, the user is taken to a settings screen full of application settings-->
-  <string name="applications_settings">Apps</string>
+  <string name="applications_settings">Aplicativos</string>
   <!-- Applications settings summary, on main settings screen. The summary for the "Applications" item on the main settings screen. Describes what settings are accessible from the "Applications" screen. -->
   <string name="applications_settings_summary">Gerenciar apps, configurar atalhos de inicialização rápida</string>
   <!-- Applications settings screen heading. The header for the Application settings screen. -->
@@ -2643,11 +2643,11 @@
   <!-- Manage applications, individual application info screen, heading for settings related to the app's permissions. for example, it may list all the permissions the app has. -->
   <string name="permissions_label">Permissões</string>
   <!-- Manage applications, Header name used for cache information -->
-  <string name="cache_header_label">Cache</string>
+  <string name="cache_header_label">Esconderijo</string>
   <!-- Manage applications, text label for button -->
   <string name="clear_cache_btn_text">Limpar cache</string>
   <!-- Manage applications, label that appears next to the cache size -->
-  <string name="cache_size_label">Cache</string>
+  <string name="cache_size_label">Esconderijo</string>
   <!-- Manage applications, Header name used for other controls -->
   <string name="controls_label">Controles</string>
   <!-- Manage applications, text label for button to kill / force stop an application -->
@@ -2757,7 +2757,7 @@
   <!-- Manage applications, individual application screen, confirmation dialog message. Displays when user selects to "Clear data". It warns the user of the consequences of clearing the data for an app. -->
   <string name="clear_data_dlg_text">Todos os dados deste app serão excluídos permanentemente. Isso inclui todos os arquivos, configurações, contas, bancos de dados e outros.</string>
   <!-- Manage applications, individual application screen, confirmation dialog button. Displays when user selects to "Clear data". Goes through with the clearing of the data. -->
-  <string name="dlg_ok">OK</string>
+  <string name="dlg_ok">Está bem</string>
   <!-- Manage applications, individual application screen, confirmation dialog button. Displays when user selects to "Clear data". -->
   <string name="dlg_cancel">Cancelar</string>
   <!-- Manage applications, individual application dialog box title. Shown when the user somehow got into a state where it wants to manage some app that isn't found. -->
@@ -2872,13 +2872,13 @@
   <!-- Running services, description for a service in the started state -->
   <string name="service_started_by_app">Iniciado pelo app.</string>
   <!-- Running services, description for a service in the started state -->
-  <string name="service_client_name"><xliff:g id="client_name">%1$s</xliff:g></string>
+  <string name="service_client_name">Texto para tradução<xliff:g id="client_name">%1$s</xliff:g></string>
   <!-- [CHAR LIMIT=10] Running services, summary of background processes -->
   <string name="service_background_processes"><xliff:g id="MEMORY">%1$s</xliff:g> livre</string>
   <!-- [CHAR LIMIT=10] Running services, summary of foreground processes -->
   <string name="service_foreground_processes"><xliff:g id="MEMORY">%1$s</xliff:g> usada</string>
   <!-- [CHAR LIMIT=10] Running services, label for chart showing memory use. -->
-  <string name="memory">RAM</string>
+  <string name="memory">Ram</string>
   <!-- Text to label a process entry with the process name. -->
   <string name="service_process_name"><xliff:g id="process">%1$s</xliff:g></string>
   <!-- TODO: Remove it once the same entry in SettingsLib is translated. -->
@@ -2904,7 +2904,7 @@
   <string name="running_processes_header_system_prefix">Sistema</string>
   <!-- [CHAR LIMIT=20] Running processes/services header: prefix for line showing RAM
          used by apps. -->
-  <string name="running_processes_header_apps_prefix">Apps</string>
+  <string name="running_processes_header_apps_prefix">Aplicativos</string>
   <!-- [CHAR LIMIT=20] Running processes/services header: prefix for line showing RAM
          that is free. -->
   <string name="running_processes_header_free_prefix">Livre</string>
@@ -2990,7 +2990,7 @@
   <!-- Toast that settings for an application is failed to open. -->
   <string name="failed_to_open_app_settings_toast">Falha ao abrir as configurações de <xliff:g id="SPELL_APPLICATION_NAME">%1$s</xliff:g></string>
   <!-- On Language & input settings screen, heading. Inside the "Language & input settings" screen, this is the header for settings that relate to mouse and trackpad devices. [CHAR LIMIT=40] -->
-  <string name="pointer_settings_category">Mouse/trackpad</string>
+  <string name="pointer_settings_category">Mouse / trackpad</string>
   <!-- On Language & input settings screen, setting summary.  Setting for mouse pointer speed. [CHAR LIMIT=35] -->
   <string name="pointer_speed">Velocidade do ponteiro</string>
   <!-- On Language & input settings screen, heading. Inside the "Language & input settings" screen, this is the header for settings that relate to game controller devices. [CHAR LIMIT=40] -->
@@ -3027,7 +3027,7 @@
   <!-- User dictionary settings. Text on the dialog button mask advanced options. [CHAR LIMIT=15] -->
   <string name="user_dict_settings_add_dialog_less_options">Menos opções</string>
   <!-- User dictionary settings. Text on the dialog button to confirm adding a word. [CHAR LIMIT=15] -->
-  <string name="user_dict_settings_add_dialog_confirm">OK</string>
+  <string name="user_dict_settings_add_dialog_confirm">Está bem</string>
   <!-- User dictionary settings. Label to put before the word field (that's the word that will actually be added to the user dictionary when OK is pressed). [CHAR LIMIT=20] -->
   <string name="user_dict_settings_add_word_option_name">Palavra:</string>
   <!-- User dictionary settings. Label to put before the shortcut field (once a shortcut is registered, the user can type the shortcut and get the word it points to in the suggestions). [CHAR LIMIT=20] -->
@@ -3580,7 +3580,7 @@
   <!-- [CHAR LIMIT=25] Label for WIFI usage time -->
   <string name="usage_type_wifi_running">Wi-Fi em execução</string>
   <!-- Label for Phone usage time -->
-  <string name="usage_type_phone" product="tablet">Tablet</string>
+  <string name="usage_type_phone" product="tablet">Comprimido</string>
   <!-- Label for Phone usage time -->
   <string name="usage_type_phone" product="default">Telefone</string>
   <!-- Label for mobile network data sent [CHAR LIMIT=32] -->
@@ -3715,9 +3715,9 @@
   <!-- [CHAR LIMIT=NONE] Label OS "process" app -->
   <string name="process_stats_os_label">Sistema operacional Android</string>
   <!-- [CHAR LIMIT=NONE] Name of OS "process" for all native processes -->
-  <string name="process_stats_os_native">Native</string>
+  <string name="process_stats_os_native">Nativo</string>
   <!-- [CHAR LIMIT=NONE] Name of OS "process" for all kernel memory -->
-  <string name="process_stats_os_kernel">Kernel</string>
+  <string name="process_stats_os_kernel">Núcleo</string>
   <!-- [CHAR LIMIT=NONE] Name of OS "process" for all zram memory -->
   <string name="process_stats_os_zram">Z-Ram</string>
   <!-- [CHAR LIMIT=NONE] Name of OS "process" for base memory needed for caches -->
@@ -3741,7 +3741,7 @@
   <!-- [CHAR LIMIT=NONE] Subtitle for process stats memory state details for list of memory use -->
   <string name="mem_use_subtitle">Uso da memória</string>
   <!-- [CHAR LIMIT=NONE] Type of memory use associated with the kernel -->
-  <string name="mem_use_kernel_type">Kernel</string>
+  <string name="mem_use_kernel_type">Núcleo</string>
   <!-- [CHAR LIMIT=NONE] Type of memory use associated with native processes -->
   <string name="mem_use_native_type">Nativo</string>
   <!-- [CHAR LIMIT=NONE] Type of memory use associated with kernel caches -->
@@ -3882,7 +3882,7 @@
   <string name="tts_status_not_supported"><xliff:g id="LOCALE">%1$s</xliff:g> não é suportado</string>
   <!-- On main TTS Settings screen, current TTS engine status for the current default language,
          tts engine is queried for status [CHAR LIMIT=150] -->
-  <string name="tts_status_checking">Checking\u2026</string>
+  <string name="tts_status_checking">Verificando \ u2026</string>
   <!-- On main TTS Settings screen, text for divider under which all TTS engines are listed -->
   <string name="tts_engines_section">Mecanismos</string>
   <!-- On main TTS Settings screen, text preceded by the TTS engine name, clicking this button will launch the engine settings -->
@@ -3957,7 +3957,7 @@
   <!-- Brightness gadget value used to describe minimum brightness state. -->
   <string name="gadget_brightness_state_off">desativado</string>
   <!-- Title of preference to enter the VPN settings activity -->
-  <string name="vpn_settings_title">VPN</string>
+  <string name="vpn_settings_title">Vpn</string>
   <!-- Title of preference group for credential storage settings [CHAR LIMIT=30] -->
   <string name="credentials_title">Armazenamento de credenciais</string>
   <!-- Title of preference to install certificates from SD card [CHAR LIMIT=30] -->
@@ -4286,7 +4286,7 @@
   <!-- What to show in messaging that refers to this provider, e.g. AccountSyncSettings -->
   <string name="provider_label">Enviar inscrições</string>
   <!-- Formatter in AccountSyncSettings for each application we wish to synchronize, e.g. "Sync Calendar" -->
-  <string name="sync_item_title"><xliff:g id="authority" example="Calendar">%s</xliff:g></string>
+  <string name="sync_item_title"><xliff:g id="authority" example="Calendário">%s</xliff:g></string>
   <!-- Title of dialog shown when you can't manually sync an item because it's disabled -->
   <string name="cant_sync_dialog_title">Não é possível sincronizar manualmente</string>
   <!-- Messaage shown in dialog when you can't manually sync -->
@@ -4421,7 +4421,7 @@
   <!-- UI debug setting: simulate secondary display devices using overlays [CHAR LIMIT=25] -->
   <string name="overlay_display_devices_title">Simular displays secund.</string>
   <!-- Preference category for application debugging development settings. [CHAR LIMIT=25] -->
-  <string name="debug_applications_category">Apps</string>
+  <string name="debug_applications_category">Aplicativos</string>
   <!-- UI debug setting: immediately destroy activities? [CHAR LIMIT=25] -->
   <string name="immediately_destroy_activities">Não manter atividades</string>
   <!-- UI debug setting: immediately destroy activities summary [CHAR LIMIT=50] -->
@@ -4671,7 +4671,7 @@
   <!-- Field label to show the version number for a VPN app. [CHAR LIMIT=40] -->
   <string name="vpn_version">Versão <xliff:g id="VERSION">%s</xliff:g></string>
   <!-- Preference title for VPN settings. [CHAR LIMIT=40] -->
-  <string name="vpn_title">VPN</string>
+  <string name="vpn_title">Vpn</string>
   <!-- Preference title to create a new VPN profile. [CHAR LIMIT=40] -->
   <string name="vpn_create">Adicionar perfil de VPN</string>
   <!-- Menu item to edit a VPN profile. [CHAR LIMIT=40] -->
@@ -4900,7 +4900,7 @@
   <!-- Button the user can click to indicate he understood and dismiss the screen -->
   <string name="nfc_how_it_works_got_it">Entendi</string>
   <!-- NFC More... title.  [CHAR LIMIT=40] -->
-  <string name="nfc_more_title">More\u2026</string>
+  <string name="nfc_more_title">Mais \ u2026</string>
   <!-- Label for the dialog that is shown when the user is asked to set a
          preferred payment application -->
   <string name="nfc_payment_set_default_label">Definir como preferência?</string>
@@ -5013,7 +5013,7 @@
   <!-- Restrictions summary for changing bluetooth configuration [CHAR LIMIT=100] -->
   <string name="restriction_bluetooth_config_summary">Permitir modificação dos pareamentos e configurações de Bluetooth</string>
   <!-- Restrictions title for allowing NFC transfers [CHAR LIMIT=35] -->
-  <string name="restriction_nfc_enable_title">NFC</string>
+  <string name="restriction_nfc_enable_title">Nfc</string>
   <!-- Restrictions summary for allowing NFC transfers (tablet) [CHAR LIMIT=100] -->
   <string name="restriction_nfc_enable_summary_config">Permitir troca de dados quando este <xliff:g id="DEVICE_NAME">%1$s</xliff:g> tocar em outro dispositivo NFC</string>
   <!-- Restrictions summary for allowing NFC transfers (tablet) [CHAR LIMIT=100] -->
@@ -5056,7 +5056,7 @@
   <!-- Message for selecting sim for data in settings.  [CHAR LIMIT=40] -->
   <string name="select_sim_for_data">Selecionar um SIM de dados</string>
   <!-- Message for switching data SIM; switching takes a while -->
-  <string name="data_switch_started">Switching data SIM, this may take up to a minute\u2026</string>
+  <string name="data_switch_started">Alternando SIM de dados, isso pode levar até um minuto \ u2026</string>
   <!-- Message for selecting sim for call in settings.  [CHAR LIMIT=40] -->
   <string name="select_sim_for_calls">Ligar com</string>
   <!-- Title for selecting a SIM card.  [CHAR LIMIT=40] -->
@@ -5175,7 +5175,7 @@
   <!-- Text for button to confirm writing tag -->
   <string name="write_tag">Gravar</string>
   <!-- Text to inform the user to tap a tag to complete the setup process -->
-  <string name="status_awaiting_tap">Tap a tag to write\u2026</string>
+  <string name="status_awaiting_tap">Toque em uma tag para escrever \ u2026</string>
   <!-- Text to inform the user that the network key entered was incorrect -->
   <string name="status_invalid_password">Senha inválida, tente novamente.</string>
   <!-- Text displayed when tag successfully writen -->
@@ -5290,7 +5290,7 @@
   <!-- Sound & notification > Do Not Disturb access > Text to display when the list is empty. [CHAR LIMIT=NONE] -->
   <string name="zen_access_empty_text">Nenhum app instalado solicitou o acesso \"Não perturbe\"</string>
   <!-- [CHAR LIMIT=NONE] Text when loading app list in notification settings -->
-  <string name="loading_notification_apps">Loading apps\u2026</string>
+  <string name="loading_notification_apps">Carregando aplicativos \ u2026</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option title -->
   <string name="app_notification_block_title">Bloquear tudo</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option description-->

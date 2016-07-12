@@ -332,4 +332,6 @@
   <string name="five_second">5 s</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+  <!-- Volume dialog timeout -->
+  <string name="volume_dialog_timeout_title">Volume dialog timeout</string>
 </resources>

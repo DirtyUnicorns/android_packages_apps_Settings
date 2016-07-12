@@ -27,31 +27,31 @@
   <string name="ram">RAM</string>
   <string name="bootloader">Önyükleyici (Bootloader)</string>
   <string name="bytes"> Bytes</string>
-  <string name="cpuinfo">CPU INFO</string>
-  <string name="chipset_processor">Chipset / Processor</string>
+  <string name="cpuinfo">İŞLEMCİ BİLGİSİ</string>
+  <string name="chipset_processor">Yonga seti / İşlemci</string>
   <string name="features">Özellikler</string>
   <string name="bogomips">BogoMIPS</string>
   <string name="abi">ABI</string>
   <string name="abitwo">ABI2</string>
   <string name="architecture">Mimari</string>
-  <string name="implementer">Implementer</string>
+  <string name="implementer">Uygulayıcısı</string>
   <string name="variant">Çeşit</string>
   <string name="part">Bölüm</string>
   <string name="revision">Revizyon</string>
   <string name="displayinfo">EKRAN BİLGİSİ</string>
   <string name="diagonal">Köşegen</string>
   <string name="height">Yükseklik</string>
-  <string name="width">Width</string>
-  <string name="density">Density</string>
-  <string name="dots_per_inch">DOTS PER INCH</string>
-  <string name="actualdpi_x">Actual DPI X</string>
+  <string name="width">Genişlik</string>
+  <string name="density">Yoğunluk</string>
+  <string name="dots_per_inch">DPI</string>
+  <string name="actualdpi_x">Gerçek DPI X</string>
   <string name="actualdpi_y">Gerçek DPI Y</string>
   <string name="refresh_rate">Yenileme Hızı</string>
   <string name="pixels">Pikseller</string>
-  <string name="inches">Inches</string>
+  <string name="inches">İnç</string>
   <!-- DU version -->
-  <string name="mod_version">DU version</string>
-  <string name="mod_version_default">Unknown</string>
+  <string name="mod_version">DU sürümü</string>
+  <string name="mod_version_default">Bilinmiyor</string>
   <!-- Share Dirty Unicorns -->
   <string name="share_du_title">Dirty Unicorns\'u paylaş</string>
   <string name="share_du_summary">Başkalarının Dirty Unicorns hakkında bilgilendirin</string>
@@ -62,51 +62,51 @@
   <!-- Google -->
   <string name="google_title">Google</string>
   <!-- Customization -->
-  <string name="header_category_custom">Customization</string>
-  <string name="custom_title">Dirty Tweaks</string>
-  <string name="themes_settings_title">Themes</string>
+  <string name="header_category_custom">Kişiselleştirme</string>
+  <string name="custom_title">Dirty Tweakleri</string>
+  <string name="themes_settings_title">Temalar</string>
   <!-- DU Changelog -->
   <string name="duchangelog">Değişiklik kayıtları</string>
   <string name="du_summary">DU içinde nelerin değiştiğini görmek için kontrol edin</string>
   <string name="du_app_name">DU Değişiklik kayıtları</string>
   <!-- DU Updater -->
   <string name="duupdater">Güncelleyici</string>
-  <string name="duupdater_summary">Stay up to date with the latest features and fixes</string>
+  <string name="duupdater_summary">En yeni özellikler ve düzeltmeler ile güncel kalın</string>
   <!-- DU About -->
-  <string name="aboutdu">Info about DU</string>
-  <string name="aboutdu_summary">Information about our devs, maintainers and rom features</string>
+  <string name="aboutdu">DU hakkında bilgi</string>
+  <string name="aboutdu_summary">Devs, geliştiriciler, katkıda bulunanlar ve rom özellikleri hakkında bilgi</string>
   <!-- Developer Tools -->
-  <string name="developer_tools_title">Developer tools</string>
-  <string name="developer_tools_summary">Advanced debugging tools</string>
+  <string name="developer_tools_title">Geliştirici araçları</string>
+  <string name="developer_tools_summary">Gelişmiş hata ayıklama araçları</string>
   <!-- Less notification sounds -->
   <string name="sound_title">Ses</string>
   <string name="safe_headset_volume_title">Güvenli kulaklık ses seviyesi</string>
   <string name="safe_headset_volume_summary">Kulaklık ilk bağlandığında yüksek ses düzeylerini engelle</string>
   <string name="safe_headset_volume_warning_dialog_text">Uzun süre yüksek seste müzik dinlemek kulaklarınıza zarar verebilir. Dikkatlice devre dışı bırakın.</string>
   <string name="notifications_category_title">Bildirimler</string>
-  <string name="sound_misc_category_title">System</string>
-  <string name="less_notification_sounds_title">Less frequent notification sounds</string>
-  <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
-  <string name="less_notification_sounds_default">Default Behaviour</string>
-  <string name="less_notification_sounds_3s">3 seconds</string>
-  <string name="less_notification_sounds_5s">5 seconds</string>
+  <string name="sound_misc_category_title">Sistem</string>
+  <string name="less_notification_sounds_title">Daha az sıklıkla bildirim sesleri</string>
+  <string name="less_notification_sounds_summary">Her bir uygulamanın bildirim seslerini sınırlayarak sadece ayarlanan süre başına bir kez oynatır</string>
+  <string name="less_notification_sounds_default">Varsayılan davranış</string>
+  <string name="less_notification_sounds_3s">3 Saniye</string>
+  <string name="less_notification_sounds_5s">5 saniye</string>
   <string name="less_notification_sounds_10s">10 Saniye</string>
   <string name="less_notification_sounds_15s">15 saniye</string>
   <string name="less_notification_sounds_30s">30 saniye</string>
   <string name="less_notification_sounds_45s">45 Saniye</string>
   <string name="less_notification_sounds_1m">1 dakika</string>
   <string name="less_notification_sounds_2m">2 dakika</string>
-  <string name="less_notification_sounds_5m">5 minutes</string>
+  <string name="less_notification_sounds_5m">5 dakika</string>
   <!-- Volume Keys Media Control -->
-  <string name="volume_keys_control_media_stream">Media control</string>
-  <string name="volume_keys_control_media_stream_summary">Volume keys control media volume rather than notifications</string>
+  <string name="volume_keys_control_media_stream">Medya denetimi</string>
+  <string name="volume_keys_control_media_stream_summary">Ses seviyesi tuşları, bildirim sesleri yerine medyanın ses düzeyini belirler</string>
   <!-- Camera sound -->
-  <string name="camera_sounds_title">Camera shutter sound</string>
-  <string name="camera_sounds_summary">Enable camera shutter sound</string>
-  <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
+  <string name="camera_sounds_title">Kamera deklanşör sesi</string>
+  <string name="camera_sounds_summary">Kamera deklanşör sesini etkinleştir</string>
+  <string name="camera_sound_warning_dialog_text">Kamera deklanşör sesini devre dışı bırakmak bazı yerlerde yasalara aykırıdır. Lütfen ülkenizdeki ilgili yasaları kontrol edin</string>
   <!-- Increasing ring tone volume -->
-  <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
-  <string name="increasing_ring_min_volume_title">Start volume</string>
+  <string name="increasing_ring_volume_option_title">Artan zil sesi</string>
+  <string name="increasing_ring_min_volume_title">Başlangıç sesi</string>
   <string name="increasing_ring_ramp_up_time_title">Yükselme zamanı</string>
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Ekran görüntüsü alındı sesi</string>
@@ -117,14 +117,14 @@
   <string name="default_time">Normal</string>
   <string name="custom_time">Özel</string>
   <string name="dialog_delete_title">Sil</string>
-  <string name="dialog_delete_message">Remove selected item?</string>
-  <string name="profiles_add">Add</string>
-  <string name="profile_choose_app">Choose app</string>
-  <string name="profile_reset_title">Reset</string>
+  <string name="dialog_delete_message">Seçili öğeyi kaldır?</string>
+  <string name="profiles_add">Ekle</string>
+  <string name="profile_choose_app">Uygulama seç</string>
+  <string name="profile_reset_title">Sıfırla</string>
   <!-- Values for the notification light pulse spinners -->
-  <string name="pulse_length_always_on">Always on</string>
-  <string name="pulse_length_very_short">Very short</string>
-  <string name="pulse_length_short">Short</string>
+  <string name="pulse_length_always_on">Her zaman açık</string>
+  <string name="pulse_length_very_short">Çok kısa</string>
+  <string name="pulse_length_short">Kısa</string>
   <string name="pulse_length_normal">Normal</string>
   <string name="pulse_length_long">Uzun</string>
   <string name="pulse_length_very_long">Çok uzun</string>
@@ -136,18 +136,18 @@
   <!-- Battery light settings -->
   <string name="battery_light_title">Pil ışığı</string>
   <string name="battery_low_pulse_title">Pil düşük seviyede ise yanıp sön</string>
-  <string name="battery_light_list_title">Colors</string>
-  <string name="battery_light_low_color_title">Battery low</string>
-  <string name="battery_light_medium_color_title">Charging</string>
-  <string name="battery_light_full_color_title">Fully charged</string>
+  <string name="battery_light_list_title">Renkler</string>
+  <string name="battery_light_low_color_title">Düşük pil</string>
+  <string name="battery_light_medium_color_title">Şarj oluyor</string>
+  <string name="battery_light_full_color_title">Tamamen şarj oldu</string>
   <!-- Lights settings screen, notification light settings -->
-  <string name="notification_light_title">Notification light</string>
-  <string name="notification_light_general_title">General</string>
-  <string name="notification_light_applist_title">Apps</string>
-  <string name="notification_light_phonelist_title">Phone</string>
-  <string name="notification_light_use_custom">Use custom values</string>
-  <string name="notification_light_default_value">Default</string>
-  <string name="notification_light_missed_call_title">Missed call</string>
+  <string name="notification_light_title">Bildirim ışığı</string>
+  <string name="notification_light_general_title">Genel</string>
+  <string name="notification_light_applist_title">Uygulamalar</string>
+  <string name="notification_light_phonelist_title">Telefon</string>
+  <string name="notification_light_use_custom">Özel değerler kullan</string>
+  <string name="notification_light_default_value">Varsayılan</string>
+  <string name="notification_light_missed_call_title">Cevapsız çağrı</string>
   <string name="notification_light_voicemail_title">Sesli mail</string>
   <string name="notification_light_screen_on">Ekran açıkken yanıp sön</string>
   <string name="allow_lights_title">Rahatsız etmeyin modunda ışıklar</string>
@@ -158,18 +158,18 @@
   <string name="volume_key_cursor_control_title">Ses seviyesi tuşu ile imleç kontrolü</string>
   <string name="volume_key_cursor_control_on">Ses arttırma/azaltma imleci sol/sağa kaydırır</string>
   <string name="volume_key_cursor_control_on_reverse">Ses arttırma/azaltma imleci sağa/sola kaydırır</string>
-  <string name="keyboard_rotation_toggle_title">Auto keyboard rotation</string>
-  <string name="keyboard_rotation_toggle_summary">Force auto-rotate when keyboard is shown</string>
-  <string name="keyboard_rotation_timeout_title">Auto-rotate timeout</string>
-  <string name="keyboard_rotation_timeout_summary">Disables auto-rotate sensor <xliff:g id="rotate_timeout">%1$s</xliff:g> seconds after keyboard is hidden</string>
-  <string name="keyboard_rotation_dialog">This feature forces auto-rotate to turn on temporarily while the keyboard is shown.  It has no effect when auto-rotate is already enabled.</string>
-  <string name="show_enter_key_title">Show enter key</string>
-  <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
+  <string name="keyboard_rotation_toggle_title">Otomatik klavye döndürme</string>
+  <string name="keyboard_rotation_toggle_summary">Klavye gösterildiğinde otomatik döndürmeye zorla</string>
+  <string name="keyboard_rotation_timeout_title">Otomatik döndürme zaman aşımı</string>
+  <string name="keyboard_rotation_timeout_summary">Klavye gizlendikten <xliff:g id="rotate_timeout">%1$s</xliff:g> saniye sonra otomatik döndürme sensörünü devre dışı bırakır</string>
+  <string name="keyboard_rotation_dialog">Bu özellik geçici olarak klavye gösteriliyor ise etkinleştirmek için Otomatik Döndürmeyi zorlar.  Otomatik Döndür zaten etkin olduğunda etkisizdir.</string>
+  <string name="show_enter_key_title">Giriş tuşunu göster</string>
+  <string name="show_enter_key_summary">Klavyeyi emoji tuşu yerine giriş tuşunu göstermek için zorla</string>
   <string name="ime_switcher_notify">Selector notification</string>
   <string name="ime_switcher_notify_summary">Display input method selector notification</string>
-  <string name="attention">Attention</string>
+  <string name="attention">Dikkat</string>
   <!-- Android debugging over WiFi -->
-  <string name="adb_over_network">ADB over network</string>
+  <string name="adb_over_network">Ağ üzerinden ADB</string>
   <string name="adb_over_network_summary">Ağ arayüzleri (Wi-Fi, USB ağları) üzerinde TCP/IP ayıklamayı etkinleştir. Bu ayar, yeniden başlatıldığında sıfırlanır</string>
   <!-- Warning for Adb over Network -->
   <string name="adb_over_network_warning">UYARI: ADB üzerinden ağ aktifken telefonunuz GSM veri ağı dahil tüm bağlı ağlar üzerinden kötüye kullanımlara açık olacaktır!\n\nBu özelliği sadece güvenilir ağlara bağlıyken kullanın.\n\nBu özellik açılsın mı?</string>
@@ -190,14 +190,14 @@
   <string name="display_rotation_0_title">0 derece</string>
   <string name="display_rotation_90_title">90 derece</string>
   <string name="display_rotation_180_title">180 derece</string>
-  <string name="display_rotation_270_title">270 degrees</string>
+  <string name="display_rotation_270_title">270 derece</string>
   <!-- Lock screen rotation -->
-  <string name="display_lockscreen_rotation_title">Lock screen</string>
+  <string name="display_lockscreen_rotation_title">Kilit Ekranı</string>
   <!-- Scramble PIN Layout on Lockscreen -->
-  <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-  <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+  <string name="unlock_scramble_pin_layout_title">Düzeni karıştır</string>
+  <string name="unlock_scramble_pin_layout_summary">Cihaz kilidini açarken PIN düzenini karıştırır</string>
   <!-- Wake on Plug -->
-  <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
+  <string name="wake_when_plugged_or_unplugged_title">Şarj takıldığında uyandır</string>
   <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
   <!-- Headset Plugged In notification -->
   <string name="headset_plugged_in_title">Headset Plugged In notification</string>
@@ -237,23 +237,23 @@
   <string name="battery_saver_style_reset_message">Reset battery saver warning color?</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Link ring and notification volumes</string>
-  <string name="notification_volume_option_title">Notification volume</string>
-  <string name="ring_notification_volume_option_title">Ring and notification volume</string>
+  <string name="notification_volume_option_title">Bildirim ses düzeyi</string>
+  <string name="ring_notification_volume_option_title">Çağrı ve bildirim sesi</string>
   <!-- Double tap to launch target -->
-  <string name="dt2l_target_category">Double tap to launch options</string>
+  <string name="dt2l_target_category">Başlatma seçenekleri için çift dokunun</string>
   <string name="dt2l_target_vib_title">Adjust target\'s vibration</string>
   <string name="dt2l_target_vib_summary">Adjust the vibration when double tapping the power button</string>
-  <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
-  <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
+  <string name="camera_double_tap_power_gesture_title">Kamera için güç tuşuna iki defa bas</string>
+  <string name="camera_double_tap_power_gesture_desc">Ekran kilidini açmadan hızlı bir şekilde kamerayı aç</string>
   <!-- Battery stats reset -->
-  <string name="battery_stats_reset">Reset stats</string>
-  <string name="battery_stats_message">Battery history stats are going to be reset</string>
-  <string name="ok_string">Ok</string>
+  <string name="battery_stats_reset">İstatistikleri sıfırla</string>
+  <string name="battery_stats_message">Pil geçmişi istatistikleri sıfırlanacak</string>
+  <string name="ok_string">Tamam</string>
   <!-- Dashboard settings -->
-  <string name="dashboard_category">Dashboard settings</string>
+  <string name="dashboard_category">Ayarlar menüsü seçenekleri</string>
   <string name="dashboard_columns_title">Dashboard Columns</string>
-  <string name="dashboard_columns_summary">Change the number of columns displayed in the dashboard</string>
-  <string name="dashboard_columns_dialog_title">Select dashboard columns</string>
+  <string name="dashboard_columns_summary">Kontrol panelinin görüntülenen sütunlarının sayısını değiştirme</string>
+  <string name="dashboard_columns_dialog_title">Kontrol paneli sütunlarını seç</string>
   <string name="dashboard_columns_one">Bir</string>
   <string name="dashboard_columns_two">İki</string>
   <string name="dashboard_columns_three">Üç</string>
@@ -266,60 +266,60 @@
   <string name="dashboard_switches_off">Switches Off</string>
   <string name="dashboard_switches_on">Switches On</string>
   <string name="dashboard_switches_summary">Change the position of the dashboard switches</string>
-  <string name="dashboard_switches_dialog_title">Select switch state</string>
+  <string name="dashboard_switches_dialog_title">Anahtar konumunu seç</string>
   <!-- Keyguard notifications options -->
-  <string name="app_notification_show_on_keyguard_title">Show on lockscreen</string>
-  <string name="app_notification_show_on_keyguard_summary">Show notifications from this app on the lockscreen</string>
+  <string name="app_notification_show_on_keyguard_title">Ekran kilidinde göster</string>
+  <string name="app_notification_show_on_keyguard_summary">Bu uygulamanın bildirimlerini ekran kilidi varken de göster</string>
   <string name="app_notification_no_ongoing_on_keyguard_title">Disable ongoing on lockscreen</string>
-  <string name="app_notification_no_ongoing_on_keyguard_summary">Never show ongoing notifications from this app on the lockscreen</string>
+  <string name="app_notification_no_ongoing_on_keyguard_summary">Kilit ekranında bu uygulamanın devam eden bildirimlerini asla gösterme</string>
   <!-- Blacklist preferences -->
-  <string name="app_security_title">Privacy</string>
-  <string name="blacklist_title">Blocked caller list</string>
-  <string name="blacklist_edit_dialog_title">Edit blocked phone number</string>
-  <string name="blacklist_prefs">Settings</string>
-  <string name="blacklist_button_delete">Delete</string>
-  <string name="blacklist_empty_text">You don\'t have any blocked numbers. Add an entry by touching the Add (+) button.</string>
+  <string name="app_security_title">Gizlilik</string>
+  <string name="blacklist_title">Engellenen arayan listesi</string>
+  <string name="blacklist_edit_dialog_title">Engellenen telefon numarasını düzenleme</string>
+  <string name="blacklist_prefs">Ayarlar</string>
+  <string name="blacklist_button_delete">Sil</string>
+  <string name="blacklist_empty_text">Henüz bir numarayı kara listeye eklemediniz. Yeni bir giriş eklemek için Ekle (+) tuşuna dokun.</string>
   <string name="blacklist_disabled_empty_text">To prevent phone numbers from calling or messaging you, enable the blocked caller list.</string>
-  <string name="blacklist_summary_disabled">Disabled</string>
-  <string name="blacklist_summary">You will not receive incoming calls or messages from phone numbers on the blocked caller list</string>
-  <string name="blacklist_notify">Show notification</string>
-  <string name="blacklist_private_numbers_title">Private numbers</string>
-  <string name="blacklist_private_numbers_summary_disabled">Don\'t block calls from private numbers</string>
-  <string name="blacklist_private_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from private numbers</string>
-  <string name="blacklist_unknown_numbers_title">Unknown numbers</string>
-  <string name="blacklist_unknown_numbers_summary_disabled">Don\'t block calls or messages from numbers not in the contact list</string>
-  <string name="blacklist_unknown_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from numbers not in the contact list</string>
-  <string name="blacklist_summary_type_calls_only">calls</string>
-  <string name="blacklist_summary_type_messages_only">messages</string>
-  <string name="blacklist_summary_type_calls_and_messages">calls and messages</string>
-  <string name="blacklist_regex_title">Use wildcards</string>
-  <string name="blacklist_regex_summary">Use . as a wildcard and * for repetition. E.g. 123.* blocks numbers starting with 123 and .*123.* blocks numbers containing 123</string>
-  <string name="blacklist_policy_block_calls">Block incoming calls</string>
-  <string name="blacklist_policy_block_messages">Block incoming messages</string>
-  <string name="blacklist_bad_number_add">Unable to add invalid phone number to blocked caller list</string>
+  <string name="blacklist_summary_disabled">Devre dışı</string>
+  <string name="blacklist_summary">Engellenen arayan listesindeki telefon numaralarından gelen arama veya mesajı almazsınız</string>
+  <string name="blacklist_notify">Bildirim göster</string>
+  <string name="blacklist_private_numbers_title">Özel numaralar</string>
+  <string name="blacklist_private_numbers_summary_disabled">Özel numaralaradan gelen çağrıları engelleme</string>
+  <string name="blacklist_private_numbers_summary">Özel numaralardan gelen <xliff:g id="type">%s</xliff:g> engelle</string>
+  <string name="blacklist_unknown_numbers_title">Bilinmeyen numaralar</string>
+  <string name="blacklist_unknown_numbers_summary_disabled">Kişi listesinde olmayan numaralardan gelen çağrıları engelleme</string>
+  <string name="blacklist_unknown_numbers_summary">Kişi listesinde olmayan numalardan gelen <xliff:g id="type">%s</xliff:g> engelle</string>
+  <string name="blacklist_summary_type_calls_only">aramalar</string>
+  <string name="blacklist_summary_type_messages_only">mesajlar</string>
+  <string name="blacklist_summary_type_calls_and_messages">çağrı ve mesajlar</string>
+  <string name="blacklist_regex_title">Joker karakter kullan</string>
+  <string name="blacklist_regex_summary">Herhangi bir karakter için . ve tekrarlama için * kullanın. Örneğin 123.* 123 ile başlayan tüm numaraları engellerken .*123.* 123 içeren tüm numaraları engeller</string>
+  <string name="blacklist_policy_block_calls">Gelen aramaları engelle</string>
+  <string name="blacklist_policy_block_messages">Gelen mesajları engelle</string>
+  <string name="blacklist_bad_number_add">Geçersiz numara kara listeye eklenemiyor</string>
   <!-- Blacklist management -->
-  <string name="remove_blacklist_number_title">Remove number</string>
-  <string name="remove_blacklist_entry">Do you want to remove this blocked phone number?</string>
-  <string name="select_contact">Select contact</string>
+  <string name="remove_blacklist_number_title">Numarayı kaldır</string>
+  <string name="remove_blacklist_entry">Bu engellenen telefon numarasını kaldırmak istiyor musunuz?</string>
+  <string name="select_contact">Kişi seç</string>
   <!-- Doze pulse options -->
-  <string name="summary_doze_enabled">Enabled</string>
-  <string name="summary_doze_disabled">Disabled</string>
+  <string name="summary_doze_enabled">Etkinleştirildi</string>
+  <string name="summary_doze_disabled">Devre dışı</string>
   <string name="doze_overwrite_value_title">Overwrite defaults</string>
   <string name="doze_overwrite_value_summary">Allow override of default values with user config</string>
-  <string name="doze_pulse_title">User configurable settings</string>
+  <string name="doze_pulse_title">Kullanıcı yapılandırılabilir ayarlar</string>
   <string name="doze_pulse_duration_in_title">Fade in</string>
   <string name="doze_pulse_duration_visible_title">Visible duration</string>
   <string name="doze_pulse_duration_out_title">Fade out</string>
-  <string name="doze_trigger_pickup_title">Pick up sensor trigger</string>
+  <string name="doze_trigger_pickup_title">Ele alma hareketi tetikleyici</string>
   <string name="doze_trigger_pickup_summary_on">Pulse will be triggered by pick up sensor</string>
   <string name="doze_trigger_pickup_summary_off">Pick up sensor will not be utilized as a trigger</string>
-  <string name="doze_trigger_notification_title">Notification trigger</string>
+  <string name="doze_trigger_notification_title">Bildirim tetikleyici</string>
   <string name="doze_trigger_notification_summary_on">Pulse will be triggered by notifications</string>
   <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
-  <string name="doze_brightness_level_title">Brightness level</string>
+  <string name="doze_brightness_level_title">Parlaklık düzeyi</string>
   <string name="onehundred_ms">100 ms</string>
   <string name="twofifty_ms">250 ms</string>
-  <string name="fivehundred_ms_default">500 ms (default)</string>
+  <string name="fivehundred_ms_default">500 ms (varsayılan)</string>
   <string name="sevenfifty_ms">750 ms</string>
   <string name="one_second">1 s</string>
   <string name="onehalf_second">1.5 s</string>
@@ -331,5 +331,7 @@
   <string name="fourhalf_second">4.5 s</string>
   <string name="five_second">5 s</string>
   <!-- Volume settings - Volume adjustment sound -->
-  <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+  <string name="volume_adjust_sounds_title">Ses arttırma tonu</string>
+  <!-- Volume dialog timeout -->
+  <string name="volume_dialog_timeout_title">Volume dialog timeout</string>
 </resources>

@@ -139,7 +139,7 @@
   <string name="battery_light_list_title">Цвета</string>
   <string name="battery_light_low_color_title">Батарея разряжена</string>
   <string name="battery_light_medium_color_title">Заряжается</string>
-  <string name="battery_light_full_color_title">Полностью заряжен</string>
+  <string name="battery_light_full_color_title">Полностью заряжена</string>
   <!-- Lights settings screen, notification light settings -->
   <string name="notification_light_title">Индикатор событий</string>
   <string name="notification_light_general_title">Общие</string>
@@ -223,7 +223,7 @@
   <string name="volume_steps_ring_title">Звонок</string>
   <string name="volume_steps_system_title">Система</string>
   <string name="volume_steps_voice_call_title">Голосовой вызов</string>
-  <string name="volume_steps_reset">Сброс</string>
+  <string name="volume_steps_reset">По умолчанию</string>
   <string name="volume_steps_60">60</string>
   <string name="volume_steps_45">45</string>
   <string name="volume_steps_30">30</string>
@@ -231,7 +231,7 @@
   <string name="volume_steps_7">7</string>
   <string name="volume_steps_5">5</string>
   <!-- Hotspot idle -->
-  <string name="wifi_hotspot_mode_title">Держать точку доступа Wi-Fi включённой</string>
+  <string name="wifi_hotspot_mode_title">Сохранять точку доступа Wi-Fi</string>
   <!-- Battery saver color -->
   <string name="battery_saver_title">Цвет предупреждения</string>
   <string name="battery_saver_style_reset_message">Сбросить цвет предупреждения режима энергосбережения?</string>
@@ -332,4 +332,6 @@
   <string name="five_second">5 сек.</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Звук при регулировке громкости</string>
+  <!-- Volume dialog timeout -->
+  <string name="volume_dialog_timeout_title">Volume dialog timeout</string>
 </resources>
