@@ -165,8 +165,8 @@
   <string name="keyboard_rotation_dialog">Bu özellik geçici olarak klavye gösteriliyor ise etkinleştirmek için Otomatik Döndürmeyi zorlar.  Otomatik Döndür zaten etkin olduğunda etkisizdir.</string>
   <string name="show_enter_key_title">Giriş tuşunu göster</string>
   <string name="show_enter_key_summary">Klavyeyi emoji tuşu yerine giriş tuşunu göstermek için zorla</string>
-  <string name="ime_switcher_notify">Selector notification</string>
-  <string name="ime_switcher_notify_summary">Display input method selector notification</string>
+  <string name="ime_switcher_notify">Seçici bildirimi</string>
+  <string name="ime_switcher_notify_summary">Giriş methodu seçici bildirimini göster</string>
   <string name="attention">Dikkat</string>
   <!-- Android debugging over WiFi -->
   <string name="adb_over_network">Ağ üzerinden ADB</string>

@@ -842,27 +842,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"لن تعمل ميزات حماية الجهاز بدون النقش."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"\"\"لن تعمل ميزات حماية الجهاز بدون النقش.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"لن تعمل ميزات حماية الجهاز بدون النقش.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>ستتم إزالة بصمات الإصبع المحفوظة من هذا الجهاز أيضًا ولن تتمكن من إلغاء تأمين هاتفك أو السماح بعمليات الشراء أو تسجيل الدخول إلى التطبيقات باستخدامها.\"\"\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>ستتم إزالة بصمات الإصبع المحفوظة من هذا الجهاز أيضًا ولن تتمكن من إلغاء تأمين هاتفك أو السماح بعمليات الشراء أو تسجيل الدخول إلى التطبيقات باستخدامها.\"\"\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"لن تعمل ميزات حماية الجهاز بدون رقم التعريف الشخصي."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"\"\"لن تعمل ميزات حماية الجهاز بدون رقم التعريف الشخصي.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"لن تعمل ميزات حماية الجهاز بدون رقم التعريف الشخصي.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>ستتم إزالة بصمات الإصبع المحفوظة من هذا الجهاز أيضًا ولن تتمكن من إلغاء تأمين هاتفك أو السماح بعمليات الشراء أو تسجيل الدخول إلى التطبيقات باستخدامها.\"\"\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>ستتم إزالة بصمات الإصبع المحفوظة من هذا الجهاز أيضًا ولن تتمكن من إلغاء تأمين هاتفك أو السماح بعمليات الشراء أو تسجيل الدخول إلى التطبيقات باستخدامها.\"\"\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"لن تعمل ميزات حماية الجهاز بدون كلمة المرور."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"\"\"لن تعمل ميزات حماية الجهاز بدون كلمة المرور.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"لن تعمل ميزات حماية الجهاز بدون كلمة المرور.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>ستتم إزالة بصمات الإصبع المحفوظة من هذا الجهاز أيضًا ولن تتمكن من إلغاء تأمين هاتفك أو السماح بعمليات الشراء أو تسجيل الدخول إلى التطبيقات باستخدامها.\"\"\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>ستتم إزالة بصمات الإصبع المحفوظة من هذا الجهاز أيضًا ولن تتمكن من إلغاء تأمين هاتفك أو السماح بعمليات الشراء أو تسجيل الدخول إلى التطبيقات باستخدامها.\"\"\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"لن تعمل ميزات حماية الجهاز بدون قفل الشاشة."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"\"\"لن تعمل ميزات حماية الجهاز بدون قفل الشاشة.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"لن تعمل ميزات حماية الجهاز بدون قفل الشاشة.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>ستتم إزالة بصمات الإصبع المحفوظة من هذا الجهاز أيضًا ولن تتمكن من إلغاء تأمين هاتفك أو السماح بعمليات الشراء أو تسجيل الدخول إلى التطبيقات باستخدامها.\"\"\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>ستتم إزالة بصمات الإصبع المحفوظة من هذا الجهاز أيضًا ولن تتمكن من إلغاء تأمين هاتفك أو السماح بعمليات الشراء أو تسجيل الدخول إلى التطبيقات باستخدامها.\"\"\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">نعم، إزالة</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->

@@ -839,9 +839,9 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Bez wzoru nie będą działać funkcje chroniące urządzenie."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"\"Bez wzoru nie będą działać funkcje chroniące urządzenie.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"\"\"Bez wzoru nie będą działać funkcje chroniące urządzenie.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Twoje zapisane odciski palców także zostaną usunięte z tego urządzenia, dlatego stracisz możliwość używania ich do odblokowywania telefonu, autoryzowania zakupów czy logowania się w aplikacjach.\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>Twoje zapisane odciski palców także zostaną usunięte z tego urządzenia, dlatego stracisz możliwość używania ich do odblokowywania telefonu, autoryzowania zakupów czy logowania się w aplikacjach.\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Bez kodu PIN nie będą działać funkcje chroniące urządzenie."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
