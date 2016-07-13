@@ -175,11 +175,11 @@
   <string name="adb_over_network_warning">UYARI: ADB üzerinden ağ aktifken telefonunuz GSM veri ağı dahil tüm bağlı ağlar üzerinden kötüye kullanımlara açık olacaktır!\n\nBu özelliği sadece güvenilir ağlara bağlıyken kullanın.\n\nBu özellik açılsın mı?</string>
   <!-- Media ducking -->
   <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
-  <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
+  <string name="interruptions_ignore_while_media_summary">Bildirim geldiğinde medya sesini düşürme</string>
   <!-- Doze notification color invert -->
   <string name="doze_notification_color_invert_title">Rengi ters çevirme</string>
-  <string name="doze_notification_color_invert_summary_off">Ambient display notifications will not be inverted. Use for dark themes.</string>
-  <string name="doze_notification_color_invert_summary_on">Ambient display notifications will show as inverted. Use for light/stock theme.</string>
+  <string name="doze_notification_color_invert_summary_off">Ortam ekranı bildirimleri ters olmayacak. Karanlık temalar için kullanın.</string>
+  <string name="doze_notification_color_invert_summary_on">Ortam ekranı bildirimlerini ters olarak gösterecektir. Açık renk/stok tema için kullanın.</string>
   <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
   <string name="bluetooth_accept_all_files">Tüm dosya türlerini kabul et</string>
   <!-- Display : Rotation -->
@@ -198,16 +198,16 @@
   <string name="unlock_scramble_pin_layout_summary">Cihaz kilidini açarken PIN düzenini karıştırır</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Şarj takıldığında uyandır</string>
-  <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Bir güç kaynağına bağlanırken ya da bağlantısını keserken ekranı aç</string>
   <!-- Headset Plugged In notification -->
-  <string name="headset_plugged_in_title">Headset Plugged In notification</string>
-  <string name="headset_plugged_in_summary">Enable notification for when the headset is plugged in</string>
+  <string name="headset_plugged_in_title">Kulaklık takıldı bildirimi</string>
+  <string name="headset_plugged_in_summary">Kulaklık takıldı bildirimini aktifleştir</string>
   <!-- Wi-Fi settings screen, advanced, title for setting the wifi region code. -->
-  <string name="wifi_setting_countrycode_title">Wi-Fi region code</string>
+  <string name="wifi_setting_countrycode_title">Wi-Fi bölge kodu</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi region code [CHAR LIMIT=50]-->
-  <string name="wifi_setting_countrycode_summary">Specify the region code for Wi-Fi</string>
+  <string name="wifi_setting_countrycode_summary">Wi-Fi için bölge kodunu belirtin</string>
   <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
-  <string name="wifi_setting_countrycode_error">There was a problem setting the region code.</string>
+  <string name="wifi_setting_countrycode_error">Bölge kodunu ayarlarken bir sorun oluştu.</string>
   <string name="wifi_setting_countrycode_default">Varsayılan</string>
   <!-- Device Hostname -->
   <string name="device_hostname">Cihaz ağ adı</string>
@@ -325,7 +325,7 @@
   <string name="onehalf_second">1.5 s</string>
   <string name="two_second">2 s</string>
   <string name="twohalf_second">2.5 s</string>
-  <string name="three_second_default">3 s (default)</string>
+  <string name="three_second_default">3 s (varsayılan)</string>
   <string name="threehalf_second">3.5 s</string>
   <string name="four_second">4 s</string>
   <string name="fourhalf_second">4.5 s</string>
@@ -333,5 +333,5 @@
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Ses arttırma tonu</string>
   <!-- Volume dialog timeout -->
-  <string name="volume_dialog_timeout_title">Volume dialog timeout</string>
+  <string name="volume_dialog_timeout_title">Ses düzeyi paneli zaman aşımı</string>
 </resources>

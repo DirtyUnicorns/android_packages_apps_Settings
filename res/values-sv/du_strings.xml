@@ -289,12 +289,12 @@
   <string name="blacklist_unknown_numbers_title">Okända nummer</string>
   <string name="blacklist_unknown_numbers_summary_disabled">Blockera inte samtal eller meddelanden från nummer som inte finns i kontaktlistan</string>
   <string name="blacklist_unknown_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from numbers not in the contact list</string>
-  <string name="blacklist_summary_type_calls_only">calls</string>
+  <string name="blacklist_summary_type_calls_only">samtal</string>
   <string name="blacklist_summary_type_messages_only">messages</string>
   <string name="blacklist_summary_type_calls_and_messages">calls and messages</string>
   <string name="blacklist_regex_title">Use wildcards</string>
   <string name="blacklist_regex_summary">Use . as a wildcard and * for repetition. E.g. 123.* blocks numbers starting with 123 and .*123.* blocks numbers containing 123</string>
-  <string name="blacklist_policy_block_calls">Block incoming calls</string>
+  <string name="blacklist_policy_block_calls">Blockera inkommande samtal</string>
   <string name="blacklist_policy_block_messages">Block incoming messages</string>
   <string name="blacklist_bad_number_add">Unable to add invalid phone number to blocked caller list</string>
   <!-- Blacklist management -->

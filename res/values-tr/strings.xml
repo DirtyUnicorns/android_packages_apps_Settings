@@ -838,27 +838,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Cihaz koruma özellikleri deseniniz olmadan çalışmayacak."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri deseniniz olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri deseniniz olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Cihaz koruma özellikleri PIN'iniz olmadan çalışmayacak."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri PIN'iniz olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri PIN'iniz olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Cihaz koruma özellikleri şifreniz olmadan çalışmayacak."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri şifreniz olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri şifreniz olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Cihaz koruma özellikleri ekran kilidi olmadan çalışmayacak."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri ekran kilidi olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"Cihaz koruma özellikleri ekran kilidi olmadan çalışmayacak.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>Kaydedilen parmak izleriniz ayrıca bu cihazdan kaldırılacak ve parmak izlerinizi kullanarak telefonunuzun kilidini açamayacak, satın alma işlemlerini yetkilendiremeyecek veya uygulamalarda oturum açamayacaksınız.\"\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Evet, kaldır</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
@@ -1833,7 +1833,7 @@
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="kernel_version">Çekirdek sürümü</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
-  <string name="build_date">Build date</string>
+  <string name="build_date">Oluşturulma Tarihi</string>
   <string name="build_date_default">2012-01-01-0000</string>
   <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
   <string name="selinux_status">SELinux durumu</string>
@@ -1914,7 +1914,7 @@
   <!-- SD card & phone storage settings summary. Displayed when the total memory usage is being calculated. Will be replaced with a number like "12.3 GB" when finished calucating. [CHAR LIMIT=30] -->
   <string name="memory_calculating_size">Hesaplanıyor...</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of Android system. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
-  <string name="memory_android_system_usage">Android System</string>
+  <string name="memory_android_system_usage">Android Sistemi</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of applications installed. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
   <string name="memory_apps_usage">Uygulamalar, uygulama verileri</string>
   <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of media on the device. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
@@ -2070,9 +2070,9 @@
   <!-- Body of dialog confirming that user wants to forget an internal storage device [CHAR LIMIT=NONE]-->
   <string name="storage_internal_forget_confirm">Bu <xliff:g id="NAME">^1</xliff:g> biriminde depolanan tüm uygulamalar, fotoğraflar ve veriler kalıcı olarak silinecek.</string>
   <!-- Item title describing storage used by Android system [CHAR LIMIT=48] -->
-  <string name="storage_detail_android_system">Android System</string>
+  <string name="storage_detail_android_system">Android Sistemi</string>
   <!-- Toast message shown when storage item of Android system is clicked [CHAR LIMIT=NONE]-->
-  <string name="storage_detail_android_system_version">Android System <xliff:g id="version">%s</xliff:g></string>
+  <string name="storage_detail_android_system_version">Android Sistemi <xliff:g id="version">%s</xliff:g></string>
   <!-- Item title describing storage used by apps [CHAR LIMIT=48]-->
   <string name="storage_detail_apps">Uygulamalar</string>
   <!-- Item title describing storage used by images [CHAR LIMIT=48]-->
@@ -2296,7 +2296,7 @@
   <!-- Master clear progress screen title [CHAR LIMIT=30] -->
   <string name="master_clear_progress_title">Siliniyor</string>
   <!-- Master clear progress screen text [CHAR LIMIT=75] -->
-  <string name="master_clear_progress_text">Please wait\u2026</string>
+  <string name="master_clear_progress_text">Lütfen bekleyin\2026</string>
   <!-- Main settings screen, Call settings title for item to go into the call settings -->
   <string name="call_settings_title">Çağrı ayarları</string>
   <!-- Main settings screen, Call settings summary for item to go into call settings -->
@@ -2304,7 +2304,7 @@
   <!-- TODO: Remove them once the same entries in SettingsLib is translated. -->
   <!-- Tethering controls, item title to go into the tethering settings -->
   <!-- Tethering controls, item title to go into the tethering settings when only USB tethering is available [CHAR LIMIT=25]-->
-  <string name="tether_settings_title_usb">USB tethering</string>
+  <string name="tether_settings_title_usb">USB internet paylaşımı</string>
   <!-- Tethering controls, item title to go into the tethering settings when only Wifi tethering is available [CHAR LIMIT=25]-->
   <string name="tether_settings_title_wifi">Taşınabilir hotspot</string>
   <!-- Tethering controls, item title to go into the tethering settings when only Bluetooth tethering is available [CHAR LIMIT=25]-->
@@ -5175,7 +5175,7 @@
   <!-- Text for button to confirm writing tag -->
   <string name="write_tag">Yaz</string>
   <!-- Text to inform the user to tap a tag to complete the setup process -->
-  <string name="status_awaiting_tap">Tap a tag to write\u2026</string>
+  <string name="status_awaiting_tap">Yazmak için bir etikete hafifçe dokunun\2026</string>
   <!-- Text to inform the user that the network key entered was incorrect -->
   <string name="status_invalid_password">Geçersiz şifre. Tekrar deneyin.</string>
   <!-- Text displayed when tag successfully writen -->
@@ -5290,7 +5290,7 @@
   <!-- Sound & notification > Do Not Disturb access > Text to display when the list is empty. [CHAR LIMIT=NONE] -->
   <string name="zen_access_empty_text">Yüklü hiçbir uygulama Rahatsız Etmeyin erişimi isteğinde bulunmadı</string>
   <!-- [CHAR LIMIT=NONE] Text when loading app list in notification settings -->
-  <string name="loading_notification_apps">Loading apps\u2026</string>
+  <string name="loading_notification_apps">Uygulamalar yükleniyor\u2026</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option title -->
   <string name="app_notification_block_title">Tümünü engelle</string>
   <!-- [CHAR LIMIT=NONE] App notification settings: Block option description-->

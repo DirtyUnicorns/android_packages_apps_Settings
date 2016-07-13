@@ -838,27 +838,27 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Laitteen suojausominaisuudet eivät toimi ilman kuviotasi."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"Laitteen suojausominaisuudet eivät toimi ilman kuviotasi.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"\"Laitteen suojausominaisuudet eivät toimi ilman kuviotasi.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Myös tallennetut sormenjälkesi poistetaan tältä laitteelta, etkä voi enää käyttää niitä puhelimen lukituksen avaamiseen, ostosten vahvistamiseen tai sovelluksiin kirjautumiseen.”\"\"\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>Myös tallennetut sormenjälkesi poistetaan tältä laitteelta, etkä voi enää käyttää niitä puhelimen lukituksen avaamiseen, ostosten vahvistamiseen tai sovelluksiin kirjautumiseen.”\"\"\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Laitteen suojausominaisuudet eivät toimi ilman PIN-koodiasi."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"Laitteen suojausominaisuudet eivät toimi ilman PIN-koodiasi.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"\"Laitteen suojausominaisuudet eivät toimi ilman PIN-koodiasi.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Myös tallennetut sormenjälkesi poistetaan tältä laitteelta, etkä voi enää käyttää niitä puhelimen lukituksen avaamiseen, ostosten vahvistamiseen tai sovelluksiin kirjautumiseen.”\"\"\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>Myös tallennetut sormenjälkesi poistetaan tältä laitteelta, etkä voi enää käyttää niitä puhelimen lukituksen avaamiseen, ostosten vahvistamiseen tai sovelluksiin kirjautumiseen.”\"\"\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Laitteen suojausominaisuudet eivät toimi ilman salasanaasi."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"Laitteen suojausominaisuudet eivät toimi ilman salasanaasi.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"\"Laitteen suojausominaisuudet eivät toimi ilman salasanaasi.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Myös tallennetut sormenjälkesi poistetaan tältä laitteelta, etkä voi enää käyttää niitä puhelimen lukituksen avaamiseen, ostosten vahvistamiseen tai sovelluksiin kirjautumiseen.”\"\"\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>Myös tallennetut sormenjälkesi poistetaan tältä laitteelta, etkä voi enää käyttää niitä puhelimen lukituksen avaamiseen, ostosten vahvistamiseen tai sovelluksiin kirjautumiseen.”\"\"\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Laitteen suojausominaisuudet eivät toimi ilman näytön lukitusta."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"Laitteen suojausominaisuudet eivät toimi ilman näytön lukitusta.<xliff:g id="EMPTY_LINE">
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"\"\"\"\"\"\"\"\"\"\"\"\"Laitteen suojausominaisuudet eivät toimi ilman näytön lukitusta.<xliff:g id="EMPTY_LINE">
 
-</xliff:g>Myös tallennetut sormenjälkesi poistetaan tältä laitteelta, etkä voi enää käyttää niitä puhelimen lukituksen avaamiseen, ostosten vahvistamiseen tai sovelluksiin kirjautumiseen.”\"\"\"\"\"\"\"\"\"\"\""</string>
+</xliff:g>Myös tallennetut sormenjälkesi poistetaan tältä laitteelta, etkä voi enää käyttää niitä puhelimen lukituksen avaamiseen, ostosten vahvistamiseen tai sovelluksiin kirjautumiseen.”\"\"\"\"\"\"\"\"\"\"\"\""</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Kyllä, poista</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
