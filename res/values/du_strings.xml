@@ -266,6 +266,11 @@
 
     <!-- Hotspot idle -->
     <string name="wifi_hotspot_mode_title">Keep WiFi Hotspot on</string>
+    <string name="wifi_hotspot_mode_always">Always</string>
+    <string name="wifi_hotspot_mode_five_mins">Turn off when idle for 5 min</string>
+    <string name="wifi_hotspot_mode_ten_mins">Turn off when idle for 10 min</string>
+    <string name="wifi_hotspot_mode_thirty_mins">Turn off when idle for 30 min</string>
+    <string name="wifi_hotspot_mode_one_hour">Turn off when idle for 1 hour</string>
 
     <!-- Battery saver color -->
     <string name="battery_saver_title">Warning color</string>
