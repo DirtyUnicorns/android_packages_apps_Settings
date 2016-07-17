@@ -80,11 +80,11 @@
   <string name="developer_tools_summary">Advanced debugging tools</string>
   <!-- Less notification sounds -->
   <string name="sound_title">Sound</string>
-  <string name="safe_headset_volume_title">Safe headset volume</string>
+  <string name="safe_headset_volume_title">安全なヘッドセット音量</string>
   <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is first plugged in</string>
   <string name="safe_headset_volume_warning_dialog_text">Listening at high volume for long periods may damage your hearing. Disable it with caution.</string>
   <string name="notifications_category_title">Notifications</string>
-  <string name="sound_misc_category_title">System</string>
+  <string name="sound_misc_category_title">システム</string>
   <string name="less_notification_sounds_title">Less frequent notification sounds</string>
   <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
   <string name="less_notification_sounds_default">Default Behaviour</string>
@@ -119,7 +119,7 @@
   <string name="dialog_delete_title">Delete</string>
   <string name="dialog_delete_message">Remove selected item?</string>
   <string name="profiles_add">Add</string>
-  <string name="profile_choose_app">Choose app</string>
+  <string name="profile_choose_app">アプリを選択</string>
   <string name="profile_reset_title">Reset</string>
   <!-- Values for the notification light pulse spinners -->
   <string name="pulse_length_always_on">Always on</string>
@@ -203,17 +203,17 @@
   <string name="headset_plugged_in_title">Headset Plugged In notification</string>
   <string name="headset_plugged_in_summary">Enable notification for when the headset is plugged in</string>
   <!-- Wi-Fi settings screen, advanced, title for setting the wifi region code. -->
-  <string name="wifi_setting_countrycode_title">Wi-Fi region code</string>
+  <string name="wifi_setting_countrycode_title">Wi-Fi地域コード</string>
   <!-- Wi-Fi settings screen, setting summary for setting the wifi region code [CHAR LIMIT=50]-->
-  <string name="wifi_setting_countrycode_summary">Specify the region code for Wi-Fi</string>
+  <string name="wifi_setting_countrycode_summary">Wi-Fiの地域コードを指定する</string>
   <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">There was a problem setting the region code.</string>
   <string name="wifi_setting_countrycode_default">Default</string>
   <!-- Device Hostname -->
-  <string name="device_hostname">Device hostname</string>
+  <string name="device_hostname">端末のホスト名</string>
   <!-- USB debugging notification -->
-  <string name="adb_notify">USB debugging notify</string>
-  <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
+  <string name="adb_notify">USBデバッグの通知</string>
+  <string name="adb_notify_summary">USBデバッグ接続時に通知を表示する</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Volume steps</string>
   <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
@@ -232,6 +232,11 @@
   <string name="volume_steps_5">5</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">Keep WiFi Hotspot on</string>
+  <string name="wifi_hotspot_mode_always">Always</string>
+  <string name="wifi_hotspot_mode_five_mins">Turn off when idle for 5 min</string>
+  <string name="wifi_hotspot_mode_ten_mins">Turn off when idle for 10 min</string>
+  <string name="wifi_hotspot_mode_thirty_mins">Turn off when idle for 30 min</string>
+  <string name="wifi_hotspot_mode_one_hour">Turn off when idle for 1 hour</string>
   <!-- Battery saver color -->
   <string name="battery_saver_title">Warning color</string>
   <string name="battery_saver_style_reset_message">Reset battery saver warning color?</string>
@@ -254,13 +259,13 @@
   <string name="dashboard_columns_title">Dashboard Columns</string>
   <string name="dashboard_columns_summary">Change the number of columns displayed in the dashboard</string>
   <string name="dashboard_columns_dialog_title">Select dashboard columns</string>
-  <string name="dashboard_columns_one">One</string>
-  <string name="dashboard_columns_two">Two</string>
-  <string name="dashboard_columns_three">Three</string>
-  <string name="dashboard_tileview_double_lines_title">Dashboard title view</string>
-  <string name="dashboard_tileview_double_lines_summary">Show dashboard tile titles in 2 lines</string>
+  <string name="dashboard_columns_one">1</string>
+  <string name="dashboard_columns_two">2</string>
+  <string name="dashboard_columns_three">3</string>
+  <string name="dashboard_tileview_double_lines_title">ダッシュボードのタイトル表示</string>
+  <string name="dashboard_tileview_double_lines_summary">ダッシュボードのタイトルを2行で表示する</string>
   <string name="dashboard_tileview_dividers_title">Dashboard dividers</string>
-  <string name="dashboard_tileview_dividers_summary">Hide dashboard tile dividers</string>
+  <string name="dashboard_tileview_dividers_summary">ダッシュボードの項目間の区切り線を非表示にする</string>
   <!-- Optional Dashboard Switches -->
   <string name="dashboard_switches_title">Dashboard Switches</string>
   <string name="dashboard_switches_off">Switches Off</string>
@@ -282,7 +287,7 @@
   <string name="blacklist_disabled_empty_text">To prevent phone numbers from calling or messaging you, enable the blocked caller list.</string>
   <string name="blacklist_summary_disabled">Disabled</string>
   <string name="blacklist_summary">You will not receive incoming calls or messages from phone numbers on the blocked caller list</string>
-  <string name="blacklist_notify">Show notification</string>
+  <string name="blacklist_notify">通知を表示</string>
   <string name="blacklist_private_numbers_title">Private numbers</string>
   <string name="blacklist_private_numbers_summary_disabled">Don\'t block calls from private numbers</string>
   <string name="blacklist_private_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from private numbers</string>
@@ -334,4 +339,7 @@
   <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
   <!-- Volume dialog timeout -->
   <string name="volume_dialog_timeout_title">Volume dialog timeout</string>
+  <!-- Show CPU info -->
+  <string name="show_cpu_info">Show CPU info</string>
+  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
 </resources>

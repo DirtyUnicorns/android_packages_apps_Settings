@@ -232,6 +232,11 @@
   <string name="volume_steps_5">5</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">WiFi Hotspot bekapcsolva tartása</string>
+  <string name="wifi_hotspot_mode_always">Always</string>
+  <string name="wifi_hotspot_mode_five_mins">Turn off when idle for 5 min</string>
+  <string name="wifi_hotspot_mode_ten_mins">Turn off when idle for 10 min</string>
+  <string name="wifi_hotspot_mode_thirty_mins">Turn off when idle for 30 min</string>
+  <string name="wifi_hotspot_mode_one_hour">Turn off when idle for 1 hour</string>
   <!-- Battery saver color -->
   <string name="battery_saver_title">Figyelmeztetési szín</string>
   <string name="battery_saver_style_reset_message">Figyelmeztetési színt alaphelyzetbe?</string>
@@ -334,4 +339,7 @@
   <string name="volume_adjust_sounds_title">Hangerő állítási hangok</string>
   <!-- Volume dialog timeout -->
   <string name="volume_dialog_timeout_title">Hangerő párbeszéd időkorlát</string>
+  <!-- Show CPU info -->
+  <string name="show_cpu_info">CPU info mutatása</string>
+  <string name="show_cpu_info_summary">Jelenlegi CPU info mutatása képernyő átfedésben</string>
 </resources>

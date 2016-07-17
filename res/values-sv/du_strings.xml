@@ -232,6 +232,11 @@
   <string name="volume_steps_5">5</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">Håll WiFi Hotspot aktiverad</string>
+  <string name="wifi_hotspot_mode_always">Always</string>
+  <string name="wifi_hotspot_mode_five_mins">Turn off when idle for 5 min</string>
+  <string name="wifi_hotspot_mode_ten_mins">Turn off when idle for 10 min</string>
+  <string name="wifi_hotspot_mode_thirty_mins">Turn off when idle for 30 min</string>
+  <string name="wifi_hotspot_mode_one_hour">Turn off when idle for 1 hour</string>
   <!-- Battery saver color -->
   <string name="battery_saver_title">Varningsfärg</string>
   <string name="battery_saver_style_reset_message">Återställ batterivarningens färg?</string>
@@ -290,13 +295,13 @@
   <string name="blacklist_unknown_numbers_summary_disabled">Blockera inte samtal eller meddelanden från nummer som inte finns i kontaktlistan</string>
   <string name="blacklist_unknown_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from numbers not in the contact list</string>
   <string name="blacklist_summary_type_calls_only">samtal</string>
-  <string name="blacklist_summary_type_messages_only">messages</string>
-  <string name="blacklist_summary_type_calls_and_messages">calls and messages</string>
+  <string name="blacklist_summary_type_messages_only">meddelanden</string>
+  <string name="blacklist_summary_type_calls_and_messages">samtal och meddelanden</string>
   <string name="blacklist_regex_title">Use wildcards</string>
   <string name="blacklist_regex_summary">Use . as a wildcard and * for repetition. E.g. 123.* blocks numbers starting with 123 and .*123.* blocks numbers containing 123</string>
   <string name="blacklist_policy_block_calls">Blockera inkommande samtal</string>
-  <string name="blacklist_policy_block_messages">Block incoming messages</string>
-  <string name="blacklist_bad_number_add">Unable to add invalid phone number to blocked caller list</string>
+  <string name="blacklist_policy_block_messages">Blockera inkommande meddelanden</string>
+  <string name="blacklist_bad_number_add">Kunde inte lägga till ogiltigt nummer till svartlistan</string>
   <!-- Blacklist management -->
   <string name="remove_blacklist_number_title">Ta bort nummer</string>
   <string name="remove_blacklist_entry">Vill du ta bort det här blockerade numret?</string>
@@ -331,7 +336,10 @@
   <string name="fourhalf_second">4.5 s</string>
   <string name="five_second">5 s</string>
   <!-- Volume settings - Volume adjustment sound -->
-  <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+  <string name="volume_adjust_sounds_title">Volymjustering för ljud</string>
   <!-- Volume dialog timeout -->
-  <string name="volume_dialog_timeout_title">Volume dialog timeout</string>
+  <string name="volume_dialog_timeout_title">Volymdialogrutan timeout</string>
+  <!-- Show CPU info -->
+  <string name="show_cpu_info">Show CPU info</string>
+  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
 </resources>

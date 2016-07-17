@@ -232,6 +232,11 @@
   <string name="volume_steps_5">5</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">Manter ponto de acesso Wi-Fi ativo</string>
+  <string name="wifi_hotspot_mode_always">Always</string>
+  <string name="wifi_hotspot_mode_five_mins">Turn off when idle for 5 min</string>
+  <string name="wifi_hotspot_mode_ten_mins">Turn off when idle for 10 min</string>
+  <string name="wifi_hotspot_mode_thirty_mins">Turn off when idle for 30 min</string>
+  <string name="wifi_hotspot_mode_one_hour">Turn off when idle for 1 hour</string>
   <!-- Battery saver color -->
   <string name="battery_saver_title">Cor de aviso</string>
   <string name="battery_saver_style_reset_message">Resetar a cor de aviso de economia de bateria?</string>
@@ -334,4 +339,7 @@
   <string name="volume_adjust_sounds_title">Sons do ajuste de volume</string>
   <!-- Volume dialog timeout -->
   <string name="volume_dialog_timeout_title">Duração do painel de volume</string>
+  <!-- Show CPU info -->
+  <string name="show_cpu_info">Show CPU info</string>
+  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
 </resources>
