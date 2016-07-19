@@ -83,15 +83,8 @@ public class MobileNetworksEnabler extends GenericSwitchToggle  {
     }
 
     private void updateState() {
-        boolean airplaneMode = (Settings.Global.getInt(mContext.getContentResolver(),
-                Settings.Global.AIRPLANE_MODE_ON, 0) == 1);
-        if (airplaneMode) {
-        setEnabled(false);
-        setChecked(false);
-        } else {
         setEnabled(mTelephonyManager.getDataState() != TelephonyManager.DATA_UNKNOWN);
         setChecked(mTelephonyManager.getDataEnabled());
-        }
     }
 
     @Override
