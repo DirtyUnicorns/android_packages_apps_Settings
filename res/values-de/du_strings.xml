@@ -82,7 +82,7 @@
   <string name="sound_title">Töne</string>
   <string name="safe_headset_volume_title">Sichere Kopfhörerlautstärke</string>
   <string name="safe_headset_volume_summary">Hohe Lautstärken verhindern, wenn Kopfhörer neu eingesteckt werden</string>
-  <string name="safe_headset_volume_warning_dialog_text">Wenn du lange auf hoher Lautstärke Musik oder ähnliches hörst kann dies dein Gehör schädigen! Deaktiviere diese Funktion mit Vorsicht!</string>
+  <string name="safe_headset_volume_warning_dialog_text">Hohe Lautstärken über eine längere Zeit können Ihr Gehör schädigen! Vorsicht bei der Deaktivierung dieser Funktion!</string>
   <string name="notifications_category_title">Benachrichtigungen</string>
   <string name="sound_misc_category_title">System</string>
   <string name="less_notification_sounds_title">Weniger häufige Benachrichtigungstöne</string>
@@ -110,7 +110,7 @@
   <string name="increasing_ring_ramp_up_time_title">Steigerung nach</string>
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Bildschirmfoto-Ton</string>
-  <string name="screenshot_sound_summary">Spielt einen Ton beim Erstellen eines Bildschirmfotos ab</string>
+  <string name="screenshot_sound_summary">Tonsignal beim Erstellen eines Bildschirmfotos</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Farbeinstellungen ändern</string>
   <string name="pulse_speed_title">Pulsdauer und Geschwindigkeit</string>
@@ -134,14 +134,14 @@
   <string name="pulse_speed_slow">Langsam</string>
   <string name="pulse_speed_very_slow">Sehr langsam</string>
   <!-- Battery light settings -->
-  <string name="battery_light_title">Akkulicht</string>
-  <string name="battery_low_pulse_title">Bei schwachem Akku pulsieren</string>
+  <string name="battery_light_title">Akku-LED</string>
+  <string name="battery_low_pulse_title">Blinkende LED bei niedrigem Akkustand</string>
   <string name="battery_light_list_title">Farben</string>
-  <string name="battery_light_low_color_title">Akku schwach</string>
+  <string name="battery_light_low_color_title">Niedriger Akkustand</string>
   <string name="battery_light_medium_color_title">Laden</string>
   <string name="battery_light_full_color_title">Aufgeladen</string>
   <!-- Lights settings screen, notification light settings -->
-  <string name="notification_light_title">Benachrichtigungslicht</string>
+  <string name="notification_light_title">Benachrichtigungs-LED</string>
   <string name="notification_light_general_title">Allgemein</string>
   <string name="notification_light_applist_title">Apps</string>
   <string name="notification_light_phonelist_title">Telefon</string>
@@ -163,8 +163,8 @@
   <string name="keyboard_rotation_timeout_title">Timeout der Auto-Rotation</string>
   <string name="keyboard_rotation_timeout_summary">Deaktiviert den Sensor für die Auto-Rotation  <xliff:g id="rotate_timeout">%1$s</xliff:g> Sekunden nachdem die Tastatur nicht mehr angezeigt wird</string>
   <string name="keyboard_rotation_dialog">Diese Option erzwingt temporär die Auto-Rotation, wenn die Tastatur angezeigt wird. Sie funktioniert nicht, wenn die Auto-Rotation bereits aktiviert ist.</string>
-  <string name="show_enter_key_title">Zeige Eingabe-Taste</string>
-  <string name="show_enter_key_summary">Erzwingt die Anzeige der Eingabe-Taste an Stelle der Emoji-Taste</string>
+  <string name="show_enter_key_title">Eingabetaste anzeigen</string>
+  <string name="show_enter_key_summary">Tastatur immer mit Eingabetaste statt Emoticon-Taste anzeigen</string>
   <string name="ime_switcher_notify">Auswahlbenachrichtigung</string>
   <string name="ime_switcher_notify_summary">Zeigt eine Benachrichtigung zur Auswahl der Eingabemethode</string>
   <string name="attention">Achtung</string>
@@ -232,11 +232,11 @@
   <string name="volume_steps_5">5</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">WLAN-Hotspot anlassen</string>
-  <string name="wifi_hotspot_mode_always">Always</string>
-  <string name="wifi_hotspot_mode_five_mins">Turn off when idle for 5 min</string>
-  <string name="wifi_hotspot_mode_ten_mins">Turn off when idle for 10 min</string>
-  <string name="wifi_hotspot_mode_thirty_mins">Turn off when idle for 30 min</string>
-  <string name="wifi_hotspot_mode_one_hour">Turn off when idle for 1 hour</string>
+  <string name="wifi_hotspot_mode_always">Immer</string>
+  <string name="wifi_hotspot_mode_five_mins">Abschalten, wenn 5 Min. ungenutzt</string>
+  <string name="wifi_hotspot_mode_ten_mins">Abschalten, wenn 10 Min. ungenutzt</string>
+  <string name="wifi_hotspot_mode_thirty_mins">Abschalten, wenn 30 Min. ungenutzt</string>
+  <string name="wifi_hotspot_mode_one_hour">Abschalten, wenn 1 Stunde ungenutzt</string>
   <!-- Battery saver color -->
   <string name="battery_saver_title">Warnfarbe</string>
   <string name="battery_saver_style_reset_message">Warnfarbe für den Energiesparmodus zurücksetzen?</string>
@@ -257,7 +257,7 @@
   <!-- Dashboard settings -->
   <string name="dashboard_category">Übersicht</string>
   <string name="dashboard_columns_title">Übersichtsspalten</string>
-  <string name="dashboard_columns_summary">Ändere die Anzahl der Spalten in der Übersicht</string>
+  <string name="dashboard_columns_summary">Anzahl der Spalten in der Übersicht ändern</string>
   <string name="dashboard_columns_dialog_title">Spalten auswählen</string>
   <string name="dashboard_columns_one">Eine</string>
   <string name="dashboard_columns_two">Zwei</string>
@@ -340,6 +340,9 @@
   <!-- Volume dialog timeout -->
   <string name="volume_dialog_timeout_title">Timeout für Lautstärkeregler</string>
   <!-- Show CPU info -->
-  <string name="show_cpu_info">Show CPU info</string>
-  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+  <string name="show_cpu_info">CPU-Info anzeigen</string>
+  <string name="show_cpu_info_summary">Einblendung aktueller CPU-Informationen auf dem Bildschirm</string>
+  <!-- Proximity wake -->
+  <string name="proximity_wake_title">Prevent accidental wake up</string>
+  <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 </resources>

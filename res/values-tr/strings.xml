@@ -1740,7 +1740,7 @@
   <!-- [CHAR LIMIT=40] Display settings screen, setting option name to change whether the device wakes up when a lift gesture is detected. -->
   <string name="lift_to_wake_title">Kaldırarak uyandır</string>
   <!-- [CHAR LIMIT=30] Display settings screen, setting option name to change whether the ambient display feature is enabled. -->
-  <string name="doze_title">Ortam ekranı</string>
+  <string name="doze_title">Bildirim ekranı</string>
   <!-- [CHAR LIMIT=NONE] Display settings screen, setting description for the ambient display feature. -->
   <string name="doze_summary">Cihazı elime aldığımda veya bildirim geldiğinde ekranı uyandır</string>
   <!-- [CHAR LIMIT=30] Sound & display settings screen, setting option name to change font size -->
@@ -2308,11 +2308,11 @@
   <!-- Tethering controls, item title to go into the tethering settings when only Wifi tethering is available [CHAR LIMIT=25]-->
   <string name="tether_settings_title_wifi">Taşınabilir hotspot</string>
   <!-- Tethering controls, item title to go into the tethering settings when only Bluetooth tethering is available [CHAR LIMIT=25]-->
-  <string name="tether_settings_title_bluetooth">Bluetooth tethering</string>
+  <string name="tether_settings_title_bluetooth">Bluetooth internet paylaşımı</string>
   <!-- Tethering controls, item title to go into the tethering settings when USB and Bluetooth tethering are available [CHAR LIMIT=25]-->
   <string name="tether_settings_title_usb_bluetooth">Usb internet payl</string>
   <!-- Tethering controls, item title to go into the tethering settings when USB, Bluetooth and Wifi tethering are available [CHAR LIMIT=25]-->
-  <string name="tether_settings_title_all">Tethering ve taşnblr hotspot</string>
+  <string name="tether_settings_title_all">Bağlantı &amp; taşınabilir hotspot</string>
   <!-- USB Tethering options -->
   <string name="usb_title">USB</string>
   <string name="usb_tethering_button_text">USB internet paylaşımı</string>
@@ -2330,7 +2330,7 @@
   <string name="usb_tethering_errored_subtext">USB tethering hatası</string>
   <!-- Bluetooth Tethering settings-->
   <!-- Label for bluetooth tether checkbox [CHAR LIMIT=25]-->
-  <string name="bluetooth_tether_checkbox_text">Bluetooth tethering</string>
+  <string name="bluetooth_tether_checkbox_text">Bluetooth internet paylaşımı</string>
   <!-- Bluetooth available subtext - shown when Bluetooth tethering is turned on but it is not currently tethered to any devices [CHAR LIMIT=50]-->
   <string name="bluetooth_tethering_available_subtext" product="tablet">Bu tabletin İnternet bağlantısı paylaşılıyor</string>
   <!-- Bluetooth available subtext - shown when Bluetooth tethering is turned on but it is not currently tethered to any devices [CHAR LIMIT=50]-->
@@ -5942,7 +5942,7 @@
   <!-- Name of the setting to change the display's color temperature -->
   <string name="color_temperature">Ekran renk sıcaklığı</string>
   <!-- Description of the setting to change the display's color temperature -->
-  <string name="color_temperature_desc">Use cooler display colors</string>
+  <string name="color_temperature_desc">Soğuk ekran renkleri kullan</string>
   <!-- Toast message letting the user know the color temperature setting is not immediate -->
-  <string name="color_temperature_toast">To apply color change, turn off screen</string>
+  <string name="color_temperature_toast">Rengk değişikliğini uygulamak için, ekranı kapatın</string>
 </resources>

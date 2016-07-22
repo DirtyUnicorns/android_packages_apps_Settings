@@ -232,11 +232,11 @@
   <string name="volume_steps_5">5</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">Mantener el punto de acceso WiFi encendido</string>
-  <string name="wifi_hotspot_mode_always">Always</string>
-  <string name="wifi_hotspot_mode_five_mins">Turn off when idle for 5 min</string>
-  <string name="wifi_hotspot_mode_ten_mins">Turn off when idle for 10 min</string>
-  <string name="wifi_hotspot_mode_thirty_mins">Turn off when idle for 30 min</string>
-  <string name="wifi_hotspot_mode_one_hour">Turn off when idle for 1 hour</string>
+  <string name="wifi_hotspot_mode_always">Siempre encendido</string>
+  <string name="wifi_hotspot_mode_five_mins">Apagar cuando este sin ocupar por 5 min</string>
+  <string name="wifi_hotspot_mode_ten_mins">Apagar cuando este sin ocupar por 10 min</string>
+  <string name="wifi_hotspot_mode_thirty_mins">Apagar cuando este sin ocupar por 30 min</string>
+  <string name="wifi_hotspot_mode_one_hour">Apagar cuando este sin ocupar por 1 hora</string>
   <!-- Battery saver color -->
   <string name="battery_saver_title">Color de advertencia</string>
   <string name="battery_saver_style_reset_message">¿Restablecer el color de la advertencia para el ahorro de batería?</string>
@@ -338,8 +338,11 @@
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Ajuste volumen de sonidos</string>
   <!-- Volume dialog timeout -->
-  <string name="volume_dialog_timeout_title">Volume dialog timeout</string>
+  <string name="volume_dialog_timeout_title">Mostrar dialogo de volumen</string>
   <!-- Show CPU info -->
-  <string name="show_cpu_info">Show CPU info</string>
-  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+  <string name="show_cpu_info">Mostrar información de CPU</string>
+  <string name="show_cpu_info_summary">Superposición de pantalla mostrando la información de CPU actual</string>
+  <!-- Proximity wake -->
+  <string name="proximity_wake_title">Prevent accidental wake up</string>
+  <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 </resources>

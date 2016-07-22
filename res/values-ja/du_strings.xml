@@ -64,7 +64,7 @@
   <!-- Customization -->
   <string name="header_category_custom">Customization</string>
   <string name="custom_title">Dirty Tweaks</string>
-  <string name="themes_settings_title">Themes</string>
+  <string name="themes_settings_title">テーマ</string>
   <!-- DU Changelog -->
   <string name="duchangelog">Changelog</string>
   <string name="du_summary">Check to see what has changed in DU</string>
@@ -147,8 +147,8 @@
   <string name="notification_light_phonelist_title">Phone</string>
   <string name="notification_light_use_custom">Use custom values</string>
   <string name="notification_light_default_value">Default</string>
-  <string name="notification_light_missed_call_title">Missed call</string>
-  <string name="notification_light_voicemail_title">Voicemail</string>
+  <string name="notification_light_missed_call_title">不在着信</string>
+  <string name="notification_light_voicemail_title">ボイスメール</string>
   <string name="notification_light_screen_on">Lights with screen on</string>
   <string name="allow_lights_title">Lights in do not disturb mode</string>
   <!-- Keyboard and Input methods  -->
@@ -342,4 +342,7 @@
   <!-- Show CPU info -->
   <string name="show_cpu_info">Show CPU info</string>
   <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+  <!-- Proximity wake -->
+  <string name="proximity_wake_title">Prevent accidental wake up</string>
+  <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 </resources>

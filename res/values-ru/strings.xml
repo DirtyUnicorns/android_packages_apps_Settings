@@ -5787,7 +5787,7 @@
   <!-- Description of one of the choices in a dialog (with title defined in usb_use) that lets the user
          select what the USB connection for this device should be used for. This choice
          is for transferring files via MTP. -->
-  <string name="usb_use_file_transfers_desc">Передача файлов на компьютер Windows или Mac (MTP)</string>
+  <string name="usb_use_file_transfers_desc">Передача файлов на компьютер Windows\nили Mac (MTP)</string>
   <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
          select what the USB connection for this device should be used for. This choice
          is for transferring photos via PTP. -->
@@ -5795,7 +5795,7 @@
   <!-- Description of one of the choices in a dialog (with title defined in usb_use) that lets the user
          select what the USB connection for this device should be used for. This choice
          is for transferring photos via PTP. -->
-  <string name="usb_use_photo_transfers_desc">Передача фотографий или файлов, если МТР не поддерживается (PTP)</string>
+  <string name="usb_use_photo_transfers_desc">Передача фотографий или файлов, если\nМТР не поддерживается (PTP)</string>
   <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
          select what the USB connection for this device should be used for. This choice
          is for entering MIDI mode. -->

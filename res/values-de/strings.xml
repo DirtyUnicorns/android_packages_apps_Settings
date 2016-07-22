@@ -33,7 +33,7 @@
   <!-- Device Info screen. Used for a status item's value when the proper value is not known -->
   <string name="device_info_default">Unbekannt</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already">Okay, du bist bereits Entwickler.</string>
+  <string name="show_dev_already">Nicht nötig, Sie sind bereits Entwickler.</string>
   <!-- Category headings in left-pane header menu -->
   <!-- Settings main menu category heading. Wireless and networks (Wi-Fi, Bluetooth, data usage...). [CHAR LIMIT=40] -->
   <string name="header_category_wireless_networks">Drahtlos &amp; Netzwerke</string>
@@ -181,7 +181,7 @@
   <!-- Bluetooth settings screen, summary text when there isn't a name set (for the name setting) -->
   <string name="bluetooth_name_not_set">Kein Name festgelegt, Kontoname wird verwendet</string>
   <!-- Bluetooth settings screen, menu item to scan for nearby bluetooth devices -->
-  <string name="bluetooth_scan_for_devices">Scannen nach Geräten</string>
+  <string name="bluetooth_scan_for_devices">Gerätesuche</string>
   <!-- Bluetooth settings screen, menu item to change this device's Bluetooth name. [CHAR LIMIT=30] -->
   <string name="bluetooth_rename_device">Gerät umbenennen</string>
   <!-- Bluetooth settings screen, confirmation button for rename device dialog. [CHAR LIMIT=20] -->
@@ -189,9 +189,9 @@
   <!-- Bluetooth settings.  Dialog title to confirm disconnecting from all profiles of a device. [CHAR LIMIT=30] -->
   <string name="bluetooth_disconnect_title">Verbindung trennen?</string>
   <!-- Bluetooth settings.  Message for disconnecting from all profiles of a bluetooth device. [CHAR LIMIT=NONE] -->
-  <string name="bluetooth_disconnect_all_profiles">Hierdurch wird die Verbindung mit&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt; getrennt.</string>
+  <string name="bluetooth_disconnect_all_profiles">Hierdurch wird die Verbindung mit &lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt; getrennt.</string>
   <!-- Bluetooth Settings. text displayed when user has restriction DISALLOW_CONFIG_BLUETOOTH [CHAR LIMIT=NONE]-->
-  <string name="bluetooth_empty_list_user_restricted">Du bist nicht zur Änderung der Bluetooth-Einstellungen berechtigt.</string>
+  <string name="bluetooth_empty_list_user_restricted">Sie sind nicht zur Änderung der Bluetooth-Einstellungen berechtigt.</string>
   <!-- Bluetooth Visibility message.  This message informs the user that their device is now visible to other bluetooth devices.  [CHAR LIMIT=NONE] -->
   <string name="bluetooth_is_visible_message"><xliff:g id="DEVICE_NAME">%1$s</xliff:g> ist bei aktiviertem Bluetooth für Geräte in der Nähe sichtbar.</string>
   <!-- Bluetooth Visibility discoonect question.  Asks the user if they wish to disconnect a paired bluetooth device.  [CHAR LIMIT=50] -->
@@ -228,12 +228,12 @@
   <!-- Strings for asking to the user whether to allow an app to enable discovery mode -->
   <string name="bluetooth_ask_discovery" product="default">Eine App versucht, Ihr Telefon für <xliff:g id="TIMEOUT">%1$d</xliff:g> Sekunden für andere Bluetooth-Geräte sichtbar zu machen.</string>
   <!-- Strings for asking to the user whether to allow an app to enable lasting discovery mode  -->
-  <string name="bluetooth_ask_lasting_discovery" product="tablet">Eine App versucht, dein Tablet für andere Bluetooth-Geräte sichtbar zu machen. Du kannst diese Einstellung später in den Bluetooth-Einstellungen ändern.</string>
-  <string name="bluetooth_ask_lasting_discovery" product="default">Eine App versucht, dein Telefon für andere Bluetooth-Geräte sichtbar zu machen. Du kannst diese Einstellung später in den Bluetooth-Einstellungen ändern.</string>
+  <string name="bluetooth_ask_lasting_discovery" product="tablet">Eine App versucht, Ihr Tablet für andere Bluetooth-Geräte sichtbar zu machen. Sie können dies später in den Bluetooth-Einstellungen wieder ändern.</string>
+  <string name="bluetooth_ask_lasting_discovery" product="default">Eine App versucht, Ihr Telefon für andere Bluetooth-Geräte sichtbar zu machen. Sie können dies später in den Bluetooth-Einstellungen wieder ändern.</string>
   <!-- Strings for asking to the user whether to allow an app to start broadcasting -->
-  <string name="bluetooth_ask_start_broadcast" product="default">Für <xliff:g id="APP_NAME">%1$s</xliff:g> soll die Bluetooth-Übertragung aktiviert werden, um mit anderen Geräten in der Nähe zu kommunizieren. Du kannst dies später in den Bluetooth-Einstellungen ändern.</string>
+  <string name="bluetooth_ask_start_broadcast" product="default">Für <xliff:g id="APP_NAME">%1$s</xliff:g> soll die Bluetooth-Übertragung aktiviert werden, um mit anderen Geräten in der Nähe zu kommunizieren. Sie können dies später in den Bluetooth-Einstellungen ändern.</string>
   <!-- Strings for asking to the user whether to allow an app to enable bluetooth and start broadcasting -->
-  <string name="bluetooth_ask_enablement_and_start_broadcast" product="default">Für <xliff:g id="APP_NAME">%1$s</xliff:g> sollen Bluetooth und die Bluetooth-Übertragung aktiviert werden, um mit anderen Geräten in der Nähe zu kommunizieren. Du kannst dies später in den Bluetooth-Einstellungen ändern.</string>
+  <string name="bluetooth_ask_enablement_and_start_broadcast" product="default">Für <xliff:g id="APP_NAME">%1$s</xliff:g> sollen Bluetooth und die Bluetooth-Übertragung aktiviert werden, um mit anderen Geräten in der Nähe zu kommunizieren. Sie können dies später in den Bluetooth-Einstellungen ändern.</string>
   <!-- Strings for bluetooth broadcasting explanation -->
   <string name="bluetooth_broadcasting_explaination" product="default">Wenn diese Funktion aktiviert ist, kann Ihr Telefon mit anderen Geräten in der Nähe kommunizieren.\n\nFür die Übertragung werden stromsparende Bluetooth-Signale verwendet.</string>
   <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode -->

@@ -232,11 +232,11 @@
   <string name="volume_steps_5">5</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">Mantieni Hotspot WiFi acceso</string>
-  <string name="wifi_hotspot_mode_always">Always</string>
-  <string name="wifi_hotspot_mode_five_mins">Turn off when idle for 5 min</string>
-  <string name="wifi_hotspot_mode_ten_mins">Turn off when idle for 10 min</string>
-  <string name="wifi_hotspot_mode_thirty_mins">Turn off when idle for 30 min</string>
-  <string name="wifi_hotspot_mode_one_hour">Turn off when idle for 1 hour</string>
+  <string name="wifi_hotspot_mode_always">Sempre</string>
+  <string name="wifi_hotspot_mode_five_mins">Spegni quando è inattivo per 5 min</string>
+  <string name="wifi_hotspot_mode_ten_mins">Spegni quando è inattivo per 10 min</string>
+  <string name="wifi_hotspot_mode_thirty_mins">Spegni quando è inattivo per 30 min</string>
+  <string name="wifi_hotspot_mode_one_hour">Spegni quando è inattivo per 1 ora</string>
   <!-- Battery saver color -->
   <string name="battery_saver_title">Colore di avvertimento</string>
   <string name="battery_saver_style_reset_message">Resettare il colore di avvertimento della modalità di risparmio energetico?</string>
@@ -340,6 +340,9 @@
   <!-- Volume dialog timeout -->
   <string name="volume_dialog_timeout_title">Durata del pannello volume</string>
   <!-- Show CPU info -->
-  <string name="show_cpu_info">Show CPU info</string>
-  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+  <string name="show_cpu_info">Mostra informazioni CPU</string>
+  <string name="show_cpu_info_summary">Sovrapponi sullo schermo le informazioni attuali della CPU</string>
+  <!-- Proximity wake -->
+  <string name="proximity_wake_title">Prevent accidental wake up</string>
+  <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 </resources>

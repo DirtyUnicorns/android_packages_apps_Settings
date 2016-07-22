@@ -174,12 +174,12 @@
   <!-- Warning for Adb over Network -->
   <string name="adb_over_network_warning">UYARI: ADB üzerinden ağ aktifken telefonunuz GSM veri ağı dahil tüm bağlı ağlar üzerinden kötüye kullanımlara açık olacaktır!\n\nBu özelliği sadece güvenilir ağlara bağlıyken kullanın.\n\nBu özellik açılsın mı?</string>
   <!-- Media ducking -->
-  <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
+  <string name="interruptions_ignore_while_media_title">Ses yankılanmasını önle</string>
   <string name="interruptions_ignore_while_media_summary">Bildirim geldiğinde medya sesini düşürme</string>
   <!-- Doze notification color invert -->
   <string name="doze_notification_color_invert_title">Rengi ters çevirme</string>
-  <string name="doze_notification_color_invert_summary_off">Ortam ekranı bildirimleri ters olmayacak. Karanlık temalar için kullanın.</string>
-  <string name="doze_notification_color_invert_summary_on">Ortam ekranı bildirimlerini ters olarak gösterecektir. Açık renk/stok tema için kullanın.</string>
+  <string name="doze_notification_color_invert_summary_off">Bildirim ekranı bildirimleri ters olmayacak. Karanlık temalar için kullanın.</string>
+  <string name="doze_notification_color_invert_summary_on">Bildirim ekranı bildirimlerini ters olarak gösterecektir. Açık renk/stok tema için kullanın.</string>
   <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
   <string name="bluetooth_accept_all_files">Tüm dosya türlerini kabul et</string>
   <!-- Display : Rotation -->
@@ -231,23 +231,23 @@
   <string name="volume_steps_7">7</string>
   <string name="volume_steps_5">5</string>
   <!-- Hotspot idle -->
-  <string name="wifi_hotspot_mode_title">Keep WiFi Hotspot on</string>
-  <string name="wifi_hotspot_mode_always">Always</string>
-  <string name="wifi_hotspot_mode_five_mins">Turn off when idle for 5 min</string>
-  <string name="wifi_hotspot_mode_ten_mins">Turn off when idle for 10 min</string>
-  <string name="wifi_hotspot_mode_thirty_mins">Turn off when idle for 30 min</string>
-  <string name="wifi_hotspot_mode_one_hour">Turn off when idle for 1 hour</string>
+  <string name="wifi_hotspot_mode_title">WiFi Hotspot aramayı açık tut</string>
+  <string name="wifi_hotspot_mode_always">Her zaman</string>
+  <string name="wifi_hotspot_mode_five_mins">5 dakika boyunca boşta ise kapat</string>
+  <string name="wifi_hotspot_mode_ten_mins">10 dakika boyunca boşta ise kapat</string>
+  <string name="wifi_hotspot_mode_thirty_mins">30 dakika boyunca boşta ise kapat</string>
+  <string name="wifi_hotspot_mode_one_hour">1 saat boyunca boşta ise kapat</string>
   <!-- Battery saver color -->
-  <string name="battery_saver_title">Warning color</string>
-  <string name="battery_saver_style_reset_message">Reset battery saver warning color?</string>
+  <string name="battery_saver_title">Uyarı rengi</string>
+  <string name="battery_saver_style_reset_message">Pil tasarrufu uyarı rengi sıfırlansın mı?</string>
   <!-- Linked / unlinked notification volume -->
-  <string name="link_volume_option_title">Link ring and notification volumes</string>
+  <string name="link_volume_option_title">Zil sesi ve bildirim seslerini birleştir</string>
   <string name="notification_volume_option_title">Bildirim ses düzeyi</string>
   <string name="ring_notification_volume_option_title">Çağrı ve bildirim sesi</string>
   <!-- Double tap to launch target -->
   <string name="dt2l_target_category">Başlatma seçenekleri için çift dokunun</string>
-  <string name="dt2l_target_vib_title">Adjust target\'s vibration</string>
-  <string name="dt2l_target_vib_summary">Adjust the vibration when double tapping the power button</string>
+  <string name="dt2l_target_vib_title">Titreşim hedefini ayarlayın</string>
+  <string name="dt2l_target_vib_summary">Titreşimi ayarlarken güç tuşuna çift dokunun</string>
   <string name="camera_double_tap_power_gesture_title">Kamera için güç tuşuna iki defa bas</string>
   <string name="camera_double_tap_power_gesture_desc">Ekran kilidini açmadan hızlı bir şekilde kamerayı aç</string>
   <!-- Battery stats reset -->
@@ -256,26 +256,26 @@
   <string name="ok_string">Tamam</string>
   <!-- Dashboard settings -->
   <string name="dashboard_category">Ayarlar menüsü seçenekleri</string>
-  <string name="dashboard_columns_title">Dashboard Columns</string>
+  <string name="dashboard_columns_title">Kontrol paneli sütunları</string>
   <string name="dashboard_columns_summary">Kontrol panelinin görüntülenen sütunlarının sayısını değiştirme</string>
   <string name="dashboard_columns_dialog_title">Kontrol paneli sütunlarını seç</string>
   <string name="dashboard_columns_one">Bir</string>
   <string name="dashboard_columns_two">İki</string>
   <string name="dashboard_columns_three">Üç</string>
-  <string name="dashboard_tileview_double_lines_title">Dashboard title view</string>
-  <string name="dashboard_tileview_double_lines_summary">Show dashboard tile titles in 2 lines</string>
-  <string name="dashboard_tileview_dividers_title">Dashboard dividers</string>
-  <string name="dashboard_tileview_dividers_summary">Hide dashboard tile dividers</string>
+  <string name="dashboard_tileview_double_lines_title">Kontrol paneli başlığı görünümü</string>
+  <string name="dashboard_tileview_double_lines_summary">Kontrol paneli kare başlıklarını 2 satır göster</string>
+  <string name="dashboard_tileview_dividers_title">Kontrol paneli ayracı</string>
+  <string name="dashboard_tileview_dividers_summary">Kontrol paneli kare ayraçlarını gizle</string>
   <!-- Optional Dashboard Switches -->
-  <string name="dashboard_switches_title">Dashboard Switches</string>
-  <string name="dashboard_switches_off">Switches Off</string>
-  <string name="dashboard_switches_on">Switches On</string>
-  <string name="dashboard_switches_summary">Change the position of the dashboard switches</string>
+  <string name="dashboard_switches_title">Kontrol Paneli Anahtarları</string>
+  <string name="dashboard_switches_off">Anahtarlar Kapalı</string>
+  <string name="dashboard_switches_on">Anahtarlar Açık</string>
+  <string name="dashboard_switches_summary">Kontrol paneli anahtarları konumunu değiştirme</string>
   <string name="dashboard_switches_dialog_title">Anahtar konumunu seç</string>
   <!-- Keyguard notifications options -->
   <string name="app_notification_show_on_keyguard_title">Ekran kilidinde göster</string>
   <string name="app_notification_show_on_keyguard_summary">Bu uygulamanın bildirimlerini ekran kilidi varken de göster</string>
-  <string name="app_notification_no_ongoing_on_keyguard_title">Disable ongoing on lockscreen</string>
+  <string name="app_notification_no_ongoing_on_keyguard_title">Kilit ekranını devam ederken devre dışı bırak</string>
   <string name="app_notification_no_ongoing_on_keyguard_summary">Kilit ekranında bu uygulamanın devam eden bildirimlerini asla gösterme</string>
   <!-- Blacklist preferences -->
   <string name="app_security_title">Gizlilik</string>
@@ -284,7 +284,7 @@
   <string name="blacklist_prefs">Ayarlar</string>
   <string name="blacklist_button_delete">Sil</string>
   <string name="blacklist_empty_text">Henüz bir numarayı kara listeye eklemediniz. Yeni bir giriş eklemek için Ekle (+) tuşuna dokun.</string>
-  <string name="blacklist_disabled_empty_text">To prevent phone numbers from calling or messaging you, enable the blocked caller list.</string>
+  <string name="blacklist_disabled_empty_text">Telefon numaralarının sizi aramasını ya da size mesaj atmasını engellemek için, engelli arayan listesini etkinleştirin.</string>
   <string name="blacklist_summary_disabled">Devre dışı</string>
   <string name="blacklist_summary">Engellenen arayan listesindeki telefon numaralarından gelen arama veya mesajı almazsınız</string>
   <string name="blacklist_notify">Bildirim göster</string>
@@ -309,18 +309,18 @@
   <!-- Doze pulse options -->
   <string name="summary_doze_enabled">Etkinleştirildi</string>
   <string name="summary_doze_disabled">Devre dışı</string>
-  <string name="doze_overwrite_value_title">Overwrite defaults</string>
-  <string name="doze_overwrite_value_summary">Allow override of default values with user config</string>
+  <string name="doze_overwrite_value_title">Varsayılan değerlerin üzerine yaz</string>
+  <string name="doze_overwrite_value_summary">Varsayılan değerleri kullanıcı yapılandırması ile geçersiz kılmaya izin ver</string>
   <string name="doze_pulse_title">Kullanıcı yapılandırılabilir ayarlar</string>
-  <string name="doze_pulse_duration_in_title">Fade in</string>
-  <string name="doze_pulse_duration_visible_title">Visible duration</string>
-  <string name="doze_pulse_duration_out_title">Fade out</string>
+  <string name="doze_pulse_duration_in_title">Aydınlat</string>
+  <string name="doze_pulse_duration_visible_title">Görünürlük süresi</string>
+  <string name="doze_pulse_duration_out_title">Karart</string>
   <string name="doze_trigger_pickup_title">Ele alma hareketi tetikleyici</string>
-  <string name="doze_trigger_pickup_summary_on">Pulse will be triggered by pick up sensor</string>
-  <string name="doze_trigger_pickup_summary_off">Pick up sensor will not be utilized as a trigger</string>
+  <string name="doze_trigger_pickup_summary_on">Pulse hareket sensörleri tarafından algılanarak aktive edilecek</string>
+  <string name="doze_trigger_pickup_summary_off">Hareket sensörü tetikleme mekanizması olarak kullanılmayacak</string>
   <string name="doze_trigger_notification_title">Bildirim tetikleyici</string>
-  <string name="doze_trigger_notification_summary_on">Pulse will be triggered by notifications</string>
-  <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
+  <string name="doze_trigger_notification_summary_on">Pulse bildirimler tarafından tetiklenir</string>
+  <string name="doze_trigger_notification_summary_off">Bildirimler bir tetikleme mekanizması olarak kullanılmayacak</string>
   <string name="doze_brightness_level_title">Parlaklık düzeyi</string>
   <string name="onehundred_ms">100 ms</string>
   <string name="twofifty_ms">250 ms</string>
@@ -340,6 +340,9 @@
   <!-- Volume dialog timeout -->
   <string name="volume_dialog_timeout_title">Ses düzeyi paneli zaman aşımı</string>
   <!-- Show CPU info -->
-  <string name="show_cpu_info">Show CPU info</string>
-  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+  <string name="show_cpu_info">İşlemci bilgisini göster</string>
+  <string name="show_cpu_info_summary">Geçerli İşlemci bilgisini gösteren ekran paylaşımı</string>
+  <!-- Proximity wake -->
+  <string name="proximity_wake_title">Prevent accidental wake up</string>
+  <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 </resources>
