@@ -60,7 +60,7 @@
   <!-- SuperSU -->
   <string name="supersu_title">超级用户</string>
   <!-- Google -->
-  <string name="google_title">谷歌</string>
+  <string name="google_title">Google</string>
   <!-- Customization -->
   <string name="header_category_custom">定制</string>
   <string name="custom_title">Dirty 设置</string>
@@ -232,11 +232,11 @@
   <string name="volume_steps_5">5</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">保持WiFi热点开启</string>
-  <string name="wifi_hotspot_mode_always">Always</string>
-  <string name="wifi_hotspot_mode_five_mins">Turn off when idle for 5 min</string>
-  <string name="wifi_hotspot_mode_ten_mins">Turn off when idle for 10 min</string>
-  <string name="wifi_hotspot_mode_thirty_mins">Turn off when idle for 30 min</string>
-  <string name="wifi_hotspot_mode_one_hour">Turn off when idle for 1 hour</string>
+  <string name="wifi_hotspot_mode_always">总是</string>
+  <string name="wifi_hotspot_mode_five_mins">空闲5分钟后关闭</string>
+  <string name="wifi_hotspot_mode_ten_mins">空闲10分钟后关闭</string>
+  <string name="wifi_hotspot_mode_thirty_mins">空闲30分钟后关闭</string>
+  <string name="wifi_hotspot_mode_one_hour">空闲1小时后关闭</string>
   <!-- Battery saver color -->
   <string name="battery_saver_title">警告颜色</string>
   <string name="battery_saver_style_reset_message">重置节电助手警告颜色为默认？</string>
@@ -338,11 +338,11 @@
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">音量键调节声音</string>
   <!-- Volume dialog timeout -->
-  <string name="volume_dialog_timeout_title">Volume dialog timeout</string>
+  <string name="volume_dialog_timeout_title">音量对话超时</string>
   <!-- Show CPU info -->
-  <string name="show_cpu_info">Show CPU info</string>
-  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+  <string name="show_cpu_info">显示CPU信息</string>
+  <string name="show_cpu_info_summary">悬浮显示CPU实时状态信息</string>
   <!-- Proximity wake -->
-  <string name="proximity_wake_title">Prevent accidental wake up</string>
-  <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+  <string name="proximity_wake_title">防止意外唤醒</string>
+  <string name="proximity_wake_summary">唤醒屏幕前检查距离感应器</string>
 </resources>

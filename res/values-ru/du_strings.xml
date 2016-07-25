@@ -343,6 +343,6 @@
   <string name="show_cpu_info">Информация ЦП</string>
   <string name="show_cpu_info_summary">Показывать поверх экрана частоты ядер, говерноры и температуру ЦП</string>
   <!-- Proximity wake -->
-  <string name="proximity_wake_title">Prevent accidental wake up</string>
-  <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+  <string name="proximity_wake_title">Предотвращать случайное включение</string>
+  <string name="proximity_wake_summary">Проверять датчик приближения при выходе из режима сна</string>
 </resources>

@@ -2874,9 +2874,9 @@
   <!-- Running services, description for a service in the started state -->
   <string name="service_client_name"><xliff:g id="client_name">%1$s</xliff:g></string>
   <!-- [CHAR LIMIT=10] Running services, summary of background processes -->
-  <string name="service_background_processes"><xliff:g id="MEMORY">%1$s</xliff:g> liberi</string>
+  <string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> liberi</string>
   <!-- [CHAR LIMIT=10] Running services, summary of foreground processes -->
-  <string name="service_foreground_processes"><xliff:g id="MEMORY">%1$s</xliff:g> usati</string>
+  <string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> usati</string>
   <!-- [CHAR LIMIT=10] Running services, label for chart showing memory use. -->
   <string name="memory">RAM</string>
   <!-- Text to label a process entry with the process name. -->
@@ -5708,11 +5708,11 @@
   <!-- Average memory usage key [CHAR LIMIT=25] -->
   <string name="memory_avg_use">Uso medio</string>
   <!-- Maximum memory used by an app [CHAR LIMIT=25] -->
-  <string name="memory_max_desc">Uso massimo: <xliff:g id="MEMORY">%1$s</xliff:g></string>
+  <string name="memory_max_desc">Uso massimo: <xliff:g id="memory" example="30MB">%1$s</xliff:g></string>
   <!-- Average memory used by an app [CHAR LIMIT=25] -->
-  <string name="memory_avg_desc">Uso medio: <xliff:g id="MEMORY">%1$s</xliff:g></string>
+  <string name="memory_avg_desc">Uso medio: <xliff:g id="memory" example="30MB">%1$s</xliff:g></string>
   <!-- Formatting for memory description [CHAR LIMIT=25] -->
-  <string name="memory_use_running_format"><xliff:g id="MEMORY">%1$s</xliff:g>/<xliff:g id="RUNNING">%2$s</xliff:g></string>
+  <string name="memory_use_running_format"><xliff:g id="memory" example="30MB">%1$s</xliff:g> / <xliff:g id="running" example="Always running">%2$s</xliff:g></string>
   <!-- Label for process [CHAR LIMIT=25] -->
   <string name="process_format"><xliff:g id="APP_NAME">%1$s</xliff:g> (<xliff:g id="COUNT">%2$d</xliff:g>)</string>
   <!-- Label for list to control apps that ignore battery saving restrictions [CHAR LIMIT=27]-->
@@ -5819,7 +5819,7 @@
   <!-- Label for details about an app's memory use [CHAR LIMIT=30] -->
   <string name="memory_details">Dettagli</string>
   <!-- Summary for how much memory an app has used [CHAR LIMIT=NONE] -->
-  <string name="memory_use_summary"><xliff:g id="SIZE">%1$s</xliff:g> di utilizzo medio di memoria nelle ultime tre ore</string>
+  <string name="memory_use_summary"><xliff:g id="size" example="30MB">%1$s</xliff:g> di utilizzo medio di memoria nelle ultime tre ore</string>
   <!-- Summary for no memory use for an app [CHAR LIMIT=NONE] -->
   <string name="no_memory_use_summary">Non è stata utilizzata memoria nelle ultime tre ore</string>
   <!-- Menu item for Sorting list by average memory use [CHAR LIMIT=NONE]-->

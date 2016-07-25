@@ -343,6 +343,6 @@
   <string name="show_cpu_info">CPU info mutatása</string>
   <string name="show_cpu_info_summary">Jelenlegi CPU info mutatása képernyő átfedésben</string>
   <!-- Proximity wake -->
-  <string name="proximity_wake_title">Prevent accidental wake up</string>
-  <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+  <string name="proximity_wake_title">Véletlen ébresztés megakadályozása</string>
+  <string name="proximity_wake_summary">Közelség érzékelő ellenőrzése a képernyő felébresztése előtt</string>
 </resources>

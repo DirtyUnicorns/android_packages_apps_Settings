@@ -67,7 +67,7 @@
   <string name="themes_settings_title">Temas</string>
   <!-- DU Changelog -->
   <string name="duchangelog">Log de alterações</string>
-  <string name="du_summary">Veja o que mudo na DU</string>
+  <string name="du_summary">Veja o que mudou na DU</string>
   <string name="du_app_name">Log de Alterações DU</string>
   <!-- DU Updater -->
   <string name="duupdater">Atualizador</string>
@@ -343,6 +343,6 @@
   <string name="show_cpu_info">Mostrar informação da CPU</string>
   <string name="show_cpu_info_summary">Sobreposição de tela mostrando informações atuais da CPU</string>
   <!-- Proximity wake -->
-  <string name="proximity_wake_title">Prevent accidental wake up</string>
-  <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+  <string name="proximity_wake_title">Evitar despertar acidental</string>
+  <string name="proximity_wake_summary">Verifique o sensor de proximidade antes de despertar a tela</string>
 </resources>

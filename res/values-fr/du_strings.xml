@@ -343,6 +343,6 @@
   <string name="show_cpu_info">Informations CPU</string>
   <string name="show_cpu_info_summary">Affiche les informations CPU actuelles</string>
   <!-- Proximity wake -->
-  <string name="proximity_wake_title">Prevent accidental wake up</string>
-  <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+  <string name="proximity_wake_title">Réveil involontaire</string>
+  <string name="proximity_wake_summary">Vérifier le capteur de proximité avant d\'allumer l\'écran</string>
 </resources>

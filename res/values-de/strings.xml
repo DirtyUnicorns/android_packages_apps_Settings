@@ -241,8 +241,8 @@
   <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode -->
   <string name="bluetooth_ask_enablement_and_discovery" product="default">Eine App versucht, Bluetooth zu aktivieren und Ihr Telefon für <xliff:g id="TIMEOUT">%1$d</xliff:g> Sekunden für andere Geräte sichtbar zu machen.</string>
   <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode -->
-  <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet">Eine App versucht, Bluetooth zu aktivieren und dein Tablet für andere Geräte sichtbar zu machen. Du kannst diese Einstellung später in den Bluetooth-Einstellungen ändern.</string>
-  <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default">Eine App versucht, Bluetooth zu aktivieren und dein Telefon für andere Geräte sichtbar zu machen. Du kannst diese Einstellung später in den Bluetooth-Einstellungen ändern.</string>
+  <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet">Eine App versucht, Bluetooth zu aktivieren und Ihr Tablet für andere Geräte sichtbar zu machen. Sie können dies später in den Bluetooth-Einstellungen ändern.</string>
+  <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default">Eine App versucht, Bluetooth zu aktivieren und Ihr Telefon für andere Geräte sichtbar zu machen. Sie können dies später in den Bluetooth-Einstellungen ändern.</string>
   <!-- Strings for msg to display to user while bluetooth is turning on [CHAR LIMIT=60] -->
   <string name="bluetooth_turning_on">"Bluetooth wird aktiviert..."</string>
   <!-- Strings for msg to display to user while bluetooth is turning off [CHAR LIMIT=60] -->
@@ -254,11 +254,11 @@
   <!-- Notification message when a remote Bluetooth device wants to connect to a Bluetooth profile [CHAR LIMIT=none]-->
   <string name="bluetooth_connection_notif_message">"Zum Herstellen einer Verbindung mit \"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>\" berühren"</string>
   <!-- Bluetooth connection permission Alert Activity text [CHAR LIMIT=none]-->
-  <string name="bluetooth_connection_dialog_text">"Möchtest du eine Verbindung mit \"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>\" herstellen?"</string>
+  <string name="bluetooth_connection_dialog_text">"Möchten Sie eine Verbindung mit \"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>\" herstellen?"</string>
   <!-- Activity label of BluetoothPbPermissionActivity, also used as Strings in the permission dialog [CHAR LIMIT=none] -->
   <string name="bluetooth_phonebook_request">"Anforderung für Telefonbuchzugriff"</string>
   <!-- Bluetooth phone book permission Alert Activity text [CHAR LIMIT=none] -->
-  <string name="bluetooth_pb_acceptance_dialog_text">%1$s möchte auf deine Kontakte und deine Anrufliste zugreifen. Möchtest du %2$s den Zugriff erlauben?</string>
+  <string name="bluetooth_pb_acceptance_dialog_text">%1$s möchte auf Ihre Kontakte und Anrufliste zugreifen. Möchten Sie %2$s den Zugriff erlauben?</string>
   <!-- Bluetooth phone book permission Alert Activity checkbox text [CHAR LIMIT=none] -->
   <string name="bluetooth_remember_choice">Nicht mehr fragen</string>
   <!--FIXME SHOULD BE REMOVED AND ALL LANG VERSIONS FIXED TO ABOVE NAME -->
@@ -266,11 +266,11 @@
   <!-- Activity label of BluetoothMessagePermissionActivity, also used as Strings in the permission dialog [CHAR LIMIT=none] -->
   <string name="bluetooth_map_request">"Anforderung für Nachrichtenzugriff"</string>
   <!-- Bluetooth message permission Alert Activity text [CHAR LIMIT=none] -->
-  <string name="bluetooth_map_acceptance_dialog_text">%1$s möchte auf deine Nachrichten zugreifen. Möchtest du %2$s den Zugriff erlauben?</string>
+  <string name="bluetooth_map_acceptance_dialog_text">%1$s möchte auf Ihre Nachrichten zugreifen. Möchten Sie %2$s den Zugriff erlauben?</string>
   <!-- Activity label of BluetoothMessagePermissionActivity for SIM access profile. Also used as Strings in the permission dialog [CHAR LIMIT=none] -->
   <string name="bluetooth_sap_request">"Anfrage wegen Zugriff auf SIM"</string>
   <!-- Bluetooth SIM access permission Alert Activity text [CHAR LIMIT=none] -->
-  <string name="bluetooth_sap_acceptance_dialog_text"><xliff:g id="DEVICE_NAME_0">%1$s</xliff:g> möchte auf deine SIM-Karte zugreifen. Wenn du den Zugriff auf die SIM-Karte gewährst, wird die Datenverbindung auf deinem Gerät für die Dauer der Verbindung deaktiviert. Möchtest du <xliff:g id="DEVICE_NAME_1">%2$s?</xliff:g> den Zugriff erlauben?</string>
+  <string name="bluetooth_sap_acceptance_dialog_text"><xliff:g id="DEVICE_NAME_0">%1$s</xliff:g> möchte auf Ihre SIM-Karte zugreifen. Wenn Sie den Zugriff auf die SIM-Karte gewähren, wird die Datenverbindung auf Ihrem Gerät für die Dauer der Verbindung deaktiviert. <xliff:g id="DEVICE_NAME_1">%2$s?</xliff:g> den Zugriff erlauben?</string>
   <!-- Date & time settings screen title -->
   <string name="date_and_time">Datum &amp; Uhrzeit</string>
   <!-- The title of the activity to pick a time zone. -->
@@ -317,9 +317,9 @@
   <!-- HTTP proxy settings. The error if the hostname is not valid -->
   <string name="proxy_error_invalid_host">Der eingegebene Hostname ist ungültig.</string>
   <!-- HTTP proxy settings. The error if the exclusion list is not valid -->
-  <string name="proxy_error_invalid_exclusion_list">Die von dir eingegebene Ausschlussliste ist nicht richtig formatiert. Bitte gib eine durch Kommas getrennte Liste ausgeschlossener Domains ein.</string>
+  <string name="proxy_error_invalid_exclusion_list">Die von Ihnen eingegebene Ausschlussliste ist nicht richtig formatiert. Bitte geben Sie eine durch Kommas getrennte Liste ausgeschlossener Domains ein.</string>
   <!-- HTTP proxy settings. Error msg -->
-  <string name="proxy_error_empty_port">Du musst das Feld für den Port ausfüllen.</string>
+  <string name="proxy_error_empty_port">Sie müssen das Feld für den Port ausfüllen.</string>
   <!-- HTTP proxy settings. Error msg -->
   <string name="proxy_error_empty_host_set_port">Das Feld für den Port muss leer sein, wenn das Feld für den Host leer ist.</string>
   <!-- HTTP proxy settings. Error msg -->
@@ -508,15 +508,15 @@
   <!-- mobile network settings screen, setting option summary text when check box is clear -->
   <string name="roaming_disable">Bei Roaming mit Datendienst verbinden</string>
   <!-- mobile network settings screen, dialog message when you are roaming and clear the "Data roaming" check box -->
-  <string name="roaming_reenable_message">Die Datenkonnektivität wurde unterbrochen, weil du dein Heimnetzwerk verlassen hast und Daten-Roaming nicht aktiviert ist.</string>
+  <string name="roaming_reenable_message">Die Datenkonnektivität wurde unterbrochen, weil Sie das Netzwerk Ihres Heimatlandes verlassen haben und Daten-Roaming nicht aktiviert ist.</string>
   <!-- mobile network settings screen, button on dialog box that appears when you are roaming and clear the "Data roaming" check box -->
   <string name="roaming_turn_it_on_button">Aktivieren</string>
   <!-- mobile network settings screen, message in dialog box that appears when you select the "Data roaming" check box -->
   <string name="roaming_warning">Wenn du Daten-Roaming zulässt, können hohe Roaming-Gebühren anfallen!</string>
   <!-- mobile network settings screen, message in dialog box that appears when you select the "Data roaming" check box. This is for multiuser tablets [CHAR LIMIT=none] -->
-  <string name="roaming_warning_multiuser" product="tablet">Wenn du Daten-Roaming zulässt, können erhebliche Roaming-Gebühren entstehen.\n\nDiese Einstellung betrifft alle Nutzer auf diesem Tablet.</string>
+  <string name="roaming_warning_multiuser" product="tablet">Wenn Sie Daten-Roaming zulassen, können erhebliche Roaming-Gebühren entstehen.\n\nDiese Einstellung betrifft alle Nutzer auf diesem Tablet.</string>
   <!-- mobile network settings screen, message in dialog box that appears when you select the "Data roaming" check box. This is for multiuser phones [CHAR LIMIT=none] -->
-  <string name="roaming_warning_multiuser" product="default">Wenn du Daten-Roaming zulässt, können erhebliche Roaming-Gebühren entstehen.\n\nDiese Einstellung betrifft alle Nutzer auf diesem Telefon.</string>
+  <string name="roaming_warning_multiuser" product="default">Wenn Sie Daten-Roaming zulassen, können erhebliche Roaming-Gebühren entstehen.\n\nDiese Einstellung betrifft alle Nutzer auf diesem Telefon.</string>
   <!-- mobile network settings screen, title of dialog box that appears when you select the "Data roaming" check box -->
   <string name="roaming_reenable_title">Daten-Roaming zulassen?</string>
   <!-- mobile network settings screen, setting option name -->
@@ -646,7 +646,7 @@
   <!-- Introduction title shown in fingerprint enrollment to introduce the fingerprint feature[CHAR LIMIT=29] -->
   <string name="security_settings_fingerprint_enroll_introduction_title">Mit Fingerabdruck entsperren</string>
   <!-- Introduction detail message shown in fingerprint enrollment dialog [CHAR LIMIT=NONE]-->
-  <string name="security_settings_fingerprint_enroll_introduction_message">Tippe einfach auf den Fingerabdrucksensor, um dein Smartphone zu entsperren, Käufe zu autorisieren oder dich in Apps anzumelden. Überlege genau, welche Fingerabdrücke du hinzufügen möchtest, da diese Aktionen mit allen Fingerabdrücken ausgeführt werden können, die du zu deinem Smartphone hinzufügst.</string>
+  <string name="security_settings_fingerprint_enroll_introduction_message">Einfach den Fingerabdrucksensor berühren, um das Telefon zu entsperren, Käufe zu autorisieren oder sich in Apps anzumelden. Überlegen Sie genau, wessen Fingerabdrücke Sie hinzufügen möchten, da diese Aktionen mit allen erfassten Fingerabdrücken ausgeführt werden können.</string>
   <!-- Introduction detail message shown in fingerprint enrollment dialog to warn the user [CHAR LIMIT=NONE]-->
   <string name="security_settings_fingerprint_enroll_introduction_message_warning">Hinweis: Ihr Fingerabdruck ist möglicherweise nicht so sicher wie ein komplexes Muster oder eine PIN.</string>
   <!-- Link text shown bellow the warning to learn morn about fingerprint risk [CHAR LIMIT=22]-->
@@ -670,7 +670,7 @@
   <!-- Title shown in fingerprint enrollment dialog to begin enrollment [CHAR LIMIT=29]-->
   <string name="security_settings_fingerprint_enroll_start_title">Los geht\'s!</string>
   <!-- Message shown in fingerprint enrollment dialog to begin enrollment [CHAR LIMIT=NONE] -->
-  <string name="security_settings_fingerprint_enroll_start_message">Lege deinen Finger auf den Sensor und hebe ihn an, wenn du eine Vibration spürst.</string>
+  <string name="security_settings_fingerprint_enroll_start_message">Legen Sie Ihren Finger auf den Sensor und heben ihn an, wenn Sie eine Vibration spüren.</string>
   <!-- Title shown in fingerprint enrollment dialog to repeat touching the fingerprint sensor [CHAR LIMIT=29] -->
   <string name="security_settings_fingerprint_enroll_repeat_title">Super! Noch einmal.</string>
   <!-- Message shown in fingerprint enrollment dialog to repeat touching the fingerprint sensor [CHAR LIMIT=NONE] -->
@@ -678,15 +678,15 @@
   <!-- Title shown in fingerprint enrollment dialog once enrollment is completed [CHAR LIMIT=29] -->
   <string name="security_settings_fingerprint_enroll_finish_title">Abdruck hinzugefügt</string>
   <!-- Message shown in fingerprint enrollment dialog once enrollment is completed -->
-  <string name="security_settings_fingerprint_enroll_finish_message">Wenn du dieses Symbol siehst, kannst du deinen Fingerabdruck zur Identifizierung oder zur Autorisierung eines Kaufs verwenden.</string>
+  <string name="security_settings_fingerprint_enroll_finish_message">Immer wenn Sie dieses Symbol sehen, können Sie Ihren Fingerabdruck zur Identifizierung oder zur Autorisierung eines Kaufs verwenden.</string>
   <!-- Message shown when fingerprint enrollment is completed during setup wizard [CHAR LIMIT=NONE] -->
   <string name="setup_fingerprint_enroll_finish_message">Tippe einfach auf den Fingerabdrucksensor, um dein Gerät zu aktivieren und zu entsperren.</string>
   <!-- Message shown when fingerprint enrollment is completed, telling user about the fingerprint icon that will be shown whenever they can use their fingerprint [CHAR LIMIT=NONE] -->
-  <string name="setup_fingerprint_enroll_finish_message_secondary">Wenn du dieses Symbol siehst, kannst du deinen Fingerabdruck verwenden.</string>
+  <string name="setup_fingerprint_enroll_finish_message_secondary">Wenn Sie dieses Symbol sehen, können Sie Ihren Fingerabdruck verwenden.</string>
   <!-- Title of the dialog shown when the user tries to skip fingerprint setup, asking them to confirm the action [CHAR LIMIT=40] -->
   <string name="setup_fingerprint_enroll_enrolling_skip_title">Fingerabdruck-Einrichtung überspringen?</string>
   <!-- Content of the dialog shown when the user tries to skip fingerprint setup, asking them to confirm the action [CHAR LIMIT=NONE] -->
-  <string name="setup_fingerprint_enroll_enrolling_skip_message">Du hast festgelegt, dass du unter anderem deinen Fingerabdruck zum Entsperren deines Smartphones verwenden möchtest. Wenn du diesen Schritt jetzt überspringst, musst du die Einrichtung zu einem späteren Zeitpunkt vornehmen. Die Einrichtung dauert nur ca. eine Minute.</string>
+  <string name="setup_fingerprint_enroll_enrolling_skip_message">Sie haben festgelegt, dass Sie unter anderem Ihren Fingerabdruck zum Entsperren des Telefons verwenden möchten. Wenn Sie diesen Schritt jetzt überspringen, müssen Sie die Einrichtung zu einem späteren Zeitpunkt vornehmen. Die Einrichtung dauert nur ca. eine Minute.</string>
   <!-- Button text to setup screen lock in onboard dialog [CHAR LIMIT=34] -->
   <string name="security_settings_fingerprint_enroll_setup_screen_lock">Displaysperre einrichten</string>
   <!-- Button text to exit fingerprint wizard after everything is done [CHAR LIMIT=15] -->
@@ -706,17 +706,17 @@
   <!-- Button text shown at the end of enrollment that allows the user to move to the next step -->
   <string name="fingerprint_enroll_button_next">Weiter</string>
   <!-- Text shown in fingerprint settings explaining what the fingerprint can be used for. [CHAR LIMIT=NONE] -->
-  <string name="security_settings_fingerprint_enroll_disclaimer">\"Mit deinem Fingerabdruck kannst du nicht nur dein Smartphone entsperren, sondern auch Käufe und App-Zugriffe autorisieren. \"<annotation id="url">\"Weitere Informationen\"</annotation></string>
+  <string name="security_settings_fingerprint_enroll_disclaimer">Mit Ihrem Fingerabdruck können Sie nicht nur Ihr Telefon entsperren, sondern auch Käufe und App-Zugriffe autorisieren. \"<annotation id="url">\"Weitere Informationen\"</annotation></string>
   <!-- Text shown in fingerprint settings explaining what the fingerprint can be used for in the case unlocking is disabled [CHAR LIMIT=NONE] -->
-  <string name="security_settings_fingerprint_enroll_disclaimer_lockscreen_disabled">\"Die Displaysperre ist deaktiviert. Du kannst weiterhin Käufe und App-Zugriffe mit deinem Fingerabdruck autorisieren. \"<annotation id="url">\"Weitere Informationen\"</annotation></string>
+  <string name="security_settings_fingerprint_enroll_disclaimer_lockscreen_disabled">Die Bildschirmsperre ist deaktiviert. Sie können weiterhin Käufe und App-Zugriffe mit Ihrem Fingerabdruck autorisieren. \"<annotation id="url">\"Weitere Informationen\"</annotation></string>
   <!-- Text shown in fingerprint enroll when we didn't observe progress for a few seconds. [CHAR LIMIT=100] -->
   <string name="security_settings_fingerprint_enroll_lift_touch_again">Hebe den Finger und tippe dann erneut auf den Sensor.</string>
   <!-- Text shown when "Add fingerprint" button is disabled -->
-  <string name="fingerprint_add_max">Du kannst bis zu <xliff:g id="COUNT">%d</xliff:g> Fingerabdrücke hinzufügen.</string>
+  <string name="fingerprint_add_max">Sie können bis zu <xliff:g id="COUNT">%d</xliff:g> Fingerabdrücke hinzufügen.</string>
   <!-- Title shown in a dialog which asks the user to confirm when the last fingerprint gets deleted by him. [CHAR LIMIT=35]-->
   <string name="fingerprint_last_delete_title">Alle Fingerabdrücke entfernen?</string>
   <!-- Message shown in a dialog which asks the user to confirm when the last fingerprint gets deleted by him. [CHAR LIMIT=NONE]-->
-  <string name="fingerprint_last_delete_message">Du kannst dann deine Fingerabdrücke nicht verwenden, um dein Smartphone zu entsperren, Käufe zu autorisieren oder dich in Apps anzumelden.</string>
+  <string name="fingerprint_last_delete_message">Sie werden keine Fingerabdrücke verwenden können, um das Telefon zu entsperren, Käufe zu autorisieren oder sich in Apps anzumelden.</string>
   <!-- Button to confirm the last removing the last fingerprint. [CHAR LIMIT=20]-->
   <string name="fingerprint_last_delete_confirm">Ja, entfernen</string>
   <!-- Content description for the fingerprint icon when the user is prompted to enter his credentials. Not shown on the screen. [CHAR LIMIT=NONE] -->
@@ -730,9 +730,11 @@
   <!-- Summary of the preferences item to control encryption, when encryption is active -->
   <string name="crypt_keeper_encrypted_summary">Verschlüsselt</string>
   <!-- Informational text in the first confirmation screen before starting device encryption -->
-  <string name="crypt_keeper_desc" product="tablet">Du kannst deine Konten, Einstellungen, heruntergeladenen Apps und die zugehörigen Daten, Medienelemente und andere Dateien verschlüsseln. Nachdem du dein Tablet verschlüsselt hast, musst du, sofern du eine Displaysperre eingerichtet hast (also ein Muster, eine numerische PIN oder ein Passwort), bei jedem Einschalten des Tablets das Display entsperren, um das Telefon zu entschlüsseln. Der einzige andere Weg zur Entschlüsselung ist das Zurücksetzen auf die Werkseinstellungen. Hierdurch werden alle deine Daten gelöscht.\n\nDie Verschlüsselung dauert mindestens eine Stunde. Bei Beginn muss der Akku aufgeladen sein und das Telefon muss sich während des gesamten Vorgangs im Netzbetrieb befinden. Wenn du den Vorgang unterbrichst, gehen einige oder alle deine Daten verloren.</string>
+  <string name="crypt_keeper_desc" product="tablet">
+Sie können Ihre Konten, Einstellungen, heruntergeladenen Apps mit den zugehörigen Daten, Medienelemente und andere Dateien verschlüsseln. Nachdem das Tablet verschlüsselt ist, muss das Display, sofern eine Bildschirmsperre eingerichtet ist (also ein Muster, eine numerische PIN oder ein Passwort), nach jedem Einschalten entsperrt werden, damit das Tablet entschlüsselt wird. Der einzige andere Weg zur Entschlüsselung ist das Zurücksetzen auf die Werkseinstellungen, wodurch alle Ihre Daten gelöscht werden.\n\nDie Verschlüsselung dauert mindestens eine Stunde. Bei Beginn muss der Akku aufgeladen sein und das Telefon muss während des gesamten Vorgangs an die Stromversorgung angeschlossen bleiben. Wird der Vorgang unterbrochen, gehen einige oder alle  Daten verloren.</string>
   <!-- Informational text in the first confirmation screen before starting device encryption -->
-  <string name="crypt_keeper_desc" product="default">Du kannst deine Konten, Einstellungen, heruntergeladenen Apps und die zugehörigen Daten, Medienelemente und andere Dateien verschlüsseln. Nachdem du dein Telefon verschlüsselt hast, musst du, sofern du eine Displaysperre eingerichtet hast (also ein Muster, eine numerische PIN oder ein Passwort), bei jedem Einschalten des Telefons das Display entsperren, um das Telefon zu entschlüsseln. Der einzige andere Weg zur Entschlüsselung ist das Zurücksetzen auf die Werkseinstellungen. Hierdurch werden alle deine Daten gelöscht.\n\nDie Verschlüsselung dauert mindestens eine Stunde. Bei Beginn muss der Akku aufgeladen sein und das Telefon muss sich während des gesamten Vorgangs im Netzbetrieb befinden. Wenn du den Vorgang unterbrichst, gehen einige oder alle deine Daten verloren.</string>
+  <string name="crypt_keeper_desc" product="default">
+Sie können Ihre Konten, Einstellungen, heruntergeladenen Apps mit den zugehörigen Daten, Medienelemente und andere Dateien verschlüsseln. Nachdem das Telefon verschlüsselt ist, muss das Display, sofern eine Bildschirmsperre eingerichtet ist (also ein Muster, eine numerische PIN oder ein Passwort), nach jedem Einschalten entsperrt werden, damit das Telefon entschlüsselt wird. Der einzige andere Weg zur Entschlüsselung ist das Zurücksetzen auf die Werkseinstellungen, wodurch alle Ihre Daten gelöscht werden.\n\nDie Verschlüsselung dauert mindestens eine Stunde. Bei Beginn muss der Akku aufgeladen sein und das Telefon muss während des gesamten Vorgangs an die Stromversorgung angeschlossen bleiben. Wird der Vorgang unterbrochen, gehen einige oder alle  Daten verloren.</string>
   <!-- Button text to start encryption process -->
   <string name="crypt_keeper_button_text" product="tablet">Tablet verschlüsseln</string>
   <!-- Button text to start encryption process -->
@@ -744,7 +746,7 @@
   <!-- Dialog title, shown when encryption cannot proceed because a PIN/Password is needed -->
   <string name="crypt_keeper_dialog_need_password_title">Keine PIN oder kein Passwort für Displaysperre</string>
   <!-- Dialog message, shown when encryption cannot proceed because a PIN/Password is needed -->
-  <string name="crypt_keeper_dialog_need_password_message">Du musst eine PIN oder ein Passwort für die Displaysperre festlegen, bevor du die Verschlüsselung starten kannst.</string>
+  <string name="crypt_keeper_dialog_need_password_message">Sie müssen eine PIN- oder Passwort-Bildschirmsperre festlegen, bevor Sie die Verschlüsselung starten können.</string>
   <!-- Title of the final confirmation screen before starting device encryption -->
   <string name="crypt_keeper_confirm_title">Verschlüsseln?</string>
   <!-- Warning text in the final confirmation screen before starting device encryption -->
@@ -757,8 +759,8 @@
   <string name="crypt_keeper_setup_description" product="tablet">Bitte warte, während dein Tablet verschlüsselt wird. Zu <xliff:g id="PERCENT">^1</xliff:g> % abgeschlossen.</string>
   <!-- Informational text on the progress screen while encrypting the device -->
   <string name="crypt_keeper_setup_description" product="default">Bitte warte, während dein Telefon verschlüsselt wird. Zu <xliff:g id="PERCENT">^1</xliff:g> % abgeschlossen.</string>
-  <string name="crypt_keeper_setup_time_remaining" product="tablet">Dein Tablet wird verschlüsselt. Bitte warte noch <xliff:g id="DURATION">^1</xliff:g>.</string>
-  <string name="crypt_keeper_setup_time_remaining" product="default">Dein Telefon wird verschlüsselt. Bitte warte noch <xliff:g id="DURATION">^1</xliff:g>.</string>
+  <string name="crypt_keeper_setup_time_remaining" product="tablet">Ihr Tablet wird verschlüsselt. Dies dauert noch <xliff:g id="DURATION">^1</xliff:g>.</string>
+  <string name="crypt_keeper_setup_time_remaining" product="default">Ihr Telefon wird verschlüsselt. Dies dauert noch <xliff:g id="DURATION">^1</xliff:g>.</string>
   <string name="crypt_keeper_force_power_cycle" product="tablet">Schalte dein Tablet aus und wieder ein, um es zu entsperren.</string>
   <string name="crypt_keeper_force_power_cycle" product="default">Schalte dein Telefon aus und wieder ein, um es zu entsperren.</string>
   <!-- Warn user their device will be wiped if they make x more failed attempts -->
@@ -768,15 +770,15 @@
   <!-- Title of the encryption screen when encrypting the device failed -->
   <string name="crypt_keeper_failed_title">Verschlüsselung fehlgeschlagen</string>
   <!-- Informational text when encryption fails -->
-  <string name="crypt_keeper_failed_summary" product="tablet">Die Verschlüsselung wurde unterbrochen und kann nicht abgeschlossen werden. Daher ist der Zugriff auf die Daten auf deinem Tablet nicht mehr möglich. \n\nDamit du dein Tablet wieder verwenden kannst, musst du es auf die Werkseinstellungen zurücksetzen. Wenn du dein Tablet nach dem Zurücksetzen wieder einrichtest, kannst du gegebenenfalls Daten, die gesichert wurden, in deinem Google-Konto wiederherstellen.</string>
+  <string name="crypt_keeper_failed_summary" product="tablet">Die Verschlüsselung wurde unterbrochen und kann nicht abgeschlossen werden. Daher ist der Zugriff auf die Daten auf Ihrem Tablet nicht mehr möglich. \n\nDamit das Tablet wieder verwendet werden kann, müssen Sie es auf die Werkseinstellungen zurücksetzen. Bei der Einrichtung des Tablets nach dem Zurücksetzen, können gegebenenfalls Daten, die über Ihr Google-Konto gesichert wurden, wiederhergestellt werden.</string>
   <!-- Informational text when encryption fails -->
-  <string name="crypt_keeper_failed_summary" product="default">Die Verschlüsselung wurde unterbrochen und kann nicht abgeschlossen werden. Daher ist der Zugriff auf die Daten auf deinem Telefon nicht mehr möglich. \n\nDamit du dein Telefon wieder verwenden kannst, musst du es auf die Werkseinstellungen zurücksetzen. Wenn du dein Telefon nach dem Zurücksetzen wieder einrichtest, kannst du gegebenenfalls Daten, die gesichert wurden, in deinem Google-Konto wiederherstellen.</string>
+  <string name="crypt_keeper_failed_summary" product="default">Die Verschlüsselung wurde unterbrochen und kann nicht abgeschlossen werden. Daher ist der Zugriff auf die Daten auf Ihrem Telefon nicht mehr möglich. \n\nDamit das Telefon wieder verwendet werden kann, müssen Sie es auf die Werkseinstellungen zurücksetzen. Bei der Einrichtung des Telefons nach dem Zurücksetzen, können gegebenenfalls Daten, die über Ihr Google-Konto gesichert wurden, wiederhergestellt werden.</string>
   <!-- Title of the encryption screen when decrypting the device failed -->
   <string name="crypt_keeper_data_corrupt_title">Fehler bei der Verschlüsselung</string>
   <!-- Informational text when encryption fails -->
-  <string name="crypt_keeper_data_corrupt_summary" product="tablet">Das von dir eingegebene Passwort ist korrekt, aber deine Daten sind beschädigt. \n\nDamit du dein Tablet weiterhin verwenden kannst, musst du es auf die Werkseinstellungen zurücksetzen. Nach dem Zurücksetzen auf die Werkseinstellungen kannst du beim Einrichten deines Tablets die Daten wiederherstellen, die du in deinem Google-Konto gesichert hattest.</string>
+  <string name="crypt_keeper_data_corrupt_summary" product="tablet">Das eingegebene Passwort ist korrekt, aber leider sind Ihre Daten beschädigt. \n\nDamit Sie Ihr Tablet weiterhin verwenden können, müssen Sie es auf die Werkseinstellungen zurücksetzen. Nach dem Zurücksetzen können Sie beim Einrichten des Tablets die Daten wiederherstellen, die in Ihrem Google-Konto gesichert wurden.</string>
   <!-- Informational text when encryption fails -->
-  <string name="crypt_keeper_data_corrupt_summary" product="default">Das von dir eingegebene Passwort ist korrekt, aber deine Daten sind beschädigt. \n\nDamit du dein Smartphone weiterhin verwenden kannst, musst du es auf die Werkseinstellungen zurücksetzen. Nach dem Zurücksetzen auf die Werkseinstellungen kannst du beim Einrichten deines Smartphones die Daten wiederherstellen, die du in deinem Google-Konto gesichert hattest.</string>
+  <string name="crypt_keeper_data_corrupt_summary" product="default">Das eingegebene Passwort ist korrekt, aber leider sind Ihre Daten beschädigt. \n\nDamit das Telefon weiterhin verwendet werden kann, müssen Sie es auf die Werkseinstellungen zurücksetzen. Nach dem Zurücksetzen können Sie beim Einrichten des Telefons die Daten wiederherstellen, die in Ihrem Google-Konto gesichert wurden.</string>
   <!-- Image button description to switch input method -->
   <string name="crypt_keeper_switch_input_method">Eingabemethode wechseln</string>
   <!-- Unlock Picker Settings -->
@@ -830,7 +832,7 @@
   <!-- Footer text in when choosing screen lock type during setup wizard, telling the user that
          they can add fingerprint after they complete setup wizard. The text "Settings > Security"
          should match settings_label and security_settings_title [CHAR LIMIT=NONE] -->
-  <string name="unlock_setup_wizard_fingerprint_details">Sobald du eine Displaysperre eingerichtet hast, kannst du unter \"Einstellungen\" &gt; \"Sicherheit\" auch deinen Fingerabdruck einrichten.</string>
+  <string name="unlock_setup_wizard_fingerprint_details">Sobald die Bildschirmsperre eingerichtet ist, können Sie unter \"Einstellungen\" &gt; \"Sicherheit\" auch Ihren Fingerabdruck erfassen.</string>
   <!-- Title for option to turn of password/pin/pattern unlock. [CHAR LIMIT=22] -->
   <string name="unlock_disable_lock_title">Displaysperre deaktivieren</string>
   <!-- Title of the dialog shown when the user removes the device lock [CHAR LIMIT=NONE] -->
@@ -838,19 +840,19 @@
   <!-- Content of the dialog shown when the user removes the device lock pattern [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pattern">"Die Geräteschutzeinstellungen funktionieren ohne Ihr Muster nicht."</string>
   <!-- Content of the dialog shown when the user removes the device lock pattern and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"Die Geräteschutzeinstellungen funktionieren ohne Muster nicht. <xliff:g id="empty_line">\n\n</xliff:g>Deine gespeicherten Fingerabdrücke werden ebenfalls von diesem Gerät entfernt, und du kannst mit ihnen weder dein Smartphone entsperren, noch Käufe autorisieren, oder dich in Apps anmelden."</string>
+  <string name="unlock_disable_frp_warning_content_pattern_fingerprint">"Die Geräteschutzeinstellungen funktionieren ohne Muster nicht. <xliff:g id="empty_line">\n\n</xliff:g>Ihre gespeicherten Fingerabdrücke werden ebenfalls von diesem Gerät entfernt, und Sie können mit ihnen weder das Smartphone entsperren, noch Käufe autorisieren, oder sich in Apps anmelden."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_pin">"Die Geräteschutzeinstellungen funktionieren ohne Ihre PIN nicht."</string>
   <!-- Content of the dialog shown when the user removes the device lock PIN and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"Die Geräteschutzeinstellungen funktionieren ohne PIN nicht. <xliff:g id="empty_line">\n\n</xliff:g>Deine gespeicherten Fingerabdrücke werden ebenfalls von diesem Gerät entfernt, und du kannst mit ihnen weder dein Smartphone entsperren, noch Käufe autorisieren, oder dich in Apps anmelden."</string>
+  <string name="unlock_disable_frp_warning_content_pin_fingerprint">"Die Geräteschutzeinstellungen funktionieren ohne PIN nicht. <xliff:g id="empty_line">\n\n</xliff:g>Ihre gespeicherten Fingerabdrücke werden ebenfalls von diesem Gerät entfernt, und Sie können mit ihnen weder das Smartphone entsperren, noch Käufe autorisieren, oder sich in Apps anmelden."</string>
   <!-- Content of the dialog shown when the user removes the device lock password [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_password">"Die Geräteschutzeinstellungen funktionieren ohne Ihr Passwort nicht."</string>
   <!-- Content of the dialog shown when the user removes the device lock password and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_password_fingerprint">"Die Geräteschutzeinstellungen funktionieren ohne Passwort nicht. <xliff:g id="empty_line">\n\n</xliff:g>Deine gespeicherten Fingerabdrücke werden ebenfalls von diesem Gerät entfernt, und du kannst mit ihnen weder dein Smartphone entsperren, noch Käufe autorisieren, oder dich in Apps anmelden."</string>
+  <string name="unlock_disable_frp_warning_content_password_fingerprint">"Die Geräteschutzeinstellungen funktionieren ohne Passwort nicht. <xliff:g id="empty_line">\n\n</xliff:g>Ihre gespeicherten Fingerabdrücke werden ebenfalls von diesem Gerät entfernt, und Sie können mit ihnen weder das Smartphone entsperren, noch Käufe autorisieren, oder sich in Apps anmelden."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type [CHAR LIMIT=NONE] -->
   <string name="unlock_disable_frp_warning_content_unknown">"Die Geräteschutzeinstellungen funktionieren ohne Ihre Displaysperre nicht."</string>
   <!-- Content of the dialog shown when the user removes the device lock of unknown type and the user has fingerprints enrolled [CHAR LIMIT=NONE] -->
-  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"Die Geräteschutzeinstellungen funktionieren ohne Bildschirmsperre nicht. <xliff:g id="empty_line">\n\n</xliff:g>Deine gespeicherten Fingerabdrücke werden ebenfalls von diesem Gerät entfernt, und du kannst mit ihnen weder dein Smartphone entsperren, noch Käufe autorisieren, oder dich in Apps anmelden."</string>
+  <string name="unlock_disable_frp_warning_content_unknown_fingerprint">"Die Geräteschutzeinstellungen funktionieren ohne Bildschirmsperre nicht. <xliff:g id="empty_line">\n\n</xliff:g>Ihre gespeicherten Fingerabdrücke werden ebenfalls von diesem Gerät entfernt, und Sie können mit ihnen weder das Smartphone entsperren, noch Käufe autorisieren, oder sich in Apps anmelden."</string>
   <!-- Affirmative action of the dialog shown when the user removes the device lock [CHAR LIMIT=25] -->
   <string name="unlock_disable_frp_warning_ok">Ja, entfernen</string>
   <!-- Title shown on security settings to allow the user to change their lockscreen pattern [CHAR LIMIT=22] -->
@@ -864,7 +866,7 @@
   <!-- Hint shown in dialog screen when PIN is too short -->
   <string name="lockpassword_pin_too_short">Die PIN muss mindestens %d Ziffern enthalten.</string>
   <!-- Hint shown after minimum password criteria is met -->
-  <string name="lockpassword_press_continue">Wähle \"Weiter\", sobald du fertig bist.</string>
+  <string name="lockpassword_press_continue">\"Weiter\" wählen, sobald Sie fertig sind</string>
   <!-- Hint shown after minimum password criteria is met -->
   <string name="lockpassword_continue_label">Weiter</string>
   <!-- Error shown in popup when password is too long -->
@@ -936,7 +938,7 @@
   <!-- Title of preference to manage trust agents -->
   <string name="manage_trust_agents">Trust Agents</string>
   <!-- Summary shown when trust agent settings is disabled because the user hasn't set up primary security -->
-  <string name="disabled_because_no_backup_security">Lege zunächst eine Displaysperre fest, damit du die Option verwenden kannst.</string>
+  <string name="disabled_because_no_backup_security">Zunächst eine Bildschirmsperre festlegen, damit die Option verwendet werden kann.</string>
   <!-- Summary of preference to manage device policies -->
   <string name="manage_trust_agents_summary">Trust Agents ansehen oder deaktivieren</string>
   <!-- Bluetooth settings -->
@@ -968,9 +970,9 @@
   <!-- Bluetooth PIN hint text (below the text entry box). [CHAR LIMIT=30] -->
   <string name="bluetooth_pin_values_hint_16_digits">Muss aus 16 Ziffern bestehen</string>
   <!-- Pairing dialog text to remind user to enter the PIN on the other device. [CHAR LIMIT=NONE] -->
-  <string name="bluetooth_enter_pin_other_device">Möglicherweise musst du diese PIN auch auf dem anderen Gerät eingeben.</string>
+  <string name="bluetooth_enter_pin_other_device">Diese PIN muss auch auf dem anderen Gerät eingeben werden.</string>
   <!-- Pairing dialog text to remind user to enter the passkey on the other device. [CHAR LIMIT=NONE] -->
-  <string name="bluetooth_enter_passkey_other_device">Möglicherweise musst du diesen Zugangscode auch auf dem anderen Gerät eingeben.</string>
+  <string name="bluetooth_enter_passkey_other_device">Dieser Zugangscode muss auch auf dem anderen Gerät eingeben werden.</string>
   <!-- Message for confirmation of passkey to complete pairing. [CHAR LIMIT=NONE] -->
   <string name="bluetooth_confirm_passkey_msg">Um mit folgendem Gerät zu verbinden:&lt;br&gt;&lt;b&gt;<xliff:g id="device_name">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Stellen Sie sicher, dass folgendes Passwort angezeigt wird:&lt;br&gt;&lt;b&gt;<xliff:g id="passkey">%2$s</xliff:g>&lt;/b&gt;</string>
   <!-- Message when bluetooth incoming pairing request for (2.1 devices) dialog is showing -->
@@ -1035,7 +1037,7 @@
   <!-- Message to describe "BLE scan always available feature" when Bluetooth is off. The
       place-holders "LINK_BEGIN" and "LINK_END" must NOT be translated. They mark a link to bring
       the user to "scanning settings" screen. -->
-  <string name="ble_scan_notify_text">Zur Erhöhung der Standortgenauigkeit können System-Apps und -dienste Bluetooth-Geräte weiterhin erkennen. Du kannst dies unter <xliff:g id="LINK_BEGIN_0">LINK_BEGIN</xliff:g>Sucheinstellungen<xliff:g id="LINK_END_1">LINK_END</xliff:g> ändern.</string>
+  <string name="ble_scan_notify_text">Zur Erhöhung der Standortgenauigkeit können System-Apps und -dienste Bluetooth-Geräte weiterhin erkennen. Sie können dies unter <xliff:g id="LINK_BEGIN_0">LINK_BEGIN</xliff:g>Sucheinstellungen<xliff:g id="LINK_END_1">LINK_END</xliff:g> ändern.</string>
   <!-- Bluetooth settings.  The title of the screen to pick which profiles to connect to on the device.  For example, headphones may have both A2DP and headset, this allows the user to choose which one he wants to connect to. -->
   <string name="bluetooth_connect_specific_profiles_title">Verbinden mit...</string>
   <!-- Bluetooth settings.  Message for disconnecting from the A2DP profile. [CHAR LIMIT=80] -->
@@ -1119,7 +1121,7 @@
   <!-- Link speed on Wifi Status screen -->
   <string name="link_speed">%1$d Mbit/s</string>
   <!-- Wifi Alert message when tapping on a preference for a config locked down by device owner. [CHAR LIMIT=200] -->
-  <string name="wifi_alert_lockdown_by_device_owner"><xliff:g id="APP_NAME">%1$s</xliff:g> verwaltet dein Gerät und lässt das Bearbeiten oder Löschen dieses WLAN-Netzwerks nicht zu. Weitere Informationen erhältst du von deinem Administrator.</string>
+  <string name="wifi_alert_lockdown_by_device_owner"><xliff:g id="APP_NAME">%1$s</xliff:g> verwaltet Ihr Gerät und lässt das Bearbeiten oder Löschen dieses WLAN-Netzwerks nicht zu. Weitere Informationen erhalten Sie von Ihrem Administrator.</string>
   <!-- NFC settings -->
   <!-- Used in the 1st-level settings screen to turn on NFC -->
   <string name="nfc_quick_toggle_title">NFC</string>
@@ -1138,7 +1140,7 @@
   <!-- Used in the Android Beam sharing preferences screen. This phrase is a trademark. [CHAR LIMIT=32] -->
   <string name="android_beam_label">Android Beam</string>
   <!-- Explanation of the Android Beam feature in the Android Beam settings panel. The use of "beam" here is as a verb and not considered trademarked. [CHAR LIMIT=NONE] -->
-  <string name="android_beam_explained">Wenn diese Funktion aktiviert ist, kannst du App-Inhalte auf ein anderes NFC-fähiges Gerät beamen, indem du die Geräte dicht nebeneinander hältst. Du kannst beispielsweise Browserseiten, YouTube-Videos und Kontakte beamen.\n\nHalte die Geräte einfach dicht nebeneinander, am besten Rückseite an Rückseite, und berühre den Bildschirm. Die App bestimmt, was übertragen wird.</string>
+  <string name="android_beam_explained">Wenn diese Funktion aktiviert ist, können Sie App-Inhalte auf ein anderes NFC-fähiges Gerät beamen, indem Sie beide Geräte dicht nebeneinander halten. Sie können beispielsweise Browserseiten, YouTube-Videos und Kontakte beamen.\n\nEinfach die Geräte dicht aneinander halten, am besten Rückseite an Rückseite, und den Bildschirm berühren. Die App bestimmt, was übertragen wird.</string>
   <!-- Network service discovery settings -->
   <!-- Used in the 1st-level settings screen to turn on NSD -->
   <string name="nsd_quick_toggle_title">Diensterkennung</string>
@@ -1192,7 +1194,7 @@
   <!-- Message to describe "Wi-Fi scan always available feature" when Wi-Fi is off. The
       place-holders "LINK_BEGIN" and "LINK_END" must NOT be translated. They mark a link to bring
       the user to "scanning settings" screen. -->
-  <string name="wifi_scan_notify_text">Zur Erhöhung der Standortgenauigkeit können System-Apps und -dienste weiterhin nach WLAN-Netzwerken suchen. Du kannst dies unter <xliff:g id="LINK_BEGIN_0">LINK_BEGIN</xliff:g>Sucheinstellungen<xliff:g id="LINK_END_1">LINK_END</xliff:g> ändern.</string>
+  <string name="wifi_scan_notify_text">Zur Erhöhung der Standortgenauigkeit können System-Apps und -dienste weiterhin nach WLAN-Netzwerken suchen. Sie können dies unter <xliff:g id="LINK_BEGIN_0">LINK_BEGIN</xliff:g>Sucheinstellungen<xliff:g id="LINK_END_1">LINK_END</xliff:g> ändern.</string>
   <!-- Wifi scan always mode checkbox text -->
   <string name="wifi_scan_notify_remember_choice">Nicht erneut anzeigen</string>
   <!-- Setting title for setting the wifi sleep policy. Do we keep Wi-Fi active when the screen turns off? -->
@@ -1242,7 +1244,7 @@
   <!-- Wi-Fi settings. text displayed when Wi-Fi is on and network list is empty [CHAR LIMIT=50]-->
   <string name="wifi_empty_list_wifi_on">Suche nach WLAN-Netzwerken läuft…</string>
   <!-- Wifi Settings. text displayed when user has restriction DISALLOW_CONFIG_WIFI [CHAR LIMIT=NONE]-->
-  <string name="wifi_empty_list_user_restricted">Du verfügst nicht über die Berechtigung zum Ändern des WLAN-Netzwerks.</string>
+  <string name="wifi_empty_list_user_restricted">Sie haben keine Berechtigung, das WLAN-Netz zu ändern.</string>
   <!-- Wi-Fi settings. title for setup other network button [CHAR LIMIT=35]-->
   <string name="wifi_other_network">Weiteres Netzwerk hinzufügen</string>
   <!-- Wi-Fi settings. content description for more button [CHAR LIMIT=50]-->
@@ -1333,7 +1335,7 @@
   <string name="wifi_wps_available_second_item"> (WPS verfügbar)</string>
   <!-- Message in WriteWifiConfigToNfcDialog when prompted to enter network password [CHAR_LIMIT=40] -->
   <string name="wifi_wps_nfc_enter_password">Gib dein Netzwerkpasswort ein.</string>
-  <string name="wifi_scan_always_turnon_message">Zur Verbesserung der Standortgenauigkeit und zu anderen Zwecken möchte <xliff:g id="APP_NAME">%1$s</xliff:g> die Netzwerküberprüfung aktivieren, auch wenn das WLAN deaktiviert ist.\n\nMöchtest du dies für alle Apps zulassen, die eine Überprüfung durchführen möchten?</string>
+  <string name="wifi_scan_always_turnon_message">Zur Verbesserung der Standortgenauigkeit und zu anderen Zwecken möchte <xliff:g id="APP_NAME">%1$s</xliff:g> die Netzwerküberprüfung aktivieren, auch wenn das WLAN deaktiviert ist.\n\nMöchten Sie dies allen Apps erlauben, die eine Überprüfung durchführen möchten?</string>
   <!-- Message informing the user how to turn off  [CHAR LIMIT=200] -->
   <string name="wifi_scan_always_turnoff_message">Rufe im Überlaufmenü \"Erweitert\" auf, um diese Option zu deaktivieren.</string>
   <string name="wifi_scan_always_confirm_allow">Zulassen</string>
@@ -1366,17 +1368,17 @@
   <!-- Button for going to the previous screen or step [CHAR LIMIT=20] -->
   <string name="wifi_dont_skip">Nicht überspringen</string>
   <!-- Text warning about skipping Wi-Fi with a mobile connect (tablet) [CHAR LIMIT=NONE]-->
-  <string name="wifi_skipped_message" product="tablet">Achtung: Wenn du die WLAN-Option überspringst, nutzt dein Tablet eine Mobilfunkverbindung für erste Downloads und Updates. Um potenzielle Datengebühren zu vermeiden, stelle eine WLAN-Verbindung her.</string>
+  <string name="wifi_skipped_message" product="tablet">Achtung: Wenn Sie die WLAN-Option überspringen, nutzt das Tablet eine Mobilfunkverbindung für erste Downloads und Updates. Um potenzielle Datengebühren zu vermeiden, stellen Sie eine WLAN-Verbindung her.</string>
   <!-- Text warning about skipping Wi-Fi with a mobile connect (device) [CHAR LIMIT=NONE]-->
-  <string name="wifi_skipped_message" product="device">Achtung: Wenn du die WLAN-Option überspringst, nutzt dein Gerät eine Mobilfunkverbindung für erste Downloads und Updates. Um potenzielle Datengebühren zu vermeiden, stelle eine WLAN-Verbindung her.</string>
+  <string name="wifi_skipped_message" product="device">Achtung: Wenn Sie die WLAN-Option überspringen, nutzt das Gerät eine Mobilfunkverbindung für erste Downloads und Updates. Um potenzielle Datengebühren zu vermeiden, stellen Sie eine WLAN-Verbindung her.</string>
   <!-- Text warning about skipping Wi-Fi with a mobile connect (phone) [CHAR LIMIT=NONE]-->
   <string name="wifi_skipped_message" product="default">Achtung: Wenn du die WLAN-Option überspringst, nutzt dein Telefon eine Mobilfunkverbindung für erste Downloads und Updates. Um potenzielle Datengebühren zu vermeiden, stelle eine WLAN-Verbindung her.</string>
   <!-- Text warning about skipping Wi-Fi without a mobile connect (tablet) [CHAR LIMIT=NONE] -->
-  <string name="wifi_and_mobile_skipped_message" product="tablet">\"Beachte Folgendes, wenn du die WLAN-Option überspringst:\n\n\"<li>"Dein Tablet hat dann keine Internetverbindung."</li>\n\n<li>"Du erhältst erst Softwareupdates, nachdem du eine Internetverbindung hergestellt hast."</li>\n\n<li>"Du kannst zum jetzigen Zeitpunkt keine Geräteschutzfunktionen aktivieren."</li></string>
+  <string name="wifi_and_mobile_skipped_message" product="tablet">Wenn Sie die WLAN-Option überspringen,\n\n<li>hat Ihr Tablet keine Internetverbindung.</li>\n\n<li>Sie erhalten keine Softwareupdates, bis eine Internetverbindung eingerichtet ist.</li>\n\n<li>Sie können in dieser Zeit keine Geräteschutzfunktionen aktivieren.</li></string>
   <!-- Text warning about skipping Wi-Fi without a mobile connect (device) [CHAR LIMIT=NONE] -->
-  <string name="wifi_and_mobile_skipped_message" product="device">\"Beachte Folgendes, wenn du die WLAN-Option überspringst:\n\n\"<li>"Dein Gerät hat dann keine Internetverbindung."</li>\n\n<li>"Du erhältst erst Sofwareupdates, nachdem du eine Internetverbindung hergestellt hast."</li>\n\n<li>"Du kannst zum jetzigen Zeitpunkt keine Geräteschutzfunktionen aktivieren."</li></string>
+  <string name="wifi_and_mobile_skipped_message" product="device">Wenn Sie die WLAN-Option überspringen,\n\n<li>hat Ihr Gerät keine Internetverbindung.</li>\n\n<li>Sie erhalten keine Softwareupdates, bis eine Internetverbindung eingerichtet ist.</li>\n\n<li>Sie können in dieser Zeit keine Geräteschutzfunktionen aktivieren.</li></string>
   <!-- Text warning about skipping Wi-Fi without a mobile connect (phone) [CHAR LIMIT=NONE] -->
-  <string name="wifi_and_mobile_skipped_message" product="default">\"Beachten Folgendes, wenn du die WLAN-Option überspringst:\n\n\"<li>"Dein Smartphone hat dann keine Internetverbindung."</li>\n\n<li>"Du erhältst erst Softwareupdates, nachdem du eine Internetverbindung hergestellt hast."</li>\n\n<li>"Du kannst zum jetzigen Zeitpunkt keine Geräteschutzfunktionen aktivieren."</li></string>
+  <string name="wifi_and_mobile_skipped_message" product="default">Wenn Sie die WLAN-Option überspringen,\n\n<li>hat Ihr Telefon keine Internetverbindung.</li>\n\n<li>Sie erhalten keine Softwareupdates, bis eine Internetverbindung eingerichtet ist.</li>\n\n<li>Sie können in dieser Zeit keine Geräteschutzfunktionen aktivieren.</li></string>
   <!-- Text alerting that Wi-Fi couldn't connect (tablet) [CHAR LIMIT=NONE] -->
   <string name="wifi_connect_failed_message" product="tablet">Das Tablet konnte nicht auf dieses WLAN zugreifen.</string>
   <!-- Text alerting that Wi-Fi couldn't connect (device) [CHAR LIMIT=NONE] -->
@@ -1449,13 +1451,13 @@
   <!-- Title for disconnect dialog -->
   <string name="wifi_p2p_disconnect_title">Verbindung trennen?</string>
   <!-- Message text for disconnection from one device-->
-  <string name="wifi_p2p_disconnect_message">Wenn du die Verbindung trennst, wird deine Verbindung mit <xliff:g id="PEER_NAME">%1$s</xliff:g> beendet.</string>
+  <string name="wifi_p2p_disconnect_message">Wenn Sie die Verbindung trennen, wird Ihre Verbindung mit <xliff:g id="PEER_NAME">%1$s</xliff:g> beendet.</string>
   <!-- Message text for disconnection from multiple devices-->
-  <string name="wifi_p2p_disconnect_multiple_message">Wenn du die Verbindung trennst, wird deine Verbindung mit <xliff:g id="PEER_NAME">%1$s</xliff:g> und <xliff:g id="PEER_COUNT">%2$s</xliff:g> weiteren Geräten beendet.</string>
+  <string name="wifi_p2p_disconnect_multiple_message">Wenn Sie die Verbindung trennen, wird Ihre Verbindung mit <xliff:g id="PEER_NAME">%1$s</xliff:g> und <xliff:g id="PEER_COUNT">%2$s</xliff:g> weiteren Geräten beendet.</string>
   <!-- Title for cancel connect dialog -->
   <string name="wifi_p2p_cancel_connect_title">Einladung ablehnen?</string>
   <!-- Message text for disconnection from one device-->
-  <string name="wifi_p2p_cancel_connect_message">Möchtest du die Einladung zum Verbinden mit <xliff:g id="PEER_NAME">%1$s</xliff:g> ablehnen?</string>
+  <string name="wifi_p2p_cancel_connect_message">Möchten Sie die Verbindungsanfrage mit <xliff:g id="PEER_NAME">%1$s</xliff:g> ablehnen?</string>
   <!-- Message text for remembered group deletion-->
   <string name="wifi_p2p_delete_group_message">Diese Gruppe entfernen?</string>
   <!-- Wifi AP settings-->
@@ -1550,7 +1552,7 @@
     <item>"1"</item>
   </string-array>
   <!-- Wi-Fi Calling settings. Text displayed when Wi-Fi Calling is off -->
-  <string name="wifi_calling_off_explanation">Wenn die Option \"Anrufe über WLAN\" aktiviert ist, kann dein Smartphone abhängig von deiner Einstellung und von der Signalstärke Anrufe über WLAN-Netzwerke oder über das Netz deines Mobilfunkanbieters übertragen. Erkundige dich bei deinem Mobilfunkanbieter über die hierfür erhobenen Gebühren und andere Informationen, bevor du diese Funktion aktivierst.</string>
+  <string name="wifi_calling_off_explanation">Wenn die Option \"Anrufe über WLAN\" aktiviert ist, kann Ihr Smartphone, abhängig von den Voreinstellungen und der Signalstärke, Anrufe über WLAN-Netzwerke oder über das Mobilfunknetz übertragen. Erkundigen Sie sich bei Ihrem Mobilfunkanbieter nach den Kosten und weiteren Einzelheiten, bevor Sie diese Funktion aktivieren.</string>
   <!-- Sound and alerts settings -->
   <!-- Main Settings screen setting option name to go into the display settings screen -->
   <string name="home_settings">Startseite</string>
@@ -1734,7 +1736,7 @@
   <!-- [CHAR LIMIT=30] Display settings screen, setting option name to change whether the ambient display feature is enabled. -->
   <string name="doze_title">Inaktivitätsdisplay</string>
   <!-- [CHAR LIMIT=NONE] Display settings screen, setting description for the ambient display feature. -->
-  <string name="doze_summary">Bildschirm aktivieren, wenn du das Gerät verwendest oder eine Benachrichtigung erhältst</string>
+  <string name="doze_summary">Bildschirm aktivieren, wenn Sie das Gerät in die Hand nehmen oder eine Benachrichtigung erhalten</string>
   <!-- [CHAR LIMIT=30] Sound & display settings screen, setting option name to change font size -->
   <string name="title_font_size">Schriftgröße</string>
   <!-- Sound & display settings screen, setting option summary displaying the currently selected font size -->
@@ -1797,7 +1799,7 @@
   <!-- Title for the dialog asking to user to change the preferred SIM  [CHAR LIMIT=30] -->
   <string name="sim_preferred_title">Bevorzugte SIM-Karte aktualisieren?</string>
   <!-- Message for the dialog asking to user to change the preferred SIM  [CHAR LIMIT=NONE] -->
-  <string name="sim_preferred_message">\"<xliff:g id="NEW_SIM">%1$s</xliff:g>\" ist die einzige SIM-Karte in deinem Gerät. Möchtest du diese SIM-Karte für Mobilfunkdaten, Anrufe und SMS verwenden?</string>
+  <string name="sim_preferred_message">\"<xliff:g id="NEW_SIM">%1$s</xliff:g>\" ist die einzige SIM-Karte im Gerät. Möchten Sie diese SIM-Karte für Mobilfunkdaten, Anrufe und SMS verwenden?</string>
   <!-- Instructions telling the user that they entered the wrong SIM PIN for the last time.
          Displayed in a dialog box.  [CHAR LIMIT=100] -->
   <string name="wrong_pin_code_pukked">Falscher PIN-Code der SIM-Karte. Bitte wende dich an deinen Mobilfunkanbieter, damit er dein Gerät entsperrt.</string>
@@ -1928,7 +1930,7 @@
   <!-- SD card & phone storage settings item title that will result in the phone unmounting the SD card.  This will be done before the user phyiscally removes the SD card from the phone.  Kind of like the "Safely remove" on some operating systems.   [CHAR LIMIT=30] -->
   <string name="sd_eject_summary" product="nosdcard">Internen USB-Speicher trennen</string>
   <!-- SD card & phone storage settings item title that will result in the phone unmounting the SD card.  This will be done before the user phyiscally removes the SD card from the phone.  Kind of like the "Safely remove" on some operating systems.   -->
-  <string name="sd_eject_summary" product="default">SD-Karte trennen, damit du sie sicher entfernen kannst</string>
+  <string name="sd_eject_summary" product="default">SD-Karte trennen, damit sie sicher entfernt werden kann</string>
   <!-- SD card & phone storage settings item title for toggling PTP mode on and off.  When PTP mode is on the device will appear on the USB bus as a PTP camera device instead of an MTP music player.   -->
   <!-- SD card & phone storage settings item summary that is displayed when no SD card is inserted.  This version of the string can probably never come up on current hardware. [CHAR LIMIT=25] -->
   <string name="sd_insert_summary" product="nosdcard">USB-Speicher für Bereitst. einlegen</string>
@@ -1960,9 +1962,9 @@
   <!-- SD card eject confirmation dialog title   -->
   <string name="dlg_confirm_unmount_title" product="default">SD-Karte entnehmen?</string>
   <!-- SD card eject confirmation dialog  [CHAR LIMIT=NONE] -->
-  <string name="dlg_confirm_unmount_text" product="nosdcard">Wenn du den USB-Speicher trennst, werden einige von dir verwendete Apps angehalten. Diese stehen möglicherweise erst dann wieder zur Verfügung, wenn du den USB-Speicher wieder bereitstellst.</string>
+  <string name="dlg_confirm_unmount_text" product="nosdcard">Wenn Sie den USB-Speicher auswerfen, werden einige verwendete Apps angehalten und stehen möglicherweise erst dann wieder zur Verfügung, wenn der USB-Speicher wieder bereitsteht.</string>
   <!-- SD card eject confirmation dialog  -->
-  <string name="dlg_confirm_unmount_text" product="default">Wenn du die SD-Karte entfernst, werden einige von dir verwendete Apps angehalten und sind nicht mehr verfügbar, bis du die SD-Karte wieder einsetzt.</string>
+  <string name="dlg_confirm_unmount_text" product="default">Wenn Sie die SD-Karte auswerfen, werden einige verwendete Apps angehalten und sind nicht mehr verfügbar, bis die SD-Karte wieder eingesetzt ist.</string>
   <!-- SD card eject error dialog title   [CHAR LIMIT=30] -->
   <!-- SD card eject error dialog title   -->
   <!-- SD card eject error dialog text   [CHAR LIMIT=NONE] -->
@@ -1980,7 +1982,7 @@
   <!-- Settings item title when storage is running low [CHAR LIMIT=32] -->
   <string name="storage_low_title">Der Speicherplatz wird knapp</string>
   <!-- Settings item summary when storage is running low [CHAR LIMIT=NONE] -->
-  <string name="storage_low_summary">Einige Systemfunktionen wie die Synchronisierung funktionieren möglicherweise nicht korrekt. Versuche, Speicherplatz freizugeben, indem du Elemente wie Apps oder Medieninhalte löschst oder deine Offline-Verfügbarkeit aufhebst.</string>
+  <string name="storage_low_summary">Einige Systemfunktionen wie die Synchronisierung funktionieren nicht korrekt. Versuchen Sie, Speicherplatz freizugeben, indem Sie Elemente wie Apps oder Medieninhalte löschen oder deren Fixierung aufheben.</string>
   <!-- Storage setting.  Menu option for renaming a storage device [CHAR LIMIT=30]-->
   <string name="storage_menu_rename">Umbenennen</string>
   <!-- Storage setting.  Menu option for mounting a storage device [CHAR LIMIT=30]-->
@@ -2052,11 +2054,11 @@
   <!-- Dialog body informing user about an unsupported storage device. [CHAR LIMIT=NONE]-->
   <string name="storage_dialog_unsupported">Dieses Gerät unterstützt <xliff:g id="NAME_0">^1</xliff:g> nicht. \n\n<xliff:g id="NAME_1">^1</xliff:g> muss zur Verwendung mit diesem Gerät zuerst eingerichtet werden.</string>
   <!-- Body of dialog informing user about consequences of formatting an internal storage device [CHAR LIMIT=NONE]-->
-  <string name="storage_internal_format_details">Nachdem die Formatierung abgeschlossen wurde, kannst du die <xliff:g id="NAME_0">^1</xliff:g> in anderen Geräten verwenden. \n\nAlle Daten auf der <xliff:g id="NAME_1">^1</xliff:g> werden gelöscht. Sichere deine Daten daher vor der Formatierung. \n\n"<b>\"Sichere Fotos und andere Medien.\"</b>" \nVerschiebe deine Mediendateien auf ein anderes Speichermedium auf diesem Gerät oder kopiere sie über ein USB-Kabel auf einen Computer. \n\n"<b>\"Sichere deine Apps.\"</b>" \nAlle Apps auf der <xliff:g id="NAME_6">^1</xliff:g> werden deinstalliert und ihre Daten werden gelöscht. Wenn du diese Apps beibehalten möchtest, verschiebe sie auf ein anderes Speichermedium auf diesem Gerät.</string>
+  <string name="storage_internal_format_details">Nachdem die Formatierung abgeschlossen wurde, können Sie die <xliff:g id="NAME_0">^1</xliff:g> in anderen Geräten verwenden. \n\nAlle Daten auf der <xliff:g id="NAME_1">^1</xliff:g> werden gelöscht. Sichern Sie vorher Ihre Daten. \n\n<b>Fotos und andere Medien sichern.</b>" \nVerschieben Sie Mediendateien auf ein anderes Speichermedium auf diesem Gerät oder über ein USB-Kabel auf einen Computer. \n\n<b>Apps sichern.</b>\nAlle Apps auf der <xliff:g id="NAME_6">^1</xliff:g> werden deinstalliert und ihre Daten werden gelöscht. Wenn Sie diese Apps behalten möchten, verschieben Sie sie auf ein anderes Speichermedium auf diesem Gerät.</string>
   <!-- Body of dialog informing user about consequences of ejecting an internal storage device [CHAR LIMIT=NONE]-->
-  <string name="storage_internal_unmount_details"><b>"Wenn du die <xliff:g id="NAME_0">^1</xliff:g> aus dem Gerät entfernst, funktionieren die auf dem Speichermedium vorhandenen Apps nicht mehr. Die gespeicherten Mediendateien können erst wieder auf dem Gerät aufgerufen werden, wenn du das Speichermedium einlegst."</b>\" \n\nDie <xliff:g id="NAME_1">^1</xliff:g> ist nur für dieses Gerät formatiert und kann nicht mit anderen Geräten verwendet werden.\"</string>
+  <string name="storage_internal_unmount_details"><b>Wenn Sie die <xliff:g id="NAME_0">^1</xliff:g> aus dem Gerät entfernen, funktionieren die darauf gespeicherten Apps nicht mehr. Die gespeicherten Mediendateien können erst wieder aufgerufen werden, wenn das Speichermedium wieder eingesetzt ist.</b>\n\nDie <xliff:g id="NAME_1">^1</xliff:g> ist nur für dieses Gerät formatiert und kann nicht mit anderen Geräten verwendet werden.</string>
   <!-- Body of dialog informing user about consequences of forgetting an internal storage device [CHAR LIMIT=NONE]-->
-  <string name="storage_internal_forget_details">Zur Verwendung der Apps, Fotos oder Daten auf dieser <xliff:g id="NAME">^1</xliff:g> lege diese wieder ein. \n\nFalls das Speichermedium nicht verfügbar ist, kannst du es auch entfernen. \n\nWenn du es entfernst, gehen alle darauf befindlichen Daten endgültig verloren. \n\nDu kannst die Apps später erneut installieren, die Daten auf diesem Speichermedium gehen jedoch verloren.</string>
+  <string name="storage_internal_forget_details">Setzen Sie <xliff:g id="NAME">^1</xliff:g> wieder ein, um die dort enthaltenen Apps, Fotos oder Daten zu verwenden. \n\nFalls das Speichermedium nicht verfügbar ist, können Sie es auch dauerhaft entfernen. \n\nDabei gehen alle darauf befindlichen Daten endgültig verloren. \n\nSie können die Apps später erneut installieren, ihre auf dem Medium gespeicherten Daten bleiben jedoch verloren.</string>
   <!-- Title of dialog confirming that user wants to forget an internal storage device [CHAR LIMIT=32]-->
   <string name="storage_internal_forget_confirm_title"><xliff:g id="NAME">^1</xliff:g> entfernen?</string>
   <!-- Body of dialog confirming that user wants to forget an internal storage device [CHAR LIMIT=NONE]-->
@@ -2096,11 +2098,11 @@
   <!-- Title of wizard step prompting user to format a storage device [CHAR LIMIT=32] -->
   <string name="storage_wizard_format_confirm_title">Als internen Speicher formatieren</string>
   <!-- Body of wizard step prompting user to format a storage device [CHAR LIMIT=NONE] -->
-  <string name="storage_wizard_format_confirm_body">Um die Sicherheit zu gewährleisten, muss die <xliff:g id="NAME_0">^1</xliff:g> zuerst formatiert werden. \n\nDanach ist die <xliff:g id="NAME_1">^1</xliff:g> ausschließlich für dieses Gerät formatiert und funktioniert nicht mit anderen Geräten. \n\n"<b>\"Durch die Formatierung werden alle derzeit auf der <xliff:g id="NAME_2">^1</xliff:g> gespeicherten Daten gelöscht."</b>\" Um den Verlust von Daten zu verhindern, sichere sie vor der Formatierung.</string>
+  <string name="storage_wizard_format_confirm_body">Um die Sicherheit zu gewährleisten, muss die <xliff:g id="NAME_0">^1</xliff:g> zuerst formatiert werden. \n\nDanach ist die <xliff:g id="NAME_1">^1</xliff:g> ausschließlich für dieses Gerät formatiert und funktioniert nicht mit anderen Geräten. \n\n"<b>\"Durch die Formatierung werden alle derzeit auf der <xliff:g id="NAME_2">^1</xliff:g> gespeicherten Daten gelöscht."</b>\" Um den Verlust von Daten zu verhindern, führen Sie eine Sicherung durch.    </string>
   <!-- Title of wizard step prompting user to format a storage device [CHAR LIMIT=32] -->
   <string name="storage_wizard_format_confirm_public_title">Als tragbaren Speicher formatieren</string>
   <!-- Body of wizard step prompting user to format a storage device [CHAR LIMIT=NONE] -->
-  <string name="storage_wizard_format_confirm_public_body">Hierzu muss die <xliff:g id="NAME_0">^1</xliff:g> formatiert werden. \n\n"<b>\"Durch die Formatierung werden alle derzeit auf der <xliff:g id="NAME_1">^1</xliff:g> gespeicherten Daten gelöscht."</b>\" Um den Verlust von Daten zu verhindern, sichere sie vor der Formatierung.</string>
+  <string name="storage_wizard_format_confirm_public_body">Hierzu muss die <xliff:g id="NAME_0">^1</xliff:g> formatiert werden. \n\n"<b>\"Durch die Formatierung werden alle derzeit auf der <xliff:g id="NAME_1">^1</xliff:g> gespeicherten Daten gelöscht."</b>\" Um den Verlust von Daten zu verhindern, führen Sie eine Sicherung durch.    </string>
   <!-- Next button text of wizard step prompting user to format a storage device [CHAR LIMIT=32] -->
   <string name="storage_wizard_format_confirm_next">Löschen und formatieren</string>
   <!-- Title of wizard step showing formatting progress [CHAR LIMIT=32] -->
@@ -2110,7 +2112,7 @@
   <!-- Title of wizard step prompting user to migrate data to new storage [CHAR LIMIT=32] -->
   <string name="storage_wizard_migrate_title">Daten in neuen Speicher verschieben</string>
   <!-- Body of wizard step prompting user to migrate data to new storage [CHAR LIMIT=NONE] -->
-  <string name="storage_wizard_migrate_body">Du kannst deine Fotos, Dateien und manche Apps jetzt auf den neuen Datenträger <xliff:g id="NAME">^1</xliff:g> verschieben.\n\nDieser Vorgang dauert etwa <xliff:g id="TIME">^2</xliff:g>. Dabei wird <xliff:g id="SIZE">^3</xliff:g> interner Speicherplatz freigegeben. Einige Apps funktionieren während des Vorgangs nicht.</string>
+  <string name="storage_wizard_migrate_body">Sie können Ihre Fotos, Dateien und manche Apps jetzt auf den neuen Datenträger <xliff:g id="NAME">^1</xliff:g> verschieben.\n\nDieser Vorgang dauert etwa <xliff:g id="TIME">^2</xliff:g>. Dabei wird <xliff:g id="SIZE">^3</xliff:g> interner Speicherplatz freigegeben. Einige Apps funktionieren während des Vorgangs nicht.    </string>
   <!-- Title of wizard choice to migrate data right now [CHAR LIMIT=64] -->
   <string name="storage_wizard_migrate_now">Jetzt verschieben</string>
   <!-- Title of wizard choice to migrate data at later time [CHAR LIMIT=NONE] -->
@@ -2128,13 +2130,14 @@
   <!-- Title of wizard step indicating that storage is ready [CHAR LIMIT=32] -->
   <string name="storage_wizard_ready_title"><xliff:g id="NAME">^1</xliff:g> steht für dich bereit</string>
   <!-- Body of wizard step indicating that external storage is ready [CHAR LIMIT=NONE] -->
-  <string name="storage_wizard_ready_external_body">Du kannst deine <xliff:g id="NAME">^1</xliff:g> nun zum Speichern von Fotos und anderen Medien einsetzen.</string>
+  <string name="storage_wizard_ready_external_body">
+Sie können <xliff:g id="NAME">^1</xliff:g> nun zum Speichern von Fotos und anderen Medien einsetzen.    </string>
   <!-- Body of wizard step indicating that internal storage is ready [CHAR LIMIT=NONE] -->
-  <string name="storage_wizard_ready_internal_body">Deine neue <xliff:g id="NAME">^1</xliff:g> steht nun für dich bereit. \n\nWenn du Fotos, Dateien und App-Daten auf dieses Gerät verschieben möchtest, gehe zu \"Einstellungen\" &gt; \"Speicher\".</string>
+  <string name="storage_wizard_ready_internal_body">Ihre neue <xliff:g id="NAME">^1</xliff:g> steht nun bereit. \n\nUm Fotos, Dateien und App-Daten auf dieses Gerät zu verschieben, öffnen Sie \"Einstellungen\" &gt; \"Speicher\".    </string>
   <!-- Title of wizard step prompting user to move an app [CHAR LIMIT=32] -->
   <string name="storage_wizard_move_confirm_title"><xliff:g id="APP">^1</xliff:g> verschieben</string>
   <!-- Body of wizard step prompting user to move an app [CHAR LIMIT=NONE] -->
-  <string name="storage_wizard_move_confirm_body">Das Verschieben von <xliff:g id="APP">^1</xliff:g> und der entsprechenden Daten auf die <xliff:g id="NAME_0">^2</xliff:g> dauert nur einen Moment. Du kannst die App erst wieder verwenden, nachdem sie vollständig verschoben wurde. \n\nEntferne die <xliff:g id="NAME_1">^2</xliff:g> während des Vorgangs nicht.</string>
+  <string name="storage_wizard_move_confirm_body">Das Verschieben von <xliff:g id="APP">^1</xliff:g> und der entsprechenden Daten auf die <xliff:g id="NAME_0">^2</xliff:g> dauert nur einen Moment. Sie können die App erst wieder verwenden, nachdem sie vollständig verschoben wurde. \n\n<xliff:g id="NAME_1">^2</xliff:g> darf während des Vorgangs nicht entfernt werden.    </string>
   <!-- Title of wizard step showing app move progress [CHAR LIMIT=32] -->
   <string name="storage_wizard_move_progress_title"><xliff:g id="APP">^1</xliff:g> wird verschoben…</string>
   <!-- Body of wizard step showing app move progress [CHAR LIMIT=NONE] -->
@@ -2142,7 +2145,8 @@
   <!-- Title of wizard button offering to cancel move [CHAR LIMIT=32] -->
   <string name="storage_wizard_move_progress_cancel">Verschieben abbrechen</string>
   <!-- Title of wizard step prompting user to start data migration [CHAR LIMIT=NONE] -->
-  <string name="storage_wizard_slow_body">Die <xliff:g id="NAME_0">^1</xliff:g> ist offenbar langsam. \n\nDu kannst fortfahren, aber hierher verschobene Apps bleiben eventuell hängen und Datenübertragungen können lange dauern. \n\nFür eine bessere Leistung solltest du eine schnellere <xliff:g id="NAME_1">^1</xliff:g> nutzen.</string>
+  <string name="storage_wizard_slow_body">Die <xliff:g id="NAME_0">^1</xliff:g> ist offenbar langsam. \n\nSie können fortfahren, aber hierher verschobene Apps bleiben eventuell hängen und Datenübertragungen können lange dauern. \n\nZur Leistungsverbesserung sollten Sie eine schnellere <xliff:g id="NAME_1">^1</xliff:g> nutzen.
+</string>
   <!-- Phone info screen, section titles: -->
   <string name="battery_status_title">Akkustatus</string>
   <!-- Phone info screen, section titles: -->
@@ -2254,7 +2258,7 @@
   <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc" product="default">\"Hierdurch werden alle Daten aus dem \"<b>"internen Speicher"</b>\" Ihres Telefons gelöscht, u. a.\n\n\"<li>"Ihr Google-Konto"</li>\n<li>"System- und App-Daten sowie entsprechende Einstellungen"</li>\n<li>"Heruntergeladene Apps"</li></string>
   <!-- SD card & phone storage settings screen, instructions and list of current accounts.  The list of accounts follows this text[CHAR LIMIT=NONE] -->
-  <string name="master_clear_accounts" product="default">"\n\n\"Du bist zurzeit in folgenden Konten angemeldet:\n\""</string>
+  <string name="master_clear_accounts" product="default">"\n\n\"Sie sind momentan in folgenden Konten angemeldet:\n\""</string>
   <!-- SD card & phone storage settings screen, notification if other users are present on the device [CHAR LIMIT=NONE] -->
   <string name="master_clear_other_users_present" product="default">"\n\n\"Auf diesem Gerät sind andere Nutzer vorhanden.\n\""</string>
   <!-- SD card & phone storage settings screen, list of items in user data storage (USB storage or SD card) that will be erased during this operation [CHAR LIMIT=NONE] -->
@@ -2371,7 +2375,7 @@
   <!-- Ask user to insert a SIM card [CHAR_ LIMIT=50]-->
   <string name="mobile_insert_sim_card" translatable="true">Lege die SIM ein und starte das Gerät neu.</string>
   <!-- Ask user to connect to the internet [CHAR_ LIMIT=50]-->
-  <string name="mobile_connect_to_internet" translatable="true">Bitte stelle eine Verbindung zum Internet her.</string>
+  <string name="mobile_connect_to_internet" translatable="true">Bitte eine Verbindung zum Internet herstellen</string>
   <!-- Security & location settings screen, section header for settings relating to location -->
   <string name="location_title">Mein Standort</string>
   <!-- Title for managed profile preference category [CHAR_LIMIT=25] -->
@@ -2496,7 +2500,7 @@
   <!-- About phone settings, Safety Legal information setting option name and title of dialog box holding safety legal info -->
   <string name="settings_safetylegal_activity_title">Sicherheitsinformationen</string>
   <!-- About phone settings screen, Safety legal dialog message when data network is not connected -->
-  <string name="settings_safetylegal_activity_unreachable">Es ist keine Datenverbindung vorhanden. Rufe %s von einem beliebigen, mit dem Internet verbundenen Computer auf, um diese Informationen jetzt anzuzeigen.</string>
+  <string name="settings_safetylegal_activity_unreachable">Es ist keine Datenverbindung vorhanden. Rufen Sie %s von einem beliebigen, mit dem Internet verbundenen Computer auf, um diese Informationen jetzt anzuzeigen.</string>
   <!-- About phone settings screen, Safety Legal dialog title until the link is fully loaded -->
   <string name="settings_safetylegal_activity_loading">Wird geladen...</string>
   <!-- Lock Pattern settings -->
@@ -2554,7 +2558,7 @@
   <!-- Security & location settings screen, change unlock pattern screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
   <string name="lockpattern_recording_intro_footer">Menütaste drücken, um die Hilfe aufzurufen</string>
   <!-- Security & location settings screen, change unlock pattern screen instruction on top of screen while drawing pattern -->
-  <string name="lockpattern_recording_inprogress">Lasse die Tasten los, wenn du fertig bist.</string>
+  <string name="lockpattern_recording_inprogress">Tasten loslassen, wenn Sie fertig sind</string>
   <!-- Security & location settings screen, change unlock pattern screen instruction on top of screen if user doesn't connect enough dots -->
   <string name="lockpattern_recording_incorrect_too_short">Verbinde mindestens <xliff:g id="NUMBER">%d</xliff:g> Punkte. Bitte versuche es erneut.</string>
   <!-- Security & location settings screen, change unlock pattern screen message on top of screen after drawing pattern -->
@@ -2615,9 +2619,9 @@
   <!-- Applications settings screen, setting check box summary.  This is the summary for "Unknown sources" checkbox  -->
   <string name="install_unknown_applications">Installation von Apps aus unbekannten Quellen zulassen</string>
   <!-- Applications settings screen, message text of alert that appears if user selects the "Unknown sources" check box -->
-  <string name="install_all_warning" product="tablet">Apps mit unbekannter Herkunft können gefährlich für dein Tablet und deine personenbezogenen Daten sein. Du erklärst dich damit einverstanden, dass du die Verantwortung für alle Schäden an deinem Tablet und jegliche Datenverluste trägst, die aus der Verwendung dieser Apps entstehen können.</string>
+  <string name="install_all_warning" product="tablet">Apps mit unbekannter Herkunft können gefährlich für Ihr Tablet und Ihre personenbezogenen Daten sein. Sie erklären sich damit einverstanden, dass allein Sie für alle Schäden am Tablet und jegliche Datenverluste, die bei der Verwendung dieser Apps entstehen können, verantwortlich sind.</string>
   <!-- Applications settings screen, message text of alert that appears if user selects the "Unknown sources" check box -->
-  <string name="install_all_warning" product="default">Apps mit unbekannter Herkunft können gefährlich für dein Telefon und deine personenbezogenen Daten sein. Du erklärst dich damit einverstanden, dass du die Verantwortung für alle Schäden an deinem Telefon und jegliche Datenverluste trägst, die aus der Verwendung dieser Apps entstehen können.</string>
+  <string name="install_all_warning" product="default">Apps mit unbekannter Herkunft können gefährlich für Ihr Telefon und Ihre personenbezogenen Daten sein. Sie erklären sich damit einverstanden, dass allein Sie für alle Schäden am Telefon und jegliche Datenverluste, die bei der Verwendung dieser Apps entstehen können, verantwortlich sind.</string>
   <!-- Applications settings screen, setting check box title. If checked, applications show more settings options. -->
   <string name="advanced_settings">Erweiterte Einstellungen</string>
   <!-- Applications settings screen, setting check box summary.  This is the summary for "Advanced settings" checkbox  -->
@@ -2671,15 +2675,15 @@
   <!-- Manage applications, restore updated system application to factory version -->
   <string name="app_factory_reset">Updates deinstallieren</string>
   <!-- Manage applications, individual application info screen, screen, message text under Launch by default heading. This is present if the app is set as a default for some actions. -->
-  <string name="auto_launch_enable_text">Du hast diese App für einige Aktionen als Standard festgelegt.</string>
+  <string name="auto_launch_enable_text">Sie haben diese App für einige Aktionen als Standard festgelegt.</string>
   <!-- Manage applications, individual application info screen, screen, message text under Launch by default heading. This is present if the app was given user permission to create widgets. -->
-  <string name="always_allow_bind_appwidgets_text">Du hast dieser App das Erstellen von Widgets und den Zugriff auf deine Daten erlaubt.</string>
+  <string name="always_allow_bind_appwidgets_text">Sie haben dieser App erlaubt, Widgets zu erstellen und auf deren Daten zuzugreifen.</string>
   <!-- Manage applications, individual application screen, text under Launch by default heading if the app is NOT a default for actions -->
   <string name="auto_launch_disable_text">Kein Standard</string>
   <!-- Manage applications, individual application screen, button label under Launch by default heading.  This is used to clear any default actions that may be assigned to this app.  -->
   <string name="clear_activities">Aktionen auf Standard zurücksetzen</string>
   <!-- Manage applications, individual application info screen, screen, message text under screen compatibility heading -->
-  <string name="screen_compatibility_text">Möglicherweise ist diese App nicht für deinen Bildschirm ausgelegt. Hier kannst du festlegen, wie sie an deinen Bildschirm angepasst wird.</string>
+  <string name="screen_compatibility_text">Möglicherweise ist diese App nicht für Ihren Bildschirm ausgelegt. Hier können Sie festlegen, wie sie an Ihren Bildschirm angepasst wird.</string>
   <!-- Manage applications, individual application screen, checkbox to control asking for compatibility mode.  -->
   <string name="ask_compatibility">Beim Start fragen</string>
   <!-- Manage applications, individual application screen, checkbox to control compatibility mode.  -->
@@ -2792,7 +2796,7 @@
   <string name="computing_size">Berechnung...</string>
   <string name="invalid_size_value">Paketgröße konnte nicht berechnet werden.</string>
   <!-- String displayed when list is empty -->
-  <string name="empty_list_msg">Du hast keine Apps von Drittanbietern installiert.</string>
+  <string name="empty_list_msg">Es sind keine Apps von Drittanbietern installiert.</string>
   <!-- Manage applications, version string displayed in app snippet -->
   <string name="version_text">Version <xliff:g id="VERSION_NUM">%1$s</xliff:g></string>
   <!-- Manage applications, text for Move button -->
@@ -2829,15 +2833,16 @@
   <!-- [CHAR LIMIT=30] Manage applications, label for option to disable app -->
   <string name="app_disable_dlg_positive">App deaktivieren</string>
   <!-- [CHAR LIMIT=200] Manage applications, text for dialog when disabling apps -->
-  <string name="app_disable_dlg_text">Wenn du diese App deaktivierst, funktionieren andere Apps möglicherweise nicht mehr ordnungsgemäß.</string>
+  <string name="app_disable_dlg_text">Wenn Sie diese App deaktivieren, funktionieren andere Apps möglicherweise nicht mehr ordnungsgemäß.</string>
   <!-- [CHAR LIMIT=NONE] Manage applications, title for dialog when disabling updated apps -->
   <string name="app_special_disable_dlg_title">Daten löschen und App deaktivieren?</string>
   <!-- [CHAR LIMIT=NONE] Manage applications, text for dialog when disabling update apps -->
-  <string name="app_special_disable_dlg_text">Wenn du diese App deaktivierst, funktionieren andere Apps möglicherweise nicht mehr ordnungsgemäß. Außerdem werden deine Daten gelöscht.</string>
+  <string name="app_special_disable_dlg_text">Wenn Sie diese App deaktivieren, funktionieren andere Apps möglicherweise nicht mehr ordnungsgemäß. Außerdem werden Ihre Daten gelöscht.</string>
   <!-- [CHAR LIMIT=30] Manage applications, title for dialog when disabling notifications for an app -->
   <string name="app_disable_notifications_dlg_title">Benachrichtigungen deaktivieren?</string>
   <!-- [CHAR LIMIT=200] Manage applications, text for dialog when disabling notifications for an app -->
-  <string name="app_disable_notifications_dlg_text">Wenn du die Benachrichtigungen für diese App deaktivierst, verpasst du eventuell wichtige Warnmeldungen und Updates.</string>
+  <string name="app_disable_notifications_dlg_text">
+Wenn Sie die Benachrichtigungen für diese App deaktivieren, verpassen Sie eventuell wichtige Warnmeldungen und Updates.    </string>
   <!-- App Ops Settings -->
   <!-- [CHAR LIMIT=NONE] App ops settings title, on main settings screen. If clicked, the user is taken to a settings screen for app operations -->
   <string name="app_ops_settings">App-Vorgänge</string>
@@ -2974,7 +2979,7 @@
   <string name="ime_security_warning">Diese Eingabemethode kann den gesamten von dir eingegebenen Text erfassen, einschließlich personenbezogener Daten wie Passwörter und Kreditkartennummern. Sie ist Teil der App \"<xliff:g id="IME_APPLICATION_NAME">%1$s</xliff:g>\". Möchtest du diese Eingabemethode verwenden?</string>
   <!-- Warning message about security implications of enabling a spell checker, displayed as a dialog
          message when the user selects to enable a spell checker. -->
-  <string name="spellchecker_security_warning">Diese Rechtschreibprüfung kann den gesamten von dir eingegebenen Text erfassen, einschließlich personenbezogener Daten wie Passwörter und Kreditkartennummern. Sie ist Teil der App \"<xliff:g id="SPELLCHECKER_APPLICATION_NAME">%1$s</xliff:g>\". Möchtest du die Rechtschreibprüfung verwenden?</string>
+  <string name="spellchecker_security_warning">Diese Rechtschreibprüfung kann den gesamten eingegebenen Text erfassen, einschließlich personenbezogener Daten wie Passwörter und Kreditkartennummern. Sie ist Teil der App \"<xliff:g id="SPELLCHECKER_APPLICATION_NAME">%1$s</xliff:g>\". Möchten Sie die Rechtschreibprüfung verwenden?</string>
   <!-- Image button description for spell checker quick settings. -->
   <string name="spellchecker_quick_settings">Einstellungen</string>
   <!-- Image button description for spell checker language. -->
@@ -3037,7 +3042,7 @@
   <!-- User dictionary settings. The title of the context menu item to delete the current word -->
   <string name="user_dict_settings_context_menu_delete_title">Löschen</string>
   <!-- User dictionary settings. The text to show when there are no user-defined words in the dictionary  [CHAR LIMIT=200] -->
-  <string name="user_dict_settings_empty_text">Es sind noch keine Wörter in deinem Wörterbuch vorhanden. Du kannst Wörter hinzufügen, indem du das \"+\"-Symbol berührst.</string>
+  <string name="user_dict_settings_empty_text">Es sind noch keine Wörter in Ihrem Wörterbuch vorhanden. Sie können Wörter hinzufügen, indem Sie das \"+\"-Symbol berühren.</string>
   <!-- User dictionary settings. The list item to choose to insert a word into the user dictionary for all languages -->
   <string name="user_dict_settings_all_languages">Für alle Sprachen</string>
   <!-- User dictionary settings. The text to show for the option that shows the entire list of supported locales to choose one [CHAR LIMIT=30] -->
@@ -3176,7 +3181,7 @@
   <string name="mobile_data_always_on_summary">Die mobile Datennutzung bleibt auch dann aktiviert, wenn WLAN aktiviert ist. Dies dient einem schnelleren Wechsel zwischen Netzwerken.</string>
   <string name="adb_warning_title">USB-Debugging zulassen?</string>
   <!-- Warning text to user about the implications of enabling USB debugging -->
-  <string name="adb_warning_message">USB-Debugging ist nur für Entwicklungszwecke vorgesehen. Damit kannst du Daten zwischen deinem Computer und deinem Gerät kopieren, Apps auf deinem Gerät ohne Benachrichtigung installieren und Protokolldaten lesen.</string>
+  <string name="adb_warning_message">USB-Debugging ist nur für Entwicklungszwecke vorgesehen. Damit können Sie Daten zwischen einem Computer und dem Gerät kopieren, Apps auf dem Gerät ohne Benachrichtigung installieren und Protokolldaten lesen.</string>
   <!-- Message of dialog confirming that user wants to revoke access to adb from all computers they have authorized -->
   <string name="adb_keys_warning_message">Zugriff auf USB-Debugging für alle zuvor autorisierten Computer aufheben?</string>
   <!-- Title of warning dialog about the implications of enabling developer settings -->
@@ -3263,7 +3268,7 @@
   <!-- Title for the accessibility preference screen to enable screen magnification. [CHAR LIMIT=35] -->
   <string name="accessibility_screen_magnification_title">Vergrößerungsbewegungen</string>
   <!-- Summary for the accessibility preference screen to enable screen magnification. [CHAR LIMIT=none] -->
-  <string name="accessibility_screen_magnification_summary">Wenn diese Funktion aktiviert ist, kannst du heranzoomen und herauszoomen, indem du dreimal auf den Bildschirm tippst.\n\nWenn du herangezoomt hast, kannst du:\n\"<ul><li>"Schwenken: mindestens 2 Finger über den Bildschirm ziehen"</li>\n<li>"Zoomstufe anpassen: mindestens 2 Finger zusammen- oder auseinanderziehen"</li></ul>\n\n\"Du kannst auch das, was sich unter deinem Finger befindet, vorübergehend vergrößern, indem du dreimal tippst und hältst. In diesem vergrößerten Zustand kannst du deinen Finger ziehen, um verschiedene Bereiche des Bildschirms zu erkunden. Hebe deinen Finger an, um zum vorherigen Zustand zurückzukehren.\n\nHinweis: Das dreimalige Tippen zur Vergrößerung funktioniert überall außer in der Tastatur und in der Navigationsleiste.</string>
+  <string name="accessibility_screen_magnification_summary">Wenn diese Funktion aktiviert ist, können Sie heran- und herauszoomen, indem Sie dreimal auf den Bildschirm tippen.\n\nNach Heranzoomen, können Sie:\n\"<ul><li>"Schwenken: Mindestens 2 Finger über den Bildschirm ziehen"</li>\n<li>"Zoomstufe anpassen: Mindestens 2 Finger zusammen- oder auseinanderziehen"</li></ul>\n\n\"Sie können auch das, was sich unter dem Finger befindet, vorübergehend vergrößern, indem Sie dreimal tippen und halten. In diesem vergrößerten Zustand können Sie Ihren Finger über den Bildschirm ziehen, um verschiedene Bereiche zu erkunden. Um zum vorherigen Zustand zurückzukehren, heben Sie den Finger.\n\nHinweis: Das dreimalige Tippen zur Vergrößerung funktioniert überall außer in der Tastatur und in der Navigationsleiste.</string>
   <!-- Title for the preference to enable the global geture that turns on accessibility. [CHAR LIMIT=35] -->
   <string name="accessibility_global_gesture_preference_title">Kurzbefehl für Bedienungshilfen</string>
   <!-- Summary for the preference to enable the global geture that turns on accessibility (on state). [CHAR LIMIT=60] -->
@@ -3271,7 +3276,7 @@
   <!-- Summary for the preference screen to enable the global geture that turns on accessibility (off state). [CHAR LIMIT=35] -->
   <string name="accessibility_global_gesture_preference_summary_off">Aus</string>
   <!--  Description for the preference screen to enable the global geture taht turns on accessibility. [CHAR LIMIT=none] -->
-  <string name="accessibility_global_gesture_preference_description">Wenn diese Funktion aktiviert ist, kannst du Bedienungshilfen schnell in zwei Schritten aktivieren:\n\nSchritt 1: Drücke und halte die Ein-/Aus-Taste, bis du einen Ton hörst oder eine Vibration spürst.\n\nSchritt 2: Berühre und halte mit zwei Fingern, bis du eine Audiobestätigung hörst.\n\nFalls das Gerät mehrere Nutzer hat, werden die Bedienungshilfen durch Verwendung dieser Verknüpfung in der Bildschirmsperre so lange aktiviert, bis das Gerät entsperrt ist.</string>
+  <string name="accessibility_global_gesture_preference_description">Wenn diese Funktion aktiviert ist, können Sie Bedienungshilfen schnell in zwei Schritten aktivieren:\n\nSchritt 1: Die Ein-/Aus-Taste drücken und halten, bis ein Ton zu hören oder eine Vibration zu spüren ist.\n\nSchritt 2: Mit zwei Fingern berühren und halten, bis eine Audiobestätigung zu hören ist.\n\nFalls das Gerät mehrere Nutzer hat, werden die Bedienungshilfen durch Verwendung dieser Verknüpfung auf dem Sperrbildschirm so lange aktiviert, bis das Gerät entsperrt wird.</string>
   <!-- Title for the accessibility preference to enable large text. [CHAR LIMIT=35] -->
   <string name="accessibility_toggle_large_text_preference_title">Großer Text</string>
   <!-- Title for the accessibility preference to high contrast text. [CHAR LIMIT=35] -->
@@ -3392,20 +3397,20 @@
   <string name="touch_filtered_warning">Ihre Eingabe wird von \"Einstellungen\" nicht erkannt, weil eine App die Berechtigungsanfrage verdeckt.</string>
   <!-- Warning that the device data will not be encrypted with password or PIN if
         enabling an accessibility service and there is a secure lock setup. [CHAR LIMIT=NONE] -->
-  <string name="enable_service_encryption_warning">Wenn du <xliff:g id="SERVICE">%1$s</xliff:g> aktivierst, verwendet dein Gerät nicht die Displaysperre, um die Datenverschlüsselung zu verbessern.</string>
+  <string name="enable_service_encryption_warning">Wenn Sie <xliff:g id="SERVICE">%1$s</xliff:g> aktivieren, verwendet Ihr Gerät nicht die Bildschirmsperre, um die Datenverschlüsselung zu verbessern.</string>
   <!-- Warning that the device data will not be encrypted with password or PIN if
          choosing a secure lock and there is an enabled accessibility service. [CHAR LIMIT=NONE] -->
-  <string name="secure_lock_encryption_warning">Da du eine Bedienungshilfe aktiviert hast, verwendet dein Gerät nicht die Displaysperre, um die Datenverschlüsselung zu verbessern.</string>
+  <string name="secure_lock_encryption_warning">Da eine Bedienungshilfe aktiviert ist, verwendet Ihr Gerät keine Bildschirmsperre, um die Datenverschlüsselung zu verbessern.</string>
   <!-- Message to the user to enter his pattern before enabling an accessibility service. [CHAR LIMIT=NONE] -->
-  <string name="enable_service_pattern_reason">Da die Aktivierung von <xliff:g id="SERVICE">%1$s</xliff:g> Auswirkungen auf die Datenverschlüsselung hat, musst du dein Muster bestätigen.</string>
+  <string name="enable_service_pattern_reason">Da die Aktivierung von <xliff:g id="SERVICE">%1$s</xliff:g> Auswirkungen auf die Datenverschlüsselung hat, müssen Sie Ihr Muster eingeben.    </string>
   <!-- Message to the user to enter his PIN before enabling an accessibility service. [CHAR LIMIT=NONE] -->
-  <string name="enable_service_pin_reason">Da die Aktivierung von <xliff:g id="SERVICE">%1$s</xliff:g> Auswirkungen auf die Datenverschlüsselung hat, musst du deine PIN bestätigen.</string>
+  <string name="enable_service_pin_reason">Da die Aktivierung von <xliff:g id="SERVICE">%1$s</xliff:g> Auswirkungen auf die Datenverschlüsselung hat, müssen Sie Ihre PIN eingeben.    </string>
   <!-- Message to the user to enter his password before enabling an accessibility service. [CHAR LIMIT=NONE] -->
-  <string name="enable_service_password_reason">Da die Aktivierung von <xliff:g id="SERVICE">%1$s</xliff:g> Auswirkungen auf die Datenverschlüsselung hat, musst du dein Passwort bestätigen.</string>
+  <string name="enable_service_password_reason">Da die Aktivierung von <xliff:g id="SERVICE">%1$s</xliff:g> Auswirkungen auf die Datenverschlüsselung hat, müssen Sie Ihr Passwort eingeben.    </string>
   <!-- Title for the capability of an accessibility service to receive events and keys. -->
   <string name="capability_title_receiveAccessibilityEvents">Ihre Aktionen beobachten</string>
   <!-- Description for the capability of an accessibility service to receive events and keys. -->
-  <string name="capability_desc_receiveAccessibilityEvents">Erhalte Benachrichtigungen, wenn du mit der App interagierst.</string>
+  <string name="capability_desc_receiveAccessibilityEvents">Benachrichtigungen erhalten, wenn Sie sich mit einer App beschäftigen.</string>
   <!-- Title for a warning about disabling an accessibility service. [CHAR LIMIT=NONE] -->
   <string name="disable_service_title"><xliff:g id="SERVICE">%1$s</xliff:g> beenden?</string>
   <!-- Message for a warning about disabling accessibility service. [CHAR LIMIT=NONE] -->
@@ -3625,9 +3630,9 @@
   <!-- Description for cell radio detail -->
   <string name="battery_desc_radio">Akkuverbrauch durch Mobilfunk</string>
   <!-- Suggestion to switch to airplane mode to save power -->
-  <string name="battery_sugg_radio">Flugmodus zum Energiesparen in Gebieten ohne Mobilfunkabdeckung</string>
+  <string name="battery_sugg_radio">In Flugmodus umschalten, um in Gebieten ohne Mobilfunkabdeckung Energie zu sparen</string>
   <!-- [CHAR_LIMIT=NONE] Description for power consumed by the flashlight -->
-  <string name="battery_desc_flashlight">Akkuverbrauch durch Taschenlampe</string>
+  <string name="battery_desc_flashlight">Akkuverbrauch durch Blitzlicht</string>
   <!-- [CHAR_LIMIT=NONE] Description for power consumed by the camera -->
   <string name="battery_desc_camera">Akkuverbrauch durch Kamera</string>
   <!-- Description for power consumed by display -->
@@ -3802,7 +3807,7 @@
   <!-- [CHAR_LIMIT=NONE] Warning message about security implications of enabling a
          voice interaction service, displayed as a dialog
          message when the user selects to enable a service. -->
-  <string name="voice_interaction_security_warning">Dieser Spracheingabedienst kann Spracheingaben jederzeit überwachen und Anwendungen, die Sprachbefehle unterstützen, für dich steuern. Er wird von der Anwendung <xliff:g id="VOICE_INPUT_SERVICE_APP_NAME">%s</xliff:g> bereitgestellt. Möchtest du diesen Dienst aktivieren?</string>
+  <string name="voice_interaction_security_warning">Dieser Spracheingabedienst kann Spracheingaben jederzeit überwachen und Anwendungen, die Sprachbefehle unterstützen, für Sie steuern. Er wird von der Anwendung <xliff:g id="VOICE_INPUT_SERVICE_APP_NAME">%s</xliff:g> bereitgestellt. Möchten Sie diesen Dienst aktivieren?</string>
   <!-- Text-To-Speech (TTS) settings -->
   <!-- Name of the TTS package as listed by the package manager. -->
   <string name="tts_settings">Text-in-Sprache</string>
@@ -3854,7 +3859,7 @@
   <string name="tts_engine_error_reselect">Anderes Modul auswählen</string>
   <!-- Warning message about security implications of enabling a TTS engine, displayed as a dialog
          message when the user selects to enable an engine. -->
-  <string name="tts_engine_security_warning">Dieses Sprachsynthesemodul kann den gesamten gesprochenen Text erfassen, einschließlich personenbezogener Daten wie Passwörter und Kreditkartennummern. Es ist Teil der App \"<xliff:g id="TTS_PLUGIN_ENGINE_NAME">%s</xliff:g>\". Möchtest du dieses Sprachsynthesemodul aktivieren?</string>
+  <string name="tts_engine_security_warning">Dieses Sprachsynthesemodul kann den gesamten gesprochenen Text erfassen, einschließlich personenbezogener Daten wie Passwörter und Kreditkartennummern. Es ist Teil der App \"<xliff:g id="TTS_PLUGIN_ENGINE_NAME">%s</xliff:g>\". Möchten Sie dieses Sprachsynthesemodul aktivieren?</string>
   <!-- Warning message about required internet conectivity for TTS synthesis, displayed as a dialog
          message when the user selects to play an example for network only locale and there's no internet connectivity. -->
   <string name="tts_engine_network_required">Für diese Sprache ist zur Text-in-Sprache-Ausgabe eine aktive Netzwerkverbindung erforderlich.</string>
@@ -3989,9 +3994,9 @@
   <!-- Error message [CHAR LIMIT=NONE] -->
   <string name="credentials_wrong_password">Falsches Passwort</string>
   <!-- Error message [CHAR LIMIT=NONE] -->
-  <string name="credentials_reset_warning">Falsches Passwort. Du hast noch einen Versuch, bevor dein Anmeldedatenspeicher gelöscht wird.</string>
+  <string name="credentials_reset_warning">Falsches Passwort. Sie haben noch einen Versuch, bevor der Anmeldedatenspeicher gelöscht wird.</string>
   <!-- Error message [CHAR LIMIT=NONE] -->
-  <string name="credentials_reset_warning_plural">Falsches Passwort. Du hast noch <xliff:g id="NUMBER">%1$d</xliff:g> Versuche, bevor dein Anmeldedatenspeicher gelöscht wird.</string>
+  <string name="credentials_reset_warning_plural">Falsches Passwort. Sie haben noch <xliff:g id="NUMBER">%1$d</xliff:g> Versuche, bevor der Anmeldedatenspeicher gelöscht wird.</string>
   <!-- Toast message [CHAR LIMIT=30] -->
   <string name="credentials_erased">Speicher wurde gelöscht.</string>
   <!-- Toast message [CHAR LIMIT=30] when credential storage containing private keys and certificates could not be erased (opposite of string credentials_erased) -->
@@ -3999,7 +4004,7 @@
   <!-- Toast message [CHAR LIMIT=30] -->
   <string name="credentials_enabled">Der Anmeldeinformationsspeicher ist aktiviert.</string>
   <!-- Description of dialog to explain that a lock screen password is required to use credential storage [CHAR LIMIT=NONE] -->
-  <string name="credentials_configure_lock_screen_hint">Zur Verwendung des Anmeldeinformationsspeichers musst du eine PIN oder ein Passwort für die Displaysperre festlegen.</string>
+  <string name="credentials_configure_lock_screen_hint">Zur Verwendung des Anmeldedatenspeichers müssen Sie eine PIN oder ein Passwort für den Sperrbildschirm festlegen.</string>
   <!-- Title of Usage Access preference item [CHAR LIMIT=30] -->
   <string name="usage_access_title">Apps mit Nutzungsdatenzugriff</string>
   <!-- Sound settings screen, setting check box label -->
@@ -4049,7 +4054,7 @@
   <!-- Dialog title for confirmation to erase full backup data from server -->
   <string name="fullbackup_erase_dialog_message">Soll das Sichern von Gerätedaten, wie z. B WLAN-Passwörtern und Anrufliste, sowie App-Daten, wie z. B. Einstellungen und von Apps gespeicherten Dateien, beendet werden und sollen alle Kopien bei Google Drive gelöscht werden?</string>
   <!-- Summary for explanation of what full app data backup means. Manufacturers may wish to overlay this resource with their own text  -->
-  <string name="fullbackup_data_summary">Automatische Remote-Sicherung von Gerätedaten wie WLAN-Passwörtern und Anrufverlauf und App-Daten, z. B. Einstellungen und von Apps gespeicherte Dateien\n\nWenn du die automatische Sicherung aktivierst, werden Geräte- und App-Daten regelmäßig an einem Remote-Speicherort gespeichert. Bei App-Daten kann es sich um alle Daten handeln, die von einer App entsprechend den Entwicklereinstellungen gespeichert wurden, einschließlich potenziell sensibler Daten wie Kontakten, Nachrichten und Fotos.</string>
+  <string name="fullbackup_data_summary">Automatische Remote-Sicherung von Gerätedaten (wie WLAN-Passwörter und Anrufverlauf) und App-Daten (z. B. Einstellungen und von Apps gespeicherte Dateien).\n\nBei aktivierter, automatischer Sicherung werden Geräte- und App-Daten regelmäßig an einem Remote-Speicherort gespeichert. Bei App-Daten kann es sich um alle Daten handeln, die von einer App entsprechend den Entwicklereinstellungen gespeichert wurden, einschließlich potenziell sensibler Daten wie Kontakten, Nachrichten und Fotos.</string>
   <!-- Device admin settings screen -->
   <!-- Device admin settings activity title -->
   <string name="device_admin_settings_title">Einstellungen für die Geräteverwaltung</string>
@@ -4082,7 +4087,7 @@
   <!-- Title for screen to set a profile owner [CHAR LIMIT=40] -->
   <string name="profile_owner_add_title">Profilverwaltung aktivieren?</string>
   <!-- Warning when trying to add a profile owner admin after setup has completed. [CHAR LIMIT=none] -->
-  <string name="adding_profile_owner_warning">Wenn du fortfährst, wird dein Nutzer von deinem Administrator verwaltet. Der Administrator kann möglicherweise zusätzlich zu deinen personenbezogenen Daten auch die damit verbundenen Daten speichern.\n\nDein Administrator kann die mit diesem Nutzer verbundenen Einstellungen, Zugriffsrechte, Apps und Daten überwachen und verwalten, einschließlich der Netzwerkaktivitäten und der Standortinformationen deines Geräts.</string>
+  <string name="adding_profile_owner_warning">Wenn Sie fortfahren, wird Ihr Nutzer von Ihrem Administrator verwaltet, der, neben Ihren personenbezogenen Daten, auch die dem Nutzer zugeordneten Daten speichern kann.\n\nDer Administrator kann die mit diesem Nutzer verbundenen Einstellungen, Zugriffsrechte, Apps und Daten überwachen und verwalten, einschließlich der Netzwerkaktivitäten und der Standortinformationen Ihres Geräts.</string>
   <!-- Name to assign to a Network Access Point that was saved without a name -->
   <string name="untitled_apn">Unbenannt</string>
   <string name="sound_category_sound_title">Allgemein</string>
@@ -4153,7 +4158,7 @@
   <string name="wifi_setup_status_scanning">Netzwerke werden überprüft...</string>
   <!-- Message shown above available network when there's no connected network.
          Used in Wifi Setup For Setup Wizard with XL screen. -->
-  <string name="wifi_setup_status_select_network">Berühre ein Netzwerk, um eine Verbindung herzustellen.</string>
+  <string name="wifi_setup_status_select_network">Netzwerk antippen, um eine Verbindung herzustellen.</string>
   <!-- Message shown above available networks when a user clicked one of available
          networks and the UI is showing one possible existing network.
          Used in Wifi Setup. -->
@@ -4185,11 +4190,11 @@
   <!-- Message shown when users select EAP in Wi-Fi settings for SetupWizard,
          saying EAP can't be configured in SetupWizard flow.
          [CHAR LIMIT=NONE] -->
-  <string name="wifi_setup_eap_not_supported">Während der Einrichtung kannst du keine EAP-WLAN-Verbindung konfigurieren. Du kannst dies anschließend in den Einstellungen unter \"Drahtlos &amp;amp Netzwerke\" vornehmen.</string>
+  <string name="wifi_setup_eap_not_supported">Während der Einrichtung kann keine EAP-WLAN-Verbindung konfiguriert werden. Sie können dies anschließend in den Einstellungen unter \"Drahtlos &amp; amp Netzwerke\" vornehmen.</string>
   <!-- Message shown when the device is connecting a network [CHAR LIMIT=NONE] -->
   <string name="wifi_setup_description_connecting">Der Verbindungsaufbau kann einige Minuten dauern...</string>
   <!-- Message shown when the device is connected to a network [CHAR LIMIT=NONE] -->
-  <string name="wifi_setup_description_connected">Berühre \"<b>"Weiter"</b>\", um mit der Einrichtung fortzufahren.\n\nTippe auf \"<b>"Zurück"</b>\", um eine Verbindung zu einem anderen WLAN-Netzwerk herzustellen.</string>
+  <string name="wifi_setup_description_connected">\"<b>"Weiter"</b>\" berühren, um mit der Einrichtung fortzufahren.\n\nAuf \"<b>"Zurück"</b>\" tippen, um eine Verbindung zu einem anderen WLAN-Netzwerk herzustellen.</string>
   <!-- Do not translate. This is a stub which will be removed soon. -->
   <!-- Content description of the enabled sync icon for accessibility. [CHAR LIMIT=NONE] -->
   <string name="accessibility_sync_enabled">Synchronisierung aktiviert</string>
@@ -4252,7 +4257,7 @@
   <!-- Data synchronization settings screen, checkbox setting option name -->
   <string name="sync_contacts">Kontakte</string>
   <!-- Message introducing the user to Google Sync. -->
-  <string name="sync_plug"><font fgcolor="#ffffffff">\"Willkommen bei Google Sync!\"</font>\n\"Mit dieser Funktion von Google kannst du deine Daten synchronisieren, um auf deine Kontakte, Termine und vieles mehr zuzugreifen - wo immer du auch bist!\"</string>
+  <string name="sync_plug"><font fgcolor="#ffffffff">\"Willkommen bei Google Sync!\"</font>\n\"Google\'s Lösung zur Datensynchronisation, um von überall auf Ihre Kontakte, Termine und vieles mehr zugreifen zu können.\"    </string>
   <!-- Header title for those settings relating to application syncing. -->
   <string name="header_application_sync_settings">Einstellungen für die App-Synchronisierung</string>
   <!-- Header for data and synchronization -->
@@ -4531,19 +4536,19 @@
   <!-- Title of dialog shown when user restricts background data usage of a specific application. [CHAR LIMIT=48] -->
   <string name="data_usage_app_restrict_dialog_title">Hintergrunddaten beschränken?</string>
   <!-- Body of dialog shown when user restricts background data usage of a specific application. [CHAR LIMIT=NONE] -->
-  <string name="data_usage_app_restrict_dialog">Wenn nur Mobilfunknetze verfügbar sind, kann diese Funktion die ordnungsgemäße Funktion von Apps behindern, die Hintergrunddaten benötigen.\n\nGeeignetere Steuerelemente für die Datennutzung findest du in den Einstellungen der jeweiligen App.</string>
+  <string name="data_usage_app_restrict_dialog">Wenn nur Mobilfunknetze verfügbar sind, kann diese Funktion die ordnungsgemäße Funktion von Apps behindern, die Hintergrunddaten benötigen.\n\nGeeignetere Steuerelemente für die Datennutzung finden Sie in den Einstellungen der jeweiligen App.</string>
   <!-- Body of dialog shown when user attempts to restrict background data before a network data limit has been set. [CHAR LIMIT=NONE] -->
-  <string name="data_usage_restrict_denied_dialog">Hintergrunddaten können nur beschränkt werden, wenn du ein Mobilfunklimit festgelegt hast.</string>
+  <string name="data_usage_restrict_denied_dialog">Hintergrunddaten können nur beschränkt werden, wenn ein Mobilfunk-Datenlimit festgelegt ist.</string>
   <!--  Title of dialog shown when user enables global auto sync [CHAR LIMIT=32] -->
   <string name="data_usage_auto_sync_on_dialog_title">Automatische Synchronisierung aktivieren?</string>
   <!--  Body of dialog shown when user enables global auto sync, for tablet [CHAR LIMIT=none] -->
-  <string name="data_usage_auto_sync_on_dialog" product="tablet">Änderungen, die du im Web an deinem Konto vornimmst, werden automatisch auf dein Tablet kopiert.\n\nBei manchen Konten werden ggf. auch automatisch alle Änderungen, die du auf dem Tablet vornimmst, ins Web kopiert. Das ist die übliche Synchronisierungsfunktion eines Google-Kontos.</string>
+  <string name="data_usage_auto_sync_on_dialog" product="tablet">Änderungen, die Sie im Web an Ihrem Konto vornehmen, werden automatisch auf Ihr Tablet kopiert.\n\nBei manchen Konten werden ggf. auch automatisch alle Änderungen, die auf dem Tablet stattfinden, ins Web kopiert. Das ist die übliche Synchronisierungsfunktion eines Google-Kontos.</string>
   <!--  Body of dialog shown when user enables global auto sync [CHAR LIMIT=none] -->
-  <string name="data_usage_auto_sync_on_dialog" product="default">Änderungen, die du im Web an deinem Konto vornimmst, werden automatisch auf dein Telefon kopiert.\n\nBei manchen Konten werden ggf. auch automatisch alle Änderungen, die du auf dem Telefon vornimmst, ins Web kopiert. Das ist die übliche Synchronisierungsfunktion eines Google-Kontos.</string>
+  <string name="data_usage_auto_sync_on_dialog" product="default">Änderungen, die Sie im Web an Ihrem Konto vornehmen, werden automatisch auf Ihr Telefon kopiert.\n\nBei manchen Konten werden ggf. auch automatisch alle Änderungen, die auf dem Telefon stattfinden, ins Web kopiert. Das ist die übliche Synchronisierungsfunktion eines Google-Kontos.</string>
   <!--  Title of dialog shown when user disables global auto sync [CHAR LIMIT=32] -->
   <string name="data_usage_auto_sync_off_dialog_title">Autom. Synchronisierung deaktivieren?</string>
   <!--  Body of dialog shown when user disables global auto sync [CHAR LIMIT=none] -->
-  <string name="data_usage_auto_sync_off_dialog">So reduzierst du den Datenverbrauch und schonst den Akku, musst jedoch jedes einzelne Konto manuell synchronisieren, um neue Informationen abzurufen. Außerdem erhältst du keine Benachrichtigungen, wenn Aktualisierungen erfolgen.</string>
+  <string name="data_usage_auto_sync_off_dialog">So reduzieren Sie den Daten- und Energieverbrauch, müssen jedoch jedes einzelne Konto manuell synchronisieren, um neue Informationen abzurufen. Außerdem werden Sie keine Benachrichtigungen über Aktualisierungen erhalten.</string>
   <!-- Title of dialog for editing data usage cycle reset date. [CHAR LIMIT=48] -->
   <string name="data_usage_cycle_editor_title">Datum für Zurücksetzung der Nutzungszyklen</string>
   <!-- Subtitle of dialog for editing data usage cycle reset date. [CHAR LIMIT=32] -->
@@ -4557,17 +4562,17 @@
   <!-- Title of dialog shown before user limits data usage. [CHAR LIMIT=48] -->
   <string name="data_usage_limit_dialog_title">Datenverbrauch begrenzen</string>
   <!-- Body of dialog shown before user limits mobile data usage. [CHAR LIMIT=NONE] -->
-  <string name="data_usage_limit_dialog_mobile" product="tablet">Mobilfunkdaten werden auf deinem Tablet deaktiviert, sobald das von dir festgelegte Limit erreicht wird.\n\nDa die Datennutzung von deinem Tablet berechnet wird und dein Mobilfunkanbieter die Nutzung möglicherweise anders berechnet, solltest du das Limit eher niedrig ansetzen.</string>
+  <string name="data_usage_limit_dialog_mobile" product="tablet">Mobilfunkdaten werden auf dem Tablet deaktiviert, sobald das selbst festgelegte Limit erreicht wird.\n\nDa die Datennutzung vom Tablet berechnet wird, Ihr Mobilfunkanbieter die Nutzung möglicherweise anders berechnet, sollten Sie das Limit eher niedrig ansetzen.</string>
   <!-- Body of dialog shown before user limits mobile data usage. [CHAR LIMIT=NONE] -->
-  <string name="data_usage_limit_dialog_mobile" product="default">Mobilfunkdaten werden auf deinem Telefon deaktiviert, sobald das von dir festgelegte Limit erreicht wird.\n\nDa die Datennutzung von deinem Telefon berechnet wird und dein Mobilfunkanbieter die Nutzung möglicherweise anders berechnet, solltest du das Limit eher niedrig ansetzen.</string>
+  <string name="data_usage_limit_dialog_mobile" product="default">Mobilfunkdaten werden auf dem Telefon deaktiviert, sobald das selbst festgelegte Limit erreicht wird.\n\nDa die Datennutzung vom Telefon berechnet wird, Ihr Mobilfunkanbieter die Nutzung möglicherweise anders berechnet, sollten Sie das Limit eher niedrig ansetzen.</string>
   <!-- Title of dialog shown before user restricts background data usage. [CHAR LIMIT=48] -->
   <string name="data_usage_restrict_background_title">Hintergrunddaten beschränken?</string>
   <!-- Body of dialog shown before user restricts background data usage. [CHAR LIMIT=NONE] -->
-  <string name="data_usage_restrict_background">Wenn du die mobilen Hintergrunddaten beschränkst, funktionieren einige Apps und Dienste nur bei einer aktiven WLAN-Verbindung.</string>
+  <string name="data_usage_restrict_background">Wenn Sie die mobilen Hintergrunddaten beschränken, funktionieren einige Apps und Dienste nur bei einer aktiven WLAN-Verbindung.</string>
   <!-- Body of dialog shown before user restricts background data usage. This is for multiuser tablets. [CHAR LIMIT=NONE] -->
-  <string name="data_usage_restrict_background_multiuser" product="tablet">Wenn du die mobilen Hintergrunddaten beschränkst, funktionieren einige Apps und Dienste nur bei einer aktiven WLAN-Verbindung.\n\nDiese Einstellung betrifft alle Nutzer auf diesem Tablet.</string>
+  <string name="data_usage_restrict_background_multiuser" product="tablet">Wenn Sie die mobilen Hintergrunddaten beschränken, funktionieren einige Apps und Dienste nur bei einer aktiven WLAN-Verbindung.\n\nDiese Einstellung betrifft alle Nutzer auf diesem Tablet.</string>
   <!-- Body of dialog shown before user restricts background data usage. This is for multiuser phones. [CHAR LIMIT=NONE] -->
-  <string name="data_usage_restrict_background_multiuser" product="default">Wenn du die mobilen Hintergrunddaten beschränkst, funktionieren einige Apps und Dienste nur bei einer aktiven WLAN-Verbindung.\n\nDiese Einstellung betrifft alle Nutzer auf diesem Telefon.</string>
+  <string name="data_usage_restrict_background_multiuser" product="default">Wenn Sie die mobilen Hintergrunddaten beschränken, funktionieren einige Apps und Dienste nur bei einer aktiven WLAN-Verbindung.\n\nDiese Einstellung betrifft alle Nutzer auf diesem Telefon.</string>
   <!-- Label displaying current network data usage warning threshold. [CHAR LIMIT=18] -->
   <string name="data_usage_sweep_warning"><font size="21">\"<xliff:g id="NUMBER">^1</xliff:g>"</font><font size="9">\"<xliff:g id="UNIT">^2</xliff:g>"</font>\n<font size="12">\"Warnung\"</font></string>
   <!-- Label displaying current network data usage limit threshold. [CHAR LIMIT=18] -->
@@ -4673,13 +4678,13 @@
   <!-- Menu item to select always-on VPN profile. [CHAR LIMIT=40] -->
   <string name="vpn_menu_lockdown">Durchgehend aktives VPN</string>
   <!-- Summary describing the always-on VPN feature. [CHAR LIMIT=NONE] -->
-  <string name="vpn_lockdown_summary">Wähle ein VPN-Profil für eine durchgehende Verbindung aus. Netzwerkverkehr ist nur möglich, wenn eine Verbindung zu diesem VPN besteht.</string>
+  <string name="vpn_lockdown_summary">Ein VPN-Profil für eine durchgehende Verbindung auswählen. Netzwerkverkehr ist nur möglich, wenn eine Verbindung zu diesem VPN besteht.</string>
   <!-- List item indicating that no always-on VPN is selected. [CHAR LIMIT=64] -->
   <string name="vpn_lockdown_none">Keines</string>
   <!-- Error indicating that the selected VPN doesn't meet requirements. [CHAR LIMIT=NONE] -->
   <string name="vpn_lockdown_config_error">Für ein durchgehend aktives VPN ist eine IP-Adresse für den Server und für das DNS erforderlich.</string>
   <!-- Toast message when there is no network connection to start VPN. [CHAR LIMIT=100] -->
-  <string name="vpn_no_network">Es ist keine Netzwerkverbindung verfügbar. Bitte versuche es später erneut.</string>
+  <string name="vpn_no_network">Es ist keine Netzwerkverbindung verfügbar. Bitte später erneut versuchen.</string>
   <!-- Toast message when a certificate is missing. [CHAR LIMIT=100] -->
   <string name="vpn_missing_cert">Ein Zertifikat fehlt. Bitte ändere das Profil.</string>
   <!-- Tab label for built-in system CA certificates. -->
@@ -4741,7 +4746,7 @@
   <!-- User settings summary for a restricted profile [CHAR LIMIT=50] -->
   <string name="user_summary_restricted_profile">Eingeschränktes Profil</string>
   <!-- User settings warning that restricted profile needs a screen lock [CHAR LIMIT=NONE] -->
-  <string name="user_need_lock_message">Vor dem Erstellen eines eingeschränkten Profils musst du eine Displaysperre einrichten, um deine Apps und personenbezogenen Daten zu schützen.</string>
+  <string name="user_need_lock_message">Vor dem Erstellen eines eingeschränkten Profils müssen Sie eine Displaysperre einrichten, um Apps und personenbezogene Daten zu schützen.</string>
   <!-- User settings dialog button to set screen lock [CHAR LIMIT=25] -->
   <string name="user_set_lock_button">Sperre einrichten</string>
   <!-- User summary to indicate that user is currently not set up [CHAR LIMIT=100] -->
@@ -4759,11 +4764,11 @@
   <!-- Title for add user type dialog [CHAR LIMIT=45] -->
   <string name="user_add_user_type_title">Hinzufügen</string>
   <!-- Summary for add user action, when it's disabled [CHAR LIMIT=100] -->
-  <string name="user_add_max_count">Du kannst bis zu <xliff:g id="USER_COUNT">%1$d</xliff:g> Nutzer hinzufügen.</string>
+  <string name="user_add_max_count">Sie können bis zu <xliff:g id="USER_COUNT">%1$d</xliff:g> Nutzer hinzufügen.</string>
   <!-- Summary for add user entry in the choice dialog [CHAR LIMIT=none] -->
   <string name="user_add_user_item_summary">Die Nutzer haben eigene Apps und Inhalte.</string>
   <!-- Summary for add restricted profile entry in the choice dialog [CHAR LIMIT=none] -->
-  <string name="user_add_profile_item_summary">Du kannst den Zugriff auf Apps und Inhalte aus deinem Konto beschränken.</string>
+  <string name="user_add_profile_item_summary">Sie können den Zugriff auf Apps und Inhalte aus Ihrem Konto beschränken.</string>
   <!-- Button text for adding a regular user [CHAR LIMIT=25] -->
   <string name="user_add_user_item_title">Nutzer</string>
   <!-- Button text for adding a restricted profile [CHAR LIMIT=25] -->
@@ -4771,9 +4776,9 @@
   <!-- Title for add user confirmation dialog [CHAR LIMIT=30] -->
   <string name="user_add_user_title">Neuen Nutzer hinzufügen?</string>
   <!-- Message for add user confirmation dialog - long version. [CHAR LIMIT=none] -->
-  <string name="user_add_user_message_long">Du kannst dieses Gerät für andere Nutzer freigeben, indem du weitere Nutzer erstellst. Jeder Nutzer erhält einen eigenen Bereich, in dem er Apps, den Hintergrund usw. personalisieren kann. Jeder Nutzer kann zudem Geräteeinstellungen wie WLAN ändern, die sich auf alle Nutzer auswirken.\n\nWenn du einen neuen Nutzer hinzufügst, muss dieser seinen Bereich einrichten.\n\nJeder Nutzer kann Apps für alle anderen Nutzer aktualisieren.</string>
+  <string name="user_add_user_message_long">Sie können sich dieses Gerät mit anderen Personen teilen, indem Sie weitere Nutzer erstellen. Jeder Nutzer erhält einen eigenen Bereich, in dem er Apps, den Hintergrund usw. personalisieren kann. Jeder Nutzer kann zudem Geräteeinstellungen (wie WLAN) anpassen, die sich auf alle Nutzer auswirken.\n\nWenn Sie einen neuen Nutzer hinzufügen, muss dieser seinen Bereich einrichten.\n\nJeder Nutzer kann Apps für alle anderen Nutzer aktualisieren.</string>
   <!-- Message for add user confirmation dialog - short version. [CHAR LIMIT=none] -->
-  <string name="user_add_user_message_short">Wenn du einen neuen Nutzer hinzufügst, muss dieser seinen Bereich einrichten.\n\nJeder Nutzer kann Apps für alle anderen Nutzer aktualisieren.</string>
+  <string name="user_add_user_message_short">Wenn Sie einen neuen Nutzer hinzufügen, muss dieser seinen Bereich einrichten.\n\nJeder Nutzer kann Apps für alle anderen Nutzer aktualisieren.</string>
   <!-- Title of dialog to setup a new user [CHAR LIMIT=30] -->
   <string name="user_setup_dialog_title">Nutzer jetzt einrichten?</string>
   <!-- Message in dialog to setup a new user after creation [CHAR LIMIT=none] -->
@@ -4807,13 +4812,13 @@
   <!-- Work profile removal confirmation title [CHAR LIMIT=25] -->
   <string name="work_profile_confirm_remove_title">Arbeitsprofil entfernen?</string>
   <!-- User (self) removal confirmation message [CHAR LIMIT=none] -->
-  <string name="user_confirm_remove_self_message" product="tablet">Dein Profil und deine Daten werden vom Tablet entfernt. Du kannst diese Aktion nicht rückgängig machen.</string>
+  <string name="user_confirm_remove_self_message" product="tablet">Ihr Profil und Ihre Daten werden vom Tablet entfernt. Sie können diese Aktion nicht rückgängig machen.</string>
   <!-- User (self) removal confirmation message [CHAR LIMIT=none] -->
-  <string name="user_confirm_remove_self_message" product="default">Dein Profil und deine Daten werden vom Telefon entfernt. Du kannst diese Aktion nicht rückgängig machen.</string>
+  <string name="user_confirm_remove_self_message" product="default">Ihr Profil und Ihre Daten werden vom Telefon entfernt. Sie können diese Aktion nicht rückgängig machen.</string>
   <!-- User removal confirmation message [CHAR LIMIT=none] -->
   <string name="user_confirm_remove_message">Sämtliche Apps und Daten werden gelöscht.</string>
   <!-- Work profile removal confirmation message [CHAR LIMIT=none] -->
-  <string name="work_profile_confirm_remove_message">Wenn du den Vorgang fortsetzt, werden alle Apps und Daten in diesem Profil gelöscht.</string>
+  <string name="work_profile_confirm_remove_message">Wenn Sie den Vorgang fortsetzen, werden alle Apps und Daten in diesem Profil gelöscht.</string>
   <!-- User profile removal confirmation message [CHAR LIMIT=none] -->
   <string name="user_profile_confirm_remove_message">Sämtliche Apps und Daten werden gelöscht.</string>
   <!-- Setting label to show that a new user is being added [CHAR LIMIT=30] -->
@@ -4856,7 +4861,7 @@
   <!-- Home application selection - uninstall button [CHAR LIMIT=80] -->
   <string name="home_app_uninstall_button">Diese App deinstallieren</string>
   <!-- Message to user that Home Settings will be hidden because there is now only one available home application -->
-  <string name="only_one_home_message">Die Starteinstellungen werden erst dann angezeigt, wenn du eine weitere Start-App installierst.</string>
+  <string name="only_one_home_message">Die Starteinstellungen werden erst dann angezeigt, wenn Sie eine weitere Start-App installieren.</string>
   <!-- Warning message when changing a global setting for a tablet.[CHAR LIMIT=none] -->
   <string name="global_change_warning" product="tablet">Diese Einstellung betrifft alle Nutzer auf diesem Tablet.</string>
   <!-- Warning message when changing a global setting for a phone.[CHAR LIMIT=none] -->
@@ -5441,7 +5446,7 @@
   <!-- [CHAR LIMIT=28] Screen pinning title -->
   <string name="screen_pinning_title">Bildschirmfixierung</string>
   <!-- [CHAR LIMIT=300] Screen pinning description -->
-  <string name="screen_pinning_description">Wenn diese Einstellung aktiviert ist, kannst du die Ansicht des aktuellen Bildschirms fixieren.\n\nSo nutzt du die Bildschirmfixierung:\n\n1. Prüfe, ob die Bildschirmfixierung aktiviert ist.\n\n2. Öffne den zu fixierenden Bildschirm.\n\n3. Tippe auf \"Übersicht\".\n\n4. Wische nach oben und tippe auf das Stecknadelsymbol.</string>
+  <string name="screen_pinning_description">Wenn diese Einstellung aktiviert ist, können Sie die Ansicht des aktuellen Bildschirms fixieren.\n\nVerwendung der Bildschirmfixierung:\n\n1. Prüfen, ob die Bildschirmfixierung aktiviert ist.\n\n2. Den zu fixierenden Bildschirm öffnen.\n\n3. Auf \"Übersicht\" tippen.\n\n4. Nach oben wischen und auf das Stecknadelsymbol tippen.</string>
   <!-- [CHAR LIMIT=60] Unlock setting for screen pinning -->
   <string name="screen_pinning_unlock_pattern">Vor dem Beenden nach Entsperrungsmuster fragen</string>
   <!-- [CHAR LIMIT=60] Unlock setting for screen pinning -->
@@ -5477,17 +5482,20 @@
   <!-- Encryption interstitial button to continue with the shown setting.  Appears on screen that asks the user to opt in/out of encrypting device with a pin/pattern/password. [CHAR LIMIT=NONE] -->
   <string name="encryption_continue_button">Weiter</string>
   <!-- Message shown on encryption interstitial to ask the user whether or not they want to use a PIN to encrypt the device. [CHAR LIMIT=NONE] -->
-  <string name="encryption_interstitial_message_pin">Du kannst dieses Gerät noch weiter schützen, indem du festlegst, dass vor dem Gerätestart die Eingabe deiner PIN erforderlich ist. Bis das Gerät startet, können weder Anrufe noch Nachrichten, Benachrichtigungen oder Alarme empfangen werden. \n\nSo schützt du Daten auf verloren gegangenen oder gestohlenen Geräten.</string>
+  <string name="encryption_interstitial_message_pin">
+Sie können dieses Gerät noch besser schützen, wenn vor dem Gerätestart Ihre PIN eingegeben werden muss. Bis das Gerät startet, können weder Anrufe noch Nachrichten, Benachrichtigungen oder Alarme empfangen werden. \n\nSo schützen Sie Daten auf verloren gegangenen oder gestohlenen Geräten.   </string>
   <!-- Message shown on encryption interstitial to ask the user whether or not they want to use a pattern to encrypt the device. [CHAR LIMIT=NONE] -->
-  <string name="encryption_interstitial_message_pattern">Du kannst dieses Gerät noch weiter schützen, indem du festlegst, dass vor dem Gerätestart die Eingabe deines Musters erforderlich ist. Bis das Gerät startet, können weder Anrufe noch Nachrichten, Benachrichtigungen oder Alarme empfangen werden. \n\nSo schützt du Daten auf verloren gegangenen oder gestohlenen Geräten.</string>
+  <string name="encryption_interstitial_message_pattern">
+Sie können dieses Gerät noch besser schützen, wenn vor dem Gerätestart Ihr Muster eingegeben werden muss. Bis das Gerät startet, können weder Anrufe noch Nachrichten, Benachrichtigungen oder Alarme empfangen werden. \n\nSo schützen Sie Daten auf verloren gegangenen oder gestohlenen Geräten.   </string>
   <!-- Message shown on encryption interstitial to ask the user whether or not they want to use a password to encrypt the device. [CHAR LIMIT=NONE] -->
-  <string name="encryption_interstitial_message_password">Du kannst dieses Gerät noch weiter schützen, indem du festlegst, dass vor dem Gerätestart die Eingabe deines Passworts erforderlich ist. Bis das Gerät startet, können weder Anrufe noch Nachrichten, Benachrichtigungen oder Alarme empfangen werden. \n\nSo schützt du Daten auf verloren gegangenen oder gestohlenen Geräten.</string>
+  <string name="encryption_interstitial_message_password">
+Sie können dieses Gerät noch besser schützen, wenn vor dem Gerätestart Ihr Passwort eingegeben werden muss. Bis das Gerät startet, können weder Anrufe noch Nachrichten, Benachrichtigungen oder Alarme empfangen werden. \n\nSo schützen Sie Daten auf verloren gegangenen oder gestohlenen Geräten.   </string>
   <!-- Message shown on encryption interstitial to ask the user whether or not they want to use a PIN to encrypt the device while setting up fingerprint unlock. [CHAR LIMIT=NONE] -->
-  <string name="encryption_interstitial_message_pin_for_fingerprint">Neben der Verwendung deines Fingerabdrucks zum Entsperren des Geräts kannst du es zusätzlich schützen, indem du für den Gerätestart deine PIN erforderlich machst. Erst wenn das Gerät gestartet wurde, kann es Anrufe, Nachrichten oder Benachrichtigungen, einschließlich Weckrufen, empfangen.\n\nDies trägt zum Schutz der Daten auf verlorenen oder gestohlenen Geräten bei.</string>
+  <string name="encryption_interstitial_message_pin_for_fingerprint">Neben der Verwendung Ihres Fingerabdrucks zum Entsperren des Geräts können Sie es zusätzlich schützen, wenn beim Gerätestart Ihre PIN eingegeben werden muss. Erst wenn das Gerät gestartet wurde, kann es Anrufe, Nachrichten oder Benachrichtigungen, einschließlich Weckrufen, empfangen.\n\nDies trägt zum Schutz der Daten auf verlorenen oder gestohlenen Geräten bei.</string>
   <!-- Message shown on encryption interstitial to ask the user whether or not they want to use a pattern to encrypt the device while setting up fingerprint unlock. [CHAR LIMIT=NONE] -->
-  <string name="encryption_interstitial_message_pattern_for_fingerprint">Neben der Verwendung deines Fingerabdrucks zum Entsperren des Geräts kannst du es zusätzlich schützen, indem du für den Gerätestart dein Muster erforderlich machst. Erst wenn das Gerät gestartet wurde, kann es Anrufe, Nachrichten oder Benachrichtigungen, einschließlich Weckrufen, empfangen.\n\nDies trägt zum Schutz der Daten auf verlorenen oder gestohlenen Geräten bei.</string>
+  <string name="encryption_interstitial_message_pattern_for_fingerprint">Neben der Verwendung Ihres Fingerabdrucks zum Entsperren des Geräts können Sie es zusätzlich schützen, wenn beim Gerätestart Ihr Muster eingegeben werden muss. Erst wenn das Gerät gestartet wurde, kann es Anrufe, Nachrichten oder Benachrichtigungen, einschließlich Weckrufen, empfangen.\n\nDies trägt zum Schutz der Daten auf verlorenen oder gestohlenen Geräten bei.</string>
   <!-- Message shown on encryption interstitial to ask the user whether or not they want to use a password to encrypt the device while setting up fingerprint unlock. [CHAR LIMIT=NONE] -->
-  <string name="encryption_interstitial_message_password_for_fingerprint">Neben der Verwendung deines Fingerabdrucks zum Entsperren des Geräts kannst du es zusätzlich schützen, indem du für den Gerätestart dein Passwort erforderlich machst. Erst wenn das Gerät gestartet wurde, kann es Anrufe, Nachrichten oder Benachrichtigungen, einschließlich Weckrufen, empfangen.\n\nDies trägt zum Schutz der Daten auf verloren gegangenen oder gestohlenen Geräten bei.</string>
+  <string name="encryption_interstitial_message_password_for_fingerprint">Neben der Verwendung Ihres Fingerabdrucks zum Entsperren des Geräts können Sie es zusätzlich schützen, wenn beim Gerätestart Ihr Passwort eingegeben werden muss. Erst wenn das Gerät gestartet wurde, kann es Anrufe, Nachrichten oder Benachrichtigungen, einschließlich Weckrufen, empfangen.\n\nDies trägt zum Schutz der Daten auf verlorenen oder gestohlenen Geräten bei.</string>
   <!-- Radio button text that require a PIN to start device [CHAR LIMIT=NONE] -->
   <string name="encrypt_require_pin">PIN zum Starten des Geräts erforderlich</string>
   <!-- Radio button text that require a pattern to start device [CHAR LIMIT=NONE] -->
@@ -5507,11 +5515,11 @@
   <!-- Title for encryption dialog that disables TalkBack. [CHAR_LIMIT=25] -->
   <string name="encrypt_talkback_dialog_require_password">Passwort erforderlich?</string>
   <!-- Message for encryption dialog telling the user that Talkback and other accessibility services will be disabled. -->
-  <string name="encrypt_talkback_dialog_message_pin">Wenn du zum Starten dieses Geräts deine PIN eingibst, stehen Dienste für Bedienungshilfen wie <xliff:g id="SERVICE">%1$s</xliff:g> noch nicht zur Verfügung.</string>
+  <string name="encrypt_talkback_dialog_message_pin">Wenn Sie zum Starten dieses Geräts eine PIN eingeben, stehen Dienste für Bedienungshilfen wie <xliff:g id="SERVICE">%1$s</xliff:g> noch nicht zur Verfügung.</string>
   <!-- Message for encryption dialog telling the user that Talkback and other accessibility services will be disabled. -->
-  <string name="encrypt_talkback_dialog_message_pattern">Wenn du zum Starten dieses Geräts dein Muster eingibst, stehen Dienste für Bedienungshilfen wie <xliff:g id="SERVICE">%1$s</xliff:g> noch nicht zur Verfügung.</string>
+  <string name="encrypt_talkback_dialog_message_pattern">Wenn Sie zum Starten dieses Geräts ein Muster eingeben, stehen Dienste für Bedienungshilfen wie <xliff:g id="SERVICE">%1$s</xliff:g> noch nicht zur Verfügung.</string>
   <!-- Message for encryption dialog telling the user that Talkback and other accessibility services will be disabled. -->
-  <string name="encrypt_talkback_dialog_message_password">Wenn du zum Starten dieses Geräts dein Passwort eingibst, stehen Dienste für Bedienungshilfen wie <xliff:g id="SERVICE">%1$s</xliff:g> noch nicht zur Verfügung.</string>
+  <string name="encrypt_talkback_dialog_message_password">Wenn Sie zum Starten dieses Geräts ein Passwort eingeben, stehen Dienste für Bedienungshilfen wie <xliff:g id="SERVICE">%1$s</xliff:g> noch nicht zur Verfügung.</string>
   <!-- Title and summary for SIM Status -->
   <string name="imei_information_title">IMEI-Informationen</string>
   <string name="imei_information_summary">Informationen zur relativen IMEI</string>
@@ -5660,7 +5668,7 @@
   <string name="assistant_security_warning_title"><xliff:g id="ASSISTANT_APP_NAME">%s</xliff:g> als Assistenten festlegen?</string>
   <!-- [CHAR_LIMIT=NONE] Warning message about security implications of setting an assistant,
          displayed as a dialog message when the user selects an assistant. -->
-  <string name="assistant_security_warning">Der Assistent kann Informationen zu Apps abrufen, die du auf deinem System verwendest, einschließlich Informationen, die auf deinem Bildschirm angezeigt werden oder die in Apps zugänglich sind.</string>
+  <string name="assistant_security_warning">Der Assistent kann Informationen zu Apps abrufen, die auf dem System verwendet werden, einschließlich Informationen, die auf dem Bildschirm angezeigt werden oder die in Apps zugänglich sind.</string>
   <!-- Label for the button to acknowledge assistant security implications. [CHAR LIMIT=30] -->
   <string name="assistant_security_warning_agree">Zustimmen</string>
   <!-- Label for the button to bail out assistant security implications. [CHAR LIMIT=30] -->
@@ -5684,7 +5692,7 @@
   <!-- Link to the apps page for app usage settings [CHAR LIMIT=45] -->
   <string name="app_usage_preference">App-Nutzungseinstellungen</string>
   <!-- Description of the usage access setting [CHAR LIMIT=NONE] -->
-  <string name="usage_access_description">Der Zugriff auf die Nutzungsdaten ermöglicht es einer App, verschiedene Informationen zu erfassen, unter anderem, welche anderen Apps du wie oft verwendest, welchen Mobilfunkanbieter du nutzt und welche Spracheinstellungen du festgelegt hast.</string>
+  <string name="usage_access_description">Der Zugriff auf die Nutzungsdaten ermöglicht es einer App, verschiedene Informationen zu erfassen, unter anderem, welche anderen Apps Sie wie oft verwenden, Ihren Mobilfunkanbieter, Ihre Spracheinstellungen und mehr.</string>
   <!-- Title for screen showing recent memory usage of device [CHAR LIMIT=30]-->
   <string name="memory_settings_title">Arbeitsspeicher</string>
   <!-- Title for screen showing recent memory usage of specific app [CHAR LIMIT=30]-->
@@ -5799,7 +5807,7 @@
   <!-- Summary for the "screenshot" preference to determine whether assist can access the screenshot of your screen [CHAR LIMIT=NONE] -->
   <string name="assist_access_screenshot_summary">Der Assistent-App den Zugriff auf ein Bild auf dem Bildschirm gestatten</string>
   <!-- Footer text in the manage assist screen. [CHAR LIMIT=NONE] -->
-  <string name="assist_footer">Assistent-Apps helfen dir basierend auf den aktuell auf deinem Bildschirm angezeigten Informationen. Einige Apps unterstützen für eine einfachere Verwendung Übersichts- und Spracheingabedienste.</string>
+  <string name="assist_footer">Assistent-Apps bieten Hilfe, die sich auf die aktuell betrachteten Informationen auf dem Bildschirm stützt. Einige Apps unterstützen zur einfacheren Verwendung sowohl Übersichts- als auch Spracheingabedienste.</string>
   <!-- Label for average memory use section [CHAR LIMIT=30] -->
   <string name="average_memory_use">Durchschnittl. Speicherverbrauch</string>
   <!-- Label for maximum memory use section [CHAR LIMIT=30] -->
@@ -5914,7 +5922,7 @@
   <!-- Title of setting that controls gesture to open camera [CHAR LIMIT=40] -->
   <string name="camera_gesture_title">Zum Öffnen der Kamera zweimal drehen</string>
   <!-- Description of setting that controls gesture to open camera [CHAR LIMIT=NONE] -->
-  <string name="camera_gesture_desc">Kamera App durch zweimaliges Drehen des Handgelenks öffnen</string>
+  <string name="camera_gesture_desc">Kamera-App durch zweimaliges Drehen des Handgelenks öffnen</string>
   <!-- Name of each color mode for the display. [CHAR LIMIT=40] -->
   <string-array name="color_mode_names">
     <item>Brillant (Standardeinstellung)</item>

@@ -232,11 +232,11 @@
   <string name="volume_steps_5">5</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">Håll WiFi Hotspot aktiverad</string>
-  <string name="wifi_hotspot_mode_always">Always</string>
-  <string name="wifi_hotspot_mode_five_mins">Turn off when idle for 5 min</string>
-  <string name="wifi_hotspot_mode_ten_mins">Turn off when idle for 10 min</string>
-  <string name="wifi_hotspot_mode_thirty_mins">Turn off when idle for 30 min</string>
-  <string name="wifi_hotspot_mode_one_hour">Turn off when idle for 1 hour</string>
+  <string name="wifi_hotspot_mode_always">Alltid</string>
+  <string name="wifi_hotspot_mode_five_mins">Stänga av när sysslolös i 5 min</string>
+  <string name="wifi_hotspot_mode_ten_mins">Stänga av när sysslolös i 10 min</string>
+  <string name="wifi_hotspot_mode_thirty_mins">Stänga av när sysslolös i 30 min</string>
+  <string name="wifi_hotspot_mode_one_hour">Stänga av när sysslolös i 1 timme</string>
   <!-- Battery saver color -->
   <string name="battery_saver_title">Varningsfärg</string>
   <string name="battery_saver_style_reset_message">Återställ batterivarningens färg?</string>
@@ -245,7 +245,7 @@
   <string name="notification_volume_option_title">Aviseringsvolym</string>
   <string name="ring_notification_volume_option_title">Ring- och aviseringsvolym</string>
   <!-- Double tap to launch target -->
-  <string name="dt2l_target_category">Dubbelklicka för att visa alternativ</string>
+  <string name="dt2l_target_category">Dubbeltryck för att visa alternativ</string>
   <string name="dt2l_target_vib_title">Justera målets vibration</string>
   <string name="dt2l_target_vib_summary">Justera vibrationen vid dubbeltryck på strömknappen</string>
   <string name="camera_double_tap_power_gesture_title">Tryck på powerknappen två gånger för kamera</string>
@@ -258,20 +258,20 @@
   <string name="dashboard_category">DashboardInställningar</string>
   <string name="dashboard_columns_title">Dashboardkolumner</string>
   <string name="dashboard_columns_summary">Ändra antalet kolumner som visas i instrumentpanelen</string>
-  <string name="dashboard_columns_dialog_title">Select dashboard columns</string>
+  <string name="dashboard_columns_dialog_title">Välj dashboard kolumn</string>
   <string name="dashboard_columns_one">Ett</string>
   <string name="dashboard_columns_two">Två</string>
   <string name="dashboard_columns_three">Tre</string>
-  <string name="dashboard_tileview_double_lines_title">Dashboard title view</string>
-  <string name="dashboard_tileview_double_lines_summary">Show dashboard tile titles in 2 lines</string>
+  <string name="dashboard_tileview_double_lines_title">Dashboard titelvy</string>
+  <string name="dashboard_tileview_double_lines_summary">Visa dashboard text i 2 linjer</string>
   <string name="dashboard_tileview_dividers_title">Dashboardavgränsare</string>
-  <string name="dashboard_tileview_dividers_summary">Hide dashboard tile dividers</string>
+  <string name="dashboard_tileview_dividers_summary">Göm dashboard linje avdelare</string>
   <!-- Optional Dashboard Switches -->
-  <string name="dashboard_switches_title">Dashboard Switches</string>
-  <string name="dashboard_switches_off">Switches Off</string>
-  <string name="dashboard_switches_on">Switches On</string>
-  <string name="dashboard_switches_summary">Change the position of the dashboard switches</string>
-  <string name="dashboard_switches_dialog_title">Select switch state</string>
+  <string name="dashboard_switches_title">Dashboard Brytare</string>
+  <string name="dashboard_switches_off">Brytare Av</string>
+  <string name="dashboard_switches_on">Brytare På</string>
+  <string name="dashboard_switches_summary">Ändra placeringen av dashboard brytarna</string>
+  <string name="dashboard_switches_dialog_title">Välj brytar tillstånd</string>
   <!-- Keyguard notifications options -->
   <string name="app_notification_show_on_keyguard_title">Visa på låsskärmen</string>
   <string name="app_notification_show_on_keyguard_summary">Visa meddelanden från denna app på låsskärmen</string>
@@ -283,22 +283,22 @@
   <string name="blacklist_edit_dialog_title">Redigera blockerade nummer</string>
   <string name="blacklist_prefs">Inställningar</string>
   <string name="blacklist_button_delete">Radera</string>
-  <string name="blacklist_empty_text">You don\'t have any blocked numbers. Add an entry by touching the Add (+) button.</string>
-  <string name="blacklist_disabled_empty_text">To prevent phone numbers from calling or messaging you, enable the blocked caller list.</string>
+  <string name="blacklist_empty_text">Du har inga svartlistade nummer. Lägg till en post genom att tryck på Lägg till-knappen (+).</string>
+  <string name="blacklist_disabled_empty_text">För att förhindra telefonnummer från att ringa eller meddela dig, aktivera den blockerade anrops listan.</string>
   <string name="blacklist_summary_disabled">Inaktiverad</string>
-  <string name="blacklist_summary">You will not receive incoming calls or messages from phone numbers on the blocked caller list</string>
+  <string name="blacklist_summary">Du kommer inte få inkommande samtal eller meddelanden från telefonnummer i listan över blockerade telefonnummer</string>
   <string name="blacklist_notify">Visa notifikation</string>
   <string name="blacklist_private_numbers_title">Privata nummer</string>
   <string name="blacklist_private_numbers_summary_disabled">Blockera inte samtal från privata nummer</string>
   <string name="blacklist_private_numbers_summary">Blockera inkommande <xliff:g id="type">%s</xliff:g> från privata nummer</string>
   <string name="blacklist_unknown_numbers_title">Okända nummer</string>
   <string name="blacklist_unknown_numbers_summary_disabled">Blockera inte samtal eller meddelanden från nummer som inte finns i kontaktlistan</string>
-  <string name="blacklist_unknown_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from numbers not in the contact list</string>
+  <string name="blacklist_unknown_numbers_summary">Blockera inkommande <xliff:g id="type">%s</xliff:g> från nummer som inte finns i kontaktlistan</string>
   <string name="blacklist_summary_type_calls_only">samtal</string>
   <string name="blacklist_summary_type_messages_only">meddelanden</string>
   <string name="blacklist_summary_type_calls_and_messages">samtal och meddelanden</string>
-  <string name="blacklist_regex_title">Use wildcards</string>
-  <string name="blacklist_regex_summary">Use . as a wildcard and * for repetition. E.g. 123.* blocks numbers starting with 123 and .*123.* blocks numbers containing 123</string>
+  <string name="blacklist_regex_title">Använd wildcards</string>
+  <string name="blacklist_regex_summary">Använd . som en wildcard och * för upprepning. E.g. 123.* blockerar nummer som börjar med 123 och .*123.* blockerar nummer som innehåller 123</string>
   <string name="blacklist_policy_block_calls">Blockera inkommande samtal</string>
   <string name="blacklist_policy_block_messages">Blockera inkommande meddelanden</string>
   <string name="blacklist_bad_number_add">Kunde inte lägga till ogiltigt nummer till svartlistan</string>
@@ -340,9 +340,9 @@
   <!-- Volume dialog timeout -->
   <string name="volume_dialog_timeout_title">Volymdialogrutan timeout</string>
   <!-- Show CPU info -->
-  <string name="show_cpu_info">Show CPU info</string>
-  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+  <string name="show_cpu_info">Visa CPU info</string>
+  <string name="show_cpu_info_summary">Skärm overlay visar nuvarande CPU info</string>
   <!-- Proximity wake -->
-  <string name="proximity_wake_title">Prevent accidental wake up</string>
-  <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+  <string name="proximity_wake_title">Förhindra oavsiktlig väckning</string>
+  <string name="proximity_wake_summary">Kontrollera närhetssensorn innan väckning av skärmen</string>
 </resources>

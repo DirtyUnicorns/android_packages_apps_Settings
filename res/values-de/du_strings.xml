@@ -175,7 +175,7 @@
   <string name="adb_over_network_warning">WARNUNG: Wenn ADB übers Netzwerk aktiviert ist, kann auf Ihr Gerät von jedem verbundenen Netzwerk zugegriffen werden!\n\nDiese Funktion sollte nur verwendet werden, wenn Sie sich in einem vertrauenswürdigen Netzwerk befinden.\n\nMöchten Sie diese Funktion trotzdem aktivieren?</string>
   <!-- Media ducking -->
   <string name="interruptions_ignore_while_media_title">Lautstärkenunterdrückung</string>
-  <string name="interruptions_ignore_while_media_summary">Reduziert bei Benachrichtigungen nicht die Medienlautstärke</string>
+  <string name="interruptions_ignore_while_media_summary">Lautstärke der Medienwiedergabe nicht verringern, wenn eine Benachrichtigung eintrifft</string>
   <!-- Doze notification color invert -->
   <string name="doze_notification_color_invert_title">Farbumkehr</string>
   <string name="doze_notification_color_invert_summary_off">Farbe der Benachrichtigungen bei Inaktivitätsdisplay nicht umkehren. Für dunkle Designs benutzen.</string>
@@ -343,6 +343,6 @@
   <string name="show_cpu_info">CPU-Info anzeigen</string>
   <string name="show_cpu_info_summary">Einblendung aktueller CPU-Informationen auf dem Bildschirm</string>
   <!-- Proximity wake -->
-  <string name="proximity_wake_title">Prevent accidental wake up</string>
-  <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+  <string name="proximity_wake_title">Unbeabsichtigtes Aufwecken verhindern</string>
+  <string name="proximity_wake_summary">Näherungssensor verwenden, um ein unbeabsichtigtes Aufwecken des Geräts zu vermeiden</string>
 </resources>
