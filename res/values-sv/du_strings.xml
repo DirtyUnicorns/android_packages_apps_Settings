@@ -216,7 +216,7 @@
   <string name="adb_notify_summary">Visa en avisering när USB-felsökning är ansluten</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Volymsteg</string>
-  <string name="volume_steps_alarm_title">Volymsteg: Larm</string>
+  <string name="volume_steps_alarm_title">Volymsteg: Alarm</string>
   <string name="volume_steps_dtmf_title">Volymsteg: DTMF</string>
   <string name="volume_steps_music_title">Volymsteg: Musik</string>
   <string name="volume_steps_notification_title">Volymsteg: Notifikation</string>

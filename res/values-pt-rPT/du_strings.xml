@@ -17,17 +17,17 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- DU Extra Info -->
-  <string name="duextrainfo">Extra information</string>
-  <string name="duextrainfo_summary">Display extra info for cpu, display, etc</string>
-  <string name="basicinfo">BASIC INFO</string>
+  <string name="duextrainfo">Informação Extra</string>
+  <string name="duextrainfo_summary">Mostrar informação extra sobre o Cpu, ecrã, etc</string>
+  <string name="basicinfo">INFORMAÇÃO BÁSICA</string>
   <string name="manufacturer">Manufacturer</string>
   <string name="hardwaretype">Hardware type</string>
   <string name="systempartition">System partition</string>
-  <string name="datapartition">Data partition</string>
-  <string name="ram">RAM</string>
+  <string name="datapartition">Partição de dados</string>
+  <string name="ram">Ram</string>
   <string name="bootloader">Bootloader</string>
   <string name="bytes"> Bytes</string>
-  <string name="cpuinfo">CPU INFO</string>
+  <string name="cpuinfo">INFORMAÇÃO DE CPU</string>
   <string name="chipset_processor">Chipset / Processor</string>
   <string name="features">Features</string>
   <string name="bogomips">BogoMIPS</string>
@@ -64,9 +64,9 @@
   <!-- Customization -->
   <string name="header_category_custom">Customization</string>
   <string name="custom_title">Dirty Tweaks</string>
-  <string name="themes_settings_title">Themes</string>
+  <string name="themes_settings_title">Temas</string>
   <!-- DU Changelog -->
-  <string name="duchangelog">Changelog</string>
+  <string name="duchangelog">Alterações</string>
   <string name="du_summary">Check to see what has changed in DU</string>
   <string name="du_app_name">DU Changelog</string>
   <!-- DU Updater -->

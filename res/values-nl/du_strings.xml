@@ -232,11 +232,11 @@
   <string name="volume_steps_5">5</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">WiFi Hotspot aanhouden</string>
-  <string name="wifi_hotspot_mode_always">Always</string>
-  <string name="wifi_hotspot_mode_five_mins">Turn off when idle for 5 min</string>
-  <string name="wifi_hotspot_mode_ten_mins">Turn off when idle for 10 min</string>
-  <string name="wifi_hotspot_mode_thirty_mins">Turn off when idle for 30 min</string>
-  <string name="wifi_hotspot_mode_one_hour">Turn off when idle for 1 hour</string>
+  <string name="wifi_hotspot_mode_always">Altijd</string>
+  <string name="wifi_hotspot_mode_five_mins">Uitschakelen na 5 min inactiviteit</string>
+  <string name="wifi_hotspot_mode_ten_mins">Uitschakelen na 10 min inactiviteit</string>
+  <string name="wifi_hotspot_mode_thirty_mins">Uitschakelen na 30 min inactiviteit</string>
+  <string name="wifi_hotspot_mode_one_hour">Uitschakelen na 1 uur inactiviteit</string>
   <!-- Battery saver color -->
   <string name="battery_saver_title">Waarschuwingskleur</string>
   <string name="battery_saver_style_reset_message">Accubesparing waarschuwingskleur opnieuw instellen?</string>
@@ -338,11 +338,11 @@
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Geluid bij volume wijzigen</string>
   <!-- Volume dialog timeout -->
-  <string name="volume_dialog_timeout_title">Volume dialog timeout</string>
+  <string name="volume_dialog_timeout_title">Volume dialoogvenster timeout</string>
   <!-- Show CPU info -->
-  <string name="show_cpu_info">Show CPU info</string>
-  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+  <string name="show_cpu_info">CPU informatie weergeven</string>
+  <string name="show_cpu_info_summary">Scherm overlay weergegeven met huidige CPU info</string>
   <!-- Proximity wake -->
-  <string name="proximity_wake_title">Prevent accidental wake up</string>
-  <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+  <string name="proximity_wake_title">Per ongeluk ontwaken voorkomen</string>
+  <string name="proximity_wake_summary">Nabijheidssensor checken voorafgaand aan ontwaken van scherm</string>
 </resources>

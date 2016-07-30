@@ -313,7 +313,7 @@
   <!-- HTTP proxy settings. Title if there is an error-->
   <string name="proxy_error">Atenção</string>
   <!-- HTTP proxy settings. Button to get rid of error box-->
-  <string name="proxy_error_dismiss">OK</string>
+  <string name="proxy_error_dismiss">Ok</string>
   <!-- HTTP proxy settings. The error if the hostname is not valid -->
   <string name="proxy_error_invalid_host">O nome de host digitado não é válido.</string>
   <!-- HTTP proxy settings. The error if the exclusion list is not valid -->
@@ -514,9 +514,9 @@
   <!-- mobile network settings screen, message in dialog box that appears when you select the "Data roaming" check box -->
   <string name="roaming_warning">Quando você permite o roaming de dados, poderão ser cobradas taxas significativas de roaming!</string>
   <!-- mobile network settings screen, message in dialog box that appears when you select the "Data roaming" check box. This is for multiuser tablets [CHAR LIMIT=none] -->
-  <string name="roaming_warning_multiuser" product="tablet">Ao permitir o roaming de dados, você poderá receber cobranças significativas de roaming.\n\nEsta configuração afeta todos os usuários do tablet.</string>
+  <string name="roaming_warning_multiuser" product="tablet">Ao permitir o roaming de dados, podem ser cobradas tarifas de roaming significativas!\n\nEsta definição afeta todos os utilizadores deste tablet.</string>
   <!-- mobile network settings screen, message in dialog box that appears when you select the "Data roaming" check box. This is for multiuser phones [CHAR LIMIT=none] -->
-  <string name="roaming_warning_multiuser" product="default">Ao permitir o roaming de dados, você poderá receber cobranças significativas de roaming.\n\nEsta configuração afeta todos os usuários do telefone.</string>
+  <string name="roaming_warning_multiuser" product="default">Ao permitir o roaming de dados, podem ser cobradas tarifas de roaming significativas!\n\nEsta definição afeta todos os utilizadores deste telemóvel.</string>
   <!-- mobile network settings screen, title of dialog box that appears when you select the "Data roaming" check box -->
   <string name="roaming_reenable_title">Permitir roaming de dados?</string>
   <!-- mobile network settings screen, setting option name -->
@@ -596,7 +596,7 @@
   <!-- Hint text shown in owner info edit text [CHAR LIMIT=50] -->
   <string name="owner_info_settings_edit_text_hint">por exemplo, Android do João.</string>
   <!-- Text shown for title of user info setting [CHAR LIMIT=20]-->
-  <string name="user_info_settings_title">Dados do usuário</string>
+  <string name="user_info_settings_title">Info do utilizador</string>
   <!-- Text shown next to checkbox for showing profile info on LockScreen [CHAR LIMIT=50]-->
   <string name="show_profile_info_on_lockscreen_label">Mostrar informações do perfil na tela de bloqueio</string>
   <!-- Text shown for title of profile info setting [CHAR LIMIT=20]-->
@@ -926,7 +926,7 @@
   <!-- [CHAR_LIMIT=NONE] Error shown when the user tries to set an ascending or descending sequence of digits -->
   <string name="lockpassword_pin_no_sequential_digits">Não é permitido usar uma sequência de dígitos em ordem crescente, decrescente ou repetidos</string>
   <!-- Label for ChoosePassword/PIN OK button -->
-  <string name="lockpassword_ok_label">OK</string>
+  <string name="lockpassword_ok_label">Ok</string>
   <!-- Label for ChoosePassword/PIN OK button -->
   <string name="lockpassword_cancel_label">Cancelar</string>
   <!-- Label for LockPatternTutorial Cancel button -->
@@ -1312,7 +1312,7 @@
   <!-- Label for the EAP CA certificate of the network -->
   <string name="wifi_eap_ca_cert">Certificado CA</string>
   <!-- Label for the EAP user certificate of the network -->
-  <string name="wifi_eap_user_cert">Certificado do usuário</string>
+  <string name="wifi_eap_user_cert">Certificado do utilizador</string>
   <!-- Label for the EAP identity of the network -->
   <string name="wifi_eap_identity">Identidade</string>
   <!-- Label for the EAP anonymous identity of the network -->
@@ -2026,7 +2026,7 @@
   <!-- Storage setting.  Summary for MIDI checkbox [CHAR LIMIT=NONE]-->
   <string name="usb_midi_summary">Permite que apps com MIDI ativado funcionem por meio de USB com o software MIDI no computador.</string>
   <!-- Section header above list of other users storage [CHAR LIMIT=32] -->
-  <string name="storage_other_users">Outros usuários</string>
+  <string name="storage_other_users">Outros utilizadores</string>
   <!-- Section header above list of internal storage devices [CHAR LIMIT=30]-->
   <string name="storage_internal_title">Armazenamento do dispositivo</string>
   <!-- Section header above list of external storage devices [CHAR LIMIT=30]-->
@@ -2171,7 +2171,7 @@
   <!-- Edit access point labels: The port number of the proxy to use for this APN -->
   <string name="apn_http_port">Porta</string>
   <!-- Edit access point labels: The username that will be used when conencting to this APN-->
-  <string name="apn_user">Nome de usuário</string>
+  <string name="apn_user">Nome de utilizador</string>
   <!-- Edit access point labels: The password that will be used when connecting to this APN -->
   <string name="apn_password">Senha</string>
   <!-- Edit access point labels: The server address to conenct to for this APN -->
@@ -2249,7 +2249,7 @@
   <!-- Reset settings confirmation screen title [CHAR LIMIT=30] -->
   <string name="reset_network_confirm_title">Redefinir?</string>
   <!-- Error message for users that aren't allowed to reset network settings [CHAR LIMIT=none] -->
-  <string name="network_reset_not_available">A redefinição da rede não está disponível para esse usuário</string>
+  <string name="network_reset_not_available">A reposição de rede não está disponível para este utilizador</string>
   <!-- Reset settings complete toast text [CHAR LIMIT=75] -->
   <string name="reset_network_complete_toast">As configurações de rede foram redefinidas</string>
   <!-- Master Clear -->
@@ -2264,9 +2264,9 @@
   <!-- SD card & phone storage settings screen, instructions and list of current accounts.  The list of accounts follows this text[CHAR LIMIT=NONE] -->
   <string name="master_clear_accounts" product="default">"\n\n\"No momento você está conectado às seguintes contas:\n\""</string>
   <!-- SD card & phone storage settings screen, notification if other users are present on the device [CHAR LIMIT=NONE] -->
-  <string name="master_clear_other_users_present" product="default">"\n\n\"Há outros usuários presentes neste dispositivo.\n\""</string>
+  <string name="master_clear_other_users_present" product="default">"\n\n\"Existem outros utilizadores presentes neste dispositivo.\n\""</string>
   <!-- SD card & phone storage settings screen, list of items in user data storage (USB storage or SD card) that will be erased during this operation [CHAR LIMIT=NONE] -->
-  <string name="master_clear_desc_also_erases_external">"<li>"Músicas"</li>\n<li>"Fotos"</li>\n<li>"Outros dados do usuário"</li>"</string>
+  <string name="master_clear_desc_also_erases_external">"<li>"Música"</li>\n<li>"Fotografias"</li>\n<li>"Outros dados do utilizador"</li>"</string>
   <!-- SD card & phone storage settings screen, instructions about whether to also erase the external storage (SD card) when erasing the internal storage [CHAR LIMIT=NONE] -->
   <string name="master_clear_desc_erase_external_storage" product="nosdcard">"\n\n\"Para limpar músicas, fotos e outros dados de usuário, o \"<b>"armazenamento USB"</b>\" precisa ser apagado.\""</string>
   <!-- SD card & phone storage settings screen, instructions about whether to also erase the external storage (SD card) when erasing the internal storage [CHAR LIMIT=NONE] -->
@@ -2292,7 +2292,7 @@
   <!-- Master clear confirmation screen title [CHAR LIMIT=30] -->
   <string name="master_clear_confirm_title">Redefinir?</string>
   <!-- Error message for users that aren't allowed to factory reset [CHAR LIMIT=none] -->
-  <string name="master_clear_not_available">A configuração original não está disponível para esse usuário</string>
+  <string name="master_clear_not_available">A reposição de fábrica não está disponível para este utilizador</string>
   <!-- Master clear progress screen title [CHAR LIMIT=30] -->
   <string name="master_clear_progress_title">Apagando</string>
   <!-- Master clear progress screen text [CHAR LIMIT=75] -->
@@ -2667,7 +2667,7 @@
   <!-- Manage applications, individual application info screen, button label under Storage heading. Button to remove the application from the system. -->
   <string name="uninstall_text">Desinstalar</string>
   <!-- Manage applications, individual application info screen, menu item to uninstall an application for all users. -->
-  <string name="uninstall_all_users_text">Desinstalar para todos os usuários</string>
+  <string name="uninstall_all_users_text">Desinstalar para todos os utilizadores</string>
   <!-- [CHAR LIMIT=NONE] Manage applications, individual application info screen, button label under Storage heading. Button to install an application for the user. -->
   <string name="install_text">Instalar</string>
   <!-- [CHAR LIMIT=25] Manage applications, individual application info screen, button label under Storage heading. Button to disable an existing application. -->
@@ -2739,7 +2739,7 @@
   <!-- [CHAR LIMIT=25] Manage applications, text telling using an application is disabled. -->
   <string name="disabled">Desativado</string>
   <!-- [CHAR LIMIT=30] Manage applications, text telling using an application is not installed for the current user. The key part is that it's not installed. -->
-  <string name="not_installed">Não instalado para o usuário</string>
+  <string name="not_installed">Não instalado para utilizador</string>
   <!-- [CHAR LIMIT=25] Text shown when there are no applications to display. -->
   <string name="no_applications">Nenhum app.</string>
   <!-- [CHAR LIMIT=15] Manage applications, label for chart showing internal storage use. -->
@@ -2883,7 +2883,7 @@
   <string name="service_process_name"><xliff:g id="process">%1$s</xliff:g></string>
   <!-- TODO: Remove it once the same entry in SettingsLib is translated. -->
   <!-- [CHAR LIMIT=NONE] Label of a running process that represents another user -->
-  <string name="running_process_item_user_label">Usuário: <xliff:g id="USER_NAME">%1$s</xliff:g></string>
+  <string name="running_process_item_user_label">Utilizador: <xliff:g id="USER_NAME">%1$s</xliff:g></string>
   <!-- [CHAR LIMIT=NONE] Label of a running process that represents a removed -->
   <string name="running_process_item_removed_user_label">Usuário removido</string>
   <!-- Descriptive text of a running process: singular process, singular service. -->
@@ -4639,7 +4639,7 @@
   <!-- Input label for the forwarding routes of a VPN profile. [CHAR LIMIT=40] -->
   <string name="vpn_routes">Rotas de encaminhamento (ex: 10.0.0.0/8)</string>
   <!-- Input label for the username of a VPN profile. [CHAR LIMIT=40] -->
-  <string name="vpn_username">Nome de usuário</string>
+  <string name="vpn_username">Nome de utilizador</string>
   <!-- Input label for the password of a VPN profile. [CHAR LIMIT=40] -->
   <string name="vpn_password">Senha</string>
   <!-- Checkbox label to save the username and the password in a VPN profile. [CHAR LIMIT=40] -->
@@ -4693,7 +4693,7 @@
   <!-- Tab label for built-in system CA certificates. -->
   <string name="trusted_credentials_system_tab">Sistema</string>
   <!-- Tab label for user added CA certificates. -->
-  <string name="trusted_credentials_user_tab">Usuário</string>
+  <string name="trusted_credentials_user_tab">Utilizador</string>
   <!-- Button label for disabling a system CA certificate. -->
   <string name="trusted_credentials_disable_label">Desativar</string>
   <!-- Button label for enabling a system CA certificate. -->
@@ -4739,13 +4739,13 @@
   <string name="ssl_ca_cert_settings_button">Verificar credenciais confiáveis</string>
   <!-- User settings -->
   <!-- User settings screen title [CHAR LIMIT=25] -->
-  <string name="user_settings_title">Usuários</string>
+  <string name="user_settings_title">Utilizadores</string>
   <!-- User settings header for list of users and profiles [CHAR LIMIT=40] -->
-  <string name="user_list_title">Usuários e perfis</string>
+  <string name="user_list_title">Utilizadores e perfis</string>
   <!-- User settings add user or restricted profile menu [CHAR LIMIT=35] -->
-  <string name="user_add_user_or_profile_menu">Adicionar usuário ou perfil</string>
+  <string name="user_add_user_or_profile_menu">Adicionar utilizador ou perfil</string>
   <!-- User settings add user menu [CHAR LIMIT=35] -->
-  <string name="user_add_user_menu">Adicionar usuário</string>
+  <string name="user_add_user_menu">Adicionar utilizador</string>
   <!-- User settings summary for a restricted profile [CHAR LIMIT=50] -->
   <string name="user_summary_restricted_profile">Perfil restrito</string>
   <!-- User settings warning that restricted profile needs a screen lock [CHAR LIMIT=NONE] -->
@@ -4767,17 +4767,17 @@
   <!-- Title for add user type dialog [CHAR LIMIT=45] -->
   <string name="user_add_user_type_title">Adicionar</string>
   <!-- Summary for add user action, when it's disabled [CHAR LIMIT=100] -->
-  <string name="user_add_max_count">É possível adicionar até <xliff:g id="USER_COUNT">%1$d</xliff:g> usuários</string>
+  <string name="user_add_max_count">É possível adicionar até <xliff:g id="USER_COUNT">%1$d</xliff:g> utilizadores</string>
   <!-- Summary for add user entry in the choice dialog [CHAR LIMIT=none] -->
-  <string name="user_add_user_item_summary">Usuários padrão têm seus próprios apps e conteúdo</string>
+  <string name="user_add_user_item_summary">Os utilizadores têm as suas próprias aplicações e conteúdos</string>
   <!-- Summary for add restricted profile entry in the choice dialog [CHAR LIMIT=none] -->
   <string name="user_add_profile_item_summary">É possível restringir o acesso a apps e conteúdo a partir de sua conta</string>
   <!-- Button text for adding a regular user [CHAR LIMIT=25] -->
-  <string name="user_add_user_item_title">Usuário</string>
+  <string name="user_add_user_item_title">Utilizador</string>
   <!-- Button text for adding a restricted profile [CHAR LIMIT=25] -->
   <string name="user_add_profile_item_title">Perfil restrito</string>
   <!-- Title for add user confirmation dialog [CHAR LIMIT=30] -->
-  <string name="user_add_user_title">Adicionar novo usuário?</string>
+  <string name="user_add_user_title">Adicionar novo utilizador?</string>
   <!-- Message for add user confirmation dialog - long version. [CHAR LIMIT=none] -->
   <string name="user_add_user_message_long">É possível compartilhar esse dispositivo com outras pessoas criando usuários adicionais. Cada usuário tem seu próprio espaço, que pode ser personalizado com apps, planos de fundo etc. Os usuários também podem ajustar as configurações do dispositivo, como Wi‑Fi, que afetam a todos.\n\nQuando você adiciona um novo usuário, essa pessoa precisa configurar o próprio espaço.\n\nQualquer usuário pode atualizar apps para os demais usuários.</string>
   <!-- Message for add user confirmation dialog - short version. [CHAR LIMIT=none] -->
@@ -4799,11 +4799,11 @@
   <!-- Message to limited users that they cannot add accounts [CHAR LIMIT=100] -->
   <string name="user_cannot_add_accounts_message">Perfis restritos não podem adicionar contas</string>
   <!-- User details remove user menu [CHAR LIMIT=20] -->
-  <string name="user_remove_user_menu">Excluir <xliff:g id="USER_NAME">%1$s</xliff:g> do dispositivo</string>
+  <string name="user_remove_user_menu">Eliminar <xliff:g id="USER_NAME">%1$s</xliff:g> deste dispositivo</string>
   <!-- User menu to allow creating new users from lockscreen [CHAR LIMIT=30] -->
   <string name="user_add_on_lockscreen_menu">Adic usuários c/ tela bloqueada</string>
   <!-- User details new user name [CHAR LIMIT=30] -->
-  <string name="user_new_user_name">Novo usuário</string>
+  <string name="user_new_user_name">Novo utilizador</string>
   <!-- User details new restricted profile name [CHAR LIMIT=30] -->
   <string name="user_new_profile_name">Novo perfil</string>
   <!-- User (self) removal confirmation title [CHAR LIMIT=30] -->
@@ -4825,9 +4825,9 @@
   <!-- User profile removal confirmation message [CHAR LIMIT=none] -->
   <string name="user_profile_confirm_remove_message">Todos os apps e dados serão excluídos.</string>
   <!-- Setting label to show that a new user is being added [CHAR LIMIT=30] -->
-  <string name="user_adding_new_user">Adicionando novo usuário...</string>
+  <string name="user_adding_new_user">A adicionar novo utilizador...</string>
   <!-- Spoken content description for delete icon beside a user [CHAR LIMIT=none] -->
-  <string name="user_delete_user_description">Excluir usuário</string>
+  <string name="user_delete_user_description">Eliminar utilizador</string>
   <!-- Delete button text [CHAR LIMIT=25] -->
   <string name="user_delete_button">Excluir</string>
   <!-- TODO: Remove it once the same entry in SettingsLib is translated. -->
@@ -4846,7 +4846,7 @@
   <!-- Title of preference to enable calling and SMS [CHAR LIMIT=45] -->
   <string name="user_enable_calling_sms">Ativar chamadas telefônicas e SMS</string>
   <!-- Title of preference to remove the user [CHAR LIMIT=35] -->
-  <string name="user_remove_user">Remover usuário</string>
+  <string name="user_remove_user">Remover utilizador</string>
   <!-- Title for confirmation of turning on calls [CHAR LIMIT=40] -->
   <string name="user_enable_calling_confirm_title">Ativar chamadas telefônicas?</string>
   <!-- Message for confirmation of turning on calls [CHAR LIMIT=none] -->
