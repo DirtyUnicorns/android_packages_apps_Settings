@@ -6406,6 +6406,7 @@
     <!-- Title and summary for SIM Status -->
     <!-- Title for IMEI preference [CHAR LIMIT=30] -->
     <string name="imei_information_title">IMEI information</string>
+    <string name="device_info_title">Phone info</string>
 
     <!-- Encryption interstitial title. This screen asks the user whether the device will ask for a PIN / pattern / password before the device starts up. [CHAR LIMIT=30] -->
     <string name="encryption_interstitial_header">Secure start-up</string>
