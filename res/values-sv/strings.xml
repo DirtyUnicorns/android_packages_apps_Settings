@@ -1593,7 +1593,7 @@
   <!-- Sound settings screen, setting option summary text -->
   <string name="media_volume_summary">Ställ in volym för musik och video</string>
   <!-- Sound settings screen, alarm volume slider title -->
-  <string name="alarm_volume_title">Larm</string>
+  <string name="alarm_volume_title">Alarm</string>
   <!-- Sound settings screen, dock settings summary-->
   <string name="dock_settings_summary">Ljudinställningar för den anslutna dockan</string>
   <!-- Sound settings screen, setting check box label -->
