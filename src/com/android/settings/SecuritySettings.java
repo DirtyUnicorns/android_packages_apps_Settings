@@ -105,6 +105,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private static final String PACKAGE_MIME_TYPE = "application/vnd.android.package-archive";
     private static final String KEY_TRUST_AGENT = "trust_agent";
     private static final String KEY_SCREEN_PINNING = "screen_pinning_settings";
+    private static final String KEY_PACKAGE_INSTALL_OVERLAY_CHECK = "toggle_package_install_overlay_check";
 
     // These switch preferences need special handling since they're not all stored in Settings.
     private static final String SWITCH_PREFERENCE_KEYS[] = { KEY_LOCK_AFTER_TIMEOUT,
@@ -137,6 +138,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private SwitchPreference mToggleAppInstallation;
     private DialogInterface mWarnInstallApps;
     private SwitchPreference mPowerButtonInstantlyLocks;
+    private SwitchPreference mPackageInstallOverlayCheck;
 
     private boolean mIsPrimary;
 
@@ -348,6 +350,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
                     root.findPreference(KEY_APP_SECURITY_CATEGORY);
             appCategory.removePreference(mBlacklist);
         }
+
+        mPackageInstallOverlayCheck = (SwitchPreference) findPreference(
+                KEY_PACKAGE_INSTALL_OVERLAY_CHECK);
 
         // The above preferences come and go based on security state, so we need to update
         // the index. This call is expected to be fairly cheap, but we may want to do something
@@ -643,6 +648,11 @@ public class SecuritySettings extends SettingsPreferenceFragment
             mResetCredentials.setEnabled(!mKeyStore.isEmpty());
         }
 
+        if (mPackageInstallOverlayCheck != null) {
+            mPackageInstallOverlayCheck.setChecked(Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.PACKAGE_INSTALL_OVERLAY_CHECK_DISABLED, 0) != 0);
+        }
+
         updateOwnerInfo();
         updateBlacklistSummary();
     }
@@ -672,6 +682,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 startActivity(mTrustAgentClickIntent);
                 mTrustAgentClickIntent = null;
             }
+        } else if (KEY_PACKAGE_INSTALL_OVERLAY_CHECK.equals(key)) {
+            Settings.Secure.putInt(getContentResolver(), Settings.Secure.PACKAGE_INSTALL_OVERLAY_CHECK_DISABLED,
+                    mPackageInstallOverlayCheck.isChecked() ? 1 : 0);
         } else {
             // If we didn't handle it, let preferences handle it.
             return super.onPreferenceTreeClick(preferenceScreen, preference);
