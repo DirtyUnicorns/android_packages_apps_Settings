@@ -264,10 +264,10 @@
   <string name="dashboard_columns_three">3</string>
   <string name="dashboard_tileview_double_lines_title">ダッシュボードのタイトル表示</string>
   <string name="dashboard_tileview_double_lines_summary">ダッシュボードのタイトルを2行で表示する</string>
-  <string name="dashboard_tileview_dividers_title">Dashboard dividers</string>
+  <string name="dashboard_tileview_dividers_title">ダッシュボードの区切り線</string>
   <string name="dashboard_tileview_dividers_summary">ダッシュボードの項目間の区切り線を非表示にする</string>
   <!-- Optional Dashboard Switches -->
-  <string name="dashboard_switches_title">Dashboard Switches</string>
+  <string name="dashboard_switches_title">ダッシュボードのスイッチ</string>
   <string name="dashboard_switches_off">Switches Off</string>
   <string name="dashboard_switches_on">Switches On</string>
   <string name="dashboard_switches_summary">Change the position of the dashboard switches</string>
@@ -278,7 +278,7 @@
   <string name="app_notification_no_ongoing_on_keyguard_title">Disable ongoing on lockscreen</string>
   <string name="app_notification_no_ongoing_on_keyguard_summary">Never show ongoing notifications from this app on the lockscreen</string>
   <!-- Blacklist preferences -->
-  <string name="app_security_title">Privacy</string>
+  <string name="app_security_title">プライバシー</string>
   <string name="blacklist_title">Blocked caller list</string>
   <string name="blacklist_edit_dialog_title">Edit blocked phone number</string>
   <string name="blacklist_prefs">Settings</string>
@@ -345,4 +345,7 @@
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Prevent accidental wake up</string>
   <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+  <!-- Overlay permission check configurable -->
+  <string name="toggle_package_install_overlay_check_title">Disable permission overlay check</string>
+  <string name="toggle_package_install_overlay_check_summary">WARNING\u003A this disables a security check to prevent possible tapjacking! Use only if you understand the consequences.</string>
 </resources>

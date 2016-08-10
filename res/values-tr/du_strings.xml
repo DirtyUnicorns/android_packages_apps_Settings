@@ -343,6 +343,9 @@
   <string name="show_cpu_info">İşlemci bilgisini göster</string>
   <string name="show_cpu_info_summary">Geçerli İşlemci bilgisini gösteren ekran paylaşımı</string>
   <!-- Proximity wake -->
-  <string name="proximity_wake_title">Prevent accidental wake up</string>
-  <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+  <string name="proximity_wake_title">Yanlış uyandırmaları önle</string>
+  <string name="proximity_wake_summary">Ekranı uyandırmadan önce yakınlık sensörü kontrolü</string>
+  <!-- Overlay permission check configurable -->
+  <string name="toggle_package_install_overlay_check_title">Disable permission overlay check</string>
+  <string name="toggle_package_install_overlay_check_summary">WARNING\u003A this disables a security check to prevent possible tapjacking! Use only if you understand the consequences.</string>
 </resources>

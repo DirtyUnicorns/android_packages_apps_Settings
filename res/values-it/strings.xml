@@ -2589,7 +2589,7 @@
   <!-- Security & location settings screen, setting check box title. This setting controls whether tactile feedback will be produced when the user draws the pattern.-->
   <string name="lockpattern_settings_enable_tactile_feedback_title">Vibra alla pressione</string>
   <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
-  <string name="lockpattern_settings_enable_power_button_instantly_locks">Blocca con tasto accensione</string>
+  <string name="lockpattern_settings_enable_power_button_instantly_locks">Il pulsante di accensione blocca istantaneamente</string>
   <!-- Security & location settings screen, setting optional summary when a trust agent is enabled-->
   <string name="lockpattern_settings_power_button_instantly_locks_summary">Tranne quando tenuto sbloccato da <xliff:g id="TRUST_AGENT_NAME">%1$s</xliff:g></string>
   <!-- Security & location settings screen, setting option name when user has never set an unlock pattern -->
@@ -3279,7 +3279,7 @@
   <!-- Summary for the preference screen to enable the global geture that turns on accessibility (off state). [CHAR LIMIT=35] -->
   <string name="accessibility_global_gesture_preference_summary_off">OFF</string>
   <!--  Description for the preference screen to enable the global geture taht turns on accessibility. [CHAR LIMIT=none] -->
-  <string name="accessibility_global_gesture_preference_description">Quando questa funzione è attiva, puoi attivare rapidamente le funzioni di accessibilità in due passaggi:\n\nPassaggio 1. Premi e tieni premuto il tasto di accensione fino all\'emissione di un suono o una vibrazione.\n\nPassaggio 2. Tocca con due dita e tieni premuto finché senti un suono di conferma.\n\nSe sul dispositivo sono configurati più utenti e utilizzi questa scorciatoia nella schermata di blocco, l\'accessibilità viene attivata temporaneamente fino allo sblocco del dispositivo.</string>
+  <string name="accessibility_global_gesture_preference_description">Quando questa funzione è attiva, puoi attivare rapidamente le funzioni di accessibilità in due passaggi:\n\nPassaggio 1. Premi e tieni premuto il pulsante di accensione fino all\'emissione di un suono o una vibrazione.\n\nPassaggio 2. Tocca con due dita e tieni premuto finché senti un suono di conferma.\n\nSe sul dispositivo sono configurati più utenti e utilizzi questa scorciatoia nella schermata di blocco, l\'accessibilità viene attivata temporaneamente fino allo sblocco del dispositivo.</string>
   <!-- Title for the accessibility preference to enable large text. [CHAR LIMIT=35] -->
   <string name="accessibility_toggle_large_text_preference_title">Testo grande</string>
   <!-- Title for the accessibility preference to high contrast text. [CHAR LIMIT=35] -->
@@ -3291,7 +3291,7 @@
   <!-- Summary for the accessibility preference to auto update screen magnification. [CHAR LIMIT=50] -->
   <string name="accessibility_toggle_screen_magnification_auto_update_preference_summary">Aggiorna ingrandimento schermo per transizioni app</string>
   <!-- Title for the accessibility preference to power button to end a call. [CHAR LIMIT=35] -->
-  <string name="accessibility_power_button_ends_call_prerefence_title">Chiudi chiamata da ON/OFF</string>
+  <string name="accessibility_power_button_ends_call_prerefence_title">Il pulsante di accensione termina la chiamata</string>
   <!-- Title for the accessibility preference to speak passwords. [CHAR LIMIT=35] -->
   <string name="accessibility_toggle_speak_password_preference_title">Pronuncia le password</string>
   <!-- Title for accessibility preference to choose long-press delay i.e. timeout before it is detected. [CHAR LIMIT=35] -->
@@ -5480,6 +5480,7 @@
   <!-- Title and summary for SIM Status -->
   <!-- Title for IMEI preference [CHAR LIMIT=30] -->
   <string name="imei_information_title">Dati IMEI</string>
+  <string name="device_info_title">Phone info</string>
   <!-- Encryption interstitial title. This screen asks the user whether the device will ask for a PIN / pattern / password before the device starts up. [CHAR LIMIT=30] -->
   <string name="encryption_interstitial_header">Proteggi avvio</string>
   <!-- Encryption interstitial button to continue with the shown setting.  Appears on screen that asks the user to opt in/out of encrypting device with a pin/pattern/password. [CHAR LIMIT=NONE] -->

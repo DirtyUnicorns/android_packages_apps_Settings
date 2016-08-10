@@ -345,4 +345,7 @@
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Réveil involontaire</string>
   <string name="proximity_wake_summary">Vérifier le capteur de proximité avant d\'allumer l\'écran</string>
+  <!-- Overlay permission check configurable -->
+  <string name="toggle_package_install_overlay_check_title">Disable permission overlay check</string>
+  <string name="toggle_package_install_overlay_check_summary">WARNING\u003A this disables a security check to prevent possible tapjacking! Use only if you understand the consequences.</string>
 </resources>

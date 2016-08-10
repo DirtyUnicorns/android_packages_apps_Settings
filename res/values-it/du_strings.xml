@@ -146,7 +146,7 @@
   <string name="notification_light_applist_title">Apps</string>
   <string name="notification_light_phonelist_title">Telefono</string>
   <string name="notification_light_use_custom">Usa valori personalizzati</string>
-  <string name="notification_light_default_value">Default</string>
+  <string name="notification_light_default_value">Predefinito</string>
   <string name="notification_light_missed_call_title">Chiamata persa</string>
   <string name="notification_light_voicemail_title">Messaggio vocale</string>
   <string name="notification_light_screen_on">Luci di notifica con schermo attivo</string>
@@ -208,7 +208,7 @@
   <string name="wifi_setting_countrycode_summary">Specifica il codice regionale per il Wi-Fi</string>
   <!-- Wi-Fi settings screen, error message when the region code could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">C\'è stato un problema nell\'impostazione del codice regionale.</string>
-  <string name="wifi_setting_countrycode_default">Default</string>
+  <string name="wifi_setting_countrycode_default">Predefinito</string>
   <!-- Device Hostname -->
   <string name="device_hostname">Hostname del dispositivo</string>
   <!-- USB debugging notification -->
@@ -247,8 +247,8 @@
   <!-- Double tap to launch target -->
   <string name="dt2l_target_category">Tocca due volte per avviare le opzioni</string>
   <string name="dt2l_target_vib_title">Regola la vibrazione del pulsante di attivazione</string>
-  <string name="dt2l_target_vib_summary">Regola la vibrazione quando si preme due volte il pulsante di alimentazione</string>
-  <string name="camera_double_tap_power_gesture_title">Premere due volte il tasto power per avviare la fotocamera</string>
+  <string name="dt2l_target_vib_summary">Regola la vibrazione quando si preme due volte il pulsante di accensione</string>
+  <string name="camera_double_tap_power_gesture_title">Premi due volte il pulsante di accensione per avviare la fotocamera</string>
   <string name="camera_double_tap_power_gesture_desc">Accedi rapidamente alla fotocamera senza sbloccare lo schermo</string>
   <!-- Battery stats reset -->
   <string name="battery_stats_reset">Azzera statistiche</string>
@@ -324,13 +324,13 @@
   <string name="doze_brightness_level_title">Livello di luminosità</string>
   <string name="onehundred_ms">100 ms</string>
   <string name="twofifty_ms">250 ms</string>
-  <string name="fivehundred_ms_default">500 ms (default)</string>
+  <string name="fivehundred_ms_default">500 ms (predefinito)</string>
   <string name="sevenfifty_ms">750 ms</string>
   <string name="one_second">1 s</string>
   <string name="onehalf_second">1.5 s</string>
   <string name="two_second">2 s</string>
   <string name="twohalf_second">2.5 s</string>
-  <string name="three_second_default">3 s (default)</string>
+  <string name="three_second_default">3 s (predefinito)</string>
   <string name="threehalf_second">3.5 s</string>
   <string name="four_second">4 s</string>
   <string name="fourhalf_second">4.5 s</string>
@@ -345,4 +345,7 @@
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Previeni i risvegli accidentali</string>
   <string name="proximity_wake_summary">Controlla il sensore di prossimità prima di risvegliare lo schermo</string>
+  <!-- Overlay permission check configurable -->
+  <string name="toggle_package_install_overlay_check_title">Disable permission overlay check</string>
+  <string name="toggle_package_install_overlay_check_summary">WARNING\u003A this disables a security check to prevent possible tapjacking! Use only if you understand the consequences.</string>
 </resources>

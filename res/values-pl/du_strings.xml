@@ -345,4 +345,7 @@
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Zapobieganie przypadkowemu wybudzeniu</string>
   <string name="proximity_wake_summary">Sprawdź czujnik zbliżeniowy przed wybudzeniem ekranu</string>
+  <!-- Overlay permission check configurable -->
+  <string name="toggle_package_install_overlay_check_title">Disable permission overlay check</string>
+  <string name="toggle_package_install_overlay_check_summary">WARNING\u003A this disables a security check to prevent possible tapjacking! Use only if you understand the consequences.</string>
 </resources>

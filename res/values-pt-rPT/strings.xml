@@ -1130,13 +1130,13 @@
   <string name="wifi_alert_lockdown_by_device_owner">O app <xliff:g id="APP_NAME">%1$s</xliff:g> gerencia seu dispositivo e não permite a modificação ou exclusão desta rede Wi-Fi. Para receber mais informações, entre em contato com seu administrador.</string>
   <!-- NFC settings -->
   <!-- Used in the 1st-level settings screen to turn on NFC -->
-  <string name="nfc_quick_toggle_title">NFC</string>
+  <string name="nfc_quick_toggle_title">Nfc</string>
   <!-- Description of NFC in the 1st level settings screen, for a tablet. [CHAR LIMIT=NONE] -->
   <string name="nfc_quick_toggle_summary" product="tablet">Permitir troca de dados quando o tablet tocar em outro dispositivo</string>
   <!-- Description of NFC in the 1st level settings screen, for a phone. [CHAR LIMIT=NONE] -->
   <string name="nfc_quick_toggle_summary" product="default">Permitir troca de dados quando o telefone tocar em  outro dispositivo</string>
   <!-- Used to enter the Android Beam sharing preferences screen. This phrase is a trademark. [CHAR LIMIT=32] -->
-  <string name="android_beam_settings_title">Android Beam</string>
+  <string name="android_beam_settings_title">Android BeamBaixar</string>
   <!-- Used to describe the on state of the Android Beam feature [CHAR LIMIT=NONE] -->
   <string name="android_beam_on_summary">Pronto para transmitir conteúdo de apps via NFC</string>
   <!-- Used to describe the off state of the Android Beam feature [CHAR LIMIT=NONE] -->
@@ -1430,7 +1430,7 @@
   <string name="wifi_dns2">DNS 2</string>
   <!-- Hint text for DNS -->
   <!-- Label for the gateway of the network -->
-  <string name="wifi_gateway">Gateway</string>
+  <string name="wifi_gateway">GatewayBaixar</string>
   <!-- Hint text for the gateway -->
   <!-- Label for the network prefix of the network [CHAR LIMIT=25]-->
   <string name="wifi_network_prefix_length">Tamanho do pref. de rede</string>
@@ -1698,7 +1698,7 @@
   <!-- Sound & display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
   <string name="night_mode_title">Tema</string>
   <!-- Sound & display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
-  <string name="night_mode_summary">%s</string>
+  <string name="night_mode_summary"> %s</string>
   <!-- Sound & display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
   <string name="night_mode_no">Claro</string>
   <!-- Sound & display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
@@ -1791,7 +1791,7 @@
   <!-- SIM card lock settings screen, toast after not entering correct SIM PIN [CHAR LIMIT=40] -->
   <string name="sim_lock_failed">Não é possível alterar o estado de bloqueio do cartão SIM.\nPIN possivelmente incorreto.</string>
   <!-- SIM card lock settings screen, SIM PIN dialog button labels: [CHAR LIMIT=40] -->
-  <string name="sim_enter_ok">OK</string>
+  <string name="sim_enter_ok">Ok</string>
   <!-- SIM card lock settings screen, SIM PIN dialog button labels: [CHAR LIMIT=40] -->
   <string name="sim_enter_cancel">Cancelar</string>
   <!-- Multiple SIMs found title.  [CHAR LIMIT=40] -->
@@ -2489,7 +2489,7 @@
   <!-- About phone settings screen, setting option name to see wallpapers attributions values -->
   <string name="wallpaper_attributions_values">Provedores de imagens de satélite:\n©2014 CNES / Astrium, DigitalGlobe, Bluesky</string>
   <!-- Phone Manual -->
-  <string name="settings_manual_activity_title">Manual</string>
+  <string name="settings_manual_activity_title">ManualBaixar</string>
   <!-- About phone settings screen, Manual dialog message when manual cannot be loaded -->
   <string name="settings_manual_activity_unavailable">Ocorreu um problema ao carregar o manual.</string>
   <!-- Title for actual Settings license activity. -->
@@ -2653,7 +2653,7 @@
   <!-- Manage applications, text label for button to kill / force stop an application -->
   <string name="force_stop">Forçar parada</string>
   <!-- Manage applications, individual application info screen,label under Storage heading.  The total storage space taken up by this app. -->
-  <string name="total_size_label">Total</string>
+  <string name="total_size_label">TotalBaixar</string>
   <!-- Manage applications, individual application info screen, label under Storage heading. The amount of space taken up by the application itself (for example, the java compield files and things like that) -->
   <string name="application_size_label">Aplicação</string>
   <!--  Manage applications, individual application info screen, label under Storage heading.  The amount of space taken up by the app's code on USB storage [CHARSIZE=40] -->
@@ -4975,7 +4975,7 @@
   <!-- Call Manager settings title.  [CHAR LIMIT=50] -->
   <string name="call_manager_title">Gerenciador de chamadas</string>
   <!-- Call Manager settings summary.  [CHAR LIMIT=50] -->
-  <string name="call_manager_summary"><xliff:g id="app">%1$s</xliff:g></string>
+  <string name="call_manager_summary"><xliff:g id="app">%1$s </xliff:g></string>
   <!-- Cell Broadcast settings title.  [CHAR LIMIT=50] -->
   <string name="cell_broadcast_settings">Transmissões de emergência</string>
   <!-- Network operators settings title.  [CHAR LIMIT=50] -->
@@ -5480,6 +5480,7 @@
   <!-- Title and summary for SIM Status -->
   <!-- Title for IMEI preference [CHAR LIMIT=30] -->
   <string name="imei_information_title">Informações de IMEI</string>
+  <string name="device_info_title">Phone info</string>
   <!-- Encryption interstitial title. This screen asks the user whether the device will ask for a PIN / pattern / password before the device starts up. [CHAR LIMIT=30] -->
   <string name="encryption_interstitial_header">Inicialização segura</string>
   <!-- Encryption interstitial button to continue with the shown setting.  Appears on screen that asks the user to opt in/out of encrypting device with a pin/pattern/password. [CHAR LIMIT=NONE] -->

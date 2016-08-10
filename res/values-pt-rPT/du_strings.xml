@@ -20,9 +20,9 @@
   <string name="duextrainfo">Informação Extra</string>
   <string name="duextrainfo_summary">Mostrar informação extra sobre o Cpu, ecrã, etc</string>
   <string name="basicinfo">INFORMAÇÃO BÁSICA</string>
-  <string name="manufacturer">Manufacturer</string>
-  <string name="hardwaretype">Hardware type</string>
-  <string name="systempartition">System partition</string>
+  <string name="manufacturer">Fabricante</string>
+  <string name="hardwaretype">Tipo de Hardware</string>
+  <string name="systempartition">Partição do sistema</string>
   <string name="datapartition">Partição de dados</string>
   <string name="ram">Ram</string>
   <string name="bootloader">Bootloader</string>
@@ -345,4 +345,7 @@
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Prevent accidental wake up</string>
   <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+  <!-- Overlay permission check configurable -->
+  <string name="toggle_package_install_overlay_check_title">Disable permission overlay check</string>
+  <string name="toggle_package_install_overlay_check_summary">WARNING\u003A this disables a security check to prevent possible tapjacking! Use only if you understand the consequences.</string>
 </resources>

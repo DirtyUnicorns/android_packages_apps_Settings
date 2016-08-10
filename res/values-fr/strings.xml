@@ -5476,6 +5476,7 @@
   <!-- Title and summary for SIM Status -->
   <!-- Title for IMEI preference [CHAR LIMIT=30] -->
   <string name="imei_information_title">Informations sur le code IMEI</string>
+  <string name="device_info_title">Phone info</string>
   <!-- Encryption interstitial title. This screen asks the user whether the device will ask for a PIN / pattern / password before the device starts up. [CHAR LIMIT=30] -->
   <string name="encryption_interstitial_header">Démarrage sécurisé</string>
   <!-- Encryption interstitial button to continue with the shown setting.  Appears on screen that asks the user to opt in/out of encrypting device with a pin/pattern/password. [CHAR LIMIT=NONE] -->
