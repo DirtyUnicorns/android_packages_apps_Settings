@@ -47,7 +47,7 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
 import android.preference.SeekBarVolumizer;
 import android.preference.TwoStatePreference;
-import android.preference.SlimSeekBarPreference;
+import android.preference.CustomSeekBarPreference;
 import android.preference.SwitchPreference;
 import android.provider.MediaStore;
 import android.provider.OpenableColumns;
@@ -140,7 +140,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private int mRingerMode = -1;
     private SwitchPreference mVolumeLinkNotification;
     private PreferenceCategory mSoundCategory;
-    private SlimSeekBarPreference mVolumeDialogTimeout;
+    private CustomSeekBarPreference mVolumeDialogTimeout;
 
     private UserManager mUserManager;
 
@@ -189,13 +189,10 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
                     KEY_VOLUME_LINK_NOTIFICATION));
         }
 
-        // Volume dialog timeout seekbar
-        mVolumeDialogTimeout = (SlimSeekBarPreference) findPreference(KEY_VOLUME_DIALOG_TIMEOUT);
-        mVolumeDialogTimeout.setDefault(1500);
-        mVolumeDialogTimeout.isMilliseconds(true);
-        mVolumeDialogTimeout.setInterval(1);
-        mVolumeDialogTimeout.minimumValue(100);
-        mVolumeDialogTimeout.multiplyValue(100);
+        mVolumeDialogTimeout = (CustomSeekBarPreference) findPreference(KEY_VOLUME_DIALOG_TIMEOUT);
+        int volumeDialogTimeout = Settings.System.getInt(getContentResolver(),
+                Settings.System.VOLUME_DIALOG_TIMEOUT, 1500);
+        mVolumeDialogTimeout.setValue(volumeDialogTimeout);
         mVolumeDialogTimeout.setOnPreferenceChangeListener(this);
 
         initRingtones(mSoundCategory);
@@ -213,7 +210,6 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         refreshZenAccess();
         updateRingerMode();
         updateEffectsSuppressor();
-        updateState();
     }
 
     @Override
@@ -837,21 +833,10 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mVolumeDialogTimeout) {
-            int volumeDialogTimeout = Integer.valueOf((String) newValue);
+            int val = (Integer) newValue;
             Settings.System.putInt(getContentResolver(),
-                    Settings.System.VOLUME_DIALOG_TIMEOUT, volumeDialogTimeout);
+                    Settings.System.VOLUME_DIALOG_TIMEOUT, val * 1);
         }
         return true;
-    }
-
-    private void updateState() {
-        final Activity activity = getActivity();
-
-        if (mVolumeDialogTimeout != null) {
-            final int volumeDialogTimeout = Settings.System.getInt(getContentResolver(),
-                    Settings.System.VOLUME_DIALOG_TIMEOUT, 1500);
-            // minimum 100 is 1 interval of the 100 multiplier
-            mVolumeDialogTimeout.setInitValue((volumeDialogTimeout / 100) - 1);
-        }
     }
 }
