@@ -20,4 +20,9 @@
     <!-- WiFi/BT empty text size -->
     <dimen name="wifi_bt_empty_text">12sp</dimen>
 
+    <!-- WiFi Calling select dialog -->
+    <dimen name="select_dialog_padding_start">20dp</dimen>
+    <dimen name="select_dialog_item_margin_start">12dp</dimen>
+    <dimen name="select_dialog_summary_padding_bottom">8dp</dimen>
+
 </resources>
