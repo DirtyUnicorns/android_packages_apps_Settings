@@ -346,6 +346,6 @@
   <string name="proximity_wake_title">Per ongeluk ontwaken voorkomen</string>
   <string name="proximity_wake_summary">Nabijheidssensor checken voorafgaand aan ontwaken van scherm</string>
   <!-- Overlay permission check configurable -->
-  <string name="toggle_package_install_overlay_check_title">Disable permission overlay check</string>
-  <string name="toggle_package_install_overlay_check_summary">WARNING\u003A this disables a security check to prevent possible tapjacking! Use only if you understand the consequences.</string>
+  <string name="toggle_package_install_overlay_check_title">Zet overlay-machtigingscheck uit</string>
+  <string name="toggle_package_install_overlay_check_summary">LET OP\u003A dit schakelt een beveiligingscontrole uit om mogelijke tapjacking te voorkomen! Gebruik dit alleen als je de gevolgen begrijpt.</string>
 </resources>

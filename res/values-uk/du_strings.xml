@@ -53,24 +53,24 @@
   <string name="mod_version">DU версія</string>
   <string name="mod_version_default">Невідомо</string>
   <!-- Share Dirty Unicorns -->
-  <string name="share_du_title">Share Dirty Unicorns</string>
-  <string name="share_du_summary">Let others know about Dirty Unicorns</string>
-  <string name="share_message">Check out what #DirtyUnicorns is all about @ http://goo.gl/emISQ1</string>
-  <string name="share_chooser_title">Share Dirty Unicorns</string>
+  <string name="share_du_title">Розповісти про Dirty Unicorns</string>
+  <string name="share_du_summary">Розповісти іншим про Dirty Unicorns</string>
+  <string name="share_message">Дивіться що є #DirtyUnicorns насправді</string>
+  <string name="share_chooser_title">Розповісти про Dirty Unicorns</string>
   <!-- SuperSU -->
   <string name="supersu_title">Суперкористувач</string>
   <!-- Google -->
   <string name="google_title">Googlе</string>
   <!-- Customization -->
   <string name="header_category_custom">Персоналізація</string>
-  <string name="custom_title">Dirty Tweaks</string>
+  <string name="custom_title">Твіки Dirty</string>
   <string name="themes_settings_title">Теми</string>
   <!-- DU Changelog -->
   <string name="duchangelog">Список змін</string>
   <string name="du_summary">Перевірте, що змінилося в DU</string>
   <string name="du_app_name">Список змін DU</string>
   <!-- DU Updater -->
-  <string name="duupdater">Updater</string>
+  <string name="duupdater">Оновлення</string>
   <string name="duupdater_summary">Будьте в курсі з останніми функціями та виправленнями</string>
   <!-- DU About -->
   <string name="aboutdu">Інформація про DU</string>
@@ -149,12 +149,12 @@
   <string name="notification_light_default_value">За заумовчанням</string>
   <string name="notification_light_missed_call_title">Пропущений виклик</string>
   <string name="notification_light_voicemail_title">Голосова пошта</string>
-  <string name="notification_light_screen_on">Lights with screen on</string>
-  <string name="allow_lights_title">Lights in do not disturb mode</string>
+  <string name="notification_light_screen_on">Колір сповіщення при увімкненому екрані</string>
+  <string name="allow_lights_title">Індикація в режимі Не турбувати</string>
   <!-- Keyboard and Input methods  -->
-  <string name="title_keyboard_input">Advanced options</string>
-  <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
-  <string name="disable_fullscreen_keyboard_summary">Landscape keyboard will never take up entire screen</string>
+  <string name="title_keyboard_input">Додаткові можливості</string>
+  <string name="disable_fullscreen_keyboard_title">Вимкнути повноекрану клавіатуру</string>
+  <string name="disable_fullscreen_keyboard_summary">Клавіатури не займає весь екран в ландшафтному режимі</string>
   <string name="volume_key_cursor_control_title">Volume key cursor control</string>
   <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
   <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>

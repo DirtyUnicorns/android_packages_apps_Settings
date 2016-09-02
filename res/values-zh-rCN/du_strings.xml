@@ -58,11 +58,11 @@
   <string name="share_message">查看更多关于 #Dirty Unicorns 的资讯 @ http://goo.gl/emISQ1</string>
   <string name="share_chooser_title">分享Dirty Unicorns</string>
   <!-- SuperSU -->
-  <string name="supersu_title">超级用户</string>
+  <string name="supersu_title">超级用户（SU）</string>
   <!-- Google -->
   <string name="google_title">Google</string>
   <!-- Customization -->
-  <string name="header_category_custom">定制</string>
+  <string name="header_category_custom">个性化</string>
   <string name="custom_title">Dirty 设置</string>
   <string name="themes_settings_title">主题</string>
   <!-- DU Changelog -->
@@ -71,7 +71,7 @@
   <string name="du_app_name">DU 更新日志</string>
   <!-- DU Updater -->
   <string name="duupdater">系统更新</string>
-  <string name="duupdater_summary">保持最新的功能和修复</string>
+  <string name="duupdater_summary">追随最新的功能特性和补丁修复</string>
   <!-- DU About -->
   <string name="aboutdu">关于DU信息</string>
   <string name="aboutdu_summary">关于我们的开发者信息，维护人员和ROM的特点</string>
@@ -346,6 +346,6 @@
   <string name="proximity_wake_title">防止意外唤醒</string>
   <string name="proximity_wake_summary">唤醒屏幕前检查距离感应器</string>
   <!-- Overlay permission check configurable -->
-  <string name="toggle_package_install_overlay_check_title">Disable permission overlay check</string>
-  <string name="toggle_package_install_overlay_check_summary">WARNING\u003A this disables a security check to prevent possible tapjacking! Use only if you understand the consequences.</string>
+  <string name="toggle_package_install_overlay_check_title">禁用覆写权限检查</string>
+  <string name="toggle_package_install_overlay_check_summary">警告：这将会禁用一个阻止TapJacking攻击的安全检查！请仅在你了解后果的情况下这么做。</string>
 </resources>

@@ -18,7 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- DU Extra Info -->
   <string name="duextrainfo">Ekstra bilgi</string>
-  <string name="duextrainfo_summary">Cpu, ekran, vb için ekstra bilgi görüntüle</string>
+  <string name="duextrainfo_summary">İşlemci, ekran, vb için ekstra bilgileri görüntüle</string>
   <string name="basicinfo">TEMEL BİLGİLER</string>
   <string name="manufacturer">Üretici</string>
   <string name="hardwaretype">Donanım türü</string>
@@ -54,7 +54,7 @@
   <string name="mod_version_default">Bilinmiyor</string>
   <!-- Share Dirty Unicorns -->
   <string name="share_du_title">Dirty Unicorns\'u paylaş</string>
-  <string name="share_du_summary">Başkalarının Dirty Unicorns hakkında bilgilendirin</string>
+  <string name="share_du_summary">Başkalarını Dirty Unicorns hakkında bilgilendirin</string>
   <string name="share_message">#DirtyUnicorns hakkında herşey @ http://goo.gl/emISQ1</string>
   <string name="share_chooser_title">Dirty Unicorns\'u paylaş</string>
   <!-- SuperSU -->
@@ -63,7 +63,7 @@
   <string name="google_title">Google</string>
   <!-- Customization -->
   <string name="header_category_custom">Kişiselleştirme</string>
-  <string name="custom_title">Dirty Tweakleri</string>
+  <string name="custom_title">Dirty Ayarları</string>
   <string name="themes_settings_title">Temalar</string>
   <!-- DU Changelog -->
   <string name="duchangelog">Değişiklik kayıtları</string>
@@ -74,7 +74,7 @@
   <string name="duupdater_summary">En yeni özellikler ve düzeltmeler ile güncel kalın</string>
   <!-- DU About -->
   <string name="aboutdu">DU hakkında bilgi</string>
-  <string name="aboutdu_summary">Devs, geliştiriciler, katkıda bulunanlar ve rom özellikleri hakkında bilgi</string>
+  <string name="aboutdu_summary">Geliştiriciler, cihaz sorumluları ve rom özellikleri hakkında bilgi</string>
   <!-- Developer Tools -->
   <string name="developer_tools_title">Geliştirici araçları</string>
   <string name="developer_tools_summary">Gelişmiş hata ayıklama araçları</string>
@@ -99,7 +99,7 @@
   <string name="less_notification_sounds_5m">5 dakika</string>
   <!-- Volume Keys Media Control -->
   <string name="volume_keys_control_media_stream">Medya denetimi</string>
-  <string name="volume_keys_control_media_stream_summary">Ses seviyesi tuşları, bildirim sesleri yerine medyanın ses düzeyini belirler</string>
+  <string name="volume_keys_control_media_stream_summary">Ses tuşları bildirim sesleri yerine medya seslerini kontrol eder</string>
   <!-- Camera sound -->
   <string name="camera_sounds_title">Kamera deklanşör sesi</string>
   <string name="camera_sounds_summary">Kamera deklanşör sesini etkinleştir</string>
@@ -155,7 +155,7 @@
   <string name="title_keyboard_input">Gelişmiş seçenekler</string>
   <string name="disable_fullscreen_keyboard_title">Tam ekran klavyeyi devre dışı bırak</string>
   <string name="disable_fullscreen_keyboard_summary">Yatay klavye tüm ekranı asla kaplamayacak</string>
-  <string name="volume_key_cursor_control_title">Ses seviyesi tuşu ile imleç kontrolü</string>
+  <string name="volume_key_cursor_control_title">Ses tuşu ile imleç kontrolü</string>
   <string name="volume_key_cursor_control_on">Ses arttırma/azaltma imleci sol/sağa kaydırır</string>
   <string name="volume_key_cursor_control_on_reverse">Ses arttırma/azaltma imleci sağa/sola kaydırır</string>
   <string name="keyboard_rotation_toggle_title">Otomatik klavye döndürme</string>
@@ -164,7 +164,7 @@
   <string name="keyboard_rotation_timeout_summary">Klavye gizlendikten <xliff:g id="rotate_timeout">%1$s</xliff:g> saniye sonra otomatik döndürme sensörünü devre dışı bırakır</string>
   <string name="keyboard_rotation_dialog">Bu özellik geçici olarak klavye gösteriliyor ise etkinleştirmek için Otomatik Döndürmeyi zorlar.  Otomatik Döndür zaten etkin olduğunda etkisizdir.</string>
   <string name="show_enter_key_title">Giriş tuşunu göster</string>
-  <string name="show_enter_key_summary">Klavyeyi emoji tuşu yerine giriş tuşunu göstermek için zorla</string>
+  <string name="show_enter_key_summary">Klavyede ifade tuşu yerine enter tuşunu göstermeye zorlar</string>
   <string name="ime_switcher_notify">Seçici bildirimi</string>
   <string name="ime_switcher_notify_summary">Giriş methodu seçici bildirimini göster</string>
   <string name="attention">Dikkat</string>
@@ -346,6 +346,6 @@
   <string name="proximity_wake_title">Yanlış uyandırmaları önle</string>
   <string name="proximity_wake_summary">Ekranı uyandırmadan önce yakınlık sensörü kontrolü</string>
   <!-- Overlay permission check configurable -->
-  <string name="toggle_package_install_overlay_check_title">Disable permission overlay check</string>
-  <string name="toggle_package_install_overlay_check_summary">WARNING\u003A this disables a security check to prevent possible tapjacking! Use only if you understand the consequences.</string>
+  <string name="toggle_package_install_overlay_check_title">İzin bindirme kontrolü devre dışı</string>
+  <string name="toggle_package_install_overlay_check_summary">UYARI\u003Bu bir tapjacking önlemek için güvenlik denetimini devre dışı bırakır! Yalnıza sonuçlarını anlıyorsanız kullanın.</string>
 </resources>

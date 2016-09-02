@@ -346,6 +346,6 @@
   <string name="proximity_wake_title">Evitar despertar acidental</string>
   <string name="proximity_wake_summary">Verifique o sensor de proximidade antes de despertar a tela</string>
   <!-- Overlay permission check configurable -->
-  <string name="toggle_package_install_overlay_check_title">Disable permission overlay check</string>
-  <string name="toggle_package_install_overlay_check_summary">WARNING\u003A this disables a security check to prevent possible tapjacking! Use only if you understand the consequences.</string>
+  <string name="toggle_package_install_overlay_check_title">Desativar a permissão de checar sobreposição</string>
+  <string name="toggle_package_install_overlay_check_summary">AVISO\u003A isto desabilita a verificação de segurança para evitar o tapjacking! Use somente se você entende as consequências.</string>
 </resources>

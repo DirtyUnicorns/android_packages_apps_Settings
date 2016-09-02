@@ -346,6 +346,6 @@
   <string name="proximity_wake_title">Unbeabsichtigtes Aufwecken verhindern</string>
   <string name="proximity_wake_summary">Näherungssensor verwenden, um ein unbeabsichtigtes Aufwecken des Geräts zu vermeiden</string>
   <!-- Overlay permission check configurable -->
-  <string name="toggle_package_install_overlay_check_title">Disable permission overlay check</string>
-  <string name="toggle_package_install_overlay_check_summary">WARNING\u003A this disables a security check to prevent possible tapjacking! Use only if you understand the consequences.</string>
+  <string name="toggle_package_install_overlay_check_title">Deaktiviere Berechtigung für Overlayüberprüfung</string>
+  <string name="toggle_package_install_overlay_check_summary">WARNING\u003A Dies deaktiviert einen Sicherheits-Check, um mögliches Tapjacking zu vermeiden! Verwenden Sie dies nur, wenn Sie damit einverstanden sind.</string>
 </resources>
