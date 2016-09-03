@@ -16,6 +16,10 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- DU Tweaks -->
+    <string name="dirtytweaks_title">Dirty Tweaks</string>
+    <string name="header_category_dirtytweaks">Customization</string>
+
     <!-- DU version -->
     <string name="mod_version">DU version</string>
     <string name="mod_version_default">Unknown</string>
