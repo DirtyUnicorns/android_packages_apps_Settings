@@ -115,6 +115,18 @@
         </PreferenceCategory>
 
         <PreferenceCategory
+                android:key="dashboard_category"
+                android:title="@string/dashboard_category">
+
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+                android:key="disable_suggestions"
+                android:title="@string/disable_suggestions_title"
+                android:summary="@string/disable_suggestions_summary"
+                android:defaultValue="false" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
                 android:key="density_category"
                 android:title="@string/density_category">
 
