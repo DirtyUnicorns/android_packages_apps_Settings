@@ -118,11 +118,12 @@
                 android:key="dashboard_category"
                 android:title="@string/dashboard_category">
 
-        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+       <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
                 android:key="disable_suggestions"
-                android:title="@string/disable_suggestions_title"
-                android:summary="@string/disable_suggestions_summary"
-                android:defaultValue="false" />
+                android:title="@string/dashboard_suggestions_title"
+                android:summaryOn="@string/summary_dashboard_suggestions_enabled"
+                android:summaryOff="@string/summary_dashboard_suggestions_disabled"
+                android:defaultValue="true" />
 
         <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
                 android:key="remove_tile_summary"
