@@ -59,5 +59,9 @@
                 android:resource="@string/dirtytweaks_summary" />
         </activity>
 
+        <!-- Battery and notification lights -->
+        <activity android:name="com.dirtyunicorns.tweaks.fragments.batterylight.NotificationLightSettings" />
+        <activity android:name="com.dirtyunicorns.tweaks.fragments.batterylight.BatteryLightSettings" />
+
     </application>
 </manifest>
