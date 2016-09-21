@@ -130,6 +130,10 @@ import com.android.settingslib.drawer.Tile;
 
 import com.dirtyunicorns.dutweaks.DirtyTweaks;
 import com.dirtyunicorns.dutweaks.fragments.ExpandedDesktop;
+import com.dirtyunicorns.dutweaks.fragments.FlingSettings;
+import com.dirtyunicorns.dutweaks.fragments.NavbarSettings;
+import com.dirtyunicorns.dutweaks.fragments.SmartbarSettings;
+import com.dirtyunicorns.dutweaks.fragments.PulseSettings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -352,6 +356,10 @@ public class SettingsActivity extends SettingsDrawerActivity
             WifiInfo.class.getName(),
             DirtyTweaks.class.getName(),
             ExpandedDesktop.class.getName(),
+            NavbarSettings.class.getName(),
+            FlingSettings.class.getName(),
+            SmartbarSettings.class.getName(),
+            PulseSettings.class.getName()
     };
 
 
