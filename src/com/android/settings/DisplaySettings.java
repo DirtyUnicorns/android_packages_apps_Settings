@@ -122,6 +122,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mAccelerometerPreference;
     private MultiSelectListPreference mRotationAnglesPreference;
 
+    private PreferenceCategory mLedsCategory;
+    private Preference mChargingLeds;
+    private Preference mNotificationLeds;
+
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {
                 @Override
@@ -143,6 +147,28 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.display_settings);
 
+<<<<<<< HEAD
+=======
+        PreferenceScreen prefSet = getPreferenceScreen();
+
+        mLedsCategory = (PreferenceCategory) findPreference("leds");
+        mChargingLeds = (Preference) findPreference("charging_light");
+        mNotificationLeds = (Preference) findPreference("notification_light");
+        if (mChargingLeds != null
+                && !getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
+            mLedsCategory.removePreference(mChargingLeds);
+        }
+        if (mNotificationLeds != null
+                && !getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveNotificationLed)) {
+            mLedsCategory.removePreference(mNotificationLeds);
+        }
+        if (mChargingLeds == null && mNotificationLeds == null) {
+            getPreferenceScreen().removePreference(mLedsCategory);
+        }
+
+>>>>>>> 6100de8... LED lights customization [2/3]
         mScreenSaverPreference = findPreference(KEY_SCREEN_SAVER);
         if (mScreenSaverPreference != null
                 && getResources().getBoolean(
