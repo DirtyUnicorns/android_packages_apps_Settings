@@ -21,9 +21,10 @@
         android:key="general_section"
         android:title="@string/notification_light_general_title">
 
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="notification_light_pulse"
-            android:title="@string/notification_light_title" />
+            android:title="@string/notification_light_title"
+            android:defaultValue="true" />
 
         <com.android.settings.batterylight.NotificationLightPreference
             android:key="default"
@@ -37,18 +38,18 @@
         android:key="advanced_section"
         android:title="@string/advanced">
 
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="notification_light_screen_on_enable"
             android:title="@string/notification_light_screen_on"
             android:dependency="notification_light_pulse" />
 
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="allow_lights"
             android:title="@string/notification_light_zen_mode"
             android:dependency="notification_light_pulse"
             android:defaultValue="true" />
 
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        <com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
             android:key="notification_light_pulse_custom_enable"
             android:title="@string/notification_light_use_custom"
             android:dependency="notification_light_pulse" />

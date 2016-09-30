@@ -65,6 +65,7 @@ public class NotificationLightDialog extends AlertDialog implements
     private EditText mHexColorInput;
     private Spinner mColorList;
     private ColorPanelView mNewColor;
+    private boolean mMultiColor = true;
     private LinearLayout mColorListView;
     private Spinner mPulseSpeedOn;
     private Spinner mPulseSpeedOff;
@@ -94,6 +95,7 @@ public class NotificationLightDialog extends AlertDialog implements
             int initialSpeedOff) {
         super(context);
 
+	mMultiColor = getContext().getResources().getBoolean(R.bool.config_has_multi_color_led);
         init(context, initialColor, initialSpeedOn, initialSpeedOff, true);
     }
 
@@ -142,10 +144,22 @@ public class NotificationLightDialog extends AlertDialog implements
         mNewColor = (ColorPanelView) layout.findViewById(R.id.color_panel);
         mColorPanelView = (LinearLayout) layout.findViewById(R.id.color_panel_view);
 
+	mColorListView = (LinearLayout) layout.findViewById(R.id.color_list_view);
+        mColorList = (Spinner) layout.findViewById(R.id.color_list_spinner);
+        mNewListColor = (ColorPanelView) layout.findViewById(R.id.color_list_panel);
+
         mColorPicker.setOnColorChangedListener(this);
         mHexColorInput.setOnFocusChangeListener(this);
         setAlphaSliderVisible(mWithAlpha);
         mColorPicker.setColor(color, true);
+
+	mColorList = (Spinner) layout.findViewById(R.id.color_list_spinner);
+        mLedColorAdapter = new LedColorAdapter(
+                R.array.entries_led_colors,
+                R.array.values_led_colors);
+        mColorList.setAdapter(mLedColorAdapter);
+        mColorList.setSelection(mLedColorAdapter.getColorPosition(color));
+        mColorList.setOnItemSelectedListener(mColorListListener);
 
         mLightsDialogDivider = (View) layout.findViewById(R.id.lights_dialog_divider);
         mPulseSpeedOn = (Spinner) layout.findViewById(R.id.on_spinner);
@@ -176,19 +190,35 @@ public class NotificationLightDialog extends AlertDialog implements
 
         setView(layout);
 
-        mColorPicker.setVisibility(View.VISIBLE);
-        mColorPanelView.setVisibility(View.VISIBLE);
-
-        if (!getContext().getResources().getBoolean(
-                com.android.internal.R.bool.config_multiColorNotificationLed)) {
+	if (mMultiColor){
+            mColorListView.setVisibility(View.GONE);
+            mColorPicker.setVisibility(View.VISIBLE);
+            mColorPanelView.setVisibility(View.VISIBLE);
+	    mLightsDialogDivider.setVisibility(View.VISIBLE);
+        } else {
+            mColorListView.setVisibility(View.VISIBLE);
             mColorPicker.setVisibility(View.GONE);
-            mLightsDialogDivider.setVisibility(View.GONE);
+            mColorPanelView.setVisibility(View.GONE);
+	    mLightsDialogDivider.setVisibility(View.GONE);
         }
 
         mReadyForLed = true;
         updateLed();
 
     }
+
+    private AdapterView.OnItemSelectedListener mColorListListener = new AdapterView.OnItemSelectedListener() {
+
+        @Override
+        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+            int color = mLedColorAdapter.getColor(position);
+            mNewListColor.setColor(color);
+        }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> parent) {
+        }
+    };
 
     private AdapterView.OnItemSelectedListener mPulseSelectionListener =
             new AdapterView.OnItemSelectedListener() {
@@ -204,6 +234,7 @@ public class NotificationLightDialog extends AlertDialog implements
         public void onNothingSelected(AdapterView<?> parent) {
         }
     };
+
 
     @Override
     public Bundle onSaveInstanceState() {
@@ -252,7 +283,11 @@ public class NotificationLightDialog extends AlertDialog implements
     }
 
     public int getColor() {
-        return mColorPicker.getColor();
+        if (mMultiColor){
+            return mColorPicker.getColor();
+        } else {
+            return mNewListColor.getColor();
+        }
     }
 
     class LedColorAdapter extends BaseAdapter implements SpinnerAdapter {

@@ -166,8 +166,6 @@
                 android:key="density_category"
                 android:title="@string/density_category">
 
-        </PreferenceCategory>
-
         <PreferenceScreen
                 android:key="font_size"
                 android:title="@string/title_font_size"

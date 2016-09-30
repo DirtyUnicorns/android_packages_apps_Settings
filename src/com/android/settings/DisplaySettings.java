@@ -44,6 +44,8 @@ import android.support.v14.preference.MultiSelectListPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.PreferenceCategory;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -147,8 +149,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.display_settings);
 
-<<<<<<< HEAD
-=======
         PreferenceScreen prefSet = getPreferenceScreen();
 
         mLedsCategory = (PreferenceCategory) findPreference("leds");
@@ -168,7 +168,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             getPreferenceScreen().removePreference(mLedsCategory);
         }
 
->>>>>>> 6100de8... LED lights customization [2/3]
         mScreenSaverPreference = findPreference(KEY_SCREEN_SAVER);
         if (mScreenSaverPreference != null
                 && getResources().getBoolean(

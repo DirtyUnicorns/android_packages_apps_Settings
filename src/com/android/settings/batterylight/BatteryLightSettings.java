@@ -36,7 +36,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
-import com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference
+import com.dirtyunicorns.dutweaks.preference.SystemSettingSwitchPreference;
 
 import java.util.List;
 import java.util.ArrayList;
