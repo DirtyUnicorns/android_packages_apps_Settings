@@ -45,7 +45,7 @@ import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.PreferenceCategory;
+
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -124,9 +124,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mAccelerometerPreference;
     private MultiSelectListPreference mRotationAnglesPreference;
 
-    private PreferenceCategory mLedsCategory;
-    private Preference mChargingLeds;
-    private Preference mNotificationLeds;
+    private PreferenceScreen mLedsCategory;
 
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {
@@ -151,20 +149,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
-        mLedsCategory = (PreferenceCategory) findPreference("leds");
-        mChargingLeds = (Preference) findPreference("charging_light");
-        mNotificationLeds = (Preference) findPreference("notification_light");
-        if (mChargingLeds != null
-                && !getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
-            mLedsCategory.removePreference(mChargingLeds);
-        }
-        if (mNotificationLeds != null
-                && !getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveNotificationLed)) {
-            mLedsCategory.removePreference(mNotificationLeds);
-        }
-        if (mChargingLeds == null && mNotificationLeds == null) {
+        mLedsCategory = (PreferenceScreen) findPreference("ledsettings_category");
+
+        if (mLedsCategory != null
+                && getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveNotificationLed) == false) {
             getPreferenceScreen().removePreference(mLedsCategory);
         }
 

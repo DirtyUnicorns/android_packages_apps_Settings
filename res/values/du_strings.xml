@@ -100,9 +100,11 @@
 
     <!-- LED notifications -->
     <string name="color_picker_dialog_title">Color</string>
-    <string name="omni_battery_light_settings">Battery charging light</string>
-    <string name="omni_notification_light_settings">Notifications light</string>
-    <string name="omni_leds">LED Lights</string>
+    <string name="battery_light_settings_title">Battery charging light</string>
+    <string name="battery_light_settings_summary">Configure the LED settings for battery charging</string>
+    <string name="notification_light_settings_title">Notifications light</string>
+    <string name="notification_light_settings_summary">Configure the LED settings for notifications</string>
+    <string name="ledsettings_category">LED Lights</string>
     <string name="batterylight_title">Battery LED settings</string>
     <string name="battery_light_enable">Enable</string>
     <string name="battery_low_pulse_title">Pulse if battery low</string>

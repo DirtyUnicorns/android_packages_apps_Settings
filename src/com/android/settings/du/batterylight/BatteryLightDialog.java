@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.batterylight;
+package com.android.settings.du.batterylight;
 
 import android.app.Activity;
 import android.app.AlertDialog;

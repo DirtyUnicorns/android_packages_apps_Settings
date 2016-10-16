@@ -39,22 +39,22 @@
         android:title="@string/battery_light_list_title"
         android:dependency="battery_light_enabled" >
 
-        <com.android.settings.batterylight.BatteryLightPreference
+        <com.android.settings.du.batterylight.BatteryLightPreference
             android:key="low_color"
             android:title="@string/battery_light_low_color_title"
             android:persistent="false" />
 
-        <com.android.settings.batterylight.BatteryLightPreference
+        <com.android.settings.du.batterylight.BatteryLightPreference
             android:key="medium_color"
             android:title="@string/battery_light_medium_color_title"
             android:persistent="false" />
 
-        <com.android.settings.batterylight.BatteryLightPreference
+        <com.android.settings.du.batterylight.BatteryLightPreference
             android:key="full_color"
             android:title="@string/battery_light_full_color_title"
             android:persistent="false" />
 
-        <com.android.settings.batterylight.BatteryLightPreference
+        <com.android.settings.du.batterylight.BatteryLightPreference
             android:key="really_full_color"
             android:title="@string/battery_light_really_full_color_title"
             android:persistent="false" />

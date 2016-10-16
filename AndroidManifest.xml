@@ -178,8 +178,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".batterylight.NotificationLightSettings" />
-        <activity android:name=".batterylight.BatteryLightSettings" />
+        <!-- LED battery and notification -->
+        <activity android:name=".du.batterylight.NotificationLightSettings" />
+        <activity android:name=".du.batterylight.BatteryLightSettings" />
 
         <!-- Wireless Controls -->
         <activity android:name="Settings$WirelessSettingsActivity"
