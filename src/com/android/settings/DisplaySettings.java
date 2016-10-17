@@ -59,6 +59,8 @@ import com.android.settings.search.Indexable;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedPreference;
 
+import com.dirtyunicorns.dutweaks.preference.CustomSeekBarPreference;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -98,6 +100,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_WALLPAPER = "wallpaper";
     private static final String KEY_VR_DISPLAY_PREF = "vr_display_pref";
 
+    private static final String DT2L_CAMERA_VIBRATE_CONFIG = "dt2l_camera_vibrate_config";
+
     private static final String KEY_ROTATION_CATEGORY = "rotation_category";
     private static final String KEY_ACCELEROMETER = "accelerometer";
     private static final String KEY_ROTATION_ANGLES = "rotation_angles";
@@ -123,6 +127,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mCameraDoubleTapPowerGesturePreference;
     private SwitchPreference mAccelerometerPreference;
     private MultiSelectListPreference mRotationAnglesPreference;
+
+    private CustomSeekBarPreference mDt2lCameraVibrateConfig;
 
     private PreferenceScreen mLedsCategory;
 
@@ -167,6 +173,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         mScreenTimeoutPreference = (TimeoutListPreference) findPreference(KEY_SCREEN_TIMEOUT);
 
         mFontSizePref = findPreference(KEY_FONT_SIZE);
+
+        mDt2lCameraVibrateConfig = (CustomSeekBarPreference) findPreference(DT2L_CAMERA_VIBRATE_CONFIG);
+        int dt2lCameraVibrateConfig = Settings.System.getInt(resolver,
+                Settings.System.DT2L_CAMERA_VIBRATE_CONFIG, 1);
+        mDt2lCameraVibrateConfig.setValue(dt2lCameraVibrateConfig / 1);
+        mDt2lCameraVibrateConfig.setOnPreferenceChangeListener(this);
 
         if (isAutomaticBrightnessAvailable(getResources())) {
             mAutoBrightnessPreference = (SwitchPreference) findPreference(KEY_AUTO_BRIGHTNESS);
@@ -567,6 +579,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (preference == mAccelerometerPreference) {
             boolean value = (Boolean) objValue;
             RotationPolicy.setRotationLockForAccessibility(getActivity(), !value);
+        }
+        if (preference == mDt2lCameraVibrateConfig) {
+            int dt2lcameravib = (Integer) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.DT2L_CAMERA_VIBRATE_CONFIG, dt2lcameravib * 10);
         }
         if (preference == mRotationAnglesPreference) {
             Set<String> vals = (Set<String>) objValue;
