@@ -583,7 +583,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (preference == mDt2lCameraVibrateConfig) {
             int dt2lcameravib = (Integer) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.DT2L_CAMERA_VIBRATE_CONFIG, dt2lcameravib * 10);
+                    Settings.System.DT2L_CAMERA_VIBRATE_CONFIG, dt2lcameravib * 1);
         }
         if (preference == mRotationAnglesPreference) {
             Set<String> vals = (Set<String>) objValue;
