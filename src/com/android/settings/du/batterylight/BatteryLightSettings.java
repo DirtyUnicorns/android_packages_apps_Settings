@@ -21,6 +21,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v14.preference.PreferenceFragment;
@@ -88,10 +89,16 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
                         Settings.System.BATTERY_LIGHT_ENABLED, mBatteryLightEnabled ? 1 : 0) != 0);
         mEnabledPref.setOnPreferenceChangeListener(this);
 
-        mPulsePref = (SystemSettingSwitchPreference)prefSet.findPreference(BATTERY_PULSE_PREF);
-        mPulsePref.setChecked(Settings.System.getInt(resolver,
-                        Settings.System.BATTERY_LIGHT_PULSE, mBatteryLightEnabled ? 1 : 0) != 0);
-        mPulsePref.setOnPreferenceChangeListener(this);
+        if (getResources().getBoolean(com.android.internal.R.bool.config_ledCanPulse)) {
+            mPulsePref = (SystemSettingSwitchPreference) prefSet.findPreference(BATTERY_PULSE_PREF);
+            mPulsePref.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.BATTERY_LIGHT_PULSE, mBatteryLightEnabled ? 1 : 0) != 0);
+            mPulsePref.setOnPreferenceChangeListener(this);
+        } else {
+            PreferenceCategory general = (PreferenceCategory) prefSet.findPreference(GENERAL_CAT);
+            general.removePreference(prefSet.findPreference(BATTERY_PULSE_PREF));
+            prefSet.removePreference(general);
+        }
 
         // Does the Device support changing battery LED colors?
         if (getResources().getBoolean(com.android.internal.R.bool.config_multiColorBatteryLed)) {
@@ -248,6 +255,10 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
                     final Resources res = context.getResources();
                     if (!res.getBoolean(com.android.internal.R.bool.config_intrusiveBatteryLed)) {
                         result.add(BATTERY_LIGHT_PREF);
+                        result.add(BATTERY_PULSE_PREF);
+                    }
+                    if (res.getBoolean(com.android.internal.R.bool.config_intrusiveBatteryLed)
+                            && !res.getBoolean(com.android.internal.R.bool.config_ledCanPulse)) {
                         result.add(BATTERY_PULSE_PREF);
                     }
                     if (!res.getBoolean(com.android.internal.R.bool.config_multiColorBatteryLed)) {
