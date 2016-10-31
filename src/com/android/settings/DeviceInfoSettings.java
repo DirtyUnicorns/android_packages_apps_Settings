@@ -77,6 +77,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
     private static final String KEY_MOD_VERSION = "mod_version";
+    private static final String KEY_DU_CHANGELOG = "du_changelog";
 
     long[] mHits = new long[3];
 
