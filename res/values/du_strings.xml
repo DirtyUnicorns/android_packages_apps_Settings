@@ -26,8 +26,7 @@
 
     <!-- DU Changelog -->
     <string name="duchangelog_title">Changelog</string>
-    <string name="duchangelog_summary">Check to see what has changed in DU</string>
-    <string name="duchangelog_app_name">DU Changelog</string>
+    <string name="duchangelog_summary">Check to see what has changed</string>
 
     <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
     <string name="local_backup_password_title">Desktop backup password</string>
