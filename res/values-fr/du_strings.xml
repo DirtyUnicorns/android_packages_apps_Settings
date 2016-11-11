@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Dirty Unicorns Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- DU Tweaks -->
+    <string name="dirtytweaks_title">Dirty Tweaks</string>
+    <string name="header_category_dirtytweaks">Personnalisation</string>
+
+    <!-- DU version -->
+    <string name="mod_version">Version de DU</string>
+    <string name="mod_version_default">Inconnue</string>
+
+    <!-- DU Changelog -->
+    <string name="duchangelog_title">Note de version</string>
+    <string name="duchangelog_summary">Consulter la liste des changements</string>
+
+    <!-- https://android.googlesource.com/platform/packages/apps/Settings/+/android-6.0.1_r63/res/values-fr/strings.xml -->
+    <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+    <string name="local_backup_password_title">Mot de passe sauvegarde PC</string>
+
+    <!-- Volume settings - Volume adjustment sound -->
+    <string name="volume_adjust_sounds_title">Sons au réglage du volume</string>
+
+    <!-- Density category -->
+    <string name="density_category">Densité</string>
+
+    <!-- ADB debugging notifications -->
+    <string name="enable_adb_custom">Débogage Android</string>
+    <string name="enable_adb_summary_custom">Activer l\'interface de débogage</string>
+    <string name="adb_notify">Notification ADB</string>
+    <string name="adb_notify_summary">Afficher une notification lorsque le débogage USB est actif</string>
+    <string name="adb_over_network">ADB par réseau</string>
+    <string name="adb_over_network_summary">Activer le débogage TCP/IP par les interfaces réseaux (Wi\u2010Fi, réseaux USB). Ce paramètre est réinitialisé au redémarrage.</string>
+    <string name="adb_over_network_warning">AVERTISSEMENT\u00A0: Lorsque ADB par réseau est activé, votre téléphone est ouvert aux intrusions sur tous les réseaux connectés\u00A0!\n\nUtilisez cette fonctionnalité uniquement lorsque vous êtes connecté sur des réseaux sûrs.\n\nVoulez\u2010vous vraiment activer cette fonction\u00A0?</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Capture d\'écran</string>
+    <string name="screenshot_sound_summary">Émettre un son lors de la capture d\'écran</string>
+    <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
+    <string name="build_date">Date de compilation</string>
+    <string name="build_date_default">2012-01-01-0000</string>
+
+    <!-- Used for diagnostic screens, precise translation is always necessary -->
+    <string name="intent_sender_data_label"><xliff:g id="data">Données :</xliff:g></string>
+
+    <!-- Double tap to launch camera options -->
+    <string name="dt2l_camera_category">Double appui</string>
+    <string name="dt2l_camera_vib_title">Niveau de vibration</string>
+    <string name="dt2l_camera_vib_summary">Ajuster le niveau de vibration de l\'ouverture de l\'application Appareil photo</string>
+
+    <!-- Improve AOSP Translations -->
+    <string name="camera_double_tap_power_gesture_title">Bouton Marche/Arrêt</string>
+    <string name="camera_double_tap_power_gesture_desc">Démarrer l\'appareil photo sans déverrouiller l\'écran par double appui sur le bouton Marche/Arrêt</string>
+    <string name="camera_gesture_desc">Ouvrir l\'application Appareil photo en faisant pivoter votre poignet deux fois</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_disabled">Désactivé</string>
+    <string name="display_rotation_unit">degrés</string>
+    <string name="display_rotation_category_title">Rotation</string>
+    <string name="display_rotation_0_title">0 degrés</string>
+    <string name="display_rotation_90_title">90 degrés</string>
+    <string name="display_rotation_180_title">180 degrés</string>
+    <string name="display_rotation_270_title">270 degrés</string>
+
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Incrémentation du volume</string>
+    <string name="volume_steps_alarm_title">Alarme</string>
+    <string name="volume_steps_dtmf_title">DTMF</string>
+    <string name="volume_steps_music_title">Musique</string>
+    <string name="volume_steps_notification_title">Notification</string>
+    <string name="volume_steps_ring_title">Sonnerie</string>
+    <string name="volume_steps_system_title">Système</string>
+    <string name="volume_steps_voice_call_title">Appel vocal</string>
+    <string name="volume_steps_reset">Configuration d\'origine</string>
+
+    <!-- Scramble PIN Layout on Lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
+    <string name="unlock_scramble_pin_layout_summary">Changer l\'ordre des numéros du pavé numérique pour la saisie du code PIN de déverrouillage</string>
+
+    <!-- Dashboard suggestions -->
+    <string name="dashboard_category">Tableau de bord</string>
+    <string name="dashboard_suggestions_title">Suggestions</string>
+    <string name="remove_tile_summaries_title">Descriptions</string>
+    <string name="summary_dashboard_suggestions_enabled">Suggestions activées</string>
+    <string name="summary_dashboard_suggestions_disabled">Suggestions désactivées</string>
+    <string name="remove_tile_summaries_summary">Désactiver les descriptions</string>
+    <string name="dashboard_conditions_title">Conditions</string>
+    <string name="summary_dashboard_conditions_enabled">Conditions activées</string>
+    <string name="summary_dashboard_conditions_disabled">Conditions désactivées</string>
+
+    <!-- Bluetooth accept all files -->
+    <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
+
+    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
+    <string name="supersu_title">SuperSU</string>
+
+    <!-- Wake on Plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Allumer l\'écran lorsque le chargeur est connecté ou déconnecté</string>
+
+    <!-- LED notifications -->
+    <string name="color_picker_dialog_title">Couleur</string>
+    <string name="battery_light_settings_title">Voyant de batterie</string>
+    <string name="battery_light_settings_summary">Paramétrer le voyant de charge de la batterie</string>
+    <string name="notification_light_settings_title">Voyant de notification</string>
+    <string name="notification_light_settings_summary">Paramétrer le voyant de notification</string>
+    <string name="ledsettings_category">Voyants</string>
+    <string name="batterylight_title">Voyant de batterie</string>
+    <string name="battery_light_enable">Activé</string>
+    <string name="battery_low_pulse_title">Clignoter si batterie faible</string>
+    <string name="battery_light_list_title">Couleurs</string>
+    <string name="battery_light_low_color_title">Batterie faible</string>
+    <string name="battery_light_medium_color_title">Batterie en charge</string>
+    <string name="battery_light_full_color_title">Batterie chargée à 90%</string>
+    <string name="battery_light_really_full_color_title">Batterie chargée à 100%</string>
+    <string name="edit_battery_settings">Voyant de batterie</string>
+    <string name="notification_light_general_title">Général</string>
+    <string name="led_color_green">Vert</string>
+    <string name="led_color_red">Rouge</string>
+    <string name="led_color_blue">Bleu</string>
+    <string name="ok">OK</string>
+    <string name="advanced">Paramètres avancés</string>
+    <string name="profiles_add">Ajouter...</string>
+
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">Paramètres du voyant</string>
+    <string name="pulse_speed_title">Durée et vitesse d\'impulsion</string>
+    <string name="default_time">Normale</string>
+    <string name="custom_time">Personnalisée</string>
+    <string name="dialog_delete_title">Supprimer</string>
+    <string name="dialog_delete_message">Voulez-vous supprimer l\'élément sélectionné\u00A0?</string>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">Toujours allumée</string>
+    <string name="pulse_length_very_short">Très courte</string>
+    <string name="pulse_length_short">Courte</string>
+    <string name="pulse_length_normal">Normale</string>
+    <string name="pulse_length_long">Longue</string>
+    <string name="pulse_length_very_long">Très longue</string>
+    <string name="pulse_speed_very_fast">Très rapide</string>
+    <string name="pulse_speed_fast">Rapide</string>
+    <string name="pulse_speed_normal">Normale</string>
+    <string name="pulse_speed_slow">Lente</string>
+    <string name="pulse_speed_very_slow">Très lente</string>
+
+    <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_title">Voyant de notification</string>
+    <string name="notificationlight_title">Voyant de notification</string>
+    <string name="notification_light_applist_title">Applications</string>
+    <string name="notification_light_phonelist_title">Téléphone</string>
+    <string name="notification_light_use_custom">Couleurs spécifiques</string>
+    <string name="notification_light_default_value">Par défaut</string>
+    <string name="notification_light_missed_call_title">Appel manqué</string>
+    <string name="notification_light_voicemail_title">Messagerie vocale</string>
+    <string name="notification_light_screen_on">Activer sur écran allumé</string>
+    <string name="notification_light_zen_mode">Activer en mode Ne pas déranger</string>
+    <string name="notification_light_use_multiple_leds">Voyant multiple</string>
+    <string name="keywords_lights_brightness_level">Luminosité faible</string>
+    <string name="notification_light_automagic">Couleurs automatiques</string>
+
+    <!-- Lights settings, LED notification -->
+    <string name="led_notification_title">Voyant</string>
+    <string name="led_notification_text">Luminosité du voyant activé dans les paramètres</string>
+    <string name="notification_light_no_apps_summary">Pour ajouter une application, activer \"%1$s\" et appuyer sur \"\u002b\" de la barre de menu</string>
+    <string name="font_sample_text">11:57</string>
+
+    <!-- Add application dialog box title -->
+    <string name="profile_choose_app">Sélectionner une application</string>
+    <string name="reset">Configuration d\'origine</string>
+
+    <!-- Linked / unlinked notification volume -->
+    <string name="link_volume_option_title">Lier les volumes des notifications et de la sonnerie</string>
+    <string name="ring_notification_volume_option_title">Volume de notifications et de sonnerie</string>
+
+
+</resources>
