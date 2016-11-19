@@ -52,7 +52,9 @@ public class AccessibilitySettingsForSetupWizardActivity extends SettingsActivit
         LayoutInflater.from(this)
                 .inflate(R.layout.accessibility_settings_for_suw, parentLayout);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        if (getActionBar() != null) {
+            getActionBar().setDisplayHomeAsUpEnabled(true);
+        }
         setIsDrawerPresent(false);
 
         // Hide System Nav Bar.
