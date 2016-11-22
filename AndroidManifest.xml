@@ -183,11 +183,11 @@
         <activity android:name=".du.batterylight.BatteryLightSettings" />
 
         <!-- DU Changelog -->
-        <activity android:name="com.dirtyunicorns.duchangelog.MainActivity"
+        <activity android:name="com.android.settings.du.changelog.ChangelogActivity"
                   android:label="@string/duchangelog_title" />
-        <activity android:name="com.dirtyunicorns.duchangelog.Weeklies"
+        <activity android:name="com.android.settings.du.changelog.Weeklies"
                   android:label="@string/duchangelog_weeklies" />
-        <activity android:name="com.dirtyunicorns.duchangelog.Official"
+        <activity android:name="com.android.settings.du.changelog.Official"
                   android:label="@string/duchangelog_official" />
 
         <!-- Wireless Controls -->

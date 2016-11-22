@@ -27,6 +27,15 @@
     <!-- DU Changelog -->
     <string name="duchangelog_title">Changelog</string>
     <string name="duchangelog_summary">Check to see what has changed</string>
+    <string name="duchangelog_weeklies">Changelog - Weeklies</string>
+    <string name="duchangelog_official">Changelog - Official</string>
+    <string name="warning_text">Please note that change logs generated here are summaries of commits merged into our source. For a full and detailed change log is recommended that you visit our github or gerrit.</string>
+    <string name="weeklies">Weeklies</string>
+    <string name="official">Official</string>
+    <string name="changelog_header_version"></string>
+    <string name="changelog_dialog_title">Attention</string>
+    <string name="changelog_dialog_message">Please enable WiFi/Mobile data to download the changelog from our server.</string>
+    <string name="changelog_dialog_ok">OK</string>
 
     <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
     <string name="local_backup_password_title">Desktop backup password</string>

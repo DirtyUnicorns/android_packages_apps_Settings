@@ -23,7 +23,7 @@
                 android:summary="@string/duchangelog_summary">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.settings"
-                    android:targetClass="com.dirtyunicorns.duchangelog.MainActivity" />
+                    android:targetClass="com.android.settings.du.changelog.ChangelogActivity" />
         </PreferenceScreen>
 
         <!-- Device status - launches activity -->

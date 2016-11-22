@@ -18,7 +18,6 @@ LOCAL_SRC_FILES := \
         $(call all-java-files-under, src) \
         $(call all-java-files-under, ../DU-Tweaks/src) \
         $(call all-java-files-under, ../../../external/changeloglib/ChangeLogLibrary/src/main/java) \
-        $(call all-java-files-under, ../DU-Changelog/src) \
         src/com/android/settings/EventLogTags.logtags
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
@@ -29,12 +28,10 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
 
 LOCAL_RESOURCE_DIR += packages/apps/DU-Tweaks/res
 LOCAL_RESOURCE_DIR += external/changeloglib/ChangeLogLibrary/src/main/res
-LOCAL_RESOURCE_DIR += packages/apps/DU-Changelog/res
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
       --extra-packages com.dirtyunicorns.dutweaks \
-      --extra-packages it.gmariotti.changelibs \
-      --extra-packages com.dirtyunicorns.duchangelog
+      --extra-packages it.gmariotti.changelibs
 
 LOCAL_PACKAGE_NAME := Settings
 LOCAL_CERTIFICATE := platform
