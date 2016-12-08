@@ -166,8 +166,8 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
         mInternalCategory.addPreference(mInternalSummary);
 
         int privateCount = 0;
-        long privateUsedBytes = 0;
         long privateTotalBytes = 0;
+        long privateFreeBytes = 0;
 
         final List<VolumeInfo> volumes = mStorageManager.getVolumes();
         Collections.sort(volumes, VolumeInfo.getDescriptionComparator());
@@ -181,14 +181,15 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
                         new StorageVolumePreference(context, vol, color, volumeTotalBytes));
                 if (vol.isMountedReadable()) {
                     final File path = vol.getPath();
-                    privateUsedBytes += (volumeTotalBytes - path.getFreeSpace());
                     privateTotalBytes += volumeTotalBytes;
+                    privateFreeBytes += path.getFreeSpace();
                 }
             } else if (vol.getType() == VolumeInfo.TYPE_PUBLIC) {
                 mExternalCategory.addPreference(
                         new StorageVolumePreference(context, vol, getColorPublic(getResources()), 0));
             }
         }
+        long privateUsedBytes = privateTotalBytes - privateFreeBytes;
 
         // Show missing private volumes
         final List<VolumeRecord> recs = mStorageManager.getVolumeRecords();
