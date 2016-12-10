@@ -1,7 +1,21 @@
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
+<<<<<<< HEAD
 LOCAL_JAVA_LIBRARIES := bouncycastle core-oj telephony-common ims-common org.dirtyunicorns.utils
+=======
+LOCAL_SRC_FILES := \
+        $(call all-logtags-files-under, src)
+
+LOCAL_MODULE := settings-logtags
+
+include $(BUILD_STATIC_JAVA_LIBRARY)
+
+# Build the Settings APK
+include $(CLEAR_VARS)
+
+LOCAL_JAVA_LIBRARIES := bouncycastle core-oj telephony-common ims-common
+>>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
 LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v4 \
     android-support-v13 \
@@ -10,15 +24,23 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v7-appcompat \
     android-support-v14-preference \
     jsr305 \
+<<<<<<< HEAD
     changeloglib
+=======
+    settings-logtags
+>>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
 
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := \
+<<<<<<< HEAD
         $(call all-java-files-under, src) \
         $(call all-java-files-under, ../DU-Tweaks/src) \
         $(call all-java-files-under, ../../../external/changeloglib/ChangeLogLibrary/src/main/java) \
         src/com/android/settings/EventLogTags.logtags
+=======
+        $(call all-java-files-under, src)
+>>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/v7/preference/res \

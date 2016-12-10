@@ -58,6 +58,7 @@ import com.android.settingslib.RestrictedPreference;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class WirelessSettings extends SettingsPreferenceFragment implements Indexable {
@@ -73,6 +74,7 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
     private static final String KEY_MOBILE_NETWORK_SETTINGS = "mobile_network_settings";
     private static final String KEY_MANAGE_MOBILE_PLAN = "manage_mobile_plan";
     private static final String KEY_WFC_SETTINGS = "wifi_calling_settings";
+    private static final String KEY_NETWORK_RESET = "network_reset";
 
     private static final String KEY_CELL_BROADCAST_SETTINGS = "cell_broadcast_settings";
 
@@ -358,6 +360,7 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
                     .isProvisioningNeededButUnavailable(getActivity()));
         }
 
+<<<<<<< HEAD
         // Enable link to CMAS app settings depending on the value in config.xml.
         boolean isCellBroadcastAppLinkEnabled = this.getResources().getBoolean(
                 com.android.internal.R.bool.config_cellBroadcastAppLinks);
@@ -375,6 +378,12 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
                 RestrictedLockUtils.hasBaseUserRestriction(mContext,
                         UserManager.DISALLOW_CONFIG_CELL_BROADCASTS, UserHandle.myUserId())) {
             removePreference(KEY_CELL_BROADCAST_SETTINGS);
+=======
+        // Remove network reset if not allowed
+        if (RestrictedLockUtils.hasBaseUserRestriction(activity,
+                UserManager.DISALLOW_NETWORK_RESET, UserHandle.myUserId())) {
+            removePreference(KEY_NETWORK_RESET);
+>>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
         }
     }
 
@@ -389,7 +398,8 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
 
         // update WFC setting
         final Context context = getActivity();
-        if (ImsManager.isWfcEnabledByPlatform(context)) {
+        if (ImsManager.isWfcEnabledByPlatform(context) &&
+                ImsManager.isWfcProvisionedOnDevice(context)) {
             getPreferenceScreen().addPreference(mButtonWfc);
 
             mButtonWfc.setSummary(WifiCallingSettings.getWfcModeSummary(
@@ -448,6 +458,10 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
             @Override
             public List<SearchIndexableResource> getXmlResourcesToIndex(
                     Context context, boolean enabled) {
+                // Remove wireless settings from search in demo mode
+                if (UserManager.isDeviceInDemoMode(context)) {
+                    return Collections.emptyList();
+                }
                 SearchIndexableResource sir = new SearchIndexableResource(context);
                 sir.xmlResId = R.xml.wireless_settings;
                 return Arrays.asList(sir);
@@ -512,10 +526,12 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
                     result.add(KEY_TETHER_SETTINGS);
                 }
 
-                if (!ImsManager.isWfcEnabledByPlatform(context)) {
+                if (!ImsManager.isWfcEnabledByPlatform(context) ||
+                        !ImsManager.isWfcProvisionedOnDevice(context)) {
                     result.add(KEY_WFC_SETTINGS);
                 }
 
+<<<<<<< HEAD
                 // Enable link to CMAS app settings depending on the value in config.xml.
                 boolean isCellBroadcastAppLinkEnabled = context.getResources().getBoolean(
                         com.android.internal.R.bool.config_cellBroadcastAppLinks);
@@ -531,6 +547,11 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
                 }
                 if (!um.isAdminUser() || !isCellBroadcastAppLinkEnabled) {
                     result.add(KEY_CELL_BROADCAST_SETTINGS);
+=======
+                if (RestrictedLockUtils.hasBaseUserRestriction(context,
+                        UserManager.DISALLOW_NETWORK_RESET, UserHandle.myUserId())) {
+                    result.add(KEY_NETWORK_RESET);
+>>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
                 }
 
                 return result;

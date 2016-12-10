@@ -45,7 +45,7 @@ import java.util.ArrayList;
 public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedChangeListener,
         View.OnClickListener {
 
-    public static interface OnSwitchChangeListener {
+    public interface OnSwitchChangeListener {
         /**
          * Called when the checked state of the Switch has changed.
          *
@@ -63,7 +63,8 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
     private String mLabel;
     private String mSummary;
 
-    private boolean mDisabledByAdmin = false;
+    private boolean mLoggingIntialized;
+    private boolean mDisabledByAdmin;
     private EnforcedAdmin mEnforcedAdmin = null;
 
     private String mMetricsTag;
@@ -243,7 +244,6 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
             RestrictedLockUtils.sendShowAdminSupportDetailsIntent(mContext, mEnforcedAdmin);
         } else {
             final boolean isChecked = !mSwitch.isChecked();
-            MetricsLogger.count(mContext, mMetricsTag + "/switch_bar|" + isChecked, 1);
             setChecked(isChecked);
         }
     }
@@ -257,6 +257,10 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        if (mLoggingIntialized) {
+            MetricsLogger.count(mContext, mMetricsTag + "/switch_bar|" + isChecked, 1);
+        }
+        mLoggingIntialized = true;
         propagateChecked(isChecked);
     }
 

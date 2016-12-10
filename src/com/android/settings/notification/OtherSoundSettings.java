@@ -27,10 +27,13 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.SystemProperties;
 import android.os.Vibrator;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings.Global;
 import android.provider.Settings.System;
+import android.support.v14.preference.SwitchPreference;
+import android.support.v7.preference.Preference;
 import android.telephony.TelephonyManager;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
@@ -71,6 +74,10 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_VIBRATE_ON_TOUCH = "vibrate_on_touch";
     private static final String KEY_DOCK_AUDIO_MEDIA = "dock_audio_media";
     private static final String KEY_EMERGENCY_TONE = "emergency_tone";
+
+    // Boot Sounds needs to be a system property so it can be accessed during boot.
+    private static final String KEY_BOOT_SOUNDS = "boot_sounds";
+    private static final String PROPERTY_BOOT_SOUNDS = "persist.sys.bootanim.play_sound";
 
     private static final SettingPref PREF_DIAL_PAD_TONES = new SettingPref(
             TYPE_SYSTEM, KEY_DIAL_PAD_TONES, System.DTMF_TONE_WHEN_DIALING, DEFAULT_ON) {
@@ -190,6 +197,8 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
         PREF_EMERGENCY_TONE,
     };
 
+    private SwitchPreference mBootSounds;
+
     private final SettingsObserver mSettingsObserver = new SettingsObserver();
 
     private Context mContext;
@@ -215,6 +224,9 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
         for (SettingPref pref : PREFS) {
             pref.init(this);
         }
+
+        mBootSounds = (SwitchPreference) findPreference(KEY_BOOT_SOUNDS);
+        mBootSounds.setChecked(SystemProperties.getBoolean(PROPERTY_BOOT_SOUNDS, true));
     }
 
     @Override
@@ -227,6 +239,16 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     public void onPause() {
         super.onPause();
         mSettingsObserver.register(false);
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mBootSounds) {
+            SystemProperties.set(PROPERTY_BOOT_SOUNDS, mBootSounds.isChecked() ? "1" : "0");
+            return false;
+        } else {
+            return super.onPreferenceTreeClick(preference);
+        }
     }
 
     private static boolean hasDockSettings(Context context) {
