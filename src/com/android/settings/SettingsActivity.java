@@ -16,10 +16,11 @@
 
 package com.android.settings;
 
-import android.app.ActionBar;
+import android.app.ActivityManager;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.app.ActionBar;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
@@ -64,6 +65,7 @@ import com.android.settings.applications.DrawOverlayDetails;
 import com.android.settings.applications.InstalledAppDetails;
 import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ManageAssist;
+import com.android.settings.applications.ManageDomainUrls;
 import com.android.settings.applications.NotificationApps;
 import com.android.settings.applications.ProcessStatsSummary;
 import com.android.settings.applications.ProcessStatsUi;
@@ -74,6 +76,7 @@ import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.dashboard.DashboardContainerFragment;
 import com.android.settings.dashboard.SearchResultsSummary;
 import com.android.settings.datausage.DataUsageSummary;
+import com.android.settings.deletionhelper.AutomaticStorageManagerSettings;
 import com.android.settings.deviceinfo.ImeiInformation;
 import com.android.settings.deviceinfo.PrivateVolumeForget;
 import com.android.settings.deviceinfo.PrivateVolumeSettings;
@@ -131,7 +134,6 @@ import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 
-<<<<<<< HEAD
 import com.dirtyunicorns.dutweaks.DirtyTweaks;
 import com.dirtyunicorns.dutweaks.fragments.ExpandedDesktop;
 import com.dirtyunicorns.dutweaks.fragments.FlingSettings;
@@ -139,9 +141,7 @@ import com.dirtyunicorns.dutweaks.fragments.NavbarSettings;
 import com.dirtyunicorns.dutweaks.fragments.SmartbarSettings;
 import com.dirtyunicorns.dutweaks.fragments.PulseSettings;
 
-=======
 import java.net.URISyntaxException;
->>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -363,17 +363,16 @@ public class SettingsActivity extends SettingsDrawerActivity
             TestingSettings.class.getName(),
             WifiAPITest.class.getName(),
             WifiInfo.class.getName(),
-<<<<<<< HEAD
+            MasterClear.class.getName(),
+            NightDisplaySettings.class.getName(),
             DirtyTweaks.class.getName(),
             ExpandedDesktop.class.getName(),
             NavbarSettings.class.getName(),
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
-            PulseSettings.class.getName()
-=======
-            MasterClear.class.getName(),
-            NightDisplaySettings.class.getName(),
->>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
+            PulseSettings.class.getName(),
+            ManageDomainUrls.class.getName(),
+            AutomaticStorageManagerSettings.class.getName()
     };
 
 
@@ -609,7 +608,6 @@ public class SettingsActivity extends SettingsDrawerActivity
             // of starting fresh.
             mSearchMenuItemExpanded = savedState.getBoolean(SAVE_KEY_SEARCH_MENU_EXPANDED);
             mSearchQuery = savedState.getString(SAVE_KEY_SEARCH_QUERY);
-
             setTitleFromIntent(intent);
 
             ArrayList<DashboardCategory> categories =
@@ -622,6 +620,7 @@ public class SettingsActivity extends SettingsDrawerActivity
 
             mDisplayHomeAsUpEnabled = savedState.getBoolean(SAVE_KEY_SHOW_HOME_AS_UP);
             mDisplaySearch = savedState.getBoolean(SAVE_KEY_SHOW_SEARCH);
+
         } else {
             if (!mIsShowingDashboard) {
                 mDisplaySearch = false;
@@ -644,7 +643,13 @@ public class SettingsActivity extends SettingsDrawerActivity
                 // Show Search affordance
                 mDisplaySearch = true;
                 mInitialTitleResId = R.string.dashboard_title;
-                switchToFragment(DashboardContainerFragment.class.getName(), null, false, false,
+
+                // add argument to indicate which settings tab should be initially selected
+                final Bundle args = new Bundle();
+                final String extraName = DashboardContainerFragment.EXTRA_SELECT_SETTINGS_TAB;
+                args.putString(extraName, intent.getStringExtra(extraName));
+
+                switchToFragment(DashboardContainerFragment.class.getName(), args, false, false,
                         mInitialTitleResId, mInitialTitle, false);
             }
         }
@@ -1298,6 +1303,9 @@ public class SettingsActivity extends SettingsDrawerActivity
     }
 
     public void startSuggestion(Intent intent) {
+        if (intent == null || ActivityManager.isUserAMonkey()) {
+            return;
+        }
         mCurrentSuggestion = intent.getComponent();
         startActivityForResult(intent, REQUEST_SUGGESTION);
     }
@@ -1311,5 +1319,4 @@ public class SettingsActivity extends SettingsDrawerActivity
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
-
 }

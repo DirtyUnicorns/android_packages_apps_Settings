@@ -23,25 +23,17 @@ import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.UserManager;
-<<<<<<< HEAD
-import android.provider.Settings.Global;
-import android.text.Annotation;
-import android.text.SpannableString;
-import android.text.SpannableStringBuilder;
-import android.text.TextPaint;
-import android.text.TextUtils;
-import android.text.style.URLSpan;
-=======
->>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.ChooseLockGeneric;
 import com.android.settings.ChooseLockSettingsHelper;
 import com.android.settings.R;
 import com.android.settingslib.HelpUtils;
+import com.android.settingslib.RestrictedLockUtils;
 import com.android.setupwizardlib.span.LinkSpan;
 
 /**
@@ -58,36 +50,26 @@ public class FingerprintEnrollIntroduction extends FingerprintEnrollBase
 
     private UserManager mUserManager;
     private boolean mHasPassword;
+    private boolean mFingerprintUnlockDisabledByAdmin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mFingerprintUnlockDisabledByAdmin = RestrictedLockUtils.checkIfKeyguardFeaturesDisabled(
+                this, DevicePolicyManager.KEYGUARD_DISABLE_FINGERPRINT, mUserId) != null;
+
         setContentView(R.layout.fingerprint_enroll_introduction);
-        setHeaderText(R.string.security_settings_fingerprint_enroll_introduction_title);
+        if (mFingerprintUnlockDisabledByAdmin) {
+            setHeaderText(R.string
+                    .security_settings_fingerprint_enroll_introduction_title_unlock_disabled);
+        } else {
+            setHeaderText(R.string.security_settings_fingerprint_enroll_introduction_title);
+        }
 
         final Button cancelButton = (Button) findViewById(R.id.fingerprint_cancel_button);
         cancelButton.setOnClickListener(this);
 
         mUserManager = UserManager.get(this);
-<<<<<<< HEAD
-        final RecyclerItemAdapter adapter = (RecyclerItemAdapter) layout.getAdapter();
-        adapter.setOnItemSelectedListener(this);
-        Item item = (Item) adapter.findItemById(R.id.fingerprint_introduction_message);
-        String linkUrl = getString(R.string.help_url_fingerprint);
-        if (Global.getInt(getContentResolver(), Global.DEVICE_PROVISIONED, 0) == 0) {
-            // If the device is not provisioned, help intents from HelpUtils will be null, so don't
-            // show the link at all.
-            linkUrl = "";
-        }
-        item.setTitle(LearnMoreSpan.linkify(
-                getText(R.string.security_settings_fingerprint_enroll_introduction_message),
-                linkUrl));
-        // setupwizard library automatically sets the divider inset to
-        // R.dimen.suw_items_icon_divider_inset. We adjust this back to 0 as we do not want
-        // an inset within settings.
-        layout.setDividerInset(0);
-=======
->>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
         updatePasswordQuality();
     }
 
@@ -189,23 +171,17 @@ public class FingerprintEnrollIntroduction extends FingerprintEnrollBase
         finish();
     }
 
-<<<<<<< HEAD
-    private static class LearnMoreSpan extends URLSpan {
-        private static final String TAG = "LearnMoreSpan";
-        private static final Typeface TYPEFACE_MEDIUM =
-                Typeface.create("sans-serif-medium", Typeface.NORMAL);
+    @Override
+    protected void initViews() {
+        super.initViews();
 
-        private LearnMoreSpan(String url) {
-            super(url);
+        TextView description = (TextView) findViewById(R.id.description_text);
+        if (mFingerprintUnlockDisabledByAdmin) {
+            description.setText(R.string
+                    .security_settings_fingerprint_enroll_introduction_message_unlock_disabled);
         }
+    }
 
-        @Override
-        public void onClick(View widget) {
-            Context ctx = widget.getContext();
-            Intent intent = HelpUtils.getHelpIntent(ctx, getURL(), ctx.getClass().getName());
-            if (intent == null) {
-                Log.w(LearnMoreSpan.TAG, "Null help intent.");
-=======
     @Override
     public void onClick(LinkSpan span) {
         if ("url".equals(span.getId())) {
@@ -213,7 +189,6 @@ public class FingerprintEnrollIntroduction extends FingerprintEnrollBase
             Intent intent = HelpUtils.getHelpIntent(this, url, getClass().getName());
             if (intent == null) {
                 Log.w(TAG, "Null help intent.");
->>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
                 return;
             }
             try {

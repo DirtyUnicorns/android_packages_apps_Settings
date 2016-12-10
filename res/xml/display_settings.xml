@@ -112,27 +112,6 @@
                 android:title="@string/display_vr_pref_title" />
 
         <PreferenceCategory
-                android:key="dt2l_camera_category"
-                android:title="@string/dt2l_camera_category">
-
-        <SwitchPreference
-                android:key="camera_double_tap_power_gesture"
-                android:title="@string/camera_double_tap_power_gesture_title"
-                android:summary="@string/camera_double_tap_power_gesture_desc"
-                android:persistent="false" />
-
-        <com.dirtyunicorns.dutweaks.preference.CustomSeekBarPreference
-                android:key="dt2l_camera_vibrate_config"
-                android:title="@string/dt2l_camera_vib_title"
-                settings:max="1000"
-                settings:min="0"
-                settings:units=""
-                android:dependency="camera_double_tap_power_gesture"
-                android:persistent="false" />
-
-        </PreferenceCategory>
-
-        <PreferenceCategory
                 android:key="rotation_category"
                 android:title="@string/display_rotation_category_title">
 

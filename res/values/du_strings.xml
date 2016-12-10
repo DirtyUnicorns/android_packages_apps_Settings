@@ -184,13 +184,6 @@
     <string name="profile_choose_app">Choose app</string>
     <string name="reset">Reset</string>
 
-    <!-- Double tap to launch camera options -->
-    <string name="dt2l_camera_category">DT2L camera options</string>
-    <string name="dt2l_camera_vib_title">Adjust the launch\'s vibration</string>
-    <string name="dt2l_camera_vib_summary">Adjust the vibration while launching the camera</string>
-    <string name="camera_double_tap_power_gesture_title">Double tap to launch the camera</string>
-    <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
-
     <!-- Linked / unlinked notification volume -->
     <string name="link_volume_option_title">Link ring and notification volume</string>
     <string name="notification_volume_option_title">Notification volume</string>

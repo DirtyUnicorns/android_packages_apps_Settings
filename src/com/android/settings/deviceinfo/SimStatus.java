@@ -378,14 +378,8 @@ public class SimStatus extends SettingsPreferenceFragment {
 
 
         // If formattedNumber is null or empty, it'll display as "Unknown".
-<<<<<<< HEAD
-        setSummaryText(KEY_PHONE_NUMBER, formattedNumber);
-=======
         setSummaryText(KEY_PHONE_NUMBER,
                 DeviceInfoUtils.getFormattedPhoneNumber(getContext(), mSir));
-        setSummaryText(KEY_IMEI, mPhone.getImei());
-        setSummaryText(KEY_IMEI_SV, mPhone.getDeviceSvn());
->>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
 
         if (!mShowICCID) {
             removePreferenceFromScreen(KEY_ICCID);

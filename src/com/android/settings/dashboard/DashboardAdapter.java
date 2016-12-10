@@ -19,11 +19,8 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.Icon;
-<<<<<<< HEAD
-import android.provider.Settings;
-=======
 import android.os.Bundle;
->>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
+import android.provider.Settings;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -118,37 +115,16 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
         }
     }
 
-<<<<<<< HEAD
-    public void setSuggestions(List<Tile> suggestions) {
+    public void setCategoriesAndSuggestions(List<DashboardCategory> categories,
+            List<Tile> suggestions) {
+        mCategories = categories;
+
         if ((Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.DISABLE_SUGGESTIONS, 1) == 1)) {
              mSuggestions = suggestions;
-             recountItems();
         } else {
              mSuggestions = null;
-             recountItems();
         }
-    }
-
-    public Tile getTile(ComponentName component) {
-        for (int i = 0; i < mCategories.size(); i++) {
-            for (int j = 0; j < mCategories.get(i).tiles.size(); j++) {
-                Tile tile = mCategories.get(i).tiles.get(j);
-                if (component.equals(tile.intent.getComponent())) {
-                    return tile;
-                }
-            }
-        }
-        return null;
-    }
-
-    public void setCategories(List<DashboardCategory> categories) {
-=======
-    public void setCategoriesAndSuggestions(List<DashboardCategory> categories,
-            List<Tile> suggestions) {
-        mSuggestions = suggestions;
->>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
-        mCategories = categories;
 
         // TODO: Better place for tinting?
         TypedValue tintColor = new TypedValue();
@@ -337,11 +313,22 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
     }
 
     private void onBindSuggestionHeader(final DashboardItemHolder holder) {
-        holder.icon.setImageResource(hasMoreSuggestions() ? R.drawable.ic_expand_more
-                : R.drawable.ic_expand_less);
-        holder.title.setText(mContext.getString(R.string.suggestions_title, mSuggestions.size()));
+        final boolean moreSuggestions = hasMoreSuggestions();
         final int undisplayedSuggestionCount =
                 mSuggestions.size() - getDisplayableSuggestionCount();
+        holder.icon.setImageResource(moreSuggestions ? R.drawable.ic_expand_more
+                : R.drawable.ic_expand_less);
+        holder.title.setText(mContext.getString(R.string.suggestions_title, mSuggestions.size()));
+        String summaryContentDescription;
+        if (moreSuggestions) {
+            summaryContentDescription = mContext.getResources().getQuantityString(
+                    R.plurals.settings_suggestion_header_summary_hidden_items,
+                    undisplayedSuggestionCount, undisplayedSuggestionCount);
+        } else {
+            summaryContentDescription = mContext.getString(R.string.condition_expand_hide);
+        }
+        holder.summary.setContentDescription(summaryContentDescription);
+
         if (undisplayedSuggestionCount == 0) {
             holder.summary.setText(null);
         } else {

@@ -360,7 +360,12 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
                     .isProvisioningNeededButUnavailable(getActivity()));
         }
 
-<<<<<<< HEAD
+        // Remove network reset if not allowed
+        if (RestrictedLockUtils.hasBaseUserRestriction(activity,
+                UserManager.DISALLOW_NETWORK_RESET, UserHandle.myUserId())) {
+            removePreference(KEY_NETWORK_RESET);
+        }
+
         // Enable link to CMAS app settings depending on the value in config.xml.
         boolean isCellBroadcastAppLinkEnabled = this.getResources().getBoolean(
                 com.android.internal.R.bool.config_cellBroadcastAppLinks);
@@ -378,12 +383,6 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
                 RestrictedLockUtils.hasBaseUserRestriction(mContext,
                         UserManager.DISALLOW_CONFIG_CELL_BROADCASTS, UserHandle.myUserId())) {
             removePreference(KEY_CELL_BROADCAST_SETTINGS);
-=======
-        // Remove network reset if not allowed
-        if (RestrictedLockUtils.hasBaseUserRestriction(activity,
-                UserManager.DISALLOW_NETWORK_RESET, UserHandle.myUserId())) {
-            removePreference(KEY_NETWORK_RESET);
->>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
         }
     }
 
@@ -403,7 +402,7 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
             getPreferenceScreen().addPreference(mButtonWfc);
 
             mButtonWfc.setSummary(WifiCallingSettings.getWfcModeSummary(
-                    context, ImsManager.getWfcMode(context)));
+                    context, ImsManager.getWfcMode(context, mTm.isNetworkRoaming())));
         } else {
             removePreference(KEY_WFC_SETTINGS);
         }
@@ -531,7 +530,11 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
                     result.add(KEY_WFC_SETTINGS);
                 }
 
-<<<<<<< HEAD
+                if (RestrictedLockUtils.hasBaseUserRestriction(context,
+                        UserManager.DISALLOW_NETWORK_RESET, UserHandle.myUserId())) {
+                    result.add(KEY_NETWORK_RESET);
+                }
+
                 // Enable link to CMAS app settings depending on the value in config.xml.
                 boolean isCellBroadcastAppLinkEnabled = context.getResources().getBoolean(
                         com.android.internal.R.bool.config_cellBroadcastAppLinks);
@@ -547,11 +550,6 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
                 }
                 if (!um.isAdminUser() || !isCellBroadcastAppLinkEnabled) {
                     result.add(KEY_CELL_BROADCAST_SETTINGS);
-=======
-                if (RestrictedLockUtils.hasBaseUserRestriction(context,
-                        UserManager.DISALLOW_NETWORK_RESET, UserHandle.myUserId())) {
-                    result.add(KEY_NETWORK_RESET);
->>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
                 }
 
                 return result;

@@ -20,14 +20,11 @@
 -keep class com.android.settings.overlay.FeatureFactoryImpl
 -keep class com.android.settings.accessibility.*FragmentForSetupWizard
 -keep class com.android.settings.display.*FragmentForSetupWizard
-<<<<<<< HEAD
+-keep class com.android.settings.display.NightDisplaySettings
 -keep class com.android.settings.du.**
 
 # Dirty Tweaks
 -keep class com.dirtyunicorns.dutweaks.**
-=======
--keep class com.android.settings.display.NightDisplaySettings
->>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
 
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {

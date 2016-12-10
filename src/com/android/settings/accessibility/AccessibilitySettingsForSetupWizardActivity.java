@@ -45,17 +45,9 @@ public class AccessibilitySettingsForSetupWizardActivity extends SettingsActivit
         super.onCreate(savedState);
 
         // Finish configuring the content view.
-<<<<<<< HEAD
-        FrameLayout parentLayout = (FrameLayout) findViewById(R.id.main_content);
-        LayoutInflater.from(this)
-                .inflate(R.layout.accessibility_settings_for_suw, parentLayout);
-
         if (getActionBar() != null) {
             getActionBar().setDisplayHomeAsUpEnabled(true);
         }
-=======
-        getActionBar().setDisplayHomeAsUpEnabled(true);
->>>>>>> 4dd7fc7b960cb022c3cfe639bfe277d111a107ba
         setIsDrawerPresent(false);
     }
 
