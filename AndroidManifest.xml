@@ -129,14 +129,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Settings$DirtyTweaks"
-            android:label="@string/header_category_dirtytweaks">
-            <intent-filter android:priority="4">
-                <action android:name="com.android.settings.category.dirtytweaks" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
         <activity android:name=".Settings$DeviceSettings"
             android:label="@string/header_category_device">
             <intent-filter android:priority="3">
@@ -181,19 +173,8 @@
             </intent-filter>
         </activity>
 
-        <!-- LED battery and notification -->
-        <activity android:name=".du.batterylight.NotificationLightSettings" />
-        <activity android:name=".du.batterylight.BatteryLightSettings" />
-
-        <!-- DU Changelog -->
-        <activity android:name="com.android.settings.du.changelog.ChangelogActivity"
-                  android:label="@string/duchangelog_title" />
-        <activity android:name="com.android.settings.du.changelog.Weeklies"
-                  android:label="@string/duchangelog_weeklies" />
-        <activity android:name="com.android.settings.du.changelog.Official"
-                  android:label="@string/duchangelog_official" />
-
         <!-- Wireless Controls -->
+
         <activity android:name="Settings$WirelessSettingsActivity"
                 android:taskAffinity="com.android.settings"
                 android:label="@string/wireless_networks_settings_title"
@@ -236,6 +217,7 @@
         </activity>
 
         <!-- Top-level settings -->
+
         <activity android:name="Settings$WifiSettingsActivity"
                 android:taskAffinity=""
                 android:label="@string/wifi_settings"
@@ -943,51 +925,6 @@
                 android:value="true" />
         </activity>
 
-        <activity android:name="Settings$DirtyTweaksActivity"
-            android:label="@string/dirtytweaks_title"
-            android:icon="@drawable/ic_settings_dirtytweaks"
-            android:taskAffinity="">
-            <intent-filter android:priority="1">
-                <action android:name="dirtyunicorns.dutweaks.DirtyTweaks" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.VOICE_LAUNCH" />
-                <category android:name="com.android.settings.SHORTCUT" />
-            </intent-filter>
-            <intent-filter android:priority="9">
-                <action android:name="com.android.settings.action.SETTINGS" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                android:value="com.android.settings.category.dirtytweaks" />
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.dirtyunicorns.dutweaks.DirtyTweaks" />
-            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
-                android:value="true" />
-        </activity>
-
-        <activity android:name="Settings$ThemesActivity"
-                android:label="@string/themes_title"
-                android:icon="@drawable/ic_settings_themes"
-                android:taskAffinity="" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.android.settings.SHORTCUT" />
-            </intent-filter>
-            <intent-filter android:priority="9">
-                <action android:name="com.android.settings.action.SETTINGS" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                android:value="com.android.settings.category.dirtytweaks" />
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.Themes" />
-            <meta-data android:name="com.android.settings.summary"
-                android:resource="@string/themes_dashboard_summary" />
-        </activity>
-
         <activity android:name="Settings$DisplaySettingsActivity"
                 android:label="@string/display_settings"
                 android:icon="@drawable/ic_settings_display"
@@ -1022,26 +959,6 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.DisplaySettings" />
         </activity-alias>
-
-        <activity android:name="Settings$SuperSUActivity"
-                android:label="@string/supersu_title"
-                android:icon="@drawable/ic_settings_supersu"
-                android:taskAffinity="" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.android.settings.SHORTCUT" />
-            </intent-filter>
-            <intent-filter android:priority="0">
-                <action android:name="com.android.settings.action.SETTINGS" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                android:value="com.android.settings.category.system" />
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.SuperSU" />
-            <meta-data android:name="com.android.settings.summary"
-                android:resource="@string/supersu_dashboard_summary" />
-        </activity>
 
         <activity android:name="Settings$NightDisplaySettingsActivity"
                 android:label="@string/night_display_title"
@@ -2439,8 +2356,6 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.accounts.AccountSyncSettings" />
-            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@string/account_sync_settings_title" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
@@ -2624,8 +2539,8 @@
 
         <activity android:name=".nfc.HowItWorks"
                   android:label="@string/nfc_payment_settings_title"
-                  android:excludeFromRecents="true"
-                  android:parentActivityName="Settings$PaymentSettingsActivity">
+                  android:parentActivityName="Settings$PaymentSettingsActivity"
+                  android:excludeFromRecents="true">
         </activity>
 
         <activity android:name=".SmsDefaultDialog"
@@ -2953,93 +2868,6 @@
                 android:resource="@string/wifi_calling_suggestion_summary" />
         </activity>
 
-        <!-- Global DUI settings activity. -->
-        <activity android:name="Settings$NavigationSettingsActivity"
-                android:label="@string/navigation_category"
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.dirtyunicorns.dutweaks.fragments.NavbarSettings" />
-        </activity>
-
-        <!-- Smartbar settings activity. -->
-        <activity android:name="Settings$SmartbarSettingsActivity"
-                android:label="@string/smartbar_settings_title"
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.dirtyunicorns.dutweaks.fragments.SmartbarSettings" />
-        </activity>
-
-        <!-- Fling settings activity. -->
-        <activity android:name="Settings$FlingSettingsActivity"
-                android:label="@string/fling_settings"
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.dirtyunicorns.dutweaks.fragments.FlingSettings" />
-        </activity>
-
-        <!-- Pulse settings activity. -->
-        <activity android:name="Settings$PulseSettingsActivity"
-                android:label="@string/pulse_settings"
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.dirtyunicorns.dutweaks.fragments.PulseSettings" />
-        </activity>
-
-       <!-- System action picker -->
-        <activity android:name="com.dirtyunicorns.dutweaks.ActionPickerDialogActivity"
-                android:theme="@*android:style/Theme.Material.Light.Dialog.Alert"
-                android:label="@string/choose_action_title"
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
-
-       <!-- Icon pack picker -->
-        <activity android:name="com.dirtyunicorns.dutweaks.IconPickerActivity"
-                android:theme="@*android:style/Theme.Material.Light.Dialog.Alert"
-                android:label="@string/icon_pack_picker_dialog_title"
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
-
-
-        <!-- Icon picker proxy for gallery -->
-        <activity android:name="com.dirtyunicorns.dutweaks.IconPickerGallery"
-            android:theme="@*android:style/Theme.Material.Light.Dialog.Alert"
-            android:label="@string/icon_pack_picker_dialog_title"
-            android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
-
-       <!-- Icon pack grid -->
-        <activity android:name="com.dirtyunicorns.dutweaks.IconPackGridActivity"
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
-
         <provider
             android:name=".search.SettingsSearchIndexablesProvider"
             android:authorities="com.android.settings"
@@ -3179,20 +3007,6 @@
                        android:value="true" />
         </activity>
 
-        <!-- Expanded desktop settings activity. -->
-        <activity android:name="Settings$ExpandedDesktopSettingsActivity"
-                android:label="@string/expanded_desktop_category"
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.dirtyunicorns.dutweaks.fragments.ExpandedDesktop" />
-            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@string/expanded_desktop_category" />
-        </activity>
-
         <activity android:name="Settings$AutomaticStorageManagerSettingsActivity"
                   android:exported="@bool/config_storage_manager_settings_enabled"
                   android:label="@string/automatic_storage_manager_settings"
@@ -3272,5 +3086,198 @@
             android:enabled="@bool/config_has_help" />
 
         <!-- This is the longest AndroidManifest.xml ever. -->
+
+        <!-- This AndroidManifest is about to get longer -->
+
+        <!-- Customization category -->
+        <activity android:name=".Settings$DirtyTweaks"
+            android:label="@string/header_category_dirtytweaks">
+            <intent-filter android:priority="4">
+                <action android:name="com.android.settings.category.dirtytweaks" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Dirty Tweaks -->
+        <activity android:name="Settings$DirtyTweaksActivity"
+            android:label="@string/dirtytweaks_title"
+            android:icon="@drawable/ic_settings_dirtytweaks"
+            android:taskAffinity="">
+            <intent-filter android:priority="1">
+                <action android:name="dirtyunicorns.dutweaks.DirtyTweaks" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="9">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.dirtytweaks" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.dutweaks.DirtyTweaks" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
+
+        <!-- SuperSU -->
+        <activity android:name="Settings$SuperSUActivity"
+                android:label="@string/supersu_title"
+                android:icon="@drawable/ic_settings_supersu"
+                android:taskAffinity="" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="0">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.system" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.SuperSU" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/supersu_dashboard_summary" />
+        </activity>
+
+        <!-- Battery and notification lights -->
+        <activity android:name=".du.batterylight.NotificationLightSettings" />
+        <activity android:name=".du.batterylight.BatteryLightSettings" />
+
+        <!-- Expanded desktop -->
+        <activity android:name="Settings$ExpandedDesktopSettingsActivity"
+                android:label="@string/expanded_desktop_category"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.dutweaks.fragments.ExpandedDesktop" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@string/expanded_desktop_category" />
+        </activity>
+
+        <!-- Global navbar settings -->
+        <activity android:name="Settings$NavigationSettingsActivity"
+                android:label="@string/navigation_category"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.dutweaks.fragments.NavbarSettings" />
+        </activity>
+
+        <!-- Smartbar settings -->
+        <activity android:name="Settings$SmartbarSettingsActivity"
+                android:label="@string/smartbar_settings_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.dutweaks.fragments.SmartbarSettings" />
+        </activity>
+
+        <!-- Fling settings -->
+        <activity android:name="Settings$FlingSettingsActivity"
+                android:label="@string/fling_settings"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.dutweaks.fragments.FlingSettings" />
+        </activity>
+
+        <!-- Pulse settings -->
+        <activity android:name="Settings$PulseSettingsActivity"
+                android:label="@string/pulse_settings"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.dutweaks.fragments.PulseSettings" />
+        </activity>
+
+        <!-- System action picker -->
+        <activity android:name="com.dirtyunicorns.dutweaks.ActionPickerDialogActivity"
+                android:theme="@*android:style/Theme.Material.Light.Dialog.Alert"
+                android:label="@string/choose_action_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Icon pack picker -->
+        <activity android:name="com.dirtyunicorns.dutweaks.IconPickerActivity"
+                android:theme="@*android:style/Theme.Material.Light.Dialog.Alert"
+                android:label="@string/icon_pack_picker_dialog_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Icon picker proxy for gallery -->
+        <activity android:name="com.dirtyunicorns.dutweaks.IconPickerGallery"
+            android:theme="@*android:style/Theme.Material.Light.Dialog.Alert"
+            android:label="@string/icon_pack_picker_dialog_title"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Icon pack grid -->
+        <activity android:name="com.dirtyunicorns.dutweaks.IconPackGridActivity"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Changelog -->
+        <activity android:name="com.android.settings.du.changelog.ChangelogActivity"
+                  android:label="@string/duchangelog_title" />
+        <activity android:name="com.android.settings.du.changelog.Weeklies"
+                  android:label="@string/duchangelog_weeklies" />
+        <activity android:name="com.android.settings.du.changelog.Official"
+                  android:label="@string/duchangelog_official" />
+
+        <!-- Themes -->
+        <activity android:name="Settings$ThemesActivity"
+                android:label="@string/themes_title"
+                android:icon="@drawable/ic_settings_themes"
+                android:taskAffinity="" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="9">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.dirtytweaks" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.Themes" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/themes_dashboard_summary" />
+        </activity>
+
     </application>
 </manifest>
