@@ -76,11 +76,15 @@
                 settings:allowDividerBelow="true"/>
 
         <!-- Device firmware version -->
-        <Preference android:key="firmware_version"
-                android:enabled="false"
+        <com.android.settings.DividerPreference
+                android:key="firmware_version"
+                android:enabled="true"
                 android:shouldDisableView="false"
+                android:selectable="true"
                 android:title="@string/firmware_version"
-                android:summary="@string/device_info_default"/>
+                android:summary="@string/device_info_default"
+                settings:allowDividerAbove="true"
+                settings:allowDividerBelow="true"/>
 
         <!-- Security patch level -->
         <PreferenceScreen android:key="security_patch"
@@ -91,10 +95,15 @@
         </PreferenceScreen>
 
         <!-- DU version -->
-        <Preference android:key="mod_version"
-                style="?android:preferenceInformationStyle"
+        <com.android.settings.DividerPreference
+                android:key="mod_version"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:selectable="false"
                 android:title="@string/mod_version"
-                android:summary="@string/mod_version_default" />
+                android:summary="@string/mod_version_default"
+                settings:allowDividerAbove="true"
+                settings:allowDividerBelow="true"/>
 
         <!-- Device FCC equipment id -->
         <com.android.settings.DividerPreference
@@ -123,17 +132,22 @@
                 android:key="kernel_version"
                 android:enabled="false"
                 android:shouldDisableView="false"
-                android:selectable="false"
+                android:selectable="true"
                 android:title="@string/kernel_version"
                 android:summary="@string/device_info_default"
                 settings:allowDividerAbove="true"
                 settings:allowDividerBelow="true"/>
 
         <!-- Build date -->
-        <Preference android:key="build_date"
-                style="?android:preferenceInformationStyle"
+        <com.android.settings.DividerPreference
+                android:key="build_date"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:selectable="false"
                 android:title="@string/build_date"
-                android:summary="@string/build_date_default"/>
+                android:summary="@string/build_date_default"
+                settings:allowDividerAbove="true"
+                settings:allowDividerBelow="true"/>
 
         <!-- SELinux status information -->
         <com.android.settings.DividerPreference
