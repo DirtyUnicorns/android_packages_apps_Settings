@@ -197,8 +197,7 @@
     <string name="themes_title">Themes</string>
     <string name="themes_dashboard_summary">Manage your themes</string>
 
-    <!-- Manage applications: show substratum overlays -->
-    <string name="filter_substratum_apps">Substratum overlays</string>
+    <!-- Manage applications: Substratum overlays -->
     <string name="menu_show_substratum">Show overlays</string>
     <string name="menu_hide_substratum">Hide overlays</string>
 
