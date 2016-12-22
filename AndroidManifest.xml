@@ -3279,5 +3279,12 @@
                 android:resource="@string/themes_dashboard_summary" />
         </activity>
 
+        <!-- Hotspot idle -->
+        <service android:name=".wifi.HotspotService" >
+            <intent-filter>
+                <action android:name="com.android.settings.wifi.HotspotService" />
+            </intent-filter>
+        </service>
+
     </application>
 </manifest>

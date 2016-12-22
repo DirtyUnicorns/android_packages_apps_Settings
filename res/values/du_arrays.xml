@@ -108,4 +108,29 @@
         <item>2</item>
     </string-array>
 
+    <!-- Hotspot idle -->
+    <string-array name="wifi_hotspot_mode_entries">
+        <item>Always</item>
+        <item>Turn off when idle for 5 min</item>
+        <item>Turn off when idle for 10 min</item>
+        <item>Turn off when idle for 30 min</item>
+        <item>Turn off when idle for 1 hour</item>
+    </string-array>
+
+    <string-array name="wifi_hotspot_mode_entryValues">
+        <item>Always</item>
+        <item>Turn_off_5min</item>
+        <item>Turn_off_10min</item>
+        <item>Turn_off_30min</item>
+        <item>Turn_off_60min</item>
+    </string-array>
+
+    <string-array name="wifi_hotspot_mode_summaries">
+        <item>Always</item>
+        <item>Turn off when idle for 5 min</item>
+        <item>Turn off when idle for 10 min</item>
+        <item>Turn off when idle for 30 min</item>
+        <item>Turn off when idle for 1 hour</item>
+    </string-array>
+
 </resources>
