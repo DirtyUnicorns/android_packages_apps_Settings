@@ -210,4 +210,7 @@
     <string name="qs_night_bright_medium">Set medium brightness</string>
     <string name="qs_night_bright_min">Set minimum brightness</string>
 
+    <!-- Hotspot idle -->
+    <string name="wifi_hotspot_mode_title">Keep WiFi Hotspot on</string>
+
 </resources>
