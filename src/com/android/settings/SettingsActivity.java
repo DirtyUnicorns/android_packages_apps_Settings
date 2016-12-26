@@ -237,6 +237,8 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final String THEMES_FRAGMENT = "com.android.settings.Themes";
 
+    private static final String UPDATER_FRAGMENT = "com.android.settings.Updater";
+
     private String mFragmentClass;
 
     private CharSequence mInitialTitle;
@@ -1042,6 +1044,12 @@ public class SettingsActivity extends SettingsDrawerActivity
             startActivity(themesIntent);
             finish();
             return null;
+        } else if (UPDATER_FRAGMENT.equals(fragmentName)) {
+            Intent updaterIntent = new Intent();
+            updaterIntent.setClassName("com.dirtyunicorns.duupdater", "com.dirtyunicorns.duupdater.MainActivity");
+            startActivity(updaterIntent);
+            finish();
+            return null;
         }
 
         if (validate && !isValidFragment(fragmentName)) {
@@ -1134,7 +1142,7 @@ public class SettingsActivity extends SettingsDrawerActivity
                         Settings.DevelopmentSettingsActivity.class.getName()),
                 showDev, isAdmin, pm);
 
-        // Embedding into Settings is supported from SuperSU v1.85 and up
+        // SuperSU
         boolean suSupported = false;
         try {
             suSupported = (getPackageManager().getPackageInfo("eu.chainfire.supersu", 0).versionCode >= 185);
@@ -1144,6 +1152,7 @@ public class SettingsActivity extends SettingsDrawerActivity
                         Settings.SuperSUActivity.class.getName()),
                 suSupported, isAdmin, pm);
 
+        // Substratum
         boolean themesSupported = false;
         try {
             themesSupported = (getPackageManager().getPackageInfo("projekt.substratum", 0).versionCode > 0);
@@ -1152,6 +1161,16 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                         Settings.ThemesActivity.class.getName()),
                 themesSupported, isAdmin, pm);
+
+        // DU Updater
+        boolean updaterSupported = false;
+        try {
+            updaterSupported = (getPackageManager().getPackageInfo("com.dirtyunicorns.duupdater", 0).versionCode > 0);
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.UpdaterActivity.class.getName()),
+                updaterSupported, isAdmin, pm);
 
         // Reveal development-only quick settings tiles
         DevelopmentTiles.setTilesEnabled(this, showDev);
