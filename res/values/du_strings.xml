@@ -205,14 +205,14 @@
     <string name="menu_show_substratum">Show overlays</string>
     <string name="menu_hide_substratum">Hide overlays</string>
 
-    <!-- Advanced night mode tile -->
-    <string name="night_display_category_advanced">Advanced</string>
-    <string name="qs_night_brightness_value_title">Automatic lower brightness</string>
-    <string name="qs_night_brightness_value_dialog">Automatically set low brightness value when enabling Night Light</string>
-    <string name="qs_night_bright_disabled">Don\'t change brightness</string>
-    <string name="qs_night_bright_less">Set low brightness</string>
-    <string name="qs_night_bright_medium">Set medium brightness</string>
-    <string name="qs_night_bright_min">Set minimum brightness</string>
+    <!-- Advanced night mode brightness -->
+    <string name="night_brightness_category">Brightness</string>
+    <string name="night_brightness_value_title">Night Light brightness</string>
+    <string name="night_brightness_text">When Night Light is enabled automatically set the desired brightness. The default brightness is set to low brightness</string>
+    <string name="night_bright_disabled">Disabled</string>
+    <string name="night_bright_low">low brightness</string>
+    <string name="night_bright_medium">medium brightness</string>
+    <string name="night_bright_min">minimum brightness</string>
 
     <!-- Hotspot idle -->
     <string name="wifi_hotspot_mode_title">Keep WiFi Hotspot on</string>
