@@ -199,6 +199,7 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
         if (mShowsOnlyFullImeAndKeyboardList && identifier != null) {
             showKeyboardLayoutDialog(identifier);
         }
+        updateCurrentImeName();
     }
 
     private void updateInputMethodSelectorSummary(int value) {
