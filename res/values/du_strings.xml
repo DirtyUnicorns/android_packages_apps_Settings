@@ -226,4 +226,8 @@
     <!-- Hotspot idle -->
     <string name="wifi_hotspot_mode_title">Keep WiFi Hotspot on</string>
 
+    <!-- double tap statusbar to sleep -->
+    <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
+    <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+
 </resources>
