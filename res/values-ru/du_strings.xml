@@ -24,6 +24,18 @@
   <!-- DU Changelog -->
   <string name="duchangelog_title">Список изменений DU</string>
   <string name="duchangelog_summary">Проверьте, что изменилось</string>
+  <string name="duchangelog_weeklies">Изменения - Еженедельные сборки</string>
+  <string name="duchangelog_official">Изменения - Официальные сборки</string>
+  <string name="warning_text">Обратите внимание, что это общий список изменений. Для полного и детального списка посетите наш github или gerrit.</string>
+  <string name="weeklies">Еженедельные сборки</string>
+  <string name="official">Офицальные сборки</string>
+  <string name="changelog_header_version"></string>
+  <string name="changelog_dialog_title">Внимание</string>
+  <string name="changelog_dialog_message">Пожалуйста, включите WiFi/мобильные данные для загрузки изменений с нашего сервера.</string>
+  <string name="changelog_dialog_ok">ОК</string>
+  <!-- DU Updater -->
+  <string name="updater_title">Обновления</string>
+  <string name="updater_dashboard_summary">Проверить наличие обновления</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Пароль для резервного копирования</string>
   <!-- Volume adjustment sounds -->
@@ -50,6 +62,9 @@
   <string name="display_rotation_90_title">90 градусов</string>
   <string name="display_rotation_180_title">180 градусов</string>
   <string name="display_rotation_270_title">270 градусов</string>
+  <!-- Gesture Settings -->
+  <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+  <string name="double_twist_for_camera_mode_custom_summary">Для включения режима селфи в Google Камере дважды встряхните устройство, находясь в приложении</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Уровни громкости</string>
   <string name="volume_steps_alarm_title">Будильник</string>
@@ -77,6 +92,7 @@
   <string name="bluetooth_accept_all_files">Принимать все типы файлов</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">Суперпользователь</string>
+  <string name="supersu_dashboard_summary">Управление root-доступом</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Включение при зарядке</string>
   <string name="wake_when_plugged_or_unplugged_summary">Включать экран при подключении или отключении зарядного устройства</string>
@@ -103,6 +119,9 @@
   <string name="ok">ОК</string>
   <string name="advanced">Дополнительно</string>
   <string name="profiles_add">Добавить...</string>
+  <!-- Camera shutter sound -->
+  <string name="camera_sounds_title">Camera shutter sound</string>
+  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Изменение настроек индикатора</string>
   <string name="pulse_speed_title">Частота и продолжительность индикации</string>
@@ -134,25 +153,35 @@
   <string name="notification_light_voicemail_title">Голосовая почта</string>
   <string name="notification_light_screen_on">Индикация при вкл. экране</string>
   <string name="notification_light_zen_mode">В режиме \"Не беспокоить\"</string>
-  <string name="notification_light_use_multiple_leds">Multiple LEDs</string>
+  <string name="notification_light_use_multiple_leds">Несколько светодиодов</string>
   <string name="keywords_lights_brightness_level">Диммер яркости</string>
   <string name="notification_light_automagic">Выберать цвет автоматически</string>
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Настройки индикации</string>
   <string name="led_notification_text">Включить настройки индикации</string>
-  <string name="notification_light_no_apps_summary">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
+  <string name="notification_light_no_apps_summary">Для добавления, активируйте «%1$s» и нажмите «\u002b» на строке меню</string>
   <string name="font_sample_text">11:57</string>
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">Выберите приложение</string>
   <string name="reset">Выполнить сброс</string>
-  <!-- Double tap to launch camera options -->
-  <string name="dt2l_camera_category">Параметры камеры DT2L</string>
-  <string name="dt2l_camera_vib_title">Настройка силы вибрации</string>
-  <string name="dt2l_camera_vib_summary">Регулирование вибрации при запуске камеры</string>
-  <string name="camera_double_tap_power_gesture_title">Двойное нажатие для запуска камеры</string>
-  <string name="camera_double_tap_power_gesture_desc">Открывать камеру двойным нажатием кнопки питания</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Связать громкость звонка и уведомлений</string>
   <string name="notification_volume_option_title">Громкость уведомления</string>
   <string name="ring_notification_volume_option_title">Громкость звонка и уведомлений</string>
+  <!-- Themes -->
+  <string name="themes_title">Темы</string>
+  <string name="themes_dashboard_summary">Управление темами</string>
+  <!-- Manage applications: Substratum overlays -->
+  <string name="menu_show_substratum">Показать слои</string>
+  <string name="menu_hide_substratum">Скрыть слои</string>
+  <!-- Advanced night mode brightness -->
+  <string name="night_brightness_category">Яркость</string>
+  <string name="night_brightness_value_title">Яркость в Ночном режиме</string>
+  <string name="night_brightness_text">Когда Ночной режим включается автоматически, выставлять желаемую яркость. Стандартная яркость установлена на низком уровне</string>
+  <string name="night_bright_disabled">Отключен</string>
+  <string name="night_bright_low">низкая яркость</string>
+  <string name="night_bright_medium">средняя ясркость</string>
+  <string name="night_bright_min">минимальная яркость</string>
+  <!-- Hotspot idle -->
+  <string name="wifi_hotspot_mode_title">Держать Wi-Fi точку доступа включённой</string>
 </resources>

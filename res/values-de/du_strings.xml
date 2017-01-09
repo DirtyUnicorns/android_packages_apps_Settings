@@ -23,7 +23,19 @@
   <string name="mod_version_default">Unbekannt</string>
   <!-- DU Changelog -->
   <string name="duchangelog_title">Versionsverlauf</string>
-  <string name="duchangelog_summary">Veränderungen in DU verfolgen</string>
+  <string name="duchangelog_summary">Änderungen in DU anzeigen</string>
+  <string name="duchangelog_weeklies">DU-Changelog - Weeklies</string>
+  <string name="duchangelog_official">DU-Changelog - Official</string>
+  <string name="warning_text">Bitte beachte, dass die hier erstellten Protokolleinträge eine Zusammenfassung der eingeführten Quellcode-Änderungen sind. Besuche unseren Github oder Gerrit, um das vollständige und detaillierte Änderungsprotokoll einzusehen.</string>
+  <string name="weeklies">Weeklies</string>
+  <string name="official">Official</string>
+  <string name="changelog_header_version"></string>
+  <string name="changelog_dialog_title">Achtung</string>
+  <string name="changelog_dialog_message">Bitte WLAN/Mobilfunk-Daten aktivieren, um Changelogs von unserem Server zu laden.</string>
+  <string name="changelog_dialog_ok">OK</string>
+  <!-- DU Updater -->
+  <string name="updater_title">Updater</string>
+  <string name="updater_dashboard_summary">Nach neuestem Update suchen</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Passwort für Desktop-Backup</string>
   <!-- Volume adjustment sounds -->
@@ -33,16 +45,16 @@
   <!-- ADB debugging notifications -->
   <string name="enable_adb_custom">Android-Debugging</string>
   <string name="enable_adb_summary_custom">ADB Debugmodus aktivieren</string>
-  <string name="adb_notify">ADB-Benachrichtigungen</string>
+  <string name="adb_notify">ADB-Benachrichtigung</string>
   <string name="adb_notify_summary">Benachrichtigung anzeigen, wenn USB oder Netzwerk Debugging aktiviert ist</string>
   <string name="adb_over_network">ADB übers Netzwerk</string>
   <string name="adb_over_network_summary">TCP/IP-Debugging über Netzwerkschnittstellen (WLAN\u2011, USB Netzwerke) aktivieren. Diese Einstellung wird beim Neustarten zurückgesetzt</string>
   <string name="adb_over_network_warning">WARNUNG: Wenn ADB übers Netzwerk aktiviert ist, kann auf Ihr Gerät von jedem verbundenen Netzwerk zugegriffen werden!\n\nDiese Funktion sollte nur verwendet werden, wenn Sie sich in einem vertrauenswürdigen Netzwerk befinden.\n\nMöchten Sie diese Funktion trotzdem aktivieren?</string>
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Auslöseton Bildschirmfoto</string>
-  <string name="screenshot_sound_summary">Spielt einen Ton beim erstellen eines Bildschirmfotos ab</string>
+  <string name="screenshot_sound_summary">Spielt einen Ton beim Erstellen eines Bildschirmfotos</string>
   <!-- Display : Rotation -->
-  <string name="display_rotation_title">Bildschirmdrehung</string>
+  <string name="display_rotation_title">Drehwinkel</string>
   <string name="display_rotation_disabled">Deaktiviert</string>
   <string name="display_rotation_unit">Grad</string>
   <string name="display_rotation_category_title">Drehung</string>
@@ -50,6 +62,9 @@
   <string name="display_rotation_90_title">90 Grad</string>
   <string name="display_rotation_180_title">180 Grad</string>
   <string name="display_rotation_270_title">270 Grad</string>
+  <!-- Gesture Settings -->
+  <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+  <string name="double_twist_for_camera_mode_custom_summary">Handgelenk zweimal drehen, um in der Kamera den Selfie-Modus ein- oder auszuschalten</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Lautstärkestufen</string>
   <string name="volume_steps_alarm_title">Lautstärkestufen: Wecker</string>
@@ -77,6 +92,7 @@
   <string name="bluetooth_accept_all_files">Alle Dateitypen akzeptieren</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">SuperSU</string>
+  <string name="supersu_dashboard_summary">Root-Zugriff verwalten</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Beim Einstecken aufwecken</string>
   <string name="wake_when_plugged_or_unplugged_summary">Beim Anschließen oder Trennen der Stromversorgung das Display anschalten</string>
@@ -103,6 +119,9 @@
   <string name="ok">OK</string>
   <string name="advanced">Erweiterte Einstellungen</string>
   <string name="profiles_add">Hinzufügen...</string>
+  <!-- Camera shutter sound -->
+  <string name="camera_sounds_title">Camera shutter sound</string>
+  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">LED-Einstellungen bearbeiten</string>
   <string name="pulse_speed_title">Pulsdauer und Geschwindigkeit</string>
@@ -145,14 +164,24 @@
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">App auswählen</string>
   <string name="reset">Zurücksetzen</string>
-  <!-- Double tap to launch camera options -->
-  <string name="dt2l_camera_category">DT2L Kamera Optionen</string>
-  <string name="dt2l_camera_vib_title">Start-Vibration anpassen</string>
-  <string name="dt2l_camera_vib_summary">Passen Sie die Vibration beim Starten der Kamera an</string>
-  <string name="camera_double_tap_power_gesture_title">Doppeltes-Tippen, um die Kamera zu starten</string>
-  <string name="camera_double_tap_power_gesture_desc">Schnelles Öffnen der Kamera, ohne den Bildschirm zu entsperren</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Verbinde Lautstärke für Klingelton und Benachrichtigungen</string>
   <string name="notification_volume_option_title">Benachrichtigungslautstärke</string>
   <string name="ring_notification_volume_option_title">Klingel- und Benachrichtigungslautstärke</string>
+  <!-- Themes -->
+  <string name="themes_title">Designs</string>
+  <string name="themes_dashboard_summary">Designs verwalten</string>
+  <!-- Manage applications: Substratum overlays -->
+  <string name="menu_show_substratum">Overlays anzeigen</string>
+  <string name="menu_hide_substratum">Overlays ausblenden</string>
+  <!-- Advanced night mode brightness -->
+  <string name="night_brightness_category">Helligkeit</string>
+  <string name="night_brightness_value_title">Nachtlicht Helligkeit</string>
+  <string name="night_brightness_text">Wenn Nachtlicht aktiviert ist, wird die gewünschte Helligkeit automatisch eingestellt. Die Standard-Helligkeit ist auf niedrige Helligkeit eingestellt</string>
+  <string name="night_bright_disabled">Deaktiviert</string>
+  <string name="night_bright_low">Niedrige Helligkeit</string>
+  <string name="night_bright_medium">Mittlere Helligkeit</string>
+  <string name="night_bright_min">Minimale Helligkeit</string>
+  <!-- Hotspot idle -->
+  <string name="wifi_hotspot_mode_title">WLAN-Hotspot anlassen</string>
 </resources>

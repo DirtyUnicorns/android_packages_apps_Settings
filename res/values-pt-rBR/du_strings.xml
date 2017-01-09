@@ -24,6 +24,18 @@
   <!-- DU Changelog -->
   <string name="duchangelog_title">Log de Alterações DU</string>
   <string name="duchangelog_summary">Veja o que mudou na DU</string>
+  <string name="duchangelog_weeklies">Changelog - Weeklies</string>
+  <string name="duchangelog_official">Changelog - Official</string>
+  <string name="warning_text">Please note that change logs generated here are summaries of commits merged into our source. For a full and detailed change log is recommended that you visit our github or gerrit.</string>
+  <string name="weeklies">Weeklies</string>
+  <string name="official">Official</string>
+  <string name="changelog_header_version"></string>
+  <string name="changelog_dialog_title">Attention</string>
+  <string name="changelog_dialog_message">Please enable WiFi/Mobile data to download the changelog from our server.</string>
+  <string name="changelog_dialog_ok">OK</string>
+  <!-- DU Updater -->
+  <string name="updater_title">Updater</string>
+  <string name="updater_dashboard_summary">Check for the latest update</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Senha de backup local</string>
   <!-- Volume adjustment sounds -->
@@ -50,6 +62,9 @@
   <string name="display_rotation_90_title">90 graus</string>
   <string name="display_rotation_180_title">180 graus</string>
   <string name="display_rotation_270_title">270 graus</string>
+  <!-- Gesture Settings -->
+  <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+  <string name="double_twist_for_camera_mode_custom_summary">To switch in and out of selfie mode in Google Camera, double-twist when you’re in the app</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Níveis do volume</string>
   <string name="volume_steps_alarm_title">Níveis de volume: Alarme</string>
@@ -77,6 +92,7 @@
   <string name="bluetooth_accept_all_files">Aceitar todos os tipos de arquivo</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">Super Usuário</string>
+  <string name="supersu_dashboard_summary">Manage root access</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Ligar tela ao conectar</string>
   <string name="wake_when_plugged_or_unplugged_summary">Ativar a tela ao conectar ou desconectar o carregador</string>
@@ -103,6 +119,9 @@
   <string name="ok">OK</string>
   <string name="advanced">Advanced</string>
   <string name="profiles_add">Add...</string>
+  <!-- Camera shutter sound -->
+  <string name="camera_sounds_title">Camera shutter sound</string>
+  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Edit light settings</string>
   <string name="pulse_speed_title">Pulse length and speed</string>
@@ -145,14 +164,24 @@
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">Escolha o aplicativo</string>
   <string name="reset">Redefinir</string>
-  <!-- Double tap to launch camera options -->
-  <string name="dt2l_camera_category">Opções de câmera DT2L</string>
-  <string name="dt2l_camera_vib_title">Ajustar a vibração do lançamento</string>
-  <string name="dt2l_camera_vib_summary">Ajustar a vibração ao iniciar a câmera</string>
-  <string name="camera_double_tap_power_gesture_title"> Dois toques para abrir a câmera</string>
-  <string name="camera_double_tap_power_gesture_desc">Abrir a câmera rapidamente sem desbloquear a tela</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Unir volumes de toque e notificação</string>
   <string name="notification_volume_option_title">Volume de notificação</string>
   <string name="ring_notification_volume_option_title">Volume de toque e notificação</string>
+  <!-- Themes -->
+  <string name="themes_title">Themes</string>
+  <string name="themes_dashboard_summary">Manage your themes</string>
+  <!-- Manage applications: Substratum overlays -->
+  <string name="menu_show_substratum">Show overlays</string>
+  <string name="menu_hide_substratum">Hide overlays</string>
+  <!-- Advanced night mode brightness -->
+  <string name="night_brightness_category">Brightness</string>
+  <string name="night_brightness_value_title">Night Light brightness</string>
+  <string name="night_brightness_text">When Night Light is enabled automatically set the desired brightness. The default brightness is set to low brightness</string>
+  <string name="night_bright_disabled">Disabled</string>
+  <string name="night_bright_low">low brightness</string>
+  <string name="night_bright_medium">medium brightness</string>
+  <string name="night_bright_min">minimum brightness</string>
+  <!-- Hotspot idle -->
+  <string name="wifi_hotspot_mode_title">Keep WiFi Hotspot on</string>
 </resources>

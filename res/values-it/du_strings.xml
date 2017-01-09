@@ -24,6 +24,18 @@
   <!-- DU Changelog -->
   <string name="duchangelog_title">Elenco modifiche DU</string>
   <string name="duchangelog_summary">Controlla per vedere cosa è cambiato</string>
+  <string name="duchangelog_weeklies">Changelog - Weeklies</string>
+  <string name="duchangelog_official">Changelog - Official</string>
+  <string name="warning_text">Si è pregati di notare che gli elenchi delle modifiche generati qui sono dei riassunti dei commit uniti nel codice sorgente. Per un elenco completo e dettagliato delle modifiche si prega di visitare il nostro github o il nostro gerrit.</string>
+  <string name="weeklies">Weeklies</string>
+  <string name="official">Official</string>
+  <string name="changelog_header_version"></string>
+  <string name="changelog_dialog_title">Attenzione</string>
+  <string name="changelog_dialog_message">Si prega di abilitare WiFi/Dati per scaricare l\'elenco delle modifiche dai nostri server.</string>
+  <string name="changelog_dialog_ok">OK</string>
+  <!-- DU Updater -->
+  <string name="updater_title">Updater</string>
+  <string name="updater_dashboard_summary">Controlla aggiornamenti recenti</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Password backup desktop</string>
   <!-- Volume adjustment sounds -->
@@ -50,6 +62,9 @@
   <string name="display_rotation_90_title">90 gradi</string>
   <string name="display_rotation_180_title">180 gradi</string>
   <string name="display_rotation_270_title">270 gradi</string>
+  <!-- Gesture Settings -->
+  <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+  <string name="double_twist_for_camera_mode_custom_summary">Per aprire e chiudere la modalità selfie della Fotocamera Google, ruotare due volte con l\'app aperta</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Livelli volume</string>
   <string name="volume_steps_alarm_title">Livelli volume: Sveglia</string>
@@ -77,6 +92,7 @@
   <string name="bluetooth_accept_all_files">Accetta tutti i tipi di file</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">SuperSU</string>
+  <string name="supersu_dashboard_summary">Gestisci permessi di Root</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Risveglia al collegamento</string>
   <string name="wake_when_plugged_or_unplugged_summary">Accendi lo schermo quando si collega o si scollega il caricatore</string>
@@ -103,6 +119,9 @@
   <string name="ok">OK</string>
   <string name="advanced">Avanzate</string>
   <string name="profiles_add">Aggiungi...</string>
+  <!-- Camera shutter sound -->
+  <string name="camera_sounds_title">Camera shutter sound</string>
+  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Modifica impostazioni luci</string>
   <string name="pulse_speed_title">Durata e velocità lampeggio</string>
@@ -145,14 +164,24 @@
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">Scegli app</string>
   <string name="reset">Ripristina</string>
-  <!-- Double tap to launch camera options -->
-  <string name="dt2l_camera_category">Opzioni fotocamera DT2L</string>
-  <string name="dt2l_camera_vib_title">Regola la vibrazione del pulsante di attivazione</string>
-  <string name="dt2l_camera_vib_summary">Regola la vibrazione durante l\'avvio della fotocamera</string>
-  <string name="camera_double_tap_power_gesture_title">Doppio tocco per avviare la fotocamera</string>
-  <string name="camera_double_tap_power_gesture_desc">Apri rapidamente la fotocamera senza sbloccare lo schermo</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Collega volume suoneria e notifica</string>
   <string name="notification_volume_option_title">Volume notifiche</string>
   <string name="ring_notification_volume_option_title">Volume suoneria e notifica</string>
+  <!-- Themes -->
+  <string name="themes_title">Temi</string>
+  <string name="themes_dashboard_summary">Gestisci i tuoi temi</string>
+  <!-- Manage applications: Substratum overlays -->
+  <string name="menu_show_substratum">Mostra overlay</string>
+  <string name="menu_hide_substratum">Nascondi overlay</string>
+  <!-- Advanced night mode brightness -->
+  <string name="night_brightness_category">Luminosità</string>
+  <string name="night_brightness_value_title">Luminosità Night Light</string>
+  <string name="night_brightness_text">Quando Night Light è attiva imposta automaticamente la luminosità desiderata. La luminosità di default è impostata su bassa luminosità</string>
+  <string name="night_bright_disabled">Disattivata</string>
+  <string name="night_bright_low">luminosità bassa</string>
+  <string name="night_bright_medium">luminosità media</string>
+  <string name="night_bright_min">luminosità minima</string>
+  <!-- Hotspot idle -->
+  <string name="wifi_hotspot_mode_title">Mantieni Hotspot WiFi acceso</string>
 </resources>

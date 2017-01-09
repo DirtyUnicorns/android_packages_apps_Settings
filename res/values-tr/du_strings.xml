@@ -24,6 +24,18 @@
   <!-- DU Changelog -->
   <string name="duchangelog_title">Değişiklikler</string>
   <string name="duchangelog_summary">Nelerin değiştiğini görmek için kontrol edin</string>
+  <string name="duchangelog_weeklies">Du Değişiklik kaydı - Haftalıklar</string>
+  <string name="duchangelog_official">Du Değişiklik kaydı - Resmi</string>
+  <string name="warning_text">Burada gördüğünüz değişiklik kayıtlarının kaynağa eklenen kodların özeti olduğunu lütfen dikkate alın. Tam ve detaylı değişiklik kayıtları için github veya gerritimiz ziyaret etmenizi tavsiye ederiz.</string>
+  <string name="weeklies">Haftalıklar</string>
+  <string name="official">Resmi</string>
+  <string name="changelog_header_version"></string>
+  <string name="changelog_dialog_title">Dikkat</string>
+  <string name="changelog_dialog_message">Değişiklik listesini sunucumuzdan indirebilmek için WiFi/Mobil veriyi açın.</string>
+  <string name="changelog_dialog_ok">TAMAM</string>
+  <!-- DU Updater -->
+  <string name="updater_title">Güncelleyici</string>
+  <string name="updater_dashboard_summary">En son güncellemeyi kontrol edin</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Masaüstü yedekleme şifresi</string>
   <!-- Volume adjustment sounds -->
@@ -50,6 +62,9 @@
   <string name="display_rotation_90_title">90 derece</string>
   <string name="display_rotation_180_title">180 derece</string>
   <string name="display_rotation_270_title">270 derece</string>
+  <!-- Gesture Settings -->
+  <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+  <string name="double_twist_for_camera_mode_custom_summary">Google Kamera Selfie modunu açmak ve kapamak için, uygulamanın içindeyken çift tıklayın</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Ses adımları</string>
   <string name="volume_steps_alarm_title">Ses seviyesi: Alarm</string>
@@ -77,6 +92,7 @@
   <string name="bluetooth_accept_all_files">Tüm dosya türlerini kabul et</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">SuperSU</string>
+  <string name="supersu_dashboard_summary">Root erişimini yönet</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Takıp çıkarmada uyan</string>
   <string name="wake_when_plugged_or_unplugged_summary">Bir güç kaynağına bağlanırken ya da bağlantısını keserken ekranı aç</string>
@@ -103,6 +119,9 @@
   <string name="ok">TAMAM</string>
   <string name="advanced">Gelişmiş</string>
   <string name="profiles_add">Ekle...</string>
+  <!-- Camera shutter sound -->
+  <string name="camera_sounds_title">Camera shutter sound</string>
+  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Bildirim ışığı ayarlarını düzenle</string>
   <string name="pulse_speed_title">Yanma hızı ve süresi</string>
@@ -145,14 +164,24 @@
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">Uygulama seç</string>
   <string name="reset">Sıfırla</string>
-  <!-- Double tap to launch camera options -->
-  <string name="dt2l_camera_category">DT2L kamera seçenekleri</string>
-  <string name="dt2l_camera_vib_title">Titreşim hedefini ayarlayın</string>
-  <string name="dt2l_camera_vib_summary">Kamera başlatılması sırasında titret</string>
-  <string name="camera_double_tap_power_gesture_title">Kamera başlatmak için çift dokunun</string>
-  <string name="camera_double_tap_power_gesture_desc">Ekran kilidini açmadan hızlı bir şekilde kamerayı aç</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Zil sesi ve bildirim seslerini birleştir</string>
   <string name="notification_volume_option_title">Bildirim sesi</string>
   <string name="ring_notification_volume_option_title">Zil sesi ve bildirim sesi</string>
+  <!-- Themes -->
+  <string name="themes_title">Temalar</string>
+  <string name="themes_dashboard_summary">Temalarını düzenle</string>
+  <!-- Manage applications: Substratum overlays -->
+  <string name="menu_show_substratum">Katmanlar göster</string>
+  <string name="menu_hide_substratum">Katmanları gizle</string>
+  <!-- Advanced night mode brightness -->
+  <string name="night_brightness_category">Parlaklık</string>
+  <string name="night_brightness_value_title">Gece Işığı parlaklığı</string>
+  <string name="night_brightness_text">Gece Işığı etkinleştirildiğinde parlaklık tercih edilen orana otomatik olarak ayarlanır. Varsayılan parlaklık düşük parlaklığa ayarlanır</string>
+  <string name="night_bright_disabled">Etkin değil</string>
+  <string name="night_bright_low">düşük parlaklık</string>
+  <string name="night_bright_medium">orta parlaklık</string>
+  <string name="night_bright_min">en düşük parlaklık</string>
+  <!-- Hotspot idle -->
+  <string name="wifi_hotspot_mode_title">WiFi Hotspot aramayı açık tut</string>
 </resources>

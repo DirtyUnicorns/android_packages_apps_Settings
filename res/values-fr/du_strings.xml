@@ -24,6 +24,18 @@
   <!-- DU Changelog -->
   <string name="duchangelog_title">Du - Notes de version</string>
   <string name="duchangelog_summary">Consulter la liste des changements</string>
+  <string name="duchangelog_weeklies">Compilations hebdomadaires</string>
+  <string name="duchangelog_official">Compilations officielles</string>
+  <string name="warning_text">Les présentes notes de version sont des résumés. Pour plus de détails, rendez-vous sur notre Github ou notre Gerrit.</string>
+  <string name="weeklies">Hebdomadaires</string>
+  <string name="official">Officielles</string>
+  <string name="changelog_header_version"></string>
+  <string name="changelog_dialog_title">Avertissement</string>
+  <string name="changelog_dialog_message">Activer le Wi-Fi ou les données mobiles pour télécharger la note de version</string>
+  <string name="changelog_dialog_ok">OK</string>
+  <!-- DU Updater -->
+  <string name="updater_title">Mise à jour</string>
+  <string name="updater_dashboard_summary">Rechercher la dernière mise à jour</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Mot de passe sauvegarde PC</string>
   <!-- Volume adjustment sounds -->
@@ -50,6 +62,9 @@
   <string name="display_rotation_90_title">90 degrés</string>
   <string name="display_rotation_180_title">180 degrés</string>
   <string name="display_rotation_270_title">270 degrés</string>
+  <!-- Gesture Settings -->
+  <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+  <string name="double_twist_for_camera_mode_custom_summary">Dans l\'application \"Appareil photo Google\", pivoter rapidement dans les deux sens, pour basculer entre le mode \"Autoportrait\" et le mode normal</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Incrémentation du volume</string>
   <string name="volume_steps_alarm_title">Alarme</string>
@@ -77,6 +92,7 @@
   <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">SuperSU</string>
+  <string name="supersu_dashboard_summary">Gérer les accès \"Root\"</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
   <string name="wake_when_plugged_or_unplugged_summary">Allumer l\'écran lorsque le chargeur est connecté ou déconnecté</string>
@@ -103,6 +119,9 @@
   <string name="ok">OK</string>
   <string name="advanced">Paramètres avancés</string>
   <string name="profiles_add">Ajouter...</string>
+  <!-- Camera shutter sound -->
+  <string name="camera_sounds_title">Camera shutter sound</string>
+  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Paramètres du voyant</string>
   <string name="pulse_speed_title">Durée et vitesse d\'impulsion</string>
@@ -145,14 +164,24 @@
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">Sélectionner une application</string>
   <string name="reset">Configuration d\'origine</string>
-  <!-- Double tap to launch camera options -->
-  <string name="dt2l_camera_category">Double appui</string>
-  <string name="dt2l_camera_vib_title">Niveau de vibration</string>
-  <string name="dt2l_camera_vib_summary">Ajuster le niveau de vibration de l\'ouverture de l\'application Appareil photo</string>
-  <string name="camera_double_tap_power_gesture_title">Bouton Marche/Arrêt</string>
-  <string name="camera_double_tap_power_gesture_desc">Démarrer l\'appareil photo sans déverrouiller l\'écran par double appui sur le bouton Marche/Arrêt</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Lier les volumes des notifications et de la sonnerie</string>
   <string name="notification_volume_option_title">Volume des notifications</string>
   <string name="ring_notification_volume_option_title">Volume de notifications et de sonnerie</string>
+  <!-- Themes -->
+  <string name="themes_title">Thèmes</string>
+  <string name="themes_dashboard_summary">Gérez vos thèmes</string>
+  <!-- Manage applications: Substratum overlays -->
+  <string name="menu_show_substratum">Afficher les surcouches</string>
+  <string name="menu_hide_substratum">Masquer les surcouches</string>
+  <!-- Advanced night mode brightness -->
+  <string name="night_brightness_category">Niveau de luminosité</string>
+  <string name="night_brightness_value_title">Éclairage nocturne</string>
+  <string name="night_brightness_text">Définir le niveau de luminosité appliqué lorsque \"Éclairage nocturne\" est activé. (Valeur par défaut : \"Luminosité faible\")</string>
+  <string name="night_bright_disabled">Désactivé</string>
+  <string name="night_bright_low">Luminosité faible</string>
+  <string name="night_bright_medium">Luminosité moyenne</string>
+  <string name="night_bright_min">Luminosité minimale</string>
+  <!-- Hotspot idle -->
+  <string name="wifi_hotspot_mode_title">Veille du point d\'accès Wi-Fi</string>
 </resources>

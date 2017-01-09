@@ -24,18 +24,30 @@
   <!-- DU Changelog -->
   <string name="duchangelog_title">更新履歴</string>
   <string name="duchangelog_summary">何が変更されたかを確認する</string>
+  <string name="duchangelog_weeklies">更新履歴 - ウィークリー</string>
+  <string name="duchangelog_official">更新履歴 - オフィシャル</string>
+  <string name="warning_text">ここで生成される変更ログは、ソースにマージされたコミットの要約です。 完全かつ詳細な変更ログは、GithubまたはGerritにアクセスすることをお勧めします。</string>
+  <string name="weeklies">ウィークリー</string>
+  <string name="official">オフィシャル</string>
+  <string name="changelog_header_version"></string>
+  <string name="changelog_dialog_title">注意</string>
+  <string name="changelog_dialog_message">我々のサーバーから変更履歴をダウンロードするには、WiFi /モバイルデータを有効にしてください。</string>
+  <string name="changelog_dialog_ok">OK</string>
+  <!-- DU Updater -->
+  <string name="updater_title">Updater</string>
+  <string name="updater_dashboard_summary">最新の更新を確認する</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">PCバックアップパスワード</string>
   <!-- Volume adjustment sounds -->
   <string name="volume_adjust_sounds_title">音量調整の音</string>
   <!-- Density category -->
-  <string name="density_category">Density options</string>
+  <string name="density_category">画面密度のオプション</string>
   <!-- ADB debugging notifications -->
   <string name="enable_adb_custom">USBデバッグ</string>
-  <string name="enable_adb_summary_custom">Androidデバッグブリッジ（ADB）インターフェースを有効にする</string>
+  <string name="enable_adb_summary_custom">USB接続時はデバッグモードにする</string>
   <string name="adb_notify">ADBの通知</string>
   <string name="adb_notify_summary">USBデバッグまたはネットワークデバッグが有効になっているときに通知を表示する</string>
-  <string name="adb_over_network">ネットワーク経由の ADB</string>
+  <string name="adb_over_network">ネットワーク経由のADB</string>
   <string name="adb_over_network_summary">ネットワークインターフェース（Wi\u2011Fi、USBネットワーク）経由でのTCP/IPデバッグを有効にします。この設定は再起動時にリセットされます。</string>
   <string name="adb_over_network_warning">警告: ネットワーク経由のADBが有効になっているとき、携帯電話は接続しているすべてのネットワーク上で侵入に対して無防備になります。\n\n信頼できるネットワーク接続しているときにのみ、この機能を使用してください。\n\nこの機能を本当に有効にしますか？</string>
   <!-- Screenshot sound -->
@@ -50,6 +62,9 @@
   <string name="display_rotation_90_title">90度</string>
   <string name="display_rotation_180_title">180度</string>
   <string name="display_rotation_270_title">270度</string>
+  <!-- Gesture Settings -->
+  <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+  <string name="double_twist_for_camera_mode_custom_summary">Google カメラで前面カメラと背面カメラを切り替えるには、アプリを起動した状態で2 回ひねる動作を行います</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">ボリュームステップ</string>
   <string name="volume_steps_alarm_title">ボリュームステップ: アラーム</string>
@@ -68,8 +83,8 @@
   <string name="dashboard_suggestions_title">ダッシュボードの候補表示</string>
   <string name="summary_dashboard_suggestions_enabled">ダッシュボードの候補の表示が有効になります</string>
   <string name="summary_dashboard_suggestions_disabled">ダッシュボードの候補の表示が無効になります</string>
-  <string name="remove_tile_summaries_title">Remove tile summaries</string>
-  <string name="remove_tile_summaries_summary">Remove tiles summaries that display underneath tile titles</string>
+  <string name="remove_tile_summaries_title">タイルの概要を削除</string>
+  <string name="remove_tile_summaries_summary">タイル名の下に表示される概要を削除する</string>
   <string name="dashboard_conditions_title">ダッシュボードの状態表示</string>
   <string name="summary_dashboard_conditions_enabled">ダッシュボードの状態の表示が有効になります</string>
   <string name="summary_dashboard_conditions_disabled">ダッシュボードの状態の表示が無効になります</string>
@@ -77,17 +92,18 @@
   <string name="bluetooth_accept_all_files">すべてのファイル形式を許可</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">SuperSU</string>
+  <string name="supersu_dashboard_summary">ルートアクセスを管理する</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">電源接続時にスリープ解除</string>
   <string name="wake_when_plugged_or_unplugged_summary">電源を接続または切断したときに画面を点灯させる</string>
   <!-- LED notifications -->
   <string name="color_picker_dialog_title">色</string>
-  <string name="battery_light_settings_title">Battery charging light</string>
-  <string name="battery_light_settings_summary">Configure the LED settings for battery charging</string>
+  <string name="battery_light_settings_title">バッテリー充電時のライト</string>
+  <string name="battery_light_settings_summary">バッテリー充電時のLED設定を構成する</string>
   <string name="notification_light_settings_title">通知ライト</string>
-  <string name="notification_light_settings_summary">Configure the LED settings for notifications</string>
-  <string name="ledsettings_category">LED Lights</string>
-  <string name="batterylight_title">Battery LED settings</string>
+  <string name="notification_light_settings_summary">通知LEDの設定を構成する</string>
+  <string name="ledsettings_category">LEDライト</string>
+  <string name="batterylight_title">バッテリーLEDの設定</string>
   <string name="battery_light_enable">有効</string>
   <string name="battery_low_pulse_title">残量低下時に点滅</string>
   <string name="battery_light_list_title">色</string>
@@ -103,6 +119,9 @@
   <string name="ok">はい</string>
   <string name="advanced">高度</string>
   <string name="profiles_add">追加...</string>
+  <!-- Camera shutter sound -->
+  <string name="camera_sounds_title">Camera shutter sound</string>
+  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">ライトの設定を編集</string>
   <string name="pulse_speed_title">点滅時間と点滅速度</string>
@@ -132,27 +151,38 @@
   <string name="notification_light_default_value">既定 （デフォルト）</string>
   <string name="notification_light_missed_call_title">不在着信</string>
   <string name="notification_light_voicemail_title">ボイスメール</string>
-  <string name="notification_light_screen_on">Lights with screen on</string>
-  <string name="notification_light_zen_mode">Lights in Do Not Disturb mode</string>
-  <string name="notification_light_use_multiple_leds">Multiple LEDs</string>
-  <string name="keywords_lights_brightness_level">dim leds brightness</string>
+  <string name="notification_light_screen_on">画面点灯時のライト</string>
+  <string name="notification_light_zen_mode">マナーモード時でのライト</string>
+  <string name="notification_light_use_multiple_leds">複数のLED</string>
+  <string name="keywords_lights_brightness_level">暗いLEDの明るさ</string>
   <string name="notification_light_automagic">自動的に色を選択</string>
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">ライトの設定</string>
-  <string name="led_notification_text">LED light enabled by settings</string>
-  <string name="notification_light_no_apps_summary">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
+  <string name="led_notification_text">LEDライトは設定によって有効になっています</string>
+  <string name="notification_light_no_apps_summary">アプリごとのコントロールを追加するには、メニューバーの \'%1$s\' をアクティブにして \'\u002b\' を押してください</string>
   <string name="font_sample_text">11:57</string>
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">アプリを選択</string>
   <string name="reset">リセット</string>
-  <!-- Double tap to launch camera options -->
-  <string name="dt2l_camera_category">DT2L camera options</string>
-  <string name="dt2l_camera_vib_title">カメラ起動時のバイブレーションの長さ</string>
-  <string name="dt2l_camera_vib_summary">Adjust the vibration while launching the camera</string>
-  <string name="camera_double_tap_power_gesture_title">ダブルタップでカメラを起動</string>
-  <string name="camera_double_tap_power_gesture_desc">画面ロックを解除せずにすばやくカメラを起動します</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">着信と通知の音量をリンク</string>
   <string name="notification_volume_option_title">通知の音量</string>
   <string name="ring_notification_volume_option_title">着信音や通知の音量</string>
+  <!-- Themes -->
+  <string name="themes_title">テーマ</string>
+  <string name="themes_dashboard_summary">お使いのテーマを管理する</string>
+  <!-- Manage applications: Substratum overlays -->
+  <string name="menu_show_substratum">オーバーレイを表示</string>
+  <string name="menu_hide_substratum">オーバーレイを非表示</string>
+  <!-- Advanced night mode brightness -->
+  <string name="night_brightness_category">明るさ</string>
+  <string name="night_brightness_value_title">読書灯の明るさ</string>
+  <string name="night_brightness_text">読書灯が有効になっているときに、自動的に明るさを設定します。 デフォルトの明るさは低輝度に設定されています</string>
+  <string name="night_bright_disabled">無効
+</string>
+  <string name="night_bright_low">低輝度</string>
+  <string name="night_bright_medium">中間輝度</string>
+  <string name="night_bright_min">最低輝度</string>
+  <!-- Hotspot idle -->
+  <string name="wifi_hotspot_mode_title">WiFi アクセスポイントを保持</string>
 </resources>

@@ -24,6 +24,18 @@
   <!-- DU Changelog -->
   <string name="duchangelog_title">Változáslista</string>
   <string name="duchangelog_summary">Nézze meg, mi változott</string>
+  <string name="duchangelog_weeklies">Változáslista - Heti frissítések</string>
+  <string name="duchangelog_official">Változáslista - Hivatalos frissítések</string>
+  <string name="warning_text">Felhívjuk figyelmét, hogy az itt létrehozott változásnaplók a forrásban elfogadott változtatások összegzése. Egy teljes és részletes változásnapló érdekében látogasson el a github vagy gerrit oldalunkra.</string>
+  <string name="weeklies">Heti frissítések</string>
+  <string name="official">Hivatalos frissítések</string>
+  <string name="changelog_header_version"></string>
+  <string name="changelog_dialog_title">Figyelmeztetés</string>
+  <string name="changelog_dialog_message">Kérjük, engedélyezze a WiFi/mobil adatforgalmat a változáslista letöltéséhez a szerverünkről.</string>
+  <string name="changelog_dialog_ok">OK</string>
+  <!-- DU Updater -->
+  <string name="updater_title">Frissítő</string>
+  <string name="updater_dashboard_summary">Frissítés keresése</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Asztali mentés jelszava</string>
   <!-- Volume adjustment sounds -->
@@ -50,6 +62,9 @@
   <string name="display_rotation_90_title">90 fok</string>
   <string name="display_rotation_180_title">180 fok</string>
   <string name="display_rotation_270_title">270 fok</string>
+  <!-- Gesture Settings -->
+  <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+  <string name="double_twist_for_camera_mode_custom_summary">A Google Kamera szelfi módba lépéséhez és abból való kilépéshez, duplán fogassa meg az eszközt, ha az alkalmazásban van</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Hangerő léptetések</string>
   <string name="volume_steps_alarm_title">Hangerő léptetések: Riasztás</string>
@@ -77,6 +92,7 @@
   <string name="bluetooth_accept_all_files">Minden fájltípus elfogadása</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">SuperSU</string>
+  <string name="supersu_dashboard_summary">Root hozzáférés kezelése</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Felébredés töltő csatlakoztatásakor</string>
   <string name="wake_when_plugged_or_unplugged_summary">A képernyő bekapcsolása a töltő csatlakoztatása/eltávolítása után</string>
@@ -103,6 +119,9 @@
   <string name="ok">OK</string>
   <string name="advanced">Haladó</string>
   <string name="profiles_add">Hozzáadás...</string>
+  <!-- Camera shutter sound -->
+  <string name="camera_sounds_title">Camera shutter sound</string>
+  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Értesítési fény beállítások</string>
   <string name="pulse_speed_title">Impulzus hossza és sebessége</string>
@@ -145,14 +164,24 @@
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">Alkalmazás választása</string>
   <string name="reset">Visszaállitás</string>
-  <!-- Double tap to launch camera options -->
-  <string name="dt2l_camera_category">DT2L kamera beállítások</string>
-  <string name="dt2l_camera_vib_title">Állítsa be az indítási rezgést</string>
-  <string name="dt2l_camera_vib_summary">Állítsa be a kamera indítása közbeni rezgést</string>
-  <string name="camera_double_tap_power_gesture_title">Dupla érintés a kamera indításához</string>
-  <string name="camera_double_tap_power_gesture_desc">A kamera gyors megnyitása a képernyő feloldása nélkül</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Csengetési és értesítési hangerő összekötése</string>
   <string name="notification_volume_option_title">Értesítési hangerő</string>
   <string name="ring_notification_volume_option_title">Csengetési és értesítései hangerő</string>
+  <!-- Themes -->
+  <string name="themes_title">Témák</string>
+  <string name="themes_dashboard_summary">Témák kezelése</string>
+  <!-- Manage applications: Substratum overlays -->
+  <string name="menu_show_substratum">Fedvények megjelenítése</string>
+  <string name="menu_hide_substratum">Fedvények elrejtése</string>
+  <!-- Advanced night mode brightness -->
+  <string name="night_brightness_category">Fényerő</string>
+  <string name="night_brightness_value_title">Éjszakai fény fényerő</string>
+  <string name="night_brightness_text">Amikor az Éjszakai fény be van kapcsolva automatikusan beállítja a kívánt fényerőt. Az alapértelmezett fényerő alacsony fényerőre kerül beállításra</string>
+  <string name="night_bright_disabled">Letiltva</string>
+  <string name="night_bright_low">alacsony fényerő</string>
+  <string name="night_bright_medium">közepes fényerő</string>
+  <string name="night_bright_min">minimum fényerő</string>
+  <!-- Hotspot idle -->
+  <string name="wifi_hotspot_mode_title">WiFi Hotspot bekapcsolva tartása</string>
 </resources>

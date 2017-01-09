@@ -24,6 +24,18 @@
   <!-- DU Changelog -->
   <string name="duchangelog_title">Changelog</string>
   <string name="duchangelog_summary">Bekijk wat er is veranderd</string>
+  <string name="duchangelog_weeklies">Changelog - Wekelijks</string>
+  <string name="duchangelog_official">Changelog - Officieel</string>
+  <string name="warning_text">Houd er rekening mee dat changelogs hier gegenereerde samenvattingen van commits aangehecht bij onze bron zijn. Voor een volledige en gedetailleerde changelog wordt aanbevolen dat u onze github of gerrit bezoekt.</string>
+  <string name="weeklies">Wekelijks</string>
+  <string name="official">Officieel</string>
+  <string name="changelog_header_version"></string>
+  <string name="changelog_dialog_title">Opgelet</string>
+  <string name="changelog_dialog_message">Schakel WiFi/Mobile data in om de changelog te downloaden van onze server.</string>
+  <string name="changelog_dialog_ok">Oké</string>
+  <!-- DU Updater -->
+  <string name="updater_title">Updater</string>
+  <string name="updater_dashboard_summary">Check voor de laatste update</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Wachtwoord desktopback-up</string>
   <!-- Volume adjustment sounds -->
@@ -50,6 +62,9 @@
   <string name="display_rotation_90_title">90 graden</string>
   <string name="display_rotation_180_title">180 graden</string>
   <string name="display_rotation_270_title">270 graden</string>
+  <!-- Gesture Settings -->
+  <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+  <string name="double_twist_for_camera_mode_custom_summary">Als je wilt overschakelen en naar selfie modus in Google Camera, dubbel-twist wanneer je de app geopend hebt</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Volume stappen</string>
   <string name="volume_steps_alarm_title">Volume stappen: Alarm</string>
@@ -77,6 +92,7 @@
   <string name="bluetooth_accept_all_files">Alle bestandstypen accepteren</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">SuperSU</string>
+  <string name="supersu_dashboard_summary">Root-toegang beheren</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Ontwaken wanneer aangesloten op lader</string>
   <string name="wake_when_plugged_or_unplugged_summary">Scherm aan bij het aansluiten of loskoppelen van een lader</string>
@@ -103,6 +119,9 @@
   <string name="ok">Oké</string>
   <string name="advanced">Geadvanceerd</string>
   <string name="profiles_add">Toevoegen...</string>
+  <!-- Camera shutter sound -->
+  <string name="camera_sounds_title">Camera shutter sound</string>
+  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Pas licht instellingen aan</string>
   <string name="pulse_speed_title">Duur en snelheid van knipperen</string>
@@ -145,14 +164,24 @@
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">Kies app</string>
   <string name="reset">Reset</string>
-  <!-- Double tap to launch camera options -->
-  <string name="dt2l_camera_category">DT2L camera opties</string>
-  <string name="dt2l_camera_vib_title">Pas de vibratie van het lanceren aan</string>
-  <string name="dt2l_camera_vib_summary">De trillingen tijdens de lancering van de camera aanpassen</string>
-  <string name="camera_double_tap_power_gesture_title">Tweemaal klikken om de camera te openen</string>
-  <string name="camera_double_tap_power_gesture_desc">Camera snel openen zonder het scherm te ontgrendelen</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Koppel bel- en notificatievolume</string>
   <string name="notification_volume_option_title">Notificatievolume</string>
   <string name="ring_notification_volume_option_title">Bel- en notificatievolume</string>
+  <!-- Themes -->
+  <string name="themes_title">Thema\'s</string>
+  <string name="themes_dashboard_summary">Beheer je thema\'s</string>
+  <!-- Manage applications: Substratum overlays -->
+  <string name="menu_show_substratum">Overlays weergeven</string>
+  <string name="menu_hide_substratum">Verbergt overlays</string>
+  <!-- Advanced night mode brightness -->
+  <string name="night_brightness_category">Helderheid</string>
+  <string name="night_brightness_value_title">Nacht licht helderheid</string>
+  <string name="night_brightness_text">Als nachtlampje automatisch is ingeschakeld, wordt de gewenste helderheid ingesteld. De standaard helderheid is ingesteld op lage helderheid</string>
+  <string name="night_bright_disabled">Uitgeschakeld</string>
+  <string name="night_bright_low">lage helderheid</string>
+  <string name="night_bright_medium">gemiddelde helderheid</string>
+  <string name="night_bright_min">minimale helderheid</string>
+  <!-- Hotspot idle -->
+  <string name="wifi_hotspot_mode_title">WiFi Hotspot aanhouden</string>
 </resources>

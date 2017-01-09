@@ -24,6 +24,18 @@
   <!-- DU Changelog -->
   <string name="duchangelog_title">Historial de cambios</string>
   <string name="duchangelog_summary">Ver que ha cambiado</string>
+  <string name="duchangelog_weeklies">Changelog de DU - Weeklies</string>
+  <string name="duchangelog_official">Changelog de DU - Oficial</string>
+  <string name="warning_text">Por favor tenga en cuenta que los Changelogs generados son un listado de los Commits añadidos en nuestro Source. Para un Changelog mas detallado le recomendamos que visite nuestro Github o Gerrit.</string>
+  <string name="weeklies">Weeklies</string>
+  <string name="official">Oficial</string>
+  <string name="changelog_header_version"></string>
+  <string name="changelog_dialog_title">Atención</string>
+  <string name="changelog_dialog_message">Por favor active WiFi/Datos móviles para descargar el changelog de nuestro servidor.</string>
+  <string name="changelog_dialog_ok">Confirmar</string>
+  <!-- DU Updater -->
+  <string name="updater_title">Actualizador</string>
+  <string name="updater_dashboard_summary">Comprobación de la última actualización</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Clave de copia en ordenador</string>
   <!-- Volume adjustment sounds -->
@@ -50,6 +62,9 @@
   <string name="display_rotation_90_title">90 grados</string>
   <string name="display_rotation_180_title">180 grados</string>
   <string name="display_rotation_270_title">270 grados</string>
+  <!-- Gesture Settings -->
+  <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+  <string name="double_twist_for_camera_mode_custom_summary">Para activar/desactivar el modo selfie en la cámara de Google, haga un doble giro cuando esté en la aplicación</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Niveles volumen</string>
   <string name="volume_steps_alarm_title">Alarma</string>
@@ -59,7 +74,7 @@
   <string name="volume_steps_ring_title">Nivel volumen: Timbre</string>
   <string name="volume_steps_system_title">Nivel volumen: Sistema</string>
   <string name="volume_steps_voice_call_title">Nivel volumen: Llamada</string>
-  <string name="volume_steps_reset">Reset</string>
+  <string name="volume_steps_reset">Restablecer</string>
   <!-- Scramble PIN Layout on Lockscreen -->
   <string name="unlock_scramble_pin_layout_title">Mezclar la distribución</string>
   <string name="unlock_scramble_pin_layout_summary">Mezclar los números del PIN al desbloquear la unidad</string>
@@ -77,6 +92,7 @@
   <string name="bluetooth_accept_all_files">Aceptar todo tipo de archivo</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">SuperSU</string>
+  <string name="supersu_dashboard_summary">Gestión del acceso root</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Despertar al conectar</string>
   <string name="wake_when_plugged_or_unplugged_summary">Encender la pantalla al conectar o desconectar el cargador</string>
@@ -100,13 +116,16 @@
   <string name="led_color_green">Verde</string>
   <string name="led_color_red">Rojo</string>
   <string name="led_color_blue">Azul</string>
-  <string name="ok">OK</string>
+  <string name="ok">De acuerdo</string>
   <string name="advanced">Avanzado</string>
   <string name="profiles_add">Agregar...</string>
+  <!-- Camera shutter sound -->
+  <string name="camera_sounds_title">Camera shutter sound</string>
+  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Editar ajusted de luz</string>
   <string name="pulse_speed_title">Duración y velocidad de pulso</string>
-  <string name="default_time">Normal</string>
+  <string name="default_time">Prioridad Normal</string>
   <string name="custom_time">Personalizado</string>
   <string name="dialog_delete_title">Borrar</string>
   <string name="dialog_delete_message">Eliminar elemento seleccionado?</string>
@@ -114,12 +133,12 @@
   <string name="pulse_length_always_on">Siempre activo</string>
   <string name="pulse_length_very_short">Muy corto</string>
   <string name="pulse_length_short">Corto</string>
-  <string name="pulse_length_normal">Normal</string>
+  <string name="pulse_length_normal">Prioridad Normal</string>
   <string name="pulse_length_long">Largo</string>
   <string name="pulse_length_very_long">Muy largo</string>
   <string name="pulse_speed_very_fast">Muy rápido</string>
   <string name="pulse_speed_fast">Rápido</string>
-  <string name="pulse_speed_normal">Normal</string>
+  <string name="pulse_speed_normal">Prioridad Normal</string>
   <string name="pulse_speed_slow">Lento</string>
   <string name="pulse_speed_very_slow">Muy lento</string>
   <!-- Lights settings screen, notification light settings -->
@@ -140,19 +159,29 @@
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Ajustes de luz</string>
   <string name="led_notification_text">Luz LED habilitada por configuración</string>
-  <string name="notification_light_no_apps_summary">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
+  <string name="notification_light_no_apps_summary">Para agregar al control de la aplicación, activar el \'%1$s\' y pulse \'\u002b\' en la barra de menú</string>
   <string name="font_sample_text">11:57</string>
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">Elegir aplicación</string>
-  <string name="reset">Reset</string>
-  <!-- Double tap to launch camera options -->
-  <string name="dt2l_camera_category">Opciones cámara DTL</string>
-  <string name="dt2l_camera_vib_title">Ajustar vibración al inicio</string>
-  <string name="dt2l_camera_vib_summary">Ajustar la vibración al iniciar la cámara</string>
-  <string name="camera_double_tap_power_gesture_title">Doble toque para iniciar la cámara</string>
-  <string name="camera_double_tap_power_gesture_desc">Rápidamente abre la cámara sin desbloquear pantalla</string>
+  <string name="reset">Restablecer</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Unir volumen de llamada y notificación</string>
   <string name="notification_volume_option_title">Volumen de notificación</string>
   <string name="ring_notification_volume_option_title">Volumen de llamada y notificación</string>
+  <!-- Themes -->
+  <string name="themes_title">Temas</string>
+  <string name="themes_dashboard_summary">Administra tus temas</string>
+  <!-- Manage applications: Substratum overlays -->
+  <string name="menu_show_substratum">Mostrar superposiciones</string>
+  <string name="menu_hide_substratum">Ocultar la superposición</string>
+  <!-- Advanced night mode brightness -->
+  <string name="night_brightness_category">Brillo</string>
+  <string name="night_brightness_value_title">Brillo de luz nocturna</string>
+  <string name="night_brightness_text">Cuando se active la luz nocturna el brillo se ajustará automáticamente. El brillo predeterminado se establece en bajo</string>
+  <string name="night_bright_disabled">Desactivado</string>
+  <string name="night_bright_low">brillo bajo</string>
+  <string name="night_bright_medium">brillo medio</string>
+  <string name="night_bright_min">brillo mínimo</string>
+  <!-- Hotspot idle -->
+  <string name="wifi_hotspot_mode_title">Mantener el punto de acceso WiFi encendido</string>
 </resources>

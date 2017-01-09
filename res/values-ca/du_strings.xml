@@ -24,6 +24,18 @@
   <!-- DU Changelog -->
   <string name="duchangelog_title">Registre de canvis</string>
   <string name="duchangelog_summary">Doneu-li un cop d\'ull per veure què ha canviat</string>
+  <string name="duchangelog_weeklies">Registre de canvis - Setmanals</string>
+  <string name="duchangelog_official">Registre de canvis - Oficial</string>
+  <string name="warning_text">Recordeu que els registres de canvis són resums. Per a més detalls, visiteu el nostre Github o Gerrit.</string>
+  <string name="weeklies">Setmanals</string>
+  <string name="official">Oficial</string>
+  <string name="changelog_header_version"></string>
+  <string name="changelog_dialog_title">Atenció</string>
+  <string name="changelog_dialog_message">Activeu la Wi-Fi o les dades mòbils per baixar el registre de canvis del nostre servidor.</string>
+  <string name="changelog_dialog_ok">D\'acord</string>
+  <!-- DU Updater -->
+  <string name="updater_title">Actualitzador</string>
+  <string name="updater_dashboard_summary">Verifica la darrera actualització</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Contrasenya per a còpies d\'ordinador</string>
   <!-- Volume adjustment sounds -->
@@ -50,6 +62,9 @@
   <string name="display_rotation_90_title">90 graus</string>
   <string name="display_rotation_180_title">180 graus</string>
   <string name="display_rotation_270_title">270 graus</string>
+  <!-- Gesture Settings -->
+  <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+  <string name="double_twist_for_camera_mode_custom_summary">Per activar/desactivar el mode selfie a la càmera de Google, feu un doble gir quan estigui en l\'aplicació</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Increment del volum</string>
   <string name="volume_steps_alarm_title">Increment del volum: Alarma</string>
@@ -68,8 +83,8 @@
   <string name="dashboard_suggestions_title">Suggeriments del panell</string>
   <string name="summary_dashboard_suggestions_enabled">S\'han activat els suggeriments del panell</string>
   <string name="summary_dashboard_suggestions_disabled">S\'han desactivat els suggeriments del panell</string>
-  <string name="remove_tile_summaries_title">Remove tile summaries</string>
-  <string name="remove_tile_summaries_summary">Remove tiles summaries that display underneath tile titles</string>
+  <string name="remove_tile_summaries_title">Elimina l\'explicació als controls</string>
+  <string name="remove_tile_summaries_summary">Elimina les explicacions mostrades sota els títols</string>
   <string name="dashboard_conditions_title">Condicions del panell</string>
   <string name="summary_dashboard_conditions_enabled">S\'han activat les condicions del panel</string>
   <string name="summary_dashboard_conditions_disabled">S\'han desactivat les condicions del panel</string>
@@ -77,6 +92,7 @@
   <string name="bluetooth_accept_all_files">Accepta tots els tipus d\'arxiu</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">SuperSU</string>
+  <string name="supersu_dashboard_summary">Gestiona l\'accés d\'administrador</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Desperta en endollar</string>
   <string name="wake_when_plugged_or_unplugged_summary">Encén la pantalla en connectar o desconnectar el carregador</string>
@@ -103,6 +119,9 @@
   <string name="ok">D\'acord</string>
   <string name="advanced">Avançat</string>
   <string name="profiles_add">Afegeix...</string>
+  <!-- Camera shutter sound -->
+  <string name="camera_sounds_title">Camera shutter sound</string>
+  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Editar la configuració del llum</string>
   <string name="pulse_speed_title">Durada i velocitat del parpelleig</string>
@@ -145,14 +164,24 @@
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">Trieu una aplicació</string>
   <string name="reset">Reinicia</string>
-  <!-- Double tap to launch camera options -->
-  <string name="dt2l_camera_category">Opcions de la càmera DT2L</string>
-  <string name="dt2l_camera_vib_title">Configura la vibració d\'inici</string>
-  <string name="dt2l_camera_vib_summary">Configura la vibració durant l\'inici de la càmera</string>
-  <string name="camera_double_tap_power_gesture_title">Doble toc per iniciar la càmera</string>
-  <string name="camera_double_tap_power_gesture_desc">Obre la càmera ràpidament sense desbloquejar la pantalla</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Uneix el volum de trucada i notificació</string>
   <string name="notification_volume_option_title">Volum de notificació</string>
   <string name="ring_notification_volume_option_title">Volum de trucada i notificació</string>
+  <!-- Themes -->
+  <string name="themes_title">Temes</string>
+  <string name="themes_dashboard_summary">Gestiona els vostres temes</string>
+  <!-- Manage applications: Substratum overlays -->
+  <string name="menu_show_substratum">Mostra les superposicions</string>
+  <string name="menu_hide_substratum">Amaga les superposicions</string>
+  <!-- Advanced night mode brightness -->
+  <string name="night_brightness_category">Lluentor</string>
+  <string name="night_brightness_value_title">Lluentor de llum nocturn</string>
+  <string name="night_brightness_text">En activar la llum nocturna la lluentor s\'ajustarà automàticament. La lluentor predeterminada s\'estableix en baix</string>
+  <string name="night_bright_disabled">Desactivat</string>
+  <string name="night_bright_low">baixa lluentor</string>
+  <string name="night_bright_medium">lluentor mitja</string>
+  <string name="night_bright_min">lluentor mínima</string>
+  <!-- Hotspot idle -->
+  <string name="wifi_hotspot_mode_title">Mantén el punto d\'accés Wi-Fi encès</string>
 </resources>

@@ -24,6 +24,18 @@
   <!-- DU Changelog -->
   <string name="duchangelog_title">Dziennik zmian</string>
   <string name="duchangelog_summary">Sprawdź, co się zmieniło</string>
+  <string name="duchangelog_weeklies">Lista zmian - Tygodniowe</string>
+  <string name="duchangelog_official">Lista zmian - Oficjalne</string>
+  <string name="warning_text">Należy pamiętać, że podane tutaj dzienniki zmian są podsumowaniem zmian wdrożonych do źródeł DU. Pełną, szczegółową listę zmian znajdziesz, gdy odwiedzisz nasz github lub gerrit.</string>
+  <string name="weeklies">Tygodniowe</string>
+  <string name="official">Oficjalne</string>
+  <string name="changelog_header_version"></string>
+  <string name="changelog_dialog_title">Uwaga</string>
+  <string name="changelog_dialog_message">Proszę włączyć WiFi/transfer danych, aby pobrać listę zmian z naszego serwera.</string>
+  <string name="changelog_dialog_ok">OK</string>
+  <!-- DU Updater -->
+  <string name="updater_title">Aktualizacje DU</string>
+  <string name="updater_dashboard_summary">Sprawdź najnowszą aktualizację</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Hasło kopii zapasowej</string>
   <!-- Volume adjustment sounds -->
@@ -50,6 +62,9 @@
   <string name="display_rotation_90_title">90 stopni</string>
   <string name="display_rotation_180_title">180 stopni</string>
   <string name="display_rotation_270_title">270 stopni</string>
+  <!-- Gesture Settings -->
+  <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+  <string name="double_twist_for_camera_mode_custom_summary">Aby wejść lub wyjść z trybu selfie w Aparacie Google, skręć nim dwa razy gdy jesteś w aplikacji</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Poziomy głośności</string>
   <string name="volume_steps_alarm_title">Poziom głośności: Alarm</string>
@@ -77,6 +92,7 @@
   <string name="bluetooth_accept_all_files">Akceptuj wszystkie typy plików</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">SuperSU</string>
+  <string name="supersu_dashboard_summary">Zarządzanie uprawnieniami root</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Wybudź przy podłączaniu</string>
   <string name="wake_when_plugged_or_unplugged_summary">Włącz ekran podczas podłączania i odłączania źródła zasilania</string>
@@ -103,6 +119,9 @@
   <string name="ok">OK</string>
   <string name="advanced">Zaawansowane</string>
   <string name="profiles_add">Dodaj...</string>
+  <!-- Camera shutter sound -->
+  <string name="camera_sounds_title">Camera shutter sound</string>
+  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Ustawienia diody LED</string>
   <string name="pulse_speed_title">Długość i szybkość pulsowania</string>
@@ -145,14 +164,24 @@
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">Wybierz aplikację</string>
   <string name="reset">Resetuj</string>
-  <!-- Double tap to launch camera options -->
-  <string name="dt2l_camera_category">Opcje aparatu DT2L</string>
-  <string name="dt2l_camera_vib_title">Dostosuj wibracje</string>
-  <string name="dt2l_camera_vib_summary">Dostosuj wibracje podczas uruchamiania aparatu</string>
-  <string name="camera_double_tap_power_gesture_title">Dotknij dwukrotnie, aby uruchomić aparat</string>
-  <string name="camera_double_tap_power_gesture_desc">Szybkie otwieranie aparatu bez odblokowania ekranu</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Połącz dźwięk połączeń i powiadomień</string>
   <string name="notification_volume_option_title">Głośność powiadomień</string>
   <string name="ring_notification_volume_option_title">Głośność połączeń i powiadomień</string>
+  <!-- Themes -->
+  <string name="themes_title">Motywy</string>
+  <string name="themes_dashboard_summary">Zarządzaj motywami</string>
+  <!-- Manage applications: Substratum overlays -->
+  <string name="menu_show_substratum">Pokaż nakładki</string>
+  <string name="menu_hide_substratum">Ukryj nakładki</string>
+  <!-- Advanced night mode brightness -->
+  <string name="night_brightness_category">Jasność</string>
+  <string name="night_brightness_value_title">Jasność w nocy</string>
+  <string name="night_brightness_text">Kiedy jasność w nocy jest włączona automatycznie ustawia wskazany poziom jasności. Domyślnie ustawiona jest niska jasność.</string>
+  <string name="night_bright_disabled">Wyłączone</string>
+  <string name="night_bright_low">niska jasność</string>
+  <string name="night_bright_medium">średnia jasność</string>
+  <string name="night_bright_min">minimalna jasność</string>
+  <!-- Hotspot idle -->
+  <string name="wifi_hotspot_mode_title">Utrzymuj Hotspot WiFi włączony</string>
 </resources>
