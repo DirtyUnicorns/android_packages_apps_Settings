@@ -41,6 +41,11 @@
     <string name="updater_title">Updater</string>
     <string name="updater_dashboard_summary">Check for the latest update</string>
 
+    <!-- About phone screen -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2012-01-01-0000</string>
+    <string name="security_patch_custom">Security patch level</string>
+
     <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
     <string name="local_backup_password_title">Desktop backup password</string>
 
