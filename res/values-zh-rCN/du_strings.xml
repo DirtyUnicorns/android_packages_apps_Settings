@@ -16,172 +16,182 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- DU Tweaks -->
-  <string name="dirtytweaks_title">Dirty Tweaks</string>
-  <string name="header_category_dirtytweaks">Customization</string>
+  <string name="dirtytweaks_title">Dirty 设置</string>
+  <string name="header_category_dirtytweaks">个性化</string>
   <!-- DU version -->
-  <string name="mod_version">DU version</string>
-  <string name="mod_version_default">Unknown</string>
+  <string name="mod_version">DU 版本</string>
+  <string name="mod_version_default">未知</string>
   <!-- DU Changelog -->
-  <string name="duchangelog_title">Changelog</string>
-  <string name="duchangelog_summary">Check to see what has changed</string>
-  <string name="duchangelog_weeklies">Changelog - Weeklies</string>
-  <string name="duchangelog_official">Changelog - Official</string>
-  <string name="warning_text">Please note that change logs generated here are summaries of commits merged into our source. For a full and detailed change log is recommended that you visit our github or gerrit.</string>
+  <string name="duchangelog_title">更新日志</string>
+  <string name="duchangelog_summary">查看更新了什么</string>
+  <string name="duchangelog_weeklies">更新日志 - Weeklies</string>
+  <string name="duchangelog_official">更新日志 - Official</string>
+  <string name="warning_text">请注意，在这里列出的更新日志是根据提交整合代码时的代码摘要自动生成的。若想查看更完整详细的更新日志，请访问我们的 github 或 gerrit 主页。</string>
   <string name="weeklies">Weeklies</string>
   <string name="official">Official</string>
   <string name="changelog_header_version"></string>
-  <string name="changelog_dialog_title">Attention</string>
-  <string name="changelog_dialog_message">Please enable WiFi/Mobile data to download the changelog from our server.</string>
-  <string name="changelog_dialog_ok">OK</string>
+  <string name="changelog_dialog_title">注意</string>
+  <string name="changelog_dialog_message">请启用无线或移动数据网络来从我们的服务器下载更新日志。</string>
+  <string name="changelog_dialog_ok">好的</string>
   <!-- DU Updater -->
-  <string name="updater_title">Updater</string>
-  <string name="updater_dashboard_summary">Check for the latest update</string>
+  <string name="updater_title">DU 更新器</string>
+  <string name="updater_dashboard_summary">检查最近的更新</string>
+  <!-- About phone screen -->
+  <string name="build_date">编译日期</string>
+  <string name="build_date_default">2012-01-01-0000</string>
+  <string name="security_patch_custom">Android 安全补丁程序级别</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
-  <string name="local_backup_password_title">Desktop backup password</string>
+  <string name="local_backup_password_title">桌面备份密码</string>
   <!-- Volume adjustment sounds -->
-  <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+  <string name="volume_adjust_sounds_title">音量键调节声音</string>
   <!-- Density category -->
-  <string name="density_category">Density options</string>
+  <string name="density_category">密度选项</string>
   <!-- ADB debugging notifications -->
-  <string name="enable_adb_custom">Android debugging</string>
-  <string name="enable_adb_summary_custom">Enable the Android Debug Bridge (adb) interface</string>
-  <string name="adb_notify">ADB notification</string>
-  <string name="adb_notify_summary">Display a notification when USB or network debugging is enabled</string>
-  <string name="adb_over_network">ADB over network</string>
-  <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi\u2011Fi, USB networks). This setting is reset on reboot</string>
-  <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
+  <string name="enable_adb_custom">Android 调试</string>
+  <string name="enable_adb_summary_custom">启用 Android Debug Bridge (ADB) 界面</string>
+  <string name="adb_notify">调试通知</string>
+  <string name="adb_notify_summary">已开启 USB 或网络调试通知</string>
+  <string name="adb_over_network">网络 ADB 调试</string>
+  <string name="adb_over_network_summary">通过网络接口 (WiFi，USB 网络) 启用 TCP/IP 调试。该设置重启后失效</string>
+  <string name="adb_over_network_warning">警告：当网络 ADB 调试启用时，您的设备将在所有已连接的网络上接收指令！\n\n请只在您信任的网络中启用此功能。\n\n您真的要开启这个功能吗？</string>
   <!-- Screenshot sound -->
-  <string name="screenshot_sound_title">Screenshot sound</string>
-  <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
+  <string name="screenshot_sound_title">截图提示音</string>
+  <string name="screenshot_sound_summary">截图成功时播放提示音效</string>
   <!-- Display : Rotation -->
-  <string name="display_rotation_title">Rotation angles</string>
-  <string name="display_rotation_disabled">Disabled</string>
-  <string name="display_rotation_unit">degrees</string>
-  <string name="display_rotation_category_title">Rotation</string>
-  <string name="display_rotation_0_title">0 degrees</string>
-  <string name="display_rotation_90_title">90 degrees</string>
-  <string name="display_rotation_180_title">180 degrees</string>
-  <string name="display_rotation_270_title">270 degrees</string>
+  <string name="display_rotation_title">旋转角度</string>
+  <string name="display_rotation_disabled">未启用</string>
+  <string name="display_rotation_unit">度</string>
+  <string name="display_rotation_category_title">旋转</string>
+  <string name="display_rotation_0_title">0 度</string>
+  <string name="display_rotation_90_title">90 度</string>
+  <string name="display_rotation_180_title">180 度</string>
+  <string name="display_rotation_270_title">270 度</string>
   <!-- Gesture Settings -->
   <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
-  <string name="double_twist_for_camera_mode_custom_summary">To switch in and out of selfie mode in Google Camera, double-twist when you’re in the app</string>
+  <string name="double_twist_for_camera_mode_custom_summary">使用谷歌相机时扭动两次手腕可以切换进/出自拍模式</string>
   <!-- Volume Steps -->
-  <string name="volume_steps_title">Volume steps</string>
-  <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
-  <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
-  <string name="volume_steps_music_title">Volume steps: Music</string>
-  <string name="volume_steps_notification_title">Volume steps: Notification</string>
-  <string name="volume_steps_ring_title">Volume steps: Ringer</string>
-  <string name="volume_steps_system_title">Volume steps: System</string>
-  <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
-  <string name="volume_steps_reset">Reset</string>
+  <string name="volume_steps_title">音量步进</string>
+  <string name="volume_steps_alarm_title">音量步进：闹钟</string>
+  <string name="volume_steps_dtmf_title">音量步进：双音多频</string>
+  <string name="volume_steps_music_title">音量步进：音乐</string>
+  <string name="volume_steps_notification_title">音量步进：通知</string>
+  <string name="volume_steps_ring_title">音量步进：铃声</string>
+  <string name="volume_steps_system_title">音量步进：系统</string>
+  <string name="volume_steps_voice_call_title">音量步进：语音电话</string>
+  <string name="volume_steps_reset">重置</string>
   <!-- Scramble PIN Layout on Lockscreen -->
-  <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-  <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+  <string name="unlock_scramble_pin_layout_title">乱序布局</string>
+  <string name="unlock_scramble_pin_layout_summary">当解锁设备时使用乱序 PIN 布局</string>
   <!-- Dashboard options -->
-  <string name="dashboard_category">Dashboard options</string>
-  <string name="dashboard_suggestions_title">Dashboard suggestions</string>
-  <string name="summary_dashboard_suggestions_enabled">Dashboard suggestions are enabled</string>
-  <string name="summary_dashboard_suggestions_disabled">Dashboard suggestions are disabled</string>
-  <string name="remove_tile_summaries_title">Remove tile summaries</string>
-  <string name="remove_tile_summaries_summary">Remove tiles summaries that display underneath tile titles</string>
-  <string name="dashboard_conditions_title">Dashboard conditions</string>
-  <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
-  <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
+  <string name="dashboard_category">面板设置</string>
+  <string name="dashboard_suggestions_title">面板建议摘要</string>
+  <string name="summary_dashboard_suggestions_enabled">面板建议摘要已启用</string>
+  <string name="summary_dashboard_suggestions_disabled">面板建议摘要已禁用</string>
+  <string name="remove_tile_summaries_title">移除标题摘要</string>
+  <string name="remove_tile_summaries_summary">移除标题下面显示的摘要</string>
+  <string name="dashboard_conditions_title">面板状态摘要</string>
+  <string name="summary_dashboard_conditions_enabled">面板状态摘要已启用</string>
+  <string name="summary_dashboard_conditions_disabled">面板状态摘要已禁用</string>
   <!-- Bluetooth accept all files -->
-  <string name="bluetooth_accept_all_files">Accept all file types</string>
+  <string name="bluetooth_accept_all_files">接受所有文件类型</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">SuperSU</string>
-  <string name="supersu_dashboard_summary">Manage root access</string>
+  <string name="supersu_dashboard_summary">管理 Root 访问</string>
   <!-- Wake on Plug -->
-  <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
-  <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+  <string name="wake_when_plugged_or_unplugged_title">充电唤醒</string>
+  <string name="wake_when_plugged_or_unplugged_summary">连接或移除电源时点亮屏幕</string>
   <!-- LED notifications -->
-  <string name="color_picker_dialog_title">Color</string>
-  <string name="battery_light_settings_title">Battery charging light</string>
-  <string name="battery_light_settings_summary">Configure the LED settings for battery charging</string>
-  <string name="notification_light_settings_title">Notifications light</string>
-  <string name="notification_light_settings_summary">Configure the LED settings for notifications</string>
-  <string name="ledsettings_category">LED Lights</string>
-  <string name="batterylight_title">Battery LED settings</string>
-  <string name="battery_light_enable">Enable</string>
-  <string name="battery_low_pulse_title">Pulse if battery low</string>
-  <string name="battery_light_list_title">Colors</string>
-  <string name="battery_light_low_color_title">Battery low</string>
-  <string name="battery_light_medium_color_title">Charging</string>
-  <string name="battery_light_full_color_title">Charged (90%)</string>
-  <string name="battery_light_really_full_color_title">Charged (100%)</string>
-  <string name="edit_battery_settings">Edit battery settings</string>
-  <string name="notification_light_general_title">General</string>
-  <string name="led_color_green">Green</string>
-  <string name="led_color_red">Red</string>
-  <string name="led_color_blue">Blue</string>
-  <string name="ok">OK</string>
-  <string name="advanced">Advanced</string>
-  <string name="profiles_add">Add...</string>
+  <string name="color_picker_dialog_title">颜色</string>
+  <string name="battery_light_settings_title">充电指示灯</string>
+  <string name="battery_light_settings_summary">配置充电时的 LED 设置</string>
+  <string name="notification_light_settings_title">通知指示灯</string>
+  <string name="notification_light_settings_summary">配置通知的 LED 设置</string>
+  <string name="ledsettings_category">LED 指示灯</string>
+  <string name="batterylight_title">电池 LED 设置</string>
+  <string name="battery_light_enable">启用</string>
+  <string name="battery_low_pulse_title">电量低时开启呼吸灯</string>
+  <string name="battery_light_list_title">颜色</string>
+  <string name="battery_light_low_color_title">电量低</string>
+  <string name="battery_light_medium_color_title">正在充电</string>
+  <string name="battery_light_full_color_title">正在充电 (90%)</string>
+  <string name="battery_light_really_full_color_title">正在充电 (100%)</string>
+  <string name="edit_battery_settings">编辑电池设置</string>
+  <string name="notification_light_general_title">常规</string>
+  <string name="led_color_green">绿色</string>
+  <string name="led_color_red">红色</string>
+  <string name="led_color_blue">蓝色</string>
+  <string name="ok">完成</string>
+  <string name="advanced">高级</string>
+  <string name="profiles_add">添加…</string>
   <!-- Camera shutter sound -->
-  <string name="camera_sounds_title">Camera shutter sound</string>
-  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
+  <string name="camera_sounds_title">相机快门声音</string>
+  <string name="camera_sounds_summary">此禁用可能对第三方相机应用和 HDR+ 模式无效</string>
   <!-- Notification light dialogs -->
-  <string name="edit_light_settings">Edit light settings</string>
-  <string name="pulse_speed_title">Pulse length and speed</string>
-  <string name="default_time">Normal</string>
-  <string name="custom_time">Custom</string>
-  <string name="dialog_delete_title">Delete</string>
-  <string name="dialog_delete_message">Remove selected item?</string>
+  <string name="edit_light_settings">编辑指示灯设置</string>
+  <string name="pulse_speed_title">呼吸长度与速度</string>
+  <string name="default_time">常规</string>
+  <string name="custom_time">自定义</string>
+  <string name="dialog_delete_title">删除</string>
+  <string name="dialog_delete_message">移除选中的项目？</string>
   <!-- Values for the notification light pulse spinners -->
-  <string name="pulse_length_always_on">Always on</string>
-  <string name="pulse_length_very_short">Very short</string>
-  <string name="pulse_length_short">Short</string>
-  <string name="pulse_length_normal">Normal</string>
-  <string name="pulse_length_long">Long</string>
-  <string name="pulse_length_very_long">Very long</string>
-  <string name="pulse_speed_very_fast">Very fast</string>
-  <string name="pulse_speed_fast">Fast</string>
-  <string name="pulse_speed_normal">Normal</string>
-  <string name="pulse_speed_slow">Slow</string>
-  <string name="pulse_speed_very_slow">Very slow</string>
+  <string name="pulse_length_always_on">始终开启</string>
+  <string name="pulse_length_very_short">非常短促</string>
+  <string name="pulse_length_short">短促</string>
+  <string name="pulse_length_normal">常规</string>
+  <string name="pulse_length_long">长久</string>
+  <string name="pulse_length_very_long">非常长久</string>
+  <string name="pulse_speed_very_fast">非常快</string>
+  <string name="pulse_speed_fast">较快</string>
+  <string name="pulse_speed_normal">常规</string>
+  <string name="pulse_speed_slow">较慢</string>
+  <string name="pulse_speed_very_slow">非常慢</string>
   <!-- Lights settings screen, notification light settings -->
-  <string name="notification_light_title">Notification light</string>
-  <string name="notificationlight_title">Notification LED settings</string>
-  <string name="notification_light_general_title">General</string>
-  <string name="notification_light_applist_title">Apps</string>
-  <string name="notification_light_phonelist_title">Phone</string>
-  <string name="notification_light_use_custom">Use custom values</string>
-  <string name="notification_light_default_value">Default</string>
-  <string name="notification_light_missed_call_title">Missed call</string>
-  <string name="notification_light_voicemail_title">Voicemail</string>
-  <string name="notification_light_screen_on">Lights with screen on</string>
-  <string name="notification_light_zen_mode">Lights in Do Not Disturb mode</string>
-  <string name="notification_light_use_multiple_leds">Multiple LEDs</string>
-  <string name="keywords_lights_brightness_level">dim leds brightness</string>
-  <string name="notification_light_automagic">Choose colors automatically</string>
+  <string name="notification_light_title">通知指示灯</string>
+  <string name="notificationlight_title">通知 LED 灯设置</string>
+  <string name="notification_light_general_title">常规</string>
+  <string name="notification_light_applist_title">应用</string>
+  <string name="notification_light_phonelist_title">手机</string>
+  <string name="notification_light_use_custom">使用自定义值</string>
+  <string name="notification_light_default_value">默认</string>
+  <string name="notification_light_missed_call_title">未接电话</string>
+  <string name="notification_light_voicemail_title">语音邮件</string>
+  <string name="notification_light_screen_on">屏幕开启时开启指示灯</string>
+  <string name="notification_light_zen_mode">勿扰模式下允许通知指示灯</string>
+  <string name="notification_light_use_multiple_leds">多彩LED指示灯</string>
+  <string name="keywords_lights_brightness_level">降低 LED 亮度</string>
+  <string name="notification_light_automagic">自动选择颜色</string>
   <!-- Lights settings, LED notification -->
-  <string name="led_notification_title">Light settings</string>
-  <string name="led_notification_text">LED light enabled by settings</string>
-  <string name="notification_light_no_apps_summary">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
+  <string name="led_notification_title">LED 设置</string>
+  <string name="led_notification_text">LED 由设置启用</string>
+  <string name="notification_light_no_apps_summary">若要单独控制每个应用程序，激活 \'%1$s\' 并且点击菜单栏上 \'\u002b\' </string>
   <string name="font_sample_text">11:57</string>
   <!-- Add application dialog box title -->
-  <string name="profile_choose_app">Choose app</string>
-  <string name="reset">Reset</string>
+  <string name="profile_choose_app">选择应用</string>
+  <string name="reset">重置</string>
   <!-- Linked / unlinked notification volume -->
-  <string name="link_volume_option_title">Link ring and notification volume</string>
-  <string name="notification_volume_option_title">Notification volume</string>
-  <string name="ring_notification_volume_option_title">Ring and notification volume</string>
+  <string name="link_volume_option_title">关联铃声和通知的音量</string>
+  <string name="notification_volume_option_title">通知音量</string>
+  <string name="ring_notification_volume_option_title">铃声和通知音量</string>
   <!-- Themes -->
-  <string name="themes_title">Themes</string>
-  <string name="themes_dashboard_summary">Manage your themes</string>
+  <string name="themes_title">主题</string>
+  <string name="themes_dashboard_summary">管理你的主题</string>
   <!-- Manage applications: Substratum overlays -->
-  <string name="menu_show_substratum">Show overlays</string>
-  <string name="menu_hide_substratum">Hide overlays</string>
+  <string name="menu_show_substratum">显示 Overlays</string>
+  <string name="menu_hide_substratum">隐藏 Overlays</string>
   <!-- Advanced night mode brightness -->
-  <string name="night_brightness_category">Brightness</string>
-  <string name="night_brightness_value_title">Night Light brightness</string>
-  <string name="night_brightness_text">When Night Light is enabled automatically set the desired brightness. The default brightness is set to low brightness</string>
-  <string name="night_bright_disabled">Disabled</string>
-  <string name="night_bright_low">low brightness</string>
-  <string name="night_bright_medium">medium brightness</string>
-  <string name="night_bright_min">minimum brightness</string>
+  <string name="night_brightness_category">亮度</string>
+  <string name="night_brightness_value_title">夜间模式亮度</string>
+  <string name="night_brightness_text">当夜间模式启用时自动选择需要的亮度，默认设置为低亮度。</string>
+  <string name="night_bright_disabled">禁用</string>
+  <string name="night_bright_low">低亮度</string>
+  <string name="night_bright_medium">中等亮度</string>
+  <string name="night_bright_min">最低亮度</string>
   <!-- Hotspot idle -->
-  <string name="wifi_hotspot_mode_title">Keep WiFi Hotspot on</string>
+  <string name="wifi_hotspot_mode_title">保持 WiFi 热点开启</string>
+  <!-- double tap statusbar to sleep -->
+  <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
+  <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+  <!-- Lockscreen double tap to sleep -->
+  <string name="double_tap_sleep_anywhere_title">Double tap to sleep (lockscreen)</string>
+  <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
 </resources>

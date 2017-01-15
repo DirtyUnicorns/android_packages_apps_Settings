@@ -36,6 +36,10 @@
   <!-- DU Updater -->
   <string name="updater_title">Aktualizace</string>
   <string name="updater_dashboard_summary">Zkontrolovat nejnovější aktualizaci</string>
+  <!-- About phone screen -->
+  <string name="build_date">Datum sestavení</string>
+  <string name="build_date_default">2012-01-01-0000</string>
+  <string name="security_patch_custom">Úroveň opravy zabezpečení Android</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Heslo pro zálohy v počítači</string>
   <!-- Volume adjustment sounds -->
@@ -120,8 +124,8 @@
   <string name="advanced">Rozšířené</string>
   <string name="profiles_add">Přidat...</string>
   <!-- Camera shutter sound -->
-  <string name="camera_sounds_title">Camera shutter sound</string>
-  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
+  <string name="camera_sounds_title">Zvuk závěrky fotoaparátu</string>
+  <string name="camera_sounds_summary">Zakázání nemusí fungovat na aplikacích fotoaparátu 3. strany a v režimu HDR+</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Nastavení LED diody</string>
   <string name="pulse_speed_title">Délka impulsu a rychlost</string>
@@ -184,4 +188,10 @@
   <string name="night_bright_min">minimální jas</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">Nevypínat WiFi Hotspot</string>
+  <!-- double tap statusbar to sleep -->
+  <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
+  <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+  <!-- Lockscreen double tap to sleep -->
+  <string name="double_tap_sleep_anywhere_title">Double tap to sleep (lockscreen)</string>
+  <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
 </resources>

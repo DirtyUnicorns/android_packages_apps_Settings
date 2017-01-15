@@ -26,16 +26,20 @@
   <string name="duchangelog_summary">何が変更されたかを確認する</string>
   <string name="duchangelog_weeklies">更新履歴 - ウィークリー</string>
   <string name="duchangelog_official">更新履歴 - オフィシャル</string>
-  <string name="warning_text">ここで生成される変更ログは、ソースにマージされたコミットの要約です。 完全かつ詳細な変更ログは、GithubまたはGerritにアクセスすることをお勧めします。</string>
+  <string name="warning_text">ここで生成される更新履歴は、ソースにマージされたコミットの要約です。 完全かつ詳細な更新履歴については、GithubまたはGerritにアクセスすることをお勧めします。</string>
   <string name="weeklies">ウィークリー</string>
   <string name="official">オフィシャル</string>
   <string name="changelog_header_version"></string>
   <string name="changelog_dialog_title">注意</string>
-  <string name="changelog_dialog_message">我々のサーバーから変更履歴をダウンロードするには、WiFi /モバイルデータを有効にしてください。</string>
+  <string name="changelog_dialog_message">私たちのサーバーから更新履歴をダウンロードするには、Wi-Fiまたはモバイルデータを有効にしてください。</string>
   <string name="changelog_dialog_ok">OK</string>
   <!-- DU Updater -->
   <string name="updater_title">Updater</string>
-  <string name="updater_dashboard_summary">最新の更新を確認する</string>
+  <string name="updater_dashboard_summary">最新の更新を確認</string>
+  <!-- About phone screen -->
+  <string name="build_date">ビルド日時</string>
+  <string name="build_date_default">2012-01-01-0000</string>
+  <string name="security_patch_custom">Androidセキュリティパッチレベル</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">PCバックアップパスワード</string>
   <!-- Volume adjustment sounds -->
@@ -92,7 +96,7 @@
   <string name="bluetooth_accept_all_files">すべてのファイル形式を許可</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">SuperSU</string>
-  <string name="supersu_dashboard_summary">ルートアクセスを管理する</string>
+  <string name="supersu_dashboard_summary">ルートアクセスを管理</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">電源接続時にスリープ解除</string>
   <string name="wake_when_plugged_or_unplugged_summary">電源を接続または切断したときに画面を点灯させる</string>
@@ -120,8 +124,8 @@
   <string name="advanced">高度</string>
   <string name="profiles_add">追加...</string>
   <!-- Camera shutter sound -->
-  <string name="camera_sounds_title">Camera shutter sound</string>
-  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
+  <string name="camera_sounds_title">カメラのシャッター音</string>
+  <string name="camera_sounds_summary">サードパーティ製のカメラアプリやHDR+モード使用中は無効にすることはできません</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">ライトの設定を編集</string>
   <string name="pulse_speed_title">点滅時間と点滅速度</string>
@@ -170,7 +174,7 @@
   <string name="ring_notification_volume_option_title">着信音や通知の音量</string>
   <!-- Themes -->
   <string name="themes_title">テーマ</string>
-  <string name="themes_dashboard_summary">お使いのテーマを管理する</string>
+  <string name="themes_dashboard_summary">お使いのテーマを管理</string>
   <!-- Manage applications: Substratum overlays -->
   <string name="menu_show_substratum">オーバーレイを表示</string>
   <string name="menu_hide_substratum">オーバーレイを非表示</string>
@@ -185,4 +189,10 @@
   <string name="night_bright_min">最低輝度</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">WiFi アクセスポイントを保持</string>
+  <!-- double tap statusbar to sleep -->
+  <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
+  <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+  <!-- Lockscreen double tap to sleep -->
+  <string name="double_tap_sleep_anywhere_title">Double tap to sleep (lockscreen)</string>
+  <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
 </resources>

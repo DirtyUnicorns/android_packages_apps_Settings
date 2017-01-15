@@ -36,6 +36,10 @@
   <!-- DU Updater -->
   <string name="updater_title">Mise à jour</string>
   <string name="updater_dashboard_summary">Rechercher la dernière mise à jour</string>
+  <!-- About phone screen -->
+  <string name="build_date">Date de compilation</string>
+  <string name="build_date_default">2012-01-01-0000</string>
+  <string name="security_patch_custom">Niveau du correctif de sécurité Android</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Mot de passe sauvegarde PC</string>
   <!-- Volume adjustment sounds -->
@@ -120,8 +124,8 @@
   <string name="advanced">Paramètres avancés</string>
   <string name="profiles_add">Ajouter...</string>
   <!-- Camera shutter sound -->
-  <string name="camera_sounds_title">Camera shutter sound</string>
-  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
+  <string name="camera_sounds_title">Son de l\'appareil photo</string>
+  <string name="camera_sounds_summary">Note : Certaines applications \"Appareil photo\" tierces outrepassent ce blocage, en mode HDR+</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Paramètres du voyant</string>
   <string name="pulse_speed_title">Durée et vitesse d\'impulsion</string>
@@ -184,4 +188,10 @@
   <string name="night_bright_min">Luminosité minimale</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">Veille du point d\'accès Wi-Fi</string>
+  <!-- double tap statusbar to sleep -->
+  <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
+  <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+  <!-- Lockscreen double tap to sleep -->
+  <string name="double_tap_sleep_anywhere_title">Double tap to sleep (lockscreen)</string>
+  <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
 </resources>

@@ -36,6 +36,10 @@
   <!-- DU Updater -->
   <string name="updater_title">Updater</string>
   <string name="updater_dashboard_summary">Check for the latest update</string>
+  <!-- About phone screen -->
+  <string name="build_date">Build date</string>
+  <string name="build_date_default">2012-01-01-0000</string>
+  <string name="security_patch_custom">Security patch level</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Senha de backup local</string>
   <!-- Volume adjustment sounds -->
@@ -184,4 +188,10 @@
   <string name="night_bright_min">minimum brightness</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">Keep WiFi Hotspot on</string>
+  <!-- double tap statusbar to sleep -->
+  <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
+  <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+  <!-- Lockscreen double tap to sleep -->
+  <string name="double_tap_sleep_anywhere_title">Double tap to sleep (lockscreen)</string>
+  <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
 </resources>

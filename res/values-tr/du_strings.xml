@@ -36,6 +36,10 @@
   <!-- DU Updater -->
   <string name="updater_title">Güncelleyici</string>
   <string name="updater_dashboard_summary">En son güncellemeyi kontrol edin</string>
+  <!-- About phone screen -->
+  <string name="build_date">Sürüm tarihi</string>
+  <string name="build_date_default">2012-01-01-0000</string>
+  <string name="security_patch_custom">Android güvenlik yaması düzeyi</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Masaüstü yedekleme şifresi</string>
   <!-- Volume adjustment sounds -->
@@ -120,8 +124,8 @@
   <string name="advanced">Gelişmiş</string>
   <string name="profiles_add">Ekle...</string>
   <!-- Camera shutter sound -->
-  <string name="camera_sounds_title">Camera shutter sound</string>
-  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
+  <string name="camera_sounds_title">Kamera deklanşör sesi</string>
+  <string name="camera_sounds_summary">Devre dışı bırakma üçüncü parti kamera uygulamalarında ve HDR+ modunda çalışmaya bilir</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Bildirim ışığı ayarlarını düzenle</string>
   <string name="pulse_speed_title">Yanma hızı ve süresi</string>
@@ -184,4 +188,10 @@
   <string name="night_bright_min">en düşük parlaklık</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">WiFi Hotspot aramayı açık tut</string>
+  <!-- double tap statusbar to sleep -->
+  <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
+  <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+  <!-- Lockscreen double tap to sleep -->
+  <string name="double_tap_sleep_anywhere_title">Double tap to sleep (lockscreen)</string>
+  <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
 </resources>
