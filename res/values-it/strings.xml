@@ -6219,7 +6219,7 @@
   <!-- [CHAR_LIMIT=NONE] Battery saver: Description for automatic entry option: Never -->
   <string name="battery_saver_desc_turn_on_auto_never">Non attivare mai automaticamente</string>
   <!-- [CHAR_LIMIT=NONE] Battery saver: Description for automatic entry option: pct% battery -->
-  <string name="battery_saver_desc_turn_on_auto_pct">Attiva automaticamente al %1$s%% di batteria</string>
+  <string name="battery_saver_desc_turn_on_auto_pct">Attiva automaticamente al %1$s di batteria</string>
   <!-- [CHAR_LIMIT=NONE] Label for when app is ignoring battery optimizations -->
   <string name="not_battery_optimizing">Ottimizzazione della batteria non in uso</string>
   <!-- Text for the setting on whether you can type text into notifications without unlocking the device. -->
