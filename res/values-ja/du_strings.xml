@@ -19,7 +19,7 @@
   <string name="dirtytweaks_title">Dirty Tweaks</string>
   <string name="header_category_dirtytweaks">カスタマイズ</string>
   <!-- DU version -->
-  <string name="mod_version">DU バージョン</string>
+  <string name="mod_version">DUバージョン</string>
   <string name="mod_version_default">不明</string>
   <!-- DU Changelog -->
   <string name="duchangelog_title">更新履歴</string>
@@ -72,7 +72,7 @@
   <!-- Volume Steps -->
   <string name="volume_steps_title">ボリュームステップ</string>
   <string name="volume_steps_alarm_title">ボリュームステップ: アラーム</string>
-  <string name="volume_steps_dtmf_title">ボリュームステップ: DTMF（プッシュ音）</string>
+  <string name="volume_steps_dtmf_title">ボリュームステップ: プッシュ音</string>
   <string name="volume_steps_music_title">ボリュームステップ: 音楽</string>
   <string name="volume_steps_notification_title">ボリュームステップ: 通知</string>
   <string name="volume_steps_ring_title">ボリュームステップ: 着信音</string>
@@ -84,14 +84,17 @@
   <string name="unlock_scramble_pin_layout_summary">端末のロック解除時にPINレイアウトをランダムにする</string>
   <!-- Dashboard options -->
   <string name="dashboard_category">ダッシュボードの設定</string>
-  <string name="dashboard_suggestions_title">ダッシュボードの候補表示</string>
+  <string name="dashboard_suggestions_title">Suggestions</string>
   <string name="summary_dashboard_suggestions_enabled">ダッシュボードの候補の表示が有効になります</string>
   <string name="summary_dashboard_suggestions_disabled">ダッシュボードの候補の表示が無効になります</string>
-  <string name="remove_tile_summaries_title">タイルの概要を削除</string>
-  <string name="remove_tile_summaries_summary">タイル名の下に表示される概要を削除する</string>
-  <string name="dashboard_conditions_title">ダッシュボードの状態表示</string>
+  <string name="remove_tile_summaries_title">Summaries</string>
+  <string name="remove_tile_summaries_summary_enabled">Dashboard summaries are enabled</string>
+  <string name="remove_tile_summaries_summary_disabled">Dashboard summaries are disabled</string>
+  <string name="dashboard_conditions_title">Conditions</string>
   <string name="summary_dashboard_conditions_enabled">ダッシュボードの状態の表示が有効になります</string>
   <string name="summary_dashboard_conditions_disabled">ダッシュボードの状態の表示が無効になります</string>
+  <string name="dashboard_columns_portrait_title">Columns (portrait)</string>
+  <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
   <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">すべてのファイル形式を許可</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
@@ -155,19 +158,32 @@
   <string name="notification_light_default_value">既定 （デフォルト）</string>
   <string name="notification_light_missed_call_title">不在着信</string>
   <string name="notification_light_voicemail_title">ボイスメール</string>
-  <string name="notification_light_screen_on">画面点灯時のライト</string>
-  <string name="notification_light_zen_mode">マナーモード時でのライト</string>
-  <string name="notification_light_use_multiple_leds">複数のLED</string>
+  <string name="notification_light_screen_on">画面点灯時も点灯</string>
+  <string name="notification_light_zen_mode">[マナーモード]でも点灯</string>
+  <string name="notification_light_use_multiple_leds">マルチLED</string>
   <string name="keywords_lights_brightness_level">暗いLEDの明るさ</string>
   <string name="notification_light_automagic">自動的に色を選択</string>
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">ライトの設定</string>
-  <string name="led_notification_text">LEDライトは設定によって有効になっています</string>
+  <string name="led_notification_text">設定によってLEDライトが有効になっています</string>
   <string name="notification_light_no_apps_summary">アプリごとのコントロールを追加するには、メニューバーの \'%1$s\' をアクティブにして \'\u002b\' を押してください</string>
   <string name="font_sample_text">11:57</string>
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">アプリを選択</string>
   <string name="reset">リセット</string>
+  <!-- Less Notification sounds -->
+  <string name="less_notification_sounds_title">Less frequent notification sounds</string>
+  <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
+  <string name="less_notification_sounds_default">Default Behavior</string>
+  <string name="less_notification_sounds_3s">3 seconds</string>
+  <string name="less_notification_sounds_5s">5 seconds</string>
+  <string name="less_notification_sounds_10s">10 seconds</string>
+  <string name="less_notification_sounds_15s">15 seconds</string>
+  <string name="less_notification_sounds_30s">30 seconds</string>
+  <string name="less_notification_sounds_45s">45 seconds</string>
+  <string name="less_notification_sounds_1m">1 minute</string>
+  <string name="less_notification_sounds_2m">2 minutes</string>
+  <string name="less_notification_sounds_5m">5 minutes</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">着信と通知の音量をリンク</string>
   <string name="notification_volume_option_title">通知の音量</string>
@@ -190,9 +206,13 @@
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">WiFi アクセスポイントを保持</string>
   <!-- double tap statusbar to sleep -->
-  <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
-  <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+  <string name="double_tap_to_sleep_title">ダブルタップするとスリープ(ステータスバー)</string>
+  <string name="double_tap_to_sleep_summary">ステータスバーをダブルタップして端末をスリープさせる</string>
   <!-- Lockscreen double tap to sleep -->
-  <string name="double_tap_sleep_anywhere_title">Double tap to sleep (lockscreen)</string>
-  <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
+  <string name="double_tap_sleep_anywhere_title">ダブルタップするとスリープ(ロック画面)</string>
+  <string name="double_tap_sleep_anywhere_summary">ロック画面の任意の場所をダブルタップして端末をスリープさせる</string>
+  <!-- Increasing ring tone volume -->
+  <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
+  <string name="increasing_ring_min_volume_title">Start volume</string>
+  <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
 </resources>

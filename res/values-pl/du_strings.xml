@@ -84,14 +84,17 @@
   <string name="unlock_scramble_pin_layout_summary">Pomieszany układ cyfr przy wpisywaniu kodu PIN</string>
   <!-- Dashboard options -->
   <string name="dashboard_category">Opcje panelu ustawień</string>
-  <string name="dashboard_suggestions_title">Sugestie panelu ustawień</string>
+  <string name="dashboard_suggestions_title">Suggestions</string>
   <string name="summary_dashboard_suggestions_enabled">Sugestie panelu ustawień są włączone</string>
   <string name="summary_dashboard_suggestions_disabled">Sugestie panelu ustawień są wyłączone</string>
-  <string name="remove_tile_summaries_title">Usuń podsumowania opcji</string>
-  <string name="remove_tile_summaries_summary">Usuń podsumowania wyświetlane poniżej opcji</string>
-  <string name="dashboard_conditions_title">Warunki panelu ustawień</string>
+  <string name="remove_tile_summaries_title">Summaries</string>
+  <string name="remove_tile_summaries_summary_enabled">Dashboard summaries are enabled</string>
+  <string name="remove_tile_summaries_summary_disabled">Dashboard summaries are disabled</string>
+  <string name="dashboard_conditions_title">Conditions</string>
   <string name="summary_dashboard_conditions_enabled">Warunki panelu ustawień są włączone</string>
   <string name="summary_dashboard_conditions_disabled">Warunki panelu ustawień są wyłączone</string>
+  <string name="dashboard_columns_portrait_title">Columns (portrait)</string>
+  <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
   <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">Akceptuj wszystkie typy plików</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
@@ -168,6 +171,19 @@
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">Wybierz aplikację</string>
   <string name="reset">Resetuj</string>
+  <!-- Less Notification sounds -->
+  <string name="less_notification_sounds_title">Less frequent notification sounds</string>
+  <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
+  <string name="less_notification_sounds_default">Default Behavior</string>
+  <string name="less_notification_sounds_3s">3 seconds</string>
+  <string name="less_notification_sounds_5s">5 seconds</string>
+  <string name="less_notification_sounds_10s">10 seconds</string>
+  <string name="less_notification_sounds_15s">15 seconds</string>
+  <string name="less_notification_sounds_30s">30 seconds</string>
+  <string name="less_notification_sounds_45s">45 seconds</string>
+  <string name="less_notification_sounds_1m">1 minute</string>
+  <string name="less_notification_sounds_2m">2 minutes</string>
+  <string name="less_notification_sounds_5m">5 minutes</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Połącz dźwięk połączeń i powiadomień</string>
   <string name="notification_volume_option_title">Głośność powiadomień</string>
@@ -189,9 +205,13 @@
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">Utrzymuj Hotspot WiFi włączony</string>
   <!-- double tap statusbar to sleep -->
-  <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
-  <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+  <string name="double_tap_to_sleep_title">Stuknij dwukrotnie aby uspać (pasek stanu)</string>
+  <string name="double_tap_to_sleep_summary">Dwukrotnie dotknij pasku stanu, aby uśpić urządzenie</string>
   <!-- Lockscreen double tap to sleep -->
-  <string name="double_tap_sleep_anywhere_title">Double tap to sleep (lockscreen)</string>
-  <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
+  <string name="double_tap_sleep_anywhere_title">Dwukrotnie stuknij, aby uspać (ekran blokady)</string>
+  <string name="double_tap_sleep_anywhere_summary">Dwukrotnie stuknij w dowolnym miejscu ekranu blokady, by uśpić urządzenie</string>
+  <!-- Increasing ring tone volume -->
+  <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
+  <string name="increasing_ring_min_volume_title">Start volume</string>
+  <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
 </resources>

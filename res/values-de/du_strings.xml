@@ -84,14 +84,17 @@
   <string name="unlock_scramble_pin_layout_summary">Bei jedem Entsperrversuch die Ziffernanordnung zufällig neu wählen</string>
   <!-- Dashboard options -->
   <string name="dashboard_category">Dashboard-Optionen</string>
-  <string name="dashboard_suggestions_title">Dashboard-Vorschläge</string>
+  <string name="dashboard_suggestions_title">Suggestions</string>
   <string name="summary_dashboard_suggestions_enabled">Dashboard-Vorschläge sind aktiviert</string>
   <string name="summary_dashboard_suggestions_disabled">Dashboard-Vorschläge sind deaktiviert</string>
-  <string name="remove_tile_summaries_title">Kachelbeschriftung entfernen</string>
-  <string name="remove_tile_summaries_summary">Beschriftung unter Kacheln entfernen</string>
-  <string name="dashboard_conditions_title">Dashboard-Bedingungen</string>
+  <string name="remove_tile_summaries_title">Summaries</string>
+  <string name="remove_tile_summaries_summary_enabled">Dashboard summaries are enabled</string>
+  <string name="remove_tile_summaries_summary_disabled">Dashboard summaries are disabled</string>
+  <string name="dashboard_conditions_title">Conditions</string>
   <string name="summary_dashboard_conditions_enabled">Dashboard-Bedingungen sind aktiviert</string>
   <string name="summary_dashboard_conditions_disabled">Dashboard-Bedingungen sind deaktiviert</string>
+  <string name="dashboard_columns_portrait_title">Columns (portrait)</string>
+  <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
   <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">Alle Dateitypen akzeptieren</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
@@ -149,7 +152,7 @@
   <string name="notification_light_title">Benachrichtigungs-LED</string>
   <string name="notificationlight_title">Benachrichtigungs-LED Einstellungen</string>
   <string name="notification_light_general_title">Allgemein</string>
-  <string name="notification_light_applist_title">Anwendungen</string>
+  <string name="notification_light_applist_title">Apps</string>
   <string name="notification_light_phonelist_title">Telefon</string>
   <string name="notification_light_use_custom">Eigene Werte verwenden</string>
   <string name="notification_light_default_value">Standard</string>
@@ -161,20 +164,33 @@
   <string name="keywords_lights_brightness_level">LED-Helligkeit dimmen</string>
   <string name="notification_light_automagic">Farben automatisch wählen</string>
   <!-- Lights settings, LED notification -->
-  <string name="led_notification_title">Benachrichtigungs-LED</string>
+  <string name="led_notification_title">LED-Einstellungen</string>
   <string name="led_notification_text">Benachrichtigungs-LED von Einstellungen aktiviert</string>
   <string name="notification_light_no_apps_summary">Um Per-App-Kontrolle hinzuzufügen, aktivieren Sie %1$s und drücken Sie \'\u002b\' in der Menüleiste</string>
   <string name="font_sample_text">11:57</string>
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">App auswählen</string>
   <string name="reset">Zurücksetzen</string>
+  <!-- Less Notification sounds -->
+  <string name="less_notification_sounds_title">Less frequent notification sounds</string>
+  <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
+  <string name="less_notification_sounds_default">Default Behavior</string>
+  <string name="less_notification_sounds_3s">3 seconds</string>
+  <string name="less_notification_sounds_5s">5 seconds</string>
+  <string name="less_notification_sounds_10s">10 seconds</string>
+  <string name="less_notification_sounds_15s">15 seconds</string>
+  <string name="less_notification_sounds_30s">30 seconds</string>
+  <string name="less_notification_sounds_45s">45 seconds</string>
+  <string name="less_notification_sounds_1m">1 minute</string>
+  <string name="less_notification_sounds_2m">2 minutes</string>
+  <string name="less_notification_sounds_5m">5 minutes</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Verbinde Lautstärke für Klingelton und Benachrichtigungen</string>
   <string name="notification_volume_option_title">Benachrichtigungslautstärke</string>
   <string name="ring_notification_volume_option_title">Klingel- und Benachrichtigungslautstärke</string>
   <!-- Themes -->
-  <string name="themes_title">Designs</string>
-  <string name="themes_dashboard_summary">Designs verwalten</string>
+  <string name="themes_title">Themes</string>
+  <string name="themes_dashboard_summary">Themes verwalten</string>
   <!-- Manage applications: Substratum overlays -->
   <string name="menu_show_substratum">Overlays anzeigen</string>
   <string name="menu_hide_substratum">Overlays ausblenden</string>
@@ -189,9 +205,13 @@
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">WLAN-Hotspot anlassen</string>
   <!-- double tap statusbar to sleep -->
-  <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
-  <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+  <string name="double_tap_to_sleep_title">DoubleTap2Sleep (Statusleiste)</string>
+  <string name="double_tap_to_sleep_summary">Statusleiste zweimal antippen, um das Gerät in den Standby-Modus zu versetzen</string>
   <!-- Lockscreen double tap to sleep -->
-  <string name="double_tap_sleep_anywhere_title">Double tap to sleep (lockscreen)</string>
-  <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
+  <string name="double_tap_sleep_anywhere_title">DoubleTap2Sleep (Sperrbildschirm)</string>
+  <string name="double_tap_sleep_anywhere_summary">Sperrbildschirm irgendwo antippen, um das Gerät in den Standby-Modus zu versetzen</string>
+  <!-- Increasing ring tone volume -->
+  <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
+  <string name="increasing_ring_min_volume_title">Start volume</string>
+  <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
 </resources>

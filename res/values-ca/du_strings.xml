@@ -37,9 +37,9 @@
   <string name="updater_title">Actualitzador</string>
   <string name="updater_dashboard_summary">Verifica la darrera actualització</string>
   <!-- About phone screen -->
-  <string name="build_date">Build date</string>
+  <string name="build_date">Data de compilació</string>
   <string name="build_date_default">2012-01-01-0000</string>
-  <string name="security_patch_custom">Security patch level</string>
+  <string name="security_patch_custom">Nivell de pedaç de seguretat d\'Android</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Contrasenya per a còpies d\'ordinador</string>
   <!-- Volume adjustment sounds -->
@@ -84,14 +84,17 @@
   <string name="unlock_scramble_pin_layout_summary">Disposa aleatòriament les tecles del PIN en desbloquejar el dispositiu</string>
   <!-- Dashboard options -->
   <string name="dashboard_category">Opcions del panell</string>
-  <string name="dashboard_suggestions_title">Suggeriments del panell</string>
+  <string name="dashboard_suggestions_title">Suggestions</string>
   <string name="summary_dashboard_suggestions_enabled">S\'han activat els suggeriments del panell</string>
   <string name="summary_dashboard_suggestions_disabled">S\'han desactivat els suggeriments del panell</string>
-  <string name="remove_tile_summaries_title">Elimina l\'explicació als controls</string>
-  <string name="remove_tile_summaries_summary">Elimina les explicacions mostrades sota els títols</string>
-  <string name="dashboard_conditions_title">Condicions del panell</string>
+  <string name="remove_tile_summaries_title">Summaries</string>
+  <string name="remove_tile_summaries_summary_enabled">Dashboard summaries are enabled</string>
+  <string name="remove_tile_summaries_summary_disabled">Dashboard summaries are disabled</string>
+  <string name="dashboard_conditions_title">Conditions</string>
   <string name="summary_dashboard_conditions_enabled">S\'han activat les condicions del panel</string>
   <string name="summary_dashboard_conditions_disabled">S\'han desactivat les condicions del panel</string>
+  <string name="dashboard_columns_portrait_title">Columns (portrait)</string>
+  <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
   <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">Accepta tots els tipus d\'arxiu</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
@@ -124,8 +127,8 @@
   <string name="advanced">Avançat</string>
   <string name="profiles_add">Afegeix...</string>
   <!-- Camera shutter sound -->
-  <string name="camera_sounds_title">Camera shutter sound</string>
-  <string name="camera_sounds_summary">Disabling may not work on 3rd party camera apps and in HDR+ mode</string>
+  <string name="camera_sounds_title">So de l\'obturador de la càmera</string>
+  <string name="camera_sounds_summary">La desactivació pot no funcionar en aplicacions de càmera de tercers i en mode HDR+</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Editar la configuració del llum</string>
   <string name="pulse_speed_title">Durada i velocitat del parpelleig</string>
@@ -168,6 +171,19 @@
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">Trieu una aplicació</string>
   <string name="reset">Reinicia</string>
+  <!-- Less Notification sounds -->
+  <string name="less_notification_sounds_title">Less frequent notification sounds</string>
+  <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
+  <string name="less_notification_sounds_default">Default Behavior</string>
+  <string name="less_notification_sounds_3s">3 seconds</string>
+  <string name="less_notification_sounds_5s">5 seconds</string>
+  <string name="less_notification_sounds_10s">10 seconds</string>
+  <string name="less_notification_sounds_15s">15 seconds</string>
+  <string name="less_notification_sounds_30s">30 seconds</string>
+  <string name="less_notification_sounds_45s">45 seconds</string>
+  <string name="less_notification_sounds_1m">1 minute</string>
+  <string name="less_notification_sounds_2m">2 minutes</string>
+  <string name="less_notification_sounds_5m">5 minutes</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Uneix el volum de trucada i notificació</string>
   <string name="notification_volume_option_title">Volum de notificació</string>
@@ -189,9 +205,13 @@
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">Mantén el punto d\'accés Wi-Fi encès</string>
   <!-- double tap statusbar to sleep -->
-  <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
-  <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+  <string name="double_tap_to_sleep_title">Doble toc per suspendre (barra d\'estat)</string>
+  <string name="double_tap_to_sleep_summary">Doble toc a la barra d\'estat per suspendre el dispositiu</string>
   <!-- Lockscreen double tap to sleep -->
-  <string name="double_tap_sleep_anywhere_title">Double tap to sleep (lockscreen)</string>
-  <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
+  <string name="double_tap_sleep_anywhere_title">Doble toc per suspendre (pantalla de bloqueig)</string>
+  <string name="double_tap_sleep_anywhere_summary">Doble toc en qualsevol punt de la pantalla de bloqueig per suspendre el dispositiu</string>
+  <!-- Increasing ring tone volume -->
+  <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
+  <string name="increasing_ring_min_volume_title">Start volume</string>
+  <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
 </resources>

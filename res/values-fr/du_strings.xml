@@ -22,7 +22,7 @@
   <string name="mod_version">Version de DU</string>
   <string name="mod_version_default">Inconnue</string>
   <!-- DU Changelog -->
-  <string name="duchangelog_title">Du - Notes de version</string>
+  <string name="duchangelog_title">DU - Notes de version</string>
   <string name="duchangelog_summary">Consulter la liste des changements</string>
   <string name="duchangelog_weeklies">Compilations hebdomadaires</string>
   <string name="duchangelog_official">Compilations officielles</string>
@@ -87,16 +87,19 @@
   <string name="dashboard_suggestions_title">Suggestions</string>
   <string name="summary_dashboard_suggestions_enabled">Suggestions activées</string>
   <string name="summary_dashboard_suggestions_disabled">Suggestions désactivées</string>
-  <string name="remove_tile_summaries_title">Descriptions</string>
-  <string name="remove_tile_summaries_summary">Désactiver les descriptions</string>
+  <string name="remove_tile_summaries_title">Summaries</string>
+  <string name="remove_tile_summaries_summary_enabled">Dashboard summaries are enabled</string>
+  <string name="remove_tile_summaries_summary_disabled">Dashboard summaries are disabled</string>
   <string name="dashboard_conditions_title">Conditions</string>
   <string name="summary_dashboard_conditions_enabled">Conditions activées</string>
   <string name="summary_dashboard_conditions_disabled">Conditions désactivées</string>
+  <string name="dashboard_columns_portrait_title">Columns (portrait)</string>
+  <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
   <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <string name="supersu_title">SuperSU</string>
-  <string name="supersu_dashboard_summary">Gérer les accès \"Root\"</string>
+  <string name="supersu_dashboard_summary">Gérez les accès \"Root\"</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
   <string name="wake_when_plugged_or_unplugged_summary">Allumer l\'écran lorsque le chargeur est connecté ou déconnecté</string>
@@ -168,6 +171,19 @@
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">Sélectionner une application</string>
   <string name="reset">Configuration d\'origine</string>
+  <!-- Less Notification sounds -->
+  <string name="less_notification_sounds_title">Less frequent notification sounds</string>
+  <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
+  <string name="less_notification_sounds_default">Default Behavior</string>
+  <string name="less_notification_sounds_3s">3 seconds</string>
+  <string name="less_notification_sounds_5s">5 seconds</string>
+  <string name="less_notification_sounds_10s">10 seconds</string>
+  <string name="less_notification_sounds_15s">15 seconds</string>
+  <string name="less_notification_sounds_30s">30 seconds</string>
+  <string name="less_notification_sounds_45s">45 seconds</string>
+  <string name="less_notification_sounds_1m">1 minute</string>
+  <string name="less_notification_sounds_2m">2 minutes</string>
+  <string name="less_notification_sounds_5m">5 minutes</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Lier les volumes des notifications et de la sonnerie</string>
   <string name="notification_volume_option_title">Volume des notifications</string>
@@ -189,9 +205,13 @@
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">Veille du point d\'accès Wi-Fi</string>
   <!-- double tap statusbar to sleep -->
-  <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
-  <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+  <string name="double_tap_to_sleep_title">Veille par double appui</string>
+  <string name="double_tap_to_sleep_summary">Mise en veille de l\'appareil par double appui sur la barre d\'état</string>
   <!-- Lockscreen double tap to sleep -->
-  <string name="double_tap_sleep_anywhere_title">Double tap to sleep (lockscreen)</string>
-  <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
+  <string name="double_tap_sleep_anywhere_title">Veille par double appui</string>
+  <string name="double_tap_sleep_anywhere_summary">Mise en veille de l\'appareil par double appui sur l\'écran de déverrouillage</string>
+  <!-- Increasing ring tone volume -->
+  <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
+  <string name="increasing_ring_min_volume_title">Start volume</string>
+  <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
 </resources>

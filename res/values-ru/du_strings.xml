@@ -84,14 +84,17 @@
   <string name="unlock_scramble_pin_layout_summary">Переставить кнопки ввода PIN-кода в случайном порядке</string>
   <!-- Dashboard options -->
   <string name="dashboard_category">Опции меню настроек</string>
-  <string name="dashboard_suggestions_title">Подсказки меню настроек</string>
+  <string name="dashboard_suggestions_title">Suggestions</string>
   <string name="summary_dashboard_suggestions_enabled">Подсказки меню настроек включены</string>
   <string name="summary_dashboard_suggestions_disabled">Подсказки меню настроек выключены</string>
-  <string name="remove_tile_summaries_title">Удалить плитку аннотации</string>
-  <string name="remove_tile_summaries_summary">Удалить краткое название уведомления, отображенное под названием</string>
-  <string name="dashboard_conditions_title">Состояния меню настроек</string>
+  <string name="remove_tile_summaries_title">Summaries</string>
+  <string name="remove_tile_summaries_summary_enabled">Dashboard summaries are enabled</string>
+  <string name="remove_tile_summaries_summary_disabled">Dashboard summaries are disabled</string>
+  <string name="dashboard_conditions_title">Conditions</string>
   <string name="summary_dashboard_conditions_enabled">Состояния меню настроек включены</string>
   <string name="summary_dashboard_conditions_disabled">Состояния меню настроек выключены</string>
+  <string name="dashboard_columns_portrait_title">Columns (portrait)</string>
+  <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
   <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">Принимать все типы файлов</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
@@ -168,6 +171,19 @@
   <!-- Add application dialog box title -->
   <string name="profile_choose_app">Выберите приложение</string>
   <string name="reset">Выполнить сброс</string>
+  <!-- Less Notification sounds -->
+  <string name="less_notification_sounds_title">Less frequent notification sounds</string>
+  <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
+  <string name="less_notification_sounds_default">Default Behavior</string>
+  <string name="less_notification_sounds_3s">3 seconds</string>
+  <string name="less_notification_sounds_5s">5 seconds</string>
+  <string name="less_notification_sounds_10s">10 seconds</string>
+  <string name="less_notification_sounds_15s">15 seconds</string>
+  <string name="less_notification_sounds_30s">30 seconds</string>
+  <string name="less_notification_sounds_45s">45 seconds</string>
+  <string name="less_notification_sounds_1m">1 minute</string>
+  <string name="less_notification_sounds_2m">2 minutes</string>
+  <string name="less_notification_sounds_5m">5 minutes</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Связать громкость звонка и уведомлений</string>
   <string name="notification_volume_option_title">Громкость уведомления</string>
@@ -184,14 +200,18 @@
   <string name="night_brightness_text">Когда Ночной режим включается автоматически, выставлять желаемую яркость. Стандартная яркость установлена на низком уровне</string>
   <string name="night_bright_disabled">Отключен</string>
   <string name="night_bright_low">низкая яркость</string>
-  <string name="night_bright_medium">средняя ясркость</string>
+  <string name="night_bright_medium">средняя яркость</string>
   <string name="night_bright_min">минимальная яркость</string>
   <!-- Hotspot idle -->
   <string name="wifi_hotspot_mode_title">Держать Wi-Fi точку доступа включённой</string>
   <!-- double tap statusbar to sleep -->
-  <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
-  <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+  <string name="double_tap_to_sleep_title">Двойное касание для перехода в режим сна (Статусбар)</string>
+  <string name="double_tap_to_sleep_summary">Дважды коснитесь строки состояния, чтобы перевести устройство в спящий режим</string>
   <!-- Lockscreen double tap to sleep -->
-  <string name="double_tap_sleep_anywhere_title">Double tap to sleep (lockscreen)</string>
-  <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
+  <string name="double_tap_sleep_anywhere_title">Дважды коснитесь экрана блокировки, чтобы перевести устройство в спящий режим</string>
+  <string name="double_tap_sleep_anywhere_summary">Дважды коснитесь любого места на экране блокировки, чтобы перевести устройство в спящий режим</string>
+  <!-- Increasing ring tone volume -->
+  <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
+  <string name="increasing_ring_min_volume_title">Start volume</string>
+  <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
 </resources>

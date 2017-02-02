@@ -16,82 +16,85 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- DU Tweaks -->
-  <string name="dirtytweaks_title">Dirty Tweaks</string>
-  <string name="header_category_dirtytweaks">Customization</string>
+  <string name="dirtytweaks_title">Dirty 設定</string>
+  <string name="header_category_dirtytweaks">自訂</string>
   <!-- DU version -->
-  <string name="mod_version">DU version</string>
-  <string name="mod_version_default">Unknown</string>
+  <string name="mod_version">DU 版本</string>
+  <string name="mod_version_default">未知</string>
   <!-- DU Changelog -->
-  <string name="duchangelog_title">Changelog</string>
-  <string name="duchangelog_summary">Check to see what has changed</string>
-  <string name="duchangelog_weeklies">Changelog - Weeklies</string>
-  <string name="duchangelog_official">Changelog - Official</string>
-  <string name="warning_text">Please note that change logs generated here are summaries of commits merged into our source. For a full and detailed change log is recommended that you visit our github or gerrit.</string>
-  <string name="weeklies">Weeklies</string>
-  <string name="official">Official</string>
+  <string name="duchangelog_title">DU 更新日誌</string>
+  <string name="duchangelog_summary">看看 DU 有什麼新功能</string>
+  <string name="duchangelog_weeklies">DU 更新日誌 - 每周版</string>
+  <string name="duchangelog_official">DU 更新日誌 - 正式版</string>
+  <string name="warning_text">請注意，在這裡列出的更新日誌是根據提交整合代碼時的代碼摘要自動生成的。若想查看更完整詳細的更新日誌，請訪問我們的 github 或 gerrit 主頁。</string>
+  <string name="weeklies">每周版</string>
+  <string name="official">正式版</string>
   <string name="changelog_header_version"></string>
-  <string name="changelog_dialog_title">Attention</string>
-  <string name="changelog_dialog_message">Please enable WiFi/Mobile data to download the changelog from our server.</string>
-  <string name="changelog_dialog_ok">OK</string>
+  <string name="changelog_dialog_title">敬請注意</string>
+  <string name="changelog_dialog_message">請啟用 WiFi 或行動數據以從我們的伺服器下載更新日誌。</string>
+  <string name="changelog_dialog_ok">確定</string>
   <!-- DU Updater -->
-  <string name="updater_title">Updater</string>
-  <string name="updater_dashboard_summary">Check for the latest update</string>
+  <string name="updater_title">更新</string>
+  <string name="updater_dashboard_summary">檢查最新的更新</string>
   <!-- About phone screen -->
-  <string name="build_date">Build date</string>
+  <string name="build_date">編譯日期</string>
   <string name="build_date_default">2012-01-01-0000</string>
-  <string name="security_patch_custom">Security patch level</string>
+  <string name="security_patch_custom">Android 安全性修補程式等級</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
-  <string name="local_backup_password_title">Desktop backup password</string>
+  <string name="local_backup_password_title">電腦備份密碼</string>
   <!-- Volume adjustment sounds -->
-  <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+  <string name="volume_adjust_sounds_title">音量調整音效</string>
   <!-- Density category -->
-  <string name="density_category">Density options</string>
+  <string name="density_category">密度選項</string>
   <!-- ADB debugging notifications -->
-  <string name="enable_adb_custom">Android debugging</string>
-  <string name="enable_adb_summary_custom">Enable the Android Debug Bridge (adb) interface</string>
-  <string name="adb_notify">ADB notification</string>
-  <string name="adb_notify_summary">Display a notification when USB or network debugging is enabled</string>
-  <string name="adb_over_network">ADB over network</string>
-  <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi\u2011Fi, USB networks). This setting is reset on reboot</string>
-  <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
+  <string name="enable_adb_custom">Android 偵錯</string>
+  <string name="enable_adb_summary_custom">啟用 Android Debug Bridge (adb) 介面</string>
+  <string name="adb_notify">ADB 通知</string>
+  <string name="adb_notify_summary">當啟用 USB 或 網路偵錯時顯示通知</string>
+  <string name="adb_over_network">網路 ADB</string>
+  <string name="adb_over_network_summary">啟用透過網路介面 (Wi\u2011Fi、USB 網路) 進行 TCP/IP 偵錯。該設定會在重新啟動後重設</string>
+  <string name="adb_over_network_warning">警告：當啟用網路 ADB 時，您的手機將開放於所有已連接的網路！\n\n建議您已連接到信任的網路才使用此功能。\n\n您確定你想啟用此功能嗎？</string>
   <!-- Screenshot sound -->
-  <string name="screenshot_sound_title">Screenshot sound</string>
-  <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
+  <string name="screenshot_sound_title">螢幕擷取音效</string>
+  <string name="screenshot_sound_summary">擷取螢幕畫面時播放音效</string>
   <!-- Display : Rotation -->
-  <string name="display_rotation_title">Rotation angles</string>
-  <string name="display_rotation_disabled">Disabled</string>
-  <string name="display_rotation_unit">degrees</string>
-  <string name="display_rotation_category_title">Rotation</string>
-  <string name="display_rotation_0_title">0 degrees</string>
-  <string name="display_rotation_90_title">90 degrees</string>
-  <string name="display_rotation_180_title">180 degrees</string>
-  <string name="display_rotation_270_title">270 degrees</string>
+  <string name="display_rotation_title">旋轉角度</string>
+  <string name="display_rotation_disabled">停用</string>
+  <string name="display_rotation_unit">度</string>
+  <string name="display_rotation_category_title">旋轉</string>
+  <string name="display_rotation_0_title">0 度</string>
+  <string name="display_rotation_90_title">90 度</string>
+  <string name="display_rotation_180_title">180 度</string>
+  <string name="display_rotation_270_title">270 度</string>
   <!-- Gesture Settings -->
   <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
-  <string name="double_twist_for_camera_mode_custom_summary">To switch in and out of selfie mode in Google Camera, double-twist when you’re in the app</string>
+  <string name="double_twist_for_camera_mode_custom_summary">要在Google相機中切換進入和退出自拍模式，請在應用中雙擊</string>
   <!-- Volume Steps -->
-  <string name="volume_steps_title">Volume steps</string>
-  <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
-  <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
-  <string name="volume_steps_music_title">Volume steps: Music</string>
-  <string name="volume_steps_notification_title">Volume steps: Notification</string>
-  <string name="volume_steps_ring_title">Volume steps: Ringer</string>
-  <string name="volume_steps_system_title">Volume steps: System</string>
-  <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
-  <string name="volume_steps_reset">Reset</string>
+  <string name="volume_steps_title">音量調整步進</string>
+  <string name="volume_steps_alarm_title">音量調整步進：鬧鐘</string>
+  <string name="volume_steps_dtmf_title">音量步進等級：雙音多頻 (DTMF)</string>
+  <string name="volume_steps_music_title">音量調整步進：音樂</string>
+  <string name="volume_steps_notification_title">音量調整步進：通知</string>
+  <string name="volume_steps_ring_title">音量調整步進：鈴聲</string>
+  <string name="volume_steps_system_title">音量調整步進：系統</string>
+  <string name="volume_steps_voice_call_title">音量調整步進：語音通話</string>
+  <string name="volume_steps_reset">重設</string>
   <!-- Scramble PIN Layout on Lockscreen -->
-  <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-  <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+  <string name="unlock_scramble_pin_layout_title">亂序布局</string>
+  <string name="unlock_scramble_pin_layout_summary">解鎖裝置時亂序布局鍵盤按鍵位置</string>
   <!-- Dashboard options -->
-  <string name="dashboard_category">Dashboard options</string>
-  <string name="dashboard_suggestions_title">Dashboard suggestions</string>
+  <string name="dashboard_category">面板選項</string>
+  <string name="dashboard_suggestions_title">Suggestions</string>
   <string name="summary_dashboard_suggestions_enabled">Dashboard suggestions are enabled</string>
   <string name="summary_dashboard_suggestions_disabled">Dashboard suggestions are disabled</string>
-  <string name="remove_tile_summaries_title">Remove tile summaries</string>
-  <string name="remove_tile_summaries_summary">Remove tiles summaries that display underneath tile titles</string>
-  <string name="dashboard_conditions_title">Dashboard conditions</string>
+  <string name="remove_tile_summaries_title">Summaries</string>
+  <string name="remove_tile_summaries_summary_enabled">Dashboard summaries are enabled</string>
+  <string name="remove_tile_summaries_summary_disabled">Dashboard summaries are disabled</string>
+  <string name="dashboard_conditions_title">Conditions</string>
   <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
   <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
+  <string name="dashboard_columns_portrait_title">Columns (portrait)</string>
+  <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
   <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">Accept all file types</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
@@ -116,7 +119,7 @@
   <string name="battery_light_full_color_title">Charged (90%)</string>
   <string name="battery_light_really_full_color_title">Charged (100%)</string>
   <string name="edit_battery_settings">Edit battery settings</string>
-  <string name="notification_light_general_title">General</string>
+  <string name="notification_light_general_title">一般</string>
   <string name="led_color_green">Green</string>
   <string name="led_color_red">Red</string>
   <string name="led_color_blue">Blue</string>
@@ -140,58 +143,75 @@
   <string name="pulse_length_normal">Normal</string>
   <string name="pulse_length_long">Long</string>
   <string name="pulse_length_very_long">Very long</string>
-  <string name="pulse_speed_very_fast">Very fast</string>
-  <string name="pulse_speed_fast">Fast</string>
-  <string name="pulse_speed_normal">Normal</string>
-  <string name="pulse_speed_slow">Slow</string>
-  <string name="pulse_speed_very_slow">Very slow</string>
+  <string name="pulse_speed_very_fast">很快</string>
+  <string name="pulse_speed_fast">快</string>
+  <string name="pulse_speed_normal">適中</string>
+  <string name="pulse_speed_slow">慢</string>
+  <string name="pulse_speed_very_slow">很慢</string>
   <!-- Lights settings screen, notification light settings -->
-  <string name="notification_light_title">Notification light</string>
-  <string name="notificationlight_title">Notification LED settings</string>
-  <string name="notification_light_general_title">General</string>
-  <string name="notification_light_applist_title">Apps</string>
-  <string name="notification_light_phonelist_title">Phone</string>
-  <string name="notification_light_use_custom">Use custom values</string>
-  <string name="notification_light_default_value">Default</string>
-  <string name="notification_light_missed_call_title">Missed call</string>
-  <string name="notification_light_voicemail_title">Voicemail</string>
-  <string name="notification_light_screen_on">Lights with screen on</string>
-  <string name="notification_light_zen_mode">Lights in Do Not Disturb mode</string>
-  <string name="notification_light_use_multiple_leds">Multiple LEDs</string>
-  <string name="keywords_lights_brightness_level">dim leds brightness</string>
-  <string name="notification_light_automagic">Choose colors automatically</string>
+  <string name="notification_light_title">通知指示燈</string>
+  <string name="notificationlight_title">通知 LED 設定</string>
+  <string name="notification_light_general_title">一般</string>
+  <string name="notification_light_applist_title">應用程式</string>
+  <string name="notification_light_phonelist_title">撥打電話</string>
+  <string name="notification_light_use_custom">使用自訂值</string>
+  <string name="notification_light_default_value">預設</string>
+  <string name="notification_light_missed_call_title">未接來電</string>
+  <string name="notification_light_voicemail_title">語音留言</string>
+  <string name="notification_light_screen_on">螢幕開啟時依然使用指示燈</string>
+  <string name="notification_light_zen_mode">勿擾模式下允許使用指示燈</string>
+  <string name="notification_light_use_multiple_leds">多重 LED</string>
+  <string name="keywords_lights_brightness_level">降低 LED 亮度</string>
+  <string name="notification_light_automagic">自動選擇顏色</string>
   <!-- Lights settings, LED notification -->
-  <string name="led_notification_title">Light settings</string>
-  <string name="led_notification_text">LED light enabled by settings</string>
-  <string name="notification_light_no_apps_summary">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
+  <string name="led_notification_title">指示燈設定</string>
+  <string name="led_notification_text">已透過設定啟用 LED 指示燈</string>
+  <string name="notification_light_no_apps_summary">若要控制個別應用程式，請啟動「%1$s」然後按下選單列中的「\u002b」</string>
   <string name="font_sample_text">11:57</string>
   <!-- Add application dialog box title -->
-  <string name="profile_choose_app">Choose app</string>
-  <string name="reset">Reset</string>
+  <string name="profile_choose_app">選擇應用程式</string>
+  <string name="reset">重設</string>
+  <!-- Less Notification sounds -->
+  <string name="less_notification_sounds_title">Less frequent notification sounds</string>
+  <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
+  <string name="less_notification_sounds_default">Default Behavior</string>
+  <string name="less_notification_sounds_3s">3 seconds</string>
+  <string name="less_notification_sounds_5s">5 seconds</string>
+  <string name="less_notification_sounds_10s">10 seconds</string>
+  <string name="less_notification_sounds_15s">15 seconds</string>
+  <string name="less_notification_sounds_30s">30 seconds</string>
+  <string name="less_notification_sounds_45s">45 seconds</string>
+  <string name="less_notification_sounds_1m">1 minute</string>
+  <string name="less_notification_sounds_2m">2 minutes</string>
+  <string name="less_notification_sounds_5m">5 minutes</string>
   <!-- Linked / unlinked notification volume -->
-  <string name="link_volume_option_title">Link ring and notification volume</string>
-  <string name="notification_volume_option_title">Notification volume</string>
-  <string name="ring_notification_volume_option_title">Ring and notification volume</string>
+  <string name="link_volume_option_title">連結鈴聲與通知音量</string>
+  <string name="notification_volume_option_title">通知音量</string>
+  <string name="ring_notification_volume_option_title">鈴聲與通知音量</string>
   <!-- Themes -->
-  <string name="themes_title">Themes</string>
-  <string name="themes_dashboard_summary">Manage your themes</string>
+  <string name="themes_title">主題</string>
+  <string name="themes_dashboard_summary">管理您的主題</string>
   <!-- Manage applications: Substratum overlays -->
-  <string name="menu_show_substratum">Show overlays</string>
-  <string name="menu_hide_substratum">Hide overlays</string>
+  <string name="menu_show_substratum">顯示覆蓋</string>
+  <string name="menu_hide_substratum">隱藏覆蓋</string>
   <!-- Advanced night mode brightness -->
-  <string name="night_brightness_category">Brightness</string>
-  <string name="night_brightness_value_title">Night Light brightness</string>
-  <string name="night_brightness_text">When Night Light is enabled automatically set the desired brightness. The default brightness is set to low brightness</string>
-  <string name="night_bright_disabled">Disabled</string>
-  <string name="night_bright_low">low brightness</string>
-  <string name="night_bright_medium">medium brightness</string>
-  <string name="night_bright_min">minimum brightness</string>
+  <string name="night_brightness_category">亮度</string>
+  <string name="night_brightness_value_title">夜間模式亮度</string>
+  <string name="night_brightness_text">當夜間模式啟動時自動選擇需要的亮度，默認設置為低亮度。</string>
+  <string name="night_bright_disabled">停用</string>
+  <string name="night_bright_low">低亮度</string>
+  <string name="night_bright_medium">中等亮度</string>
+  <string name="night_bright_min">最小亮度</string>
   <!-- Hotspot idle -->
-  <string name="wifi_hotspot_mode_title">Keep WiFi Hotspot on</string>
+  <string name="wifi_hotspot_mode_title">保持開啟 WiFi 可攜式無線基地台</string>
   <!-- double tap statusbar to sleep -->
-  <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
-  <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+  <string name="double_tap_to_sleep_title">輕觸兩下以關閉螢幕（狀態列）</string>
+  <string name="double_tap_to_sleep_summary">輕觸兩下狀態列以使裝置進入休眠</string>
   <!-- Lockscreen double tap to sleep -->
-  <string name="double_tap_sleep_anywhere_title">Double tap to sleep (lockscreen)</string>
-  <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
+  <string name="double_tap_sleep_anywhere_title">輕觸兩下以關閉螢幕（鎖定畫面）</string>
+  <string name="double_tap_sleep_anywhere_summary">雙點撃鎖定螢幕上任何位置將螢幕關閉</string>
+  <!-- Increasing ring tone volume -->
+  <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
+  <string name="increasing_ring_min_volume_title">Start volume</string>
+  <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
 </resources>
