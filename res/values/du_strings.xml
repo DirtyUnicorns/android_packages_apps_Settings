@@ -137,4 +137,5 @@
     <string name="keyguard_multiuser_switch_title">Multiuser switch</string>
     <string name="keyguard_multiuser_switch_summary">Show multiuser switch on the statusbar</string>
 
+    <string name="background_processes_settings_title">Background processes</string>
 </resources>
