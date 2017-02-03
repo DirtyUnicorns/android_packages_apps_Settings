@@ -745,7 +745,7 @@ public class WifiSettings extends RestrictedSettingsFragment
         // Embolden and enlarge the brief description anyway.
         Spannable boldSpan = (Spannable) emptyTextView.getText();
         boldSpan.setSpan(
-                new TextAppearanceSpan(getActivity(), android.R.style.TextAppearance_Medium), 0,
+                new TextAppearanceSpan(getActivity(), R.dimen.wifi_bt_empty_text), 0,
                 briefText.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         getPreferenceScreen().removeAll();
     }

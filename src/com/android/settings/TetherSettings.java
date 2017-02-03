@@ -96,7 +96,7 @@ public class TetherSettings extends RestrictedSettingsFragment
     private OnStartTetheringCallback mStartTetheringCallback;
 
     private static final String WIFI_AP_SSID_AND_SECURITY = "wifi_ap_ssid_and_security";
-    private static final int CONFIG_SUBTEXT = R.string.wifi_tether_configure_subtext;
+    private static final int CONFIG_SUBTEXT = R.string.wifi_tether_configure_subtext_custom;
 
     private String[] mSecurityType;
     private Preference mCreateNetwork;

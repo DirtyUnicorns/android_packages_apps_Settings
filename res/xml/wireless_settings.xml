@@ -23,11 +23,6 @@
         android:title="@string/airplane_mode"
         android:disableDependentsState="true" />
 
-    <SwitchPreference
-        android:key="toggle_nfc"
-        android:title="@string/nfc_quick_toggle_title"
-        android:summary="@string/nfc_quick_toggle_summary" />
-
     <PreferenceScreen
         android:key="wifi_calling_settings"
         android:title="@string/wifi_calling_settings_title"
@@ -35,22 +30,10 @@
         android:fragment="com.android.settings.WifiCallingSettings" />
 
     <com.android.settingslib.RestrictedPreference
-        android:fragment="com.android.settings.nfc.AndroidBeam"
-        android:key="android_beam_settings"
-        android:title="@string/android_beam_settings_title" />
-
-    <com.android.settingslib.RestrictedPreference
         android:fragment="com.android.settings.TetherSettings"
         android:key="tether_settings"
         android:title="@string/tether_settings_title_all"
         settings:userRestriction="no_config_tethering"
-        settings:useAdminDisabledSummary="true" />
-
-    <com.android.settingslib.RestrictedPreference
-        android:fragment="com.android.settings.vpn2.VpnSettings"
-        android:key="vpn_settings"
-        android:title="@string/vpn_settings_title"
-        settings:userRestriction="no_config_vpn"
         settings:useAdminDisabledSummary="true" />
 
     <com.android.settingslib.RestrictedPreference
@@ -67,23 +50,25 @@
     </com.android.settingslib.RestrictedPreference>
 
     <com.android.settingslib.RestrictedPreference
+        android:fragment="com.android.settings.vpn2.VpnSettings"
+        android:key="vpn_settings"
+        android:title="@string/vpn_settings_title"
+        settings:userRestriction="no_config_vpn"
+        settings:useAdminDisabledSummary="true" />
+
+    <!--com.android.settingslib.RestrictedPreference
         android:key="manage_mobile_plan"
         android:title="@string/manage_mobile_plan_title"
         android:persistent="false"
         settings:userRestriction="no_config_mobile_networks"
-        settings:useAdminDisabledSummary="true" />
+        settings:useAdminDisabledSummary="true" /-->
 
     <com.android.settingslib.RestrictedPreference
             android:key="cell_broadcast_settings"
             android:title="@string/cell_broadcast_settings"
-            settings:useAdminDisabledSummary="true">
-            <!--intent
-                    android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.cellbroadcastreceiver"
-                    android:targetClass="com.android.cellbroadcastreceiver.CellBroadcastSettings" /-->
-    </com.android.settingslib.RestrictedPreference>
+            settings:useAdminDisabledSummary="true"/>
 
-    <com.android.settingslib.RestrictedPreference
+    <!--com.android.settingslib.RestrictedPreference
         android:key="wimax_settings"
         android:title="@string/wimax_settings"
         settings:userRestriction="no_config_mobile_networks"
@@ -92,7 +77,7 @@
             android:action="android.intent.action.MAIN"
             android:targetPackage="com.android.settings.wimax"
             android:targetClass="com.android.settings.wimax.WimaxSettings" />
-    </com.android.settingslib.RestrictedPreference>
+    </com.android.settingslib.RestrictedPreference-->
 
     <PreferenceScreen
         android:fragment="com.android.settings.ProxySelector"
@@ -100,12 +85,26 @@
         android:title="@string/proxy_settings_title" />
 
     <!-- Network reset -->
-    <com.android.settingslib.RestrictedPreference
+    <!--com.android.settingslib.RestrictedPreference
         android:key="network_reset"
         android:title="@string/reset_network_title"
         settings:keywords="@string/keywords_network_reset"
         settings:userRestriction="no_network_reset"
         settings:useAdminDisabledSummary="true"
-        android:fragment="com.android.settings.ResetNetwork" />
+        android:fragment="com.android.settings.ResetNetwork" /-->
+
+    <PreferenceCategory
+        android:key="nfc_options"
+        android:title="@string/nfc_options_category" />
+
+    <SwitchPreference
+        android:key="toggle_nfc"
+        android:title="@string/nfc_quick_toggle_title"
+        android:summary="@string/nfc_quick_toggle_summary" />
+
+    <com.android.settingslib.RestrictedPreference
+        android:fragment="com.android.settings.nfc.AndroidBeam"
+        android:key="android_beam_settings"
+        android:title="@string/android_beam_settings_title" />
 
 </PreferenceScreen>

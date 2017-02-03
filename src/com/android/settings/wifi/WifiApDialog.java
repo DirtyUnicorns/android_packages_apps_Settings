@@ -128,7 +128,7 @@ public class WifiApDialog extends AlertDialog implements View.OnClickListener,
 
         Context context = getContext();
 
-        setTitle(R.string.wifi_tether_configure_ap_text);
+        setTitle(R.string.wifi_tether_configure_ap_text_custom);
         mView.findViewById(R.id.type).setVisibility(View.VISIBLE);
         mSsid = (TextView) mView.findViewById(R.id.ssid);
         mPassword = (EditText) mView.findViewById(R.id.password);

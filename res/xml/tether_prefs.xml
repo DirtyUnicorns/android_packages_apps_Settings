@@ -22,21 +22,6 @@
         android:title="@string/usb_tethering_button_text" />
 
     <SwitchPreference
-        android:key="enable_wifi_ap"
-        android:title="@string/wifi_tether_checkbox_text" />
-
-    <Preference
-        android:key="wifi_ap_ssid_and_security"
-        android:title="@string/wifi_tether_configure_ap_text"
-        android:persistent="false" />
-
-    <ListPreference
-        android:key="wifi_hotspot_mode"
-        android:title="@string/wifi_hotspot_mode_title"
-        android:entries="@array/wifi_hotspot_mode_entries"
-        android:entryValues="@array/wifi_hotspot_mode_entryValues" />
-
-    <SwitchPreference
         android:key="enable_bluetooth_tethering"
         android:title="@string/bluetooth_tether_checkbox_text" />
 
@@ -45,4 +30,24 @@
             android:summary="@string/tether_settings_disabled_on_data_saver"
             android:selectable="false"
             settings:allowDividerAbove="true" />
+
+    <PreferenceCategory
+        android:key="wifi_tether_options"
+        android:title="@string/wifi_tether_options_category" />
+
+    <SwitchPreference
+        android:key="enable_wifi_ap"
+        android:title="@string/wifi_tether_checkbox_text_custom" />
+
+    <Preference
+        android:key="wifi_ap_ssid_and_security"
+        android:title="@string/wifi_tether_configure_ap_text_custom"
+        android:persistent="false" />
+
+    <ListPreference
+        android:key="wifi_hotspot_mode"
+        android:title="@string/wifi_hotspot_mode_title"
+        android:entries="@array/wifi_hotspot_mode_entries"
+        android:entryValues="@array/wifi_hotspot_mode_entryValues" />
+
 </PreferenceScreen>

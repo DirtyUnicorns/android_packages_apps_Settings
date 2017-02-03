@@ -128,7 +128,7 @@ public class WifiApEnabler {
         String s = mContext.getString(
                 com.android.internal.R.string.wifi_tether_configure_ssid_default);
         mSwitch.setSummary(String.format(
-                    mContext.getString(R.string.wifi_tether_enabled_subtext),
+                    mContext.getString(R.string.wifi_tether_enabled_subtext_custom),
                     (wifiConfig == null) ? s : wifiConfig.SSID));
     }
 
