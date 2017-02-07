@@ -233,7 +233,7 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final int REQUEST_SUGGESTION = 42;
 
-    private static final String SUPERSU_FRAGMENT = "com.android.settings.SuperSU";
+    private static final String ROOTMANAGEMENT_FRAGMENT = "com.android.settings.RootManagement";
 
     private static final String THEMES_FRAGMENT = "com.android.settings.Themes";
 
@@ -243,6 +243,10 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private CharSequence mInitialTitle;
     private int mInitialTitleResId;
+
+    private boolean rootSupported;
+    private String rootPackageName;
+    private String rootClassName;
 
     // Show only these settings for restricted users
     private String[] SETTINGS_FOR_RESTRICTED = {
@@ -1032,10 +1036,11 @@ public class SettingsActivity extends SettingsDrawerActivity
      */
     private Fragment switchToFragment(String fragmentName, Bundle args, boolean validate,
             boolean addToBackStack, int titleResId, CharSequence title, boolean withTransition) {
-        if (SUPERSU_FRAGMENT.equals(fragmentName)) {
-            Intent superSUIntent = new Intent();
-            superSUIntent.setClassName("eu.chainfire.supersu", "eu.chainfire.supersu.MainActivity");
-            startActivity(superSUIntent);
+        if (ROOTMANAGEMENT_FRAGMENT.equals(fragmentName)) {
+            Intent rootManagementIntent = new Intent();
+            setupRootManagement();
+            rootManagementIntent.setClassName(rootPackageName, rootClassName);
+            startActivity(rootManagementIntent);
             finish();
             return null;
         } else if (THEMES_FRAGMENT.equals(fragmentName)) {
@@ -1142,15 +1147,11 @@ public class SettingsActivity extends SettingsDrawerActivity
                         Settings.DevelopmentSettingsActivity.class.getName()),
                 showDev, isAdmin, pm);
 
-        // SuperSU
-        boolean suSupported = false;
-        try {
-            suSupported = (getPackageManager().getPackageInfo("eu.chainfire.supersu", 0).versionCode >= 185);
-        } catch (PackageManager.NameNotFoundException e) {
-        }
+        // Root management
+        setupRootManagement();
         setTileEnabled(new ComponentName(packageName,
-                        Settings.SuperSUActivity.class.getName()),
-                suSupported, isAdmin, pm);
+                        Settings.RootManagementActivity.class.getName()),
+                rootSupported, isAdmin, pm);
 
         // Substratum
         boolean themesSupported = false;
@@ -1205,6 +1206,26 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                 BackupSettingsActivity.class.getName()), hasBackupActivity, isAdmin, pm);
 
+    }
+
+    private void setupRootManagement() {
+        rootSupported = false;
+        rootPackageName = "";
+        rootClassName = "";
+        try {
+            rootSupported = (getPackageManager().getPackageInfo("eu.chainfire.supersu", 0).versionCode >= 185);
+            rootPackageName = "eu.chainfire.supersu";
+            rootClassName = "eu.chainfire.supersu.MainActivity";
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        if (!rootSupported) {
+            try {
+                rootSupported = (getPackageManager().getPackageInfo("me.phh.superuser", 0).versionCode > 0);
+                rootPackageName = "me.phh.superuser";
+                rootClassName = "com.koushikdutta.superuser.MainActivity";
+            } catch (PackageManager.NameNotFoundException e) {
+            }
+        }
     }
 
     private void setTileEnabled(ComponentName component, boolean enabled, boolean isAdmin,

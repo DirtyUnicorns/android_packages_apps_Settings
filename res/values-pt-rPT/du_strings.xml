@@ -97,9 +97,8 @@
   <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
   <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">Accept all file types</string>
-  <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
-  <string name="supersu_title">SuperSU</string>
-  <string name="supersu_dashboard_summary">Manage root access</string>
+  <!-- Root management -->
+  <string name="rootmanagement_dashboard_summary">Manage root access</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
   <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
