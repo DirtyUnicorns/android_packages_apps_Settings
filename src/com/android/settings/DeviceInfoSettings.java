@@ -31,6 +31,7 @@ import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
+import android.support.v7.preference.PreferenceScreen;
 import android.telephony.CarrierConfigManager;
 import android.text.TextUtils;
 import android.util.Log;
@@ -56,6 +57,8 @@ import java.util.regex.Pattern;
 
 import static com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 
+import com.android.internal.util.du.DuUtils;
+
 public class DeviceInfoSettings extends SettingsPreferenceFragment implements Indexable {
 
     private static final String LOG_TAG = "DeviceInfoSettings";
@@ -78,6 +81,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
     private static final String KEY_MOD_VERSION = "mod_version";
     private static final String KEY_DU_CHANGELOG = "du_changelog";
+    private static final String KEY_ABOUTDU = "aboutdu";
+    private static final String KEY_ABOUTDU_PACKAGE_NAME = "com.dirtyunicorns.about";
+
+    private PreferenceScreen mDuAbout;
 
     long[] mHits = new long[3];
 
@@ -108,6 +115,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setStringSummary(KEY_FIRMWARE_VERSION, Build.VERSION.RELEASE);
         findPreference(KEY_FIRMWARE_VERSION).setEnabled(true);
 
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
         final String patch = DeviceInfoUtils.getSecurityPatch();
         if (!TextUtils.isEmpty(patch)) {
             setStringSummary(KEY_SECURITY_PATCH, patch);
@@ -130,6 +139,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         } else if (!SELinux.isSELinuxEnforced()) {
             String status = getResources().getString(R.string.selinux_status_permissive);
             setStringSummary(KEY_SELINUX_STATUS, status);
+        }
+
+        //Remove DU About if package is removed
+        mDuAbout = (PreferenceScreen) findPreference(KEY_ABOUTDU);
+        if (!DuUtils.isPackageInstalled(getActivity(), KEY_ABOUTDU_PACKAGE_NAME)) {
+            prefScreen.removePreference(mDuAbout);
         }
 
         // Remove selinux information if property is not present

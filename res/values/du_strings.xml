@@ -41,6 +41,10 @@
     <string name="updater_title">Updater</string>
     <string name="updater_dashboard_summary">Check for the latest update</string>
 
+    <!-- DU About -->
+    <string name="aboutdu">ROM information</string>
+    <string name="aboutdu_summary">Information about our project, developers and devices</string>
+
     <!-- About phone screen -->
     <string name="build_date">Build date</string>
     <string name="build_date_default">2012-01-01-0000</string>

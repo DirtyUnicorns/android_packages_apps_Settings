@@ -47,6 +47,16 @@
                 android:title="@string/legal_information"
                 android:fragment="com.android.settings.LegalSettings" />
 
+        <!-- DU About -->
+        <PreferenceScreen
+            android:key="aboutdu"
+            android:title="@string/aboutdu"
+            android:summary="@string/aboutdu_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.dirtyunicorns.about"
+                    android:targetClass="com.dirtyunicorns.about.activities.MainActivity" />
+        </PreferenceScreen>
+
         <PreferenceScreen
                 android:key="regulatory_info"
                 android:title="@string/regulatory_labels">
