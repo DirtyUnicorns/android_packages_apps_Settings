@@ -36,6 +36,9 @@
   <!-- DU Updater -->
   <string name="updater_title">Aktualizacje DU</string>
   <string name="updater_dashboard_summary">Sprawdź najnowszą aktualizację</string>
+  <!-- DU About -->
+  <string name="aboutdu">ROM information</string>
+  <string name="aboutdu_summary">Information about our project, developers and devices</string>
   <!-- About phone screen -->
   <string name="build_date">Data kompilacji</string>
   <string name="build_date_default">2012-01-01-0000</string>
@@ -84,21 +87,24 @@
   <string name="unlock_scramble_pin_layout_summary">Pomieszany układ cyfr przy wpisywaniu kodu PIN</string>
   <!-- Dashboard options -->
   <string name="dashboard_category">Opcje panelu ustawień</string>
-  <string name="dashboard_suggestions_title">Suggestions</string>
+  <string name="dashboard_suggestions_title">Sugestie</string>
   <string name="summary_dashboard_suggestions_enabled">Sugestie panelu ustawień są włączone</string>
   <string name="summary_dashboard_suggestions_disabled">Sugestie panelu ustawień są wyłączone</string>
-  <string name="remove_tile_summaries_title">Summaries</string>
-  <string name="remove_tile_summaries_summary_enabled">Dashboard summaries are enabled</string>
-  <string name="remove_tile_summaries_summary_disabled">Dashboard summaries are disabled</string>
-  <string name="dashboard_conditions_title">Conditions</string>
+  <string name="remove_tile_summaries_title">Podsumowania</string>
+  <string name="remove_tile_summaries_summary_enabled">Podsumowania panelu ustawień są włączone</string>
+  <string name="remove_tile_summaries_summary_disabled">Podsumowania panelu ustawień są wyłączone</string>
+  <string name="dashboard_conditions_title">Parametry</string>
   <string name="summary_dashboard_conditions_enabled">Warunki panelu ustawień są włączone</string>
   <string name="summary_dashboard_conditions_disabled">Warunki panelu ustawień są wyłączone</string>
-  <string name="dashboard_columns_portrait_title">Columns (portrait)</string>
-  <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
+  <string name="dashboard_columns_portrait_title">Kolumny (portret)</string>
+  <string name="dashboard_columns_landscape_title">Kolumny (krajobraz)</string>
   <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">Akceptuj wszystkie typy plików</string>
-  <!-- Root management -->
-  <string name="rootmanagement_dashboard_summary">Zarządzanie uprawnieniami root</string>
+  <!-- Root Management -->
+  <string name="rootmanagement_title">Root management</string>
+  <string name="rootmanagement_dashboard_summary">Manage root access</string>
+  <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+  <string name="supersu_title">SuperSU</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Wybudź przy podłączaniu</string>
   <string name="wake_when_plugged_or_unplugged_summary">Włącz ekran podczas podłączania i odłączania źródła zasilania</string>
@@ -171,18 +177,18 @@
   <string name="profile_choose_app">Wybierz aplikację</string>
   <string name="reset">Resetuj</string>
   <!-- Less Notification sounds -->
-  <string name="less_notification_sounds_title">Less frequent notification sounds</string>
-  <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
-  <string name="less_notification_sounds_default">Default Behavior</string>
-  <string name="less_notification_sounds_3s">3 seconds</string>
-  <string name="less_notification_sounds_5s">5 seconds</string>
-  <string name="less_notification_sounds_10s">10 seconds</string>
-  <string name="less_notification_sounds_15s">15 seconds</string>
-  <string name="less_notification_sounds_30s">30 seconds</string>
-  <string name="less_notification_sounds_45s">45 seconds</string>
-  <string name="less_notification_sounds_1m">1 minute</string>
-  <string name="less_notification_sounds_2m">2 minutes</string>
-  <string name="less_notification_sounds_5m">5 minutes</string>
+  <string name="less_notification_sounds_title">Zmniejszenie częstotliwości dźwięków powiadomień</string>
+  <string name="less_notification_sounds_summary">Ogranicz ilość dźwięków powiadomień każdej aplikacji do jednego w wybranym czasie</string>
+  <string name="less_notification_sounds_default">Domyślne zachowanie</string>
+  <string name="less_notification_sounds_3s">3 sekundy</string>
+  <string name="less_notification_sounds_5s">5 sekund</string>
+  <string name="less_notification_sounds_10s">10 sekund</string>
+  <string name="less_notification_sounds_15s">15 sekund</string>
+  <string name="less_notification_sounds_30s">30 sekund</string>
+  <string name="less_notification_sounds_45s">45 sekund</string>
+  <string name="less_notification_sounds_1m">1 minuta</string>
+  <string name="less_notification_sounds_2m">2 minuty</string>
+  <string name="less_notification_sounds_5m">5 min</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Połącz dźwięk połączeń i powiadomień</string>
   <string name="notification_volume_option_title">Głośność powiadomień</string>
@@ -201,8 +207,15 @@
   <string name="night_bright_low">niska jasność</string>
   <string name="night_bright_medium">średnia jasność</string>
   <string name="night_bright_min">minimalna jasność</string>
-  <!-- Hotspot idle -->
-  <string name="wifi_hotspot_mode_title">Utrzymuj Hotspot WiFi włączony</string>
+  <!-- Wi-Fi Hotspot -->
+  <string name="wifi_tether_options_category">Wi-Fi tether options</string>
+  <string name="wifi_hotspot_mode_title">Hotspot timeout</string>
+  <string name="wifi_tether_checkbox_text_custom">Enable hotspot</string>
+  <string name="wifi_tether_enabled_subtext_custom"><xliff:g id="network_ssid">%1$s</xliff:g> is now active</string>
+  <string name="wifi_tether_configure_ap_text_custom">Setup hotspot</string>
+  <string name="wifi_tether_configure_subtext_custom">Hotspot \"<xliff:g id="network_ssid">\u0022%1$s\u0022</xliff:g>\" configured</string>
+  <!-- NFC -->
+  <string name="nfc_options_category">NFC options</string>
   <!-- double tap statusbar to sleep -->
   <string name="double_tap_to_sleep_title">Stuknij dwukrotnie aby uspać (pasek stanu)</string>
   <string name="double_tap_to_sleep_summary">Dwukrotnie dotknij pasku stanu, aby uśpić urządzenie</string>
@@ -210,7 +223,7 @@
   <string name="double_tap_sleep_anywhere_title">Dwukrotnie stuknij, aby uspać (ekran blokady)</string>
   <string name="double_tap_sleep_anywhere_summary">Dwukrotnie stuknij w dowolnym miejscu ekranu blokady, by uśpić urządzenie</string>
   <!-- Increasing ring tone volume -->
-  <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
-  <string name="increasing_ring_min_volume_title">Start volume</string>
-  <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
+  <string name="increasing_ring_volume_option_title">Narastająca głośność dzwonka</string>
+  <string name="increasing_ring_min_volume_title">Głośność początkowa</string>
+  <string name="increasing_ring_ramp_up_time_title">Odstęp podgłaszania</string>
 </resources>

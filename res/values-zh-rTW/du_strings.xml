@@ -36,6 +36,9 @@
   <!-- DU Updater -->
   <string name="updater_title">更新</string>
   <string name="updater_dashboard_summary">檢查最新的更新</string>
+  <!-- DU About -->
+  <string name="aboutdu">ROM information</string>
+  <string name="aboutdu_summary">Information about our project, developers and devices</string>
   <!-- About phone screen -->
   <string name="build_date">編譯日期</string>
   <string name="build_date_default">2012-01-01-0000</string>
@@ -97,8 +100,11 @@
   <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
   <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">Accept all file types</string>
-  <!-- Root management -->
+  <!-- Root Management -->
+  <string name="rootmanagement_title">Root management</string>
   <string name="rootmanagement_dashboard_summary">Manage root access</string>
+  <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+  <string name="supersu_title">SuperSU</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
   <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
@@ -201,8 +207,15 @@
   <string name="night_bright_low">低亮度</string>
   <string name="night_bright_medium">中等亮度</string>
   <string name="night_bright_min">最小亮度</string>
-  <!-- Hotspot idle -->
-  <string name="wifi_hotspot_mode_title">保持開啟 WiFi 可攜式無線基地台</string>
+  <!-- Wi-Fi Hotspot -->
+  <string name="wifi_tether_options_category">Wi-Fi tether options</string>
+  <string name="wifi_hotspot_mode_title">Hotspot timeout</string>
+  <string name="wifi_tether_checkbox_text_custom">Enable hotspot</string>
+  <string name="wifi_tether_enabled_subtext_custom"><xliff:g id="network_ssid">%1$s</xliff:g> is now active</string>
+  <string name="wifi_tether_configure_ap_text_custom">Setup hotspot</string>
+  <string name="wifi_tether_configure_subtext_custom">Hotspot \"<xliff:g id="network_ssid">\u0022%1$s\u0022</xliff:g>\" configured</string>
+  <!-- NFC -->
+  <string name="nfc_options_category">NFC options</string>
   <!-- double tap statusbar to sleep -->
   <string name="double_tap_to_sleep_title">輕觸兩下以關閉螢幕（狀態列）</string>
   <string name="double_tap_to_sleep_summary">輕觸兩下狀態列以使裝置進入休眠</string>

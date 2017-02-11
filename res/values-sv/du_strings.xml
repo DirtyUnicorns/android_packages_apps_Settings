@@ -36,6 +36,9 @@
   <!-- DU Updater -->
   <string name="updater_title">Uppdaterare</string>
   <string name="updater_dashboard_summary">Hämta senaste uppdateringen</string>
+  <!-- DU About -->
+  <string name="aboutdu">ROM information</string>
+  <string name="aboutdu_summary">Information about our project, developers and devices</string>
   <!-- About phone screen -->
   <string name="build_date">Utvecklingsdatum</string>
   <string name="build_date_default">2012-01-01-0000</string>
@@ -97,8 +100,11 @@
   <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
   <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">Acceptera alla filtyper</string>
-  <!-- Root management -->
-  <string name="rootmanagement_dashboard_summary">Hantera root-åtkomst</string>
+  <!-- Root Management -->
+  <string name="rootmanagement_title">Root management</string>
+  <string name="rootmanagement_dashboard_summary">Manage root access</string>
+  <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+  <string name="supersu_title">SuperSU</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
   <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
@@ -201,8 +207,15 @@
   <string name="night_bright_low">låg ljusstyrka</string>
   <string name="night_bright_medium">medium brightness</string>
   <string name="night_bright_min">minsta ljusstyrka</string>
-  <!-- Hotspot idle -->
-  <string name="wifi_hotspot_mode_title">Keep WiFi Hotspot on</string>
+  <!-- Wi-Fi Hotspot -->
+  <string name="wifi_tether_options_category">Wi-Fi tether options</string>
+  <string name="wifi_hotspot_mode_title">Hotspot timeout</string>
+  <string name="wifi_tether_checkbox_text_custom">Enable hotspot</string>
+  <string name="wifi_tether_enabled_subtext_custom"><xliff:g id="network_ssid">%1$s</xliff:g> is now active</string>
+  <string name="wifi_tether_configure_ap_text_custom">Setup hotspot</string>
+  <string name="wifi_tether_configure_subtext_custom">Hotspot \"<xliff:g id="network_ssid">\u0022%1$s\u0022</xliff:g>\" configured</string>
+  <!-- NFC -->
+  <string name="nfc_options_category">NFC options</string>
   <!-- double tap statusbar to sleep -->
   <string name="double_tap_to_sleep_title">Double tap to sleep (statusbar)</string>
   <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>

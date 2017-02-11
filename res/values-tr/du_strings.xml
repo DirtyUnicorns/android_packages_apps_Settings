@@ -36,6 +36,9 @@
   <!-- DU Updater -->
   <string name="updater_title">Güncelleyici</string>
   <string name="updater_dashboard_summary">En son güncellemeyi kontrol edin</string>
+  <!-- DU About -->
+  <string name="aboutdu">ROM information</string>
+  <string name="aboutdu_summary">Information about our project, developers and devices</string>
   <!-- About phone screen -->
   <string name="build_date">Sürüm tarihi</string>
   <string name="build_date_default">2012-01-01-0000</string>
@@ -84,21 +87,24 @@
   <string name="unlock_scramble_pin_layout_summary">Cihaz kilidini açarken PIN düzenini karıştırır</string>
   <!-- Dashboard options -->
   <string name="dashboard_category">Ayarlar menüsü seçenekleri</string>
-  <string name="dashboard_suggestions_title">Suggestions</string>
+  <string name="dashboard_suggestions_title">Öneriler</string>
   <string name="summary_dashboard_suggestions_enabled">Ayarlar menüsü önerileri etkin</string>
   <string name="summary_dashboard_suggestions_disabled">Ayarlar menüsü önerileri devre dışı</string>
-  <string name="remove_tile_summaries_title">Summaries</string>
-  <string name="remove_tile_summaries_summary_enabled">Dashboard summaries are enabled</string>
-  <string name="remove_tile_summaries_summary_disabled">Dashboard summaries are disabled</string>
-  <string name="dashboard_conditions_title">Conditions</string>
+  <string name="remove_tile_summaries_title">Özetler</string>
+  <string name="remove_tile_summaries_summary_enabled">Ayar menüsü özetleri etkin</string>
+  <string name="remove_tile_summaries_summary_disabled">Ayar menüsü özetleri devre dışı</string>
+  <string name="dashboard_conditions_title">Durumlar</string>
   <string name="summary_dashboard_conditions_enabled">Ayarlar menüsü durumları etkin</string>
   <string name="summary_dashboard_conditions_disabled">Ayarlar menüsü durumları devre dışı</string>
-  <string name="dashboard_columns_portrait_title">Columns (portrait)</string>
-  <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
+  <string name="dashboard_columns_portrait_title">Sütunlar (dikey)</string>
+  <string name="dashboard_columns_landscape_title">Sütunlar (yatay)</string>
   <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">Tüm dosya türlerini kabul et</string>
-  <!-- Root management -->
-  <string name="rootmanagement_dashboard_summary">Root erişimini yönet</string>
+  <!-- Root Management -->
+  <string name="rootmanagement_title">Root management</string>
+  <string name="rootmanagement_dashboard_summary">Manage root access</string>
+  <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+  <string name="supersu_title">SuperSU</string>
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Takıp çıkarmada uyan</string>
   <string name="wake_when_plugged_or_unplugged_summary">Bir güç kaynağına bağlanırken ya da bağlantısını keserken ekranı aç</string>
@@ -171,18 +177,18 @@
   <string name="profile_choose_app">Uygulama seç</string>
   <string name="reset">Sıfırla</string>
   <!-- Less Notification sounds -->
-  <string name="less_notification_sounds_title">Less frequent notification sounds</string>
-  <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
-  <string name="less_notification_sounds_default">Default Behavior</string>
-  <string name="less_notification_sounds_3s">3 seconds</string>
-  <string name="less_notification_sounds_5s">5 seconds</string>
-  <string name="less_notification_sounds_10s">10 seconds</string>
-  <string name="less_notification_sounds_15s">15 seconds</string>
-  <string name="less_notification_sounds_30s">30 seconds</string>
-  <string name="less_notification_sounds_45s">45 seconds</string>
-  <string name="less_notification_sounds_1m">1 minute</string>
-  <string name="less_notification_sounds_2m">2 minutes</string>
-  <string name="less_notification_sounds_5m">5 minutes</string>
+  <string name="less_notification_sounds_title">Daha az sıklıkla bildirim sesleri</string>
+  <string name="less_notification_sounds_summary">Her bir uygulamanın bildirim seslerini sınırlayarak sadece ayarlanan süre başına bir kez oynatır</string>
+  <string name="less_notification_sounds_default">Varsayılan davranış</string>
+  <string name="less_notification_sounds_3s">3 Saniye</string>
+  <string name="less_notification_sounds_5s">5 saniye</string>
+  <string name="less_notification_sounds_10s">10 Saniye</string>
+  <string name="less_notification_sounds_15s">15 saniye</string>
+  <string name="less_notification_sounds_30s">30 saniye</string>
+  <string name="less_notification_sounds_45s">45 Saniye</string>
+  <string name="less_notification_sounds_1m">1 Dakika</string>
+  <string name="less_notification_sounds_2m">2 Dakika</string>
+  <string name="less_notification_sounds_5m">5 Dakika</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Zil sesi ve bildirim seslerini birleştir</string>
   <string name="notification_volume_option_title">Bildirim sesi</string>
@@ -201,8 +207,15 @@
   <string name="night_bright_low">düşük parlaklık</string>
   <string name="night_bright_medium">orta parlaklık</string>
   <string name="night_bright_min">en düşük parlaklık</string>
-  <!-- Hotspot idle -->
-  <string name="wifi_hotspot_mode_title">WiFi Hotspot aramayı açık tut</string>
+  <!-- Wi-Fi Hotspot -->
+  <string name="wifi_tether_options_category">Wi-Fi tether options</string>
+  <string name="wifi_hotspot_mode_title">Hotspot timeout</string>
+  <string name="wifi_tether_checkbox_text_custom">Enable hotspot</string>
+  <string name="wifi_tether_enabled_subtext_custom"><xliff:g id="network_ssid">%1$s</xliff:g> is now active</string>
+  <string name="wifi_tether_configure_ap_text_custom">Setup hotspot</string>
+  <string name="wifi_tether_configure_subtext_custom">Hotspot \"<xliff:g id="network_ssid">\u0022%1$s\u0022</xliff:g>\" configured</string>
+  <!-- NFC -->
+  <string name="nfc_options_category">NFC options</string>
   <!-- double tap statusbar to sleep -->
   <string name="double_tap_to_sleep_title">Uyutmak için iki defa dokun (durum çubuğu)</string>
   <string name="double_tap_to_sleep_summary">Cihazı uyutmak için durum çubuğuna iki defa dokunun</string>
@@ -210,7 +223,7 @@
   <string name="double_tap_sleep_anywhere_title">Uyutmak için iki defa dokun (kilit ekranı)</string>
   <string name="double_tap_sleep_anywhere_summary">Kilit ekranında cihazı uyutmak için herhangi bir yere çift dokun</string>
   <!-- Increasing ring tone volume -->
-  <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
-  <string name="increasing_ring_min_volume_title">Start volume</string>
-  <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
+  <string name="increasing_ring_volume_option_title">Artan zil sesi</string>
+  <string name="increasing_ring_min_volume_title">Başlangıç sesi</string>
+  <string name="increasing_ring_ramp_up_time_title">Yükselme zamanı</string>
 </resources>
