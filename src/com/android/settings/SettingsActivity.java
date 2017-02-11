@@ -75,6 +75,7 @@ import com.android.settings.applications.WriteSettingsDetails;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.dashboard.DashboardContainerFragment;
 import com.android.settings.dashboard.SearchResultsSummary;
+import com.android.settings.datausage.DataSaverSummary;
 import com.android.settings.datausage.DataUsageSummary;
 import com.android.settings.deletionhelper.AutomaticStorageManagerSettings;
 import com.android.settings.deviceinfo.ImeiInformation;
@@ -137,6 +138,7 @@ import com.android.settingslib.drawer.Tile;
 import com.dirtyunicorns.dutweaks.DirtyTweaks;
 import com.dirtyunicorns.dutweaks.fragments.ExpandedDesktop;
 import com.dirtyunicorns.dutweaks.fragments.FlingSettings;
+import com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings;
 import com.dirtyunicorns.dutweaks.fragments.NavbarSettings;
 import com.dirtyunicorns.dutweaks.fragments.SmartbarSettings;
 import com.dirtyunicorns.dutweaks.fragments.PulseSettings;
@@ -380,7 +382,9 @@ public class SettingsActivity extends SettingsDrawerActivity
             SmartbarSettings.class.getName(),
             PulseSettings.class.getName(),
             ManageDomainUrls.class.getName(),
-            AutomaticStorageManagerSettings.class.getName()
+            AutomaticStorageManagerSettings.class.getName(),
+            HeadsUpSettings.class.getName(),
+            DataSaverSummary.class.getName()
     };
 
 
