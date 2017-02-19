@@ -188,7 +188,7 @@
   <string name="less_notification_sounds_45s">45 секунд</string>
   <string name="less_notification_sounds_1m">1 минута</string>
   <string name="less_notification_sounds_2m">2 минуты</string>
-  <string name="less_notification_sounds_5m">5 минут</string>
+  <string name="less_notification_sounds_5m">5 минут</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Связать громкость звонка и уведомлений</string>
   <string name="notification_volume_option_title">Громкость уведомления</string>
