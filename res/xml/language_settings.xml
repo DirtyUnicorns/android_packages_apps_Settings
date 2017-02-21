@@ -45,12 +45,18 @@
         <PreferenceScreen
                android:key="current_input_method"
                android:title="@string/current_input_method"/>
+        <SwitchPreference
+               android:key="status_bar_ime_switcher"
+               android:title="@string/ime_switcher_notify"
+               android:summary="@string/ime_switcher_notify_summary"
+               android:defaultValue="true"
+               android:persistent="false" />
         <PreferenceScreen
-            android:title="@string/virtual_keyboard_category"
-            android:fragment="com.android.settings.inputmethod.VirtualKeyboardFragment" />
+               android:title="@string/virtual_keyboard_category"
+               android:fragment="com.android.settings.inputmethod.VirtualKeyboardFragment" />
         <PreferenceScreen
-            android:title="@string/physical_keyboard_title"
-            android:fragment="com.android.settings.inputmethod.PhysicalKeyboardFragment" />
+               android:title="@string/physical_keyboard_title"
+               android:fragment="com.android.settings.inputmethod.PhysicalKeyboardFragment" />
     </PreferenceCategory>
 
     <!-- Temporarily disabled: -->

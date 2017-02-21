@@ -43,6 +43,7 @@ import android.support.v7.preference.Preference.OnPreferenceClickListener;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceManager;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v14.preference.SwitchPreference;
 import android.text.TextUtils;
 import android.view.InputDevice;
 import android.view.inputmethod.InputMethodInfo;
@@ -89,6 +90,7 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
     private static final String KEY_PREVIOUSLY_ENABLED_SUBTYPES = "previously_enabled_subtypes";
     // false: on ICS or later
     private static final boolean SHOW_INPUT_METHOD_SWITCHER_SETTINGS = false;
+    private static final String KEY_IME_SWITCHER = "status_bar_ime_switcher";
 
     private int mDefaultInputMethodSelectorVisibility = 0;
     private ListPreference mShowInputMethodSelectorPref;
@@ -106,6 +108,7 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
     private Intent mIntentWaitingForResult;
     private InputMethodSettingValuesWrapper mInputMethodSettingValues;
     private DevicePolicyManager mDpm;
+    private SwitchPreference mStatusBarImeSwitcher;
 
     @Override
     protected int getMetricsCategory() {
@@ -200,6 +203,11 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
             showKeyboardLayoutDialog(identifier);
         }
         updateCurrentImeName();
+
+        mStatusBarImeSwitcher = (SwitchPreference)findPreference(KEY_IME_SWITCHER);
+        mStatusBarImeSwitcher.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_IME_SWITCHER, 1) == 1);
+        mStatusBarImeSwitcher.setOnPreferenceChangeListener(this);
     }
 
     private void updateInputMethodSelectorSummary(int value) {
@@ -383,6 +391,11 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
                     saveInputMethodSelectorVisibility((String)value);
                 }
             }
+        }
+        if (preference == mStatusBarImeSwitcher) {
+            Settings.System.putInt(getContentResolver(),
+                Settings.System.STATUS_BAR_IME_SWITCHER, (Boolean) value ? 1 : 0);
+            return true;
         }
         return false;
     }
