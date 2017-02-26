@@ -168,7 +168,12 @@
     <string name="increasing_ring_min_volume_title">Start volume</string>
     <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
 
+    <!-- IME Switcher -->
     <string name="ime_switcher_notify">Selector notification</string>
     <string name="ime_switcher_notify_summary">Display input method selector notification</string>
+
+    <!-- App Ops Settings -->
+    <string name="app_ops_settings">App ops</string>
+    <string name="app_ops_settings_summary">View or change app permissions</string>
 
 </resources>
