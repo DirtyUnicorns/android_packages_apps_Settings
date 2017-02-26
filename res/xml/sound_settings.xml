@@ -71,7 +71,7 @@
         <PreferenceScreen
                 android:key="volume_steps"
                 android:title="@string/volume_steps_title"
-                android:fragment="com.android.settings.du.VolumeSteps" />
+                android:fragment="com.dirtyunicorns.dutweaks.VolumeSteps" />
 
         <!-- Less notification sounds -->
         <ListPreference

@@ -3146,8 +3146,8 @@
         </activity>
 
         <!-- Battery and notification lights -->
-        <activity android:name=".du.batterylight.NotificationLightSettings" />
-        <activity android:name=".du.batterylight.BatteryLightSettings" />
+        <activity android:name="com.dirtyunicorns.dutweaks.batterylight.NotificationLightSettings" />
+        <activity android:name="com.dirtyunicorns.dutweaks.batterylight.BatteryLightSettings" />
 
         <!-- Expanded desktop -->
         <activity android:name="Settings$ExpandedDesktopSettingsActivity"
@@ -3251,11 +3251,11 @@
         </activity>
 
         <!-- Changelog -->
-        <activity android:name="com.android.settings.du.changelog.ChangelogActivity"
+        <activity android:name="com.dirtyunicorns.dutweaks.changelog.ChangelogActivity"
                   android:label="@string/duchangelog_title" />
-        <activity android:name="com.android.settings.du.changelog.Weeklies"
+        <activity android:name="com.dirtyunicorns.dutweaks.changelog.Weeklies"
                   android:label="@string/duchangelog_weeklies" />
-        <activity android:name="com.android.settings.du.changelog.Official"
+        <activity android:name="com.dirtyunicorns.dutweaks.changelog.Official"
                   android:label="@string/duchangelog_official" />
 
         <!-- Themes -->

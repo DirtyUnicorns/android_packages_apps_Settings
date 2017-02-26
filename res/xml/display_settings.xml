@@ -87,7 +87,7 @@
         <PreferenceScreen
                 android:key="ledsettings_category"
                 android:title="@string/ledsettings_category"
-                android:fragment="com.android.settings.du.LEDsettings" />
+                android:fragment="com.dirtyunicorns.dutweaks.fragments.LEDsettings" />
 
         <SwitchPreference
                 android:key="tap_to_wake"
