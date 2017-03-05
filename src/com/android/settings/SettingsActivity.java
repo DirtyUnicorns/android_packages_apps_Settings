@@ -140,6 +140,7 @@ import com.dirtyunicorns.dutweaks.fragments.ExpandedDesktop;
 import com.dirtyunicorns.dutweaks.fragments.FlingSettings;
 import com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings;
 import com.dirtyunicorns.dutweaks.fragments.NavbarSettings;
+import com.dirtyunicorns.dutweaks.fragments.QuickSettings;
 import com.dirtyunicorns.dutweaks.fragments.SmartbarSettings;
 import com.dirtyunicorns.dutweaks.fragments.PulseSettings;
 
@@ -384,7 +385,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
             HeadsUpSettings.class.getName(),
-            DataSaverSummary.class.getName()
+            DataSaverSummary.class.getName(),
+            QuickSettings.class.getName()
     };
 
 
