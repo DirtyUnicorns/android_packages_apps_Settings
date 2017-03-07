@@ -3325,6 +3325,20 @@
                 android:resource="@string/heads_up_notifications" />
         </activity>
 
+        <!-- Quick settings -->
+        <activity android:name="Settings$QuickSettingsSettingsActivity"
+                android:label="@string/quicksettings_category"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.dutweaks.fragments.QuickSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@string/quicksettings_category" />
+        </activity>
+
         <!-- Data Saver -->
         <activity android:name="Settings$DataSaverSettingsActivity"
                 android:label="@string/data_saver_title"
