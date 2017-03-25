@@ -1231,6 +1231,14 @@ public class SettingsActivity extends SettingsDrawerActivity
                 rootClassName = "com.koushikdutta.superuser.MainActivity";
             } catch (PackageManager.NameNotFoundException e) {
             }
+            if (!rootSupported) {
+                try {
+                    rootSupported = (getPackageManager().getPackageInfo("com.topjohnwu.magisk", 0).versionCode > 0);
+                    rootPackageName = "com.topjohnwu.magisk";
+                    rootClassName = "com.topjohnwu.magisk.SplashActivity";
+                } catch (PackageManager.NameNotFoundException e) {
+                }
+            }
         }
     }
 
