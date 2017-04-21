@@ -486,7 +486,7 @@ public class PowerUsageDetail extends PowerUsageBase implements Button.OnClickLi
             pkg = mPackages[0];
         }
         AppHeader.createAppHeader(this, appIcon, title, pkg, uid,
-                mDrainType != DrainType.APP ? android.R.color.white : 0);
+                mDrainType != DrainType.APP ? R.color.power_usage_ab_icon_tint : 0);
     }
 
     public void onClick(View v) {
