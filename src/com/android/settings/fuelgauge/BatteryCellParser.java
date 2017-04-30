@@ -90,18 +90,12 @@ public class BatteryCellParser implements BatteryInfo.BatteryDataParser, Battery
     public SparseIntArray getColorArray() {
         SparseIntArray ret = new SparseIntArray();
         for (int i = 0; i < mData.size(); i++) {
-            int color = getColor(mData.valueAt(i));
-            if (color >= 0) {
-                ret.put(mData.keyAt(i), color);
-            }
+            ret.put(mData.keyAt(i), getColor(mData.valueAt(i)));
         }
         return ret;
     }
 
     private int getColor(int i) {
-        if (i < Utils.BADNESS_COLORS.length) {
-            return Utils.BADNESS_COLORS[i];
-        }
-        return -1;
+        return Utils.BADNESS_COLORS[i];
     }
 }
