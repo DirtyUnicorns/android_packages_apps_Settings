@@ -16,12 +16,6 @@
   -->
 
 <resources>
-    <dimen name="fingerprint_enrolling_content_margin_vertical">56dp</dimen>
-    <dimen name="fingerprint_find_sensor_graphic_size">240dp</dimen>
-
-    <dimen name="support_escalation_card_padding_start">56dp</dimen>
-    <dimen name="support_escalation_card_padding_end">56dp</dimen>
-
     <!-- Fingerprint sensor location (y-axis) during setup -->
-    <item name="fingerprint_sensor_location_fraction_y" type="fraction">40%</item>
+    <item name="fingerprint_sensor_location_fraction_y" type="fraction">38%</item>
 </resources>
