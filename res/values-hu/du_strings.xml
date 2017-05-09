@@ -217,4 +217,10 @@
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Minden téma alkalmazás engedélyezésének kényszerítése</string>
   <string name="force_authorize_substratum_packages_summary">Az ismeretlen forrásból származó témák telepítésének engedélyezése</string>
+  <!-- Subtext of radio button options in the dialog box of Wi-Fi Calling mode. Options are 1)Wi-Fi preferred, 2)Cellular preferred, 3)Wi-Fi only. This master text is for option (1). Reference in Android_N: wifi_calling_mode_choices for the translation of "Cellular network". -->
+  <string name="wifi_calling_mode_wifi_preferred_summary" xliff:restype="x-UNLIMITED">Hívás Wi-Fin keresztül. Ha a Wi-Fi nem elérhető, a mobilhálózatot használja.</string>
+  <!-- Subtext of radio button options in the dialog box of Wi-Fi Calling mode. Options are 1)Wi-Fi preferred, 2)Cellular preferred, 3)Wi-Fi only. This master text is for option (2). Reference in Android_N: wifi_calling_mode_choices for the translation of "Cellular network". -->
+  <string name="wifi_calling_mode_cellular_preferred_summary" xliff:restype="x-UNLIMITED">Hívás mobilhálózaton keresztül. Ha a mobilhálózat nem elérhető, a Wi-Fit használja.</string>
+  <!-- Subtext of radio button options in the dialog box of Wi-Fi Calling mode. Options are 1)Wi-Fi preferred, 2)Cellular preferred, 3)Wi-Fi only. This master text is for option (3).  -->
+  <string name="wifi_calling_mode_wifi_only_summary" xliff:restype="x-UNLIMITED">Hívás Wi-Fin keresztül. Ha a Wi-Fi nem elérhető, a hívás megszakad.</string>
 </resources>
