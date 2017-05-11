@@ -254,4 +254,16 @@
     <!-- Subtext of radio button options in the dialog box of Wi-Fi Calling mode. Options are 1)Wi-Fi preferred, 2)Cellular preferred, 3)Wi-Fi only. This master text is for option (3).  -->
     <string name="wifi_calling_mode_wifi_only_summary" xliff:restype="x-UNLIMITED">Appel par Wi-Fi. Arrêter l\'appel, en cas de perte de connexion Wi-Fi.</string>
 
+    <!-- Category title for Charging sounds -->
+    <string name="power_notifications_category_title">Son relatif à la charge</string>
+    <!-- Sound settings, Charging sounds enable/disable, setting check box label -->
+    <string name="power_notifications_enable_title">Activer</string>
+    <string name="power_notifications_enable_summary">Émettre un son lors de la connexion ou de la déconnexion du chargeur</string>
+    <!-- Sound settings, Charging sounds vibrate enable/disable, setting check box label -->
+    <string name="power_notifications_vibrate_title">Vibrer</string>
+    <!-- Sound settings, Charging sounds ringtone selection, preference label -->
+    <string name="power_notifications_ringtone_title">Son de notification</string>
+    <!-- Sound settings, charging sounds label for ringtone == none -->
+    <string name="power_notifications_ringtone_silent">Silencieux</string>
+
 </resources>
