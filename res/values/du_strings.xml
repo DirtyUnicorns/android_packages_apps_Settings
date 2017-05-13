@@ -270,5 +270,7 @@
     <string name="power_notifications_ringtone_title">Notification sound</string>
     <!-- Sound settings, charging sounds label for ringtone == none -->
     <string name="power_notifications_ringtone_silent">Silent</string>
+    <!-- Sound settings, custom charging sound, setting check box label -->
+    <string name="power_notifications_custom_ringtone_title">Custom notification sound</string>
 
 </resources>

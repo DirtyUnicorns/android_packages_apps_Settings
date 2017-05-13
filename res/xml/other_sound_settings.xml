@@ -96,6 +96,11 @@
             android:title="@string/power_notifications_vibrate_title"
             android:defaultValue="false" />
 
+    <SwitchPreference
+            android:key="power_notifications_custom_ringtone"
+            android:title="@string/power_notifications_custom_ringtone_title"
+            android:defaultValue="false" />
+
     <Preference
             android:key="power_notifications_ringtone"
             android:title="@string/power_notifications_ringtone_title" />
