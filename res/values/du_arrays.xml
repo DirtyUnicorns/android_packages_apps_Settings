@@ -258,4 +258,17 @@
          <item>@string/wifi_calling_mode_cellular_preferred_summary</item>
     </string-array>
 
+    <!-- Charging notification condition -->
+    <string-array name="power_notification_entries" translatable="false">
+        <item>@string/power_notifications_conditions_none</item>
+        <item>@string/power_notifications_conditions_both</item>
+        <item>@string/power_notifications_conditions_connect</item>
+    </string-array>
+
+    <string-array name="power_notification_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 </resources>
