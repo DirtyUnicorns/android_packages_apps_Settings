@@ -136,6 +136,7 @@ import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 
 import com.dirtyunicorns.dutweaks.DirtyTweaks;
+import com.dirtyunicorns.dutweaks.fragments.ButtonSettings;
 import com.dirtyunicorns.dutweaks.fragments.ExpandedDesktop;
 import com.dirtyunicorns.dutweaks.fragments.FlingSettings;
 import com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings;
@@ -386,7 +387,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             AutomaticStorageManagerSettings.class.getName(),
             HeadsUpSettings.class.getName(),
             DataSaverSummary.class.getName(),
-            QuickSettings.class.getName()
+            QuickSettings.class.getName(),
+            ButtonSettings.class.getName()
     };
 
 
