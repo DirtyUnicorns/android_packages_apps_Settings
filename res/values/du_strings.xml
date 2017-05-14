@@ -260,8 +260,10 @@
     <!-- Category title for Charging sounds -->
     <string name="power_notifications_category_title">Charging sounds</string>
     <!-- Sound settings, Charging sounds enable/disable, setting check box label -->
-    <string name="power_notifications_enable_title">Enable</string>
-    <string name="power_notifications_enable_summary">Play a sound when connecting or disconnecting the charger</string>
+    <string name="power_notifications_conditions_title">Conditions</string>
+    <string name="power_notifications_conditions_none">None</string>
+    <string name="power_notifications_conditions_both">Connect and disconnect</string>
+    <string name="power_notifications_conditions_connect">Connect only</string>
     <!-- Sound settings, Charging sounds vibrate enable/disable, setting check box label -->
     <string name="power_notifications_vibrate_title">Vibrate</string>
     <!-- Sound settings, Charging sounds ringtone selection, preference label -->
