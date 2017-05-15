@@ -15,28 +15,37 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
   <!-- DU Tweaks -->
   <string name="dirtytweaks_title">Dirty trükkök</string>
   <string name="header_category_dirtytweaks">Testreszabás</string>
+
   <!-- DU version -->
   <string name="mod_version">DU verzió</string>
   <string name="mod_version_default">Ismeretlen</string>
+
   <!-- DU Updater -->
   <string name="updater_title">Frissítő</string>
   <string name="updater_dashboard_summary">Frissítés keresése</string>
+
   <!-- DU About -->
   <string name="aboutdu">ROM information</string>
   <string name="aboutdu_summary">Information about our project, developers and devices</string>
+
   <!-- About phone screen -->
   <string name="build_date">Készítés dátuma</string>
   <string name="build_date_default">2012-01-01-0000</string>
   <string name="security_patch_custom">Biztonsági hibajavító csomag szintje</string>
+
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Asztali mentés jelszava</string>
+
   <!-- Volume adjustment sounds -->
   <string name="volume_adjust_sounds_title">Hangerő állítási hangok</string>
+
   <!-- Density category -->
   <string name="density_category">Sűrűség beállítások</string>
+
   <!-- ADB debugging notifications -->
   <string name="enable_adb_custom">Android hibakeresés</string>
   <string name="enable_adb_summary_custom">Engedélyezze az Android Debug Bridge (adb) felületet</string>
@@ -45,9 +54,11 @@
   <string name="adb_over_network">ADB hálózaton keresztül</string>
   <string name="adb_over_network_summary">Engedélyezi TCP/IP hibakeresét hálózati interfészeken keresztül (Wi\u2011Fi, USB hálózatok). Újraindítás után alaphelyzetre áll vissza</string>
   <string name="adb_over_network_warning">VIGYÁZAT: Ha a funkció engedélyezve van, az eszköz nyitva áll bármilyen behatolásra az összes kapcsolódó hálózaton keresztül!\n\nCsak biztonságos hálózatra csatlakozva érdemes engedélyezni.\n\nBiztosan engedélyezni szeretné?</string>
+
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Képernyőmentési hang</string>
   <string name="screenshot_sound_summary">Hangeffekt lejátszása képernyőmentésnél</string>
+
   <!-- Display : Rotation -->
   <string name="display_rotation_title">Forgatási szögek</string>
   <string name="display_rotation_disabled">Letiltva</string>
@@ -57,12 +68,15 @@
   <string name="display_rotation_90_title">90 fok</string>
   <string name="display_rotation_180_title">180 fok</string>
   <string name="display_rotation_270_title">270 fok</string>
+
   <!-- Gesture Settings -->
   <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
   <string name="double_twist_for_camera_mode_custom_summary">A Google Kamera szelfi módba lépéséhez és abból való kilépéshez, duplán fogassa meg az eszközt, ha az alkalmazásban van</string>
+
   <!-- Scramble PIN Layout on Lockscreen -->
   <string name="unlock_scramble_pin_layout_title">Véletlenszerű elrendezés</string>
   <string name="unlock_scramble_pin_layout_summary">PIN elrendezés szétszórása az eszköz feloldásakor</string>
+
   <!-- Dashboard options -->
   <string name="dashboard_category">Irányítópult beállítások</string>
   <string name="dashboard_suggestions_title">Javaslatok</string>
@@ -76,23 +90,30 @@
   <string name="summary_dashboard_conditions_disabled">Irányítópult feltételek kikapcsolva</string>
   <string name="dashboard_columns_portrait_title">Oszlopok (álló)</string>
   <string name="dashboard_columns_landscape_title">Oszlopok (fekvő)</string>
+
   <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">Minden fájltípus elfogadása</string>
+
   <!-- Battery stats reset -->
   <string name="battery_stats_reset">Statisztika törlése</string>
   <string name="battery_stats_message">Akkumulátor statisztika törlésre kerül</string>
   <string name="ok_string">Ok</string>
+
   <!-- Root Management -->
   <string name="rootmanagement_title">Root kezelés</string>
   <string name="rootmanagement_dashboard_summary">Root hozzáférés kezelése</string>
+
   <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
   <string name="supersu_title">SuperSU</string>
+
   <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Felébredés töltő csatlakoztatásakor</string>
   <string name="wake_when_plugged_or_unplugged_summary">A képernyő bekapcsolása a töltő csatlakoztatása/eltávolítása után</string>
+
   <!-- Camera shutter sound -->
   <string name="camera_sounds_title">Kamera zárhang</string>
   <string name="camera_sounds_summary">Nem érvényes a harmadik féltől származó alkalmazásokra és HDR+ módban</string>
+
   <!-- Less Notification sounds -->
   <string name="less_notification_sounds_title">Kevésbé gyakori értesítési hangok</string>
   <string name="less_notification_sounds_summary">Korlátozza az értesítési hangokat, hogy minden alkalmazás csak egyszer jelezhessen a megadott időn belül</string>
@@ -106,16 +127,20 @@
   <string name="less_notification_sounds_1m">1 perc</string>
   <string name="less_notification_sounds_2m">2 perc</string>
   <string name="less_notification_sounds_5m">5 perc</string>
+
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Csengetési és értesítési hangerő összekötése</string>
   <string name="notification_volume_option_title">Értesítési hangerő</string>
   <string name="ring_notification_volume_option_title">Csengetési és értesítései hangerő</string>
+
   <!-- Themes -->
   <string name="themes_title">Témák</string>
   <string name="themes_dashboard_summary">Témák kezelése</string>
+
   <!-- Manage applications: Substratum overlays -->
   <string name="menu_show_substratum">Fedvények megjelenítése</string>
   <string name="menu_hide_substratum">Fedvények elrejtése</string>
+
   <!-- Advanced night mode brightness -->
   <string name="night_brightness_category">Fényerő</string>
   <string name="night_brightness_value_title">Éjszakai fény fényerő</string>
@@ -124,6 +149,7 @@
   <string name="night_bright_low">alacsony fényerő</string>
   <string name="night_bright_medium">közepes fényerő</string>
   <string name="night_bright_min">minimum fényerő</string>
+
   <!-- Wi-Fi Hotspot -->
   <string name="wifi_tether_options_category">Wi-Fi megosztás beállításai</string>
   <string name="wifi_hotspot_mode_title">Hotspot időkorlát</string>
@@ -131,21 +157,27 @@
   <string name="wifi_tether_enabled_subtext_custom"><xliff:g id="network_ssid">%1$s</xliff:g> most aktív</string>
   <string name="wifi_tether_configure_ap_text_custom">Hotspot beállítása</string>
   <string name="wifi_tether_configure_subtext_custom">Hotspot \"<xliff:g id="network_ssid">\u0022%1$s\u0022</xliff:g>\" konfigurálva</string>
+
   <!-- NFC -->
   <string name="nfc_options_category">NFC beállítások</string>
+
   <!-- double tap statusbar to sleep -->
   <string name="double_tap_to_sleep_title">Dupla érintésre alvó mód (állapotsor)</string>
   <string name="double_tap_to_sleep_summary">Állapotsoron történő dupla érintésre az eszköz alvó módba kerül</string>
+
   <!-- Lockscreen double tap to sleep -->
   <string name="double_tap_sleep_anywhere_title">Dupla érintésre alvó mód (zárképernyő)</string>
   <string name="double_tap_sleep_anywhere_summary">Képernyőzár bárhol történő dupla érintése a képernyő kikapcsolásához</string>
+
   <!-- Increasing ring tone volume -->
   <string name="increasing_ring_volume_option_title">Erősödő hangerő</string>
   <string name="increasing_ring_min_volume_title">Indítási hangerő</string>
   <string name="increasing_ring_ramp_up_time_title">Felfutási idő</string>
+
   <!-- IME Switcher -->
   <string name="ime_switcher_notify">Billentyűzet váltó értesítése</string>
   <string name="ime_switcher_notify_summary">Billentyűzet váltó értesítésének megjelenítése</string>
+
   <!-- App Ops Settings -->
   <string name="app_ops_settings">Alkalmazásműveletek</string>
   <string name="app_ops_settings_summary">Alk. engedélyek megtekintése és módosítása</string>
@@ -214,13 +246,34 @@
   <string name="app_ops_turn_on_screen">képernyő bekapcsolása</string>
   <string name="app_ops_get_accounts">eszköz fiókok</string>
   <string name="app_ops_run_in_background">futás a háttérben</string>
+
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Minden téma alkalmazás engedélyezésének kényszerítése</string>
   <string name="force_authorize_substratum_packages_summary">Az ismeretlen forrásból származó témák telepítésének engedélyezése</string>
+
   <!-- Subtext of radio button options in the dialog box of Wi-Fi Calling mode. Options are 1)Wi-Fi preferred, 2)Cellular preferred, 3)Wi-Fi only. This master text is for option (1). Reference in Android_N: wifi_calling_mode_choices for the translation of "Cellular network". -->
   <string name="wifi_calling_mode_wifi_preferred_summary" xliff:restype="x-UNLIMITED">Hívás Wi-Fin keresztül. Ha a Wi-Fi nem elérhető, a mobilhálózatot használja.</string>
+
   <!-- Subtext of radio button options in the dialog box of Wi-Fi Calling mode. Options are 1)Wi-Fi preferred, 2)Cellular preferred, 3)Wi-Fi only. This master text is for option (2). Reference in Android_N: wifi_calling_mode_choices for the translation of "Cellular network". -->
   <string name="wifi_calling_mode_cellular_preferred_summary" xliff:restype="x-UNLIMITED">Hívás mobilhálózaton keresztül. Ha a mobilhálózat nem elérhető, a Wi-Fit használja.</string>
+
   <!-- Subtext of radio button options in the dialog box of Wi-Fi Calling mode. Options are 1)Wi-Fi preferred, 2)Cellular preferred, 3)Wi-Fi only. This master text is for option (3).  -->
   <string name="wifi_calling_mode_wifi_only_summary" xliff:restype="x-UNLIMITED">Hívás Wi-Fin keresztül. Ha a Wi-Fi nem elérhető, a hívás megszakad.</string>
+
+  <!-- Category title for Charging sounds -->
+  <string name="power_notifications_category_title">Töltési hangok</string>
+
+  <!-- Sound settings, Charging sounds enable/disable, setting check box label -->
+  <string name="power_notifications_enable_title">Engedélyez</string>
+  <string name="power_notifications_enable_summary">Hang lejátszása töltő csatlakoztatásakor/leválasztásakor</string>
+
+  <!-- Sound settings, Charging sounds vibrate enable/disable, setting check box label -->
+  <string name="power_notifications_vibrate_title">Rezeg</string>
+
+  <!-- Sound settings, Charging sounds ringtone selection, preference label -->
+  <string name="power_notifications_ringtone_title">Értesítési hang</string>
+
+  <!-- Sound settings, charging sounds label for ringtone == none -->
+  <string name="power_notifications_ringtone_silent">Néma</string>
+
 </resources>
