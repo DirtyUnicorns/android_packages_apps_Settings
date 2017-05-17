@@ -136,6 +136,9 @@
     <string name="themes_title">Themes</string>
     <string name="themes_dashboard_summary">Manage your themes</string>
 
+    <!-- Cell Broadcast -->
+    <string name="cell_broadcast_settings_custom">Cell Broadcast settings</string>
+
     <!-- Manage applications: Substratum overlays -->
     <string name="menu_show_substratum">Show overlays</string>
     <string name="menu_hide_substratum">Hide overlays</string>
@@ -246,9 +249,9 @@
     <string name="app_ops_get_accounts">device accounts</string>
     <string name="app_ops_run_in_background">run in background</string>
 
-   <!-- Force authorize substratum packages -->
-   <string name="force_authorize_substratum_packages_title">Force authorize every theme app</string>
-   <string name="force_authorize_substratum_packages_summary">Allow theme apps from unknown sources</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Force authorize every theme app</string>
+    <string name="force_authorize_substratum_packages_summary">Allow theme apps from unknown sources</string>
 
     <!-- Subtext of radio button options in the dialog box of Wi-Fi Calling mode. Options are 1)Wi-Fi preferred, 2)Cellular preferred, 3)Wi-Fi only. This master text is for option (1). Reference in Android_N: wifi_calling_mode_choices for the translation of "Cellular network". -->
     <string name="wifi_calling_mode_wifi_preferred_summary" xliff:restype="x-UNLIMITED">Call over Wi-Fi. If Wi-Fi is not available, use cellular network.</string>
