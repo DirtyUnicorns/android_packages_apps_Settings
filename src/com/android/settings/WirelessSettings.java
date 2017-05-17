@@ -41,6 +41,7 @@ import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
@@ -75,6 +76,7 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
     private static final String KEY_MANAGE_MOBILE_PLAN = "manage_mobile_plan";
     private static final String KEY_WFC_SETTINGS = "wifi_calling_settings";
     private static final String KEY_NETWORK_RESET = "network_reset";
+    private static final String KEY_NFC_SETTINGS = "nfc_options";
 
     private static final String KEY_CELL_BROADCAST_SETTINGS = "cell_broadcast_settings";
 
@@ -85,6 +87,7 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
 
     private AirplaneModeEnabler mAirplaneModeEnabler;
     private SwitchPreference mAirplaneModePreference;
+    private PreferenceCategory mNfcCategory;
     private NfcEnabler mNfcEnabler;
     private NfcAdapter mNfcAdapter;
 
@@ -252,6 +255,7 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
         final Activity activity = getActivity();
         mAirplaneModePreference = (SwitchPreference) findPreference(KEY_TOGGLE_AIRPLANE);
         SwitchPreference nfc = (SwitchPreference) findPreference(KEY_TOGGLE_NFC);
+        mNfcCategory = (PreferenceCategory) findPreference(KEY_NFC_SETTINGS);
         RestrictedPreference androidBeam = (RestrictedPreference) findPreference(
                 KEY_ANDROID_BEAM_SETTINGS);
 
@@ -304,6 +308,7 @@ public class WirelessSettings extends SettingsPreferenceFragment implements Inde
         // Remove NFC if not available
         mNfcAdapter = NfcAdapter.getDefaultAdapter(activity);
         if (mNfcAdapter == null) {
+            getPreferenceScreen().removePreference(mNfcCategory);
             getPreferenceScreen().removePreference(nfc);
             getPreferenceScreen().removePreference(androidBeam);
             mNfcEnabler = null;
