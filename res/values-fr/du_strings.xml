@@ -122,6 +122,9 @@
   <!-- Themes -->
   <string name="themes_title">Thèmes</string>
   <string name="themes_dashboard_summary">Gérez vos thèmes</string>
+
+    <!-- Cell Broadcast -->
+  <string name="cell_broadcast_settings_custom">Diffusion cellulaire</string>
   <!-- Manage applications: Substratum overlays -->
   <string name="menu_show_substratum">Afficher les surcouches</string>
   <string name="menu_hide_substratum">Masquer les surcouches</string>
@@ -257,13 +260,17 @@
     <!-- Category title for Charging sounds -->
     <string name="power_notifications_category_title">Son relatif à la charge</string>
     <!-- Sound settings, Charging sounds enable/disable, setting check box label -->
-    <string name="power_notifications_enable_title">Activer</string>
-    <string name="power_notifications_enable_summary">Émettre un son lors de la connexion ou de la déconnexion du chargeur</string>
+    <string name="power_notifications_conditions_title">Conditions</string>
+    <string name="power_notifications_conditions_none">Aucune</string>
+    <string name="power_notifications_conditions_both">Connexion ou déconnexion</string>
+    <string name="power_notifications_conditions_connect">Connexion Uniquement</string>
     <!-- Sound settings, Charging sounds vibrate enable/disable, setting check box label -->
     <string name="power_notifications_vibrate_title">Vibrer</string>
     <!-- Sound settings, Charging sounds ringtone selection, preference label -->
     <string name="power_notifications_ringtone_title">Son de notification</string>
     <!-- Sound settings, charging sounds label for ringtone == none -->
     <string name="power_notifications_ringtone_silent">Silencieux</string>
+    <!-- Sound settings, custom charging sound, setting check box label -->
+    <string name="power_notifications_custom_ringtone_title">Son de notification</string>
 
 </resources>
