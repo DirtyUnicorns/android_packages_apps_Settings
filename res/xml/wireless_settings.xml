@@ -65,7 +65,7 @@
 
     <com.android.settingslib.RestrictedPreference
             android:key="cell_broadcast_settings"
-            android:title="@string/cell_broadcast_settings"
+            android:title="@string/cell_broadcast_settings_custom"
             settings:useAdminDisabledSummary="true"/>
 
     <!--com.android.settingslib.RestrictedPreference
