@@ -84,6 +84,16 @@
                 android:title="@string/doze_title"
                 android:summary="@string/doze_summary" />
 
+         <PreferenceScreen
+            android:key="oneplus_doze"
+            android:title="@string/doze_title"
+            android:summary="@string/doze_summary" >
+            <intent
+                android:action="com.android.settings.action.EXTRA_SETTINGS"
+                android:targetPackage="com.cyanogenmod.oneplusthree.doze"
+                android:targetClass="com.cyanogenmod.oneplusthree.doze.DozeSettings" />
+         </PreferenceScreen>
+
         <PreferenceScreen
                 android:key="ledsettings_category"
                 android:title="@string/ledsettings_category"

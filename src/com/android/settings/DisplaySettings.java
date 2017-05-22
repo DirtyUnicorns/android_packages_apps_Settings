@@ -64,6 +64,8 @@ import com.android.settingslib.RestrictedPreference;
 
 import com.dirtyunicorns.dutweaks.preference.CustomSeekBarPreference;
 
+import com.android.internal.util.du.DuUtils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -116,6 +118,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final int ROTATION_180_MODE = 4;
     private static final int ROTATION_270_MODE = 8;
 
+    private static final String KEY_ONEPLUS_DOZE = "oneplus_doze";
+    private static final String KEY_ONEPLUS_DOZE_PACKAGE_NAME = "com.cyanogenmod.oneplusthree.doze";
+
     private CustomSeekBarPreference mDashboardPortraitColumns;
     private CustomSeekBarPreference mDashboardLandscapeColumns;
 
@@ -127,6 +132,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private Preference mScreenSaverPreference;
 
     private PreferenceScreen mLedsCategory;
+    private PreferenceScreen mOneplusDoze;
 
     private SwitchPreference mLiftToWakePreference;
     private SwitchPreference mDozePreference;
@@ -164,14 +170,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         if (mLedsCategory != null
                 && getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveNotificationLed) == false) {
+                com.android.internal.R.bool.config_intrusiveNotificationLed) == false) {
             getPreferenceScreen().removePreference(mLedsCategory);
         }
 
         mScreenSaverPreference = findPreference(KEY_SCREEN_SAVER);
         if (mScreenSaverPreference != null
                 && getResources().getBoolean(
-                        com.android.internal.R.bool.config_dreamsSupported) == false) {
+                com.android.internal.R.bool.config_dreamsSupported) == false) {
             getPreferenceScreen().removePreference(mScreenSaverPreference);
         }
 
@@ -197,11 +203,16 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             removePreference(KEY_LIFT_TO_WAKE);
         }
 
-        if (isDozeAvailable(activity)) {
+        if (isDozeAvailable(activity) && !Build.UPDATER.contains("oneplus3")) {
             mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
             mDozePreference.setOnPreferenceChangeListener(this);
         } else {
             removePreference(KEY_DOZE);
+        }
+
+        mOneplusDoze = (PreferenceScreen) findPreference(KEY_ONEPLUS_DOZE);
+        if (!DuUtils.isPackageInstalled(getActivity(), KEY_ONEPLUS_DOZE_PACKAGE_NAME)) {
+            getPreferenceScreen().removePreference(mOneplusDoze);
         }
 
         if (isTapToWakeAvailable(getResources())) {
@@ -259,9 +270,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             final Context c = activity;
             int currentUser = ActivityManager.getCurrentUser();
             int current = Settings.Secure.getIntForUser(c.getContentResolver(),
-                            Settings.Secure.VR_DISPLAY_MODE,
+                    Settings.Secure.VR_DISPLAY_MODE,
                             /*default*/Settings.Secure.VR_DISPLAY_MODE_LOW_PERSISTENCE,
-                            currentUser);
+                    currentUser);
             vrDisplayPref.setValueIndex(current);
             vrDisplayPref.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
                 @Override
@@ -688,7 +699,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     if (!isLiftToWakeAvailable(context)) {
                         result.add(KEY_LIFT_TO_WAKE);
                     }
-                    if (!isDozeAvailable(context)) {
+                    if (!isDozeAvailable(context) && !Build.UPDATER.contains("oneplus3")) {
                         result.add(KEY_DOZE);
                     }
                     if (!RotationPolicy.isRotationLockToggleVisible(context)) {
