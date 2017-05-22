@@ -289,4 +289,8 @@
     <string name="sub_deactivate_success">SIM deactivated.</string>
     <string name="sub_deactivate_failed">Deactivation failed.</string>
 
+    <!-- Ambient Display Brightness -->
+    <string name="ambient_doze_custom_brightness_title">Ambient and LiftToWake brightness</string>
+    <string name="ambient_doze_auto_brightness_title">Ambient and LiftToWake auto brightness</string>
+    <string name="ambient_doze_auto_brightness_summary">Use last screen-on brightness value for Ambient Display or Lift to Wake screen</string>
 </resources>
