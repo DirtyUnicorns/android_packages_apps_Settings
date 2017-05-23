@@ -90,9 +90,9 @@
   <string name="dashboard_suggestions_title">Suggerimenti</string>
   <string name="summary_dashboard_suggestions_enabled">Suggerimenti pannello impostazioni abilitati</string>
   <string name="summary_dashboard_suggestions_disabled">Suggerimenti pannello impostazioni disabilitati</string>
-  <string name="remove_tile_summaries_title">Suggerimenti</string>
-  <string name="remove_tile_summaries_summary_enabled">Suggerimenti pannello impostazioni abilitati</string>
-  <string name="remove_tile_summaries_summary_disabled">Suggerimenti pannello impostazioni disabilitati</string>
+  <string name="remove_tile_summaries_title">Sommari</string>
+  <string name="remove_tile_summaries_summary_enabled">Sommari pannello impostazioni abilitati</string>
+  <string name="remove_tile_summaries_summary_disabled">Sommari pannello impostazioni disabilitati</string>
   <string name="dashboard_conditions_title">Condizioni</string>
   <string name="summary_dashboard_conditions_enabled">Condizioni pannello impostazioni abilitate</string>
   <string name="summary_dashboard_conditions_disabled">Condizioni pannello impostazioni disabilitate</string>
