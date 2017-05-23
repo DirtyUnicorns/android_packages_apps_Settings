@@ -15,29 +15,29 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- DU Tweaks -->
+    <!-- DU Tweaks -->
   <string name="dirtytweaks_title">Настройки Dirty</string>
   <string name="header_category_dirtytweaks">Кастомизация</string>
-  <!-- DU version -->
+    <!-- DU version -->
   <string name="mod_version">Версия DU</string>
   <string name="mod_version_default">Неизвестно</string>
-  <!-- DU Updater -->
+    <!-- DU Updater -->
   <string name="updater_title">Обновления</string>
   <string name="updater_dashboard_summary">Проверить наличие обновления</string>
-  <!-- DU About -->
+    <!-- DU About -->
   <string name="aboutdu">Информация о прошивке</string>
   <string name="aboutdu_summary">Информация о нашем проекте, разработчиках и устройствах</string>
-  <!-- About phone screen -->
+    <!-- About phone screen -->
   <string name="build_date">Дата сборки</string>
   <string name="build_date_default">01-01-2012-0000</string>
   <string name="security_patch_custom">Последнее обновление системы безопасности</string>
-  <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+    <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Пароль для резервного копирования</string>
-  <!-- Volume adjustment sounds -->
+    <!-- Volume adjustment sounds -->
   <string name="volume_adjust_sounds_title">Регулировка громкости звуков</string>
-  <!-- Density category -->
+    <!-- Density category -->
   <string name="density_category">Настройки плотности</string>
-  <!-- ADB debugging notifications -->
+    <!-- ADB debugging notifications -->
   <string name="enable_adb_custom">Отладка по USB</string>
   <string name="enable_adb_summary_custom">Включить режим отладки (ADB)</string>
   <string name="adb_notify">Режим отладки</string>
@@ -45,10 +45,10 @@
   <string name="adb_over_network">Режим отладки по сети</string>
   <string name="adb_over_network_summary">Включить режим отладки по сети</string>
   <string name="adb_over_network_warning">Внимание! При включении отладки по сети, возможен неконтролируемый доступ к вашему устройству. Вы уверены что хотите включить?</string>
-  <!-- Screenshot sound -->
+    <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Звук скриншота</string>
   <string name="screenshot_sound_summary">Воспроизводить звук при создании скриншота</string>
-  <!-- Display : Rotation -->
+    <!-- Display : Rotation -->
   <string name="display_rotation_title">Углы поворота</string>
   <string name="display_rotation_disabled">Отключен</string>
   <string name="display_rotation_unit">градусов</string>
@@ -57,13 +57,13 @@
   <string name="display_rotation_90_title">90 градусов</string>
   <string name="display_rotation_180_title">180 градусов</string>
   <string name="display_rotation_270_title">270 градусов</string>
-  <!-- Gesture Settings -->
-  <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
+    <!-- Gesture Settings -->
+    <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
   <string name="double_twist_for_camera_mode_custom_summary">Для включения режима селфи в Google Камере дважды встряхните устройство, находясь в приложении</string>
-  <!-- Scramble PIN Layout on Lockscreen -->
+    <!-- Scramble PIN Layout on Lockscreen -->
   <string name="unlock_scramble_pin_layout_title">Перемешать кнопки</string>
   <string name="unlock_scramble_pin_layout_summary">Переставить кнопки ввода PIN-кода в случайном порядке</string>
-  <!-- Dashboard options -->
+    <!-- Dashboard options -->
   <string name="dashboard_category">Опции меню настроек</string>
   <string name="dashboard_suggestions_title">Рекомендации</string>
   <string name="summary_dashboard_suggestions_enabled">Рекомендации в меню настроек включены</string>
@@ -76,26 +76,24 @@
   <string name="summary_dashboard_conditions_disabled">Уведомления в главном меню выключены</string>
   <string name="dashboard_columns_portrait_title">Колонки (портретный режим)</string>
   <string name="dashboard_columns_landscape_title">Колонки (ландшафтный режим)</string>
-  <!-- Bluetooth accept all files -->
+    <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">Принимать все типы файлов</string>
     <!-- Battery stats reset -->
   <string name="battery_stats_reset">Сбросить статистику</string>
   <string name="battery_stats_message">История использования батареи будет сброшена</string>
   <string name="ok_string">ОК</string>
-  <!-- Root Management -->
+    <!-- Root Management -->
   <string name="rootmanagement_title">Суперпользователь</string>
   <string name="rootmanagement_dashboard_summary">Управление root-правами</string>
-  <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
   <string name="supersu_title">SuperSU</string>
-  <!-- Wake on Plug -->
+    <!-- Wake on Plug -->
   <string name="wake_when_plugged_or_unplugged_title">Включение при зарядке</string>
   <string name="wake_when_plugged_or_unplugged_summary">Включать экран при подключении или отключении зарядного устройства</string>
-  
-  <!-- Camera shutter sound -->
+    <!-- Camera shutter sound -->
   <string name="camera_sounds_title">Звук затвора камеры</string>
   <string name="camera_sounds_summary">Отключение может не работать в сторонних приложениях для камеры и в режиме HDR+</string>
- 
-  <!-- Less Notification sounds -->
+    <!-- Less Notification sounds -->
   <string name="less_notification_sounds_title">Менее частые звуки уведомлений</string>
   <string name="less_notification_sounds_summary">Ограничить звук уведомления каждого приложения, что бы он звучал только один раз за выбраный период времени</string>
   <string name="less_notification_sounds_default">Поведение по умолчанию</string>
@@ -108,17 +106,19 @@
   <string name="less_notification_sounds_1m">1 минута</string>
   <string name="less_notification_sounds_2m">2 минуты</string>
   <string name="less_notification_sounds_5m">5 минут</string>
-  <!-- Linked / unlinked notification volume -->
+    <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">Связать громкость звонка и уведомлений</string>
   <string name="notification_volume_option_title">Громкость уведомления</string>
   <string name="ring_notification_volume_option_title">Громкость звонка и уведомлений</string>
-  <!-- Themes -->
+    <!-- Themes -->
   <string name="themes_title">Темы</string>
   <string name="themes_dashboard_summary">Управление темами</string>
-  <!-- Manage applications: Substratum overlays -->
+    <!-- Cell Broadcast -->
+  <string name="cell_broadcast_settings_custom">Настройки оповещения населения</string>
+    <!-- Manage applications: Substratum overlays -->
   <string name="menu_show_substratum">Показать слои</string>
   <string name="menu_hide_substratum">Скрыть слои</string>
-  <!-- Advanced night mode brightness -->
+    <!-- Advanced night mode brightness -->
   <string name="night_brightness_category">Яркость</string>
   <string name="night_brightness_value_title">Яркость в Ночном режиме</string>
   <string name="night_brightness_text">Когда Ночной режим включается автоматически, выставлять желаемую яркость. Стандартная яркость установлена на низком уровне</string>
@@ -126,22 +126,22 @@
   <string name="night_bright_low">низкая яркость</string>
   <string name="night_bright_medium">средняя яркость</string>
   <string name="night_bright_min">минимальная яркость</string>
-  <!-- Wi-Fi Hotspot -->
+    <!-- Wi-Fi Hotspot -->
   <string name="wifi_tether_options_category">Настройки точки доступа Wi-Fi</string>
   <string name="wifi_hotspot_mode_title">Автоматическое отключение точки доступа</string>
   <string name="wifi_tether_checkbox_text_custom">Включить точку доступа</string>
   <string name="wifi_tether_enabled_subtext_custom">Точка доступа <xliff:g id="network_ssid">%1$s</xliff:g> активна</string>
   <string name="wifi_tether_configure_ap_text_custom">Настроить точку доступа Wi-Fi</string>
   <string name="wifi_tether_configure_subtext_custom">Настройка точки доступа Wi-Fi \"<xliff:g id="network_ssid">\u0022%1$s\u0022</xliff:g>\" завершена</string>
-  <!-- NFC -->
+    <!-- NFC -->
   <string name="nfc_options_category">Настройки NFC</string>
-  <!-- double tap statusbar to sleep -->
+    <!-- double tap statusbar to sleep -->
   <string name="double_tap_to_sleep_title">Двойное нажатие для сна</string>
   <string name="double_tap_to_sleep_summary">Дважды коснитесь строки состояния, чтобы перевести устройство в спящий режим</string>
-  <!-- Lockscreen double tap to sleep -->
+    <!-- Lockscreen double tap to sleep -->
   <string name="double_tap_sleep_anywhere_title">Нажмите на экран блокировки для сна</string>
   <string name="double_tap_sleep_anywhere_summary">Дважды коснитесь любого места на экране блокировки, чтобы перевести устройство в спящий режим</string>
-  <!-- Increasing ring tone volume -->
+    <!-- Increasing ring tone volume -->
   <string name="increasing_ring_volume_option_title">Возрастающая громкость звонка</string>
   <string name="increasing_ring_min_volume_title">Начальная громкость</string>
   <string name="increasing_ring_ramp_up_time_title">Время увеличения</string>
@@ -216,7 +216,7 @@
   <string name="app_ops_turn_on_screen">включить экран</string>
   <string name="app_ops_get_accounts">получить аккаунт</string>
   <string name="app_ops_run_in_background">запуск в фоновом режиме</string>
-   <!-- Force authorize substratum packages -->
+    <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Разрешить установку тем из неизвестных источников</string>
   <string name="force_authorize_substratum_packages_summary">Принудительно запрашивать разрешения для каждой темы</string>
     <!-- Subtext of radio button options in the dialog box of Wi-Fi Calling mode. Options are 1)Wi-Fi preferred, 2)Cellular preferred, 3)Wi-Fi only. This master text is for option (1). Reference in Android_N: wifi_calling_mode_choices for the translation of "Cellular network". -->
@@ -225,5 +225,19 @@
   <string name="wifi_calling_mode_cellular_preferred_summary" xliff:restype="x-UNLIMITED">Звонок по мобильной сети. Если передача данных недоступна, использовать сеть Wi-Fi.</string>
     <!-- Subtext of radio button options in the dialog box of Wi-Fi Calling mode. Options are 1)Wi-Fi preferred, 2)Cellular preferred, 3)Wi-Fi only. This master text is for option (3).  -->
   <string name="wifi_calling_mode_wifi_only_summary" xliff:restype="x-UNLIMITED">Звонок по Wi-Fi. Если сигнал сети Wi-Fi потерян, завершить вызов.</string>
+    <!-- Category title for Charging sounds -->
+  <string name="power_notifications_category_title">Звуки при зарядке</string>
+    <!-- Sound settings, Charging sounds enable/disable, setting check box label -->
+  <string name="power_notifications_conditions_title">Проигрывать звук</string>
+  <string name="power_notifications_conditions_none">Отключено</string>
+  <string name="power_notifications_conditions_both">При подключении или отключении источника питания</string>
+  <string name="power_notifications_conditions_connect">Только при подключении источника питания</string>
+  <string name="power_notifications_vibrate_title">Вибрация</string>
+    <!-- Sound settings, Charging sounds ringtone selection, preference label -->
+  <string name="power_notifications_ringtone_title">Мелодия</string>
+    <!-- Sound settings, charging sounds label for ringtone == none -->
+  <string name="power_notifications_ringtone_silent">Без звука</string>
+    <!-- Sound settings, custom charging sound, setting check box label -->
+  <string name="power_notifications_custom_ringtone_title">Своя мелодия</string>
 
 </resources>
