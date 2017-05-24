@@ -148,9 +148,9 @@
     <string name="night_brightness_value_title">Night Light brightness</string>
     <string name="night_brightness_text">When Night Light is enabled automatically set the desired brightness. The default brightness is set to low brightness</string>
     <string name="night_bright_disabled">Disabled</string>
-    <string name="night_bright_low">low brightness</string>
-    <string name="night_bright_medium">medium brightness</string>
-    <string name="night_bright_min">minimum brightness</string>
+    <string name="night_bright_low">Low brightness</string>
+    <string name="night_bright_medium">Medium brightness</string>
+    <string name="night_bright_min">Minimum brightness</string>
 
     <!-- Wi-Fi Hotspot -->
     <string name="wifi_tether_options_category">Wi-Fi tether options</string>
