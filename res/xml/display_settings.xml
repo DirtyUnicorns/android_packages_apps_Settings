@@ -88,7 +88,6 @@
                 android:key="ambient_doze_custom_brightness"
                 android:title="@string/ambient_doze_custom_brightness_title"
                 settings:max="255"
-                settings:min="1"
                 settings:units=""
                 android:persistent="false" />
 

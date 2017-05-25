@@ -311,6 +311,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     com.android.internal.R.integer.config_screenBrightnessDoze);
             int brightness = Settings.System.getIntForUser(resolver,
                     Settings.System.AMBIENT_DOZE_CUSTOM_BRIGHTNESS, defaultValue, UserHandle.USER_CURRENT);
+            mAmbientDozeCustomBrightness.setMin(defaultValue);
             mAmbientDozeCustomBrightness.setValue(brightness);
             mAmbientDozeCustomBrightness.setOnPreferenceChangeListener(this);
 
