@@ -273,4 +273,27 @@
     <!-- Sound settings, custom charging sound, setting check box label -->
     <string name="power_notifications_custom_ringtone_title">Son de notification</string>
 
+    <!-- MSIM Manual provisioning -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> est <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_enabled">activée</string>
+    <string name="sim_disabled">désactivée</string>
+    <string name="sim_missing">manquante ou défectueuse</string>
+    <string name="sim_enabler_need_disable_sim">La carte SIM sera désactivée. Continuer ?</string>
+    <string name="sim_enabler_will_disable_sim_title">Avertissement</string>
+    <string name="sim_enabler_need_switch_data_service">Cette carte SIM sera désactivée et la carte SIM <xliff:g id="slotid">%1$s</xliff:g> sera utilisée pour les données Internet. Continuer ?</string>
+    <string name="sim_enabler_airplane_on">Opération impossible en mode \"Avion\"</string>
+    <string name="sim_enabler_in_call">Opération impossible lors d\'un appel</string>
+    <string name="sim_enabler_both_inactive">Impossible de désactiver toutes les cartes SIM</string>
+    <string name="sim_enabler_enabling">Activation en cours\u2026</string>
+    <string name="sim_enabler_disabling">Désactivation en cours\u2026</string>
+    <string name="sub_activate_success">Carte SIM activée</string>
+    <string name="sub_activate_failed">Échec de l\'activation</string>
+    <string name="sub_deactivate_success">Carte SIM désactivée</string>
+    <string name="sub_deactivate_failed">Échec de la désactivation</string>
+
+    <!-- Ambient Display Brightness -->
+    <string name="ambient_doze_custom_brightness_title">Luminosité</string>
+    <string name="ambient_doze_auto_brightness_title">Luminosité automatique</string>
+    <string name="ambient_doze_auto_brightness_summary">Utiliser la dernière valeur de luminosité de l\'écran pour l\'\"Affichage en mode Veille\" ou l\'écran \"Saisissez votre appareil pour le consulter\"</string>
+
 </resources>
