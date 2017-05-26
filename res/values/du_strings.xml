@@ -295,4 +295,8 @@
     <string name="ambient_doze_auto_brightness_title">Ambient auto brightness</string>
     <string name="ambient_doze_auto_brightness_summary">Use last screen-on brightness value for Ambient Display or Lift to Wake screen</string>
 
+    <!-- Development Settings summary-->
+    <string name="adb_enabled">ADB Enabled</string>
+    <string name="adb_disabled">ADB Disabled</string>
+
 </resources>
