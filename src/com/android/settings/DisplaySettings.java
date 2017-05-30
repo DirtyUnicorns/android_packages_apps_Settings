@@ -44,6 +44,7 @@ import android.support.v14.preference.MultiSelectListPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 
 import android.text.TextUtils;
@@ -122,6 +123,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_ONEPLUS_DOZE = "oneplus_doze";
     private static final String KEY_ONEPLUS_DOZE_PACKAGE_NAME = "com.cyanogenmod.oneplusthree.doze";
+    private static final String CATEGORY_DOZE = "doze_category";
 
     private CustomSeekBarPreference mAmbientDozeCustomBrightness;
     private CustomSeekBarPreference mDashboardPortraitColumns;
@@ -133,6 +135,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private Preference mFontSizePref;
     private Preference mScreenSaverPreference;
+
+    private PreferenceCategory mDozeCategory;
 
     private PreferenceScreen mLedsCategory;
     private PreferenceScreen mOneplusDoze;
@@ -211,7 +215,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
             mDozePreference.setOnPreferenceChangeListener(this);
         } else {
-            removePreference(KEY_DOZE);
+            removePreference(CATEGORY_DOZE);
         }
 
         mOneplusDoze = (PreferenceScreen) findPreference(KEY_ONEPLUS_DOZE);
@@ -305,7 +309,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mNightModePreference.setOnPreferenceChangeListener(this);
         }
 
-        if (isDozeAvailable(activity)) {
+        if (isDozeAvailable(activity) && !Build.UPDATER.contains("oneplus3")) {
             mAmbientDozeCustomBrightness = (CustomSeekBarPreference) findPreference(AMBIENT_DOZE_CUSTOM_BRIGHTNESS);
             int defaultValue = getResources().getInteger(
                     com.android.internal.R.integer.config_screenBrightnessDoze);
@@ -325,8 +329,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mAmbientDozeAutoBrightness.setOnPreferenceChangeListener(this);
             mAmbientDozeCustomBrightness.setEnabled(!isAmbientDozeAutoBrighthness);
         } else {
-            removePreference(AMBIENT_DOZE_CUSTOM_BRIGHTNESS);
-            removePreference(AMBIENT_DOZE_AUTO_BRIGHTNESS);
+            removePreference(CATEGORY_DOZE);
         }
     }
 
@@ -737,7 +740,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                         result.add(KEY_LIFT_TO_WAKE);
                     }
                     if (!isDozeAvailable(context) && !Build.UPDATER.contains("oneplus3")) {
-                        result.add(KEY_DOZE);
+                        result.add(CATEGORY_DOZE);
                     }
                     if (!RotationPolicy.isRotationLockToggleVisible(context)) {
                         result.add(KEY_ACCELEROMETER);
