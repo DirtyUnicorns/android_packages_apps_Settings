@@ -37,8 +37,8 @@
   <string name="updater_title">DU 更新器</string>
   <string name="updater_dashboard_summary">检查最近的更新</string>
   <!-- DU About -->
-  <string name="aboutdu">ROM information</string>
-  <string name="aboutdu_summary">Information about our project, developers and devices</string>
+  <string name="aboutdu">ROM信息</string>
+  <string name="aboutdu_summary">关于我们的项目，开发者和设备的信息</string>
   <!-- About phone screen -->
   <string name="build_date">编译日期</string>
   <string name="build_date_default">2012-01-01-0000</string>
@@ -87,22 +87,22 @@
   <string name="unlock_scramble_pin_layout_summary">当解锁设备时使用乱序 PIN 布局</string>
   <!-- Dashboard options -->
   <string name="dashboard_category">面板设置</string>
-  <string name="dashboard_suggestions_title">Suggestions</string>
+  <string name="dashboard_suggestions_title">建议</string>
   <string name="summary_dashboard_suggestions_enabled">面板建议摘要已启用</string>
   <string name="summary_dashboard_suggestions_disabled">面板建议摘要已禁用</string>
-  <string name="remove_tile_summaries_title">Summaries</string>
-  <string name="remove_tile_summaries_summary_enabled">Dashboard summaries are enabled</string>
-  <string name="remove_tile_summaries_summary_disabled">Dashboard summaries are disabled</string>
-  <string name="dashboard_conditions_title">Conditions</string>
+  <string name="remove_tile_summaries_title">状态</string>
+  <string name="remove_tile_summaries_summary_enabled">面板状态信息已启用</string>
+  <string name="remove_tile_summaries_summary_disabled">面板状态信息已禁用</string>
+  <string name="dashboard_conditions_title">摘要</string>
   <string name="summary_dashboard_conditions_enabled">面板状态摘要已启用</string>
   <string name="summary_dashboard_conditions_disabled">面板状态摘要已禁用</string>
-  <string name="dashboard_columns_portrait_title">Columns (portrait)</string>
-  <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
+  <string name="dashboard_columns_portrait_title">列数 (竖屏)</string>
+  <string name="dashboard_columns_landscape_title">列数 (横屏)</string>
   <!-- Bluetooth accept all files -->
   <string name="bluetooth_accept_all_files">接受所有文件类型</string>
   <!-- Root Management -->
-  <string name="rootmanagement_title">Root management</string>
-  <string name="rootmanagement_dashboard_summary">Manage root access</string>
+  <string name="rootmanagement_title">Root 管理</string>
+  <string name="rootmanagement_dashboard_summary">管理Root权限</string>
   <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
   <string name="supersu_title">SuperSU</string>
   <!-- Wake on Plug -->
@@ -177,18 +177,18 @@
   <string name="profile_choose_app">选择应用</string>
   <string name="reset">重置</string>
   <!-- Less Notification sounds -->
-  <string name="less_notification_sounds_title">Less frequent notification sounds</string>
-  <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
-  <string name="less_notification_sounds_default">Default Behavior</string>
-  <string name="less_notification_sounds_3s">3 seconds</string>
-  <string name="less_notification_sounds_5s">5 seconds</string>
-  <string name="less_notification_sounds_10s">10 seconds</string>
-  <string name="less_notification_sounds_15s">15 seconds</string>
-  <string name="less_notification_sounds_30s">30 seconds</string>
-  <string name="less_notification_sounds_45s">45 seconds</string>
-  <string name="less_notification_sounds_1m">1 minute</string>
-  <string name="less_notification_sounds_2m">2 minutes</string>
-  <string name="less_notification_sounds_5m">5 minutes</string>
+  <string name="less_notification_sounds_title">\"不频繁的通知声\"</string>
+  <string name="less_notification_sounds_summary">限制每个应用程序的通知声只能在每个设置的时间段播放一次</string>
+  <string name="less_notification_sounds_default">默认行为</string>
+  <string name="less_notification_sounds_3s">3 秒</string>
+  <string name="less_notification_sounds_5s">5 秒</string>
+  <string name="less_notification_sounds_10s">10 秒</string>
+  <string name="less_notification_sounds_15s">15 秒</string>
+  <string name="less_notification_sounds_30s">30 秒</string>
+  <string name="less_notification_sounds_45s">45 秒</string>
+  <string name="less_notification_sounds_1m">1 分钟</string>
+  <string name="less_notification_sounds_2m">2 分钟</string>
+  <string name="less_notification_sounds_5m">5 分钟</string>
   <!-- Linked / unlinked notification volume -->
   <string name="link_volume_option_title">关联铃声和通知的音量</string>
   <string name="notification_volume_option_title">通知音量</string>
@@ -197,8 +197,8 @@
   <string name="themes_title">主题</string>
   <string name="themes_dashboard_summary">管理你的主题</string>
   <!-- Manage applications: Substratum overlays -->
-  <string name="menu_show_substratum">显示 Overlays</string>
-  <string name="menu_hide_substratum">隐藏 Overlays</string>
+  <string name="menu_show_substratum">显示叠加层</string>
+  <string name="menu_hide_substratum">隐藏叠加层</string>
   <!-- Advanced night mode brightness -->
   <string name="night_brightness_category">亮度</string>
   <string name="night_brightness_value_title">夜间模式亮度</string>
@@ -208,14 +208,22 @@
   <string name="night_bright_medium">中等亮度</string>
   <string name="night_bright_min">最低亮度</string>
   <!-- Wi-Fi Hotspot -->
-  <string name="wifi_tether_options_category">Wi-Fi tether options</string>
-  <string name="wifi_hotspot_mode_title">Hotspot timeout</string>
-  <string name="wifi_tether_checkbox_text_custom">Enable hotspot</string>
-  <string name="wifi_tether_enabled_subtext_custom"><xliff:g id="network_ssid">%1$s</xliff:g> is now active</string>
-  <string name="wifi_tether_configure_ap_text_custom">Setup hotspot</string>
-  <string name="wifi_tether_configure_subtext_custom">Hotspot \"<xliff:g id="network_ssid">\u0022%1$s\u0022</xliff:g>\" configured</string>
+  <string name="wifi_tether_options_category">Wi-Fi 热点选项</string>
+  <string name="wifi_hotspot_mode_title">热点超时</string>
+  <string name="wifi_tether_checkbox_text_custom">开启热点</string>
+  <string name="wifi_tether_enabled_subtext_custom">热点<xliff:g id="network_ssid">%1$s</xliff:g> 已激活</string>
+  <string name="wifi_tether_configure_ap_text_custom">设置热点</string>
+  <string name="wifi_tether_configure_subtext_custom">热点 \"<xliff:g id="network_ssid">\u0022%1$s\u0022</xliff:g>\" 已设置</string>
+
+  <!-- Hotspot idle -->
+ <string name="wifi_hotspot_mode_always">常开</string>
+  <string name="wifi_hotspot_mode_5min_off">空闲5分钟后关闭</string>
+  <string name="wifi_hotspot_mode_10min_off">空闲10分钟后关闭</string>
+  <string name="wifi_hotspot_mode_30min_off">空闲30分钟后关闭</string>
+  <string name="wifi_hotspot_mode_1h_off">空闲1小时后关闭</string>
+
   <!-- NFC -->
-  <string name="nfc_options_category">NFC options</string>
+  <string name="nfc_options_category">NFC 设置</string>
   <!-- double tap statusbar to sleep -->
   <string name="double_tap_to_sleep_title">双击以休眠（状态栏）</string>
   <string name="double_tap_to_sleep_summary">双击状态栏以使设备休眠</string>
@@ -223,7 +231,7 @@
   <string name="double_tap_sleep_anywhere_title">双击以休眠（锁屏）</string>
   <string name="double_tap_sleep_anywhere_summary">在锁屏上的任意位置双击以使设备休眠</string>
   <!-- Increasing ring tone volume -->
-  <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
-  <string name="increasing_ring_min_volume_title">Start volume</string>
-  <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
+  <string name="increasing_ring_volume_option_title">增强铃声音量</string>
+  <string name="increasing_ring_min_volume_title">开始音量</string>
+  <string name="increasing_ring_ramp_up_time_title">上升时间</string>
 </resources>
