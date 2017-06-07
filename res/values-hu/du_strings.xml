@@ -302,6 +302,7 @@
   <string name="sub_deactivate_failed">Letiltás sikertelen.</string>
 
   <!-- Ambient Display Brightness -->
+  <string name="doze_category_title">Doze beállítások</string>
   <string name="ambient_doze_custom_brightness_title">Környezeti és Felemelési fényerő</string>
   <string name="ambient_doze_auto_brightness_title">Környezeti és Felemelési auto fényerő</string>
   <string name="ambient_doze_auto_brightness_summary">Az utolsó bekapcsolt képernyő fényerejének használata a Környezeti és Felemelési képernyőhöz</string>
