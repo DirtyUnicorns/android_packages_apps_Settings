@@ -299,4 +299,6 @@
     <string name="adb_enabled">ADB Enabled</string>
     <string name="adb_disabled">ADB Disabled</string>
 
+    <string name="background_processes_settings_title">Background processes</string>
+
 </resources>
