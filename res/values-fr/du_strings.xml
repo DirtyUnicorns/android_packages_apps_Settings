@@ -313,4 +313,8 @@
     <string name="adb_enabled">ADB Activé</string>
     <string name="adb_disabled">ADB Désactivé</string>
 
+    <!-- Disable battery saver warning color -->
+    <string name="battery_saver_color_title">Couleur de l\'économiseur</string>
+    <string name="battery_saver_color_summary">Lorsque l\'économiseur de batterie est activé, afficher la barre d\'état et la barre de navigation en orange</string>
+
 </resources>
