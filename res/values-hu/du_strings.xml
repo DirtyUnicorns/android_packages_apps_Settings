@@ -307,4 +307,14 @@
   <string name="ambient_doze_auto_brightness_title">Környezeti és Felemelési auto fényerő</string>
   <string name="ambient_doze_auto_brightness_summary">Az utolsó bekapcsolt képernyő fényerejének használata a Környezeti és Felemelési képernyőhöz</string>
 
+  <!-- Development Settings summary-->
+  <string name="adb_enabled">ADB engedélyezve</string>
+  <string name="adb_disabled">ADB letiltva</string>
+
+  <!-- Disable battery saver warning color -->
+  <string name="battery_saver_color_title">Figyelmeztető szín</string>
+  <string name="battery_saver_color_summary">Narancs állapot- és navigációs sáv engedélyezése, ha az energiatakrékos üzemmód aktív</string>
+
+  <string name="background_processes_settings_title">Háttérben futó folyamatok</string>
+
 </resources>
