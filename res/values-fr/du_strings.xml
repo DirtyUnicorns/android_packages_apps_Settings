@@ -317,4 +317,6 @@
     <string name="battery_saver_color_title">Couleur de l\'économiseur</string>
     <string name="battery_saver_color_summary">Lorsque l\'économiseur de batterie est activé, afficher la barre d\'état et la barre de navigation en orange</string>
 
+    <string name="background_processes_settings_title">Processus en arrière-plan</string>
+
 </resources>
