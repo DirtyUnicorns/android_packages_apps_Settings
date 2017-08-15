@@ -309,7 +309,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mNightModePreference.setOnPreferenceChangeListener(this);
         }
 
-        if (isDozeAvailable(activity) && !Build.UPDATER.contains("oneplus3")) {
+        if (isDozeAvailable(activity) && !Build.UPDATER.contains("oneplus3") && !Build.UPDATER.contains("cheeseburger")) {
             mAmbientDozeCustomBrightness = (CustomSeekBarPreference) findPreference(AMBIENT_DOZE_CUSTOM_BRIGHTNESS);
             int defaultValue = getResources().getInteger(
                     com.android.internal.R.integer.config_screenBrightnessDoze);
@@ -739,7 +739,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     if (!isLiftToWakeAvailable(context)) {
                         result.add(KEY_LIFT_TO_WAKE);
                     }
-                    if (!isDozeAvailable(context) && !Build.UPDATER.contains("oneplus3")) {
+                    if (!isDozeAvailable(context) && !Build.UPDATER.contains("oneplus3") && !Build.UPDATER.contains("cheeseburger")) {
                         result.add(CATEGORY_DOZE);
                     }
                     if (!RotationPolicy.isRotationLockToggleVisible(context)) {
