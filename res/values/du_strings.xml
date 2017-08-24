@@ -21,4 +21,7 @@
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
 
+    <!-- DU version in About phone -->
+    <string name="rom_version_title">DU version</string>
+
 </resources>
