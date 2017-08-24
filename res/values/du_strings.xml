@@ -43,4 +43,7 @@
     <string name="dirtytweaks_title">Dirty Tweaks</string>
     <string name="dirtytweaks_summary">Enhance your experience</string>
 
+    <!-- DU version in About phone -->
+    <string name="rom_version_title">DU version</string>
+
 </resources>
