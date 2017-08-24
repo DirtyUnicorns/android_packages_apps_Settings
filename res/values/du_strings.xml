@@ -37,4 +37,7 @@
     <!-- Density category -->
     <string name="density_category">Density options</string>
 
+    <!-- DU version in About phone -->
+    <string name="rom_version_title">DU version</string>
+
 </resources>
