@@ -38,4 +38,8 @@
     <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
     <string name="supersu_title">SuperSU</string>
 
+    <!-- Dirty Tweaks -->
+    <string name="dirtytweaks_title">Dirty Tweaks</string>
+    <string name="dirtytweaks_summary">Enhance your experience</string>
+
 </resources>
