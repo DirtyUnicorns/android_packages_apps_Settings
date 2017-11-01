@@ -61,4 +61,7 @@
     <!-- Vibrate on plug -->
     <string name="vibration_on_charge_state_changed_title">Vibrate on plug</string>
 
+    <!-- Pixel color on sim card -->
+    <string name="default_sim_color">Pixel</string>
+
 </resources>
