@@ -21,6 +21,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.settings">
 
+    <uses-permission android:name="android.permission.NAVIGATION_EDITOR" />
+
     <application>
 
         <!-- Root management -->
@@ -63,5 +65,91 @@
         <activity android:name="com.dirtyunicorns.tweaks.fragments.batterylight.NotificationLightSettings" />
         <activity android:name="com.dirtyunicorns.tweaks.fragments.batterylight.BatteryLightSettings" />
 
+        <!-- Global navbar settings -->
+        <activity android:name="Settings$NavigationSettingsActivity"
+                android:label="@string/bottom_nav_navigation_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.tweaks.fragments.NavigationBar" />
+        </activity>
+
+        <!-- Smartbar settings -->
+        <activity android:name="Settings$SmartbarSettingsActivity"
+                android:label="@string/smartbar_settings_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.tweaks.fragments.SmartbarSettings" />
+        </activity>
+
+        <!-- Fling settings -->
+        <activity android:name="Settings$FlingSettingsActivity"
+                android:label="@string/fling_settings"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.tweaks.fragments.FlingSettings" />
+        </activity>
+
+        <!-- Pulse settings -->
+        <activity android:name="Settings$PulseSettingsActivity"
+                android:label="@string/pulse_settings"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.tweaks.fragments.PulseSettings" />
+        </activity>
+
+        <!-- System action picker -->
+        <activity android:name="com.dirtyunicorns.tweaks.ActionPickerDialogActivity"
+                android:theme="@style/Theme.SmartBar.Dialog"
+                android:label="@string/choose_action_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Icon pack picker -->
+        <activity android:name="com.dirtyunicorns.tweaks.IconPickerActivity"
+                android:theme="@style/Theme.SmartBar.Dialog"
+                android:label="@string/icon_pack_picker_dialog_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Icon picker proxy for gallery -->
+        <activity android:name="com.dirtyunicorns.tweaks.IconPickerGallery"
+            android:theme="@style/Theme.SmartBar.Dialog"
+            android:label="@string/icon_pack_picker_dialog_title"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Icon pack grid -->
+        <activity android:name="com.dirtyunicorns.tweaks.IconPackGridActivity"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

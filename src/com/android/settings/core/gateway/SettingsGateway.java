@@ -133,6 +133,10 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.dirtyunicorns.tweaks.DirtyTweaks;
+import com.dirtyunicorns.tweaks.fragments.FlingSettings;
+import com.dirtyunicorns.tweaks.fragments.NavigationBar;
+import com.dirtyunicorns.tweaks.fragments.PulseSettings;
+import com.dirtyunicorns.tweaks.fragments.SmartbarSettings;
 
 public class SettingsGateway {
 
@@ -255,7 +259,11 @@ public class SettingsGateway {
             LockscreenDashboardFragment.class.getName(),
             BluetoothDeviceDetailsFragment.class.getName(),
             DataUsageList.class.getName(),
-            DirtyTweaks.class.getName()
+            DirtyTweaks.class.getName(),
+            NavigationBar.class.getName(),
+            FlingSettings.class.getName(),
+            SmartbarSettings.class.getName(),
+            PulseSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -295,5 +303,9 @@ public class SettingsGateway {
             Settings.DeviceInfoSettingsActivity.class.getName(),
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.DirtyTweaksActivity.class.getName(),
+            Settings.NavigationSettingsActivity.class.getName(),
+            Settings.FlingSettingsActivity.class.getName(),
+            Settings.SmartbarSettingsActivity.class.getName(),
+            Settings.PulseSettingsActivity.class.getName()
     };
 }
