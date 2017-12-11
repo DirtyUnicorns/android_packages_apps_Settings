@@ -51,18 +51,7 @@ public class WallpaperPreferenceController extends AbstractPreferenceController 
 
     @Override
     public boolean isAvailable() {
-        if (TextUtils.isEmpty(mWallpaperPackage) || TextUtils.isEmpty(mWallpaperClass)) {
-            Log.e(TAG, "No Wallpaper picker specified!");
-            return false;
-        }
-        final ComponentName componentName =
-                new ComponentName(mWallpaperPackage, mWallpaperClass);
-        final PackageManager pm = mContext.getPackageManager();
-        final Intent intent = new Intent();
-        intent.setComponent(componentName);
-        final List<ResolveInfo> resolveInfos =
-                pm.queryIntentActivities(intent, 0 /* flags */);
-        return resolveInfos != null && resolveInfos.size() != 0;
+        return false;
     }
 
     @Override
