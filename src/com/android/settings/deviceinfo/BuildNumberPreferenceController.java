@@ -45,6 +45,8 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnResume;
 
+import java.util.Random;
+
 public class BuildNumberPreferenceController extends AbstractPreferenceController implements
         PreferenceControllerMixin, LifecycleObserver, OnResume {
 
@@ -63,6 +65,24 @@ public class BuildNumberPreferenceController extends AbstractPreferenceControlle
     private boolean mDebuggingFeaturesDisallowedBySystem;
     private int mDevHitCountdown;
     private boolean mProcessingLastDevHit;
+
+    public final static java.lang.String[] insults = {
+            "Hahaha, n00b!",
+            "What are you doing??",
+            "n00b alert!",
+            "What is this...? Amateur hour!?",
+            "This is not iOS",
+            "Please step away from the device!",
+            "error code: 1D10T",
+            "Go outside",
+            "¯\\_(ツ)_/¯",
+            "Pro tip: Stop doing this!",
+            "Y u no speak Android???",
+            "Why are you so stupid?!",
+            "Perhaps this Android thing is not for you...",
+            "Don't you have anything better to do?!",
+            "This is why nobody likes you...",
+            "Are you even trying?!",};
 
     public BuildNumberPreferenceController(Context context, Activity activity, Fragment fragment,
             Lifecycle lifecycle) {
@@ -182,7 +202,9 @@ public class BuildNumberPreferenceController extends AbstractPreferenceControlle
             if (mDevHitToast != null) {
                 mDevHitToast.cancel();
             }
-            mDevHitToast = Toast.makeText(mContext, R.string.show_dev_already_custom,
+            Random randomInsult = new Random();
+            final int toasts = randomInsult.nextInt(insults.length);
+            mDevHitToast = Toast.makeText(mContext, insults[toasts],
                     Toast.LENGTH_LONG);
             mDevHitToast.show();
             mMetricsFeatureProvider.action(
