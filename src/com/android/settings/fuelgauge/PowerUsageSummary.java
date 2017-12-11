@@ -46,7 +46,7 @@ import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.widget.TextView;
 
-import com.android.internal.hardware.AmbientDisplayConfiguration;
+//import com.android.internal.hardware.AmbientDisplayConfiguration;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.os.BatterySipper;
 import com.android.internal.os.BatterySipper.DrainType;
@@ -59,10 +59,10 @@ import com.android.settings.applications.LayoutPreference;
 import com.android.settings.applications.ManageApplications;
 import com.android.settings.core.instrumentation.MetricsFeatureProvider;
 import com.android.settings.dashboard.SummaryLoader;
-import com.android.settings.display.AmbientDisplayPreferenceController;
-import com.android.settings.display.AutoBrightnessPreferenceController;
+//import com.android.settings.display.AmbientDisplayPreferenceController;
+//import com.android.settings.display.AutoBrightnessPreferenceController;
 import com.android.settings.display.BatteryPercentagePreferenceController;
-import com.android.settings.display.TimeoutPreferenceController;
+//import com.android.settings.display.TimeoutPreferenceController;
 import com.android.settings.fuelgauge.anomaly.Anomaly;
 import com.android.settings.fuelgauge.anomaly.AnomalyDetectionPolicy;
 import com.android.settings.fuelgauge.anomaly.AnomalyDialogFragment.AnomalyDialogListener;
@@ -96,9 +96,9 @@ public class PowerUsageSummary extends PowerUsageBase implements
     private static final String KEY_SCREEN_USAGE = "screen_usage";
     private static final String KEY_TIME_SINCE_LAST_FULL_CHARGE = "last_full_charge";
 
-    private static final String KEY_AUTO_BRIGHTNESS = "auto_brightness_battery";
-    private static final String KEY_SCREEN_TIMEOUT = "screen_timeout_battery";
-    private static final String KEY_AMBIENT_DISPLAY = "ambient_display_battery";
+    //private static final String KEY_AUTO_BRIGHTNESS = "auto_brightness_battery";
+    //private static final String KEY_SCREEN_TIMEOUT = "screen_timeout_battery";
+    //private static final String KEY_AMBIENT_DISPLAY = "ambient_display_battery";
     private static final String KEY_BATTERY_SAVER_SUMMARY = "battery_saver_summary";
     private static final String KEY_HIGH_USAGE = "high_usage";
 
@@ -308,14 +308,14 @@ public class PowerUsageSummary extends PowerUsageBase implements
         mBatteryHeaderPreferenceController = new BatteryHeaderPreferenceController(
                 context, getActivity(), this /* host */, getLifecycle());
         controllers.add(mBatteryHeaderPreferenceController);
-        controllers.add(new AutoBrightnessPreferenceController(context, KEY_AUTO_BRIGHTNESS));
-        controllers.add(new TimeoutPreferenceController(context, KEY_SCREEN_TIMEOUT));
+        //controllers.add(new AutoBrightnessPreferenceController(context, KEY_AUTO_BRIGHTNESS));
+        //controllers.add(new TimeoutPreferenceController(context, KEY_SCREEN_TIMEOUT));
         controllers.add(new BatterySaverController(context, getLifecycle()));
         controllers.add(new BatteryPercentagePreferenceController(context));
-        controllers.add(new AmbientDisplayPreferenceController(
-                context,
-                new AmbientDisplayConfiguration(context),
-                KEY_AMBIENT_DISPLAY));
+        //controllers.add(new AmbientDisplayPreferenceController(
+        //        context,
+        //        new AmbientDisplayConfiguration(context),
+        //        KEY_AMBIENT_DISPLAY));
         return controllers;
     }
 
@@ -917,9 +917,9 @@ public class PowerUsageSummary extends PowerUsageBase implements
                     niks.add(KEY_HIGH_USAGE);
                     niks.add(KEY_BATTERY_SAVER_SUMMARY);
                     // Duplicates in display
-                    niks.add(KEY_AUTO_BRIGHTNESS);
-                    niks.add(KEY_SCREEN_TIMEOUT);
-                    niks.add(KEY_AMBIENT_DISPLAY);
+                    //niks.add(KEY_AUTO_BRIGHTNESS);
+                    //niks.add(KEY_SCREEN_TIMEOUT);
+                    //niks.add(KEY_AMBIENT_DISPLAY);
                     return niks;
                 }
             };
