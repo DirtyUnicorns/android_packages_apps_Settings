@@ -47,20 +47,14 @@
         <!-- Dirty Tweaks -->
         <activity android:name="Settings$DirtyTweaksActivity"
                 android:label="@string/dirtytweaks_title"
-                android:icon="@drawable/ic_settings_dirtytweaks"
-                android:taskAffinity="" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.android.settings.SHORTCUT" />
-            </intent-filter>
-            <intent-filter android:priority="12">
+                android:icon="@drawable/ic_settings_dirtytweaks">
+            <intent-filter android:priority="10">
                 <action android:name="com.android.settings.action.SETTINGS" />
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.homepage"/>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.DirtyTweaks" />
+                android:value="com.dirtyunicorns.tweaks.DirtyTweaks" />
             <meta-data android:name="com.android.settings.summary"
                 android:resource="@string/dirtytweaks_summary" />
         </activity>

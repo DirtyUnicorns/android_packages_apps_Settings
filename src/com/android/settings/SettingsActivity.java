@@ -152,8 +152,6 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final int REQUEST_SUGGESTION = 42;
 
-    private static final String DU_FRAGMENT = "com.android.settings.DirtyTweaks";
-
     private String mFragmentClass;
 
     private CharSequence mInitialTitle;
@@ -732,14 +730,6 @@ public class SettingsActivity extends SettingsDrawerActivity
             }
         }
 
-        if (DU_FRAGMENT.equals(fragmentName)) {
-            Intent duIntent = new Intent();
-            duIntent.setClassName("com.dirtyunicorns.tweaks", "com.dirtyunicorns.tweaks.activities.DirtyTweaks");
-            startActivity(duIntent);
-            finish();
-            return null;
-        }
-
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
@@ -875,16 +865,6 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                         Settings.RootManagementActivity.class.getName()),
                 isRootAvailable(), isAdmin);
-
-        // Dirty Tweaks
-        boolean duSupported = false;
-        try {
-            duSupported = (getPackageManager().getPackageInfo("com.dirtyunicorns.tweaks", 0).versionCode >= 1);
-        } catch (PackageManager.NameNotFoundException e) {
-        }
-        setTileEnabled(new ComponentName(packageName,
-                        Settings.DirtyTweaksActivity.class.getName()),
-                duSupported, isAdmin);
 
         if (UserHandle.MU_ENABLED && !isAdmin) {
 
