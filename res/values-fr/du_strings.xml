@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Encryption and credential -->
+    <string name="custom_encryption_and_credential_settings_summary_on">Appareil chiffré</string>
+    <string name="custom_encryption_and_credential_settings_summary_off">Appareil non chiffré</string>
+
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_custom">
+        <item quantity="one">Encore <xliff:g id="step_count">%1$d</xliff:g> appui avant l\'activation des Options développeur</item>
+        <item quantity="other">Encore <xliff:g id="step_count">%1$d</xliff:g> appuis avant l\'activation des Options développeur</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_custom">Options développeur activées ! Prudence !</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_custom">Options développeur déjà activées !</string>
+
+    <string name="build_number">Numéro de compilation</string>
+
+    <!-- Density category -->
+    <string name="density_category">Densité</string>
+
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Root</string>
+    <string name="rootmanagement_dashboard_summary">Gestion des accès \"Root\"</string>
+
+    <!-- Dirty Tweaks -->
+    <string name="dirtytweaks_title">Dirty Tweaks</string>
+    <string name="dirtytweaks_summary">Améliorez votre expérience</string>
+
+    <!-- DU version in About phone -->
+    <string name="rom_version_title">Version de DU</string>
+
+    <!-- Ambient category -->
+    <string name="doze_category">Mode Veille</string>
+
+    <!-- Ambient display always-on of the tuner-->
+    <string name="always_on_title">Toujours activé</string>
+    <string name="always_on_summary">Réveiller l\'appareil lors de la réception de notifications</string>
+
+    <!-- Wake on Plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Allumer l\'écran lorsque le chargeur est connecté ou déconnecté</string>
+
+    <!-- Advanced night mode brightness -->
+    <string name="night_brightness_category">Niveau de luminosité</string>
+    <string name="night_brightness_value_title">Définir le niveau de luminosité appliqué lorsque \"Éclairage nocturne\" est activé</string>
+    <string name="night_bright_disabled">Désactivé</string>
+    <string name="night_bright_minimum">Luminosité minimale</string>
+    <string name="night_bright_low">Luminosité faible</string>
+    <string name="night_bright_medium">Luminosité moyenne</string>
+
+    <!-- values-fr/du_strings.xml -->
+    <string name="security_patch">Niveau du correctif de sécurité Android</string>
+    <string name="radio_info_imsi_label">IMSI :</string>
+
+    <!-- Vibrate on plug -->
+    <string name="vibration_on_charge_state_changed_title">Vibrer au branchement</string>
+
+    <!-- Pixel color on sim card -->
+    <string name="default_sim_color">Pixel</string>
+
+    <!-- Changelog -->
+    <string name="duchangelog_title">Notes de version</string>
+    <string name="duchangelog_summary">Consulter la liste des changements</string>
+    <string name="duchangelog_weeklies">Compilations hebdomadaires</string>
+    <string name="duchangelog_official">Compilations officielles</string>
+    <string name="warning_text">Les présentes notes de version sont des résumés de ce qui a été réalisé. Pour plus de détails, consulter notre Github ou notre Gerrit.</string>
+    <string name="weeklies">Hebdomadaires</string>
+    <string name="official">Officielles</string>
+    <string name="changelog_header_version"></string>
+    <string name="changelog_dialog_title">Avertissement</string>
+    <string name="changelog_dialog_message">Activer le Wi-Fi ou les données mobiles pour télécharger la note de version</string>
+    <string name="changelog_dialog_ok">OK</string>
+
+    <!-- Developer options toast insulter -->
+    <string name="toast_insult_0">Ahahah, n00b !</string>
+    <string name="toast_insult_1">Vous essayez de faire quoi ???</string>
+    <string name="toast_insult_2">Alerte au n00b !</string>
+    <string name="toast_insult_3">C\'est quoi ? L\'heure des écoliers !?</string>
+    <string name="toast_insult_4">Vous n\'êtes pas sur iOS</string>
+    <string name="toast_insult_5">Éloignez-vous de votre appareil !</string>
+    <string name="toast_insult_6">Code d\'erreur : 1D10T</string>
+    <string name="toast_insult_7">Allez vous promener</string>
+    <string name="toast_insult_8">¯\\_(ツ)_/¯</string>
+    <string name="toast_insult_9">Conseil de pro : Arrêtez de faire ça !</string>
+    <string name="toast_insult_10">Vous ne parlez pas Android ???</string>
+    <string name="toast_insult_11">Pourquoi êtes-vous si stupide ?!</string>
+    <string name="toast_insult_12">Cette bidouille Android ne doit pas être pour vous...</string>
+    <string name="toast_insult_13">Vous n\'avez rien de mieux à faire ?!</string>
+    <string name="toast_insult_14">C\'est pour ça que personne ne vous aime...</string>
+    <string name="toast_insult_15">Vous persistez ?!</string>
+
+    <!-- SIM selector for SMS -->
+    <string name="select_sim_for_sms">Sélectionner une carte SIM pour les SMS</string>
+
+</resources>
+
