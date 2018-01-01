@@ -18,11 +18,22 @@
         android:title="@string/about_settings">
 
         <!-- System update settings - launches activity -->
-        <Preference android:key="additional_system_update_settings"
+        <!--Preference android:key="additional_system_update_settings"
                     android:title="@string/additional_system_update_settings_list_item_title">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="@string/additional_system_update"
                     android:targetClass="@string/additional_system_update_menu" />
+        </Preference-->
+
+        <!-- Changelog -->
+        <Preference
+            android:key="du_changelog"
+            android:title="@string/duchangelog_title"
+            android:summary="@string/duchangelog_summary">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.du.changelog.ChangelogActivity" />
         </Preference>
 
         <!-- Device status - launches activity -->
