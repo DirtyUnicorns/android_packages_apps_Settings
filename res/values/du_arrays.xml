@@ -62,4 +62,24 @@
         <item>3</item>
     </string-array>
 
+    <!-- Developer options toast insulter -->
+    <string-array name="developer_options_toast_insulter_entries" translatable="false">
+        <item>@string/toast_insult_0</item>
+        <item>@string/toast_insult_1</item>
+        <item>@string/toast_insult_2</item>
+        <item>@string/toast_insult_3</item>
+        <item>@string/toast_insult_4</item>
+        <item>@string/toast_insult_5</item>
+        <item>@string/toast_insult_6</item>
+        <item>@string/toast_insult_7</item>
+        <item>@string/toast_insult_8</item>
+        <item>@string/toast_insult_9</item>
+        <item>@string/toast_insult_10</item>
+        <item>@string/toast_insult_11</item>
+        <item>@string/toast_insult_12</item>
+        <item>@string/toast_insult_13</item>
+        <item>@string/toast_insult_14</item>
+        <item>@string/toast_insult_15</item>
+    </string-array>
+
 </resources>
