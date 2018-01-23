@@ -193,6 +193,7 @@ public class Settings extends SettingsActivity {
 
     // Custom categories
     public static class DirtyTweaksActivity extends SettingsActivity { /* empty */ }
+    public static class MiscellaneousSettingsActivity extends SettingsActivity { /* empty */ }
     public static class RootManagementActivity extends SettingsActivity { /* empty */ }
     public static class NavigationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class FlingSettingsActivity extends SettingsActivity { /* empty */ }
