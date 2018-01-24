@@ -61,6 +61,18 @@
                 android:resource="@string/dirtytweaks_summary" />
         </activity>
 
+        <!-- Miscellaneous -->
+        <activity android:name="Settings$MiscellaneousSettingsActivity"
+                android:label="@string/miscellaneous_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.tweaks.fragments.Miscellaneous" />
+        </activity>
+
         <!-- Battery and notification lights -->
         <activity android:name="com.dirtyunicorns.tweaks.fragments.batterylight.NotificationLightSettings" />
         <activity android:name="com.dirtyunicorns.tweaks.fragments.batterylight.BatteryLightSettings" />
