@@ -45,6 +45,25 @@
     <!-- DU version in About phone -->
     <string name="rom_version_title">Version de DU</string>
 
+    <!-- MSIM Manual provisioning -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> est <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_enabled">activée</string>
+    <string name="sim_disabled">désactivée</string>
+    <string name="sim_missing">manquante ou défectueuse</string>
+    <string name="sim_enabler_need_disable_sim">La carte SIM sera désactivée. Continuer ?</string>
+    <string name="sim_enabler_will_disable_sim_title">Avertissement</string>
+    <string name="sim_enabler_need_switch_data_service">Cette carte SIM sera désactivée et la carte SIM <xliff:g id="slotid">%1$s</xliff:g> sera utilisée pour les services de données mobiles. Continuer ?</string>
+    <string name="sim_enabler_airplane_on">Impossible d\'effectuer l\'opération lorsque le mode avion est activé.</string>
+    <string name="sim_enabler_in_call">Impossible d\'effectuer l\'opération en cours d\'appel.</string>
+    <string name="sim_enabler_both_inactive">Impossible de désactiver toutes les cartes SIM</string>
+    <string name="sim_enabler_enabling">Activation en cours\u2026</string>
+    <string name="sim_enabler_disabling">Désactivation en cours\u2026</string>
+    <string name="sub_activate_success">SIM activée</string>
+    <string name="sub_activate_failed">Échec de l\'activation</string>
+    <string name="sub_deactivate_success">SIM désactivée</string>
+    <string name="sub_deactivate_failed">Échec de la désactivation</string>
+    <string name="available_sims_title">Cartes SIM disponibles</string>
+
     <!-- Ambient category -->
     <string name="doze_category">Mode Veille</string>
 
@@ -107,6 +126,11 @@
 
     <!-- SIM selector for SMS -->
     <string name="select_sim_for_sms">Sélectionner une carte SIM pour les SMS</string>
+
+    <!-- [CHAR LIMIT=80]-->
+    <string name="fp_swipe_to_dismiss_notifications_title">Ignorer les notifications</string>
+    <!--  [CHAR LIMIT=160]-->
+    <string name="fp_swipe_to_dismiss_notifications_summary">Glisser vers la gauche ou la droite sur le capteur d\'empreintes digitales pour ignorer les notifications</string>
 
 </resources>
 
