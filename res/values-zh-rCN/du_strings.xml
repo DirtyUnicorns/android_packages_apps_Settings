@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Encryption and credential -->
+    <string name="custom_encryption_and_credential_settings_summary_on">设备已加密</string>
+    <string name="custom_encryption_and_credential_settings_summary_off">设备已解密</string>
+
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_custom">
+        <item quantity="one">您还差<xliff:g id="step_count">%1$d</xliff:g>步以启用开发者选项。</item>
+        <item quantity="other">您还差<xliff:g id="step_count">%1$d</xliff:g>步以启用开发者选项。</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_custom">开发者选项启用！小心！</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_custom">开发者选项已经启用！</string>
+
+    <!-- Density category -->
+    <string name="density_category">密度选项</string>
+
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Root管理</string>
+    <string name="rootmanagement_dashboard_summary">管理Root访问权限</string>
+
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">SuperSU</string>
+
+    <!-- Dirty Tweaks -->
+    <string name="dirtytweaks_title">Dirty设置</string>
+    <string name="dirtytweaks_summary">增强您的体验</string>
+
+    <!-- DU version in About phone -->
+    <string name="rom_version_title">DU版本</string>
+
+    <!-- MSIM Manual provisioning -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g>是<xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_enabled">启用</string>
+    <string name="sim_disabled">禁用</string>
+    <string name="sim_missing">未找到</string>
+    <string name="sim_enabler_need_disable_sim">SIM卡将被禁用，你想继续吗？</string>
+    <string name="sim_enabler_will_disable_sim_title">注意</string>
+    <string name="sim_enabler_need_switch_data_service">此SIM卡将会被禁用和SIM卡 <xliff:g id="slotid">%1$s</xliff:g>将被用于数据服务。你确定继续？</string>
+    <string name="sim_enabler_airplane_on">在飞行模式打开时无法执行操作。</string>
+    <string name="sim_enabler_in_call">在通话过程中无法执行操作。</string>
+    <string name="sim_enabler_both_inactive">不能禁用所有的SIM卡</string>
+    <string name="sim_enabler_enabling">正在激活\u2026</string>
+    <string name="sim_enabler_disabling">正在停用\u2026</string>
+    <string name="sub_activate_success">SIM卡激活</string>
+    <string name="sub_activate_failed">激活失败</string>
+    <string name="sub_deactivate_success">SIM卡停用</string>
+    <string name="sub_deactivate_failed">停用失败</string>
+    <string name="available_sims_title">SIM卡可用</string>
+
+    <!-- Wake on Plug -->
+    <string name="wake_when_plugged_or_unplugged_title">接通电源唤醒</string>
+    <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时打开屏幕</string>
+
+    <!-- Advanced night mode brightness -->
+    <string name="night_brightness_category">亮度</string>
+    <string name="night_brightness_value_title">夜晚时低亮度</string>
+    <string name="night_bright_disabled">禁用</string>
+    <string name="night_bright_minimum">最低亮度</string>
+    <string name="night_bright_low">低亮度</string>
+    <string name="night_bright_medium">中等亮度</string>
+
+    <!-- Vibrate on plug -->
+    <string name="vibration_on_charge_state_changed_title">接通电源震动</string>
+
+    <!-- Pixel color on sim card -->
+    <string name="default_sim_color">Pixel</string>
+
+    <!-- Changelog -->
+    <string name="duchangelog_title">更新日志</string>
+    <string name="duchangelog_summary">去看看更新了什么</string>
+    <string name="duchangelog_weeklies">更新日志-每周版</string>
+    <string name="duchangelog_official">更新日志-官方版</string>
+    <string name="warning_text">请注意，这里生成的更改日志是合并到我们源代码中的提交摘要。 建议您访问我们的github或gerrit以获取完整而详细的更改日志。</string>
+    <string name="weeklies">每周版</string>
+    <string name="official">官方版</string>
+    <string name="changelog_header_version"></string>
+    <string name="changelog_dialog_title">注意</string>
+    <string name="changelog_dialog_message">请打开WIFI或移动数据从我们的服务器获取更新日志。</string>
+    <string name="changelog_dialog_ok">确定</string>
+
+    <!-- Developer options toast insulter -->
+    <string name="toast_insult_0">哈哈哈, n00b!</string>
+    <string name="toast_insult_1">你在干什么？？</string>
+    <string name="toast_insult_2">n00b，我警告你!</string>
+    <string name="toast_insult_3">n00b是什么...？业余爱好者！？</string>
+    <string name="toast_insult_4">这不是iOS啊</string>
+    <string name="toast_insult_5">请远离该设备！</string>
+    <string name="toast_insult_6">错误码: 1D10T</string>
+    <string name="toast_insult_7">你走开</string>
+    <string name="toast_insult_8">¯\\_(ツ)_/¯</string>
+    <string name="toast_insult_9">温馨提示：不要这样做！</string>
+    <string name="toast_insult_10">你不会说Android？？？</string>
+    <string name="toast_insult_11">你怎么这么愚蠢？！</string>
+    <string name="toast_insult_12">或许Android这个东西不适合你...</string>
+    <string name="toast_insult_13">你就没有其他事做了?!</string>
+    <string name="toast_insult_14">这就是为什么没人喜欢你的原因(好好反省一下吧)...</string>
+    <string name="toast_insult_15">你怎么这么皮？还继续？！</string>
+
+    <!-- [CHAR LIMIT=80]-->
+    <string name="fp_swipe_to_dismiss_notifications_title">向左或向右滑动指纹以关闭通知</string>
+    <!--  [CHAR LIMIT=160]-->
+    <string name="fp_swipe_to_dismiss_notifications_summary">要解除通知，请在手机背面的指纹传感器上向左或向右滑动。</string>
+</resources>
