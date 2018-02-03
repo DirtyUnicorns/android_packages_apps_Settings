@@ -45,6 +45,9 @@
     <!-- DU version in About phone -->
     <string name="rom_version_title">Version de DU</string>
 
+    <!-- Notification log -->
+    <string name="notification_log_summary">Journal de l\'historique des notifications</string>
+
     <!-- MSIM Manual provisioning -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> est <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_enabled">activée</string>
