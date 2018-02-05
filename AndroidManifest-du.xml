@@ -78,12 +78,14 @@
         <activity android:name="com.dirtyunicorns.tweaks.fragments.batterylight.BatteryLightSettings" />
 
         <!-- Changelog -->
-        <activity android:name="com.android.settings.du.changelog.ChangelogActivity"
+        <activity android:name="com.bytehamster.changelog.Main"
+                  android:taskAffinity=""
+                  android:parentActivityName="Settings"
+                  android:configChanges="orientation|screenLayout|screenSize"
                   android:label="@string/duchangelog_title" />
-        <activity android:name="com.android.settings.du.changelog.Weeklies"
-                  android:label="@string/duchangelog_weeklies" />
-        <activity android:name="com.android.settings.du.changelog.Official"
-                  android:label="@string/duchangelog_official" />
+        <activity android:name="com.bytehamster.changelog.Preferences"
+                  android:configChanges="orientation|screenLayout|screenSize"
+                  android:label="@string/duchangelog_settings" />
 
         <!-- Global navbar settings -->
         <activity android:name="Settings$NavigationSettingsActivity"
