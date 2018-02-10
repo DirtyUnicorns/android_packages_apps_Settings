@@ -15,6 +15,7 @@ package com.android.settings.display;
 
 import android.content.Context;
 import android.content.ContentResolver;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.support.v7.preference.ListPreference;
@@ -39,6 +40,8 @@ public class DarkUIPreferenceController extends AbstractPreferenceController imp
         PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
 
     private static final String SYSTEM_UI_THEME = "systemui_theme_style";
+    private static final String SUBS_PACKAGE = "projekt.substratum";
+
     private ListPreference mSystemUiThemeStyle;
 
     public DarkUIPreferenceController(Context context) {
@@ -59,12 +62,17 @@ public class DarkUIPreferenceController extends AbstractPreferenceController imp
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         mSystemUiThemeStyle = (ListPreference) screen.findPreference(SYSTEM_UI_THEME);
-        int systemuiThemeStyle = Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.SYSTEM_UI_THEME, 0);
-        int valueIndex = mSystemUiThemeStyle.findIndexOfValue(String.valueOf(systemuiThemeStyle));
-        mSystemUiThemeStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
-        mSystemUiThemeStyle.setSummary(mSystemUiThemeStyle.getEntry());
-        mSystemUiThemeStyle.setOnPreferenceChangeListener(this);
+        if (!isPackageInstalled(SUBS_PACKAGE, mContext)) {
+            int systemuiThemeStyle = Settings.System.getInt(mContext.getContentResolver(),
+                    Settings.System.SYSTEM_UI_THEME, 0);
+            int valueIndex = mSystemUiThemeStyle.findIndexOfValue(String.valueOf(systemuiThemeStyle));
+            mSystemUiThemeStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
+            mSystemUiThemeStyle.setSummary(mSystemUiThemeStyle.getEntry());
+            mSystemUiThemeStyle.setOnPreferenceChangeListener(this);
+        } else {
+            mSystemUiThemeStyle.setEnabled(false);
+            mSystemUiThemeStyle.setSummary(R.string.substratum_installed_title);
+        }
     }
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -99,5 +107,15 @@ public class DarkUIPreferenceController extends AbstractPreferenceController imp
                   Toast.makeText(mContext, R.string.theme_applied_toast, Toast.LENGTH_SHORT).show();
               }
         }, 2000);
+    }
+
+    private boolean isPackageInstalled(String package_name, Context context) {
+        try {
+            PackageManager pm = context.getPackageManager();
+            pm.getPackageInfo(package_name, PackageManager.GET_ACTIVITIES);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 }
