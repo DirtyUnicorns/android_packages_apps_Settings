@@ -52,6 +52,13 @@
                 android:key="vibrate_when_ringing"
                 android:title="@string/vibrate_when_ringing_title" />
 
+        <!-- Headset connect player -->
+        <ListPreference
+                android:key="headset_connect_player"
+                android:title="@string/headset_connect_player_title"
+                android:entries="@array/headset_connect_player_entries"
+                android:entryValues="@array/headset_connect_player_values" />
+
         <!-- Interruptions -->
         <com.android.settingslib.RestrictedPreference
                 android:key="zen_mode"

@@ -202,6 +202,7 @@ public class SoundSettings extends DashboardFragment {
         controllers.add(new PhoneRingtonePreferenceController(context));
         controllers.add(new AlarmRingtonePreferenceController(context));
         controllers.add(new NotificationRingtonePreferenceController(context));
+        controllers.add(new HeadsetConnectPreferenceController(context));
 
         // === Work Sound Settings ===
         controllers.add(new WorkSoundPreferenceController(context, fragment, lifecycle));
