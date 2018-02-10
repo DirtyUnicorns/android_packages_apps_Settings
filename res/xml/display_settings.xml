@@ -60,6 +60,12 @@
         android:entries="@array/screen_timeout_entries"
         android:entryValues="@array/screen_timeout_values" />
 
+    <ListPreference
+        android:key="screen_off_animation"
+        android:title="@string/screen_off_animation_title"
+        android:entries="@array/screen_off_animation_entries"
+        android:entryValues="@array/screen_off_animation_values" />
+
     <SwitchPreference
         android:key="auto_rotate"
         android:title="@string/accelerometer_title" />
