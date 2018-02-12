@@ -16,21 +16,35 @@
 package com.android.settings.display;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Build;
 import android.support.v7.preference.Preference;
 
 import com.android.internal.util.du.Utils;
 
 import com.android.settings.R;
+import com.android.settings.core.instrumentation.MetricsFeatureProvider;
 import com.android.settings.core.PreferenceControllerMixin;
+import com.android.settings.overlay.FeatureFactory;
+
 import com.android.settingslib.core.AbstractPreferenceController;
+
+import static com.android.internal.logging.nano.MetricsProto.MetricsEvent.ACTION_AMBIENT_DISPLAY;
 
 public class AmbientDisplayCustomPreferenceController extends AbstractPreferenceController implements
         PreferenceControllerMixin {
 
+    private Context mContext;
+
     private static final String KEY_AMBIENT_DISPLAY_CUSTOM = "ambient_display_custom";
+
+    private final MetricsFeatureProvider mMetricsFeatureProvider;
 
     public AmbientDisplayCustomPreferenceController(Context context) {
         super(context);
+
+        mMetricsFeatureProvider = FeatureFactory.getFactory(context).getMetricsFeatureProvider();
+        mContext = context;
     }
 
     @Override
@@ -40,6 +54,30 @@ public class AmbientDisplayCustomPreferenceController extends AbstractPreference
 
     @Override
     public boolean handlePreferenceTreeClick(Preference preference) {
+        if (KEY_AMBIENT_DISPLAY_CUSTOM.equals(preference.getKey())) {
+            mMetricsFeatureProvider.action(mContext, ACTION_AMBIENT_DISPLAY);
+            if (Build.PRODUCT.equals("Moto G5 Plus")) {
+                try {
+                    Intent intent = new Intent();
+                    intent.setClassName(
+                            "com.dirtyunicorns.settings.device",
+                            "com.dirtyunicorns.settings.device.DozeSettingsActivity");
+                    intent.setAction("com.android.settings.action.EXTRA_SETTINGS");
+                    mContext.startActivity(intent);
+                } catch (Exception e) {
+                }
+            } else {
+                try {
+                    Intent intent = new Intent();
+                    intent.setClassName(
+                            "com.custom.ambient.display",
+                            "com.custom.ambient.display.DozeSettings");
+                    intent.setAction("com.android.settings.action.EXTRA_SETTINGS");
+                    mContext.startActivity(intent);
+                } catch (Exception e) {
+                }
+            }
+        }
         return false;
     }
 
