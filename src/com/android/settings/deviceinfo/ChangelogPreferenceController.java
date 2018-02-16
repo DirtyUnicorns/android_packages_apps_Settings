@@ -29,7 +29,7 @@ public class ChangelogPreferenceController extends AbstractPreferenceController 
         PreferenceControllerMixin {
 
     private static final String KEY_DU_CHANGELOG = "du_changelog";
-    private static final String KEY_DU_UPDATER_PACKAGE_NAME = "com.dirtyunicorns.duupdater";
+    //private static final String KEY_DU_UPDATER_PACKAGE_NAME = "com.dirtyunicorns.duupdater";
 
     public ChangelogPreferenceController(Context context) {
         super(context);
@@ -47,6 +47,7 @@ public class ChangelogPreferenceController extends AbstractPreferenceController 
 
     @Override
     public boolean isAvailable() {
-        return Utils.isPackageInstalled(mContext.getApplicationContext(), KEY_DU_UPDATER_PACKAGE_NAME);
+        //return Utils.isPackageInstalled(mContext.getApplicationContext(), KEY_DU_UPDATER_PACKAGE_NAME);
+        return true;
     }
 }
