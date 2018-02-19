@@ -99,15 +99,7 @@
     <!-- Changelog -->
     <string name="duchangelog_title">Notes de version</string>
     <string name="duchangelog_summary">Consulter la liste des changements</string>
-    <string name="duchangelog_weeklies">Compilations hebdomadaires</string>
-    <string name="duchangelog_official">Compilations officielles</string>
-    <string name="warning_text">Les présentes notes de version sont des résumés de ce qui a été réalisé. Pour plus de détails, consulter notre Github ou notre Gerrit.</string>
-    <string name="weeklies">Hebdomadaires</string>
-    <string name="official">Officielles</string>
-    <string name="changelog_header_version"></string>
-    <string name="changelog_dialog_title">Avertissement</string>
-    <string name="changelog_dialog_message">Activer le Wi-Fi ou les données mobiles pour télécharger la note de version</string>
-    <string name="changelog_dialog_ok">OK</string>
+    <string name="duchangelog_settings">Paramètres</string>
 
     <!-- Developer options toast insulter -->
     <string name="toast_insult_0">Ahahah, n00b !</string>
