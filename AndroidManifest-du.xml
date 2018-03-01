@@ -22,6 +22,7 @@
     package="com.android.settings">
 
     <uses-permission android:name="android.permission.NAVIGATION_EDITOR" />
+    <uses-permission android:name="android.permission.ACCESS_FONT_MANAGER" />
 
     <application>
 
