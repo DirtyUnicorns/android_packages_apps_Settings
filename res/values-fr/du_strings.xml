@@ -127,5 +127,8 @@
     <!--  [CHAR LIMIT=160]-->
     <string name="fp_swipe_to_dismiss_notifications_summary">Glisser vers la gauche ou la droite sur le capteur d\'empreintes digitales pour ignorer les notifications</string>
 
+    <!-- Fingerprint quick pulldown -->
+    <string name="fp_quick_pulldown_title">Panneau de configuration rapide</string>
+    <string name="fp_quick_pulldown_summary">Déployer le panneau de configuration rapide en glissant une seule fois le doigt sur le lecteur d\'empreinte digitale</string>
 </resources>
 
