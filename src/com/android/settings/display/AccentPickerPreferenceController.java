@@ -103,7 +103,7 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
                         com.android.settings.R.string.theme_accent_picker_summary));
             } else {
                 mAccentPickerPref.setSummary(mContext.getString(
-                        com.android.settings.R.string.substratum_installed_title));
+                        com.android.settings.R.string.disable_accents_installed_title));
             }
         }
     }

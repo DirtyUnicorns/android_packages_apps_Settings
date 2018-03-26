@@ -71,7 +71,7 @@ public class DarkUIPreferenceController extends AbstractPreferenceController imp
             mSystemUiThemeStyle.setOnPreferenceChangeListener(this);
         } else {
             mSystemUiThemeStyle.setEnabled(false);
-            mSystemUiThemeStyle.setSummary(R.string.substratum_installed_title);
+            mSystemUiThemeStyle.setSummary(R.string.disable_themes_installed_title);
         }
     }
     @Override
