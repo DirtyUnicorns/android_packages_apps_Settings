@@ -130,5 +130,9 @@
     <!-- Fingerprint quick pulldown -->
     <string name="fp_quick_pulldown_title">Panneau de configuration rapide</string>
     <string name="fp_quick_pulldown_summary">Déployer le panneau de configuration rapide en glissant une seule fois le doigt sur le lecteur d\'empreinte digitale</string>
+
+    <!-- Scramble PIN layout when unlocking -->
+    <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
+    <string name="unlock_scramble_pin_layout_summary">Changer l\'ordre des numéros du pavé numérique pour la saisie du code PIN de déverrouillage</string>
 </resources>
 
