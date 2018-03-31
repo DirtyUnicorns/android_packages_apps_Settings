@@ -134,5 +134,8 @@
     <!-- Scramble PIN layout when unlocking -->
     <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
     <string name="unlock_scramble_pin_layout_summary">Changer l\'ordre des numéros du pavé numérique pour la saisie du code PIN de déverrouillage</string>
+
+    <!-- Font picker -->
+    <string name="font_picker_title">Police</string>
 </resources>
 
