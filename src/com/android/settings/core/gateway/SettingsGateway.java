@@ -138,6 +138,7 @@ import com.dirtyunicorns.tweaks.fragments.Miscellaneous;
 import com.dirtyunicorns.tweaks.fragments.NavigationBar;
 import com.dirtyunicorns.tweaks.fragments.PulseSettings;
 import com.dirtyunicorns.tweaks.fragments.SmartbarSettings;
+import com.dirtyunicorns.tweaks.fragments.SmartPixels;
 
 public class SettingsGateway {
 
@@ -265,7 +266,8 @@ public class SettingsGateway {
             NavigationBar.class.getName(),
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
-            PulseSettings.class.getName()
+            PulseSettings.class.getName(),
+            SmartPixels.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -309,6 +311,7 @@ public class SettingsGateway {
             Settings.NavigationSettingsActivity.class.getName(),
             Settings.FlingSettingsActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
-            Settings.PulseSettingsActivity.class.getName()
+            Settings.PulseSettingsActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName()
     };
 }
