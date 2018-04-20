@@ -15,6 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">A telefon hátulján találja a szenzort. Használja valamelyik ujját.</string>
   <!-- Encryption and credential -->
   <string name="custom_encryption_and_credential_settings_summary_on">A készülék titkosított</string>
   <string name="custom_encryption_and_credential_settings_summary_off">A készülék nem titkosított</string>
@@ -76,7 +78,7 @@
   <!-- Changelog -->
   <string name="duchangelog_title">Újdonságok</string>
   <string name="duchangelog_summary">Nézze meg, hogy mi változott</string>
-  <string name="duchangelog_settings">Beállitások</string>
+  <string name="duchangelog_settings">Beállítások</string>
   <!-- Developer options toast insulter -->
   <string name="toast_insult_0">Ha-ha-ha, kezdő!</string>
   <string name="toast_insult_1">Mégis mit művel??</string>
@@ -84,7 +86,7 @@
   <string name="toast_insult_3">Mi ez itt? Amatőrszakkör?</string>
   <string name="toast_insult_4">Ez nem iOS !!!</string>
   <string name="toast_insult_5">Kérjük, távolodjon el a készüléktől!</string>
-  <string name="toast_insult_6">Hibakód: R2D2</string>
+  <string name="toast_insult_6">Hibakód: 1D10T</string>
   <string name="toast_insult_7">Kívül tágasabb !!!</string>
   <string name="toast_insult_8">¯\\_ (ツ) _ / ¯</string>
   <string name="toast_insult_9">Profi tipp: Hagyja abba ezt!</string>
@@ -100,10 +102,11 @@
   <string name="fp_swipe_to_dismiss_notifications_summary">Az értesítések eltüntetéséhez csúsztasson jobbra vagy balra a telefon hátulján az ujjlenyomatolvasó-szenzoron.</string>
   <!-- Fingerprint quick pulldown -->
   <string name="fp_quick_pulldown_title">Gyors legördítés ujjlenyomattal</string>
-  <string name="fp_quick_pulldown_summary">A gyorsbeállítások panel kibontása az ujjlenyomat-érzékelő egy rövid lefelé húzásával.</string>
+  <string name="fp_quick_pulldown_summary">A gyorsbeállítások panel kibontása egy rövid csúsztatással az ujjlenyomat-érzékelőn.</string>
   <!-- Scramble PIN layout when unlocking -->
-  <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-  <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+  <string name="unlock_scramble_pin_layout_title">Véletlenszerű elrendezés</string>
+  <string name="unlock_scramble_pin_layout_summary">Összekeveri a beviteli mezőn a számok elrendezését az eszköz feloldásakor</string>
   <!-- Font picker -->
   <string name="font_picker_title">Betűtípus</string>
+  <string name="font_picker_progress">Új betűtípus alkalmazása\u2026</string>
 </resources>

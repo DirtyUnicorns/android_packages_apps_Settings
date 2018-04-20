@@ -15,6 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">指纹传感器位于你手机的背面。请使用任一手指以录入指纹。</string>
   <!-- Encryption and credential -->
   <string name="custom_encryption_and_credential_settings_summary_on">设备已加密</string>
   <string name="custom_encryption_and_credential_settings_summary_off">设备已解密</string>
@@ -105,4 +107,5 @@
   <string name="unlock_scramble_pin_layout_summary">当解锁设备时使用乱序 PIN 布局</string>
   <!-- Font picker -->
   <string name="font_picker_title">字体</string>
+  <string name="font_picker_progress">正在应用新字体...</string>
 </resources>

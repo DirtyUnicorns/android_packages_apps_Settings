@@ -15,6 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Telefonunuzun arkasında. Herhangi bir parmak kullanın.</string>
   <!-- Encryption and credential -->
   <string name="custom_encryption_and_credential_settings_summary_on">Cihaz şifreli</string>
   <string name="custom_encryption_and_credential_settings_summary_off">Cihaz şifresi çözüldü</string>
@@ -30,17 +32,17 @@
   <!-- Density category -->
   <string name="density_category">Yoğunluk seçenekleri</string>
   <!-- Root Management -->
-  <string name="rootmanagement_title">Kök erişimi yönetimi</string>
-  <string name="rootmanagement_dashboard_summary">Kök erişimini yönetin</string>
+  <string name="rootmanagement_title">Root yönetimi</string>
+  <string name="rootmanagement_dashboard_summary">Root erişimini yönetme</string>
   <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
   <string name="supersu_title">SuperSU</string>
   <!-- Dirty Tweaks -->
   <string name="dirtytweaks_title">Dirty Kişileştirmeleri</string>
-  <string name="dirtytweaks_summary">Deneyiminizi paylaşın</string>
+  <string name="dirtytweaks_summary">Deneyiminizi geliştirin</string>
   <!-- DU version in About phone -->
   <string name="rom_version_title">DU sürümü</string>
   <!-- Notification log -->
-  <string name="notification_log_summary">Bildirimler geçmişi günlüğünü göster</string>
+  <string name="notification_log_summary">Bildirim geçmişi günlüğünü göster</string>
   <!-- MSIM Manual provisioning -->
   <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
   <string name="sim_enabled">etkin</string>
@@ -49,8 +51,8 @@
   <string name="sim_enabler_need_disable_sim">SIM kart devre dışı bırakılacak. Devam etmek istiyor musunuz?</string>
   <string name="sim_enabler_will_disable_sim_title">Dikkat</string>
   <string name="sim_enabler_need_switch_data_service">SIM devre dışı bırakılacak ve SIM <xliff:g id="slotid">%1$s</xliff:g> veri servisleri için kullanılacak.Devam etmek istiyormusunuz?</string>
-  <string name="sim_enabler_airplane_on">Uçak modu açıkken performans operasyonu yapılamıyor.</string>
-  <string name="sim_enabler_in_call">Arama sırasında performans operasyonu yapılamıyor.</string>
+  <string name="sim_enabler_airplane_on">Uçak modu açıkken işlem yapılamıyor.</string>
+  <string name="sim_enabler_in_call">Arama sırasında işlem yapılamıyor.</string>
   <string name="sim_enabler_both_inactive">Tüm SIM kartlar devre dışı bırakılamıyor</string>
   <string name="sim_enabler_enabling">Etkinleştiriliyor\u2026</string>
   <string name="sim_enabler_disabling">Devre dışı bırakılıyor\u2026</string>
@@ -66,7 +68,7 @@
   <string name="night_brightness_category">Parlaklık</string>
   <string name="night_brightness_value_title">Gece ışığında düşük parlaklık</string>
   <string name="night_bright_disabled">Devre dışı</string>
-  <string name="night_bright_minimum">En düşük parlaklık</string>
+  <string name="night_bright_minimum">Minimum parlaklık</string>
   <string name="night_bright_low">Düşük parlaklık</string>
   <string name="night_bright_medium">Orta parlaklık</string>
   <!-- Vibrate on plug -->
@@ -106,4 +108,5 @@
   <string name="unlock_scramble_pin_layout_summary">Cihaz kilidini açarken PIN düzenini karıştırır</string>
   <!-- Font picker -->
   <string name="font_picker_title">Yazı tipi</string>
+  <string name="font_picker_progress">Yeni yazı tipi uygulanıyor\u2026</string>
 </resources>

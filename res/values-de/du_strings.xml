@@ -15,12 +15,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Es\u2019ist auf der Rückseite von deinem Telefon. Nutze irgendeinen Finger.</string>
   <!-- Encryption and credential -->
   <string name="custom_encryption_and_credential_settings_summary_on">Gerät ist verschlüsselt</string>
   <string name="custom_encryption_and_credential_settings_summary_off">Gerät ist nicht verschlüsselt</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_custom">
-    <item quantity="one">You are now <xliff:g id="step_count">%1$d</xliff:g> step away from enabling developer options.</item>
+    <item quantity="one">Du bist noch <xliff:g id="step_count">%1$d</xliff:g> Schritte von der Aktivierung der Entwickleroptionen entfernt.</item>
     <item quantity="other">Sie sind <xliff:g id="step_count">%1$d</xliff:g> Schritte von der Aktivierung der Entwickleroptionen entfernt.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
@@ -106,4 +108,5 @@
   <string name="unlock_scramble_pin_layout_summary">Bei jedem Entsperrversuch die Ziffernanordnung zufällig neu wählen</string>
   <!-- Font picker -->
   <string name="font_picker_title">Schriftart</string>
+  <string name="font_picker_progress">Aktiviere neue Schriftart\u2026</string>
 </resources>

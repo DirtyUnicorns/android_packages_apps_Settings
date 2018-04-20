@@ -15,6 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Se encuentra en la parte trasera de tu teléfono. Usa cualquier dedo.</string>
   <!-- Encryption and credential -->
   <string name="custom_encryption_and_credential_settings_summary_on">El dispositivo está encriptado</string>
   <string name="custom_encryption_and_credential_settings_summary_off">Dispositivo está desencriptado</string>
@@ -106,4 +108,5 @@
   <string name="unlock_scramble_pin_layout_summary">Mezclar los números del PIN al desbloquear la unidad</string>
   <!-- Font picker -->
   <string name="font_picker_title">Fuente de letra</string>
+  <string name="font_picker_progress">Aplicando nueva fuente\u2026</string>
 </resources>

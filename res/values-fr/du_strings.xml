@@ -15,6 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">C\'est sur le dos du téléphone. Utiliser n\'importe quel doigt.</string>
   <!-- Encryption and credential -->
   <string name="custom_encryption_and_credential_settings_summary_on">Appareil chiffré</string>
   <string name="custom_encryption_and_credential_settings_summary_off">Appareil non chiffré</string>
@@ -106,4 +108,5 @@
   <string name="unlock_scramble_pin_layout_summary">Changer l\'ordre des numéros du pavé numérique pour la saisie du code PIN de déverrouillage</string>
   <!-- Font picker -->
   <string name="font_picker_title">Police</string>
+  <string name="font_picker_progress">Ajustement de la nouvelle police en cours\u2026</string>
 </resources>
