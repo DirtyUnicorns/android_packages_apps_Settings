@@ -17,4 +17,9 @@
 
 <resources>
     <style name="Theme.SmartBar.Dialog" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
+
+    <style name="SecurityDialog" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth">
+        <item name="android:windowBackground">@drawable/security_dialog_corners</item>
+    </style>
+
 </resources>
