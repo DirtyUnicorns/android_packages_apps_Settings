@@ -88,6 +88,28 @@ import com.android.settings.wallpaper.WallpaperTypeSettings;
 import com.android.settings.wifi.ConfigureWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
+
+import com.dirtyunicorns.tweaks.fragments.BatteryOptions;
+import com.dirtyunicorns.tweaks.fragments.Buttons;
+import com.dirtyunicorns.tweaks.fragments.CarrierLabel;
+import com.dirtyunicorns.tweaks.fragments.ClockOptions;
+import com.dirtyunicorns.tweaks.fragments.FingerprintPrefs;
+import com.dirtyunicorns.tweaks.fragments.FlingSettings;
+import com.dirtyunicorns.tweaks.fragments.HeadsUp;
+import com.dirtyunicorns.tweaks.fragments.LockscreenItems;
+import com.dirtyunicorns.tweaks.fragments.Miscellaneous;
+import com.dirtyunicorns.tweaks.fragments.NavigationBar;
+import com.dirtyunicorns.tweaks.fragments.Notifications;
+import com.dirtyunicorns.tweaks.fragments.PowerMenu;
+import com.dirtyunicorns.tweaks.fragments.PulseSettings;
+import com.dirtyunicorns.tweaks.fragments.QuickSettings;
+import com.dirtyunicorns.tweaks.fragments.Recents;
+import com.dirtyunicorns.tweaks.fragments.SlimRecentsBlacklist;
+import com.dirtyunicorns.tweaks.fragments.SlimRecentsPanel;
+import com.dirtyunicorns.tweaks.fragments.SmartbarSettings;
+import com.dirtyunicorns.tweaks.fragments.Ticker;
+import com.dirtyunicorns.tweaks.fragments.TrafficIndicators;
+
 import java.util.Collection;
 import java.util.HashMap;
 
@@ -216,6 +238,28 @@ public final class SearchIndexableResources {
                 AutomaticStorageManagerSettings.class,
                 NO_DATA_RES_ID,
                 R.drawable.ic_settings_storage);
+
+        // DU additions
+        addIndex(BatteryOptions.class, R.xml.battery_options, R.drawable.bottomnav_statusbar);
+        addIndex(Buttons.class, R.xml.buttons, R.drawable.bottomnav_navigation);
+        addIndex(CarrierLabel.class, R.xml.carrier_label, R.drawable.bottomnav_statusbar);
+        addIndex(ClockOptions.class, R.xml.clock_options, R.drawable.bottomnav_statusbar);
+        addIndex(FingerprintPrefs.class, R.xml.fingerprint_prefs, R.drawable.bottomnav_lockscreen);
+        addIndex(FlingSettings.class, R.xml.fling_settings, R.drawable.bottomnav_navigation);
+        addIndex(HeadsUp.class, R.xml.headsup, R.drawable.bottomnav_multitasking);
+        addIndex(LockscreenItems.class, R.xml.lockscreen_items, R.drawable.bottomnav_lockscreen);
+        addIndex(Miscellaneous.class, R.xml.miscellaneous, R.drawable.bottomnav_system);
+        addIndex(NavigationBar.class, R.xml.navigation_bar, R.drawable.bottomnav_navigation);
+        addIndex(Notifications.class, R.xml.notifications, R.drawable.bottomnav_statusbar);
+        addIndex(PowerMenu.class, R.xml.powermenu, R.drawable.bottomnav_system);
+        addIndex(PulseSettings.class, R.xml.pulse_settings, R.drawable.bottomnav_navigation);
+        addIndex(QuickSettings.class, R.xml.quick_settings, R.drawable.bottomnav_statusbar);
+        addIndex(Recents.class, R.xml.recents, R.drawable.bottomnav_multitasking);
+        addIndex(SlimRecentsBlacklist.class, R.xml.slim_recents_blacklist, R.drawable.bottomnav_multitasking);
+        addIndex(SlimRecentsPanel.class, R.xml.slim_recents_panel_settings, R.drawable.bottomnav_multitasking);
+        addIndex(SmartbarSettings.class, R.xml.smartbar_settings, R.drawable.bottomnav_navigation);
+        addIndex(Ticker.class, R.xml.ticker, R.drawable.bottomnav_multitasking);
+        addIndex(TrafficIndicators.class, R.xml.traffic_indicators, R.drawable.bottomnav_statusbar);
     }
 
     private SearchIndexableResources() {
