@@ -15,6 +15,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Security dialog -->
+  <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-04-01</string>
+  <string name="security_dialog_title">Güvenlik güncellemesi</string>
+  <string name="security_dialog_neutral_button">AOSP Güvenlik Bültenleri</string>
+  <string name="android_security_title">AOSP güvenlik yaması düzeyi</string>
+  <string name="android_security_summary">Android güvenlik güncellemeleri, Android platformuna ve çalıştırılmasına yardımcı olan üretici ikili dosyalarına ait bir yamalar koleksiyonudur. Bu ikili dosyalar kapalı kaynak olduğundan, OEM\'lerİ tedarik etmek için satıcılara güvenmek zorundayız ve OEM\'leri kullanıcılara gönderecek ve bu sayede bunları oluşturduğumuz yapılara ekleyebileceğiz. Bu süreci hiçbir şekilde kontrol edemediğimizden, Android Açık Kaynak Projesinden gelen depolardan yalnızca güvenlik düzeltme ekini güncellediğimizi açıklığa kavuşturmak istiyoruz. Genel olarak, satıcı güvenlik yaması seviyesi, en yeni stok ROM\'unun hangi yama seviyesinde olursa olsun olacaktır.</string>
+  <string name="android_functional_updates_title">Fonksiyonel güncellemeler</string>
+  <string name="android_functional_updates_summary">AOSP güvenlik güncellemelerine ek olarak, Google\'ın işlevsel güncellemelerini de içerir. Bunlar, Google\'ın, bağlantı, kararlılık ve performans gibi işlevsellik sorunlarını gidermek adına Pixel cihazları için güvenlik güncellemelerine ek olarak uyguladığı yamalardır. Sadece Pixel cihazlarından daha fazlasını desteklediğimizden, tüm cihazlarımıza dahil edilir.</string>
   <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Telefonunuzun arkasında. Herhangi bir parmak kullanın.</string>
   <!-- Encryption and credential -->
@@ -68,7 +76,7 @@
   <string name="night_brightness_category">Parlaklık</string>
   <string name="night_brightness_value_title">Gece ışığında düşük parlaklık</string>
   <string name="night_bright_disabled">Devre dışı</string>
-  <string name="night_bright_minimum">Minimum parlaklık</string>
+  <string name="night_bright_minimum">En düşük parlaklık</string>
   <string name="night_bright_low">Düşük parlaklık</string>
   <string name="night_bright_medium">Orta parlaklık</string>
   <!-- Vibrate on plug -->

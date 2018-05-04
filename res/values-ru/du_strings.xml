@@ -15,6 +15,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Security dialog -->
+  <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-04-01</string>
+  <string name="security_dialog_title">Обновления безопасности</string>
+  <string name="security_dialog_neutral_button">Бюллетени безопасности AOSP</string>
+  <string name="android_security_title">Обновление системы безопасности</string>
+  <string name="android_security_summary">Обновления безопасности Android - сборник патчей платформы Android и проприетарных бинарных файлов, с помощью которых она работает. Так как исходный код этих бинарных файлов закрыт, нам приходится надеяться на то, что поставщики предоставят их производителям, а производители - пользователям, чтобы мы могли добавить их в наши сборки. В связи с тем, что мы не можем контролировать этот процесс, хочется прояснить, что обновления безопасности мы устанавливаем только в тех ветках, которые исходят от Android Open Source Project. Чаще всего обновления безопасности будут те же, что и на последней стоковой прошивке.</string>
+  <string name="android_functional_updates_title">Функциональные обновления</string>
+  <string name="android_functional_updates_summary">Помимо обновлений безопасности AOSP мы также включаем функциональные обновления от Google. Это патчи, которые Google рассылает вдогонку обновлениям безопасности для устройств Pixel с исправлениями функциональных проблем, например, соединения, стабильности и быстродействия. Так как мы поддерживаем не только Pixel, они включаются для всех наших устройств.</string>
   <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Он на задней панели телефона. Используйте любой палец.</string>
   <!-- Encryption and credential -->

@@ -15,6 +15,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Security dialog -->
+  <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-04-01</string>
+  <string name="security_dialog_title">Aggiornamenti di sicurezza</string>
+  <string name="security_dialog_neutral_button">Comunicati sulla sicurezza AOSP</string>
+  <string name="android_security_title">Livello patch di sicurezza AOSP</string>
+  <string name="android_security_summary">Android security updates are a collection of patches to the Android platform and the vendor binaries that help it run. Since these binaries are closed source, we have to rely on the vendors to supply them to the OEMs and the OEMs to ship them to users so we can add them to our builds. As we cannot control this process at all, we want to make it clear that we only update the security patch level in the repos that come from the Android Open Source Project. Generally, the vendor security patch level will be whatever patch level the latest stock ROM is on.</string>
+  <string name="android_functional_updates_title">Update funzionale</string>
+  <string name="android_functional_updates_summary">In addition to AOSP security updates, we include Google\'s functional updates. These are patches that Google push in addition to security updates for Pixel devices to address functionality issues such as connectivity, stability, and performance. Since we support more than just Pixel devices, they are included for all our devices.</string>
   <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Si trova sul retro del telefono. Cercalo con un dito.</string>
   <!-- Encryption and credential -->
@@ -50,7 +58,7 @@
   <string name="sim_missing">mancante o difettoso</string>
   <string name="sim_enabler_need_disable_sim">La scheda SIM sarà disattivata. Vuoi continuare?</string>
   <string name="sim_enabler_will_disable_sim_title">Attenzione</string>
-  <string name="sim_enabler_need_switch_data_service">Questa SIM sarà disattivata e la SIM <xliff:g id="slotid">%1$s</xliff:g> sarà utilizzata per la connessione dati. Sei sicuro che vuoi procedere?</string>
+  <string name="sim_enabler_need_switch_data_service">Questa SIM sarà disattivata e la SIM <xliff:g id="slotid">%1$s</xliff:g> sarà utilizzata per la connessione dati. Sei sicuro di voler procedere?</string>
   <string name="sim_enabler_airplane_on">Impossibile eseguire l\'operazione mentre la modalità aereo è attiva.</string>
   <string name="sim_enabler_in_call">Impossibile eseguire l\'operazione durante una chiamata.</string>
   <string name="sim_enabler_both_inactive">Non è possibile disattivare tutte le schede SIM</string>
@@ -86,7 +94,7 @@
   <string name="toast_insult_3">Cos\'è questa...? L\'ora dei dilettanti!?</string>
   <string name="toast_insult_4">Questo non è iOS</string>
   <string name="toast_insult_5">Per favore allontanati dal dispositivo!</string>
-  <string name="toast_insult_6">codice errore: 1D10T</string>
+  <string name="toast_insult_6">codice errore: 1D10TA</string>
   <string name="toast_insult_7">Vai fuori</string>
   <string name="toast_insult_8">¯\\_(ツ)_/¯</string>
   <string name="toast_insult_9">Suggerimento: Smettila di fare questo!</string>

@@ -15,6 +15,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Security dialog -->
+  <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-04-01</string>
+  <string name="security_dialog_title">Correctifs de sécurité</string>
+  <string name="security_dialog_neutral_button">Bulletins de sécurité AOSP</string>
+  <string name="android_security_title">Niveau de correctif de sécurité AOSP</string>
+  <string name="android_security_summary">Les correctifs de sécurité Android sont un ensemble de correctifs pour la plate-forme Android et de binaires de fournisseur permettant de fonctionner. Étant donné que ces binaires sont des logiciels non libres, il faut que les fournisseurs de ces binaires les fassent parvenir aux constructeurs, et que les constructeurs les fassent parvenir aux utilisateurs afin d\'être ajoutés aux compilations. Comme ce processus est incontrôlable par l\'équipe de DU, il faut bien comprendre que l\'unique source du niveau de correctif de sécurité pour DU est celui provenant de l\'Android Open Source Project. Généralement, le niveau de correctif de sécurité du fournisseur est identique à celui de la dernière ROM constructeur.</string>
+  <string name="android_functional_updates_title">Correctifs fonctionnels</string>
+  <string name="android_functional_updates_summary">En plus des correctifs de sécurité AOSP, DU inclus les correctifs fonctionnels de Google. Ce sont des correctifs que Google créé spécifiquement pour les appareils Pixel afin de résoudre des problèmes de fonctionnement (connectivité, stabilité et performances). Ces correctifs sont inclus pour tous les appareils pris en charge par DU.</string>
   <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">C\'est sur le dos du téléphone. Utiliser n\'importe quel doigt.</string>
   <!-- Encryption and credential -->
