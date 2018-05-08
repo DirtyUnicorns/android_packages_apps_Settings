@@ -57,6 +57,13 @@
         android:key="dashboard_tile_placeholder"
         android:order="10" />
 
+    <Preference
+        android:key="chooser_activity_blacklist"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.ChooserActivityBlacklist"
+        android:title="@string/chooser_activity_blacklist_title"
+        android:summary="@string/chooser_activity_blacklist_summary"
+        android:persistent="false" />
+
     <com.android.settingslib.RestrictedPreference
         android:key="app_and_notif_cell_broadcast_settings"
         android:title="@string/cell_broadcast_settings"
