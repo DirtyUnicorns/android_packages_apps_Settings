@@ -23,6 +23,7 @@
   <string name="android_security_summary">Las actualizaciones de seguridad son una colección de correcciones en la plataforma Android y en los binarios del proveedor que la ayudan a funcionar. Ya que estos binarios son de código cerrado, es necesario depender de los proveedores para que los suministren a los OEMs, y los OEMs los envían a los usuarios para que los podamos agregar a nuestras compilaciones. Como no podemos controlar por completo este proceso, queremos que quede claro que sólo actualizamos el nivel de parche de seguridad en los repositorios que vienen desde el proyecto de código abierto Android (AOSP). Generalmente, el nivel del parche de seguridad del proveedor será cualquier nivel de correcciones en la que se encuentre la última ROM original.</string>
   <string name="android_functional_updates_title">Actualizaciones funcionales</string>
   <string name="android_functional_updates_summary">Además de las actualizaciones de seguridad AOSP, incluimos actualizaciones funcionales de Google. Estas actualizaciones son parches que incorpora Google además de las actualizaciones de seguridad para los dispositivos Pixel que abordan cuestiones de funcionalidad tales como la conectividad, la estabilidad y el rendimiento. Ya que damos soporte a otros dispositivos además de los Pixle, dichas actualizaciones se incluyen para todos nuestros dispositivos.</string>
+  <string name="vendor_security_title">Nivel de revisión del proveedor</string>
   <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Se encuentra en la parte trasera de tu teléfono. Usa cualquier dedo.</string>
   <!-- Encryption and credential -->
@@ -117,4 +118,7 @@
   <!-- Font picker -->
   <string name="font_picker_title">Fuente de letra</string>
   <string name="font_picker_progress">Aplicando nueva fuente\u2026</string>
+  <!-- Search -->
+  <string name="menu_search">Buscar aplicaciones</string>
+  <string name="menu_search_hint">Buscando aplicaciones\u2026</string>
 </resources>

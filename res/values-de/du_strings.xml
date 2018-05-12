@@ -23,6 +23,7 @@
   <string name="android_security_summary">Android-Sicherheitsupdates sind eine Sammlung von Patches für die Android-Plattform und die Hersteller-Binärdateien, die sie unterstützen. Da diese Binärdateien eine geschlossene Quelle sind, müssen wir uns darauf verlassen, dass die Hersteller sie an die OEMs liefern und die OEMs sie an die Benutzer ausliefern, damit wir sie zu unseren Builds hinzufügen können. Da wir diesen Prozess überhaupt nicht kontrollieren können, möchten wir klarstellen, dass wir nur den Sicherheits-Patch-Level in den Repos aktualisieren, die aus dem Android Open Source Projekt stammen. Im Allgemeinen ist der Sicherheits-Patch-Level des Herstellers der Patch-Level, auf dem sich das aktuelle Hersteller-ROM befindet.</string>
   <string name="android_functional_updates_title">Funktionale Updates</string>
   <string name="android_functional_updates_summary">Zusätzlich zu den AOSP-Sicherheitsupdates stellen wir auch die funktionalen Updates von Google zur Verfügung. Dies sind Patches, die Google zusätzlich zu Sicherheitsupdates für Pixel-Geräte bereitstellt, um Funktionsprobleme wie Konnektivität, Stabilität und Leistung zu beheben. Da wir mehr als nur Pixel-Geräte unterstützen, sind sie für alle unsere Geräte enthalten.</string>
+  <string name="vendor_security_title">Hersteller-Patch-Level</string>
   <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Es\u2019ist auf der Rückseite von deinem Telefon. Nutze irgendeinen Finger.</string>
   <!-- Encryption and credential -->
@@ -117,4 +118,7 @@
   <!-- Font picker -->
   <string name="font_picker_title">Schriftart</string>
   <string name="font_picker_progress">Aktiviere neue Schriftart\u2026</string>
+  <!-- Search -->
+  <string name="menu_search">Apps finden</string>
+  <string name="menu_search_hint">Suche Apps\u2026</string>
 </resources>

@@ -23,6 +23,7 @@
   <string name="android_security_summary">Az Android biztonsági frissítések az Android platform javítócsomagjainak gyűjteménye és segítenek a gyártói binárisok működésében. Mivel ezek a binárisok zárt forrásból származnak, a gyártókra kell támaszkodnunk, hogy azokat kiadják az OEM-eknek és hogy azok továbbítsák a felhasználóknak, így mi hozzáadhassuk őket a fejlesztéseinkhez. Mivel ezt a folyamatot nem mi irányíthatjuk, egyértelművé szeretnénk tenni, hogy csak azokat a biztonsági javítás szinteket tudjuk frissíteni, amelyek az AOSP repo-jából érkeznek. Általában, a gyártói biztonsági javításának szintje olyan szint lesz, mint amilyen a legfrissebb gyártói ROM-ban található.</string>
   <string name="android_functional_updates_title">Működési frissítések</string>
   <string name="android_functional_updates_summary">Az AOSP biztonsági frissítésein kívül a Google funkcionális frissítéseit is beépítettük. Ezek olyan javítások, amelyeket a Google biztonsági frissítései mellett a Pixel készülékek működésével, például a kapcsolódással, a stabilitással és a teljesítménnyel kapcsolatos problémák megoldására is képesek. Mivel nem csak Pixel készülékeket támogatunk, mindegyik rendszerünk tartalmazza ezeket.</string>
+  <string name="vendor_security_title">Gyártói javítási szint</string>
   <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">A telefon hátulján találja a szenzort. Használja valamelyik ujját.</string>
   <!-- Encryption and credential -->
@@ -117,4 +118,7 @@
   <!-- Font picker -->
   <string name="font_picker_title">Betűtípus</string>
   <string name="font_picker_progress">Új betűtípus alkalmazása\u2026</string>
+  <!-- Search -->
+  <string name="menu_search">Alkalmazások keresése</string>
+  <string name="menu_search_hint">Alkalmazások keresése\u2026</string>
 </resources>

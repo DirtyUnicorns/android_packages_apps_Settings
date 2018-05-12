@@ -20,9 +20,10 @@
   <string name="security_dialog_title">Atualizações de segurança</string>
   <string name="security_dialog_neutral_button">Boletins de segurança do AOSP</string>
   <string name="android_security_title">Nível do patch de segurança do AOSP</string>
-  <string name="android_security_summary">Android security updates are a collection of patches to the Android platform and the vendor binaries that help it run. Since these binaries are closed source, we have to rely on the vendors to supply them to the OEMs and the OEMs to ship them to users so we can add them to our builds. As we cannot control this process at all, we want to make it clear that we only update the security patch level in the repos that come from the Android Open Source Project. Generally, the vendor security patch level will be whatever patch level the latest stock ROM is on.</string>
+  <string name="android_security_summary">As atualizações de segurança do Android são uma coleção de patches para a plataforma Android e os binários do fornecedor que ajudam a executar. Como esses binários são de código fechado, temos que confiar nos fornecedores para fornecê-los aos OEMs e aos OEMs para enviá-los aos usuários, para que possamos adicioná-los às nossas construções. Como não podemos controlar esse processo, queremos deixar claro que apenas atualizamos o nível de patch de segurança nos repositórios que vêm do Android Open Source Project. Geralmente, o nível de patch de segurança do fornecedor será o nível de patch em que a ROM original mais recente está ativada.</string>
   <string name="android_functional_updates_title">Atualizações funcionais</string>
-  <string name="android_functional_updates_summary">In addition to AOSP security updates, we include Google\'s functional updates. These are patches that Google push in addition to security updates for Pixel devices to address functionality issues such as connectivity, stability, and performance. Since we support more than just Pixel devices, they are included for all our devices.</string>
+  <string name="android_functional_updates_summary">Além das atualizações de segurança do AOSP, incluímos as atualizações funcionais do Google. Estas são as correções que o Google promove além das atualizações de segurança dos dispositivos Pixel para abordar problemas de funcionalidade, como conectividade, estabilidade e desempenho. Como damos suporte mais do que apenas dispositivos Pixel, eles são incluídos em todos os nossos dispositivos.</string>
+  <string name="vendor_security_title">Nível de patch do fornecedor</string>
   <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Está na parte de trás do seu telefone. Use qualquer dedo.</string>
   <!-- Encryption and credential -->
@@ -117,4 +118,7 @@
   <!-- Font picker -->
   <string name="font_picker_title">Fonte</string>
   <string name="font_picker_progress">Aplicando nova fonte\u2026</string>
+  <!-- Search -->
+  <string name="menu_search">Pesquisar aplicativos</string>
+  <string name="menu_search_hint">Pesquisar aplicativos\u2026</string>
 </resources>

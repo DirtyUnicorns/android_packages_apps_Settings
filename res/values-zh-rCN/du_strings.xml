@@ -19,10 +19,11 @@
   <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-04-01</string>
   <string name="security_dialog_title">安全更新</string>
   <string name="security_dialog_neutral_button">AOSP 安全公告</string>
-  <string name="android_security_title">Android 安全补丁程序级别</string>
-  <string name="android_security_summary">Android 安全更新是 android 平台和帮助它运行的供应商二进制文件的补丁的集合。由于这些二进制文件是闭源的, 我们必须依靠供应商向 oem 和 oem 提供它们, 以便将它们运送给用户, 以便我们可以将它们添加到我们的生成中。由于我们无法控制这一过程, 我们希望明确指出, 我们只更新来自 Android 开源项目的回购中的安全修补程序级别。通常情况下, 供应商安全修补程序级别将是最新的股票 ROM 上的任何补丁级别。</string>
+  <string name="android_security_title">AOSP 安全补丁程序级别</string>
+  <string name="android_security_summary">Android 安全更新是 Android 平台和帮助它运行的供应商的二进制文件补丁合集。由于这些二进制文件是闭源的，我们必须依靠供应商提供给 OEM 并让 OEM 将安全补丁推送给用户，以便我们将它们添加到我们的 ROM 中。由于我们无法控制这一过程，我们明确指出，我们只更新来自 Android 开源项目的安全补丁程序级别。通常情况下，供应商安全补丁程序级别将是最新的原生 ROM 上的补丁级别。</string>
   <string name="android_functional_updates_title">功能更新</string>
-  <string name="android_functional_updates_summary">除了 AOSP 安全更新之外, 我们还包括 Google 的功能更新。这些补丁是 Google 除了针对像素设备的安全更新外, 还为解决功能问题 (如连接性、稳定性和性能) 而进行的修补程序。由于我们支持的不仅仅是像素设备, 它们都包含在我们的所有设备中。</string>
+  <string name="android_functional_updates_summary">除了 AOSP 安全更新之外，我们还包括 Google 的功能更新。这些补丁是 Google 除了针对 Pixel 设备的安全更新外，还为解决功能问题，如连接性、稳定性和性能而进行的修补程序。由于我们支持的不仅仅是 Pixel 设备, 它们都包含在我们的所有设备中。</string>
+  <string name="vendor_security_title">供应商安全补丁程序级别</string>
   <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">指纹传感器位于你手机的背面。请使用任一手指以录入指纹。</string>
   <!-- Encryption and credential -->
@@ -116,4 +117,7 @@
   <!-- Font picker -->
   <string name="font_picker_title">字体</string>
   <string name="font_picker_progress">正在应用新字体...</string>
+  <!-- Search -->
+  <string name="menu_search">搜索应用</string>
+  <string name="menu_search_hint">正在搜索...</string>
 </resources>

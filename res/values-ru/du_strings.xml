@@ -23,6 +23,7 @@
   <string name="android_security_summary">Обновления безопасности Android - сборник патчей платформы Android и проприетарных бинарных файлов, с помощью которых она работает. Так как исходный код этих бинарных файлов закрыт, нам приходится надеяться на то, что поставщики предоставят их производителям, а производители - пользователям, чтобы мы могли добавить их в наши сборки. В связи с тем, что мы не можем контролировать этот процесс, хочется прояснить, что обновления безопасности мы устанавливаем только в тех ветках, которые исходят от Android Open Source Project. Чаще всего обновления безопасности будут те же, что и на последней стоковой прошивке.</string>
   <string name="android_functional_updates_title">Функциональные обновления</string>
   <string name="android_functional_updates_summary">Помимо обновлений безопасности AOSP мы также включаем функциональные обновления от Google. Это патчи, которые Google рассылает вдогонку обновлениям безопасности для устройств Pixel с исправлениями функциональных проблем, например, соединения, стабильности и быстродействия. Так как мы поддерживаем не только Pixel, они включаются для всех наших устройств.</string>
+  <string name="vendor_security_title">Vendor patch level</string>
   <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Он на задней панели телефона. Используйте любой палец.</string>
   <!-- Encryption and credential -->
@@ -48,7 +49,7 @@
   <string name="supersu_title">SuperSU</string>
   <!-- Dirty Tweaks -->
   <string name="dirtytweaks_title">Настройки Dirty Unicorns</string>
-  <string name="dirtytweaks_summary">Повысьте свой опыт использования</string>
+  <string name="dirtytweaks_summary">Настройте прошивку под себя</string>
   <!-- DU version in About phone -->
   <string name="rom_version_title">Версия DU</string>
   <!-- Notification log -->
@@ -119,4 +120,7 @@
   <!-- Font picker -->
   <string name="font_picker_title">Шрифт</string>
   <string name="font_picker_progress">Применяем новый шрифт\u2026</string>
+  <!-- Search -->
+  <string name="menu_search">Search apps</string>
+  <string name="menu_search_hint">Search apps\u2026</string>
 </resources>

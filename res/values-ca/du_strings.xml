@@ -17,104 +17,108 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Security dialog -->
   <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-04-01</string>
-  <string name="security_dialog_title">Security updates</string>
-  <string name="security_dialog_neutral_button">AOSP Security Bulletins</string>
-  <string name="android_security_title">AOSP security patch level</string>
-  <string name="android_security_summary">Android security updates are a collection of patches to the Android platform and the vendor binaries that help it run. Since these binaries are closed source, we have to rely on the vendors to supply them to the OEMs and the OEMs to ship them to users so we can add them to our builds. As we cannot control this process at all, we want to make it clear that we only update the security patch level in the repos that come from the Android Open Source Project. Generally, the vendor security patch level will be whatever patch level the latest stock ROM is on.</string>
-  <string name="android_functional_updates_title">Functional updates</string>
-  <string name="android_functional_updates_summary">In addition to AOSP security updates, we include Google\'s functional updates. These are patches that Google push in addition to security updates for Pixel devices to address functionality issues such as connectivity, stability, and performance. Since we support more than just Pixel devices, they are included for all our devices.</string>
+  <string name="security_dialog_title">Actualitzacions de seguretat</string>
+  <string name="security_dialog_neutral_button">Butlletins de seguretat AOSP</string>
+  <string name="android_security_title">Nivell de pedaç de seguretat AOSP</string>
+  <string name="android_security_summary">Les actualitzacions de seguretat d\'Android són una col·lecció de pegats a la plataforma Android i els binaris del venedor que l\'ajuden a funcionar. Com que aquests binaris són de codi tancat, hem de confiar en els venedors per subministrar-los als OEMs i els OEMs enviar-los als usuaris perquè podem afegir-los als nostres compilacions. Com que no podem controlar aquest procés del tot, volem fer-ho clar que només l\'actualització del nivell de perxeig de seguretat dels repositoris que provenen del projecte Android Open Source Project. En general, el nivell de perxeig de seguretat dels venedors serà el nivell de perxeig que correspon a la última ROM original.</string>
+  <string name="android_functional_updates_title">Actualitzacions funcionals</string>
+  <string name="android_functional_updates_summary">A més de les actualitzacions de seguretat AOSP, podem incloure actualitzacions funcionals de Google. Aquests són pedaços que Google puja a més d\'actualitzacions de seguretat per a dispositius Píxel per abordar les qüestions de funcionalitat com connectivitat, estabilitat i rendiment. Ja que donem suport a més dispositius que els Píxel, s\'inclouen per a tots els nostres dispositius.</string>
+  <string name="vendor_security_title">Nivell de pedaços del venedor</string>
   <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">It\u2019s on the back of your phone. Use any finger.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Està a la part posterior del seu telèfon. Utilitzi qualsevol dir.</string>
   <!-- Encryption and credential -->
-  <string name="custom_encryption_and_credential_settings_summary_on">Device is encrypted</string>
-  <string name="custom_encryption_and_credential_settings_summary_off">Device is decrypted</string>
+  <string name="custom_encryption_and_credential_settings_summary_on">El dispositiu està encriptat</string>
+  <string name="custom_encryption_and_credential_settings_summary_off">El dispositiu està desencriptat</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_custom">
-    <item quantity="one">You are now <xliff:g id="step_count">%1$d</xliff:g> step away from enabling developer options.</item>
-    <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from enabling developer options.</item>
+    <item quantity="one">Ara ets a <xliff:g id="step_count">%1$d</xliff:g> pas d\'habilitar les opcions de desenvolupament.</item>
+    <item quantity="other">Ara ets a <xliff:g id="step_count">%1$d</xliff:g> pas d\'habilitar les opcions de desenvolupament.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_custom">Developer options enabled! Be careful!</string>
+  <string name="show_dev_on_custom">Opcions de desenvolupador habilitat! Ves amb compte!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_custom">Developer options already enabled!</string>
+  <string name="show_dev_already_custom">Opcions de desenvolupador ja actius!</string>
   <!-- Density category -->
-  <string name="density_category">Density options</string>
+  <string name="density_category">Opcions de densitat</string>
   <!-- Root Management -->
-  <string name="rootmanagement_title">Root management</string>
-  <string name="rootmanagement_dashboard_summary">Manage root access</string>
+  <string name="rootmanagement_title">Gestió de l\'usuari administrador</string>
+  <string name="rootmanagement_dashboard_summary">Gestiona l\'accés d\'administrador</string>
   <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
   <string name="supersu_title">SuperSU</string>
   <!-- Dirty Tweaks -->
-  <string name="dirtytweaks_title">Dirty Tweaks</string>
-  <string name="dirtytweaks_summary">Enhance your experience</string>
+  <string name="dirtytweaks_title">Retocs Dirty</string>
+  <string name="dirtytweaks_summary">Realçar la seva experiència</string>
   <!-- DU version in About phone -->
-  <string name="rom_version_title">DU version</string>
+  <string name="rom_version_title">Versió DU</string>
   <!-- Notification log -->
-  <string name="notification_log_summary">Show notifications history log</string>
+  <string name="notification_log_summary">Mostra el registre de notificacions</string>
   <!-- MSIM Manual provisioning -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_enabled">enabled</string>
-  <string name="sim_disabled">disabled</string>
-  <string name="sim_missing">missing or faulty</string>
-  <string name="sim_enabler_need_disable_sim">SIM card will be deactivated. Do you want to continue?</string>
-  <string name="sim_enabler_will_disable_sim_title">Attention</string>
-  <string name="sim_enabler_need_switch_data_service">This SIM will be disabled and SIM <xliff:g id="slotid">%1$s</xliff:g> will be used for data services. Are you sure you want to continue?</string>
-  <string name="sim_enabler_airplane_on">Unable to perform the operation while airplane mode is on.</string>
-  <string name="sim_enabler_in_call">Unable to perform the operation while in call.</string>
-  <string name="sim_enabler_both_inactive">Can\'t disable all SIM cards</string>
-  <string name="sim_enabler_enabling">Activating\u2026</string>
-  <string name="sim_enabler_disabling">Deactivating\u2026</string>
-  <string name="sub_activate_success">SIM activated.</string>
-  <string name="sub_activate_failed">Activation failed.</string>
-  <string name="sub_deactivate_success">SIM deactivated.</string>
-  <string name="sub_deactivate_failed">Deactivation failed.</string>
-  <string name="available_sims_title">Available SIM cards</string>
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> està <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_enabled">activat</string>
+  <string name="sim_disabled">desactivat</string>
+  <string name="sim_missing">absent o defectuós</string>
+  <string name="sim_enabler_need_disable_sim">La tarjeta SIM serà deshabilitada. Voleu continuar?</string>
+  <string name="sim_enabler_will_disable_sim_title">Atenció</string>
+  <string name="sim_enabler_need_switch_data_service">Aquesta SIM serà deshabilitada i la SIM <xliff:g id="slotid">%1$s</xliff:g> serà utilitzada per als serveis de dades. Segur que voleu continuar?</string>
+  <string name="sim_enabler_airplane_on">No es pot realitzar aquesta operació mentrestant el mode avió està activat.</string>
+  <string name="sim_enabler_in_call">No es pot realitzar aquesta operació durant una trucada.</string>
+  <string name="sim_enabler_both_inactive">No es poden deshabilitar totes les targetes SIM</string>
+  <string name="sim_enabler_enabling">Activant\u2026</string>
+  <string name="sim_enabler_disabling">Desactivant\u2026</string>
+  <string name="sub_activate_success">SIM activada.</string>
+  <string name="sub_activate_failed">Activació fallida.</string>
+  <string name="sub_deactivate_success">SIM desactivada.</string>
+  <string name="sub_deactivate_failed">Desactivació fallida.</string>
+  <string name="available_sims_title">Targetes SIM disponibles</string>
   <!-- Wake on Plug -->
-  <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
-  <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+  <string name="wake_when_plugged_or_unplugged_title">Desperta en endollar</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Encén la pantalla en connectar o desconnectar una font d\'energia</string>
   <!-- Advanced night mode brightness -->
-  <string name="night_brightness_category">Brightness</string>
-  <string name="night_brightness_value_title">Lower brightness if Night Light</string>
-  <string name="night_bright_disabled">Disabled</string>
-  <string name="night_bright_minimum">Minimum brightness</string>
-  <string name="night_bright_low">Low brightness</string>
-  <string name="night_bright_medium">Medium brightness</string>
+  <string name="night_brightness_category">Brillantor</string>
+  <string name="night_brightness_value_title">Baixar la brillantor si llum de nit</string>
+  <string name="night_bright_disabled">Desactivat</string>
+  <string name="night_bright_minimum">Brillantor mínima</string>
+  <string name="night_bright_low">Baixa lluentor</string>
+  <string name="night_bright_medium">Brillantor mitjà</string>
   <!-- Vibrate on plug -->
-  <string name="vibration_on_charge_state_changed_title">Vibrate on plug</string>
+  <string name="vibration_on_charge_state_changed_title">Vibrar a l\'endollar</string>
   <!-- Pixel color on sim card -->
-  <string name="default_sim_color">Pixel</string>
+  <string name="default_sim_color">Píxel</string>
   <!-- Changelog -->
-  <string name="duchangelog_title">Changelog</string>
-  <string name="duchangelog_summary">Check to see what has changed</string>
-  <string name="duchangelog_settings">Settings</string>
+  <string name="duchangelog_title">Registre de canvis</string>
+  <string name="duchangelog_summary">Marca per veure què ha canviat</string>
+  <string name="duchangelog_settings">Preferències</string>
   <!-- Developer options toast insulter -->
-  <string name="toast_insult_0">Hahaha, n00b!</string>
-  <string name="toast_insult_1">What are you doing??</string>
-  <string name="toast_insult_2">n00b alert!</string>
-  <string name="toast_insult_3">What is this...? Amateur hour!?</string>
-  <string name="toast_insult_4">This is not iOS</string>
-  <string name="toast_insult_5">Please step away from the device!</string>
-  <string name="toast_insult_6">error code: 1D10T</string>
-  <string name="toast_insult_7">Go outside</string>
+  <string name="toast_insult_0">Hahaha, n0vat0!</string>
+  <string name="toast_insult_1">Què estàs fent??</string>
+  <string name="toast_insult_2">alerta n0vat0!</string>
+  <string name="toast_insult_3">Què és això...? L\'hora d\'aficionat!?</string>
+  <string name="toast_insult_4">Això no és iOS</string>
+  <string name="toast_insult_5">Si us plau allunya\'t del dispositiu!</string>
+  <string name="toast_insult_6">codi d\'error: 1D10T</string>
+  <string name="toast_insult_7">Surt fora</string>
   <string name="toast_insult_8">¯\\_(ツ)_/¯</string>
-  <string name="toast_insult_9">Pro tip: Stop doing this!</string>
-  <string name="toast_insult_10">Y u no speak Android???</string>
-  <string name="toast_insult_11">Why are you so stupid?!</string>
-  <string name="toast_insult_12">Perhaps this Android thing is not for you...</string>
-  <string name="toast_insult_13">Don\'t you have anything better to do?!</string>
-  <string name="toast_insult_14">This is why nobody likes you...</string>
-  <string name="toast_insult_15">Are you even trying?!</string>
+  <string name="toast_insult_9">Apunt de pro: deix de fer això!</string>
+  <string name="toast_insult_10">Pq no parles Android???</string>
+  <string name="toast_insult_11">Per què ets tan estúpid?!</string>
+  <string name="toast_insult_12">Potser aquesta cosa d\'Android no és per a tu...</string>
+  <string name="toast_insult_13">No tens res millor a fer?!</string>
+  <string name="toast_insult_14">És per això que no li agrades a ningú...</string>
+  <string name="toast_insult_15">Ho has tan sols intentat?!</string>
   <!-- [CHAR LIMIT=80]-->
-  <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
+  <string name="fp_swipe_to_dismiss_notifications_title">Feu lliscar l\'empremta dactilar a esquerra o dreta per eliminar les notificacions</string>
   <!--  [CHAR LIMIT=160]-->
-  <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
+  <string name="fp_swipe_to_dismiss_notifications_summary">Per descartar les notificacions, feu lliscar el dit cap a l\'esquerra o cap a la dreta al sensor d\'empremta digital a la part posterior del telèfon.</string>
   <!-- Fingerprint quick pulldown -->
-  <string name="fp_quick_pulldown_title">Fingerprint quick pulldown</string>
-  <string name="fp_quick_pulldown_summary">Expand the quick settings panel with only one swipe on the fingerprint sensor.</string>
+  <string name="fp_quick_pulldown_title">Desplegable ràpid d\'empremta digital</string>
+  <string name="fp_quick_pulldown_summary">Ampliar el tauler de configuració ràpid amb només lliscar al sensor d\'empremta digital.</string>
   <!-- Scramble PIN layout when unlocking -->
-  <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-  <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+  <string name="unlock_scramble_pin_layout_title">Disposició aleatòria</string>
+  <string name="unlock_scramble_pin_layout_summary">Disposa aleatòriament les tecles del PIN en desbloquejar el dispositiu</string>
   <!-- Font picker -->
-  <string name="font_picker_title">Font</string>
-  <string name="font_picker_progress">Applying new font\u2026</string>
+  <string name="font_picker_title">Tipus de lletra</string>
+  <string name="font_picker_progress">Aplicant nova tipografia\u2026</string>
+  <!-- Search -->
+  <string name="menu_search">Cerca aplicacions</string>
+  <string name="menu_search_hint">Cerca aplicacions\u2026</string>
 </resources>
