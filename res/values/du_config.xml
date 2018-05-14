@@ -20,4 +20,5 @@
          and currently depends on QC's proprietary telephony stack -->
     <bool name="config_enableManualSubProvisioning">true</bool>
 
+    <bool name="config_hasBottomFingerprintSensor">false</bool>
 </resources>
