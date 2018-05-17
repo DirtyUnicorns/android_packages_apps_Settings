@@ -17,26 +17,26 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Security dialog -->
   <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-04-01</string>
-  <string name="security_dialog_title">Security updates</string>
-  <string name="security_dialog_neutral_button">AOSP Security Bulletins</string>
-  <string name="android_security_title">AOSP security patch level</string>
-  <string name="android_security_summary">Android security updates are a collection of patches to the Android platform and the vendor binaries that help it run. Since these binaries are closed source, we have to rely on the vendors to supply them to the OEMs and the OEMs to ship them to users so we can add them to our builds. As we cannot control this process at all, we want to make it clear that we only update the security patch level in the repos that come from the Android Open Source Project. Generally, the vendor security patch level will be whatever patch level the latest stock ROM is on.</string>
-  <string name="android_functional_updates_title">Functional updates</string>
-  <string name="android_functional_updates_summary">In addition to AOSP security updates, we include Google\'s functional updates. These are patches that Google push in addition to security updates for Pixel devices to address functionality issues such as connectivity, stability, and performance. Since we support more than just Pixel devices, they are included for all our devices.</string>
-  <string name="vendor_security_title">Vendor patch level</string>
+  <string name="security_dialog_title">تحديث أمني</string>
+  <string name="security_dialog_neutral_button">نشرات الأمان AOSP</string>
+  <string name="android_security_title">مستوى تصحيح الأمان AOSP</string>
+  <string name="android_security_summary">تحديثات أمان Android عبارة عن مجموعة من التصحيحات إلى نظام Android الأساسي وثنائيات الموردين التي تساعد في تشغيلها. نظرًا لأن هذه الثنائيات مصدر مغلق ، فيجب علينا الاعتماد على الموردين لتزويدهم بمصنّعي الأجهزة الأصلية وموردي المعدات الأصلية لشحنهم إلى المستخدمين حتى نتمكن من إضافتهم إلى برامجنا. نظرًا لأننا لا نستطيع التحكم في هذه العملية على الإطلاق ، فنحن نريد أن نوضح أننا نقوم بتحديث مستوى تصحيح الأمان في عمليات إعادة الشراء التي تأتي من مشروع Android Open Source فقط. بشكل عام ، سيكون مستوى تصحيح الأمان الخاص بالمورد هو مستوى التصحيح الذي يشغله أحدث إصدار ROM.</string>
+  <string name="android_functional_updates_title">التحديثات الفنية</string>
+  <string name="android_functional_updates_summary">بالإضافة إلى تحديثات أمان AOSP ، نقوم بتضمين تحديثات Google الوظيفية. هذه هي التصحيحات التي تدفعها Google بالإضافة إلى التحديثات الأمنية لأجهزة Pixel لمعالجة مشكلات الوظائف مثل الاتصال والاستقرار والأداء. نظرًا لأننا ندعم أكثر من مجرد أجهزة Pixel ، يتم تضمينها لجميع أجهزتنا.</string>
+  <string name="vendor_security_title">مستوى تصحيح المورد</string>
   <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">It\u2019s on the back of your phone. Use any finger.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">أنها\u2019s على الجزء الخلفي من الهاتف. أستخدم اي أصبع.</string>
   <!-- Encryption and credential -->
   <string name="custom_encryption_and_credential_settings_summary_on">الجهاز مشفّر</string>
   <string name="custom_encryption_and_credential_settings_summary_off">الجهاز غير مشفّر</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_custom">
-    <item quantity="zero">انت الآن على بعد <xliff:g id="step_count">%1$d</xliff:g> خطوة من تفعيل خيارات المطورين.</item>
+    <item quantity="zero">انت الآن على بعد <xliff:g id="step_count">%1$d</xliff:g> خطوات من تفعيل خيارات المطورين.</item>
     <item quantity="one">انت الآن على بعد <xliff:g id="step_count">%1$d</xliff:g> خطوة من تفعيل خيارات المطورين.</item>
     <item quantity="two">انت الآن على بعد <xliff:g id="step_count">%1$d</xliff:g> خطوات من تفعيل خيارات المطورين.</item>
     <item quantity="few">انت الآن على بعد <xliff:g id="step_count">%1$d</xliff:g> خطوات من تفعيل خيارات المطورين.</item>
     <item quantity="many">انت الآن على بعد <xliff:g id="step_count">%1$d</xliff:g> خطوات من تفعيل خيارات المطورين.</item>
-    <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from enabling developer options.</item>
+    <item quantity="other">أنت الآن في <xliff:g id="step_count">%1$d</xliff:g> خطوات من تفعيل خيارات المطور.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_custom">تم تمكين خيارات المطور! انتبه!</string>
@@ -108,7 +108,7 @@
   <string name="toast_insult_12">Perhaps this Android thing is not for you...</string>
   <string name="toast_insult_13">ليس لديك شيء افضل لفعله ؟!</string>
   <string name="toast_insult_14">و لهذا السبب لا احد يحبك...</string>
-  <string name="toast_insult_15">Are you even trying?!</string>
+  <string name="toast_insult_15">هل أنت تحاول حتى؟!</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">إسحب لليمين او اليسار لابعاد الاشعارات</string>
   <!--  [CHAR LIMIT=160]-->
@@ -121,8 +121,8 @@
   <string name="unlock_scramble_pin_layout_summary">ترتيب أزررار الأرقام لرمز التعريف الشخصي بصورة عشوائية عند فك قفل الجهاز</string>
   <!-- Font picker -->
   <string name="font_picker_title">الخط</string>
-  <string name="font_picker_progress">Applying new font\u2026</string>
+  <string name="font_picker_progress">تطبيق الخط الجديد</string>
   <!-- Search -->
-  <string name="menu_search">Search apps</string>
-  <string name="menu_search_hint">Search apps\u2026</string>
+  <string name="menu_search">بحث في التطبيقات</string>
+  <string name="menu_search_hint">جارٍ البحث</string>
 </resources>
