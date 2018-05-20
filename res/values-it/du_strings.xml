@@ -16,7 +16,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Security dialog -->
-  <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-04-01</string>
   <string name="security_dialog_title">Aggiornamenti di sicurezza</string>
   <string name="security_dialog_neutral_button">Comunicati sulla sicurezza AOSP</string>
   <string name="android_security_title">Livello patch di sicurezza AOSP</string>
