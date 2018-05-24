@@ -118,6 +118,6 @@
   <string name="font_picker_title">Yazı tipi</string>
   <string name="font_picker_progress">Yeni yazı tipi uygulanıyor\u2026</string>
   <!-- Search -->
-  <string name="menu_search">Uygulamalar ara</string>
+  <string name="menu_search">Uygulamalarda ara</string>
   <string name="menu_search_hint">Uygulamalar aranıyor\u2026</string>
 </resources>
