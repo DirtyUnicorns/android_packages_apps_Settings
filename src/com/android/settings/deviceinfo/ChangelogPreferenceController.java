@@ -19,8 +19,6 @@ package com.android.settings.deviceinfo;
 import android.content.Context;
 import android.support.v7.preference.Preference;
 
-import com.android.internal.util.du.Utils;
-
 import com.android.settings.R;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.core.AbstractPreferenceController;
@@ -29,7 +27,6 @@ public class ChangelogPreferenceController extends AbstractPreferenceController 
         PreferenceControllerMixin {
 
     private static final String KEY_DU_CHANGELOG = "du_changelog";
-    //private static final String KEY_DU_UPDATER_PACKAGE_NAME = "com.dirtyunicorns.duupdater";
 
     public ChangelogPreferenceController(Context context) {
         super(context);
@@ -47,7 +44,6 @@ public class ChangelogPreferenceController extends AbstractPreferenceController 
 
     @Override
     public boolean isAvailable() {
-        //return Utils.isPackageInstalled(mContext.getApplicationContext(), KEY_DU_UPDATER_PACKAGE_NAME);
         return true;
     }
 }

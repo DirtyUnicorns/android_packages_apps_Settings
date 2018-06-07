@@ -15,26 +15,26 @@ package com.android.settings.display;
 
 import android.content.Context;
 import android.content.ContentResolver;
-import android.content.pm.PackageManager;
+import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
+import android.os.Handler;
+import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
-import android.provider.Settings;
+import android.text.TextUtils;
+import android.widget.Toast;
 
+import com.android.settings.R;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 
+import com.android.internal.util.du.Utils;
+
 import libcore.util.Objects;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.android.settings.R;
-import android.content.Intent;
-import android.os.Handler;
-import android.widget.Toast;
 
 public class DarkUIPreferenceController extends AbstractPreferenceController implements
         PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
@@ -62,7 +62,7 @@ public class DarkUIPreferenceController extends AbstractPreferenceController imp
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         mSystemUiThemeStyle = (ListPreference) screen.findPreference(SYSTEM_UI_THEME);
-        if (!isPackageInstalled(SUBS_PACKAGE, mContext)) {
+        if (!Utils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
             int systemuiThemeStyle = Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.SYSTEM_UI_THEME, 0);
             int valueIndex = mSystemUiThemeStyle.findIndexOfValue(String.valueOf(systemuiThemeStyle));
@@ -107,15 +107,5 @@ public class DarkUIPreferenceController extends AbstractPreferenceController imp
                   Toast.makeText(mContext, R.string.theme_applied_toast, Toast.LENGTH_SHORT).show();
               }
         }, 3000);
-    }
-
-    private boolean isPackageInstalled(String package_name, Context context) {
-        try {
-            PackageManager pm = context.getPackageManager();
-            pm.getPackageInfo(package_name, PackageManager.GET_ACTIVITIES);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
     }
 }

@@ -17,7 +17,6 @@ package com.android.settings.display;
 
 import android.app.Fragment;
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.os.UserHandle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceClickListener;
@@ -31,6 +30,8 @@ import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnResume;
 
 import com.dirtyunicorns.tweaks.fragments.AccentPicker;
+
+import com.android.internal.util.du.Utils;
 
 public class AccentPickerPreferenceController extends AbstractPreferenceController
         implements PreferenceControllerMixin, LifecycleObserver, OnResume {
@@ -54,7 +55,7 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
     @Override
     public void displayPreference(PreferenceScreen screen) {
         mAccentPickerPref  = (Preference) screen.findPreference(KEY_ACCENT_PICKER_FRAGMENT_PREF);
-        if (!isPackageInstalled(SUBS_PACKAGE, mContext)) {
+        if (!Utils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
             mAccentPickerPref.setEnabled(true);
         } else {
             mAccentPickerPref.setEnabled(false);
@@ -86,7 +87,7 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
             new OnPreferenceClickListener() {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
-                   if (!isPackageInstalled(SUBS_PACKAGE, mContext)) {
+                   if (!Utils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
                         AccentPicker.show(mParent);
                         return true;
                    } else {
@@ -98,23 +99,13 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
 
     public void updateSummary() {
         if (mAccentPickerPref != null) {
-            if (!isPackageInstalled(SUBS_PACKAGE, mContext)) {
+            if (!Utils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
                 mAccentPickerPref.setSummary(mContext.getString(
                         com.android.settings.R.string.theme_accent_picker_summary));
             } else {
                 mAccentPickerPref.setSummary(mContext.getString(
                         com.android.settings.R.string.disable_accents_installed_title));
             }
-        }
-    }
-
-    private boolean isPackageInstalled(String package_name, Context context) {
-        try {
-            PackageManager pm = context.getPackageManager();
-            pm.getPackageInfo(package_name, PackageManager.GET_ACTIVITIES);
-            return true;
-        } catch (Exception e) {
-            return false;
         }
     }
 }
