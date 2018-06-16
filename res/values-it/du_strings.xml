@@ -117,7 +117,7 @@
   <string name="unlock_scramble_pin_layout_summary">Mescola la disposizione del tastierino PIN per lo sblocco del dispositivo</string>
   <!-- Font picker -->
   <string name="font_picker_title">Carattere</string>
-  <string name="font_picker_progress">Applicando il nuovo font</string>
+  <string name="font_picker_progress">Applicazione del nuovo carattere</string>
   <!-- Search -->
   <string name="menu_search">Cerca App</string>
   <string name="menu_search_hint">Cerca App\u2026</string>
