@@ -123,4 +123,5 @@
   <!-- Search -->
   <string name="menu_search">Hledat aplikace</string>
   <string name="menu_search_hint">Hledání aplikací\u2026</string>
+  <string name="custom_ambient_display_summary">Nastavení rozšířeného Ambientního displeje</string>
 </resources>

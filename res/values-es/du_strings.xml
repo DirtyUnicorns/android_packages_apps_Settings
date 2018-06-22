@@ -121,4 +121,5 @@
   <!-- Search -->
   <string name="menu_search">Buscar aplicaciones</string>
   <string name="menu_search_hint">Buscando aplicaciones\u2026</string>
+  <string name="custom_ambient_display_summary">Configurar pantalla ambiente avanzada</string>
 </resources>

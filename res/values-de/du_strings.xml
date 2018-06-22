@@ -121,4 +121,5 @@
   <!-- Search -->
   <string name="menu_search">Apps finden</string>
   <string name="menu_search_hint">Suche Apps\u2026</string>
+  <string name="custom_ambient_display_summary">Erweiterte Ambient-Darstellung konfigurieren</string>
 </resources>

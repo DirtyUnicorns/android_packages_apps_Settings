@@ -121,4 +121,5 @@
   <!-- Search -->
   <string name="menu_search">Cerca App</string>
   <string name="menu_search_hint">Cerca App\u2026</string>
+  <string name="custom_ambient_display_summary">Configura l\' Ambient Display avanzato</string>
 </resources>

@@ -125,4 +125,5 @@
   <!-- Search -->
   <string name="menu_search">بحث في التطبيقات</string>
   <string name="menu_search_hint">جارٍ البحث</string>
+  <string name="custom_ambient_display_summary">تهيئة العرض المحيط المتقدم</string>
 </resources>

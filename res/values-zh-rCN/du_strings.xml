@@ -120,4 +120,5 @@
   <!-- Search -->
   <string name="menu_search">搜索应用</string>
   <string name="menu_search_hint">正在搜索...</string>
+  <string name="custom_ambient_display_summary">配置高级环境显示</string>
 </resources>

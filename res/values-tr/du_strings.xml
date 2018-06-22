@@ -121,4 +121,5 @@
   <!-- Search -->
   <string name="menu_search">Uygulamalarda ara</string>
   <string name="menu_search_hint">Uygulamalar aranıyor\u2026</string>
+  <string name="custom_ambient_display_summary">Gelişmiş ortam ekranını yapılandır</string>
 </resources>

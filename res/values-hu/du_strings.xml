@@ -121,4 +121,5 @@
   <!-- Search -->
   <string name="menu_search">Alkalmazások keresése</string>
   <string name="menu_search_hint">Alkalmazások keresése\u2026</string>
+  <string name="custom_ambient_display_summary">A Kiterjesztett képernyő haladó beállításai</string>
 </resources>

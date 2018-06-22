@@ -121,4 +121,5 @@
   <!-- Search -->
   <string name="menu_search">Hae sovelluksia</string>
   <string name="menu_search_hint">Haetaan sovellusta\u2026</string>
+  <string name="custom_ambient_display_summary">Configure advanced Ambient Display</string>
 </resources>
