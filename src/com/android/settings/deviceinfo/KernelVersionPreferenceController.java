@@ -35,6 +35,8 @@ public class KernelVersionPreferenceController extends AbstractPreferenceControl
     private static final String FILENAME_PROC_VERSION = "/proc/version";
     private static final String LOG_TAG = "KernelVersionPreferenceController";
 
+    private boolean fullKernelVersion = false;
+
     public KernelVersionPreferenceController(Context context) {
         super(context);
     }
@@ -60,7 +62,13 @@ public class KernelVersionPreferenceController extends AbstractPreferenceControl
         if (!TextUtils.equals(preference.getKey(), KEY_KERNEL_VERSION)) {
             return false;
         }
-        preference.setSummary(getFullKernelVersion());
+        if (fullKernelVersion) {
+            preference.setSummary(DeviceInfoUtils.getFormattedKernelVersion());
+            fullKernelVersion = false;
+        } else {
+            preference.setSummary(getFullKernelVersion());
+            fullKernelVersion = true;
+        }
         return false;
     }
 
