@@ -536,6 +536,10 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mUSBAudio = findAndInitSwitchPref(USB_AUDIO_KEY);
         mForceResizable = findAndInitSwitchPref(FORCE_RESIZABLE_KEY);
 
+        if (android.os.Build.TYPE.equals("user")) {
+            disableForUser(mForceResizable);
+        }
+
         mImmediatelyDestroyActivities = (SwitchPreference) findPreference(
                 IMMEDIATELY_DESTROY_ACTIVITIES_KEY);
         mAllPrefs.add(mImmediatelyDestroyActivities);
