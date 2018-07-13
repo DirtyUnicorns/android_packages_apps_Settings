@@ -121,5 +121,5 @@
   <!-- Search -->
   <string name="menu_search">Pesquisar aplicativos</string>
   <string name="menu_search_hint">Pesquisar aplicativos\u2026</string>
-  <string name="custom_ambient_display_summary">Configure advanced Ambient Display</string>
+  <string name="custom_ambient_display_summary">Configurar o Display ambiente avançado</string>
 </resources>
