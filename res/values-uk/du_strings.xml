@@ -94,7 +94,7 @@
   <string name="toast_insult_0">Hahaha, n00b!</string>
   <string name="toast_insult_1">What are you doing??</string>
   <string name="toast_insult_2">n00b alert!</string>
-  <string name="toast_insult_3">What is this...? Amateur hour!?</string>
+  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
   <string name="toast_insult_4">This is not iOS</string>
   <string name="toast_insult_5">Please step away from the device!</string>
   <string name="toast_insult_6">error code: 1D10T</string>
@@ -103,9 +103,9 @@
   <string name="toast_insult_9">Pro tip: Stop doing this!</string>
   <string name="toast_insult_10">Y u no speak Android???</string>
   <string name="toast_insult_11">Why are you so stupid?!</string>
-  <string name="toast_insult_12">Perhaps this Android thing is not for you...</string>
+  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
   <string name="toast_insult_13">Don\'t you have anything better to do?!</string>
-  <string name="toast_insult_14">This is why nobody likes you...</string>
+  <string name="toast_insult_14">This is why nobody likes you…</string>
   <string name="toast_insult_15">Are you even trying?!</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>

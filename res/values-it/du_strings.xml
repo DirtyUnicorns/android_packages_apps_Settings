@@ -92,7 +92,7 @@
   <string name="toast_insult_0">Hahaha, n00b!</string>
   <string name="toast_insult_1">Cosa stai facendo??</string>
   <string name="toast_insult_2">Allerta n00b!</string>
-  <string name="toast_insult_3">Cos\'è questa...? L\'ora dei dilettanti!?</string>
+  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
   <string name="toast_insult_4">Questo non è iOS</string>
   <string name="toast_insult_5">Per favore allontanati dal dispositivo!</string>
   <string name="toast_insult_6">codice errore: 1D10TA</string>
@@ -101,9 +101,9 @@
   <string name="toast_insult_9">Suggerimento: Smettila di fare questo!</string>
   <string name="toast_insult_10">Y tu no parlare Android???</string>
   <string name="toast_insult_11">Perchè sei così stupido?!</string>
-  <string name="toast_insult_12">Forse questa cosa Android non fa per te...</string>
+  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
   <string name="toast_insult_13">Non hai niente di meglio da fare?!</string>
-  <string name="toast_insult_14">Ecco perché non piaci a nessuno...</string>
+  <string name="toast_insult_14">This is why nobody likes you…</string>
   <string name="toast_insult_15">Stai ancora provando?!</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">Scorri a sinistra o destra sul sensore d\'impronte per rimuovere le notifiche</string>

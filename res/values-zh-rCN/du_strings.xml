@@ -91,7 +91,7 @@
   <string name="toast_insult_0">哈哈哈, 菜鸟！</string>
   <string name="toast_insult_1">你在干什么？？</string>
   <string name="toast_insult_2">菜鸟警告！</string>
-  <string name="toast_insult_3">这是什么...？业余爱好者！？</string>
+  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
   <string name="toast_insult_4">这不是 iOS</string>
   <string name="toast_insult_5">请远离该设备！</string>
   <string name="toast_insult_6">错误码: 1D10T</string>
@@ -100,9 +100,9 @@
   <string name="toast_insult_9">专家提示：停止这样做！</string>
   <string name="toast_insult_10">你不会说 Android？？？</string>
   <string name="toast_insult_11">你怎么这么愚蠢？！</string>
-  <string name="toast_insult_12">或许 Android 这个东西不适合你...</string>
+  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
   <string name="toast_insult_13">你就没有其他事做了?!</string>
-  <string name="toast_insult_14">这就是没人喜欢你的原因...</string>
+  <string name="toast_insult_14">This is why nobody likes you…</string>
   <string name="toast_insult_15">你还继续？！</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">向左或向右滑动指纹以关闭通知</string>

@@ -91,7 +91,7 @@
   <string name="toast_insult_0">Hahaha, n00b!</string>
   <string name="toast_insult_1">今どうしてる？</string>
   <string name="toast_insult_2">n00b alert!</string>
-  <string name="toast_insult_3">なんだこれは...？ 素人が出しゃばっているのか！？</string>
+  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
   <string name="toast_insult_4">iOSじゃないよ</string>
   <string name="toast_insult_5">端末から離れて！</string>
   <string name="toast_insult_6">エラーコード: 1D10T</string>
@@ -100,9 +100,9 @@
   <string name="toast_insult_9">プロのヒント：これをやめて！</string>
   <string name="toast_insult_10">なぜあなたはAndroidを話さないのですか？</string>
   <string name="toast_insult_11">何でそんなに馬鹿なの？！</string>
-  <string name="toast_insult_12">多分このAndroid端末はあなたのためのものではありません...</string>
+  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
   <string name="toast_insult_13">もっといいことをしましょう</string>
-  <string name="toast_insult_14">これは誰もあなたを好きではない理由です...</string>
+  <string name="toast_insult_14">This is why nobody likes you…</string>
   <string name="toast_insult_15">あなたも試そうとしていますか？</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">指紋センサーで左右にスワイプして通知を削除</string>

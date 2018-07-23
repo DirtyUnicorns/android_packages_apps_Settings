@@ -92,7 +92,7 @@
   <string name="toast_insult_0">Hahaha, n0vat0!</string>
   <string name="toast_insult_1">Què estàs fent??</string>
   <string name="toast_insult_2">alerta n0vat0!</string>
-  <string name="toast_insult_3">Què és això...? L\'hora d\'aficionat!?</string>
+  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
   <string name="toast_insult_4">Això no és iOS</string>
   <string name="toast_insult_5">Si us plau allunya\'t del dispositiu!</string>
   <string name="toast_insult_6">codi d\'error: 1D10T</string>
@@ -101,9 +101,9 @@
   <string name="toast_insult_9">Apunt de pro: deix de fer això!</string>
   <string name="toast_insult_10">Pq no parles Android???</string>
   <string name="toast_insult_11">Per què ets tan estúpid?!</string>
-  <string name="toast_insult_12">Potser aquesta cosa d\'Android no és per a tu...</string>
+  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
   <string name="toast_insult_13">No tens res millor a fer?!</string>
-  <string name="toast_insult_14">És per això que no li agrades a ningú...</string>
+  <string name="toast_insult_14">This is why nobody likes you…</string>
   <string name="toast_insult_15">Ho has tan sols intentat?!</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">Feu lliscar l\'empremta dactilar a esquerra o dreta per eliminar les notificacions</string>

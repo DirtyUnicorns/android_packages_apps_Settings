@@ -92,7 +92,7 @@
   <string name="toast_insult_0">Ha-ha-ha, kezdő!</string>
   <string name="toast_insult_1">Mégis mit művel??</string>
   <string name="toast_insult_2">Zöldfülű riadó!</string>
-  <string name="toast_insult_3">Mi ez itt? Amatőrszakkör?</string>
+  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
   <string name="toast_insult_4">Ez nem iOS !!!</string>
   <string name="toast_insult_5">Kérjük, távolodjon el a készüléktől!</string>
   <string name="toast_insult_6">Hibakód: 1D10T</string>
@@ -101,9 +101,9 @@
   <string name="toast_insult_9">Profi tipp: Hagyja abba ezt!</string>
   <string name="toast_insult_10">Ön nem beszél Androidul???</string>
   <string name="toast_insult_11">Elnézést, miért ennyire hülye?!</string>
-  <string name="toast_insult_12">Talán ez az Android dolog nem Önnek való...</string>
+  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
   <string name="toast_insult_13">Nincs hasznosabb tennivalója ennél?!</string>
-  <string name="toast_insult_14">Ez az oka annak, hogy senki sem szereti Önt...</string>
+  <string name="toast_insult_14">This is why nobody likes you…</string>
   <string name="toast_insult_15">Még mindig ezzel próbálkozik?!</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">Értesítések elutasítása ujjlenyomat csúsztatásával</string>

@@ -92,7 +92,7 @@
   <string name="toast_insult_0">Kehkehkeh, nYYppä!</string>
   <string name="toast_insult_1">Mitä ihmettä yrität säätää??</string>
   <string name="toast_insult_2">Nyyppä varoitus!</string>
-  <string name="toast_insult_3">Mikäs tämä on...? Amatööritunti!?</string>
+  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
   <string name="toast_insult_4">Tämä ei ole iOS</string>
   <string name="toast_insult_5">Ole hyvä ja astu poispäin laitteesta!</string>
   <string name="toast_insult_6">virhekoodi: 1D100TT1</string>
@@ -101,9 +101,9 @@
   <string name="toast_insult_9">Ammattilaisen vinkki: Lopeta tämän tekeminen!</string>
   <string name="toast_insult_10">Mix sä et puhu Androidia???</string>
   <string name="toast_insult_11">Miksi olet noin tyhmä?!</string>
-  <string name="toast_insult_12">Ehkä tämä Android-juttu ei ole sinulle...</string>
+  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
   <string name="toast_insult_13">Eikö sinulla ole mitään parempaa tekemistä?!</string>
-  <string name="toast_insult_14">Tämän takia kukaan ei pidä sinusta...</string>
+  <string name="toast_insult_14">This is why nobody likes you…</string>
   <string name="toast_insult_15">Yritätkö edes?!</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">Pyyhkäise sormenjälkilukijassa vasemmalle tai oikealle poistaaksesi ilmoitukset</string>

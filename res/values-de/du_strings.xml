@@ -92,7 +92,7 @@
   <string name="toast_insult_0">Hahaha, n00b!</string>
   <string name="toast_insult_1">Was machst du??</string>
   <string name="toast_insult_2">n00b Alarm!</string>
-  <string name="toast_insult_3">Was ist das...? Anfängerstunde!?</string>
+  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
   <string name="toast_insult_4">Dies ist nicht iOS</string>
   <string name="toast_insult_5">Tritt bitte vom Gerät zurück!</string>
   <string name="toast_insult_6">Fehlercode 1D10T</string>
@@ -101,9 +101,9 @@
   <string name="toast_insult_9">Expertentipp: Hör auf damit!</string>
   <string name="toast_insult_10">Warum du nix sprechen Android???</string>
   <string name="toast_insult_11">Warum bist du so dumm?!</string>
-  <string name="toast_insult_12">Vielleicht ist Android nix für dich...</string>
+  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
   <string name="toast_insult_13">Hast du nix besseres zu tun?!</string>
-  <string name="toast_insult_14">Darum mag dich niemand...</string>
+  <string name="toast_insult_14">This is why nobody likes you…</string>
   <string name="toast_insult_15">Versuchst du es überhaupt?!</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">Nach links oder rechts über den Fingerabdrucksensor wischen, um Benachrichtigungen zu schließen</string>

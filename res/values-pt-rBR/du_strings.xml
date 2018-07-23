@@ -92,7 +92,7 @@
   <string name="toast_insult_0">Hahaha, n00b!</string>
   <string name="toast_insult_1">O que você está fazendo??</string>
   <string name="toast_insult_2">alerta de n00b!</string>
-  <string name="toast_insult_3">O que é isto...? Hora dos amadores!?</string>
+  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
   <string name="toast_insult_4">Isso não é iOS</string>
   <string name="toast_insult_5">Por favor, afaste-se do dispositivo!</string>
   <string name="toast_insult_6">código de erro: 1D10T4</string>
@@ -101,9 +101,9 @@
   <string name="toast_insult_9">Sugestão: Pare de fazer isso!</string>
   <string name="toast_insult_10">Pq vc ñ fala Android???</string>
   <string name="toast_insult_11">Por que você é tão estúpido?!</string>
-  <string name="toast_insult_12">Talvez esta coisa de Android não seja para você...</string>
+  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
   <string name="toast_insult_13">Não tem nada melhor para fazer?!</string>
-  <string name="toast_insult_14">É por isso que ninguém gosta de você...</string>
+  <string name="toast_insult_14">This is why nobody likes you…</string>
   <string name="toast_insult_15">Você está ao menos tentando?!</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">Deslize a impressão digital para a esquerda ou para a direita para dispensar as notificações</string>

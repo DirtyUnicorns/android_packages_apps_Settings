@@ -96,7 +96,7 @@
   <string name="toast_insult_0">هاهاها، n00b!</string>
   <string name="toast_insult_1">ماذا تحاول أن تفعل ؟؟</string>
   <string name="toast_insult_2">n00b alert!</string>
-  <string name="toast_insult_3">ما هذا...؟ ساعة الهواة!؟</string>
+  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
   <string name="toast_insult_4">هذا ليس iOS</string>
   <string name="toast_insult_5">الرجاء الابتعاد عن الجهاز!</string>
   <string name="toast_insult_6">رمز الخطأ: 1D10T</string>
@@ -105,9 +105,9 @@
   <string name="toast_insult_9">نصيحة من محترف: توقف عن فعل هذا!</string>
   <string name="toast_insult_10">انت لا تتكلم الاندرويد ؟؟؟</string>
   <string name="toast_insult_11">لماذا أنت غبي جداً؟!</string>
-  <string name="toast_insult_12">Perhaps this Android thing is not for you...</string>
+  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
   <string name="toast_insult_13">ليس لديك شيء افضل لفعله ؟!</string>
-  <string name="toast_insult_14">و لهذا السبب لا احد يحبك...</string>
+  <string name="toast_insult_14">This is why nobody likes you…</string>
   <string name="toast_insult_15">هل أنت تحاول حتى؟!</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">إسحب لليمين او اليسار لابعاد الاشعارات</string>

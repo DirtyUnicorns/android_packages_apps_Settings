@@ -91,7 +91,7 @@
   <string name="toast_insult_0">하하, 늒네로군!</string>
   <string name="toast_insult_1">뭐하세요??</string>
   <string name="toast_insult_2">늒네 경고!</string>
-  <string name="toast_insult_3">이건 뭐죠...? 아마추어!?</string>
+  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
   <string name="toast_insult_4">이건 iOS가 아니라구요.</string>
   <string name="toast_insult_5">장치에서 한 발짝 물러서 주십시오!</string>
   <string name="toast_insult_6">오류 코드: 1D10T</string>
@@ -100,9 +100,9 @@
   <string name="toast_insult_9">꿀팁: 그만하기!</string>
   <string name="toast_insult_10">안드로이드어 할 줄 아시는지???</string>
   <string name="toast_insult_11">왜이리 멍청하신가요?!</string>
-  <string name="toast_insult_12">이 안드로이드는 당신에게 어울리지 않는 것 같아요...</string>
+  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
   <string name="toast_insult_13">다른 할 일 없으세요?!</string>
-  <string name="toast_insult_14">아무도 당신을 좋아하지 않는 이유를 알겠네요...</string>
+  <string name="toast_insult_14">This is why nobody likes you…</string>
   <string name="toast_insult_15">계속 하시려구요?!</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">지문 인식을 왼쪽이나 오른쪽으로 밀어 알림 해제</string>
