@@ -94,7 +94,7 @@
   <string name="toast_insult_0">Ахах, нубяра!</string>
   <string name="toast_insult_1">Ты что творишь??</string>
   <string name="toast_insult_2">осторожно, нубик!</string>
-  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
+  <string name="toast_insult_3">Что это...? Дилетантский час!?</string>
   <string name="toast_insult_4">Это не iOS</string>
   <string name="toast_insult_5">Пожалуйста, отойдите от устройства!</string>
   <string name="toast_insult_6">код ошибки: 1D10T</string>
@@ -103,9 +103,9 @@
   <string name="toast_insult_9">Подсказка от профессионала: Прекращай!</string>
   <string name="toast_insult_10">Ти на Андрюше говоришь???</string>
   <string name="toast_insult_11">Почему ты такой глупый?!</string>
-  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
+  <string name="toast_insult_12">Быть может, Android не для тебя…</string>
   <string name="toast_insult_13">Заняться больше нечем?!</string>
-  <string name="toast_insult_14">This is why nobody likes you…</string>
+  <string name="toast_insult_14">Вот почему никто тебя не любит…</string>
   <string name="toast_insult_15">Ты вообще пытаешься?!</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">Проведите пальцем по сканеру влево или вправо, чтобы очистить уведомления</string>

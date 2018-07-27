@@ -94,7 +94,7 @@
   <string name="toast_insult_0">Hahaha, n00b!</string>
   <string name="toast_insult_1">Co děláte??</string>
   <string name="toast_insult_2">n00b upozornění!</string>
-  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
+  <string name="toast_insult_3">Co to je…? Amatérská hodina!?</string>
   <string name="toast_insult_4">Toto není iOS</string>
   <string name="toast_insult_5">Odstupte prosím od zařízení!</string>
   <string name="toast_insult_6">kód chyby: 1D10T</string>
@@ -103,9 +103,9 @@
   <string name="toast_insult_9">Pro tip: Přestaň to dělat!</string>
   <string name="toast_insult_10">Nemluvíš řečí Android???</string>
   <string name="toast_insult_11">Proč jsi tak blbý?!</string>
-  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
+  <string name="toast_insult_12">Možná tato věc Androidu není pro vás…</string>
   <string name="toast_insult_13">Nemáš nic lepšího na práci?!</string>
-  <string name="toast_insult_14">This is why nobody likes you…</string>
+  <string name="toast_insult_14">To je důvod, proč tě nikdo nemá rád…</string>
   <string name="toast_insult_15">Dokonce se snažíš?!</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">Přejetím otiskem prstu vlevo nebo vpravo odmítnout oznámení</string>

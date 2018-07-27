@@ -92,7 +92,7 @@
   <string name="toast_insult_0">Hahaha, n00b!</string>
   <string name="toast_insult_1">Ne yapıyorsun??</string>
   <string name="toast_insult_2">n00b uyarısı!</string>
-  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
+  <string name="toast_insult_3">Bu nedir...? Amatör saati mi!?</string>
   <string name="toast_insult_4">Bu IOS değil</string>
   <string name="toast_insult_5">Lütfen cihazdan uzak durun!</string>
   <string name="toast_insult_6">hata kodu: 1D10T</string>
@@ -101,9 +101,9 @@
   <string name="toast_insult_9">Profesyonel ipucu: Bunu yapmayı bırak!</string>
   <string name="toast_insult_10">Andorid\'den bahset miyorsun???</string>
   <string name="toast_insult_11">Neden bu kadar aptalsın?!</string>
-  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
+  <string name="toast_insult_12">Belki bu Android olayı senin için değil…</string>
   <string name="toast_insult_13">Yapacak daha iyi bir şeyin yok mu?!</string>
-  <string name="toast_insult_14">This is why nobody likes you…</string>
+  <string name="toast_insult_14">Bu yüzden kimse seni sevmiyor…</string>
   <string name="toast_insult_15">Deniyor musun?!</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">Bildirimleri kapatmak için parmak izini sola veya sağa kaydırın</string>
