@@ -92,7 +92,7 @@
   <string name="toast_insult_0">Ahahah, n00b !</string>
   <string name="toast_insult_1">Vous essayez de faire quoi ???</string>
   <string name="toast_insult_2">Alerte au n00b !</string>
-  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
+  <string name="toast_insult_3">C\'est quoi ? L\'heure des écoliers !?</string>
   <string name="toast_insult_4">Vous n\'êtes pas sur iOS</string>
   <string name="toast_insult_5">Éloignez-vous de votre appareil !</string>
   <string name="toast_insult_6">Code d\'erreur : 1D10T</string>
@@ -101,9 +101,9 @@
   <string name="toast_insult_9">Conseil de pro : Arrêtez de faire ça !</string>
   <string name="toast_insult_10">Vous ne parlez pas Android ???</string>
   <string name="toast_insult_11">Pourquoi êtes-vous si stupide ?!</string>
-  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
+  <string name="toast_insult_12">Cette bidouille Android ne doit pas être pour vous...</string>
   <string name="toast_insult_13">Vous n\'avez rien de mieux à faire ?!</string>
-  <string name="toast_insult_14">This is why nobody likes you…</string>
+  <string name="toast_insult_14">C\'est pour ça que personne ne vous aime...</string>
   <string name="toast_insult_15">Vous persistez ?!</string>
   <!-- [CHAR LIMIT=80]-->
   <string name="fp_swipe_to_dismiss_notifications_title">Ignorer les notifications</string>
