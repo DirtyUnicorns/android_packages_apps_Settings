@@ -17,108 +17,108 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Security dialog -->
   <!-- DO NOT TRANSLATE -->
-  <string name="security_dialog_title">Security updates</string>
-  <string name="security_dialog_neutral_button">AOSP Security Bulletins</string>
-  <string name="android_security_title">AOSP security patch level</string>
-  <string name="android_security_summary">Android security updates are a collection of patches to the Android platform and the vendor binaries that help it run. Since these binaries are closed source, we have to rely on the vendors to supply them to the OEMs and the OEMs to ship them to users so we can add them to our builds. As we cannot control this process at all, we want to make it clear that we only update the security patch level in the repos that come from the Android Open Source Project. Generally, the vendor security patch level will be whatever patch level the latest stock ROM is on.</string>
-  <string name="android_functional_updates_title">Functional updates</string>
-  <string name="android_functional_updates_summary">In addition to AOSP security updates, we include Google\'s functional updates. These are patches that Google push in addition to security updates for Pixel devices to address functionality issues such as connectivity, stability, and performance. Since we support more than just Pixel devices, they are included for all our devices.</string>
-  <string name="vendor_security_title">Vendor patch level</string>
+  <string name="security_dialog_title">安全性更新</string>
+  <string name="security_dialog_neutral_button">AOSP 安全性更新公告</string>
+  <string name="android_security_title">AOSP 安全性修補程式等級</string>
+  <string name="android_security_summary">Android 安全更新是 Android 平臺和幫助它運行的供應商二進位檔案的補丁的集合。由於這些二進位檔案是閉源的, 我們必須依靠供應商向 OEM 提供和 OEM 提供給使用者, 以便將它們加入我們的建構。由於我們無法控制這一過程, 我們希望明確指出, 我們只更新來自 Android 開源專案中的安全修補程式級別。通常情況下, 供應商安全修補程式級別將是最新的原廠 ROM 上的任何補丁級別。</string>
+  <string name="android_functional_updates_title">功能更新</string>
+  <string name="android_functional_updates_summary">除了 AOSP 安全更新之外, 我們還包括 Google 的功能更新。這些補丁是 Google 除了針對 Pixel 系列設備的安全更新外, 還為解決功能問題, 如連線性、穩定性和性能, 而進行的修補程式。由於我們支援的不僅僅是 Pixel 系列設備, 它們都包含在我們的所有設備中。</string>
+  <string name="vendor_security_title">供應商修補程式級別</string>
   <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">It\u2019s on the back of your phone. Use any finger.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">指紋感應器在你的手機背後。請以任一手指登錄指紋</string>
   <!-- Encryption and credential -->
-  <string name="custom_encryption_and_credential_settings_summary_on">Device is encrypted</string>
-  <string name="custom_encryption_and_credential_settings_summary_off">Device is decrypted</string>
+  <string name="custom_encryption_and_credential_settings_summary_on">裝置已加密</string>
+  <string name="custom_encryption_and_credential_settings_summary_off">裝置已解密</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_custom">
-    <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from enabling developer options.</item>
+    <item quantity="other">離開發人員只剩下<xliff:g id="step_count">%1$d</xliff:g>個步驟。</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-  <string name="show_dev_on_custom">Developer options enabled! Be careful!</string>
+  <string name="show_dev_on_custom">開發人員選項已啟用！請小心！</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-  <string name="show_dev_already_custom">Developer options already enabled!</string>
+  <string name="show_dev_already_custom">開發人員選項已啟用！</string>
   <!-- Density category -->
-  <string name="density_category">Density options</string>
+  <string name="density_category">密度選項</string>
   <!-- Root Management -->
-  <string name="rootmanagement_title">Root management</string>
-  <string name="rootmanagement_dashboard_summary">Manage root access</string>
+  <string name="rootmanagement_title">Root 管理</string>
+  <string name="rootmanagement_dashboard_summary">管理 Root 權限</string>
   <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
   <string name="supersu_title">SuperSU</string>
   <!-- Dirty Tweaks -->
-  <string name="dirtytweaks_title">Dirty Tweaks</string>
-  <string name="dirtytweaks_summary">Enhance your experience</string>
+  <string name="dirtytweaks_title">Dirty 設定</string>
+  <string name="dirtytweaks_summary">分享你的經驗</string>
   <!-- DU version in About phone -->
-  <string name="rom_version_title">DU version</string>
+  <string name="rom_version_title">DU 版本</string>
   <!-- Notification log -->
-  <string name="notification_log_summary">Show notifications history log</string>
+  <string name="notification_log_summary">顯示通知歷史記錄</string>
   <!-- MSIM Manual provisioning -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_enabled">enabled</string>
-  <string name="sim_disabled">disabled</string>
-  <string name="sim_missing">missing or faulty</string>
-  <string name="sim_enabler_need_disable_sim">SIM card will be deactivated. Do you want to continue?</string>
-  <string name="sim_enabler_will_disable_sim_title">Attention</string>
-  <string name="sim_enabler_need_switch_data_service">This SIM will be disabled and SIM <xliff:g id="slotid">%1$s</xliff:g> will be used for data services. Are you sure you want to continue?</string>
-  <string name="sim_enabler_airplane_on">Unable to perform the operation while airplane mode is on.</string>
-  <string name="sim_enabler_in_call">Unable to perform the operation while in call.</string>
-  <string name="sim_enabler_both_inactive">Can\'t disable all SIM cards</string>
-  <string name="sim_enabler_enabling">Activating\u2026</string>
-  <string name="sim_enabler_disabling">Deactivating\u2026</string>
-  <string name="sub_activate_success">SIM activated.</string>
-  <string name="sub_activate_failed">Activation failed.</string>
-  <string name="sub_deactivate_success">SIM deactivated.</string>
-  <string name="sub_deactivate_failed">Deactivation failed.</string>
-  <string name="available_sims_title">Available SIM cards</string>
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> 是 <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_enabled">啟用</string>
+  <string name="sim_disabled">停用</string>
+  <string name="sim_missing">遺失或毀損</string>
+  <string name="sim_enabler_need_disable_sim">SIM 卡將停用。是否繼續？</string>
+  <string name="sim_enabler_will_disable_sim_title">注意</string>
+  <string name="sim_enabler_need_switch_data_service">此 SIM 卡將被停用，並且將使用 SIM 卡 <xliff:g id="slotid">%1$s</xliff:g> 於數據服務中，您確定要繼續嗎？</string>
+  <string name="sim_enabler_airplane_on">飛航模式開啟時無法進行此操作。</string>
+  <string name="sim_enabler_in_call">通話時無法進行此操作。</string>
+  <string name="sim_enabler_both_inactive">無法停用所有 SIM 卡</string>
+  <string name="sim_enabler_enabling">啟用中\u2026</string>
+  <string name="sim_enabler_disabling">停用中\u2026</string>
+  <string name="sub_activate_success">SIM 卡已啟用。</string>
+  <string name="sub_activate_failed">啟用失敗。</string>
+  <string name="sub_deactivate_success">SIM 卡已停用。</string>
+  <string name="sub_deactivate_failed">取消激活失敗。</string>
+  <string name="available_sims_title">可用的 SIM 卡</string>
   <!-- Wake on Plug -->
-  <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
-  <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+  <string name="wake_when_plugged_or_unplugged_title">連接喚醒</string>
+  <string name="wake_when_plugged_or_unplugged_summary">接上或移除電源時開啟螢幕</string>
   <!-- Advanced night mode brightness -->
-  <string name="night_brightness_category">Brightness</string>
-  <string name="night_brightness_value_title">Lower brightness if Night Light</string>
-  <string name="night_bright_disabled">Disabled</string>
-  <string name="night_bright_minimum">Minimum brightness</string>
-  <string name="night_bright_low">Low brightness</string>
-  <string name="night_bright_medium">Medium brightness</string>
+  <string name="night_brightness_category">亮度</string>
+  <string name="night_brightness_value_title">夜燈啟用時降低亮度</string>
+  <string name="night_bright_disabled">停用</string>
+  <string name="night_bright_minimum">最低亮度</string>
+  <string name="night_bright_low">低亮度</string>
+  <string name="night_bright_medium">中等亮度</string>
   <!-- Vibrate on plug -->
-  <string name="vibration_on_charge_state_changed_title">Vibrate on plug</string>
+  <string name="vibration_on_charge_state_changed_title">接上時震動</string>
   <!-- Pixel color on sim card -->
-  <string name="default_sim_color">Pixel</string>
+  <string name="default_sim_color">Pixel風格</string>
   <!-- Changelog -->
-  <string name="duchangelog_title">Changelog</string>
-  <string name="duchangelog_summary">Check to see what has changed</string>
-  <string name="duchangelog_settings">Settings</string>
+  <string name="duchangelog_title">Du 更新日誌</string>
+  <string name="duchangelog_summary">看看 Du 有什麼新功能</string>
+  <string name="duchangelog_settings">設置</string>
   <!-- Developer options toast insulter -->
-  <string name="toast_insult_0">Hahaha, n00b!</string>
-  <string name="toast_insult_1">What are you doing??</string>
-  <string name="toast_insult_2">n00b alert!</string>
-  <string name="toast_insult_3">What is this…? Amateur hour!?</string>
-  <string name="toast_insult_4">This is not iOS</string>
-  <string name="toast_insult_5">Please step away from the device!</string>
-  <string name="toast_insult_6">error code: 1D10T</string>
-  <string name="toast_insult_7">Go outside</string>
-  <string name="toast_insult_8">¯\\_(ツ)_/¯</string>
-  <string name="toast_insult_9">Pro tip: Stop doing this!</string>
-  <string name="toast_insult_10">Y u no speak Android???</string>
-  <string name="toast_insult_11">Why are you so stupid?!</string>
-  <string name="toast_insult_12">Perhaps this Android thing is not for you…</string>
-  <string name="toast_insult_13">Don\'t you have anything better to do?!</string>
-  <string name="toast_insult_14">This is why nobody likes you…</string>
-  <string name="toast_insult_15">Are you even trying?!</string>
+  <string name="toast_insult_0">哈哈哈，菜逼巴！</string>
+  <string name="toast_insult_1">你在幹麼？</string>
+  <string name="toast_insult_2">菜逼巴警告！</string>
+  <string name="toast_insult_3">什麼阿...？ 業餘的阿！？</string>
+  <string name="toast_insult_4">這個不是愛鳳</string>
+  <string name="toast_insult_5">請遠離裝置！</string>
+  <string name="toast_insult_6">錯誤代碼：0x87</string>
+  <string name="toast_insult_7">討厭，走開</string>
+  <string name="toast_insult_8">嗯哼...¯\\_(ツ)_/¯</string>
+  <string name="toast_insult_9">住手！</string>
+  <string name="toast_insult_10">你是不是不會唸Android阿？？？</string>
+  <string name="toast_insult_11">你怎麼那麼87？！</string>
+  <string name="toast_insult_12">也許Android這個東東不適合你...</string>
+  <string name="toast_insult_13">你沒有其他事情，像是去上班還是跟家人互動之類的事情嗎！？</string>
+  <string name="toast_insult_14">難怪你是邊緣人...</string>
+  <string name="toast_insult_15">你有努力過嗎？！</string>
   <!-- [CHAR LIMIT=80]-->
-  <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
+  <string name="fp_swipe_to_dismiss_notifications_title">向左或向右滑動指紋以解除通知</string>
   <!--  [CHAR LIMIT=160]-->
-  <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
+  <string name="fp_swipe_to_dismiss_notifications_summary">要解除通知，請在手機背面的指紋感應器上向左或向右滑動。</string>
   <!-- Fingerprint quick pulldown -->
-  <string name="fp_quick_pulldown_title">Fingerprint quick pulldown</string>
-  <string name="fp_quick_pulldown_summary">Expand the quick settings panel with only one swipe on the fingerprint sensor.</string>
+  <string name="fp_quick_pulldown_title">指紋快速下拉</string>
+  <string name="fp_quick_pulldown_summary">僅需在指紋感應器上滑動一次即可展開快速設定面板</string>
   <!-- Scramble PIN layout when unlocking -->
-  <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-  <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+  <string name="unlock_scramble_pin_layout_title">亂序布局</string>
+  <string name="unlock_scramble_pin_layout_summary">解鎖裝置時亂序布局鍵盤按鍵位置</string>
   <!-- Font picker -->
-  <string name="font_picker_title">Font</string>
-  <string name="font_picker_progress">Applying new font\u2026</string>
+  <string name="font_picker_title">字體</string>
+  <string name="font_picker_progress">正在套用新的字型\u2026</string>
   <!-- Search -->
-  <string name="menu_search">Search apps</string>
-  <string name="menu_search_hint">Search apps\u2026</string>
-  <string name="custom_ambient_display_summary">Configure advanced Ambient Display</string>
+  <string name="menu_search">搜尋應用程式</string>
+  <string name="menu_search_hint">搜尋應用程式\u2026</string>
+  <string name="custom_ambient_display_summary">設置進階的環境顯示設定</string>
 </resources>
