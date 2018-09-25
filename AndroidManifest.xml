@@ -3271,5 +3271,21 @@
         </activity>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
+
+        <!-- Start of our manifest entries -->
+
+        <!-- DU-Tweaks -->
+        <activity android:name=".Settings$DirtyTweaksActivity"
+                  android:label="@string/dirtytweaks_title"
+                  android:icon="@drawable/ic_settings_dirtytweaks">
+            <intent-filter>
+                <action android:name="com.android.settings.action.SETTINGS"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.dirtyunicorns.tweaks.DirtyTweaks"/>
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/dirtytweaks_summary"/>
+        </activity>
+
     </application>
 </manifest>

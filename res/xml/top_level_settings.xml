@@ -21,6 +21,15 @@
     android:key="top_level_settings">
 
     <Preference
+        android:key="top_level_du"
+        android:title="@string/dirtytweaks_title"
+        android:summary="@string/dirtytweaks_summary"
+        android:icon="@drawable/ic_settings_dirtytweaks"
+        android:order="-130"
+        android:fragment="com.dirtyunicorns.tweaks.DirtyTweaks"
+        settings:controller="com.dirtyunicorns.tweaks.TopLevelDuEntryPreferenceController" />
+
+    <Preference
         android:key="top_level_network"
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"
