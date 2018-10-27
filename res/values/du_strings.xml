@@ -45,6 +45,12 @@
     <string name="system_theme_light">Light</string>
     <string name="system_theme_dark">Dark</string>
 
+    <!-- Selinux -->
+    <string name="selinux_status">SELinux status</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
     <!-- Ambient category -->
     <string name="ambient_display_category">Ambient options</string>
     <string name="custom_ambient_display_summary">Configure advanced Ambient display</string>
