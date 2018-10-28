@@ -32,10 +32,14 @@ import com.android.settingslib.core.lifecycle.events.OnResume;
 
 import com.dirtyunicorns.tweaks.fragments.AccentPicker;
 
+import com.android.internal.util.du.Utils;
+
 public class AccentPickerPreferenceController extends AbstractPreferenceController
         implements PreferenceControllerMixin, LifecycleObserver, OnResume {
 
     private static final String KEY_ACCENT_PICKER_FRAGMENT_PREF = "accent_picker";
+    private static final String SUBS_PACKAGE = "projekt.substratum";
+
     private static final int MY_USER_ID = UserHandle.myUserId();
 
     private final Fragment mParent;
@@ -52,6 +56,7 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
     @Override
     public void displayPreference(PreferenceScreen screen) {
         mAccentPickerPref  = (Preference) screen.findPreference(KEY_ACCENT_PICKER_FRAGMENT_PREF);
+        mAccentPickerPref.setEnabled(true);
     }
 
     @Override
@@ -62,7 +67,7 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
 
     @Override
     public boolean isAvailable() {
-        return true;
+        return !Utils.isPackageInstalled(mContext, SUBS_PACKAGE);
     }
 
     @Override
@@ -70,25 +75,25 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
         return KEY_ACCENT_PICKER_FRAGMENT_PREF;
     }
 
-    public void updateEnableState() {
+    private void updateEnableState() {
         if (mAccentPickerPref == null) {
             return;
         }
 
         mAccentPickerPref.setOnPreferenceClickListener(
-            new OnPreferenceClickListener() {
-                @Override
-                public boolean onPreferenceClick(Preference preference) {
-                    AccentPicker.show(mParent);
-                    return true;
-                }
-            });
+                new OnPreferenceClickListener() {
+                    @Override
+                    public boolean onPreferenceClick(Preference preference) {
+                        AccentPicker.show(mParent);
+                        return true;
+                    }
+                });
     }
 
-    public void updateSummary() {
+    private void updateSummary() {
         if (mAccentPickerPref != null) {
-                mAccentPickerPref.setSummary(mContext.getString(
-                        com.android.settings.R.string.theme_accent_picker_summary));
+            mAccentPickerPref.setSummary(mContext.getString(
+                    com.android.settings.R.string.theme_accent_picker_summary));
         }
     }
 }

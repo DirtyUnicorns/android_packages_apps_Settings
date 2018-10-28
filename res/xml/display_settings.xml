@@ -125,6 +125,13 @@
         android:key="theme_category"
         android:title="@string/theme_category_title">
 
+        <ListPreference
+            android:key="dark_ui_mode"
+            android:title="@string/device_theme"
+            android:dialogTitle="@string/device_theme"
+            android:entries="@array/dark_ui_mode_entries"
+            android:entryValues="@array/dark_ui_mode_values" />
+
         <Preference
             android:key="accent_picker"
             android:title="@string/theme_accent_picker_title" />

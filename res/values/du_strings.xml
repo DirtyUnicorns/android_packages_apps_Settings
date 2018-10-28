@@ -40,4 +40,9 @@
     <!-- DU version in About phone -->
     <string name="rom_version_title">DU version</string>
 
+    <!-- System theme -->
+    <string name="system_theme_wallpaper">Automatic (based on time of day)</string>
+    <string name="system_theme_light">Light</string>
+    <string name="system_theme_dark">Dark</string>
+
 </resources>
