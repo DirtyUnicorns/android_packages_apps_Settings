@@ -55,4 +55,11 @@
     <string name="ambient_display_category">Ambient options</string>
     <string name="custom_ambient_display_summary">Configure advanced Ambient display</string>
 
+    <!-- Flashlight gestures -->
+    <string name="double_tap_power_flashlight_screen_title">Activate the torch</string>
+    <string name="double_tap_power_flashlight_title">Screen off power button torch</string>
+    <string name="torch_power_button_gesture_none">Disabled</string>
+    <string name="torch_power_button_gesture_dt">Double tap power to toggle torch</string>
+    <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
+
 </resources>
