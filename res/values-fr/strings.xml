@@ -2974,7 +2974,6 @@
     <string name="keywords_display_night_display" msgid="2534032823231355074">"assombrir l\'écran, nuit, coloration, mode nocturne, luminosité, couleur d\'écran, couleur, couleurs"</string>
     <string name="keywords_display_wallpaper" msgid="7362076351860131776">"arrière-plan, personnalisé, personnaliser écran"</string>
     <string name="keywords_display_font_size" msgid="3404655440064726124">"taille du texte"</string>
-    <string name="keywords_display_cast_screen" msgid="7684618996741933067">"projeter, caster"</string>
     <string name="keywords_storage" msgid="3299217909546089225">"espace, disque, disque dur, utilisation appareil"</string>
     <string name="keywords_battery" msgid="1173830745699768388">"consommation batterie, charge"</string>
     <string name="keywords_spell_checker" msgid="1399641226370605729">"orthographe, dictionnaire, correcteur orthographique, correction automatique"</string>
@@ -3951,8 +3950,6 @@
     <string name="double_twist_for_camera_mode_title" msgid="4877834147983530479">"Activation mode selfie"</string>
     <string name="double_twist_for_camera_mode_summary" msgid="122977081337563340"></string>
     <string name="double_twist_for_camera_suggestion_title" msgid="4689410222517954869">"Prendre des selfies plus rapidement"</string>
-    <string name="swipe_up_to_switch_apps_title" msgid="2513907834903543667">"Balayer l\'écran vers le haut depuis le bouton d\'accueil"</string>
-    <string name="swipe_up_to_switch_apps_summary" msgid="5367798220225997418">"Pour changer d\'application, balayez l\'écran vers le haut depuis le bouton d\'accueil. Recommencez pour afficher toutes les applications. Cette option fonctionne sur tous les écrans. Le bouton \"Aperçu\" ne figure plus en bas à droite de l\'écran."</string>
     <string name="swipe_up_to_switch_apps_suggestion_title" msgid="1465200107913259595">"Découvrir le nouveau bouton d\'accueil"</string>
     <string name="swipe_up_to_switch_apps_suggestion_summary" msgid="4825314186907812743">"Activer le nouveau geste pour changer d\'application"</string>
     <string name="ambient_display_title" product="default" msgid="5144814600610448504">"Appuyer deux fois sur tél. pour le consulter"</string>
