@@ -106,6 +106,12 @@
         android:fragment="com.android.settings.security.LockscreenDashboardFragment"
         settings:controller="com.android.settings.security.screenlock.LockScreenPreferenceController" />
 
+    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+        android:key="wake_when_plugged_or_unplugged"
+        android:title="@string/wake_when_plugged_or_unplugged_title"
+        android:summary="@string/wake_when_plugged_or_unplugged_summary"
+        android:defaultValue="true" />
+
     <SwitchPreference
         android:key="camera_gesture"
         android:title="@string/camera_gesture_title"
