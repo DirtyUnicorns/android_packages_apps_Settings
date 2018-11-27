@@ -20,7 +20,6 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.RemoteException;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
@@ -28,9 +27,10 @@ import android.support.v7.preference.PreferenceScreen;
 import android.support.v14.preference.SwitchPreference;
 import android.support.annotation.VisibleForTesting;
 import android.text.TextUtils;
-import android.view.WindowManagerGlobal;
 
 import com.android.internal.R;
+import com.android.internal.util.du.Utils;
+
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settings.widget.VideoPreference;
@@ -69,15 +69,7 @@ public class SwipeUpPreferenceController extends BasePreferenceController
     }
 
     static boolean isGestureAvailable(Context context) {
-        boolean hasNav = false;
-        final boolean configEnabled =
-                context.getResources().getBoolean(R.bool.config_custom_swipe_up_gesture_setting_available);
-        try {
-            hasNav = WindowManagerGlobal.getWindowManagerService().hasNavigationBar();
-        } catch (RemoteException ex) {
-            // no window manager? good luck with that
-        }
-        if (!hasNav || !configEnabled) {
+        if (!Utils.hasNavigationBar()) {
             return false;
         }
 
