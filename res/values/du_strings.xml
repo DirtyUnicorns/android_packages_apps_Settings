@@ -98,4 +98,9 @@
     <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
 
+    <!-- Title for suggested actions for screen lock -->
+    <string name="suggested_lock_settings_custom_title" product="tablet">Secure your tablet</string>
+    <string name="suggested_lock_settings_custom_title" product="device">Secure your device</string>
+    <string name="suggested_lock_settings_custom_title" product="default">Secure your phone</string>
+
 </resources>
