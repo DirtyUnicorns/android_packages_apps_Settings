@@ -41,6 +41,10 @@
     <string name="sub_deactivate_failed">Échec de la désactivation</string>
     <string name="available_sims_title">Cartes SIM disponibles</string>
 
+    <!-- Option defining the phone ringtone for slot1 on Muilti SIM device -->
+    <string name="ringtone1_title">Sonnerie - Carte SIM 1</string>
+    <string name="ringtone2_title">Sonnerie - Carte SIM 2</string>
+
     <!-- Density category -->
     <string name="density_category">Densité</string>
 
@@ -91,9 +95,32 @@
     <string name="full_gesture_mode_dt2s_title">Veille par double appui</string>
     <string name="full_gesture_mode_dt2s_summary">Mettre l\'appareil en veille par double appui sur un espace libre de la barre de navigation vide (mais pas sur le bouton d\'accueil)</string>
 
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Allumer l\'écran lorsque le chargeur est branché ou débranché</string>
+
+    <!-- Vibrate on plug -->
+    <string name="vibration_on_charge_state_changed_title">Vibrer au branchement</string>
+
+    <!-- Scramble PIN layout on lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
+    <string name="unlock_scramble_pin_layout_summary">Modifier l\'ordre des numéros du pavé numérique de manière aléatoire pour la saisie du code PIN de déverrouillage</string>
+
     <!-- strings.xml -->
     <string name="swipe_up_to_switch_apps_title">Nouveau bouton d\'accueil</string>
     <string name="swipe_up_to_switch_apps_summary">Effectuer un glissement avec un doigt vers le haut sur la touche d\'accueil pour changer d\'application.\nRépéter l\'opération pour afficher toutes les applications.\nCette option fonctionne sur tous les écrans.\nLe bouton \"Aperçu\" ne figure plus en bas à droite de l\'écran.</string>
     <string name="keywords_display_cast_screen">projeter, diffuser</string>
+
+    <!-- Title for suggested actions for screen lock -->
+    <string name="suggested_lock_settings_custom_title" product="tablet">Sécurisez votre tablette</string>
+    <string name="suggested_lock_settings_custom_title" product="device">Sécurisez votre appareil</string>
+    <string name="suggested_lock_settings_custom_title" product="default">Sécurisez votre téléphone</string>
+
+    <!-- Advanced night mode brightness -->
+    <string name="night_brightness_value_title">Niveau de luminosité lorsque \"Éclairage nocturne\" est activé</string>
+    <string name="night_auto_value_disabled">Désactivé</string>
+    <string name="night_auto_value_min">Luminosité minimale</string>
+    <string name="night_bright_low">Luminosité faible</string>
+    <string name="night_bright_midlow">Luminosité moyenne</string>
 
 </resources>
