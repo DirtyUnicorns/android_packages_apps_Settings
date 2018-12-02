@@ -44,6 +44,11 @@
         android:title="@string/smart_battery_manager_title"
         settings:controller="com.android.settings.fuelgauge.batterytip.BatteryManagerPreferenceController" />
 
+    <PreferenceScreen
+        android:key="battery_charge_sound"
+        android:title="@string/notification_battery_charge_level_title"
+        android:fragment="com.android.settings.fuelgauge.BatteryChargeSoundSettings" />
+
     <SwitchPreference
         android:key="battery_percentage"
         android:title="@string/battery_percentage"
