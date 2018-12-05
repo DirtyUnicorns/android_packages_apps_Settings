@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- MSIM Manual provisioning -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_enabled">aktivní</string>
+    <string name="sim_disabled">neaktivní</string>
+    <string name="sim_missing">chybí nebo selhává</string>
+    <string name="sim_enabler_need_disable_sim">Karta SIM bude deaktivována. Přejete si pokračovat?</string>
+    <string name="sim_enabler_will_disable_sim_title">Upozornění</string>
+    <string name="sim_enabler_need_switch_data_service">Tato SIM bude deaktivována a SIM <xliff:g id="slotid">%1$s</xliff:g> bude použita pro datové služby. Opravdu si přejete pokračovat?</string>
+    <string name="sim_enabler_airplane_on">Operace nemůže být provedena, pokud je zapnutý režim letadlo.</string>
+    <string name="sim_enabler_in_call">Operace nemůže být provedena v průběhu hovoru.</string>
+    <string name="sim_enabler_both_inactive">Nelze deaktivovat všechny karty SIM</string>
+    <string name="sim_enabler_enabling">Aktivace\u2026</string>
+    <string name="sim_enabler_disabling">Deaktivuji\u2026</string>
+    <string name="sub_activate_success">SIM aktivována.</string>
+    <string name="sub_activate_failed">Aktivace selhala.</string>
+    <string name="sub_deactivate_success">SIM deaktivována.</string>
+    <string name="sub_deactivate_failed">Deaktivace selhala.</string>
+    <string name="available_sims_title">Dostupné karty SIM</string>
+
+    <!-- Option defining the phone ringtone for slot1 on Muilti SIM device -->
+    <string name="ringtone1_title">Vyzvánění telefonu - SIM 1</string>
+    <string name="ringtone2_title">Vyzvánění telefonu - SIM 2</string>
+
+    <!-- Density category -->
+    <string name="density_category">Možnosti hustoty</string>
+
+    <!-- DU version in About phone -->
+    <string name="rom_version_title">Verze DU</string>
+
+    <!-- System theme -->
+    <string name="system_theme_wallpaper">Automatický (na základě denní doby)</string>
+    <string name="system_theme_light">Světlý</string>
+    <string name="system_theme_dark">Tmavý</string>
+
+    <!-- Selinux -->
+    <string name="selinux_status">Stav SELinux</string>
+    <string name="selinux_status_disabled">Vypnutý</string>
+    <string name="selinux_status_permissive">Permisivní</string>
+    <string name="selinux_status_enforcing">Vynucený</string>
+
+    <!-- Ambient category -->
+    <string name="ambient_display_category">Možnosti Ambientního displeje</string>
+    <string name="custom_ambient_display_summary">Pokročilá konfigurace Ambientního displeje</string>
+
+    <!-- Flashlight gestures -->
+    <string name="double_tap_power_flashlight_screen_title">Aktivovat svítilnu</string>
+    <string name="double_tap_power_flashlight_title">Aktivace svítilny zapínacím tlačítkem při vypnuté obrazovce</string>
+    <string name="torch_power_button_gesture_none">Vypnuto</string>
+    <string name="torch_power_button_gesture_dt">Zapnout svítilnu dvojitým stisknutím tlačítka</string>
+    <string name="torch_power_button_gesture_lp">Zapnout svítilnu dlouhým podržením tlačítka</string>
+
+    <!-- QS tile styles -->
+    <string name="qs_tile_style_title">Styl QS dlaždic</string>
+    <string name="qs_tile_style_default">Výchozí</string>
+    <string name="qs_tile_style_square">Čtverec</string>
+    <string name="qs_tile_style_rounded_square">Zakulacený čtverec</string>
+    <string name="qs_tile_style_squircle">Kulatý čtverec</string>
+    <string name="qs_tile_style_tear_drop">Kapka</string>
+
+    <!-- Media gestures -->
+    <string name="prevent_ringing_option_mute_no_media">Ztlumit, žádná média</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Zapnuto (ztlumit, žádná média)</string>
+
+    <!-- Swipe fp to dismiss notifications -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Přetáhněte vlevo nebo vpravo po snímači otisku prstů pro zamítnutí upozornění</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Pro zamítnutí upozornění, přetáhněte vlevo nebo vpravo po snímači otisku prstů na zadní straně vašeho telefonu.</string>
+
+    <!-- Navbar gestures -->
+    <string name="full_gesture_mode_title">Zapnout ůpný režim navigace gesty</string>
+    <string name="full_gesture_mode_summary">Tento režim deaktivuje tlačítko zpět, akci tlačítka zpět můžete spustit potažením vlevo po navigační liště. Potažení vpravo stále spouští poslední aplikaci a scrollování přehledem nedávných aplikací. Pro návrat domů můžete klepnout na jaýkoliv prázdný prostor v navigační liště, ne pouze domovské tlačítko. Když je otevřená klávesnice, dlouhým podržením navigační lišty lze pohybovat textovým ukazatelem.</string>
+    <string name="full_gesture_mode_dt2s_title">Dvojitým poklepáním uspat</string>
+    <string name="full_gesture_mode_dt2s_summary">Klepněte na prázdný prostor v navigační liště ale ne na domovské tlačítko pro vypnutí obrazovky.</string>
+
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Probudit při připojení</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Zapnout obrazovku při připojení nebo odpojení nabíječky</string>
+
+    <!-- Vibrate on plug -->
+    <string name="vibration_on_charge_state_changed_title">Vibrovat při připojení USB</string>
+
+    <!-- Scramble PIN layout on lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Přeházet rozložení</string>
+    <string name="unlock_scramble_pin_layout_summary">Přeházet rozložení PIN klávesnice při odemykání zařízení</string>
+
+    <!-- Title for suggested actions for screen lock -->
+    <string name="suggested_lock_settings_custom_title" product="tablet">Zabezpečte svůj tablet</string>
+    <string name="suggested_lock_settings_custom_title" product="device">Zabezpečte svoje zařízení</string>
+    <string name="suggested_lock_settings_custom_title" product="default">Zabezpečte svůj telefon</string>
+
+    <!-- Advanced night mode brightness -->
+    <string name="night_brightness_value_title">Snížit jas při Nočním Světle</string>
+    <string name="night_auto_value_disabled">Vypnuto</string>
+    <string name="night_auto_value_min">Minimální jas</string>
+    <string name="night_bright_low">Nízký jas</string>
+    <string name="night_bright_midlow">Střední jas</string>
+
+</resources>
