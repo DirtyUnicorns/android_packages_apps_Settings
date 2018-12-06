@@ -25,11 +25,11 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.os.UserHandle;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.annotation.VisibleForTesting;
 import android.telephony.CarrierConfigManager;
@@ -44,7 +44,6 @@ import android.telephony.euicc.EuiccManager;
 import android.text.BidiFormatter;
 import android.text.TextDirectionHeuristics;
 import android.text.TextUtils;
-import android.util.Log;
 
 import com.android.settings.R;
 import com.android.settingslib.DeviceInfoUtils;
@@ -336,18 +335,10 @@ public class SimStatusDialogController implements LifecycleObserver, OnResume, O
             voiceNetworkTypeName = mTelephonyManager.getNetworkTypeName(actualVoiceNetworkType);
         }
 
-        boolean show4GForLTE = false;
-        try {
-            final Context con = mContext.createPackageContext(
-                    "com.android.systemui", 0 /* flags */);
-            final int id = con.getResources().getIdentifier("config_show4GForLTE",
-                    "bool" /* default type */, "com.android.systemui" /* default package */);
-            show4GForLTE = con.getResources().getBoolean(id);
-        } catch (PackageManager.NameNotFoundException e) {
-            Log.e(TAG, "NameNotFoundException for show4GForLTE");
-        }
+        boolean mShow4GForLTE = Settings.System.getIntForUser(mContext.getContentResolver(),
+                Settings.System.SHOW_LTE_FOURGEE, 0, UserHandle.USER_CURRENT) == 1;
 
-        if (show4GForLTE) {
+        if (mShow4GForLTE) {
             if ("LTE".equals(dataNetworkTypeName)) {
                 dataNetworkTypeName = "4G";
             }
