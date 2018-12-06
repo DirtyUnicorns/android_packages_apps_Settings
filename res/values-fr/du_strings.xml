@@ -123,4 +123,12 @@
     <string name="night_bright_low">Luminosité faible</string>
     <string name="night_bright_midlow">Luminosité moyenne</string>
 
+    <!-- Battery charge warning -->
+    <string name="notification_sound_battery_charge_title">Sonnerie d\'avertissement de niveau de charge de la batterie</string>
+    <string name="notification_battery_charge_level_title">Sonnerie de chargement</string>
+    <string name="notification_battery_charge_level_summary">Émettre une sonnerie lorsque la batterie atteint le niveau de charge spécifié lors de son rechargement</string>
+    <string name="notification_battery_charge_level_seek_bar">Niveau de batterie</string>
+    <string name="notification_battery_charge_level_ringtone">Sonnerie</string>
+    <string name="notification_battery_charge_level_silent">Silencieux</string>
+
 </resources>
