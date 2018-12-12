@@ -21,6 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
@@ -29,7 +30,6 @@ import android.support.annotation.VisibleForTesting;
 import android.text.TextUtils;
 
 import com.android.internal.R;
-import com.android.internal.util.du.Utils;
 
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.core.PreferenceControllerMixin;
@@ -69,7 +69,13 @@ public class SwipeUpPreferenceController extends BasePreferenceController
     }
 
     static boolean isGestureAvailable(Context context) {
-        if (!Utils.hasNavigationBar()) {
+        final boolean defaultToNavigationBar = context.getResources().getBoolean(
+                com.android.internal.R.bool.config_defaultToNavigationBar);
+        final boolean navigationBarEnabled = Settings.System.getIntForUser(
+                context.getContentResolver(), Settings.System.NAVIGATION_BAR_ENABLED,
+                defaultToNavigationBar ? 1 : 0, UserHandle.USER_CURRENT) != 0;
+
+        if (!navigationBarEnabled) {
             return false;
         }
 
