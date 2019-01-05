@@ -131,4 +131,8 @@
     <string name="notification_battery_charge_level_ringtone">Sonnerie</string>
     <string name="notification_battery_charge_level_silent">Silencieux</string>
 
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Reconnaissance faciale</string>
+    <string name="face_auto_unlock_summary">Déverrouiller l\'appareil en utilisant la reconnaissance faciale</string>
+
 </resources>
