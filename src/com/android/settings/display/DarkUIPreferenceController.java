@@ -25,13 +25,10 @@ import com.android.settings.R;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settings.core.PreferenceControllerMixin;
 
-import com.android.internal.util.du.Utils;
-
 public class DarkUIPreferenceController extends AbstractPreferenceController
         implements Preference.OnPreferenceChangeListener, PreferenceControllerMixin {
 
     private static final String DARK_UI_KEY = "dark_ui_mode";
-    private static final String SUBS_PACKAGE = "projekt.substratum";
 
     private final UiModeManager mUiModeManager;
 
@@ -42,7 +39,7 @@ public class DarkUIPreferenceController extends AbstractPreferenceController
 
     @Override
     public boolean isAvailable() {
-        return !Utils.isPackageInstalled(mContext, SUBS_PACKAGE);
+        return true;
     }
 
     @Override

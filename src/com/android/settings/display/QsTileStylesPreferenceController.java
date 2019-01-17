@@ -23,8 +23,6 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceClickListener;
 import android.support.v7.preference.PreferenceScreen;
 
-import com.android.internal.util.du.Utils;
-
 import com.android.settings.core.PreferenceControllerMixin;
 
 import com.android.settingslib.core.AbstractPreferenceController;
@@ -39,8 +37,6 @@ public class QsTileStylesPreferenceController extends AbstractPreferenceControll
 
     private static final String KEY_QS_TILE_STYLES_FRAGMENT_PREF = "qs_tile_style";
     private static final int MY_USER_ID = UserHandle.myUserId();
-
-    private static final String SUBS_PACKAGE = "projekt.substratum";
 
     private final Fragment mParent;
     private Preference mQsTileStylesPref;
@@ -66,7 +62,7 @@ public class QsTileStylesPreferenceController extends AbstractPreferenceControll
 
     @Override
     public boolean isAvailable() {
-        return !Utils.isPackageInstalled(mContext, SUBS_PACKAGE);
+        return true;
     }
 
     @Override
