@@ -99,6 +99,27 @@ import com.android.settings.wfd.WifiDisplaySettings;
 import com.android.settings.wifi.ConfigureWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 
+import com.dirtyunicorns.tweaks.fragments.BatteryOptions;
+import com.dirtyunicorns.tweaks.fragments.ButtonBrightness;
+import com.dirtyunicorns.tweaks.fragments.Buttons;
+//import com.dirtyunicorns.tweaks.fragments.CarrierLabel;
+import com.dirtyunicorns.tweaks.fragments.ClockOptions;
+//import com.dirtyunicorns.tweaks.fragments.ExpandedDesktop;
+//import com.dirtyunicorns.tweaks.fragments.FingerprintPrefs;
+//import com.dirtyunicorns.tweaks.fragments.HeadsUp;
+import com.dirtyunicorns.tweaks.fragments.IconManager;
+import com.dirtyunicorns.tweaks.fragments.LockscreenItems;
+//import com.dirtyunicorns.tweaks.fragments.Miscellaneous;
+import com.dirtyunicorns.tweaks.fragments.NavigationOptions;
+//import com.dirtyunicorns.tweaks.fragments.Notifications;
+import com.dirtyunicorns.tweaks.fragments.PowerMenu;
+import com.dirtyunicorns.tweaks.fragments.PulseBlacklist;
+import com.dirtyunicorns.tweaks.fragments.PulseSettings;
+import com.dirtyunicorns.tweaks.fragments.QuickSettings;
+import com.dirtyunicorns.tweaks.fragments.Recents;
+//import com.dirtyunicorns.tweaks.fragments.Ticker;
+import com.dirtyunicorns.tweaks.fragments.TrafficIndicators;
+
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -193,6 +214,28 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(RecentLocationRequestSeeAllFragment.class);
         addIndex(PreviouslyConnectedDeviceDashboardFragment.class);
         addIndex(BluetoothDashboardFragment.class);
+
+        // DU Tweaks
+        addIndex(BatteryOptions.class);
+        addIndex(ButtonBrightness.class);
+        addIndex(Buttons.class);
+        //addIndex(CarrierLabel.class);
+        addIndex(ClockOptions.class);
+        //addIndex(ExpandedDesktop.class);
+        //addIndex(FingerprintPrefs.class);
+        //addIndex(HeadsUp.class);
+        addIndex(IconManager.class);
+        addIndex(LockscreenItems.class);
+        //addIndex(Miscellaneous.class);
+        addIndex(NavigationOptions.class);
+        //addIndex(Notifications.class);
+        addIndex(PowerMenu.class);
+        addIndex(PulseBlacklist.class);
+        addIndex(PulseSettings.class);
+        addIndex(QuickSettings.class);
+        addIndex(Recents.class);
+        //addIndex(Ticker.class);
+        addIndex(TrafficIndicators.class);
     }
 
     @Override
