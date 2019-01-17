@@ -33,7 +33,6 @@
         android:title="@string/notification_battery_charge_level_seek_bar"
         android:max="100"
         settings:min="0"
-        settings:units="%"
         android:dependency="battery_level_charge_alarm_enabled"/>
 
 </PreferenceScreen>
