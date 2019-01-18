@@ -36,6 +36,8 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.android.internal.util.du.Utils;
+
 /**
  * Settings screen for Ambient display.
  */
@@ -81,7 +83,10 @@ public class AmbientDisplaySettings extends DashboardFragment {
                     final ArrayList<SearchIndexableResource> result = new ArrayList<>();
 
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.ambient_display_settings;
+                    if (!Utils.hasAltAmbientDisplay(context.getApplicationContext())) {
+                        sir.xmlResId = R.xml.ambient_display_settings;
+                    }
+
                     result.add(sir);
                     return result;
                 }
