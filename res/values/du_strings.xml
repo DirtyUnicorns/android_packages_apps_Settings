@@ -122,6 +122,10 @@
     <string name="notification_battery_charge_level_ringtone">Ringtone</string>
     <string name="notification_battery_charge_level_silent">Silent</string>
 
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Battery temperature</string>
+    <string name="battery_temp_summary">Tap to switch scale</string>
+
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Automatic face unlock</string>
     <string name="face_auto_unlock_summary">Dismiss lock screen after face unlock</string>
