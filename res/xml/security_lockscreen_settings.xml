@@ -29,6 +29,12 @@
         android:key="security_lockscreen_add_users_when_locked"
         android:title="@string/user_add_on_lockscreen_menu" />
 
+    <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
+        android:key="keyguard_multiuser_switch"
+        android:title="@string/keyguard_multiuser_switch_title"
+        android:summary="@string/keyguard_multiuser_switch_summary"
+        android:defaultValue="true" />
+
     <com.android.settingslib.RestrictedPreference
         android:key="owner_info_settings"
         android:title="@string/owner_info_settings_title"
