@@ -131,8 +131,17 @@
     <string name="notification_battery_charge_level_ringtone">Sonnerie</string>
     <string name="notification_battery_charge_level_silent">Silencieux</string>
 
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Température de la batterie</string>
+    <string name="battery_temp_summary">Changer l\'unité de mesure</string>
+
+
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Reconnaissance faciale</string>
     <string name="face_auto_unlock_summary">Déverrouiller l\'appareil en utilisant la reconnaissance faciale</string>
+
+    <!-- Keyguard multiuser switch -->
+    <string name="keyguard_multiuser_switch_title">Multi-utilisateur</string>
+    <string name="keyguard_multiuser_switch_summary">Afficher le commutateur multi-utilisateur sur la barre d\'état</string>
 
 </resources>
