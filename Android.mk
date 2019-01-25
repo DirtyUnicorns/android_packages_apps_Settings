@@ -19,6 +19,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_USE_AAPT2 := true
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
+LOCAL_SRC_FILES += $(call all-java-files-under, ../Changelog/app/src/main/java)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../DU-Tweaks/src)
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
@@ -49,6 +50,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     settings-logtags \
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
+    packages/apps/Changelog/app/src/main/res \
     packages/apps/DU-Tweaks/res
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
@@ -60,6 +62,7 @@ LOCAL_AAPT_FLAGS := --auto-add-overlay \
     --extra-packages android.support.v7.appcompat \
     --extra-packages android.support.v7.recyclerview \
     --extra-packages android.support.design \
+    --extra-packages com.bytehamster.changelog \
     --extra-packages com.dirtyunicorns.tweaks
 
 ifneq ($(INCREMENTAL_BUILDS),)
