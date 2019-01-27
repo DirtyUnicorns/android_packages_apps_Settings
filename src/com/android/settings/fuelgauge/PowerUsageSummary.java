@@ -226,6 +226,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         restartBatteryInfoLoader();
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
+        updateBatteryTempPreference();
     }
 
     @Override
@@ -238,15 +239,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                         .launch();
             return true;
         } else if (KEY_BATTERY_TEMP.equals(preference.getKey())) {
-            if (batteryTemp) {
-                mBatteryTemp.setSubtitle(
-                    com.android.internal.util.du.Utils.batteryTemperature(getContext(), false));
-                batteryTemp = false;
-            } else {
-                mBatteryTemp.setSubtitle(
-                    com.android.internal.util.du.Utils.batteryTemperature(getContext(), true));
-                batteryTemp = true;
-            }
+            updateBatteryTempPreference();
         }
         return super.onPreferenceTreeClick(preference);
     }
@@ -340,10 +333,9 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         // reload BatteryInfo and updateUI
         restartBatteryInfoLoader();
         updateLastFullChargePreference();
+        updateBatteryTempPreference();
         mScreenUsagePref.setSubtitle(StringUtil.formatElapsedTime(getContext(),
                 mBatteryUtils.calculateScreenUsageTime(mStatsHelper), false));
-        mBatteryTemp.setSubtitle(
-                com.android.internal.util.du.Utils.batteryTemperature(getContext(), batteryTemp));
     }
 
     @VisibleForTesting
@@ -376,6 +368,19 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
             mLastFullChargePref.setSubtitle(
                     StringUtil.formatRelativeTime(getContext(), lastFullChargeTime,
                             false /* withSeconds */));
+        }
+    }
+
+    @VisibleForTesting
+    void updateBatteryTempPreference() {
+        if (batteryTemp) {
+            mBatteryTemp.setSubtitle(
+                com.android.internal.util.du.Utils.batteryTemperature(getContext(), false));
+            batteryTemp = false;
+        } else {
+            mBatteryTemp.setSubtitle(
+                com.android.internal.util.du.Utils.batteryTemperature(getContext(), true));
+            batteryTemp = true;
         }
     }
 
