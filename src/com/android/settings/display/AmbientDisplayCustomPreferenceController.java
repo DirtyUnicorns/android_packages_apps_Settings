@@ -58,15 +58,9 @@ public class AmbientDisplayCustomPreferenceController extends AbstractPreference
             mMetricsFeatureProvider.action(mContext, ACTION_AMBIENT_DISPLAY);
             try {
                 Intent intent = new Intent();
-                if (Build.PRODUCT.equals("potter")) {
-                    intent.setClassName(
-                            "com.dirtyunicorns.settings.device",
-                            "com.dirtyunicorns.settings.device.DozeSettingsActivity");
-                } else {
-                    intent.setClassName(
-                            "com.custom.ambient.display",
-                            "com.custom.ambient.display.DozeSettings");
-                }
+                intent.setClassName(
+                        "com.custom.ambient.display",
+                        "com.custom.ambient.display.DozeSettings");
                 intent.setAction("com.android.settings.action.EXTRA_SETTINGS");
                 mContext.startActivity(intent);
             } catch (Exception ignored) {
