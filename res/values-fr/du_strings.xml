@@ -16,6 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Changelog -->
+    <string name="changelog_title">Notes de version</string>
+    <string name="changelog_summary">Liste des changements sur Gerrit</string>
+
     <!-- System theme -->
     <string name="applying_theme_toast">Ajustement du thème en cours\u2026</string>
     <string name="theme_applied_toast">Thème ajusté !</string>
