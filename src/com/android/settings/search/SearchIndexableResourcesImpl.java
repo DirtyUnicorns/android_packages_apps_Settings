@@ -102,7 +102,7 @@ import com.android.settings.wifi.WifiSettings;
 import com.dirtyunicorns.tweaks.fragments.BatteryOptions;
 import com.dirtyunicorns.tweaks.fragments.ButtonBrightness;
 import com.dirtyunicorns.tweaks.fragments.Buttons;
-//import com.dirtyunicorns.tweaks.fragments.CarrierLabel;
+import com.dirtyunicorns.tweaks.fragments.CarrierLabel;
 import com.dirtyunicorns.tweaks.fragments.ClockOptions;
 //import com.dirtyunicorns.tweaks.fragments.ExpandedDesktop;
 //import com.dirtyunicorns.tweaks.fragments.FingerprintPrefs;
@@ -219,7 +219,7 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(BatteryOptions.class);
         addIndex(ButtonBrightness.class);
         addIndex(Buttons.class);
-        //addIndex(CarrierLabel.class);
+        addIndex(CarrierLabel.class);
         addIndex(ClockOptions.class);
         //addIndex(ExpandedDesktop.class);
         //addIndex(FingerprintPrefs.class);
