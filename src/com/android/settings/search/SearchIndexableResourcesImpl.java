@@ -99,6 +99,7 @@ import com.android.settings.wfd.WifiDisplaySettings;
 import com.android.settings.wifi.ConfigureWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 
+import com.dirtyunicorns.tweaks.fragments.ActiveEdge;
 import com.dirtyunicorns.tweaks.fragments.BatteryOptions;
 import com.dirtyunicorns.tweaks.fragments.ButtonBrightness;
 import com.dirtyunicorns.tweaks.fragments.Buttons;
@@ -216,6 +217,7 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(BluetoothDashboardFragment.class);
 
         // DU Tweaks
+        addIndex(ActiveEdge.class);
         addIndex(BatteryOptions.class);
         addIndex(ButtonBrightness.class);
         addIndex(Buttons.class);
