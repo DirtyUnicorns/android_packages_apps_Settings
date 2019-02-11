@@ -284,7 +284,7 @@ public class IndexDataConverter {
         } catch (IOException e) {
             Log.w(LOG_TAG, "IO Error parsing PreferenceScreen: ", e);
         } catch (Resources.NotFoundException e) {
-            Log.w(LOG_TAG, "Resoucre not found error parsing PreferenceScreen: ", e);
+            Log.w(LOG_TAG, "Resource not found error parsing PreferenceScreen: ", e);
         } finally {
             if (parser != null) parser.close();
         }
