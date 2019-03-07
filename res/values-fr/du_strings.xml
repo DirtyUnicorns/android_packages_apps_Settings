@@ -148,4 +148,6 @@
     <string name="keyguard_multiuser_switch_title">Multi-utilisateur</string>
     <string name="keyguard_multiuser_switch_summary">Afficher le commutateur multi-utilisateur sur la barre d\'état</string>
 
+    <string name="background_processes_settings_title">Processus en arrière-plan</string>
+
 </resources>
