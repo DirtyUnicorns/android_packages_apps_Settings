@@ -15,17 +15,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
     <!-- Changelog -->
     <string name="changelog_title">Notes de version</string>
     <string name="changelog_summary">Liste des changements sur Gerrit</string>
-
-    <!-- System theme -->
-    <string name="applying_theme_toast">Ajustement du thème en cours\u2026</string>
-    <string name="theme_applied_toast">Thème ajusté !</string>
-
-    <string name="radio_info_imsi_label">IMSI :</string>
-
     <!-- MSIM Manual provisioning -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> est <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_enabled">activée</string>
@@ -44,39 +36,31 @@
     <string name="sub_deactivate_success">Carte SIM désactivée</string>
     <string name="sub_deactivate_failed">Échec de la désactivation</string>
     <string name="available_sims_title">Cartes SIM disponibles</string>
-
     <!-- Option defining the phone ringtone for slot1 on Muilti SIM device -->
     <string name="ringtone1_title">Sonnerie - Carte SIM 1</string>
     <string name="ringtone2_title">Sonnerie - Carte SIM 2</string>
-
     <!-- Density category -->
     <string name="density_category">Densité</string>
-
     <!-- DU version in About phone -->
     <string name="rom_version_title">Version de DU</string>
-
     <!-- System theme -->
     <string name="system_theme_wallpaper">Automatique (en fonction de l\'heure de la journée)</string>
     <string name="system_theme_light">Clair</string>
     <string name="system_theme_dark">Foncé</string>
-
     <!-- Selinux -->
     <string name="selinux_status">État SELinux</string>
     <string name="selinux_status_disabled">Désactivé</string>
     <string name="selinux_status_permissive">Permissif</string>
     <string name="selinux_status_enforcing">Application</string>
-
     <!-- Ambient category -->
     <string name="ambient_display_category">Affichage en mode Veille</string>
     <string name="custom_ambient_display_summary">Réglages de l\'affichage en mode Veille</string>
-
     <!-- Flashlight gestures -->
     <string name="double_tap_power_flashlight_screen_title">Lampe de poche</string>
     <string name="double_tap_power_flashlight_title">Lampe de poche en mode veille</string>
     <string name="torch_power_button_gesture_none">Désactivé</string>
     <string name="torch_power_button_gesture_dt">Double appui sur le bouton Marche/Arrêt</string>
     <string name="torch_power_button_gesture_lp">Appui prolongé sur le bouton Marche/Arrêt</string>
-
     <!-- QS tile styles -->
     <string name="qs_tile_style_title">Tuiles du panneau de configuration rapide</string>
     <string name="qs_tile_style_default">Valeur système par défaut</string>
@@ -84,49 +68,37 @@
     <string name="qs_tile_style_rounded_square">Carré arrondi</string>
     <string name="qs_tile_style_squircle">Carrercle</string>
     <string name="qs_tile_style_tear_drop">Goutte</string>
-
     <!-- Media gestures -->
     <string name="prevent_ringing_option_mute_no_media">Désactivation du son</string>
     <string name="prevent_ringing_option_mute_no_media_summary">Désactivé (Son désactivé, aucun fichier multimédia)</string>
-
     <!-- Swipe fp to dismiss notifications -->
     <string name="fp_swipe_to_dismiss_notifications_title">Ignorer les notifications</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Glisser vers la gauche ou la droite sur le capteur d\'empreintes digitales pour ignorer les notifications</string>
-
     <!-- Navbar gestures -->
     <string name="full_gesture_mode_title">Mode de geste complet</string>
     <string name="full_gesture_mode_summary">Ce mode désactive le bouton Retour permettant d\'assigner une action par glissement vers la gauche sur cet emplacement.\nL\'action par glissement vers la droite déclenche toujours l\'affichage de la dernière application et des applications récentes.\nLe retour sur l\'écran d\'accueil s\'effectue par un appui sur le bouton Accueil ou sur n\’importe quel espace vide de la barre de navigation.\nLorsque le clavier est affiché, un appui prolongé sur la barre de navigation permet de déplacer le curseur de texte.</string>
     <string name="full_gesture_mode_dt2s_title">Veille par double appui</string>
     <string name="full_gesture_mode_dt2s_summary">Mettre l\'appareil en veille par double appui sur un espace libre de la barre de navigation vide (mais pas sur le bouton d\'accueil)</string>
-
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s </xliff:g></string>
     <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
     <string name="wake_when_plugged_or_unplugged_summary">Allumer l\'écran lorsque le chargeur est branché ou débranché</string>
-
     <!-- Vibrate on plug -->
     <string name="vibration_on_charge_state_changed_title">Vibrer au branchement</string>
-
     <!-- Scramble PIN layout on lockscreen -->
     <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
     <string name="unlock_scramble_pin_layout_summary">Modifier l\'ordre des numéros du pavé numérique de manière aléatoire pour la saisie du code PIN de déverrouillage</string>
-
-    <!-- strings.xml -->
-    <string name="swipe_up_to_switch_apps_title">Nouveau bouton d\'accueil</string>
-    <string name="swipe_up_to_switch_apps_summary">Effectuer un glissement avec un doigt vers le haut sur la touche d\'accueil pour changer d\'application.\nRépéter l\'opération pour afficher toutes les applications.\nCette option fonctionne sur tous les écrans.\nLe bouton \"Aperçu\" ne figure plus en bas à droite de l\'écran.</string>
-    <string name="keywords_display_cast_screen">projeter, diffuser</string>
-
     <!-- Title for suggested actions for screen lock -->
     <string name="suggested_lock_settings_custom_title" product="tablet">Sécurisez votre tablette</string>
     <string name="suggested_lock_settings_custom_title" product="device">Sécurisez votre appareil</string>
     <string name="suggested_lock_settings_custom_title" product="default">Sécurisez votre téléphone</string>
-
     <!-- Advanced night mode brightness -->
     <string name="night_brightness_value_title">Niveau de luminosité lorsque \"Éclairage nocturne\" est activé</string>
     <string name="night_auto_value_disabled">Désactivé</string>
     <string name="night_auto_value_min">Luminosité minimale</string>
     <string name="night_bright_low">Luminosité faible</string>
     <string name="night_bright_midlow">Luminosité moyenne</string>
-
     <!-- Battery charge warning -->
     <string name="notification_sound_battery_charge_title">Sonnerie d\'avertissement de niveau de charge de la batterie</string>
     <string name="notification_battery_charge_level_title">Sonnerie de chargement</string>
@@ -134,20 +106,13 @@
     <string name="notification_battery_charge_level_seek_bar">Niveau de batterie</string>
     <string name="notification_battery_charge_level_ringtone">Sonnerie</string>
     <string name="notification_battery_charge_level_silent">Silencieux</string>
-
     <!-- Battery temp -->
     <string name="battery_temp_title">Température de la batterie</string>
-    <string name="battery_temp_summary">Changer l\'unité de mesure</string>
-
-
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Reconnaissance faciale</string>
     <string name="face_auto_unlock_summary">Déverrouiller l\'appareil en utilisant la reconnaissance faciale</string>
-
     <!-- Keyguard multiuser switch -->
     <string name="keyguard_multiuser_switch_title">Multi-utilisateur</string>
     <string name="keyguard_multiuser_switch_summary">Afficher le commutateur multi-utilisateur sur la barre d\'état</string>
-
     <string name="background_processes_settings_title">Processus en arrière-plan</string>
-
 </resources>
