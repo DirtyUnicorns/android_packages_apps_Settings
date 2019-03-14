@@ -16,54 +16,54 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Changelog -->
-    <string name="changelog_title">Changelog</string>
+    <string name="changelog_title">更新日志</string>
     <string name="changelog_summary">Gerrit instance changes</string>
     <!-- MSIM Manual provisioning -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-    <string name="sim_enabled">enabled</string>
-    <string name="sim_disabled">disabled</string>
-    <string name="sim_missing">missing or faulty</string>
-    <string name="sim_enabler_need_disable_sim">SIM card will be deactivated. Do you want to continue?</string>
-    <string name="sim_enabler_will_disable_sim_title">Attention</string>
+    <string name="sim_enabled">已启用</string>
+    <string name="sim_disabled">已禁用</string>
+    <string name="sim_missing">丢失或缺损</string>
+    <string name="sim_enabler_need_disable_sim">SIM 卡将被停用，是否继续？</string>
+    <string name="sim_enabler_will_disable_sim_title">注意</string>
     <string name="sim_enabler_need_switch_data_service">This SIM will be disabled and SIM <xliff:g id="slotid">%1$s</xliff:g> will be used for data services. Are you sure you want to continue?</string>
-    <string name="sim_enabler_airplane_on">Unable to perform the operation while airplane mode is on.</string>
-    <string name="sim_enabler_in_call">Unable to perform the operation while in call.</string>
-    <string name="sim_enabler_both_inactive">Can\'t disable all SIM cards</string>
-    <string name="sim_enabler_enabling">Activating\u2026</string>
-    <string name="sim_enabler_disabling">Deactivating\u2026</string>
-    <string name="sub_activate_success">SIM activated.</string>
-    <string name="sub_activate_failed">Activation failed.</string>
-    <string name="sub_deactivate_success">SIM deactivated.</string>
-    <string name="sub_deactivate_failed">Deactivation failed.</string>
-    <string name="available_sims_title">Available SIM cards</string>
+    <string name="sim_enabler_airplane_on">飞行模式开启时无法执行该操作。</string>
+    <string name="sim_enabler_in_call">通话期间无法执行该操作。</string>
+    <string name="sim_enabler_both_inactive">无法停用全部 SIM 卡</string>
+    <string name="sim_enabler_enabling">正在激活\u2026</string>
+    <string name="sim_enabler_disabling">正在停用\u2026</string>
+    <string name="sub_activate_success">SIM 卡已激活。</string>
+    <string name="sub_activate_failed">激活失败</string>
+    <string name="sub_deactivate_success">SIM 卡已停用。</string>
+    <string name="sub_deactivate_failed">停用失败</string>
+    <string name="available_sims_title">可用 SIM 卡</string>
     <!-- Option defining the phone ringtone for slot1 on Muilti SIM device -->
-    <string name="ringtone1_title">Phone ringtone - SIM 1</string>
-    <string name="ringtone2_title">Phone ringtone - SIM 2</string>
+    <string name="ringtone1_title">电话铃声 - SIM 卡1</string>
+    <string name="ringtone2_title">电话铃声 - SIM 卡2</string>
     <!-- Density category -->
     <string name="density_category">Density options</string>
     <!-- DU version in About phone -->
-    <string name="rom_version_title">DU version</string>
+    <string name="rom_version_title">DU 版本</string>
     <!-- System theme -->
-    <string name="system_theme_wallpaper">Automatic (based on time of day)</string>
-    <string name="system_theme_light">Light</string>
-    <string name="system_theme_dark">Dark</string>
+    <string name="system_theme_wallpaper">自动（基于时间）</string>
+    <string name="system_theme_light">亮色</string>
+    <string name="system_theme_dark">暗色</string>
     <!-- Selinux -->
-    <string name="selinux_status">SELinux status</string>
-    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status">SELinux 状态</string>
+    <string name="selinux_status_disabled">已禁用</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
     <!-- Ambient category -->
-    <string name="ambient_display_category">Ambient options</string>
+    <string name="ambient_display_category">主动显示选项</string>
     <string name="custom_ambient_display_summary">Configure advanced Ambient display</string>
     <!-- Flashlight gestures -->
-    <string name="double_tap_power_flashlight_screen_title">Activate the torch</string>
+    <string name="double_tap_power_flashlight_screen_title">打开手电筒</string>
     <string name="double_tap_power_flashlight_title">Screen off power button torch</string>
     <string name="torch_power_button_gesture_none">Disabled</string>
-    <string name="torch_power_button_gesture_dt">Double tap power to toggle torch</string>
-    <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
+    <string name="torch_power_button_gesture_dt">双击电源键以开关手电筒</string>
+    <string name="torch_power_button_gesture_lp">长按电源键以开关手电筒</string>
     <!-- QS tile styles -->
-    <string name="qs_tile_style_title">QS tile style</string>
-    <string name="qs_tile_style_default">Default</string>
+    <string name="qs_tile_style_title">QS 样式</string>
+    <string name="qs_tile_style_default">默认样式</string>
     <string name="qs_tile_style_square">Square</string>
     <string name="qs_tile_style_rounded_square">Rounded square</string>
     <string name="qs_tile_style_squircle">Squircle</string>
@@ -72,12 +72,12 @@
     <string name="prevent_ringing_option_mute_no_media">Mute, no media</string>
     <string name="prevent_ringing_option_mute_no_media_summary">On (mute, no media)</string>
     <!-- Swipe fp to dismiss notifications -->
-    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">向左或向右滑动指纹以关闭通知</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
     <!-- Navbar gestures -->
-    <string name="full_gesture_mode_title">Enable full gesture mode</string>
+    <string name="full_gesture_mode_title">启用全手势模式</string>
     <string name="full_gesture_mode_summary">This mode disables the back button and you can trigger a back button action by a left swipe on navbar. Right swipe still triggers the last-app and the overview apps scrolling. To go home you can tap on any navbar empty space, not only the home button. When keyboard is showing, long press on navbar to move the text cursor.</string>
-    <string name="full_gesture_mode_dt2s_title">Enable double tap to sleep</string>
+    <string name="full_gesture_mode_dt2s_title">启用双击熄屏</string>
     <string name="full_gesture_mode_dt2s_summary">Tap on an empty navbar space but not the home button to switch the screen off.</string>
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>

@@ -19,7 +19,7 @@
     <string name="changelog_title">Değişiklikler</string>
     <string name="changelog_summary">Gerrit örnek değişiklikleri</string>
     <!-- MSIM Manual provisioning -->
-    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_enabled">etkin</string>
     <string name="sim_disabled">devre dışı</string>
     <string name="sim_missing">eksik veya hatalı</string>
@@ -27,7 +27,7 @@
     <string name="sim_enabler_will_disable_sim_title">Dikkat</string>
     <string name="sim_enabler_need_switch_data_service">SIM devre dışı bırakılacak ve SIM <xliff:g id="slotid">%1$s</xliff:g> veri servisleri için kullanılacak. Devam etmek istiyor musunuz?</string>
     <string name="sim_enabler_airplane_on">Uçak modu açıkken işlem gerçekleştirilemiyor.</string>
-    <string name="sim_enabler_in_call">Unable to perform the operation while in call.</string>
+    <string name="sim_enabler_in_call">Arama sırasında işlem gerçekleştirilemiyor.</string>
     <string name="sim_enabler_both_inactive">Tüm SIM kartlar devre dışı bırakılamıyor</string>
     <string name="sim_enabler_enabling">Etkinleştiriliyor\u2026</string>
     <string name="sim_enabler_disabling">Devre dışı bırakılıyor\u2026</string>
@@ -42,11 +42,11 @@
     <!-- Density category -->
     <string name="density_category">Yoğunluk seçenekleri</string>
     <!-- DU version in About phone -->
-    <string name="rom_version_title">DU Sürümü</string>
+    <string name="rom_version_title">DU sürümü</string>
     <!-- System theme -->
     <string name="system_theme_wallpaper">Otomatik (günün saatine bağlı olarak)</string>
-    <string name="system_theme_light">Açık</string>
-    <string name="system_theme_dark">Koyu</string>
+    <string name="system_theme_light">Aydınlık</string>
+    <string name="system_theme_dark">Karanlık</string>
     <!-- Selinux -->
     <string name="selinux_status">SELinux durumu</string>
     <string name="selinux_status_disabled">Devre dışı</string>
@@ -54,13 +54,13 @@
     <string name="selinux_status_enforcing">Zorunlu</string>
     <!-- Ambient category -->
     <string name="ambient_display_category">Ortam seçenekleri</string>
-    <string name="custom_ambient_display_summary">Gelişmiş ortam ekranını yapılandır</string>
+    <string name="custom_ambient_display_summary">Gelişmiş Ortam ekranı yapılandırması</string>
     <!-- Flashlight gestures -->
-    <string name="double_tap_power_flashlight_screen_title">Activate the torch</string>
-    <string name="double_tap_power_flashlight_title">Screen off power button torch</string>
+    <string name="double_tap_power_flashlight_screen_title">El fenerini etkinleştir</string>
+    <string name="double_tap_power_flashlight_title">Ekran kapalı iken güç tuşu ile feneri açma</string>
     <string name="torch_power_button_gesture_none">Devre dışı</string>
-    <string name="torch_power_button_gesture_dt">Double tap power to toggle torch</string>
-    <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
+    <string name="torch_power_button_gesture_dt">El fenerini açmak için güç tuşuna iki defa basın</string>
+    <string name="torch_power_button_gesture_lp">El fenerini açmak için güç tuşuna uzun basın</string>
     <!-- QS tile styles -->
     <string name="qs_tile_style_title">Hızlı ayarlar kare stili</string>
     <string name="qs_tile_style_default">Varsayılan</string>
@@ -72,47 +72,47 @@
     <string name="prevent_ringing_option_mute_no_media">Sessiz, medya yok</string>
     <string name="prevent_ringing_option_mute_no_media_summary">Açık (sessiz, medya yok)</string>
     <!-- Swipe fp to dismiss notifications -->
-    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
-    <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Bildirimleri kapatmak için parmak izini sola veya sağa kaydırın</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Bildirimlerinizi kapatmak için telefonunuzun parmak izi sensöründe sola veya sağa kaydırın.</string>
     <!-- Navbar gestures -->
     <string name="full_gesture_mode_title">Tam hareket modunu etkinleştir</string>
     <string name="full_gesture_mode_summary">Bu mod, geri tuşunu devre dışı bırakır ve gezinme çubuğunda soldan bir kaydırma yaparak bir geri tuşu eylemini başlatabilirsiniz. Sağa kaydırma, son uygulamalarının kaydırılmasını tetikler. Ana ekrana gitmek için sadece ev tuşunu değil, herhangi bir gezinme çubuğu boşluğuna dokunabilirsiniz. Klavye gösterildiğinde, metin imlecini hareket ettirmek için gezinme çubuğuna uzun basın.</string>
     <string name="full_gesture_mode_dt2s_title">Çift dokunuşla uyutmayı etkinleştir</string>
-    <string name="full_gesture_mode_dt2s_summary">Tap on an empty navbar space but not the home button to switch the screen off.</string>
+    <string name="full_gesture_mode_dt2s_summary">Ekranı kapatmak için gezinme çubuğun boş alanına dokunun ancak ana ekran tuşuna dokunmayın.</string>
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Wake on plug -->
-    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
-    <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+    <string name="wake_when_plugged_or_unplugged_title">Takıp çıkarmada uyan</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Şarj aleti takıldığında ya da çıkarıldığında ekranı aç</string>
     <!-- Vibrate on plug -->
-    <string name="vibration_on_charge_state_changed_title">Vibrate on USB plug</string>
+    <string name="vibration_on_charge_state_changed_title">USB\'ye takıldığında titret</string>
     <!-- Scramble PIN layout on lockscreen -->
-    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <string name="unlock_scramble_pin_layout_title">Karışık düzen</string>
+    <string name="unlock_scramble_pin_layout_summary">Cihaz kilidini açarken PIN düzenini karıştırır</string>
     <!-- Title for suggested actions for screen lock -->
-    <string name="suggested_lock_settings_custom_title" product="tablet">Secure your tablet</string>
-    <string name="suggested_lock_settings_custom_title" product="device">Secure your device</string>
-    <string name="suggested_lock_settings_custom_title" product="default">Secure your phone</string>
+    <string name="suggested_lock_settings_custom_title" product="tablet">Tabletinizi koruyun</string>
+    <string name="suggested_lock_settings_custom_title" product="device">Cihazınızı koruyun</string>
+    <string name="suggested_lock_settings_custom_title" product="default">Telefonunuzu koruyun</string>
     <!-- Advanced night mode brightness -->
-    <string name="night_brightness_value_title">Lower brightness if Night Light</string>
-    <string name="night_auto_value_disabled">Disabled</string>
-    <string name="night_auto_value_min">Minimum brightness</string>
-    <string name="night_bright_low">Low brightness</string>
-    <string name="night_bright_midlow">Mid low brightness</string>
+    <string name="night_brightness_value_title">Gece Işığı açıksa parlaklığı düşür</string>
+    <string name="night_auto_value_disabled">Devre dışı</string>
+    <string name="night_auto_value_min">En düşük parlaklık</string>
+    <string name="night_bright_low">Düşük parlaklık</string>
+    <string name="night_bright_midlow">Orta düşük parlaklık</string>
     <!-- Battery charge warning -->
-    <string name="notification_sound_battery_charge_title">Enable battery charge level warning</string>
-    <string name="notification_battery_charge_level_title">Battery charge warning</string>
-    <string name="notification_battery_charge_level_summary">Play a sound when the battery reaches the specified level when charging</string>
-    <string name="notification_battery_charge_level_seek_bar">Battery level</string>
-    <string name="notification_battery_charge_level_ringtone">Ringtone</string>
-    <string name="notification_battery_charge_level_silent">Silent</string>
+    <string name="notification_sound_battery_charge_title">Pil şarj seviyesi uyarısını etkinleştir</string>
+    <string name="notification_battery_charge_level_title">Pil şarj uyarısı</string>
+    <string name="notification_battery_charge_level_summary">Pil şarj olurken belirtilen seviyeye ulaştığında ses çıkar</string>
+    <string name="notification_battery_charge_level_seek_bar">Pil düzeyi</string>
+    <string name="notification_battery_charge_level_ringtone">Zil sesi</string>
+    <string name="notification_battery_charge_level_silent">Sessiz</string>
     <!-- Battery temp -->
-    <string name="battery_temp_title">Battery temperature</string>
+    <string name="battery_temp_title">Pil sıcaklığı</string>
     <!-- Face auto unlock -->
-    <string name="face_auto_unlock_title">Automatic face unlock</string>
-    <string name="face_auto_unlock_summary">Dismiss lock screen after face unlock</string>
+    <string name="face_auto_unlock_title">Otomatik yüz kilidi açma</string>
+    <string name="face_auto_unlock_summary">Yüz kilidini açtıktan sonra kilit ekranını kapatır</string>
     <!-- Keyguard multiuser switch -->
-    <string name="keyguard_multiuser_switch_title">Multiuser switch</string>
-    <string name="keyguard_multiuser_switch_summary">Show multiuser switch on the statusbar</string>
-    <string name="background_processes_settings_title">Background processes</string>
+    <string name="keyguard_multiuser_switch_title">Çoklu kullanıcı değiştirici</string>
+    <string name="keyguard_multiuser_switch_summary">Durum çubuğunda çoklu kullanıcı değiştiriciyi göster</string>
+    <string name="background_processes_settings_title">Arka plan işlemleri</string>
 </resources>

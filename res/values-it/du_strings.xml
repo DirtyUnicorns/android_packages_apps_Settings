@@ -59,60 +59,60 @@
     <string name="double_tap_power_flashlight_screen_title">Attiva la torcia</string>
     <string name="double_tap_power_flashlight_title">Screen off power button torch</string>
     <string name="torch_power_button_gesture_none">Disabled</string>
-    <string name="torch_power_button_gesture_dt">Double tap power to toggle torch</string>
-    <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
+    <string name="torch_power_button_gesture_dt">Doppio tocco sul pulsante di alimentazione per accendere la torcia</string>
+    <string name="torch_power_button_gesture_lp">Pressione prolungata sul pulsante accensione per accendere la torcia</string>
     <!-- QS tile styles -->
-    <string name="qs_tile_style_title">QS tile style</string>
-    <string name="qs_tile_style_default">Default</string>
-    <string name="qs_tile_style_square">Square</string>
-    <string name="qs_tile_style_rounded_square">Rounded square</string>
+    <string name="qs_tile_style_title">Stile dei tile delle impostazioni rapide</string>
+    <string name="qs_tile_style_default">Predefinite</string>
+    <string name="qs_tile_style_square">Quadrato</string>
+    <string name="qs_tile_style_rounded_square">Quadrato con angoli arrotondati</string>
     <string name="qs_tile_style_squircle">Squircle</string>
-    <string name="qs_tile_style_tear_drop">Tear drop</string>
+    <string name="qs_tile_style_tear_drop">Goccia</string>
     <!-- Media gestures -->
-    <string name="prevent_ringing_option_mute_no_media">Mute, no media</string>
-    <string name="prevent_ringing_option_mute_no_media_summary">On (mute, no media)</string>
+    <string name="prevent_ringing_option_mute_no_media">Muto, nessun media</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Attivo (muto, nessun media)</string>
     <!-- Swipe fp to dismiss notifications -->
-    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
-    <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Scorri a sinistra o destra sul sensore d\'impronte per rimuovere le notifiche</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Per rimuovere le notifiche, scorri a sinistra o destra sul sensore d\'impronte posto sul retro del tuo dispositivo.</string>
     <!-- Navbar gestures -->
-    <string name="full_gesture_mode_title">Enable full gesture mode</string>
-    <string name="full_gesture_mode_summary">This mode disables the back button and you can trigger a back button action by a left swipe on navbar. Right swipe still triggers the last-app and the overview apps scrolling. To go home you can tap on any navbar empty space, not only the home button. When keyboard is showing, long press on navbar to move the text cursor.</string>
-    <string name="full_gesture_mode_dt2s_title">Enable double tap to sleep</string>
-    <string name="full_gesture_mode_dt2s_summary">Tap on an empty navbar space but not the home button to switch the screen off.</string>
+    <string name="full_gesture_mode_title">Attiva la modalità gesture completa</string>
+    <string name="full_gesture_mode_summary">Questa modalità disattiva il pulsante Indietro e puoi attivare un\'azione del pulsante Indietro con uno scorrimento a sinistra sulla barra di navigazione. Il tasto destro attiva l\'ultima app e lo scorrimento delle app recenti. Per tornare sulla Home puoi toccare qualsiasi spazio vuoto della barra di navigazione, non solo il pulsante Home. Quando viene visualizzata la tastiera, premi a lungo sulla barra di navigazione per spostare il cursore del testo.</string>
+    <string name="full_gesture_mode_dt2s_title">Attiva il doppio tocco per disattivare lo schermo</string>
+    <string name="full_gesture_mode_dt2s_summary">Tocca uno spazio vuoto della barra di navigazione, tranne il tasto home, per spegnere lo schermo.</string>
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Wake on plug -->
-    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
-    <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+    <string name="wake_when_plugged_or_unplugged_title">Risveglia al collegamento</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Accendi lo schermo quando si collega o si scollega il caricatore</string>
     <!-- Vibrate on plug -->
-    <string name="vibration_on_charge_state_changed_title">Vibrate on USB plug</string>
+    <string name="vibration_on_charge_state_changed_title">Vibra al collegamento USB</string>
     <!-- Scramble PIN layout on lockscreen -->
-    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <string name="unlock_scramble_pin_layout_title">Disposizione casuale</string>
+    <string name="unlock_scramble_pin_layout_summary">Mescola la disposizione del tastierino PIN per lo sblocco del dispositivo</string>
     <!-- Title for suggested actions for screen lock -->
-    <string name="suggested_lock_settings_custom_title" product="tablet">Secure your tablet</string>
-    <string name="suggested_lock_settings_custom_title" product="device">Secure your device</string>
-    <string name="suggested_lock_settings_custom_title" product="default">Secure your phone</string>
+    <string name="suggested_lock_settings_custom_title" product="tablet">Proteggi il tuo tablet</string>
+    <string name="suggested_lock_settings_custom_title" product="device">Proteggi il tuo dispositivo</string>
+    <string name="suggested_lock_settings_custom_title" product="default">Proteggi il tuo dispositivo</string>
     <!-- Advanced night mode brightness -->
-    <string name="night_brightness_value_title">Lower brightness if Night Light</string>
-    <string name="night_auto_value_disabled">Disabled</string>
-    <string name="night_auto_value_min">Minimum brightness</string>
-    <string name="night_bright_low">Low brightness</string>
-    <string name="night_bright_midlow">Mid low brightness</string>
+    <string name="night_brightness_value_title">Abbassa la luminosità con Luce Notturna</string>
+    <string name="night_auto_value_disabled">Disattivata</string>
+    <string name="night_auto_value_min">Luminosità minima</string>
+    <string name="night_bright_low">Luminosità bassa</string>
+    <string name="night_bright_midlow">Luminosità medio bassa</string>
     <!-- Battery charge warning -->
-    <string name="notification_sound_battery_charge_title">Enable battery charge level warning</string>
-    <string name="notification_battery_charge_level_title">Battery charge warning</string>
-    <string name="notification_battery_charge_level_summary">Play a sound when the battery reaches the specified level when charging</string>
-    <string name="notification_battery_charge_level_seek_bar">Battery level</string>
-    <string name="notification_battery_charge_level_ringtone">Ringtone</string>
-    <string name="notification_battery_charge_level_silent">Silent</string>
+    <string name="notification_sound_battery_charge_title">Abilita avviso livello carica batteria</string>
+    <string name="notification_battery_charge_level_title">Avviso carica della batteria</string>
+    <string name="notification_battery_charge_level_summary">Riproduci un suono quando la batteria raggiunge il livello specificato durante la ricarica</string>
+    <string name="notification_battery_charge_level_seek_bar">Livello batteria</string>
+    <string name="notification_battery_charge_level_ringtone">Suoneria</string>
+    <string name="notification_battery_charge_level_silent">Silenzioso</string>
     <!-- Battery temp -->
-    <string name="battery_temp_title">Battery temperature</string>
+    <string name="battery_temp_title">Temperatura batteria</string>
     <!-- Face auto unlock -->
-    <string name="face_auto_unlock_title">Automatic face unlock</string>
-    <string name="face_auto_unlock_summary">Dismiss lock screen after face unlock</string>
+    <string name="face_auto_unlock_title">Sblocco automatico con il viso</string>
+    <string name="face_auto_unlock_summary">Sblocca automaticamente il dispositivo dopo il riconoscimento del viso</string>
     <!-- Keyguard multiuser switch -->
-    <string name="keyguard_multiuser_switch_title">Multiuser switch</string>
-    <string name="keyguard_multiuser_switch_summary">Show multiuser switch on the statusbar</string>
-    <string name="background_processes_settings_title">Background processes</string>
+    <string name="keyguard_multiuser_switch_title">Cambio Multiutente</string>
+    <string name="keyguard_multiuser_switch_summary">Mostra l\'interruttore multiutente nella barra di stato</string>
+    <string name="background_processes_settings_title">Processi in background</string>
 </resources>
