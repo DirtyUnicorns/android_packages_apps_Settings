@@ -85,10 +85,10 @@
     <string name="wake_when_plugged_or_unplugged_title">Töltő csatlakoztatásra ébred</string>
     <string name="wake_when_plugged_or_unplugged_summary">A töltő csatlakoztatása vagy eltávolítása után kapcsolódjon be a képernyő</string>
     <!-- Vibrate on plug -->
-    <string name="vibration_on_charge_state_changed_title">Vibrate on USB plug</string>
+    <string name="vibration_on_charge_state_changed_title">Rezgés töltőre helyezéskor</string>
     <!-- Scramble PIN layout on lockscreen -->
     <string name="unlock_scramble_pin_layout_title">Véletlenszerű elrendezés</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <string name="unlock_scramble_pin_layout_summary">Összekeveri a beviteli mezőn a számok elrendezését az eszköz feloldásakor</string>
     <!-- Title for suggested actions for screen lock -->
     <string name="suggested_lock_settings_custom_title" product="tablet">Secure your tablet</string>
     <string name="suggested_lock_settings_custom_title" product="device">Secure your device</string>

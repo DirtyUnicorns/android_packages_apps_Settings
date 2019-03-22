@@ -16,103 +16,103 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Changelog -->
-    <string name="changelog_title">Changelog</string>
-    <string name="changelog_summary">Gerrit instance changes</string>
+    <string name="changelog_title">Список изменений</string>
+    <string name="changelog_summary">Изменения из Gerrit</string>
     <!-- MSIM Manual provisioning -->
-    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-    <string name="sim_enabled">enabled</string>
-    <string name="sim_disabled">disabled</string>
-    <string name="sim_missing">missing or faulty</string>
-    <string name="sim_enabler_need_disable_sim">SIM card will be deactivated. Do you want to continue?</string>
-    <string name="sim_enabler_will_disable_sim_title">Attention</string>
-    <string name="sim_enabler_need_switch_data_service">This SIM will be disabled and SIM <xliff:g id="slotid">%1$s</xliff:g> will be used for data services. Are you sure you want to continue?</string>
-    <string name="sim_enabler_airplane_on">Unable to perform the operation while airplane mode is on.</string>
-    <string name="sim_enabler_in_call">Unable to perform the operation while in call.</string>
-    <string name="sim_enabler_both_inactive">Can\'t disable all SIM cards</string>
-    <string name="sim_enabler_enabling">Activating\u2026</string>
-    <string name="sim_enabler_disabling">Deactivating\u2026</string>
-    <string name="sub_activate_success">SIM activated.</string>
-    <string name="sub_activate_failed">Activation failed.</string>
-    <string name="sub_deactivate_success">SIM deactivated.</string>
-    <string name="sub_deactivate_failed">Deactivation failed.</string>
-    <string name="available_sims_title">Available SIM cards</string>
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_enabled">включена</string>
+    <string name="sim_disabled">отключена</string>
+    <string name="sim_missing">отсутствует или неисправна</string>
+    <string name="sim_enabler_need_disable_sim">SIM-карта будет отключена. Продолжить?</string>
+    <string name="sim_enabler_will_disable_sim_title">Внимание</string>
+    <string name="sim_enabler_need_switch_data_service">Эта SIM-карта будет отключена и SIM <xliff:g id="slotid">%1$s</xliff:g> будет использоваться для служб обмена данными. Вы действительно хотите продолжить?</string>
+    <string name="sim_enabler_airplane_on">Не удается выполнить операцию, так как включен режим полета.</string>
+    <string name="sim_enabler_in_call">Выполнение операции невозможно во время вызова.</string>
+    <string name="sim_enabler_both_inactive">Невозможно отключить все SIM-карты</string>
+    <string name="sim_enabler_enabling">Включение\u2026</string>
+    <string name="sim_enabler_disabling">Отключение\u2026</string>
+    <string name="sub_activate_success">SIM-карта включена.</string>
+    <string name="sub_activate_failed">Ошибка при включении.</string>
+    <string name="sub_deactivate_success">SIM-карта отключена.</string>
+    <string name="sub_deactivate_failed">Ошибка при отключении.</string>
+    <string name="available_sims_title">Доступные SIM-карты</string>
     <!-- Option defining the phone ringtone for slot1 on Muilti SIM device -->
-    <string name="ringtone1_title">Phone ringtone - SIM 1</string>
-    <string name="ringtone2_title">Phone ringtone - SIM 2</string>
+    <string name="ringtone1_title">Мелодия звонка - SIM 1</string>
+    <string name="ringtone2_title">Мелодия звонка - SIM 2</string>
     <!-- Density category -->
-    <string name="density_category">Density options</string>
+    <string name="density_category">Настройки плотности</string>
     <!-- DU version in About phone -->
-    <string name="rom_version_title">DU version</string>
+    <string name="rom_version_title">Версия DU</string>
     <!-- System theme -->
-    <string name="system_theme_wallpaper">Automatic (based on time of day)</string>
-    <string name="system_theme_light">Light</string>
-    <string name="system_theme_dark">Dark</string>
+    <string name="system_theme_wallpaper">Автоматическая (в зависимости от времени)</string>
+    <string name="system_theme_light">Светлая</string>
+    <string name="system_theme_dark">Темная</string>
     <!-- Selinux -->
-    <string name="selinux_status">SELinux status</string>
-    <string name="selinux_status_disabled">Disabled</string>
-    <string name="selinux_status_permissive">Permissive</string>
-    <string name="selinux_status_enforcing">Enforcing</string>
+    <string name="selinux_status">Статус SELinux</string>
+    <string name="selinux_status_disabled">Отключен</string>
+    <string name="selinux_status_permissive">Разрешающий</string>
+    <string name="selinux_status_enforcing">Блокировка</string>
     <!-- Ambient category -->
-    <string name="ambient_display_category">Ambient options</string>
-    <string name="custom_ambient_display_summary">Configure advanced Ambient display</string>
+    <string name="ambient_display_category">Настройки Ambient Display</string>
+    <string name="custom_ambient_display_summary">Дополнительная настройка Ambient Display</string>
     <!-- Flashlight gestures -->
-    <string name="double_tap_power_flashlight_screen_title">Activate the torch</string>
-    <string name="double_tap_power_flashlight_title">Screen off power button torch</string>
-    <string name="torch_power_button_gesture_none">Disabled</string>
-    <string name="torch_power_button_gesture_dt">Double tap power to toggle torch</string>
-    <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
+    <string name="double_tap_power_flashlight_screen_title">Включение фонарика</string>
+    <string name="double_tap_power_flashlight_title">Включение фонарика нажатием кнопки питания</string>
+    <string name="torch_power_button_gesture_none">Отключено</string>
+    <string name="torch_power_button_gesture_dt">Двойное нажатие на кнопку питания для включения</string>
+    <string name="torch_power_button_gesture_lp">Удерживание кнопки питания для включения</string>
     <!-- QS tile styles -->
-    <string name="qs_tile_style_title">QS tile style</string>
-    <string name="qs_tile_style_default">Default</string>
-    <string name="qs_tile_style_square">Square</string>
-    <string name="qs_tile_style_rounded_square">Rounded square</string>
-    <string name="qs_tile_style_squircle">Squircle</string>
-    <string name="qs_tile_style_tear_drop">Tear drop</string>
+    <string name="qs_tile_style_title">Стиль элементов быстрых настроек</string>
+    <string name="qs_tile_style_default">По умолчанию</string>
+    <string name="qs_tile_style_square">Квадрат</string>
+    <string name="qs_tile_style_rounded_square">Квадрат с закругленными углами</string>
+    <string name="qs_tile_style_squircle">Квадрат с закругленными краями</string>
+    <string name="qs_tile_style_tear_drop">Капля</string>
     <!-- Media gestures -->
-    <string name="prevent_ringing_option_mute_no_media">Mute, no media</string>
-    <string name="prevent_ringing_option_mute_no_media_summary">On (mute, no media)</string>
+    <string name="prevent_ringing_option_mute_no_media">Заглушить без медия</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Включено (отключение звука, отсутствие воспроизведения мультимедиа)</string>
     <!-- Swipe fp to dismiss notifications -->
-    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
-    <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Проведите пальцем по сканеру влево или вправо, чтобы очистить уведомления</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Чтобы очистить уведомления, проведите пальцем влево или право по сканеру отпечатка пальца.</string>
     <!-- Navbar gestures -->
-    <string name="full_gesture_mode_title">Enable full gesture mode</string>
-    <string name="full_gesture_mode_summary">This mode disables the back button and you can trigger a back button action by a left swipe on navbar. Right swipe still triggers the last-app and the overview apps scrolling. To go home you can tap on any navbar empty space, not only the home button. When keyboard is showing, long press on navbar to move the text cursor.</string>
-    <string name="full_gesture_mode_dt2s_title">Enable double tap to sleep</string>
-    <string name="full_gesture_mode_dt2s_summary">Tap on an empty navbar space but not the home button to switch the screen off.</string>
+    <string name="full_gesture_mode_title">Включить полный режим жестов</string>
+    <string name="full_gesture_mode_summary">Этот режим отключает кнопку \"Назад\" и вы можете вызвать действие кнопки \"Назад\" с помощью свайпа влево на панели навигации. Правый свайп по-прежнему вызывает последнее приложение и обзор недавних приложений. Чтобы вернуться на домашний экран, вы можете нажать на любое пустое место панели навигации, а не только на кнопку \"Домой\". Когда клавиатура активна, то удерживаете нажатие на панели навигации для того, чтобы переместить курсор.</string>
+    <string name="full_gesture_mode_dt2s_title">Включить двойное нажатие для сна</string>
+    <string name="full_gesture_mode_dt2s_summary">Нажмите на пустое место в панели навигации, но не кнопку домой, для выключения экрана.</string>
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- Wake on plug -->
-    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
-    <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+    <string name="wake_when_plugged_or_unplugged_title">Пробуждение при зарядке</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Включать экран при подключении или отключении источника питания</string>
     <!-- Vibrate on plug -->
-    <string name="vibration_on_charge_state_changed_title">Vibrate on USB plug</string>
+    <string name="vibration_on_charge_state_changed_title">Вибрация при подкл. зарядки</string>
     <!-- Scramble PIN layout on lockscreen -->
-    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <string name="unlock_scramble_pin_layout_title">Перемешать кнопки</string>
+    <string name="unlock_scramble_pin_layout_summary">Перемешивать кнопки ввода PIN на экране блокировки</string>
     <!-- Title for suggested actions for screen lock -->
-    <string name="suggested_lock_settings_custom_title" product="tablet">Secure your tablet</string>
-    <string name="suggested_lock_settings_custom_title" product="device">Secure your device</string>
-    <string name="suggested_lock_settings_custom_title" product="default">Secure your phone</string>
+    <string name="suggested_lock_settings_custom_title" product="tablet">Защита планшета</string>
+    <string name="suggested_lock_settings_custom_title" product="device">Защитите ваше устройство</string>
+    <string name="suggested_lock_settings_custom_title" product="default">Защитите ваш телефон</string>
     <!-- Advanced night mode brightness -->
-    <string name="night_brightness_value_title">Lower brightness if Night Light</string>
-    <string name="night_auto_value_disabled">Disabled</string>
-    <string name="night_auto_value_min">Minimum brightness</string>
-    <string name="night_bright_low">Low brightness</string>
-    <string name="night_bright_midlow">Mid low brightness</string>
+    <string name="night_brightness_value_title">Понижать яркость, если включен ночной режим</string>
+    <string name="night_auto_value_disabled">Отключено</string>
+    <string name="night_auto_value_min">Минимальная яркость</string>
+    <string name="night_bright_low">Низкая яркость</string>
+    <string name="night_bright_midlow">Уровень ниже среднего</string>
     <!-- Battery charge warning -->
-    <string name="notification_sound_battery_charge_title">Enable battery charge level warning</string>
-    <string name="notification_battery_charge_level_title">Battery charge warning</string>
-    <string name="notification_battery_charge_level_summary">Play a sound when the battery reaches the specified level when charging</string>
-    <string name="notification_battery_charge_level_seek_bar">Battery level</string>
-    <string name="notification_battery_charge_level_ringtone">Ringtone</string>
-    <string name="notification_battery_charge_level_silent">Silent</string>
+    <string name="notification_sound_battery_charge_title">Включить предупреждение об уровне заряда</string>
+    <string name="notification_battery_charge_level_title">Предупреждение про уровень заряда</string>
+    <string name="notification_battery_charge_level_summary">Проигрывать звук когда заряд батареи превосходит установленный уровень</string>
+    <string name="notification_battery_charge_level_seek_bar">Процент заряда</string>
+    <string name="notification_battery_charge_level_ringtone">Мелодия</string>
+    <string name="notification_battery_charge_level_silent">Без звука</string>
     <!-- Battery temp -->
-    <string name="battery_temp_title">Battery temperature</string>
+    <string name="battery_temp_title">Температура батареи</string>
     <!-- Face auto unlock -->
-    <string name="face_auto_unlock_title">Automatic face unlock</string>
-    <string name="face_auto_unlock_summary">Dismiss lock screen after face unlock</string>
+    <string name="face_auto_unlock_title">Автоматическая разблокировка по лицу</string>
+    <string name="face_auto_unlock_summary">Пропустить экран блокировки после разблокировки лицом</string>
     <!-- Keyguard multiuser switch -->
-    <string name="keyguard_multiuser_switch_title">Multiuser switch</string>
-    <string name="keyguard_multiuser_switch_summary">Show multiuser switch on the statusbar</string>
-    <string name="background_processes_settings_title">Background processes</string>
+    <string name="keyguard_multiuser_switch_title">Переключение пользователей</string>
+    <string name="keyguard_multiuser_switch_summary">Показывать переключатель пользователей в строке состояния</string>
+    <string name="background_processes_settings_title">Фоновые процессы</string>
 </resources>
