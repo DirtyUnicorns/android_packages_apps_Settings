@@ -45,6 +45,10 @@
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sounds</string>
 
+    <!-- Ambient Display wake gestures -->
+    <string name="ambient_wake_gestures_title">Ambient wake gestures</string>
+    <string name="ambient_wake_gestures_summary">Show Ambient Display instead of normal lockscreen on wake gestures</string>
+
     <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
     <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
