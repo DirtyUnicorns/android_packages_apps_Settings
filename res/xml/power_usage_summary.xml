@@ -63,4 +63,10 @@
         android:title="@string/device_screen_usage"
         android:selectable="false" />
 
+    <Preference
+        android:key="battery_light_settings"
+        android:title="@string/battery_light_settings_pref_title"
+        android:fragment="com.android.settings.display.BatteryLightSettings"
+        settings:controller="com.android.settings.display.BatteryLightSettingsPreferenceController"/>
+
 </PreferenceScreen>
