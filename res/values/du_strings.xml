@@ -21,6 +21,12 @@
     <!-- DU version in About phone -->
     <string name="rom_version_title">DU version</string>
 
+    <!-- Back gesture settings -->
+    <string name="back_gesture_settings_dialog_title">Back gesture settings</string>
+    <string name="back_gesture_sensitivity_dialog_message">Higher sensitivity may conflict with any app gestures along the edges of the screen.</string>
+    <string name="back_gesture_arrow_title">Back arrow animation</string>
+    <string name="back_gesture_arrow_message">Hide arrow with back gesture</string>
+
     <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
 </resources>

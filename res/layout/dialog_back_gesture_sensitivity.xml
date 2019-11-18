@@ -22,6 +22,23 @@
     android:orientation="vertical"
     android:padding="12dp">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="12dp"
+        android:text="@string/back_sensitivity_dialog_title"
+        android:textAppearance="@style/TextAppearance.Switch" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="12dp"
+        android:text="@string/back_gesture_sensitivity_dialog_message"
+        android:textAppearance="?android:attr/textAppearance" />
+
     <SeekBar
         android:id="@+id/back_sensitivity_seekbar"
         android:layout_width="match_parent"
@@ -64,4 +81,21 @@
                   android:ellipsize="marquee" />
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
+        android:text="@string/back_gesture_arrow_title"
+        android:textAppearance="@style/TextAppearance.Switch" />
+
+    <Switch
+        android:id="@+id/back_arrow_gesture_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/back_gesture_arrow_message"
+        android:textAppearance="?android:attr/textAppearance" />
+
 </LinearLayout>

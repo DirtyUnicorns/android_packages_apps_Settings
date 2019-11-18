@@ -23,8 +23,10 @@ import android.content.Context;
 import android.content.om.IOverlayManager;
 import android.os.Bundle;
 import android.os.ServiceManager;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.SeekBar;
+import android.widget.Switch;
 
 import com.android.settings.R;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
@@ -33,6 +35,9 @@ import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
  * Dialog to set the back gesture's sensitivity in Gesture navigation mode.
  */
 public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFragment {
+
+    private boolean mArrowSwitchChecked;
+
     private static final String TAG = "GestureNavigationBackSensitivityDialog";
     private static final String KEY_BACK_SENSITIVITY = "back_sensitivity";
 
@@ -61,15 +66,26 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
                 R.layout.dialog_back_gesture_sensitivity, null);
         final SeekBar seekBar = view.findViewById(R.id.back_sensitivity_seekbar);
         seekBar.setProgress(getArguments().getInt(KEY_BACK_SENSITIVITY));
+        final Switch arrowSwitch = view.findViewById(R.id.back_arrow_gesture_switch);
+        mArrowSwitchChecked = Settings.Secure.getInt(getActivity().getContentResolver(),
+                Settings.Secure.HIDE_BACK_ARROW_GESTURE, 0) == 1;
+        arrowSwitch.setChecked(mArrowSwitchChecked);
+        arrowSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mArrowSwitchChecked = arrowSwitch.isChecked() ? true : false;
+            }
+        });
         return new AlertDialog.Builder(getContext())
-                .setTitle(R.string.back_sensitivity_dialog_title)
-                .setMessage(R.string.back_sensitivity_dialog_message)
+                .setTitle(R.string.back_gesture_settings_dialog_title)
                 .setView(view)
                 .setPositiveButton(R.string.okay, (dialog, which) -> {
                     int sensitivity = seekBar.getProgress();
                     getArguments().putInt(KEY_BACK_SENSITIVITY, sensitivity);
                     SystemNavigationGestureSettings.setBackSensitivity(getActivity(),
                             getOverlayManager(), sensitivity);
+                    Settings.Secure.putInt(getActivity().getContentResolver(),
+                            Settings.Secure.HIDE_BACK_ARROW_GESTURE, mArrowSwitchChecked ? 1 : 0);
                 })
                 .create();
     }
