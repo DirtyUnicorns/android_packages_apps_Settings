@@ -40,8 +40,9 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
 
     private static final String TAG = "GestureNavigationBackSensitivityDialog";
     private static final String KEY_BACK_SENSITIVITY = "back_sensitivity";
+    private static final String KEY_BACK_DEAD_Y_ZONE = "back_dead_y_zone";
 
-    public static void show(SystemNavigationGestureSettings parent, int sensitivity) {
+    public static void show(SystemNavigationGestureSettings parent, int sensitivity, int backDeadYZoneMode) {
         if (!parent.isAdded()) {
             return;
         }
@@ -50,6 +51,7 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
                 new GestureNavigationBackSensitivityDialog();
         final Bundle bundle = new Bundle();
         bundle.putInt(KEY_BACK_SENSITIVITY, sensitivity);
+        bundle.putInt(KEY_BACK_DEAD_Y_ZONE, backDeadYZoneMode);
         dialog.setArguments(bundle);
         dialog.setTargetFragment(parent, 0);
         dialog.show(parent.getFragmentManager(), TAG);
@@ -64,8 +66,8 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         final View view = getActivity().getLayoutInflater().inflate(
                 R.layout.dialog_back_gesture_sensitivity, null);
-        final SeekBar seekBar = view.findViewById(R.id.back_sensitivity_seekbar);
-        seekBar.setProgress(getArguments().getInt(KEY_BACK_SENSITIVITY));
+        final SeekBar sensitivitySeekBar = view.findViewById(R.id.back_sensitivity_seekbar);
+        sensitivitySeekBar.setProgress(getArguments().getInt(KEY_BACK_SENSITIVITY));
         final Switch arrowSwitch = view.findViewById(R.id.back_arrow_gesture_switch);
         mArrowSwitchChecked = Settings.Secure.getInt(getActivity().getContentResolver(),
                 Settings.Secure.HIDE_BACK_ARROW_GESTURE, 0) == 1;
@@ -76,16 +78,22 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
                 mArrowSwitchChecked = arrowSwitch.isChecked() ? true : false;
             }
         });
+        final SeekBar backDeadzoneSeekbar = view.findViewById(R.id.back_deadzone_seekbar);
+        backDeadzoneSeekbar.setProgress(getArguments().getInt(KEY_BACK_DEAD_Y_ZONE));
         return new AlertDialog.Builder(getContext())
                 .setTitle(R.string.back_gesture_settings_dialog_title)
                 .setView(view)
                 .setPositiveButton(R.string.okay, (dialog, which) -> {
-                    int sensitivity = seekBar.getProgress();
+                    int sensitivity = sensitivitySeekBar.getProgress();
                     getArguments().putInt(KEY_BACK_SENSITIVITY, sensitivity);
                     SystemNavigationGestureSettings.setBackSensitivity(getActivity(),
                             getOverlayManager(), sensitivity);
                     Settings.Secure.putInt(getActivity().getContentResolver(),
                             Settings.Secure.HIDE_BACK_ARROW_GESTURE, mArrowSwitchChecked ? 1 : 0);
+                    int backDeadYZoneMode = backDeadzoneSeekbar.getProgress();
+                    getArguments().putInt(KEY_BACK_DEAD_Y_ZONE, backDeadYZoneMode);
+                    SystemNavigationGestureSettings.setBackDeadYZone(getActivity(),
+                            backDeadYZoneMode);
                 })
                 .create();
     }
