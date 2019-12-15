@@ -19,6 +19,7 @@
 
 -keep class com.dirtyunicorns.tweaks.**
 -keep class com.dirtyunicorns.tweaks.navigation**
+-keep class com.google.**
 
 # We want to keep methods in Activity that could be used in the XML attribute onClick.
 -keepclassmembers class * extends android.app.Activity {
