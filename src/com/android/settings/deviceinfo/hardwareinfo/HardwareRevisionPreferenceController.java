@@ -31,7 +31,7 @@ public class HardwareRevisionPreferenceController extends BasePreferenceControll
 
     @Override
     public int getAvailabilityStatus() {
-        return mContext.getResources().getBoolean(R.bool.config_show_device_model)
+        return mContext.getResources().getBoolean(R.bool.config_show_hardware_revision)
                 ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
