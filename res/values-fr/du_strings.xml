@@ -30,4 +30,14 @@
 
     <string name="fp_swipe_to_dismiss_notifications_title">Ignorer les notifications</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Glisser vers la gauche ou la droite sur le capteur d\'empreintes digitales pour ignorer les notifications</string>
+
+    <!-- Categories -->
+    <string name="density_category">Densité</string>
+
+    <!-- SELinux Status -->
+    <string name="selinux_status">État SELinux</string>
+    <string name="selinux_status_disabled">Désactivé</string>
+    <string name="selinux_status_permissive">Permissif</string>
+    <string name="selinux_status_enforcing">Application</string>
+
 </resources>
