@@ -30,4 +30,7 @@
     <!-- Density options -->
     <string name="density_category">Density options</string>
 
+    <!-- Themes -->
+    <string name="theme_font_title">Font type</string>
+
 </resources>
