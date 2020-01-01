@@ -3440,6 +3440,21 @@
                 android:resource="@string/dirtytweaks_summary"/>
         </activity>
 
+       <!-- DU Themes -->
+       <activity android:name="Settings$StartThemesActivity"
+            android:label="@string/du_themes_title"
+            android:icon="@drawable/ic_homepage_du_themes"
+            android:taskAffinity="com.android.settings"
+            android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.StartThemes" />
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/du_themes_summary"/>
+        </activity>
+
         <!-- DU Team dialog -->
         <activity android:name="com.dirtyunicorns.tweaks.fragments.team.TeamActivity"
                   android:taskAffinity=""
