@@ -21,13 +21,20 @@
     android:key="top_level_settings">
 
     <Preference
-        android:key="top_level_du"
+        android:key="top_level_dirty_tweaks"
         android:title="@string/dirtytweaks_title"
         android:summary="@string/dirtytweaks_summary"
         android:icon="@drawable/ic_settings_dirtytweaks"
         android:order="-130"
-        android:fragment="com.dirtyunicorns.tweaks.DirtyTweaks"
-        settings:controller="com.dirtyunicorns.tweaks.TopLevelDuEntryPreferenceController" />
+        android:fragment="com.dirtyunicorns.tweaks.DirtyTweaks" />
+
+    <Preference
+        android:key="top_level_themes"
+        android:title="@string/du_themes_title"
+        android:summary="@string/du_themes_summary"
+        android:icon="@drawable/ic_homepage_du_themes"
+        android:fragment="com.android.settings.StartThemes"
+        android:order="-125"/>
 
     <Preference
         android:key="top_level_network"
