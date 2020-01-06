@@ -22,6 +22,13 @@
     <!-- Radio Info screen. Label for a status item.  Used for diagnostic info screens, DO NOT TRANSLATE. -->
     <string name="radio_info_imsi_label">IMSI :</string>
 
+    <!-- Themes -->
+    <string name="du_themes_title">Thèmes</string>
+    <string name="du_themes_summary">Réglages esthétiques</string>
+
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Fermer</string>
+
     <!-- Back gesture settings -->
     <string name="back_gesture_settings_dialog_title">Sensibilité du retour en arrière</string>
     <string name="back_gesture_sensitivity_dialog_message">Une sensibilité plus élevée peut entrer en conflit avec les gestes d\'application impliquant les bords de l\'écran</string>
@@ -40,16 +47,21 @@
     <string name="selinux_status_permissive">Permissif</string>
     <string name="selinux_status_enforcing">Application</string>
 
-    <!-- Themes -->
-    <string name="theme_font_title">Police d\'écriture</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize accent color. -->
-    <string name="theme_customization_accent_color_title">Couleur d\'accentuation</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
-    <string name="theme_customization_font_title">Polices du titre et du corps du texte</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
-    <string name="theme_customization_icon_shape_title">Forme de l\'icône</string>
-
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">Sons de capture d\'écran</string>
+
+    <!-- Ambient Display wake gestures/music ticker -->
+    <string name="ambient_wake_gestures_title">Affichage en mode veille</string>
+    <string name="ambient_wake_gestures_summary">Les gestes effectués déclenchent l\'affichage en mode veille plutôt que l\'écran de déverrouillage classique</string>
+    <string name="pulse_on_new_tracks_title">Informations de la piste musicale</string>
+    <string name="pulse_on_new_tracks_summary">Afficher les informations de la piste musicale en cours d\'écoute sur l\'écran de veille. Un double appui sur les informations de la piste musicale en cours d\'écoute permet de passer à la piste musicale suivante.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Informations de la piste musicale</string>
+
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Allumer l\'écran lorsque le chargeur est branché ou débranché</string>
+
+    <!-- Vibrate on plug -->
+    <string name="vibration_on_charge_state_changed_title">Vibrer au branchement</string>
 
 </resources>
