@@ -80,7 +80,7 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
         });
         final SeekBar backDeadzoneSeekbar = view.findViewById(R.id.back_deadzone_seekbar);
         backDeadzoneSeekbar.setProgress(getArguments().getInt(KEY_BACK_DEAD_Y_ZONE));
-        return new AlertDialog.Builder(getContext())
+        return new AlertDialog.Builder(getContext(), R.style.GestureDialogTheme)
                 .setTitle(R.string.back_gesture_settings_dialog_title)
                 .setView(view)
                 .setPositiveButton(R.string.okay, (dialog, which) -> {
