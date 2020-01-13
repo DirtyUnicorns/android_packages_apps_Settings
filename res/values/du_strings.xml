@@ -28,6 +28,13 @@
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Close</string>
 
+    <!-- Custom ambient display -->
+    <string name="ambient_display_category">Ambient display</string>
+    <string name="lockscreen_settings_category">General</string>
+    <string name="ambient_other_category">Other</string>
+    <string name="ambient_display_custom_title">Custom options</string>
+    <string name="ambient_display_custom_summary">Wake screen with notifications and various gestures</string>
+
     <!-- Back gesture settings -->
     <string name="back_gesture_settings_dialog_title">Back gesture settings</string>
     <string name="back_gesture_sensitivity_dialog_message">Higher sensitivity may conflict with any app gestures along the edges of the screen.</string>

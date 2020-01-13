@@ -23,7 +23,7 @@
 
     <PreferenceCategory
         android:key="lockscreen_what_to_show"
-        android:title="@string/lockscreen_settings_what_to_show_category">
+        android:title="@string/lockscreen_settings_category">
         <com.android.settings.RestrictedListPreference
             android:key="security_setting_lock_screen_notif"
             android:title="@string/lock_screen_notifications_title"
@@ -57,7 +57,7 @@
 
     <PreferenceCategory
         android:key="ambient_display_category_when_to_show"
-        android:title="@string/ambient_display_category_triggers"
+        android:title="@string/ambient_display_category"
         android:order="1000">
 
         <com.android.settingslib.RestrictedSwitchPreference
@@ -66,6 +66,11 @@
             android:summary="@string/doze_always_on_summary"
             settings:controller="com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController"
             settings:userRestriction="no_ambient_display" />
+
+        <Preference
+            android:key="ambient_display_custom"
+            android:title="@string/ambient_display_custom_title"
+            android:summary="@string/ambient_display_custom_summary"  />
 
         <Preference
             android:key="ambient_display_tap"
@@ -91,6 +96,13 @@
             android:summary="@string/doze_summary"
             settings:controller="com.android.settings.display.AmbientDisplayNotificationsPreferenceController" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="ambient_other_category"
+        android:title="@string/ambient_other_category"
+        android:order="1001">
+
         <SwitchPreference
             android:key="ambient_wake_gestures"
             android:title="@string/ambient_wake_gestures_title"
@@ -115,7 +127,7 @@
     <PreferenceCategory
         android:key="security_setting_lock_screen_notif_work_header"
         android:title="@string/profile_section_header"
-        android:order="1001"
+        android:order="1002"
         settings:searchable="false">
 
         <com.android.settings.RestrictedListPreference

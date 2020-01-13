@@ -26,6 +26,7 @@ import androidx.annotation.VisibleForTesting;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController;
+import com.android.settings.display.AmbientDisplayCustomPreferenceController;
 import com.android.settings.display.AmbientDisplayNotificationsPreferenceController;
 import com.android.settings.display.AmbientWakeGesturesPreferenceController;
 import com.android.settings.display.PulseOnNewTracksPreferenceController;
@@ -115,6 +116,7 @@ public class LockscreenDashboardFragment extends DashboardFragment
                         KEY_LOCK_SCREEN_NOTIFICATON_WORK_PROFILE);
         lifecycle.addObserver(notificationController);
         controllers.add(notificationController);
+        controllers.add(new AmbientDisplayCustomPreferenceController(context));
         mOwnerInfoPreferenceController =
                 new OwnerInfoPreferenceController(context, this, lifecycle);
         controllers.add(mOwnerInfoPreferenceController);
