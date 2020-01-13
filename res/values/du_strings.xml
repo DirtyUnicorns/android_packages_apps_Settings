@@ -18,6 +18,13 @@
     <string name="du_themes_title">Themes</string>
     <string name="du_themes_summary">Life is like a box of crayons..</string>
 
+    <!-- Custom ambient display -->
+    <string name="ambient_display_category">Ambient display</string>
+    <string name="lockscreen_settings_category">General</string>
+    <string name="ambient_other_category">Other</string>
+    <string name="ambient_display_custom_title">Custom options</string>
+    <string name="ambient_display_custom_summary">Wake screen with notifications and various gestures</string>
+
     <!-- SELinux Status -->
     <string name="selinux_status">SELinux status</string>
     <string name="selinux_status_disabled">Disabled</string>
