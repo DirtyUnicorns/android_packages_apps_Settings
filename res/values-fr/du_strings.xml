@@ -29,9 +29,20 @@
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Fermer</string>
 
+    <!-- Custom ambient display -->
+    <string name="ambient_display_category">Affichage en mode Veille</string>
+    <string name="lockscreen_settings_category">Général</string>
+    <string name="ambient_other_category">Autre</string>
+    <string name="ambient_display_custom_title">Réglages personnalisées</string>
+    <string name="ambient_display_custom_summary">Réveiller l\'écran par l\'affichage des notifications ou par divers gestes</string>
+
     <!-- Back gesture settings -->
     <string name="back_gesture_settings_dialog_title">Sensibilité du retour en arrière</string>
     <string name="back_gesture_sensitivity_dialog_message">Une sensibilité plus élevée peut entrer en conflit avec les gestes d\'application impliquant les bords de l\'écran</string>
+    <string name="back_gesture_area_dead_zone_title">Zone morte arrière</string>
+    <string name="back_gesture_area_dead_zone_message">Régler la zone de l\'écran où le geste peut être déclenché, afin d\'éviter les conflits avec les gestes intégrés à l\'application</string>
+    <string name="smallest_tick_label">Plein écran</string>
+    <string name="greatest_tick_label">Moitié de l\'écran</string>
     <string name="back_gesture_arrow_title">Animation du retour en arrière</string>
     <string name="back_gesture_arrow_message">Masquer la flèche avec le geste de retour en arrière</string>
 
