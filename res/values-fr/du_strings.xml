@@ -37,7 +37,7 @@
     <string name="ambient_display_custom_summary">Réveiller l\'écran par l\'affichage des notifications ou par divers gestes</string>
 
     <!-- Back gesture settings -->
-    <string name="back_gesture_settings_dialog_title">Sensibilité du retour en arrière</string>
+    <string name="back_gesture_settings_dialog_title">Retour en arrière</string>
     <string name="back_gesture_sensitivity_dialog_message">Une sensibilité plus élevée peut entrer en conflit avec les gestes d\'application impliquant les bords de l\'écran</string>
     <string name="back_gesture_area_dead_zone_title">Zone morte arrière</string>
     <string name="back_gesture_area_dead_zone_message">Régler la zone de l\'écran où le geste peut être déclenché, afin d\'éviter les conflits avec les gestes intégrés à l\'application</string>
@@ -63,6 +63,7 @@
 
     <!-- Ambient Display wake gestures/music ticker -->
     <string name="ambient_wake_gestures_title">Affichage en mode veille</string>
+    <string name="doze_always_on_title">Affichage en mode veille</string>
     <string name="ambient_wake_gestures_summary">Les gestes effectués déclenchent l\'affichage en mode veille plutôt que l\'écran de déverrouillage classique</string>
     <string name="pulse_on_new_tracks_title">Informations de la piste musicale</string>
     <string name="pulse_on_new_tracks_summary">Afficher les informations de la piste musicale en cours d\'écoute sur l\'écran de veille. Un double appui sur les informations de la piste musicale en cours d\'écoute permet de passer à la piste musicale suivante.</string>
