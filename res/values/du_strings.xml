@@ -30,6 +30,10 @@
     <string name="ambient_display_custom_title">Custom options</string>
     <string name="ambient_display_custom_summary">Wake screen with notifications and various gestures</string>
 
+    <!-- Scramble PIN layout on lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
     <!-- SELinux Status -->
     <string name="selinux_status">SELinux status</string>
     <string name="selinux_status_disabled">Disabled</string>
