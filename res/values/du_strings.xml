@@ -35,6 +35,10 @@
     <string name="ambient_display_custom_title">Custom options</string>
     <string name="ambient_display_custom_summary">Wake screen with notifications and various gestures</string>
 
+    <!-- Scramble PIN layout on lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
     <!-- Back gesture settings -->
     <string name="back_gesture_settings_dialog_title">Back gesture settings</string>
     <string name="back_gesture_sensitivity_dialog_message">Higher sensitivity may conflict with any app gestures along the edges of the screen.</string>
