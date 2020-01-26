@@ -19,4 +19,8 @@
     <!-- Whether hardware revision should be shown or not. -->
     <bool name="config_show_hardware_revision">true</bool>
 
+    <!-- Customize your device -->
+    <string name="config_du_themes_package" translatable="false">com.dirtyunicorns.themes</string>
+    <string name="config_du_themes_class" translatable="false">com.dirtyunicorns.themes.MainActivity</string>
+
 </resources>
