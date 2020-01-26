@@ -40,6 +40,8 @@ public class WallpaperPreferenceController extends BasePreferenceController {
     private final String mWallpaperPackage;
     private final String mWallpaperClass;
     private final String mStylesAndWallpaperClass;
+    private final String mDuThemesPackage;
+    private final String mDuThemesClass;
 
     public WallpaperPreferenceController(Context context, String key) {
         super(context, key);
@@ -47,6 +49,9 @@ public class WallpaperPreferenceController extends BasePreferenceController {
         mWallpaperClass = mContext.getString(R.string.config_wallpaper_picker_class);
         mStylesAndWallpaperClass =
                 mContext.getString(R.string.config_styles_and_wallpaper_picker_class);
+        mDuThemesPackage = mContext.getString(R.string.config_du_themes_package);
+        mDuThemesClass =
+                mContext.getString(R.string.config_du_themes_class);
     }
 
     @Override
@@ -64,6 +69,10 @@ public class WallpaperPreferenceController extends BasePreferenceController {
     public ComponentName getComponentName() {
         return new ComponentName(mWallpaperPackage,
                 areStylesAvailable() ? mStylesAndWallpaperClass : mWallpaperClass);
+    }
+
+    public ComponentName getCustomComponentName() {
+        return new ComponentName(mDuThemesPackage, mDuThemesClass);
     }
 
     public String getKeywords() {

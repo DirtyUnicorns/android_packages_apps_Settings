@@ -39,7 +39,7 @@ public abstract class StyleSuggestionActivityBase extends Activity {
         final PackageManager pm = getPackageManager();
         final Intent intent = new Intent()
                 .setComponent(new WallpaperPreferenceController(this, "dummy key")
-                        .getComponentName())
+                        .getCustomComponentName())
                 .addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
 
         // passing the necessary extra to next page

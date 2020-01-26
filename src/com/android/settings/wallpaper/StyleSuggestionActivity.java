@@ -16,26 +16,33 @@
 
 package com.android.settings.wallpaper;
 
+import android.app.ActivityManager;
 import android.content.Context;
-import android.provider.Settings;
-import android.text.TextUtils;
 
 import com.android.internal.annotations.VisibleForTesting;
+
+import java.util.List;
 
 public class StyleSuggestionActivity extends StyleSuggestionActivityBase {
 
     @VisibleForTesting
     public static boolean isSuggestionComplete(Context context) {
-        if (!isWallpaperServiceEnabled(context)) {
-            return true;
-        }
+        return isThemesAppOpen(context);
+    }
 
-        final String currentTheme = Settings.Secure.getStringForUser(context.getContentResolver(),
-                Settings.Secure.THEME_CUSTOMIZATION_OVERLAY_PACKAGES, context.getUserId());
-        if (TextUtils.isEmpty(currentTheme)) {
-            // Empty value means the user has not visited the styles tab yet
-            return false;
+    public static boolean isThemesAppOpen(Context context) {
+        final ActivityManager activityManager = (ActivityManager) context.getSystemService(
+                Context.ACTIVITY_SERVICE);
+        assert activityManager != null;
+        final List<ActivityManager.RunningAppProcessInfo> procInfos = activityManager.getRunningAppProcesses();
+        if (procInfos != null) {
+            for (final ActivityManager.RunningAppProcessInfo processInfo : procInfos) {
+                if (processInfo.processName.equals("com.dirtyunicorns.themes")) {
+                    return true;
+                }
+            }
         }
-        return true;
+        return false;
     }
 }
+
