@@ -72,8 +72,8 @@ public class AutoRotatePreferenceController extends TogglePreferenceController i
 
     @Override
     public int getAvailabilityStatus() {
-        return RotationPolicy.isRotationLockToggleVisible(mContext)
-                ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return /*RotationPolicy.isRotationLockToggleVisible(mContext)
+                ? AVAILABLE :*/ UNSUPPORTED_ON_DEVICE;
     }
 
     @Override

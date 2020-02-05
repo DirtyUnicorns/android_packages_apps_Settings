@@ -84,6 +84,12 @@
         settings:controller="com.android.settings.display.AutoRotatePreferenceController" />
 
     <Preference
+        android:key="display_rotation"
+        android:fragment="com.android.settings.display.DisplayRotation"
+        android:title="@string/display_rotation_title"
+        android:summary="@string/display_rotation_subtitle" />
+
+    <Preference
         android:key="color_mode"
         android:title="@string/color_mode_title"
         android:fragment="com.android.settings.display.ColorModePreferenceFragment"

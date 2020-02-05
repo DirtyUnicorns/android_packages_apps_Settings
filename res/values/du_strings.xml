@@ -28,6 +28,17 @@
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Close</string>
 
+    <!-- Rotation -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_subtitle">Autorotation, 0, 90, 180. 270 degrees</string>
+    <string name="display_rotation_disabled">Disabled</string>
+    <string name="display_rotation_unit">degrees</string>
+    <string name="display_rotation_category_title">Rotation modes</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
+
     <!-- Custom ambient display -->
     <string name="ambient_display_category">Ambient display</string>
     <string name="lockscreen_settings_category">General</string>
