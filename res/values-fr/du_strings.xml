@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright (C) 2019 The Dirty Unicorns Project
+  Copyright (C) 2019-2020 The Dirty Unicorns Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -29,12 +29,27 @@
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Fermer</string>
 
+    <!-- Rotation -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_subtitle">Rotation automatique à 0, 90, 180, 270 degrés</string>
+    <string name="display_rotation_disabled">Désactivé</string>
+    <string name="display_rotation_unit">degrés</string>
+    <string name="display_rotation_category_title">Mode de rotation</string>
+    <string name="display_rotation_0_title">0 degrés</string>
+    <string name="display_rotation_90_title">90 degrés</string>
+    <string name="display_rotation_180_title">180 degrés</string>
+    <string name="display_rotation_270_title">270 degrés</string>
+
     <!-- Custom ambient display -->
     <string name="ambient_display_category">Affichage en mode Veille</string>
     <string name="lockscreen_settings_category">Général</string>
     <string name="ambient_other_category">Autre</string>
     <string name="ambient_display_custom_title">Réglages personnalisées</string>
     <string name="ambient_display_custom_summary">Réveiller l\'écran par l\'affichage des notifications ou par divers gestes</string>
+
+    <!-- Scramble PIN layout on lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
+    <string name="unlock_scramble_pin_layout_summary">Modifier l\'ordre des numéros du pavé numérique de manière aléatoire pour la saisie du code PIN de déverrouillage</string>
 
     <!-- Back gesture settings -->
     <string name="back_gesture_settings_dialog_title">Retour en arrière</string>
@@ -51,6 +66,10 @@
 
     <!-- Categories -->
     <string name="density_category">Densité</string>
+
+    <!-- Customize your device -->
+    <string name="custom_style_suggestion_title">Personnalisez votre appareil</string>
+    <string name="custom_style_suggestion_summary">Essayez différent thèmes, polices d\'écriture et bien plus</string>
 
     <!-- SELinux Status -->
     <string name="selinux_status">État SELinux</string>

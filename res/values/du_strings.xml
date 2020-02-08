@@ -30,7 +30,7 @@
 
     <!-- Rotation -->
     <string name="display_rotation_title">Rotation</string>
-    <string name="display_rotation_subtitle">Autorotation, 0, 90, 180. 270 degrees</string>
+    <string name="display_rotation_subtitle">Autorotation, 0, 90, 180, 270 degrees</string>
     <string name="display_rotation_disabled">Disabled</string>
     <string name="display_rotation_unit">degrees</string>
     <string name="display_rotation_category_title">Rotation modes</string>
