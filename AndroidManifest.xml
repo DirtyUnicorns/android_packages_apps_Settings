@@ -3304,5 +3304,12 @@
                        android:resource="@string/du_themes_summary"/>
         </activity>
 
+       <!-- DU Changelog -->
+        <activity android:name="com.dirtyunicorns.changelog.MainActivity"
+                  android:taskAffinity=""
+                  android:parentActivityName="Settings"
+                  android:theme="@style/ChangelogTheme"
+                  android:label="@string/du_changelog_title" />
+
     </application>
 </manifest>

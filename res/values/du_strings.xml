@@ -25,6 +25,10 @@
     <string name="du_themes_title">Themes</string>
     <string name="du_themes_summary">Life is like a box of crayons..</string>
 
+    <!-- Changelog -->
+    <string name="du_changelog_title">Changelog</string>
+    <string name="du_changelog_summary">View a summaried log of notable changes</string>
+
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Close</string>
 

@@ -21,6 +21,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_USE_AAPT2 := true
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
+LOCAL_SRC_FILES += $(call all-java-files-under, ../DU-Changelog/app/src/main/java)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../DU-Tweaks/src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../../../external/google/SettingsGoogle/src)
 
@@ -56,6 +57,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     zxing-core-1.7
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
+    packages/apps/DU-Changelog/app/src/main/res \
     packages/apps/DU-Tweaks/res \
     external/google/SettingsGoogle/res
 
@@ -67,6 +69,7 @@ LOCAL_AAPT_FLAGS := --auto-add-overlay \
     --extra-packages androidx.preference_preference \
     --extra-packages androidx.recyclerview_recyclerview \
     --extra-packages androidx.design_design \
+    --extra-packages com.dirtyunicorns.changelog \
     --extra-packages com.dirtyunicorns.tweaks
 
 ifneq ($(INCREMENTAL_BUILDS),)
