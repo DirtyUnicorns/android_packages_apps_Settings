@@ -26,6 +26,10 @@
     <string name="du_themes_title">Thèmes</string>
     <string name="du_themes_summary">Réglages esthétiques</string>
 
+    <!-- Changelog -->
+    <string name="du_changelog_title">Notes de version</string>
+    <string name="du_changelog_summary">Afficher le résumé des changements majeurs</string>
+
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Fermer</string>
 
