@@ -29,6 +29,10 @@
     <string name="du_changelog_title">Changelog</string>
     <string name="du_changelog_summary">View a summaried log of notable changes</string>
 
+    <!-- Update notifer -->
+    <string name="du_notifier_title">Update notifications</string>
+    <string name="du_notifier_summary">Get push notifications when an update is available</string>
+
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Close</string>
 
