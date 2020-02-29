@@ -43,6 +43,8 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 
+import com.dirtyunicorns.support.preferences.CustomPreferenceCategory;
+
 import com.android.settings.SettingsTutorialDialogWrapperActivity;
 import com.android.settings.R;
 import com.android.settings.dashboard.suggestions.SuggestionFeatureProvider;
@@ -135,6 +137,11 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
     private CustomPreferenceCategory gestureTweaksCategory;
     private CustomSwitchPreference gesturePillToggle;
 
+    private static final String KEY_GESTURE_NAV_TWEAKS_CAT = "gesture_nav_tweaks_category";
+    private static final String KEY_GESTURE_NAV_TWEAKS_PREF = "gesture_nav_custom_options";
+    private CustomPreferenceCategory mGestureTweaksCategory;
+    private Preference mTweaksPreference;
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -162,6 +169,17 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
         gesturePillToggle.setTitle(context.getResources().getString(R.string.navbar_gesture_pill_toggle_title));
         gesturePillToggle.setChecked(getPillToggleState(context) == 1);
         gesturePillToggle.setOnPreferenceChangeListener(this);
+
+        mGestureTweaksCategory = new CustomPreferenceCategory(context);
+        mGestureTweaksCategory.setKey(KEY_GESTURE_NAV_TWEAKS_CAT);
+        mGestureTweaksCategory.setTitle(R.string.navbar_gesture_tweaks_cat_title);
+
+        mTweaksPreference = new Preference(context);
+        mTweaksPreference.setIconSpaceReserved(true);
+        mTweaksPreference.setTitle(R.string.navbar_gesture_tweaks_pref_title);
+        mTweaksPreference.setSummary(R.string.navbar_gesture_tweaks_pref_summary);
+        mTweaksPreference.setKey(KEY_GESTURE_NAV_TWEAKS_PREF);
+        mTweaksPreference.setFragment("com.android.settings.gestures.GestureTweaksSettings");
     }
 
     @Override
@@ -199,6 +217,15 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
         } else {
             screen.removePreference(gestureTweaksCategory);
             gestureTweaksCategory.removePreference(gesturePillToggle);
+        }
+
+        if (getCurrentSystemNavigationMode(getContext()) == KEY_SYSTEM_NAV_GESTURAL) {
+            screen.addPreference(mGestureTweaksCategory);
+            mGestureTweaksCategory.addPreference(mTweaksPreference);
+            //mTweaksPreference.setEnabled(true);
+        } else {
+            mGestureTweaksCategory.removePreference(mTweaksPreference);
+            screen.removePreference(mGestureTweaksCategory);
         }
 
         mayCheckOnlyRadioButton();
