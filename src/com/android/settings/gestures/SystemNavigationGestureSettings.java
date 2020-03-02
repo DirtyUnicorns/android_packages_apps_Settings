@@ -43,8 +43,6 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 
-import com.dirtyunicorns.support.preferences.CustomPreferenceCategory;
-
 import com.android.settings.SettingsTutorialDialogWrapperActivity;
 import com.android.settings.R;
 import com.android.settings.dashboard.suggestions.SuggestionFeatureProvider;
@@ -126,7 +124,6 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
     };
 
     static final String NAV_BAR_MODE_GESTURE_MODE_TWEAKS_KEY = "gesture_mode_tweaks";
-    static final String KEY_GESTURE_NAV_TWEAKS_PREF = "gesture_nav_custom_options";
 
     @VisibleForTesting
     static int BACK_GESTURE_INSET_DEFAULT_OVERLAY = 1;
@@ -137,8 +134,6 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
 
     private CustomPreferenceCategory mGestureTweaksCategory;
     private CustomSwitchPreference mGesturePillToggle;
-
-    private Preference mTweaksPreference;
 
     @Override
     public void onAttach(Context context) {
@@ -167,13 +162,6 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
         mGesturePillToggle.setTitle(context.getResources().getString(R.string.navbar_gesture_pill_toggle_title));
         mGesturePillToggle.setChecked(getPillToggleState(context) == 1);
         mGesturePillToggle.setOnPreferenceChangeListener(this);
-
-        mTweaksPreference = new Preference(context);
-        mTweaksPreference.setIconSpaceReserved(true);
-        mTweaksPreference.setTitle(R.string.navbar_gesture_tweaks_pref_title);
-        mTweaksPreference.setSummary(R.string.navbar_gesture_tweaks_pref_summary);
-        mTweaksPreference.setKey(KEY_GESTURE_NAV_TWEAKS_PREF);
-        mTweaksPreference.setFragment("com.android.settings.gestures.GestureTweaksSettings");
     }
 
     @Override
@@ -208,11 +196,9 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment
             mGesturePillToggle.setSummary(getContext().getResources().getString(R.string.navbar_gesture_pill_toggle_summary));
             screen.addPreference(mGestureTweaksCategory);
             mGestureTweaksCategory.addPreference(mGesturePillToggle);
-            mGestureTweaksCategory.addPreference(mTweaksPreference);
         } else {
             screen.removePreference(mGestureTweaksCategory);
             mGestureTweaksCategory.removePreference(mGesturePillToggle);
-            mGestureTweaksCategory.removePreference(mTweaksPreference);
         }
 
         mayCheckOnlyRadioButton();
