@@ -42,6 +42,7 @@ import com.android.internal.util.UserIcons;
 
 import com.android.settings.R;
 import com.android.settings.accounts.AvatarViewMixin;
+import com.android.settings.core.HideNonSystemOverlayMixin;
 import com.android.settings.homepage.contextualcards.ContextualCardsFragment;
 import com.android.settings.overlay.FeatureFactory;
 
@@ -83,7 +84,8 @@ public class SettingsHomepageActivity extends FragmentActivity {
                 startActivity(intent);
             }
         });
-        //getLifecycle().addObserver(avatarViewMixin);
+        //getLifecycle().addObserver(new AvatarViewMixin(this, avatarView));
+        //getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
 
         if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
             // Only allow contextual feature on high ram devices.
