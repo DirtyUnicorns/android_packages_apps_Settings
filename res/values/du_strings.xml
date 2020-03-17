@@ -104,4 +104,7 @@
     <!-- Vibrate on plug -->
     <string name="vibration_on_charge_state_changed_title">Vibrate on USB plug</string>
 
+    <!-- Notification log -->
+    <string name="notification_log_summary">Show notifications history log</string>
+
 </resources>
