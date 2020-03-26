@@ -30,6 +30,10 @@
     <string name="du_changelog_title">Notes de version</string>
     <string name="du_changelog_summary">Afficher le résumé des changements majeurs</string>
 
+    <!-- Update notifer -->
+    <string name="du_notifier_title">Notifications de mise à jour</string>
+    <string name="du_notifier_summary">Afficher une notification lorsqu\'une mise à jour est disponible</string>
+
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Fermer</string>
 
@@ -68,6 +72,10 @@
     <string name="fp_swipe_to_dismiss_notifications_title">Ignorer les notifications</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Glisser vers la gauche ou la droite sur le capteur d\'empreintes digitales pour ignorer les notifications</string>
 
+    <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Gestes en plein écran</string>
+    <string name="navbar_gesture_pill_toggle_summary">Masquer la barre de navigation et l\'icône</string>
+
     <!-- Categories -->
     <string name="density_category">Densité</string>
 
@@ -98,5 +106,8 @@
 
     <!-- Vibrate on plug -->
     <string name="vibration_on_charge_state_changed_title">Vibrer au branchement</string>
+
+    <!-- Notification log -->
+    <string name="notification_log_summary">Afficher l\'historique des notifications</string>
 
 </resources>
