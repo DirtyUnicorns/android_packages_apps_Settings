@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+    <!-- DU version in About phone -->
+    <string name="rom_version_title">Версия DU</string>
+    <!-- Themes -->
+    <string name="du_themes_title">Темы</string>
+    <string name="du_themes_summary">Жизнь похожа на коробку с карандашами..</string>
+    <!-- Changelog -->
+    <string name="du_changelog_title">Изменения</string>
+    <string name="du_changelog_summary">Просмотр суммарного журнала заметных изменений</string>
+    <!-- Update notifer -->
+    <string name="du_notifier_title">Уведомления об обновлениях</string>
+    <string name="du_notifier_summary">Получать уведомления при наличии обновления</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Закрыть</string>
+    <!-- Rotation -->
+    <string name="display_rotation_title">Поворот экрана</string>
+    <string name="display_rotation_subtitle">Авторот, 0, 90, 180, 270 градусов</string>
+    <string name="display_rotation_disabled">Отключено</string>
+    <string name="display_rotation_unit">градусов</string>
+    <string name="display_rotation_category_title">Режимы поворота</string>
+    <string name="display_rotation_0_title">0 градусов</string>
+    <string name="display_rotation_90_title">90 градусов</string>
+    <string name="display_rotation_180_title">180 градусов</string>
+    <string name="display_rotation_270_title">270 градусов</string>
+    <!-- Custom ambient display -->
+    <string name="ambient_display_category">Автоматическое включение экрана</string>
+    <string name="lockscreen_settings_category">Общее</string>
+    <string name="ambient_other_category">Другое</string>
+    <string name="ambient_display_custom_title">Собственные настройки</string>
+    <string name="ambient_display_custom_summary">Включать экран с уведомлениями и различными жестами</string>
+    <!-- Scramble PIN layout on lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Перемешать кнопки</string>
+    <string name="unlock_scramble_pin_layout_summary">Перемешивать кнопки ввода PIN на экране блокировки</string>
+    <!-- Back gesture settings -->
+    <string name="back_gesture_settings_dialog_title">Настройка жеста назад</string>
+    <string name="back_gesture_sensitivity_dialog_message">При высокой чувствительности могут не работать жесты по краям экрана в приложении.</string>
+    <string name="back_gesture_area_dead_zone_title">Мертвая зона жеста назад</string>
+    <string name="back_gesture_area_dead_zone_message">Установить область экрана, где можно вызвать свайп, чтобы избежать конфликтов с жестом внутри приложений.</string>
+    <string name="smallest_tick_label">Полный экран</string>
+    <string name="greatest_tick_label">Половина экрана</string>
+    <string name="back_gesture_arrow_title">Анимация стрелки</string>
+    <string name="back_gesture_arrow_message">Скрыть стрелку с жестом назад</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Проведите пальцем по сканеру влево или вправо, чтобы очистить уведомления</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Чтобы очистить уведомления, проведите пальцем влево или право по сканеру отпечатка пальца.</string>
+    <!-- Categories -->
+    <string name="density_category">Настройки плотности</string>
+    <!-- Customize your device -->
+    <string name="custom_style_suggestion_title">Настройка устройства</string>
+    <string name="custom_style_suggestion_summary">Попробуйте различные темы, шрифты и многое другое</string>
+    <!-- SELinux Status -->
+    <string name="selinux_status">Статус SELinux</string>
+    <string name="selinux_status_disabled">Отключено</string>
+    <string name="selinux_status_permissive">Разрешающий</string>
+    <string name="selinux_status_enforcing">Блокировка</string>
+    <!-- Enable/Disable Screenshot sound -->
+    <string name="screenshot_sound_title">Звук скриншота</string>
+    <!-- Ambient Display wake gestures/music ticker -->
+    <string name="ambient_wake_gestures_title">Жесты Ambient Display</string>
+    <string name="ambient_wake_gestures_summary">Показывать Ambient Display вместо экрана блокировки с жестами пробуждения</string>
+    <string name="pulse_on_new_tracks_title">Функция «Сейчас играет»</string>
+    <string name="pulse_on_new_tracks_summary">Показывать Ambient Display при воспроизведении нового трека. Дважды нажмите на информацию трека, чтобы перейти к следующему треку.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Отображать Ambient Display при воспроизведении нового трека</string>
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Включение при зарядке</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Включать экран при подключении или отключении источника питания</string>
+    <!-- Vibrate on plug -->
+    <string name="vibration_on_charge_state_changed_title">Вибрация при подкл. USB</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Показать журнал истории уведомлений</string>
+</resources>

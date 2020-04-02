@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+    <!-- DU version in About phone -->
+    <string name="rom_version_title">DU version</string>
+    <!-- Themes -->
+    <string name="du_themes_title">Themes</string>
+    <string name="du_themes_summary">Life is like a box of crayons..</string>
+    <!-- Changelog -->
+    <string name="du_changelog_title">Changelog</string>
+    <string name="du_changelog_summary">View a summaried log of notable changes</string>
+    <!-- Update notifer -->
+    <string name="du_notifier_title">Update notifications</string>
+    <string name="du_notifier_summary">Get push notifications when an update is available</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Close</string>
+    <!-- Rotation -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_subtitle">Autorotation, 0, 90, 180, 270 degrees</string>
+    <string name="display_rotation_disabled">Disabled</string>
+    <string name="display_rotation_unit">degrees</string>
+    <string name="display_rotation_category_title">Rotation modes</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
+    <!-- Custom ambient display -->
+    <string name="ambient_display_category">Ambient display</string>
+    <string name="lockscreen_settings_category">General</string>
+    <string name="ambient_other_category">Other</string>
+    <string name="ambient_display_custom_title">Custom options</string>
+    <string name="ambient_display_custom_summary">Wake screen with notifications and various gestures</string>
+    <!-- Scramble PIN layout on lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <!-- Back gesture settings -->
+    <string name="back_gesture_settings_dialog_title">Back gesture settings</string>
+    <string name="back_gesture_sensitivity_dialog_message">Higher sensitivity may conflict with any app gestures along the edges of the screen.</string>
+    <string name="back_gesture_area_dead_zone_title">Back area dead zone</string>
+    <string name="back_gesture_area_dead_zone_message">Set the area of the screen where the swipe can be triggered, to avoid conflicts with in-app gestures.</string>
+    <string name="smallest_tick_label">Full screen</string>
+    <string name="greatest_tick_label">Half screen</string>
+    <string name="back_gesture_arrow_title">Back arrow animation</string>
+    <string name="back_gesture_arrow_message">Hide arrow with back gesture</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
+    <!-- Categories -->
+    <string name="density_category">Density options</string>
+    <!-- Customize your device -->
+    <string name="custom_style_suggestion_title">Customize your device</string>
+    <string name="custom_style_suggestion_summary">Try different themes, fonts, and more</string>
+    <!-- SELinux Status -->
+    <string name="selinux_status">SELinux status</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    <!-- Enable/Disable Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sounds</string>
+    <!-- Ambient Display wake gestures/music ticker -->
+    <string name="ambient_wake_gestures_title">Ambient wake gestures</string>
+    <string name="ambient_wake_gestures_summary">Show Ambient Display instead of normal lockscreen on wake gestures</string>
+    <string name="pulse_on_new_tracks_title">Ambient music ticker</string>
+    <string name="pulse_on_new_tracks_summary">Show Ambient Display when a new music track is played. Double tap on track info to skip to next track.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Show Ambient Display when a new music track is played</string>
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+    <!-- Vibrate on plug -->
+    <string name="vibration_on_charge_state_changed_title">Vibrate on USB plug</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Show notifications history log</string>
+</resources>

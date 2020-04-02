@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+    <!-- DU version in About phone -->
+    <string name="rom_version_title">Verze DU</string>
+    <!-- Themes -->
+    <string name="du_themes_title">Motivy</string>
+    <string name="du_themes_summary">Život je jako krabička pastelek..</string>
+    <!-- Changelog -->
+    <string name="du_changelog_title">Seznam změn</string>
+    <string name="du_changelog_summary">Zobrazit souhrnný protokol významných změn</string>
+    <!-- Update notifer -->
+    <string name="du_notifier_title">Oznámení o aktualizaci</string>
+    <string name="du_notifier_summary">Obdržet oznámení, pokud je k dispozici aktualizace</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Zavřít </string>
+    <!-- Rotation -->
+    <string name="display_rotation_title">Otáčení</string>
+    <string name="display_rotation_subtitle">Automatické otáčení, 0°, 90°, 180°, 270°</string>
+    <string name="display_rotation_disabled">Vypnuto</string>
+    <string name="display_rotation_unit">stupně</string>
+    <string name="display_rotation_category_title">Režimy otáčení</string>
+    <string name="display_rotation_0_title">0°</string>
+    <string name="display_rotation_90_title">90°</string>
+    <string name="display_rotation_180_title">180°</string>
+    <string name="display_rotation_270_title">270°</string>
+    <!-- Custom ambient display -->
+    <string name="ambient_display_category">Ambientní displej</string>
+    <string name="lockscreen_settings_category">Obecné</string>
+    <string name="ambient_other_category">Další</string>
+    <string name="ambient_display_custom_title">Vlastní možnosti</string>
+    <string name="ambient_display_custom_summary">Probudit obrazovku pomocí oznámení a různých gest</string>
+    <!-- Scramble PIN layout on lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Přeházet rozložení</string>
+    <string name="unlock_scramble_pin_layout_summary">Přeházet rozložení pro zadání PINu při odemykání zařízení</string>
+    <!-- Back gesture settings -->
+    <string name="back_gesture_settings_dialog_title">Nastavení gesta Zpět</string>
+    <string name="back_gesture_sensitivity_dialog_message">Vyšší citlivost může narušovat gesta v aplikacích prováděná u okrajů obrazovky.</string>
+    <string name="back_gesture_area_dead_zone_title">Zadní část mrtvé zóny</string>
+    <string name="back_gesture_area_dead_zone_message">Nastavte oblast obrazovky, na které lze spustit přejetí prstem, abyste předešli konfliktům s gesty v aplikaci.</string>
+    <string name="smallest_tick_label">Celá obrazovka</string>
+    <string name="greatest_tick_label">Polovina obrazovky</string>
+    <string name="back_gesture_arrow_title">Animace šipky Zpět</string>
+    <string name="back_gesture_arrow_message">Skrýt šipku s gestem Zpět</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Pro odmítnutí oznámení přejeďte prstem vlevo nebo vpravo přes snímač otisků prstů</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Chcete-li zrušit oznámení, přejeďte prstem vlevo nebo vpravo pře snímač otisků prstů na zadní straně telefonu.</string>
+    <!-- Categories -->
+    <string name="density_category">Možnosti hustoty zobrazení</string>
+    <!-- Customize your device -->
+    <string name="custom_style_suggestion_title">Přizpůsobit zařízení</string>
+    <string name="custom_style_suggestion_summary">Vyzkoušejte různé motivy, písma a další</string>
+    <!-- SELinux Status -->
+    <string name="selinux_status">Stav zabezpečení SELinux</string>
+    <string name="selinux_status_disabled">Vypnuto</string>
+    <string name="selinux_status_permissive">Mírný</string>
+    <string name="selinux_status_enforcing">Vynucený</string>
+    <!-- Enable/Disable Screenshot sound -->
+    <string name="screenshot_sound_title">Zvuky při snímku obrazovky</string>
+    <!-- Ambient Display wake gestures/music ticker -->
+    <string name="ambient_wake_gestures_title">Gesta pro probuzení</string>
+    <string name="ambient_wake_gestures_summary">Zobrazit Ambientní displej namísto normální zamykací obrazovky při probuzení</string>
+    <string name="pulse_on_new_tracks_title">Rozpoznávání okolní hudby</string>
+    <string name="pulse_on_new_tracks_summary">Zobrazí Ambientní displej při přehrávání nové hudební skladby. Dvojím poklepáním na informaci o skladbě přeskočíte na další skladbu.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Zobrazit Ambientní displej po spuštění nové hudební skladby</string>
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Probudit při připojení</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Zapnout obrazovku při připojení nebo odpojení zdroje napájení</string>
+    <!-- Vibrate on plug -->
+    <string name="vibration_on_charge_state_changed_title">Vibrovat při připojení USB</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Zobrazit protokol historie oznámení</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+    <!-- DU version in About phone -->
+    <string name="rom_version_title">Versione DU</string>
+    <!-- Themes -->
+    <string name="du_themes_title">Temi</string>
+    <string name="du_themes_summary">La vita è come una scatola di pastelli..</string>
+    <!-- Changelog -->
+    <string name="du_changelog_title">Elenco modifiche DU</string>
+    <string name="du_changelog_summary">Visualizza un log riepilogato di modifiche significative</string>
+    <!-- Update notifer -->
+    <string name="du_notifier_title">Notifiche di aggiornamento</string>
+    <string name="du_notifier_summary">Ricevi le notifiche quando un nuovo aggiornamento è disponibile</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Chiudi</string>
+    <!-- Rotation -->
+    <string name="display_rotation_title">Rotazione</string>
+    <string name="display_rotation_subtitle">Rotazione automatica, 0, 90, 180, 270 gradi</string>
+    <string name="display_rotation_disabled">Disattivata</string>
+    <string name="display_rotation_unit">gradi</string>
+    <string name="display_rotation_category_title">Modalità rotazione schermo</string>
+    <string name="display_rotation_0_title">0 gradi</string>
+    <string name="display_rotation_90_title">90 gradi</string>
+    <string name="display_rotation_180_title">180 gradi</string>
+    <string name="display_rotation_270_title">270 gradi</string>
+    <!-- Custom ambient display -->
+    <string name="ambient_display_category">Display Ambient</string>
+    <string name="lockscreen_settings_category">Generali</string>
+    <string name="ambient_other_category">Altro</string>
+    <string name="ambient_display_custom_title">Opzioni personalizzate</string>
+    <string name="ambient_display_custom_summary">Riattiva lo schermo con notifiche e gesti vari</string>
+    <!-- Scramble PIN layout on lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Disposizione casuale</string>
+    <string name="unlock_scramble_pin_layout_summary">Mescola la disposizione del tastierino PIN per lo sblocco del dispositivo</string>
+    <!-- Back gesture settings -->
+    <string name="back_gesture_settings_dialog_title">Sensibilità e zona morta indietro</string>
+    <string name="back_gesture_sensitivity_dialog_message">Una maggiore sensibilità potrebbe essere in conflitto con qualsiasi gesto dell\'app lungo i bordi dello schermo.</string>
+    <string name="back_gesture_area_dead_zone_title">Zona morta indietro</string>
+    <string name="back_gesture_area_dead_zone_message">Imposta l\'area dello schermo in cui lo scorrimento può essere attivato, per evitare conflitti con i gesti in-app.</string>
+    <string name="smallest_tick_label">Schermo intero</string>
+    <string name="greatest_tick_label">Metà schermo</string>
+    <string name="back_gesture_arrow_title">Animazione freccia indietro</string>
+    <string name="back_gesture_arrow_message">Nascondi la freccia con il gesto indietro</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Scorri a sinistra o destra sul sensore d\'impronte per rimuovere le notifiche</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Per rimuovere le notifiche, scorri a sinistra o destra sul sensore d\'impronte posto sul retro del tuo dispositivo.</string>
+    <!-- Categories -->
+    <string name="density_category">Opzioni densità</string>
+    <!-- Customize your device -->
+    <string name="custom_style_suggestion_title">Personalizza il tuo dispositivo</string>
+    <string name="custom_style_suggestion_summary">Prova diversi temi, font e altro</string>
+    <!-- SELinux Status -->
+    <string name="selinux_status">Stato di SELinux</string>
+    <string name="selinux_status_disabled">Disabilitato</string>
+    <string name="selinux_status_permissive">Permissivo</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    <!-- Enable/Disable Screenshot sound -->
+    <string name="screenshot_sound_title">Suono screenshot</string>
+    <!-- Ambient Display wake gestures/music ticker -->
+    <string name="ambient_wake_gestures_title">Risveglia su Ambient</string>
+    <string name="ambient_wake_gestures_summary">Mostra l\'Ambient display invece della schermata di blocco con i gesti per riaccendere lo schermo</string>
+    <string name="pulse_on_new_tracks_title">Ambient music ticker</string>
+    <string name="pulse_on_new_tracks_summary">Mostra l\'Ambient Display quando una nuova traccia viene riprodotta. Doppio tap sulla traccia per passare alla successiva.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Mostra Ambient Display quando viene riprodotto un nuovo brano</string>
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Risveglia al collegamento</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Accendi lo schermo quando si collega o si scollega il caricatore</string>
+    <!-- Vibrate on plug -->
+    <string name="vibration_on_charge_state_changed_title">Vibra al collegamento USB</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Visualizza la cronologia delle notifiche</string>
+</resources>

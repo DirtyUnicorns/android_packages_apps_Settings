@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+    <!-- DU version in About phone -->
+    <string name="rom_version_title">DU sürümü</string>
+    <!-- Themes -->
+    <string name="du_themes_title">Temalar</string>
+    <string name="du_themes_summary">Hayat bir kutu boya kalemi gibidir..</string>
+    <!-- Changelog -->
+    <string name="du_changelog_title">Değişiklikler</string>
+    <string name="du_changelog_summary">Dikkate değer değişikliklerin özetlenmiş bir günlüğünü görüntüle</string>
+    <!-- Update notifer -->
+    <string name="du_notifier_title">Güncelleme bildirimleri</string>
+    <string name="du_notifier_summary">Bir güncelleme mevcut olduğunda bildirim alın</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Kapat</string>
+    <!-- Rotation -->
+    <string name="display_rotation_title">Döndürme</string>
+    <string name="display_rotation_subtitle">Otomatik döndürme, 0, 90, 180, 270 derece</string>
+    <string name="display_rotation_disabled">Devre dışı</string>
+    <string name="display_rotation_unit">derece</string>
+    <string name="display_rotation_category_title">Döndürme modları</string>
+    <string name="display_rotation_0_title">0 derece</string>
+    <string name="display_rotation_90_title">90 derece</string>
+    <string name="display_rotation_180_title">180 derece</string>
+    <string name="display_rotation_270_title">270 derece</string>
+    <!-- Custom ambient display -->
+    <string name="ambient_display_category">Ortam ekranı</string>
+    <string name="lockscreen_settings_category">Genel</string>
+    <string name="ambient_other_category">Diğer</string>
+    <string name="ambient_display_custom_title">Özel seçenekler</string>
+    <string name="ambient_display_custom_summary">Bildirimler ve çeşitli hareketlerle ekranı uyandır</string>
+    <!-- Scramble PIN layout on lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Düzeni karıştır</string>
+    <string name="unlock_scramble_pin_layout_summary">Cihazın kilidini açarken PIN düzenini karıştırır</string>
+    <!-- Back gesture settings -->
+    <string name="back_gesture_settings_dialog_title">Geri hareketi ayarları</string>
+    <string name="back_gesture_sensitivity_dialog_message">Daha yüksek hassasiyet, ekranın kenarlarındaki uygulama hareketleriyle çakışabilir.</string>
+    <string name="back_gesture_area_dead_zone_title">Arka alan ölü bölgesi</string>
+    <string name="back_gesture_area_dead_zone_message">Uygulama içi hareketlerle çakışmaları önlemek için ekranın hızlıca kaydırmanın tetiklenebileceği alanını ayarlayın.</string>
+    <string name="smallest_tick_label">Tam ekran</string>
+    <string name="greatest_tick_label">Yarım ekran</string>
+    <string name="back_gesture_arrow_title">Back arrow animation</string>
+    <string name="back_gesture_arrow_message">Geri hareketle oku gizle</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Bildirimleri kapatmak için parmak izini sola veya sağa kaydırın</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Bildirimlerinizi kapatmak için telefonunuzun arkasındaki parmak izi sensöründe sola veya sağa kaydırın.</string>
+    <!-- Categories -->
+    <string name="density_category">Yoğunluk seçenekleri</string>
+    <!-- Customize your device -->
+    <string name="custom_style_suggestion_title">Cihazınızı özelleştirin</string>
+    <string name="custom_style_suggestion_summary">Farklı temaları, yazı tiplerini ve daha fazlasını deneyin</string>
+    <!-- SELinux Status -->
+    <string name="selinux_status">SELinux durumu</string>
+    <string name="selinux_status_disabled">Devre dışı</string>
+    <string name="selinux_status_permissive">Serbest</string>
+    <string name="selinux_status_enforcing">Zorunlu</string>
+    <!-- Enable/Disable Screenshot sound -->
+    <string name="screenshot_sound_title">Ekran görüntüsü sesleri</string>
+    <!-- Ambient Display wake gestures/music ticker -->
+    <string name="ambient_wake_gestures_title">Ortam ekranı uyandırma hareketleri</string>
+    <string name="ambient_wake_gestures_summary">Uyandırma hareketlerinde normal kilit ekranı yerine Ortam Ekranını göster</string>
+    <string name="pulse_on_new_tracks_title">Ortam müzik bilgisi</string>
+    <string name="pulse_on_new_tracks_summary">Yeni bir müzik parçası çalındığında Ortam Ekranını göster. Sonraki parçaya atlamak için parça bilgisine iki kez dokunun.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Yeni bir müzik parçası çalındığında Ortam Ekranını göster</string>
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Takıp çıkarmada uyan</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Bir güç kaynağına takıldığında ya da çıkarıldığında ekranı aç</string>
+    <!-- Vibrate on plug -->
+    <string name="vibration_on_charge_state_changed_title">USB\'ye takıldığında titret</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Bildirimler geçmişi günlüğünü göster</string>
+</resources>

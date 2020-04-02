@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+    <!-- DU version in About phone -->
+    <string name="rom_version_title">Versão Dirty Unicorns</string>
+    <!-- Themes -->
+    <string name="du_themes_title">Temas</string>
+    <string name="du_themes_summary">A vida é como uma caixa de gizes de cera..</string>
+    <!-- Changelog -->
+    <string name="du_changelog_title">Log de Alterações DU</string>
+    <string name="du_changelog_summary">Visualizar um registro resumido de alterações notáveis</string>
+    <!-- Update notifer -->
+    <string name="du_notifier_title">Notificações de atualização</string>
+    <string name="du_notifier_summary">Receber notificações push quando uma atualização estiver disponível</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Fechar</string>
+    <!-- Rotation -->
+    <string name="display_rotation_title">Rotação</string>
+    <string name="display_rotation_subtitle">Autorotação, 0, 90, 180, 270 graus</string>
+    <string name="display_rotation_disabled">Desativar</string>
+    <string name="display_rotation_unit">Graus</string>
+    <string name="display_rotation_category_title">Modos de rotação</string>
+    <string name="display_rotation_0_title">0 graus</string>
+    <string name="display_rotation_90_title">90 graus</string>
+    <string name="display_rotation_180_title">180 graus</string>
+    <string name="display_rotation_270_title">270 graus</string>
+    <!-- Custom ambient display -->
+    <string name="ambient_display_category">Tela Ambiente</string>
+    <string name="lockscreen_settings_category">Geral</string>
+    <string name="ambient_other_category">Outro</string>
+    <string name="ambient_display_custom_title">Opções personalizadas</string>
+    <string name="ambient_display_custom_summary">Ligar a tela com notificações e vários gestos</string>
+    <!-- Scramble PIN layout on lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Disposição aleatória</string>
+    <string name="unlock_scramble_pin_layout_summary">Embaralhar PIN ao desbloquear o dispositivo</string>
+    <!-- Back gesture settings -->
+    <string name="back_gesture_settings_dialog_title">Configurações do gesto voltar</string>
+    <string name="back_gesture_sensitivity_dialog_message">Uma sensibilidade maior pode entrar em conflito com qualquer gesto de app ao longo das bordas da tela.</string>
+    <string name="back_gesture_area_dead_zone_title">Zona traseira morta</string>
+    <string name="back_gesture_area_dead_zone_message">Defina a área da tela onde o deslize pode ser acionado, para evitar conflitos com gestos no aplicativo.</string>
+    <string name="smallest_tick_label">Tela Cheia</string>
+    <string name="greatest_tick_label">Meia tela</string>
+    <string name="back_gesture_arrow_title">Animação de seta traseira</string>
+    <string name="back_gesture_arrow_message">Esconder seta com o gesto voltar</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Deslize a impressão digital para a esquerda ou para a direita para dispensar as notificações</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Para dispensar as notificações, deslize para a esquerda ou direita no sensor de digitais na parte de trás de seu telefone.</string>
+    <!-- Categories -->
+    <string name="density_category">Opções de densidade</string>
+    <!-- Customize your device -->
+    <string name="custom_style_suggestion_title">Personalize seu dispositivo</string>
+    <string name="custom_style_suggestion_summary">Tente diferentes temas, fontes e muito mais</string>
+    <!-- SELinux Status -->
+    <string name="selinux_status">Status do SELinux</string>
+    <string name="selinux_status_disabled">Desativado</string>
+    <string name="selinux_status_permissive">Permissivo</string>
+    <string name="selinux_status_enforcing">Impondo</string>
+    <!-- Enable/Disable Screenshot sound -->
+    <string name="screenshot_sound_title">Som de captura de tela</string>
+    <!-- Ambient Display wake gestures/music ticker -->
+    <string name="ambient_wake_gestures_title">Gestos da tela ambiente</string>
+    <string name="ambient_wake_gestures_summary">Mostrar a tela ambiente ao invés da tela de bloqueio quando usar gestos de despertar</string>
+    <string name="pulse_on_new_tracks_title">Ícone de música ambiente</string>
+    <string name="pulse_on_new_tracks_summary">Mostrar a tela ambiente quando uma nova música for tocada. Toque duas vezes na informação da música para pular para a próxima faixa.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Mostrar a tela ambiente ao reproduzir uma nova música</string>
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Ligar tela ao conectar</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Ligar a tela ao conectar ou desconectar o carregador</string>
+    <!-- Vibrate on plug -->
+    <string name="vibration_on_charge_state_changed_title">Vibrar ao plugar</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Mostrar histórico de notificações</string>
+</resources>

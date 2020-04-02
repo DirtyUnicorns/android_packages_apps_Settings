@@ -1,42 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  Copyright (C) 2019-2020 The Dirty Unicorns Project
+<!-- Copyright (C) 2007 The Android Open Source Project
 
-  This program is free software: you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation, either version 2 of the License, or
-  (at your option) any later version.
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
 
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
+          http://www.apache.org/licenses/LICENSE-2.0
 
-  You should have received a copy of the GNU General Public License
-  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+    <!-- DU version in About phone -->
     <string name="rom_version_title">Version de DU</string>
-
-    <!-- Radio Info screen. Label for a status item.  Used for diagnostic info screens, DO NOT TRANSLATE. -->
-    <string name="radio_info_imsi_label">IMSI :</string>
-
     <!-- Themes -->
     <string name="du_themes_title">Thèmes</string>
     <string name="du_themes_summary">Réglages esthétiques</string>
-
     <!-- Changelog -->
     <string name="du_changelog_title">Notes de version</string>
     <string name="du_changelog_summary">Afficher le résumé des changements majeurs</string>
-
     <!-- Update notifer -->
-    <string name="du_notifier_title">Notifications de mise à jour</string>
-    <string name="du_notifier_summary">Afficher une notification lorsqu\'une mise à jour est disponible</string>
-
+    <string name="du_notifier_title">Update notifications</string>
+    <string name="du_notifier_summary">Get push notifications when an update is available</string>
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Fermer</string>
-
     <!-- Rotation -->
     <string name="display_rotation_title">Rotation</string>
     <string name="display_rotation_subtitle">Rotation automatique à 0, 90, 180, 270 degrés</string>
@@ -47,18 +39,15 @@
     <string name="display_rotation_90_title">90 degrés</string>
     <string name="display_rotation_180_title">180 degrés</string>
     <string name="display_rotation_270_title">270 degrés</string>
-
     <!-- Custom ambient display -->
     <string name="ambient_display_category">Affichage en mode Veille</string>
     <string name="lockscreen_settings_category">Général</string>
     <string name="ambient_other_category">Autre</string>
     <string name="ambient_display_custom_title">Réglages personnalisées</string>
     <string name="ambient_display_custom_summary">Réveiller l\'écran par l\'affichage des notifications ou par divers gestes</string>
-
     <!-- Scramble PIN layout on lockscreen -->
     <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
     <string name="unlock_scramble_pin_layout_summary">Modifier l\'ordre des numéros du pavé numérique de manière aléatoire pour la saisie du code PIN de déverrouillage</string>
-
     <!-- Back gesture settings -->
     <string name="back_gesture_settings_dialog_title">Retour en arrière</string>
     <string name="back_gesture_sensitivity_dialog_message">Une sensibilité plus élevée peut entrer en conflit avec les gestes d\'application impliquant les bords de l\'écran</string>
@@ -68,46 +57,31 @@
     <string name="greatest_tick_label">Moitié de l\'écran</string>
     <string name="back_gesture_arrow_title">Animation du retour en arrière</string>
     <string name="back_gesture_arrow_message">Masquer la flèche avec le geste de retour en arrière</string>
-
     <string name="fp_swipe_to_dismiss_notifications_title">Ignorer les notifications</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">Glisser vers la gauche ou la droite sur le capteur d\'empreintes digitales pour ignorer les notifications</string>
-
-    <!-- Full screen gestures -->
-    <string name="navbar_gesture_pill_toggle_title">Gestes en plein écran</string>
-    <string name="navbar_gesture_pill_toggle_summary">Masquer la barre de navigation et l\'icône</string>
-
     <!-- Categories -->
     <string name="density_category">Densité</string>
-
     <!-- Customize your device -->
     <string name="custom_style_suggestion_title">Personnalisez votre appareil</string>
     <string name="custom_style_suggestion_summary">Essayez différent thèmes, polices d\'écriture et bien plus</string>
-
     <!-- SELinux Status -->
     <string name="selinux_status">État SELinux</string>
     <string name="selinux_status_disabled">Désactivé</string>
     <string name="selinux_status_permissive">Permissif</string>
     <string name="selinux_status_enforcing">Application</string>
-
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">Sons de capture d\'écran</string>
-
     <!-- Ambient Display wake gestures/music ticker -->
     <string name="ambient_wake_gestures_title">Affichage en mode veille</string>
-    <string name="doze_always_on_title">Affichage en mode veille</string>
     <string name="ambient_wake_gestures_summary">Les gestes effectués déclenchent l\'affichage en mode veille plutôt que l\'écran de déverrouillage classique</string>
     <string name="pulse_on_new_tracks_title">Informations de la piste musicale</string>
     <string name="pulse_on_new_tracks_summary">Afficher les informations de la piste musicale en cours d\'écoute sur l\'écran de veille. Un double appui sur les informations de la piste musicale en cours d\'écoute permet de passer à la piste musicale suivante.</string>
     <string name="pulse_on_new_tracks_soli_summary">Informations de la piste musicale</string>
-
     <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
     <string name="wake_when_plugged_or_unplugged_summary">Allumer l\'écran lorsque le chargeur est branché ou débranché</string>
-
     <!-- Vibrate on plug -->
     <string name="vibration_on_charge_state_changed_title">Vibrer au branchement</string>
-
     <!-- Notification log -->
-    <string name="notification_log_summary">Afficher l\'historique des notifications</string>
-
+    <string name="notification_log_summary">Show notifications history log</string>
 </resources>
