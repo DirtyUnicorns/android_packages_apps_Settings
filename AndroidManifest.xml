@@ -3326,12 +3326,19 @@
                        android:resource="@string/du_themes_summary"/>
         </activity>
 
-       <!-- DU Changelog -->
+        <!-- DU Changelog -->
         <activity android:name="com.dirtyunicorns.changelog.MainActivity"
                   android:taskAffinity=""
                   android:parentActivityName="Settings"
                   android:theme="@style/ChangelogTheme"
                   android:label="@string/du_changelog_title" />
+
+        <!-- DU Team dialog -->
+        <activity android:name="com.dirtyunicorns.tweaks.fragments.team.TeamActivity"
+                  android:taskAffinity=""
+                  android:parentActivityName="Settings"
+                  android:theme="@style/TeamDialog"
+                  android:label="@string/dialog_team_title" />
 
         <!-- Navbar -->
         <activity
