@@ -23,4 +23,7 @@
     <string name="config_du_themes_package" translatable="false">com.dirtyunicorns.themes</string>
     <string name="config_du_themes_class" translatable="false">com.dirtyunicorns.themes.MainActivity</string>
 
+    <!-- Whether to display touch sensitivity switch -->
+    <bool name="config_show_touch_sensitivity">false</bool>
+
 </resources>
