@@ -108,4 +108,10 @@
     <string name="touch_sensitivity_title">Increase touch sensitivity</string>
     <string name="keywords_touch_sensitivity">touch, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
 
+    <!-- Quick statusbar header & statusbar battery percentage -->
+    <string name="battery_percentage_category_title">Battery percentage</string>
+    <string name="sb_battery_percentage">Status bar</string>
+    <string name="qs_battery_percentage">Quick status bar header</string>
+    <string name="qs_battery_percentage_description">Show battery percentage in QS header</string>
+
 </resources>
