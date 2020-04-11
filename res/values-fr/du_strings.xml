@@ -18,6 +18,8 @@
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- DU version in About phone -->
     <string name="rom_version_title">Version de DU</string>
+    <!-- Radio Info screen. Label for a status item.  Used for diagnostic info screens, DO NOT TRANSLATE. -->
+    <string name="radio_info_imsi_label">IMSI :</string>
     <!-- Themes -->
     <string name="du_themes_title">Thèmes</string>
     <string name="du_themes_summary">Réglages esthétiques</string>
@@ -25,8 +27,8 @@
     <string name="du_changelog_title">Notes de version</string>
     <string name="du_changelog_summary">Afficher le résumé des changements majeurs</string>
     <!-- Update notifer -->
-    <string name="du_notifier_title">Update notifications</string>
-    <string name="du_notifier_summary">Get push notifications when an update is available</string>
+    <string name="du_notifier_title">Notifications de mise à jour</string>
+    <string name="du_notifier_summary">Afficher une notification lorsqu\'une mise à jour est disponible</string>
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Fermer</string>
     <!-- Rotation -->
@@ -83,5 +85,10 @@
     <!-- Vibrate on plug -->
     <string name="vibration_on_charge_state_changed_title">Vibrer au branchement</string>
     <!-- Notification log -->
-    <string name="notification_log_summary">Show notifications history log</string>
+    <string name="notification_log_summary">Afficher l\'historique des notifications</string>
+
+    <!-- Touch sensitivity -->
+    <string name="touch_sensitivity_summary">Améliorer la détection des appuis sur l\'écran, lors de l\'utilisation d\'une protection d\'écran</string>
+    <string name="touch_sensitivity_title">Sensibilité des appuis</string>
+    <string name="keywords_touch_sensitivity">appui, sensibilité, protection d\'écran, film, réactivité</string>
 </resources>
