@@ -16,11 +16,9 @@
 package com.android.settings.display;
 
 import static android.provider.Settings.System.SHOW_BATTERY_PERCENT;
-import static android.provider.Settings.System.QS_SHOW_BATTERY_PERCENT;
 
 import android.content.Context;
 import android.provider.Settings;
-import android.text.TextUtils;
 
 import androidx.preference.Preference;
 import androidx.preference.SwitchPreference;
@@ -36,56 +34,28 @@ import com.android.settings.core.PreferenceControllerMixin;
 public class BatteryPercentagePreferenceController extends BasePreferenceController implements
         PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
 
-    private static final int ON = 1;
-    private static final int OFF = 0;
-
-    private static final String KEY_SB_BATTERY_PERCENTAGE = "battery_percentage";
-    private static final String KEY_QS_BATTERY_PERCENTAGE = "qs_battery_percentage";
-
     public BatteryPercentagePreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
     }
 
     @Override
     public int getAvailabilityStatus() {
-        return mContext.getResources().getBoolean(
-                R.bool.config_battery_percentage_setting_available) ? AVAILABLE
-                : UNSUPPORTED_ON_DEVICE;
+        return UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
     public void updateState(Preference preference) {
-        super.updateState(preference);
-        if (preference != null && preference instanceof SwitchPreference) {
-            SwitchPreference switchPref = (SwitchPreference) preference;
-            if (TextUtils.equals(switchPref.getKey(), KEY_SB_BATTERY_PERCENTAGE)) {
-                boolean enabled = Settings.System.getInt(mContext.getContentResolver(),
-                        SHOW_BATTERY_PERCENT, OFF) == ON;
-                switchPref.setChecked(enabled);
-            } else if (TextUtils.equals(switchPref.getKey(), KEY_QS_BATTERY_PERCENTAGE)) {
-                boolean enabled = Settings.System.getInt(mContext.getContentResolver(),
-                        QS_SHOW_BATTERY_PERCENT, OFF) == ON;
-                switchPref.setChecked(enabled);
-            }
-        }
+        int setting = Settings.System.getInt(mContext.getContentResolver(),
+                SHOW_BATTERY_PERCENT, 0);
+
+        ((SwitchPreference) preference).setChecked(setting == 1);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        SwitchPreference switchPref = (SwitchPreference) preference;
-        if (TextUtils.equals(switchPref.getKey(), KEY_SB_BATTERY_PERCENTAGE)) {
-            boolean enabled = ((Boolean) newValue).booleanValue();
-            Settings.System.putInt(mContext.getContentResolver(),
-                    SHOW_BATTERY_PERCENT, enabled ? ON : OFF);
-            switchPref.setChecked(enabled);
-            return true;
-        } else if (TextUtils.equals(switchPref.getKey(), KEY_QS_BATTERY_PERCENTAGE)) {
-            boolean enabled = ((Boolean) newValue).booleanValue();
-            Settings.System.putInt(mContext.getContentResolver(),
-                    QS_SHOW_BATTERY_PERCENT, enabled ? ON : OFF);
-            switchPref.setChecked(enabled);
-            return true;
-        }
-        return false;
+        boolean showPercentage = (Boolean) newValue;
+        Settings.System.putInt(mContext.getContentResolver(), SHOW_BATTERY_PERCENT,
+                showPercentage ? 1 : 0);
+        return true;
     }
 }
