@@ -18,8 +18,11 @@
 }
 
 -keep class com.dirtyunicorns.tweaks.**
--keep class com.dirtyunicorns.tweaks.navigation**
 -keep class com.google.**
+-keep class github.com.st235.lib_expandablebottombar.ExpandableBottomBar { *; }
+-keep class github.com.st235.lib_expandablebottombar.behavior.ExpandableBottomBarBehavior { *; }
+-keep class github.com.st235.lib_expandablebottombar.ExpandableBottomBarMenuItem** { *; }
+-keep class github.com.st235.lib_expandablebottombar.ExpandableBottomBarScrollableBehavior { *; }
 
 # We want to keep methods in Activity that could be used in the XML attribute onClick.
 -keepclassmembers class * extends android.app.Activity {

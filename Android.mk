@@ -54,7 +54,9 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     settings-log-bridge-protos-lite \
     contextualcards \
     settings-logtags \
-    zxing-core-1.7
+    zxing-core-1.7 \
+    expandablebottombar \
+    kotlin-stdlib
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     packages/apps/DU-Changelog/app/src/main/res \
@@ -70,7 +72,8 @@ LOCAL_AAPT_FLAGS := --auto-add-overlay \
     --extra-packages androidx.recyclerview_recyclerview \
     --extra-packages androidx.design_design \
     --extra-packages com.dirtyunicorns.changelog \
-    --extra-packages com.dirtyunicorns.tweaks
+    --extra-packages com.dirtyunicorns.tweaks \
+    --extra-packages github.com.st235.lib_expandablebottombar
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
@@ -87,7 +90,9 @@ include $(BUILD_PACKAGE)
 include $(CLEAR_VARS)
 
 LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := \
-    contextualcards:libs/contextualcards.aar
+    contextualcards:libs/contextualcards.aar \
+    expandablebottombar:libs/expandable_bottom_bar_116.aar
+
 include $(BUILD_MULTI_PREBUILT)
 
 # Use the following include to make our test apk.

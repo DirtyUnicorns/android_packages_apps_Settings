@@ -3346,61 +3346,61 @@
 
         <!-- Navbar -->
         <activity
-            android:name="com.dirtyunicorns.tweaks.fragments.navbar.BackLongPress"
+            android:name="com.dirtyunicorns.tweaks.fragments.navigation.customactions.BackLongPress"
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth"
             android:label="@string/app_picker_dialog_title" >
             <intent-filter>
-                <action android:name="com.dirtyunicorns.tweaks.fragments.navbar.BackLongPress" />
+                <action android:name="com.dirtyunicorns.tweaks.fragments.navigation.customactions.BackLongPress" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name="com.dirtyunicorns.tweaks.fragments.navbar.BackDoubleTap"
+            android:name="com.dirtyunicorns.tweaks.fragments.navigation.customactions.BackDoubleTap"
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth"
             android:label="@string/app_picker_dialog_title" >
             <intent-filter>
-                <action android:name="com.dirtyunicorns.tweaks.fragments.navbar.BackDoubleTap" />
+                <action android:name="com.dirtyunicorns.tweaks.fragments.navigation.customactions.BackDoubleTap" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name="com.dirtyunicorns.tweaks.fragments.navbar.HomeLongPress"
+            android:name="com.dirtyunicorns.tweaks.fragments.navigation.customactions.HomeLongPress"
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth"
             android:label="@string/app_picker_dialog_title" >
             <intent-filter>
-                <action android:name="com.dirtyunicorns.tweaks.fragments.navbar.HomeLongPress" />
+                <action android:name="com.dirtyunicorns.tweaks.fragments.navigation.customactions.HomeLongPress" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name="com.dirtyunicorns.tweaks.fragments.navbar.HomeDoubleTap"
+            android:name="com.dirtyunicorns.tweaks.fragments.navigation.customactions.HomeDoubleTap"
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth"
             android:label="@string/app_picker_dialog_title" >
             <intent-filter>
-                <action android:name="com.dirtyunicorns.tweaks.fragments.navbar.HomeDoubleTap" />
+                <action android:name="com.dirtyunicorns.tweaks.fragments.navigation.customactions.HomeDoubleTap" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name="com.dirtyunicorns.tweaks.fragments.navbar.AppSwitchLongPress"
+            android:name="com.dirtyunicorns.tweaks.fragments.navigation.customactions.AppSwitchLongPress"
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth"
             android:label="@string/app_picker_dialog_title" >
             <intent-filter>
-                <action android:name="com.dirtyunicorns.tweaks.fragments.navbar.AppSwitchLongPress" />
+                <action android:name="com.dirtyunicorns.tweaks.fragments.navigation.customactions.AppSwitchLongPress" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name="com.dirtyunicorns.tweaks.fragments.navbar.AppSwitchDoubleTap"
+            android:name="com.dirtyunicorns.tweaks.fragments.navigation.customactions.AppSwitchDoubleTap"
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth"
             android:label="@string/app_picker_dialog_title" >
             <intent-filter>
-                <action android:name="com.dirtyunicorns.tweaks.fragments.navbar.AppSwitchDoubleTap" />
+                <action android:name="com.dirtyunicorns.tweaks.fragments.navigation.customactions.AppSwitchDoubleTap" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
