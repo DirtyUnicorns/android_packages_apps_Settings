@@ -16,7 +16,6 @@
 
 package com.android.settings.notification;
 
-import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.provider.Settings;
@@ -81,7 +80,7 @@ public class CustomLightsPreferenceController extends NotificationPreferenceCont
         return true;
     }
 
-    boolean canPulseLight() {
+    private boolean canPulseLight() {
         if (!mContext.getResources()
                 .getBoolean(com.android.internal.R.bool.config_intrusiveNotificationLed)) {
             return false;
@@ -90,7 +89,7 @@ public class CustomLightsPreferenceController extends NotificationPreferenceCont
                 Settings.System.NOTIFICATION_LIGHT_PULSE, 1) == 1;
     }
 
-    boolean isMultiColorLed() {
+    private boolean isMultiColorLed() {
         return mContext.getResources()
                 .getBoolean(com.android.internal.R.bool.config_intrusiveNotificationLed);
     }

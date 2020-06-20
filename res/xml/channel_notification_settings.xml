@@ -120,7 +120,6 @@
             android:dependency="lights"
             android:order="19"
             android:title="@string/custom_light_title"
-            isledPicker="true"
             android:defaultValue="0xFFFFFFFF" />
 
         <com.dirtyunicorns.support.preferences.CustomSeekBarPreference
@@ -128,7 +127,7 @@
             android:dependency="lights"
             android:title="@string/custom_light_on_time_title"
             android:order="20"
-            allowEditText="true"
+            settings:allowEditText="true"
             settings:min="0"
             android:max="10000"
             settings:interval="100"
@@ -139,7 +138,7 @@
             android:dependency="lights"
             android:title="@string/custom_light_off_time_title"
             android:order="21"
-            allowEditText="true"
+            settings:allowEditText="true"
             settings:min="0"
             android:max="10000"
             settings:interval="100"

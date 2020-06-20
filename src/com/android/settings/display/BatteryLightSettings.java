@@ -16,7 +16,6 @@
 
 package com.android.settings.display;
 
-import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.hardware.display.AmbientDisplayConfiguration;
 import android.provider.SearchIndexableResource;

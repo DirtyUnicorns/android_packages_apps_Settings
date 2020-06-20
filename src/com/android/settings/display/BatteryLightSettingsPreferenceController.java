@@ -16,12 +16,7 @@
 
 package com.android.settings.display;
 
-import android.content.ContentResolver;
 import android.content.Context;
-import android.hardware.display.AmbientDisplayConfiguration;
-import android.provider.Settings;
-
-import androidx.annotation.NonNull;
 
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;

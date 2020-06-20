@@ -65,7 +65,6 @@
         android:key="custom_light"
         android:dependency="lights"
         android:title="@string/custom_light_title"
-        isledPicker="true"
         android:defaultValue="0xFFFFFFFF"/>
 
     <com.dirtyunicorns.support.preferences.CustomSeekBarPreference
