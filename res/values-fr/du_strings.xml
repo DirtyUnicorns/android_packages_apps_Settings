@@ -91,4 +91,26 @@
     <string name="touch_sensitivity_summary">Améliorer la détection des appuis sur l\'écran, lors de l\'utilisation d\'une protection d\'écran</string>
     <string name="touch_sensitivity_title">Sensibilité des appuis</string>
     <string name="keywords_touch_sensitivity">appui, sensibilité, protection d\'écran, film, réactivité</string>
+
+    <!-- Quick statusbar header & statusbar battery percentage -->
+    <string name="battery_percentage_category_title">Pourcentage du niveau de charge de la batterie</string>
+    <string name="sb_battery_percentage">Barre d\'état</string>
+    <string name="qs_battery_percentage">En-tête de la barre d\'état</string>
+    <string name="qs_battery_percentage_description">Afficher le pourcentage de la batterie</string>
+
+    <!-- Custom light color -->
+    <string name="custom_light_title">Couleur du voyant</string>
+    <string name="custom_light_on_time_title">Durée d\'éclairage du voyant clignotant (ms)</string>
+    <string name="custom_light_off_time_title">Durée d\'extinction du voyant clignotant (ms)</string>
+    <string name="value_equals_default">def</string>
+
+    <!-- Battery light customization -->
+    <string name="battery_light_settings_pref_title">Voyant de charge de la batterie</string>
+    <string name="battery_light_allow_on_dnd_title">Voyant de la batterie en mode Ne pas déranger</string>
+    <string name="battery_light_low_blinking_title">Voyant clignotant sur batterie faible</string>
+    <string name="battery_light_cat">Couleur du voyant lors de la charge de la batterie</string>
+    <string name="battery_light_low_color">Faible</string>
+    <string name="battery_light_medium_color">Moyenne</string>
+    <string name="battery_light_full_color">Presque pleine</string>
+    <string name="battery_light_reallyfull_color">Pleine (100)</string>
 </resources>
