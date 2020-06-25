@@ -83,6 +83,9 @@
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
 
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Lockscreen timeout</string>
+
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sounds</string>
 
