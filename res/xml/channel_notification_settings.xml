@@ -128,7 +128,7 @@
             android:title="@string/custom_light_on_time_title"
             android:order="20"
             settings:allowEditText="true"
-            settings:min="0"
+            android:min="0"
             android:max="10000"
             settings:interval="100"
             settings:units="" />
@@ -139,7 +139,7 @@
             android:title="@string/custom_light_off_time_title"
             android:order="21"
             settings:allowEditText="true"
-            settings:min="0"
+            android:min="0"
             android:max="10000"
             settings:interval="100"
             settings:units="" />
