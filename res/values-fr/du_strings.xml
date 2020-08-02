@@ -71,6 +71,8 @@
     <string name="selinux_status_disabled">Désactivé</string>
     <string name="selinux_status_permissive">Permissif</string>
     <string name="selinux_status_enforcing">Application</string>
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Délai de verrouillage de l\'écran</string>
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">Sons de capture d\'écran</string>
     <!-- Ambient Display wake gestures/music ticker -->
