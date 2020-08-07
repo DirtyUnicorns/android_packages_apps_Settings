@@ -69,6 +69,8 @@
     <string name="selinux_status_disabled">Vypnuto</string>
     <string name="selinux_status_permissive">Mírný</string>
     <string name="selinux_status_enforcing">Vynucený</string>
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Lockscreen timeout</string>
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">Zvuky při snímku obrazovky</string>
     <!-- Ambient Display wake gestures/music ticker -->
@@ -84,4 +86,27 @@
     <string name="vibration_on_charge_state_changed_title">Vibrovat při připojení USB</string>
     <!-- Notification log -->
     <string name="notification_log_summary">Zobrazit protokol historie oznámení</string>
+    <!-- Touch sensitivity -->
+    <string name="touch_sensitivity_summary">Improves touch when using screen protectors</string>
+    <string name="touch_sensitivity_title">Increase touch sensitivity</string>
+    <string name="keywords_touch_sensitivity">touch, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
+    <!-- Quick statusbar header & statusbar battery percentage -->
+    <string name="battery_percentage_category_title">Battery percentage</string>
+    <string name="sb_battery_percentage">Status bar</string>
+    <string name="qs_battery_percentage">Quick status bar header</string>
+    <string name="qs_battery_percentage_description">Show battery percentage in QS header</string>
+    <!-- Custom light color -->
+    <string name="custom_light_title">Light color</string>
+    <string name="custom_light_on_time_title">Light ON time during LED pulse (ms)</string>
+    <string name="custom_light_off_time_title">Light OFF time during LED pulse (ms)</string>
+    <string name="value_equals_default">def</string>
+    <!-- Battery light customization -->
+    <string name="battery_light_settings_pref_title">Battery charging light</string>
+    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
+    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
+    <string name="battery_light_cat">Battery light color when charging</string>
+    <string name="battery_light_low_color">Low battery</string>
+    <string name="battery_light_medium_color">Medium battery</string>
+    <string name="battery_light_full_color">Almost full battery</string>
+    <string name="battery_light_reallyfull_color">Full battery (100)</string>
 </resources>

@@ -51,32 +51,34 @@
     <!-- Back gesture settings -->
     <string name="back_gesture_settings_dialog_title">Zurück-Geste Einstellungen </string>
     <string name="back_gesture_sensitivity_dialog_message">Höhere Empfindlichkeit kann mit allen App-Gesten am Bildschirmrand in Konflikt geraten.</string>
-    <string name="back_gesture_area_dead_zone_title">Back area dead zone</string>
-    <string name="back_gesture_area_dead_zone_message">Set the area of the screen where the swipe can be triggered, to avoid conflicts with in-app gestures.</string>
-    <string name="smallest_tick_label">Full screen</string>
-    <string name="greatest_tick_label">Half screen</string>
-    <string name="back_gesture_arrow_title">Back arrow animation</string>
-    <string name="back_gesture_arrow_message">Hide arrow with back gesture</string>
-    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
-    <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
+    <string name="back_gesture_area_dead_zone_title">Zurück-Geste toter Bereich </string>
+    <string name="back_gesture_area_dead_zone_message">Legen Sie den Bereich des Bildschirms fest, in dem die Zurück-Geste ausgelöst werden kann, um Konflikte mit In-App-Gesten zu vermeiden.</string>
+    <string name="smallest_tick_label">Ganzer Bildschirm</string>
+    <string name="greatest_tick_label">Halber Bildschirm</string>
+    <string name="back_gesture_arrow_title">Zurück-Pfeil Animation</string>
+    <string name="back_gesture_arrow_message">Pfeil wird bei Zurück-Geste ausgeblendet</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Nach links oder rechts über den Fingerabdrucksensor wischen, um Benachrichtigungen zu schließen</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Um Benachrichtigungen zu schließen, nach links oder rechts über den Fingerabdrucksensor auf der Rückseite deines Geräts streichen.</string>
     <!-- Categories -->
-    <string name="density_category">Density options</string>
+    <string name="density_category">Auflösungsoptionen</string>
     <!-- Customize your device -->
-    <string name="custom_style_suggestion_title">Customize your device</string>
-    <string name="custom_style_suggestion_summary">Try different themes, fonts, and more</string>
+    <string name="custom_style_suggestion_title">Personalisiere dein Gerät</string>
+    <string name="custom_style_suggestion_summary">Probieren Sie verschiedene Themen, Schriften und mehr</string>
     <!-- SELinux Status -->
     <string name="selinux_status">SELinux-Status</string>
     <string name="selinux_status_disabled">Deaktiviert</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Lockscreen timeout</string>
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot Töne</string>
     <!-- Ambient Display wake gestures/music ticker -->
     <string name="ambient_wake_gestures_title">Inaktivitätsdisplay Gesten</string>
-    <string name="ambient_wake_gestures_summary">Show Ambient Display instead of normal lockscreen on wake gestures</string>
-    <string name="pulse_on_new_tracks_title">Ambient music ticker</string>
-    <string name="pulse_on_new_tracks_summary">Show Ambient Display when a new music track is played. Double tap on track info to skip to next track.</string>
-    <string name="pulse_on_new_tracks_soli_summary">Show Ambient Display when a new music track is played</string>
+    <string name="ambient_wake_gestures_summary">Inaktivitätsdisplay statt normalen Sperrbildschirm bei Weckgesten anzeigen</string>
+    <string name="pulse_on_new_tracks_title">Ambient-Musiktitelanzeige</string>
+    <string name="pulse_on_new_tracks_summary">Ambient Display anzeigen, wenn ein neuer Musiktitel abgespielt wird. Doppeltippen auf Track-Infos, um zum nächsten Titel zu springen.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Ambient Display anzeigen, wenn ein neuer Musiktitel abgespielt wird</string>
     <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Beim Einstecken aufwecken</string>
     <string name="wake_when_plugged_or_unplugged_summary">Beim Anschließen oder Trennen einer Stromquelle den Bildschirm anschalten</string>
@@ -84,4 +86,27 @@
     <string name="vibration_on_charge_state_changed_title">Vibrieren beim Anschließen</string>
     <!-- Notification log -->
     <string name="notification_log_summary">Benachrichtigungsverlauf anzeigen</string>
+    <!-- Touch sensitivity -->
+    <string name="touch_sensitivity_summary">Improves touch when using screen protectors</string>
+    <string name="touch_sensitivity_title">Increase touch sensitivity</string>
+    <string name="keywords_touch_sensitivity">touch, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
+    <!-- Quick statusbar header & statusbar battery percentage -->
+    <string name="battery_percentage_category_title">Battery percentage</string>
+    <string name="sb_battery_percentage">Status bar</string>
+    <string name="qs_battery_percentage">Quick status bar header</string>
+    <string name="qs_battery_percentage_description">Show battery percentage in QS header</string>
+    <!-- Custom light color -->
+    <string name="custom_light_title">Light color</string>
+    <string name="custom_light_on_time_title">Light ON time during LED pulse (ms)</string>
+    <string name="custom_light_off_time_title">Light OFF time during LED pulse (ms)</string>
+    <string name="value_equals_default">def</string>
+    <!-- Battery light customization -->
+    <string name="battery_light_settings_pref_title">Battery charging light</string>
+    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
+    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
+    <string name="battery_light_cat">Battery light color when charging</string>
+    <string name="battery_light_low_color">Low battery</string>
+    <string name="battery_light_medium_color">Medium battery</string>
+    <string name="battery_light_full_color">Almost full battery</string>
+    <string name="battery_light_reallyfull_color">Full battery (100)</string>
 </resources>
