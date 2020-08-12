@@ -70,7 +70,7 @@
     <string name="selinux_status_permissive">Permissivo</string>
     <string name="selinux_status_enforcing">Impondo</string>
     <!-- Lockscreen timeout -->
-    <string name="lockscreen_timeout_title">Lockscreen timeout</string>
+    <string name="lockscreen_timeout_title">Tempo limite da tela de bloqueio</string>
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">Som de captura de tela</string>
     <!-- Ambient Display wake gestures/music ticker -->
@@ -87,26 +87,26 @@
     <!-- Notification log -->
     <string name="notification_log_summary">Mostrar histórico de notificações</string>
     <!-- Touch sensitivity -->
-    <string name="touch_sensitivity_summary">Improves touch when using screen protectors</string>
-    <string name="touch_sensitivity_title">Increase touch sensitivity</string>
-    <string name="keywords_touch_sensitivity">touch, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
+    <string name="touch_sensitivity_summary">Melhora o toque ao usar protetores de tela</string>
+    <string name="touch_sensitivity_title">Aumenta a sensibilidade ao toque</string>
+    <string name="keywords_touch_sensitivity">toque, sensibilidade, sensível, protetor de tela, filme, responsivo, capacidade de resposta</string>
     <!-- Quick statusbar header & statusbar battery percentage -->
-    <string name="battery_percentage_category_title">Battery percentage</string>
-    <string name="sb_battery_percentage">Status bar</string>
-    <string name="qs_battery_percentage">Quick status bar header</string>
-    <string name="qs_battery_percentage_description">Show battery percentage in QS header</string>
+    <string name="battery_percentage_category_title">Porcentagem da bateria</string>
+    <string name="sb_battery_percentage">Barra de Status</string>
+    <string name="qs_battery_percentage">Cabeçalho da barra de status rápida</string>
+    <string name="qs_battery_percentage_description">Mostrar porcentagem de bateria no cabeçalho das configurações rápidas</string>
     <!-- Custom light color -->
-    <string name="custom_light_title">Light color</string>
-    <string name="custom_light_on_time_title">Light ON time during LED pulse (ms)</string>
-    <string name="custom_light_off_time_title">Light OFF time during LED pulse (ms)</string>
+    <string name="custom_light_title">Cor do LED</string>
+    <string name="custom_light_on_time_title">Tempo de luz ativa durante o pulso de LED (ms)</string>
+    <string name="custom_light_off_time_title">Tempo de luz desligada durante o pulso do LED (ms)</string>
     <string name="value_equals_default">def</string>
     <!-- Battery light customization -->
-    <string name="battery_light_settings_pref_title">Battery charging light</string>
-    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
-    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
-    <string name="battery_light_cat">Battery light color when charging</string>
-    <string name="battery_light_low_color">Low battery</string>
-    <string name="battery_light_medium_color">Medium battery</string>
-    <string name="battery_light_full_color">Almost full battery</string>
-    <string name="battery_light_reallyfull_color">Full battery (100)</string>
+    <string name="battery_light_settings_pref_title">LED de carregamento da bateria</string>
+    <string name="battery_light_allow_on_dnd_title">Luz do Led da bateria no modo Não perturbe</string>
+    <string name="battery_light_low_blinking_title">Luz do Led piscando com bateria fraca</string>
+    <string name="battery_light_cat">Cor da luz do LEd da bateria durante o carregamento</string>
+    <string name="battery_light_low_color">Bateria fraca</string>
+    <string name="battery_light_medium_color">Bateria pela metade</string>
+    <string name="battery_light_full_color">Bateria quase carregada</string>
+    <string name="battery_light_reallyfull_color">Bateria carregada (100)</string>
 </resources>

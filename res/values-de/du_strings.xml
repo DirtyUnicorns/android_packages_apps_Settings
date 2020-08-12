@@ -103,10 +103,10 @@
     <!-- Battery light customization -->
     <string name="battery_light_settings_pref_title">Battery charging light</string>
     <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
-    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
-    <string name="battery_light_cat">Battery light color when charging</string>
-    <string name="battery_light_low_color">Low battery</string>
-    <string name="battery_light_medium_color">Medium battery</string>
-    <string name="battery_light_full_color">Almost full battery</string>
-    <string name="battery_light_reallyfull_color">Full battery (100)</string>
+    <string name="battery_light_low_blinking_title">Blinkende LED bei schwachem Akku</string>
+    <string name="battery_light_cat">LED-Farbe beim Laden</string>
+    <string name="battery_light_low_color">Niedriger Akkustand</string>
+    <string name="battery_light_medium_color">Mittlerer Akkustand</string>
+    <string name="battery_light_full_color">Akkustand fast voll</string>
+    <string name="battery_light_reallyfull_color">Akkustand voll</string>
 </resources>
