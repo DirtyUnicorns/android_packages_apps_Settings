@@ -17,96 +17,96 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- DU version in About phone -->
-    <string name="rom_version_title">DU version</string>
+    <string name="rom_version_title">Versão DU</string>
     <!-- Themes -->
-    <string name="du_themes_title">Themes</string>
-    <string name="du_themes_summary">Life is like a box of crayons..</string>
+    <string name="du_themes_title">Temas</string>
+    <string name="du_themes_summary">A vida é como uma caixa de gizes de cera..</string>
     <!-- Changelog -->
-    <string name="du_changelog_title">Changelog</string>
-    <string name="du_changelog_summary">View a summaried log of notable changes</string>
+    <string name="du_changelog_title">Alterações</string>
+    <string name="du_changelog_summary">Visualizar um registo resumido de alterações notáveis</string>
     <!-- Update notifer -->
-    <string name="du_notifier_title">Update notifications</string>
-    <string name="du_notifier_summary">Get push notifications when an update is available</string>
+    <string name="du_notifier_title">Notificação de atualizações</string>
+    <string name="du_notifier_summary">Receber notificações quando uma actualização está disponível</string>
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
-    <string name="suggestion_button_close">Close</string>
+    <string name="suggestion_button_close">Fechar</string>
     <!-- Rotation -->
-    <string name="display_rotation_title">Rotation</string>
-    <string name="display_rotation_subtitle">Autorotation, 0, 90, 180, 270 degrees</string>
-    <string name="display_rotation_disabled">Disabled</string>
-    <string name="display_rotation_unit">degrees</string>
-    <string name="display_rotation_category_title">Rotation modes</string>
-    <string name="display_rotation_0_title">0 degrees</string>
-    <string name="display_rotation_90_title">90 degrees</string>
-    <string name="display_rotation_180_title">180 degrees</string>
-    <string name="display_rotation_270_title">270 degrees</string>
+    <string name="display_rotation_title">Rotação</string>
+    <string name="display_rotation_subtitle">Autorotação, 0, 90, 180, 270 graus</string>
+    <string name="display_rotation_disabled">Desactivado</string>
+    <string name="display_rotation_unit">graus</string>
+    <string name="display_rotation_category_title">Modos de rotação</string>
+    <string name="display_rotation_0_title">0 graus</string>
+    <string name="display_rotation_90_title">90 graus</string>
+    <string name="display_rotation_180_title">180 graus</string>
+    <string name="display_rotation_270_title">270 graus</string>
     <!-- Custom ambient display -->
-    <string name="ambient_display_category">Ambient display</string>
-    <string name="lockscreen_settings_category">General</string>
-    <string name="ambient_other_category">Other</string>
-    <string name="ambient_display_custom_title">Custom options</string>
-    <string name="ambient_display_custom_summary">Wake screen with notifications and various gestures</string>
+    <string name="ambient_display_category">Exibição de ambiente</string>
+    <string name="lockscreen_settings_category">Geral</string>
+    <string name="ambient_other_category">Outro</string>
+    <string name="ambient_display_custom_title">Personalizar opções</string>
+    <string name="ambient_display_custom_summary">Ligar a um ecrã com notificações e vários gestos</string>
     <!-- Scramble PIN layout on lockscreen -->
-    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <string name="unlock_scramble_pin_layout_title">Disposição aleatória</string>
+    <string name="unlock_scramble_pin_layout_summary">Disposição do PIN codificado ao desbloquear o dispositivo</string>
     <!-- Back gesture settings -->
-    <string name="back_gesture_settings_dialog_title">Back gesture settings</string>
-    <string name="back_gesture_sensitivity_dialog_message">Higher sensitivity may conflict with any app gestures along the edges of the screen.</string>
-    <string name="back_gesture_area_dead_zone_title">Back area dead zone</string>
-    <string name="back_gesture_area_dead_zone_message">Set the area of the screen where the swipe can be triggered, to avoid conflicts with in-app gestures.</string>
-    <string name="smallest_tick_label">Full screen</string>
-    <string name="greatest_tick_label">Half screen</string>
-    <string name="back_gesture_arrow_title">Back arrow animation</string>
-    <string name="back_gesture_arrow_message">Hide arrow with back gesture</string>
-    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
-    <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
+    <string name="back_gesture_settings_dialog_title">Voltar a Configurações de gesto</string>
+    <string name="back_gesture_sensitivity_dialog_message">Uma sensibilidade maior pode entrar em conflito com os gestos de aplicações a partir das bordas do ecrã.</string>
+    <string name="back_gesture_area_dead_zone_title">Voltar à zona de área morta</string>
+    <string name="back_gesture_area_dead_zone_message">Defina a área do ecrã onde o deslize pode ser acionado, para evitar conflitos com gestos na aplicação.</string>
+    <string name="smallest_tick_label">Ecrã inteiro</string>
+    <string name="greatest_tick_label">Meio ecrã</string>
+    <string name="back_gesture_arrow_title">Voltar à animação arrow</string>
+    <string name="back_gesture_arrow_message">Ocultar seta com gesto de voltar</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Deslize a impressão digital para a esquerda ou direita para dispensar notificações</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Para rejeitar as suas notificações, deslize para a esquerda ou para a direita no sensor de impressão digital na parte traseira do telefone.</string>
     <!-- Categories -->
-    <string name="density_category">Density options</string>
+    <string name="density_category">Opções de densidade</string>
     <!-- Customize your device -->
-    <string name="custom_style_suggestion_title">Customize your device</string>
-    <string name="custom_style_suggestion_summary">Try different themes, fonts, and more</string>
+    <string name="custom_style_suggestion_title">Personalize o seu dispositivo</string>
+    <string name="custom_style_suggestion_summary">Tente diferentes temas, fontes e mais</string>
     <!-- SELinux Status -->
-    <string name="selinux_status">SELinux status</string>
-    <string name="selinux_status_disabled">Disabled</string>
-    <string name="selinux_status_permissive">Permissive</string>
-    <string name="selinux_status_enforcing">Enforcing</string>
+    <string name="selinux_status">Estado SELinux</string>
+    <string name="selinux_status_disabled">Desactivado</string>
+    <string name="selinux_status_permissive">Permissivo</string>
+    <string name="selinux_status_enforcing">Forçador</string>
     <!-- Lockscreen timeout -->
-    <string name="lockscreen_timeout_title">Lockscreen timeout</string>
+    <string name="lockscreen_timeout_title">Tempo limite do ecrã de bloqueio</string>
     <!-- Enable/Disable Screenshot sound -->
-    <string name="screenshot_sound_title">Screenshot sounds</string>
+    <string name="screenshot_sound_title">Som da Captura de ecrã</string>
     <!-- Ambient Display wake gestures/music ticker -->
-    <string name="ambient_wake_gestures_title">Ambient wake gestures</string>
-    <string name="ambient_wake_gestures_summary">Show Ambient Display instead of normal lockscreen on wake gestures</string>
-    <string name="pulse_on_new_tracks_title">Ambient music ticker</string>
-    <string name="pulse_on_new_tracks_summary">Show Ambient Display when a new music track is played. Double tap on track info to skip to next track.</string>
-    <string name="pulse_on_new_tracks_soli_summary">Show Ambient Display when a new music track is played</string>
+    <string name="ambient_wake_gestures_title">Gestos de despertar ambiente</string>
+    <string name="ambient_wake_gestures_summary">Mostrar ecrã de ambiente em vez de ecrã de bloqueio normal em gestos de activação</string>
+    <string name="pulse_on_new_tracks_title">Notificação de música ambiente</string>
+    <string name="pulse_on_new_tracks_summary">Mostrar no ecrã quando for tocada uma música nova. Toque duas vezes na informação da música para saltar para a próxima faixa.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Mostrar o ecrã quando uma música nova for reproduzida</string>
     <!-- Wake on plug -->
-    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
-    <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+    <string name="wake_when_plugged_or_unplugged_title">Acordar ao ligar</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Liga o ecrã quando ligar ou desligar um carregador</string>
     <!-- Vibrate on plug -->
-    <string name="vibration_on_charge_state_changed_title">Vibrate on USB plug</string>
+    <string name="vibration_on_charge_state_changed_title">Vibrar ao ligar USB</string>
     <!-- Notification log -->
-    <string name="notification_log_summary">Show notifications history log</string>
+    <string name="notification_log_summary">Mostrar histórico de notificações</string>
     <!-- Touch sensitivity -->
-    <string name="touch_sensitivity_summary">Improves touch when using screen protectors</string>
-    <string name="touch_sensitivity_title">Increase touch sensitivity</string>
-    <string name="keywords_touch_sensitivity">touch, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
+    <string name="touch_sensitivity_summary">Melhora o toque ao usar protetores de ecrã</string>
+    <string name="touch_sensitivity_title">Aumentar sensibilidade do toque</string>
+    <string name="keywords_touch_sensitivity">toque, sensibilidade, sensibilidade, protetor de ecrã, filme, capacidade de resposta</string>
     <!-- Quick statusbar header & statusbar battery percentage -->
-    <string name="battery_percentage_category_title">Battery percentage</string>
-    <string name="sb_battery_percentage">Status bar</string>
-    <string name="qs_battery_percentage">Quick status bar header</string>
-    <string name="qs_battery_percentage_description">Show battery percentage in QS header</string>
+    <string name="battery_percentage_category_title">Percentagem da bateria</string>
+    <string name="sb_battery_percentage">Barra de estado</string>
+    <string name="qs_battery_percentage">Cabeçalho da barra de estado rápido</string>
+    <string name="qs_battery_percentage_description">Mostrar percentagem da bateria na barra de estado</string>
     <!-- Custom light color -->
-    <string name="custom_light_title">Light color</string>
-    <string name="custom_light_on_time_title">Light ON time during LED pulse (ms)</string>
-    <string name="custom_light_off_time_title">Light OFF time during LED pulse (ms)</string>
+    <string name="custom_light_title">Cor do LED</string>
+    <string name="custom_light_on_time_title">Duração da luz LIGADA durante o pulsar do LED (ms)</string>
+    <string name="custom_light_off_time_title">Duração da luz DESLIGADA durante o pulsar do LED (ms)</string>
     <string name="value_equals_default">def</string>
     <!-- Battery light customization -->
-    <string name="battery_light_settings_pref_title">Battery charging light</string>
-    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
-    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
-    <string name="battery_light_cat">Battery light color when charging</string>
-    <string name="battery_light_low_color">Low battery</string>
-    <string name="battery_light_medium_color">Medium battery</string>
-    <string name="battery_light_full_color">Almost full battery</string>
-    <string name="battery_light_reallyfull_color">Full battery (100)</string>
+    <string name="battery_light_settings_pref_title">Luz de carregamento da bateria</string>
+    <string name="battery_light_allow_on_dnd_title">Luz de bateria no modo Não incomodar</string>
+    <string name="battery_light_low_blinking_title">Piscar a luz com bateria fraca</string>
+    <string name="battery_light_cat">Cor da luz da bateria ao carregar</string>
+    <string name="battery_light_low_color">Bateria fraca</string>
+    <string name="battery_light_medium_color">Bateria média</string>
+    <string name="battery_light_full_color">Bateria quase carregada</string>
+    <string name="battery_light_reallyfull_color">Bateria carregada (100)</string>
 </resources>

@@ -17,37 +17,37 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- DU version in About phone -->
-    <string name="rom_version_title">DU version</string>
+    <string name="rom_version_title">DU verzió</string>
     <!-- Themes -->
-    <string name="du_themes_title">Themes</string>
-    <string name="du_themes_summary">Life is like a box of crayons..</string>
+    <string name="du_themes_title">Témák</string>
+    <string name="du_themes_summary">Az élet olyan, mint egy doboz kréta..</string>
     <!-- Changelog -->
-    <string name="du_changelog_title">Changelog</string>
-    <string name="du_changelog_summary">View a summaried log of notable changes</string>
+    <string name="du_changelog_title">Változások listája</string>
+    <string name="du_changelog_summary">Tekintse meg a figyelemre méltó változások összefoglaló naplóját</string>
     <!-- Update notifer -->
-    <string name="du_notifier_title">Update notifications</string>
-    <string name="du_notifier_summary">Get push notifications when an update is available</string>
+    <string name="du_notifier_title">Frissítési értesítések</string>
+    <string name="du_notifier_summary">Értesítés küldése, ha frissítés érhető el</string>
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
-    <string name="suggestion_button_close">Close</string>
+    <string name="suggestion_button_close">Bezár</string>
     <!-- Rotation -->
-    <string name="display_rotation_title">Rotation</string>
-    <string name="display_rotation_subtitle">Autorotation, 0, 90, 180, 270 degrees</string>
-    <string name="display_rotation_disabled">Disabled</string>
-    <string name="display_rotation_unit">degrees</string>
-    <string name="display_rotation_category_title">Rotation modes</string>
-    <string name="display_rotation_0_title">0 degrees</string>
-    <string name="display_rotation_90_title">90 degrees</string>
-    <string name="display_rotation_180_title">180 degrees</string>
-    <string name="display_rotation_270_title">270 degrees</string>
+    <string name="display_rotation_title">Képernyő elforgatás</string>
+    <string name="display_rotation_subtitle">Automatikus forgatás, 0, 90, 180, 270 fok</string>
+    <string name="display_rotation_disabled">Kikapcsolva</string>
+    <string name="display_rotation_unit">fok</string>
+    <string name="display_rotation_category_title">Forgatási módok</string>
+    <string name="display_rotation_0_title">0 fok</string>
+    <string name="display_rotation_90_title">90 fok</string>
+    <string name="display_rotation_180_title">180 fok</string>
+    <string name="display_rotation_270_title">270 fok</string>
     <!-- Custom ambient display -->
-    <string name="ambient_display_category">Ambient display</string>
-    <string name="lockscreen_settings_category">General</string>
-    <string name="ambient_other_category">Other</string>
-    <string name="ambient_display_custom_title">Custom options</string>
-    <string name="ambient_display_custom_summary">Wake screen with notifications and various gestures</string>
+    <string name="ambient_display_category">Környezeti kijelző</string>
+    <string name="lockscreen_settings_category">Általános</string>
+    <string name="ambient_other_category">Egyéb</string>
+    <string name="ambient_display_custom_title">Egyéni beállítások</string>
+    <string name="ambient_display_custom_summary">Értesítések és különböző gesztusok ébresszék fel a kijelzőt</string>
     <!-- Scramble PIN layout on lockscreen -->
-    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <string name="unlock_scramble_pin_layout_title">Véletlenszerű elrendezés</string>
+    <string name="unlock_scramble_pin_layout_summary">Összekeveri a beviteli mezőn a számok elrendezését az eszköz feloldásakor</string>
     <!-- Back gesture settings -->
     <string name="back_gesture_settings_dialog_title">Back gesture settings</string>
     <string name="back_gesture_sensitivity_dialog_message">Higher sensitivity may conflict with any app gestures along the edges of the screen.</string>

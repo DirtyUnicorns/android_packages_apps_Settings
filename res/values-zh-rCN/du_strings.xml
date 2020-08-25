@@ -17,96 +17,96 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
     <!-- DU version in About phone -->
-    <string name="rom_version_title">DU version</string>
+    <string name="rom_version_title">DU 版本</string>
     <!-- Themes -->
-    <string name="du_themes_title">Themes</string>
-    <string name="du_themes_summary">Life is like a box of crayons..</string>
+    <string name="du_themes_title">主题</string>
+    <string name="du_themes_summary">生活就像一盒蜡笔…</string>
     <!-- Changelog -->
-    <string name="du_changelog_title">Changelog</string>
-    <string name="du_changelog_summary">View a summaried log of notable changes</string>
+    <string name="du_changelog_title">更新日志</string>
+    <string name="du_changelog_summary">查看主要变更的摘要日志</string>
     <!-- Update notifer -->
-    <string name="du_notifier_title">Update notifications</string>
-    <string name="du_notifier_summary">Get push notifications when an update is available</string>
+    <string name="du_notifier_title">更新通知</string>
+    <string name="du_notifier_summary">有可用更新时接收推送通知</string>
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
-    <string name="suggestion_button_close">Close</string>
+    <string name="suggestion_button_close">关闭</string>
     <!-- Rotation -->
-    <string name="display_rotation_title">Rotation</string>
-    <string name="display_rotation_subtitle">Autorotation, 0, 90, 180, 270 degrees</string>
-    <string name="display_rotation_disabled">Disabled</string>
-    <string name="display_rotation_unit">degrees</string>
-    <string name="display_rotation_category_title">Rotation modes</string>
-    <string name="display_rotation_0_title">0 degrees</string>
-    <string name="display_rotation_90_title">90 degrees</string>
-    <string name="display_rotation_180_title">180 degrees</string>
-    <string name="display_rotation_270_title">270 degrees</string>
+    <string name="display_rotation_title">旋转</string>
+    <string name="display_rotation_subtitle">自动旋转，0、90、180、270 度</string>
+    <string name="display_rotation_disabled">已禁用</string>
+    <string name="display_rotation_unit">度</string>
+    <string name="display_rotation_category_title">旋转模式</string>
+    <string name="display_rotation_0_title">0 度</string>
+    <string name="display_rotation_90_title">90 度</string>
+    <string name="display_rotation_180_title">180 度</string>
+    <string name="display_rotation_270_title">270 度</string>
     <!-- Custom ambient display -->
-    <string name="ambient_display_category">Ambient display</string>
-    <string name="lockscreen_settings_category">General</string>
-    <string name="ambient_other_category">Other</string>
-    <string name="ambient_display_custom_title">Custom options</string>
-    <string name="ambient_display_custom_summary">Wake screen with notifications and various gestures</string>
+    <string name="ambient_display_category">息屏显示</string>
+    <string name="lockscreen_settings_category">常规</string>
+    <string name="ambient_other_category">其他</string>
+    <string name="ambient_display_custom_title">自定义选项</string>
+    <string name="ambient_display_custom_summary">通知与各种手势唤醒屏幕</string>
     <!-- Scramble PIN layout on lockscreen -->
-    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <string name="unlock_scramble_pin_layout_title">乱序布局</string>
+    <string name="unlock_scramble_pin_layout_summary">解锁设备时，使用乱序 PIN 布局</string>
     <!-- Back gesture settings -->
-    <string name="back_gesture_settings_dialog_title">Back gesture settings</string>
-    <string name="back_gesture_sensitivity_dialog_message">Higher sensitivity may conflict with any app gestures along the edges of the screen.</string>
-    <string name="back_gesture_area_dead_zone_title">Back area dead zone</string>
-    <string name="back_gesture_area_dead_zone_message">Set the area of the screen where the swipe can be triggered, to avoid conflicts with in-app gestures.</string>
-    <string name="smallest_tick_label">Full screen</string>
-    <string name="greatest_tick_label">Half screen</string>
-    <string name="back_gesture_arrow_title">Back arrow animation</string>
-    <string name="back_gesture_arrow_message">Hide arrow with back gesture</string>
-    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
-    <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
+    <string name="back_gesture_settings_dialog_title">返回手势设置</string>
+    <string name="back_gesture_sensitivity_dialog_message">更高的敏感度，可能与应用程序的屏幕边缘手势发生冲突。</string>
+    <string name="back_gesture_area_dead_zone_title">返回区域盲区</string>
+    <string name="back_gesture_area_dead_zone_message">设置可以触发滑动的屏幕区域，以避免与应用内手势发生冲突。</string>
+    <string name="smallest_tick_label">全屏</string>
+    <string name="greatest_tick_label">半屏</string>
+    <string name="back_gesture_arrow_title">返回箭头动画</string>
+    <string name="back_gesture_arrow_message">隐藏返回手势的箭头</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">在指纹传感器上左右滑动，以清除通知</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">在手机背面的指纹传感器上左右滑动，以清除通知</string>
     <!-- Categories -->
-    <string name="density_category">Density options</string>
+    <string name="density_category">密度选项</string>
     <!-- Customize your device -->
-    <string name="custom_style_suggestion_title">Customize your device</string>
-    <string name="custom_style_suggestion_summary">Try different themes, fonts, and more</string>
+    <string name="custom_style_suggestion_title">自定义您的设备</string>
+    <string name="custom_style_suggestion_summary">尝试不同的主题、字体，以及更多</string>
     <!-- SELinux Status -->
-    <string name="selinux_status">SELinux status</string>
-    <string name="selinux_status_disabled">Disabled</string>
-    <string name="selinux_status_permissive">Permissive</string>
-    <string name="selinux_status_enforcing">Enforcing</string>
+    <string name="selinux_status">SELinux 状态</string>
+    <string name="selinux_status_disabled">已禁用</string>
+    <string name="selinux_status_permissive">许可</string>
+    <string name="selinux_status_enforcing">执行中</string>
     <!-- Lockscreen timeout -->
-    <string name="lockscreen_timeout_title">Lockscreen timeout</string>
+    <string name="lockscreen_timeout_title">屏幕超时</string>
     <!-- Enable/Disable Screenshot sound -->
-    <string name="screenshot_sound_title">Screenshot sounds</string>
+    <string name="screenshot_sound_title">屏幕截图提示音</string>
     <!-- Ambient Display wake gestures/music ticker -->
-    <string name="ambient_wake_gestures_title">Ambient wake gestures</string>
-    <string name="ambient_wake_gestures_summary">Show Ambient Display instead of normal lockscreen on wake gestures</string>
-    <string name="pulse_on_new_tracks_title">Ambient music ticker</string>
-    <string name="pulse_on_new_tracks_summary">Show Ambient Display when a new music track is played. Double tap on track info to skip to next track.</string>
-    <string name="pulse_on_new_tracks_soli_summary">Show Ambient Display when a new music track is played</string>
+    <string name="ambient_wake_gestures_title">息屏唤醒手势</string>
+    <string name="ambient_wake_gestures_summary">唤醒手势后显示息屏显示，而不是平常的锁定屏幕</string>
+    <string name="pulse_on_new_tracks_title">息屏音乐信息</string>
+    <string name="pulse_on_new_tracks_summary">播放新音乐时显示主动显示。双击音轨信息跳至下一曲目。</string>
+    <string name="pulse_on_new_tracks_soli_summary">播放新音乐时显示主动显示</string>
     <!-- Wake on plug -->
-    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
-    <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+    <string name="wake_when_plugged_or_unplugged_title">充电唤醒</string>
+    <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时点亮屏幕</string>
     <!-- Vibrate on plug -->
-    <string name="vibration_on_charge_state_changed_title">Vibrate on USB plug</string>
+    <string name="vibration_on_charge_state_changed_title">USB 插拔时振动</string>
     <!-- Notification log -->
-    <string name="notification_log_summary">Show notifications history log</string>
+    <string name="notification_log_summary">显示通知历史记录</string>
     <!-- Touch sensitivity -->
-    <string name="touch_sensitivity_summary">Improves touch when using screen protectors</string>
-    <string name="touch_sensitivity_title">Increase touch sensitivity</string>
-    <string name="keywords_touch_sensitivity">touch, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
+    <string name="touch_sensitivity_summary">使用屏幕保护膜时提高触摸灵敏度</string>
+    <string name="touch_sensitivity_title">增加触摸灵敏度</string>
+    <string name="keywords_touch_sensitivity">触摸、灵敏度、灵敏、屏幕保护膜、贴膜、响应、相应度</string>
     <!-- Quick statusbar header & statusbar battery percentage -->
-    <string name="battery_percentage_category_title">Battery percentage</string>
-    <string name="sb_battery_percentage">Status bar</string>
-    <string name="qs_battery_percentage">Quick status bar header</string>
-    <string name="qs_battery_percentage_description">Show battery percentage in QS header</string>
+    <string name="battery_percentage_category_title">电量百分比</string>
+    <string name="sb_battery_percentage">状态栏</string>
+    <string name="qs_battery_percentage">快速设置面板顶栏</string>
+    <string name="qs_battery_percentage_description">在快速设置面板顶栏显示电量百分比</string>
     <!-- Custom light color -->
-    <string name="custom_light_title">Light color</string>
-    <string name="custom_light_on_time_title">Light ON time during LED pulse (ms)</string>
-    <string name="custom_light_off_time_title">Light OFF time during LED pulse (ms)</string>
-    <string name="value_equals_default">def</string>
+    <string name="custom_light_title">指示灯颜色</string>
+    <string name="custom_light_on_time_title">LED 闪烁时亮灯时间（毫秒）</string>
+    <string name="custom_light_off_time_title">LED 闪烁时熄灯时间（毫秒）</string>
+    <string name="value_equals_default">默认</string>
     <!-- Battery light customization -->
-    <string name="battery_light_settings_pref_title">Battery charging light</string>
-    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
-    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
-    <string name="battery_light_cat">Battery light color when charging</string>
-    <string name="battery_light_low_color">Low battery</string>
-    <string name="battery_light_medium_color">Medium battery</string>
-    <string name="battery_light_full_color">Almost full battery</string>
-    <string name="battery_light_reallyfull_color">Full battery (100)</string>
+    <string name="battery_light_settings_pref_title">电池指示灯</string>
+    <string name="battery_light_allow_on_dnd_title">勿扰模式下启用电池指示灯</string>
+    <string name="battery_light_low_blinking_title">低电量时指示灯闪烁</string>
+    <string name="battery_light_cat">充电时电量指示灯颜色</string>
+    <string name="battery_light_low_color">低电量</string>
+    <string name="battery_light_medium_color">中等电量</string>
+    <string name="battery_light_full_color">接近充满</string>
+    <string name="battery_light_reallyfull_color">满电量（100）</string>
 </resources>
