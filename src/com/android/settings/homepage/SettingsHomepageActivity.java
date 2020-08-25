@@ -73,8 +73,10 @@ public class SettingsHomepageActivity extends FragmentActivity {
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
-        avatarView = root.findViewById(R.id.account_avatar);
-        //final AvatarViewMixin avatarViewMixin = new AvatarViewMixin(this, avatarView);
+        //final ImageView avatarView = findViewById(R.id.account_avatar);
+        //getLifecycle().addObserver(new AvatarViewMixin(this, avatarView));
+        //getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
+        avatarView = findViewById(R.id.account_avatar);
         avatarView.setImageDrawable(getCircularUserIcon(context));
         avatarView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,8 +86,6 @@ public class SettingsHomepageActivity extends FragmentActivity {
                 startActivity(intent);
             }
         });
-        //getLifecycle().addObserver(new AvatarViewMixin(this, avatarView));
-        //getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
 
         if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
             // Only allow contextual feature on high ram devices.

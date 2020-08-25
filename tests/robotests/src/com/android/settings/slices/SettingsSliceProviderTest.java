@@ -50,7 +50,6 @@ import androidx.slice.SliceProvider;
 import androidx.slice.widget.SliceLiveData;
 
 import com.android.settings.R;
-import com.android.settings.Utils;
 import com.android.settings.testutils.DatabaseTestUtils;
 import com.android.settings.testutils.FakeToggleController;
 import com.android.settings.testutils.shadow.ShadowBluetoothAdapter;
@@ -451,10 +450,8 @@ public class SettingsSliceProviderTest {
     public void onCreatePermissionRequest_returnsSettingIntent() {
         final PendingIntent pendingIntent = mProvider.onCreatePermissionRequest(
                 CustomSliceRegistry.FLASHLIGHT_SLICE_URI, "com.android.whaaaat");
-        final Intent settingsIntent = new Intent(Settings.ACTION_SETTINGS)
-                .setPackage(Utils.SETTINGS_PACKAGE_NAME);
         PendingIntent settingsPendingIntent =
-                PendingIntent.getActivity(mContext, 0, settingsIntent, 0);
+                PendingIntent.getActivity(mContext, 0, new Intent(Settings.ACTION_SETTINGS), 0);
 
         assertThat(pendingIntent).isEqualTo(settingsPendingIntent);
     }

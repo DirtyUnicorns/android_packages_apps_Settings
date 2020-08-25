@@ -2692,7 +2692,7 @@
     <string name="sync_one_time_sync" msgid="8114337154112057462">"ഇപ്പോൾ സമന്വയിപ്പിക്കുന്നതിന് ടാപ്പുചെയ്യുക<xliff:g id="LAST_SYNC_TIME">
 %1$s</xliff:g>"</string>
     <string name="sync_gmail" msgid="228561698646018808">"Gmail"</string>
-    <string name="sync_calendar" msgid="4603704438090387251">"Calendar"</string>
+    <string name="sync_calendar" msgid="4603704438090387251">"കലണ്ടർ"</string>
     <string name="sync_contacts" msgid="2376465611511325472">"കോണ്ടാക്റ്റ്"</string>
     <string name="sync_plug" msgid="7956982719077985381"><font fgcolor="#ffffffff">"Google സമന്വയത്തിലേക്ക് സ്വാഗതം!"</font>" \nനിങ്ങൾ എവിടെയായിരുന്നാലും കോൺടാക്റ്റുകളും അപ്പോയ്‌ന്റ്മെന്റുകളും അതിലധികം കാര്യങ്ങളും ആക്‌സസ്സുചെയ്യാൻ അനുവദിക്കുന്നതിനായി ഡാറ്റ സമന്വയിപ്പിക്കാനുള്ള Google-ന്റെ ഒരു സമീപനം."</string>
     <string name="header_application_sync_settings" msgid="7427706834875419243">"അപ്ലിക്കേഷൻ സമന്വയ ക്രമീകരണങ്ങൾ"</string>
@@ -3387,9 +3387,9 @@
     <string name="hide_silent_icons_title" msgid="5951392023601167577">"സൗമ്യമായ അറിയിപ്പുകളിൽ നിന്നുള്ള ഐക്കണുകൾ മറയ്ക്കൂ"</string>
     <string name="hide_silent_icons_summary" msgid="623763437631637232">"സൗമ്യമായ അറിയിപ്പുകളിൽ നിന്നുള്ള ഐക്കണുകൾ സ്റ്റാറ്റസ് ബാറിൽ ദൃശ്യമാകില്ല"</string>
     <string name="notification_badging_title" msgid="3149547223586336353">"അറിയിപ്പ് ഡോട്ടുകൾ അനുവദിക്കുക"</string>
-    <string name="notification_bubbles_title" msgid="5681506665322329301">"ബബിളുകൾ"</string>
-    <string name="notification_bubbles_developer_setting_summary" msgid="3675697756601760093">"ചില അറിയിപ്പുകൾ സ്‌ക്രീനിൽ ബബിളുകളായി ദൃശ്യമാകുന്നതാണ്."</string>
-    <string name="bubbles_feature_education" msgid="4088275802688887634">"ചില അറിയിപ്പുകളും മറ്റ് ഉള്ളടക്കവും സ്‌ക്രീനിൽ ബബിളുകളായി ദൃശ്യമാകുന്നതാണ്. ഒരു ബബിൾ തുറക്കാൻ അതിൽ ടാപ്പ് ചെയ്യുക. ഡിസ്‌മിസ് ചെയ്യാൻ അതിനെ സ്‌ക്രീനിന്റെ താഴേക്ക് വലിച്ചിടുക."</string>
+    <string name="notification_bubbles_title" msgid="5681506665322329301">"ബബ്ൾ"</string>
+    <string name="notification_bubbles_developer_setting_summary" msgid="3675697756601760093">"ചില അറിയിപ്പുകൾ സ്‌ക്രീനിൽ ബബ്ളുകളായി ദൃശ്യമാകുന്നതാണ്."</string>
+    <string name="bubbles_feature_education" msgid="4088275802688887634">"ചില അറിയിപ്പുകളും മറ്റ് ഉള്ളടക്കവും സ്‌ക്രീനിൽ ബബിളുകളായി ദൃശ്യമാകുന്നതാണ്. ഒരു ബബ്‌ൾ തുറക്കാൻ അതിൽ ടാപ്പ് ചെയ്യുക. ഡിസ്‌മിസ് ചെയ്യാൻ അതിനെ സ്‌ക്രീനിന്റെ താഴേക്ക് വലിച്ചിടുക."</string>
     <string name="bubbles_app_toggle_title" msgid="5319021259954576150">"ബബിളുകൾ"</string>
     <string name="bubbles_app_toggle_summary" msgid="1574515698567947948">"ബബിളുകളായി ചില അറിയിപ്പുകൾ കാണിക്കൻ <xliff:g id="APP_NAME">%1$s</xliff:g> എന്നതിനെ അനുവദിക്കുക"</string>
     <string name="bubbles_feature_disabled_dialog_title" msgid="1233382767099262132">"ബബിളുകൾ ഓണാക്കുക"</string>

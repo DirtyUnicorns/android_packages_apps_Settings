@@ -86,12 +86,6 @@ public class MockLocationAppPreferenceController extends DeveloperOptionsPrefere
         return true;
     }
 
-    @Override
-    public void onDeveloperOptionsDisabled() {
-        super.onDeveloperOptionsDisabled();
-        removeAllMockLocations();
-    }
-
     private void updateMockLocation() {
         final String mockLocationApp = getCurrentMockLocationApp();
 

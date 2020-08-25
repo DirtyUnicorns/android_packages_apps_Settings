@@ -154,7 +154,7 @@
     <string name="bluetooth_ask_enablement_and_lasting_discovery_no_name" product="tablet" msgid="4922952478824372605">"يريد أحد التطبيقات تفعيل البلوتوث وجعل جهازك اللوحي مرئيًا للأجهزة الأخرى. يمكنك تغيير هذا لاحقًا في إعدادات بلوتوث."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery_no_name" product="default" msgid="1381582950049639439">"يريد أحد التطبيقات تفعيل البلوتوث وجعل هاتفك مرئيًا للأجهزة الأخرى. يمكنك تغيير هذا لاحقًا في إعدادات بلوتوث."</string>
     <string name="bluetooth_turning_on" msgid="3842613808709024730">"جارٍ تفعيل البلوتوث..."</string>
-    <string name="bluetooth_turning_off" msgid="7406309124247701148">"جارٍ إيقاف البلوتوث..."</string>
+    <string name="bluetooth_turning_off" msgid="7406309124247701148">"جارٍ إيقاف تفعيل البلوتوث..."</string>
     <string name="bluetooth_connection_permission_request" msgid="8793131019383198861">"طلب اتصال بلوتوث"</string>
     <string name="bluetooth_connection_notif_message" msgid="6087344980352898209">"انقر للاتصال بـ \"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>\"."</string>
     <string name="bluetooth_connection_dialog_text" msgid="2537152772549874391">"هل تريد الاتصال بـ \"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>\"؟"</string>
@@ -1814,8 +1814,8 @@
     <string name="location_access_title" msgid="4052667453826272040">"الدخول إلى موقعي"</string>
     <string name="location_access_summary" msgid="8634100005481578143">"السماح للتطبيقات التي طلبت إذنك باستخدام معلومات موقعك"</string>
     <string name="location_sources_heading" msgid="6126965815860570524">"مصادر الموقع"</string>
-    <string name="about_settings" product="tablet" msgid="2888705054709289693">"لمحة عامة عن الجهاز اللوحي"</string>
-    <string name="about_settings" product="default" msgid="4038626127378127613">"لمحة عامة عن الهاتف"</string>
+    <string name="about_settings" product="tablet" msgid="2888705054709289693">"لمحة عن الجهاز اللوحي"</string>
+    <string name="about_settings" product="default" msgid="4038626127378127613">"لمحة عن الهاتف"</string>
     <string name="about_settings" product="device" msgid="9012888717090302815">"لمحة حول الجهاز"</string>
     <string name="about_settings" product="emulator" msgid="2516560858771320366">"حول الجهاز في وضع المحاكاة"</string>
     <string name="about_settings_summary" msgid="4831942939227432513">"عرض المعلومات القانونية والحالة وإصدار البرنامج"</string>
@@ -2236,7 +2236,7 @@
     <string name="accessibility_control_timeout_preference_title" msgid="1443940538597464758">"وقت اتخاذ الإجراء"</string>
     <string name="accessibility_control_timeout_preference_summary" msgid="5283566580551714506">"اختَر مدة عرض الرسائل التي تطلب منك اتخاذ إجراء، ولكن يقتصر عرضها على فترة مؤقتة.\n\nلا تتوافق بعض التطبيقات مع هذا الإعداد."</string>
     <string name="accessibility_long_press_timeout_preference_title" msgid="5237764682976688855">"مهلة النقر مع الاستمرار"</string>
-    <string name="accessibility_display_inversion_preference_title" msgid="5476133104746207952">"عكس الألوان"</string>
+    <string name="accessibility_display_inversion_preference_title" msgid="5476133104746207952">"عكس اللون"</string>
     <string name="accessibility_display_inversion_preference_subtitle" msgid="6737173589782501324">"قد يؤثر في الأداء"</string>
     <string name="accessibility_autoclick_preference_title" msgid="6771914155290467570">"فترة الثبات"</string>
     <string name="accessibility_autoclick_description" msgid="1824668430472936549">"إذا كنت تستخدم ماوس، يمكنك ضبط المؤشر بحيث يتم تلقائيًا اتخاذ الإجراء المطلوب عند توقف المؤشّر عن الحركة لمدة زمنية معينة."</string>
@@ -2686,7 +2686,7 @@
     <string name="battery_saver_turn_on_automatically_pct" msgid="4294335680892392449">"البطارية عند مستوى <xliff:g id="PERCENT">%1$s</xliff:g>"</string>
     <string name="battery_percentage" msgid="1779934245963043490">"نسبة شحن البطارية"</string>
     <string name="battery_percentage_description" msgid="2321465139126125541">"عرض نسبة شحن البطارية في شريط الحالة"</string>
-    <string name="process_stats_summary_title" msgid="502683176231281732">"إحصاءات العمليات"</string>
+    <string name="process_stats_summary_title" msgid="502683176231281732">"إحصائيات العمليات"</string>
     <string name="process_stats_summary" msgid="522842188571764699">"الإحصائيات التقنية حول العمليات الجارية"</string>
     <string name="app_memory_use" msgid="7559666138324410666">"استخدام الذاكرة"</string>
     <string name="process_stats_total_duration" msgid="3898635541254636618">"تم استخدام <xliff:g id="USEDRAM">%1$s</xliff:g> من إجمالي <xliff:g id="TOTALRAM">%2$s</xliff:g> خلال آخر <xliff:g id="TIMEDURATION">%3$s</xliff:g>"</string>
@@ -2899,7 +2899,7 @@
     <string name="data_usage_label_foreground" msgid="8782117644558473624">"المقدمة"</string>
     <string name="data_usage_label_background" msgid="8862781660427421859">"الخلفية"</string>
     <string name="data_usage_app_restricted" msgid="312065316274378518">"مقيَّد"</string>
-    <string name="data_usage_disable_mobile" msgid="6183809500102606801">"هل تريد إيقاف بيانات الجوّال؟"</string>
+    <string name="data_usage_disable_mobile" msgid="6183809500102606801">"هل تريد إيقاف تفعيل بيانات الجوّال؟"</string>
     <string name="data_usage_disable_mobile_limit" msgid="1370147078938479538">"تعيين حد لبيانات الجوال"</string>
     <string name="data_usage_disable_4g_limit" msgid="3084868504051520840">"‏تعيين حد بيانات لـ 4G"</string>
     <string name="data_usage_disable_3g_limit" msgid="8867555130268898044">"‏تعيين حد لبيانات 2G-3G"</string>
@@ -3567,13 +3567,13 @@
     <string name="hide_silent_icons_title" msgid="5951392023601167577">"إخفاء الرموز من الإشعارات الهادئة"</string>
     <string name="hide_silent_icons_summary" msgid="623763437631637232">"لا تظهر الرموز من الإشعارات الهادئة في شريط الحالة."</string>
     <string name="notification_badging_title" msgid="3149547223586336353">"السماح بنقاط الإشعارات"</string>
-    <string name="notification_bubbles_title" msgid="5681506665322329301">"فقاعات المحادثات"</string>
-    <string name="notification_bubbles_developer_setting_summary" msgid="3675697756601760093">"قد تظهر بعض الإشعارات في شكل فقاعات محادثات على الشاشة."</string>
-    <string name="bubbles_feature_education" msgid="4088275802688887634">"يمكن أن تظهر بعض الإشعارات وأنواع المحتوى الأخرى في شكل فقاعات المحادثات على الشاشة. لفتح فقاعة محادثة، يمكنك النقر عليها. ولإخفائها، يمكنك سحبها لأسفل الشاشة."</string>
-    <string name="bubbles_app_toggle_title" msgid="5319021259954576150">"فقاعات المحادثات"</string>
-    <string name="bubbles_app_toggle_summary" msgid="1574515698567947948">"السماح لتطبيق <xliff:g id="APP_NAME">%1$s</xliff:g> بعرض بعض الإشعارات في شكل فقاعات محادثات"</string>
-    <string name="bubbles_feature_disabled_dialog_title" msgid="1233382767099262132">"تفعيل فقاعات المحادثات"</string>
-    <string name="bubbles_feature_disabled_dialog_text" msgid="6969068442520056407">"لتفعيل فقاعات المحادثات في هذا التطبيق، يجب تفعيلها أولاً على جهازك. وهذا يؤثر في التطبيقات الأخرى التي سبق لك تفعيل فقاعات المحادثات فيها."</string>
+    <string name="notification_bubbles_title" msgid="5681506665322329301">"الفقاعات التفسيرية"</string>
+    <string name="notification_bubbles_developer_setting_summary" msgid="3675697756601760093">"قد تظهر بعض الإشعارات في شكل فقاعات تفسيرية على الشاشة."</string>
+    <string name="bubbles_feature_education" msgid="4088275802688887634">"يمكن أن تظهر بعض الإشعارات وأنواع المحتوى الأخرى في شكل فقاعات تفسيرية على الشاشة. لفتح فقاعة تفسيرية، يمكنك النقر عليها. ولإخفائها، يمكنك سحبها لأسفل الشاشة."</string>
+    <string name="bubbles_app_toggle_title" msgid="5319021259954576150">"الفقاعات التفسيرية"</string>
+    <string name="bubbles_app_toggle_summary" msgid="1574515698567947948">"السماح لتطبيق <xliff:g id="APP_NAME">%1$s</xliff:g> بعرض بعض الإشعارات في شكل فقاعات تفسيرية"</string>
+    <string name="bubbles_feature_disabled_dialog_title" msgid="1233382767099262132">"تفعيل الفقاعات التفسيرية"</string>
+    <string name="bubbles_feature_disabled_dialog_text" msgid="6969068442520056407">"لتفعيل الفقاعات التفسيرية في هذا التطبيق، يجب تفعيلها أولاً في جهازك. وهذا يؤثر في التطبيقات الأخرى التي سبق لك تفعيل الفقاعات التفسيرية فيها."</string>
     <string name="bubbles_feature_disabled_button_approve" msgid="597665528889599104">"تفعيل الفقاعات التفسيرية في جهازك"</string>
     <string name="bubbles_feature_disabled_button_cancel" msgid="8963409459448350600">"إلغاء"</string>
     <string name="swipe_direction_title" msgid="4260320464727178413">"إجراءات التمرير السريع"</string>
@@ -4025,7 +4025,7 @@
     <string name="system_default_app" msgid="2647834628622214931">"(الإعداد التلقائي للنظام)"</string>
     <string name="apps_storage" msgid="643866814746927111">"مساحة تخزين التطبيقات"</string>
     <string name="usage_access" msgid="5487993885373893282">"الوصول إلى بيانات الاستخدام"</string>
-    <string name="permit_usage_access" msgid="179630895262172674">"السماح بالوصول إلى بيانات الاستخدام"</string>
+    <string name="permit_usage_access" msgid="179630895262172674">"السماح بالدخول إلى الاستخدام"</string>
     <string name="app_usage_preference" msgid="7062447555623339120">"الإعدادات المفضّلة لاستخدام التطبيقات"</string>
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"وقت الشاشة"</string>
     <string name="usage_access_description" msgid="8547716253713890707">"يتيح الدخول إلى الاستخدام للتطبيق تتبع التطبيقات الأخرى التي تستخدمها ومدى تكرار استخدامها ومشغل شبكة الجوال وإعدادات اللغة بالإضافة إلى تفاصيل أخرى."</string>
@@ -4999,7 +4999,7 @@
     <string name="wifi_calling_summary" msgid="8566648389959032967">"‏استخدام شبكة Wi‑Fi لإجراء المكالمات لتحسين الجودة"</string>
     <string name="enable_receiving_mms_notification_title" msgid="6465218559386990248">"رسالة وسائط متعددة واردة"</string>
     <string name="enable_sending_mms_notification_title" msgid="7120641300854953375">"يتعذّر إرسال رسالة وسائط متعددة"</string>
-    <string name="enable_mms_notification_summary" msgid="6432752438276672500">"انقر للسماح بالمراسلة باستخدام رسائل الوسائط المتعددة على <xliff:g id="OPERATOR_NAME">%1$s</xliff:g> عند إيقاف بيانات الجوّال."</string>
+    <string name="enable_mms_notification_summary" msgid="6432752438276672500">"انقر للسماح بالمراسلة باستخدام رسائل الوسائط المتعددة على <xliff:g id="OPERATOR_NAME">%1$s</xliff:g> عند إيقاف تفعيل بيانات الجوّال."</string>
     <string name="enable_mms_notification_channel_title" msgid="1798206332620642108">"رسالة وسائط متعددة"</string>
     <string name="sim_combination_warning_notification_title" msgid="1365401631492986487">"‏هناك مشكلة في مجموعة بطاقة SIM"</string>
     <string name="dual_cdma_sim_warning_notification_summary" msgid="2826474790710586487">"قد يحد استخدام <xliff:g id="OPERATOR_NAMES">%1$s</xliff:g> من أداء بعض الوظائف. انقر لمعرفة المزيد من المعلومات."</string>

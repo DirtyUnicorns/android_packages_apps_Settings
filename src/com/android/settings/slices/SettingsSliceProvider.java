@@ -42,7 +42,6 @@ import androidx.slice.Slice;
 import androidx.slice.SliceProvider;
 
 import com.android.settings.R;
-import com.android.settings.Utils;
 import com.android.settings.bluetooth.BluetoothSliceBuilder;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.notification.ZenModeSliceBuilder;
@@ -304,8 +303,7 @@ public class SettingsSliceProvider extends SliceProvider {
     @Override
     public PendingIntent onCreatePermissionRequest(@NonNull Uri sliceUri,
             @NonNull String callingPackage) {
-        final Intent settingsIntent = new Intent(Settings.ACTION_SETTINGS)
-                .setPackage(Utils.SETTINGS_PACKAGE_NAME);
+        final Intent settingsIntent = new Intent(Settings.ACTION_SETTINGS);
         final PendingIntent noOpIntent = PendingIntent.getActivity(getContext(),
                 0 /* requestCode */, settingsIntent, 0 /* flags */);
         return noOpIntent;
