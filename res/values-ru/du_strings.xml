@@ -70,7 +70,7 @@
     <string name="selinux_status_permissive">Разрешающий</string>
     <string name="selinux_status_enforcing">Блокировка</string>
     <!-- Lockscreen timeout -->
-    <string name="lockscreen_timeout_title">Lockscreen timeout</string>
+    <string name="lockscreen_timeout_title">Тайм-аут экрана блокировки</string>
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">Звук скриншота</string>
     <!-- Ambient Display wake gestures/music ticker -->
@@ -87,26 +87,28 @@
     <!-- Notification log -->
     <string name="notification_log_summary">Показать журнал истории уведомлений</string>
     <!-- Touch sensitivity -->
-    <string name="touch_sensitivity_summary">Improves touch when using screen protectors</string>
-    <string name="touch_sensitivity_title">Increase touch sensitivity</string>
-    <string name="keywords_touch_sensitivity">touch, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
+    <string name="touch_sensitivity_summary">Улучшает чувствительность экрана при использовании защитных стёкол и плёнок</string>
+    <string name="touch_sensitivity_title">Увеличить чувствительность экрана</string>
+    <string name="keywords_touch_sensitivity">касание, чувствительность, защита экрана, плёнка, реагирование, отзывчивость</string>
     <!-- Quick statusbar header & statusbar battery percentage -->
-    <string name="battery_percentage_category_title">Battery percentage</string>
-    <string name="sb_battery_percentage">Status bar</string>
-    <string name="qs_battery_percentage">Quick status bar header</string>
-    <string name="qs_battery_percentage_description">Show battery percentage in QS header</string>
+    <string name="battery_percentage_category_title">Процент заряда батареи</string>
+    <string name="sb_battery_percentage">Строка состояния</string>
+    <string name="qs_battery_percentage">Заголовок быстрых настроек</string>
+    <string name="qs_battery_percentage_description">Показывать уровень заряда батареи в заголовке БН</string>
     <!-- Custom light color -->
-    <string name="custom_light_title">Light color</string>
-    <string name="custom_light_on_time_title">Light ON time during LED pulse (ms)</string>
-    <string name="custom_light_off_time_title">Light OFF time during LED pulse (ms)</string>
-    <string name="value_equals_default">def</string>
+    <string name="custom_light_title">Цвет света</string>
+    <string name="custom_light_on_time_title">Время включенного LED (мс)</string>
+    <string name="custom_light_off_time_title">Время выключенного LED (мс)</string>
+    <string name="value_equals_default">умолч.</string>
     <!-- Battery light customization -->
-    <string name="battery_light_settings_pref_title">Battery charging light</string>
-    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
-    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
-    <string name="battery_light_cat">Battery light color when charging</string>
-    <string name="battery_light_low_color">Low battery</string>
-    <string name="battery_light_medium_color">Medium battery</string>
-    <string name="battery_light_full_color">Almost full battery</string>
-    <string name="battery_light_reallyfull_color">Full battery (100)</string>
+    <string name="battery_light_settings_pref_title">Светоиндикация зарядки батареи </string>
+    <string name="battery_light_allow_on_dnd_title">Светоиндикация батареи в режиме \"Не беспокоить\"</string>
+    <string name="battery_light_low_blinking_title">Мигать при низком заряде</string>
+    <string name="battery_light_cat">Цвет светоиндикации при зарядке</string>
+    <string name="battery_light_low_color">Низкий заряд батареи</string>
+    <string name="battery_light_medium_color">Средний заряд батареи</string>
+    <string name="battery_light_full_color">Почти полный заряд батареи</string>
+    <string name="battery_light_reallyfull_color">Заряжена (100%)</string>
+    <!-- Custom device hostname -->
+    <string name="device_hostname">Имя хоста</string>
 </resources>

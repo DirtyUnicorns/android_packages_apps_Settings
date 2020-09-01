@@ -70,7 +70,7 @@
     <string name="selinux_status_permissive">Permissivo</string>
     <string name="selinux_status_enforcing">Enforcing</string>
     <!-- Lockscreen timeout -->
-    <string name="lockscreen_timeout_title">Lockscreen timeout</string>
+    <string name="lockscreen_timeout_title">Timeout schermata di sblocco</string>
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">Suono screenshot</string>
     <!-- Ambient Display wake gestures/music ticker -->
@@ -87,26 +87,28 @@
     <!-- Notification log -->
     <string name="notification_log_summary">Visualizza la cronologia delle notifiche</string>
     <!-- Touch sensitivity -->
-    <string name="touch_sensitivity_summary">Improves touch when using screen protectors</string>
-    <string name="touch_sensitivity_title">Increase touch sensitivity</string>
-    <string name="keywords_touch_sensitivity">touch, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
+    <string name="touch_sensitivity_summary">Migliora la sensibilità al tocco quando si utilizzano vetri protettivi</string>
+    <string name="touch_sensitivity_title">Aumenta la sensibilità al tocco</string>
+    <string name="keywords_touch_sensitivity">tocco, sensibilità, sensitivo, protettore dello schermo, pellicola, reattiva, reattività</string>
     <!-- Quick statusbar header & statusbar battery percentage -->
-    <string name="battery_percentage_category_title">Battery percentage</string>
-    <string name="sb_battery_percentage">Status bar</string>
+    <string name="battery_percentage_category_title">Percentuale batteria</string>
+    <string name="sb_battery_percentage">Barra di stato</string>
     <string name="qs_battery_percentage">Quick status bar header</string>
-    <string name="qs_battery_percentage_description">Show battery percentage in QS header</string>
+    <string name="qs_battery_percentage_description">Mostra la percentuale della batteria nella barra di stato</string>
     <!-- Custom light color -->
-    <string name="custom_light_title">Light color</string>
-    <string name="custom_light_on_time_title">Light ON time during LED pulse (ms)</string>
-    <string name="custom_light_off_time_title">Light OFF time during LED pulse (ms)</string>
+    <string name="custom_light_title">Colore Led</string>
+    <string name="custom_light_on_time_title">Durata impulso del led acceso (ms)</string>
+    <string name="custom_light_off_time_title">Durata impulso del led spento (ms)</string>
     <string name="value_equals_default">def</string>
     <!-- Battery light customization -->
-    <string name="battery_light_settings_pref_title">Battery charging light</string>
-    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
-    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
-    <string name="battery_light_cat">Battery light color when charging</string>
-    <string name="battery_light_low_color">Low battery</string>
-    <string name="battery_light_medium_color">Medium battery</string>
-    <string name="battery_light_full_color">Almost full battery</string>
-    <string name="battery_light_reallyfull_color">Full battery (100)</string>
+    <string name="battery_light_settings_pref_title">Luci batteria in carica</string>
+    <string name="battery_light_allow_on_dnd_title">Led notifica batteria in modalità Non Disturbare</string>
+    <string name="battery_light_low_blinking_title">Led notifica lampeggiante quando la batteria è scarica</string>
+    <string name="battery_light_cat">Colore del LED in ricarica</string>
+    <string name="battery_light_low_color">Batteria bassa</string>
+    <string name="battery_light_medium_color">Batteria normale</string>
+    <string name="battery_light_full_color">Batteria quasi carica</string>
+    <string name="battery_light_reallyfull_color">Batteria completa (100)</string>
+    <!-- Custom device hostname -->
+    <string name="device_hostname">Nome dispositivo</string>
 </resources>

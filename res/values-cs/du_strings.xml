@@ -109,4 +109,6 @@
     <string name="battery_light_medium_color">Střední stav baterie</string>
     <string name="battery_light_full_color">Téměř nabito</string>
     <string name="battery_light_reallyfull_color">Plně nabito (100%)</string>
+    <!-- Custom device hostname -->
+    <string name="device_hostname">Hostitelské jméno zařízení</string>
 </resources>

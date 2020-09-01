@@ -109,4 +109,6 @@
     <string name="battery_light_medium_color">Bateria pela metade</string>
     <string name="battery_light_full_color">Bateria quase carregada</string>
     <string name="battery_light_reallyfull_color">Bateria carregada (100)</string>
+    <!-- Custom device hostname -->
+    <string name="device_hostname">Nome do host do dispositivo</string>
 </resources>

@@ -109,4 +109,6 @@
     <string name="battery_light_medium_color">中等电量</string>
     <string name="battery_light_full_color">接近充满</string>
     <string name="battery_light_reallyfull_color">满电量（100）</string>
+    <!-- Custom device hostname -->
+    <string name="device_hostname">设备主机名</string>
 </resources>

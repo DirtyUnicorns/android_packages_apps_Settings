@@ -109,4 +109,6 @@
     <string name="battery_light_medium_color">Mittlerer Akkustand</string>
     <string name="battery_light_full_color">Akkustand fast voll</string>
     <string name="battery_light_reallyfull_color">Akkustand voll</string>
+    <!-- Custom device hostname -->
+    <string name="device_hostname">Device hostname</string>
 </resources>
