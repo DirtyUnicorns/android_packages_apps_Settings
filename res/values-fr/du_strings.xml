@@ -47,6 +47,11 @@
     <string name="ambient_other_category">Autre</string>
     <string name="ambient_display_custom_title">Réglages personnalisées</string>
     <string name="ambient_display_custom_summary">Réveiller l\'écran par l\'affichage des notifications ou par divers gestes</string>
+    <!-- Doze -->
+    <!-- [CHAR LIMIT=30] Display settings screen, setting option name to change whether the always-on ambient display feature is enabled. -->
+    <string name="doze_always_on_title">Toujours activé</string>
+    <!-- Custom device hostname -->
+    <string name="device_hostname">Nom d\'hôte de l\'appareil</string>
     <!-- Scramble PIN layout on lockscreen -->
     <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
     <string name="unlock_scramble_pin_layout_summary">Modifier l\'ordre des numéros du pavé numérique de manière aléatoire pour la saisie du code PIN de déverrouillage</string>
