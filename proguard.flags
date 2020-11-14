@@ -66,3 +66,9 @@
 -keepclasseswithmembers class * extends com.android.settings.slices.SliceBackgroundWorker {
     public <init>(android.content.Context, android.net.Uri);
 }
+
+# ExpandableBottomBar
+-keep class github.com.st235.lib_expandablebottombar.ExpandableBottomBar { *; }
+-keep class github.com.st235.lib_expandablebottombar.behavior.ExpandableBottomBarBehavior { *; }
+-keep class github.com.st235.lib_expandablebottombar.ExpandableBottomBarMenuItem** { *; }
+-keep class github.com.st235.lib_expandablebottombar.ExpandableBottomBarScrollableBehavior { *; }

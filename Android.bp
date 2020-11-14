@@ -29,6 +29,8 @@ android_library {
 
     srcs: ["src/**/*.java"],
 
+    aaptflags: ["--extra-packages github.com.st235.lib_expandablebottombar",],
+
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
         "androidx.slice_slice-builders",
@@ -50,6 +52,12 @@ android_library {
         "settings-contextual-card-protos-lite",
         "settings-log-bridge-protos-lite",
         "contextualcards",
+        "expandablebottombar",
+        "androidx.navigation_navigation-common-ktx",
+        "androidx.navigation_navigation-fragment-ktx",
+        "androidx.navigation_navigation-runtime-ktx",
+        "androidx.navigation_navigation-ui-ktx",
+        "kotlin-stdlib",
         "settings-logtags",
         "statslog-settings",
         "zxing-core-1.7",
@@ -92,3 +100,10 @@ android_library_import {
     name: "contextualcards",
     aars: ["libs/contextualcards.aar"],
 }
+
+android_library_import {
+    name: "expandablebottombar",
+    aars: ["libs/expandablebottombar.aar"],
+    sdk_version: "current",
+}
+
