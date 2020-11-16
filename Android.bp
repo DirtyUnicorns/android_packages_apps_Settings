@@ -27,9 +27,14 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
+    srcs: ["src/**/*.java",
+           "du-tweaks/**/*.java",],
 
-    aaptflags: ["--extra-packages github.com.st235.lib_expandablebottombar",],
+    resource_dirs: ["res",
+                    "du-tweaks/res"],
+
+    aaptflags: ["--extra-packages com.dirtyunicorns.tweaks",
+                "--extra-packages github.com.st235.lib_expandablebottombar",],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
