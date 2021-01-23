@@ -44,27 +44,27 @@
         android:persistent="false"
         android:title="@string/display_category_title">
 
-        <Preference
+        <!--Preference
             android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
             android:key="font_size_preference_screen"
             android:persistent="false"
             android:title="@string/title_font_size"
             settings:controller="com.android.settings.display.FontSizePreferenceController"
-            settings:searchable="false"/>
+            settings:searchable="false"/-->
 
-     <com.android.settings.display.ScreenZoomPreference
+     <!--com.android.settings.display.ScreenZoomPreference
             android:fragment="com.android.settings.display.ScreenZoomSettings"
             android:key="accessibility_settings_screen_zoom"
             android:persistent="false"
             android:title="@string/screen_zoom_title"
-            settings:searchable="false"/>
+            settings:searchable="false"/-->
 
-       <SwitchPreference
+       <!--SwitchPreference
             android:key="dark_ui_mode_accessibility"
             android:persistent="false"
             android:title="@string/dark_ui_mode"
             settings:controller="com.android.settings.display.DarkUIPreferenceController"
-            settings:searchable="false"/>
+            settings:searchable="false"/-->
 
        <Preference
             android:fragment="com.android.settings.accessibility.MagnificationPreferenceFragment"
@@ -106,11 +106,11 @@
             android:title="@string/accessibility_power_button_ends_call_prerefence_title"
             settings:controller="com.android.settings.accessibility.PowerButtonEndsCallPreferenceController"/>
 
-        <SwitchPreference
+        <!--SwitchPreference
             android:key="toggle_lock_screen_rotation_preference"
             android:persistent="false"
             android:title="@string/accelerometer_title"
-            settings:controller="com.android.settings.accessibility.LockScreenRotationPreferenceController"/>
+            settings:controller="com.android.settings.accessibility.LockScreenRotationPreferenceController"/-->
 
         <ListPreference
             android:entries="@array/long_press_timeout_selector_titles"
