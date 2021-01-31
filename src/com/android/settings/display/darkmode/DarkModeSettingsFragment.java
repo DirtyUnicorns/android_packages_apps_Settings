@@ -24,9 +24,9 @@ import androidx.preference.Preference;
 
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
-import com.android.settings.search.BaseSearchIndexProvider;
+//import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
-import com.android.settingslib.search.SearchIndexable;
+//import com.android.settingslib.search.SearchIndexable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,7 @@ import java.util.List;
 /**
  * Settings screen for Dark UI Mode
  */
-@SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
+//@SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
 public class DarkModeSettingsFragment extends DashboardFragment {
 
     private static final String TAG = "DarkModeSettingsFrag";
@@ -142,12 +142,12 @@ public class DarkModeSettingsFragment extends DashboardFragment {
         }
     }
 
-    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+    /*public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider(R.xml.dark_mode_settings) {
                 @Override
                 protected boolean isPageSearchEnabled(Context context) {
                     return !context.getSystemService(PowerManager.class).isPowerSaveMode();
                 }
-            };
+            };*/
 
 }
